@@ -2,7 +2,7 @@
 title: Commerce on Cloud Infrastructure
 description: Meer informatie over het bouwen, implementeren en beheren van Commerce op Cloud-infrastructuur.
 exl-id: a37d0403-df14-4bb9-8cc4-25436560ba0c
-source-git-commit: 2cd0f97b89b3a87b40ac36655304b2c1cd11b4b1
+source-git-commit: 10818a862fbba14bdfb3de1e6107d745104e4791
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 0%
@@ -61,3 +61,4 @@ De Commerce on cloud Infrastructure-handleiding gaat ervan uit dat u enige prakt
 - [ de Documentatie van de Ontwikkelaar van Adobe Commerce ](https://developer.adobe.com/commerce/docs/) (plaats van Adobe Developer) - ontwikkelt, past, integreert, breidt, en gebruikt geavanceerde mogelijkheden uit
 
 - [ de Documentatie van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce.html) (Adobe Experience League) - Plan, voer uit, werk, bevorder, en handhaaf uw [!DNL Commerce] projecten
+
