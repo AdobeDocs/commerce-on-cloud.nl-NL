@@ -2,9 +2,10 @@
 title: Cloud Components voor Commerce
 description: Zie een lijst met de meest recente verbeteringen in het pakket met Cloud Components.
 recommendations: noDisplay, catalog
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 34aec593-e2ea-4060-a6b9-6f4cb95a11c0
+source-git-commit: 33f89e5c9af7c172ad0592b61343e285b456fc1a
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '618'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,16 @@ De opmerkingen bij de release omvatten:
 
 <!--Add release notes below-->
 
-## v1.1.0 {#latest}
+## v1.1.1 {#latest}
+
+
+Releasedatum: 6 februari 2025
+
+- ![ nieuw pictogram ](../../assets/new.svg) **PHP 8.4** - toegevoegde steun voor PHP 8.4.<!-- MCLOUD-13148	 - -->
+- ![ fixpictogram ](../../assets/fix.svg) **Repareren voor geheim voorgeheugen warm-omhoog** - Vaste een kwestie met categorie URLs tijdens geheim voorgeheugenopwarming.<!-- MCLOUD-12454 - -->
+
+
+## v1.1.0
 
 Releasedatum: 7 oktober 2024
 
