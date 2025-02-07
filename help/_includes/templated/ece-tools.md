@@ -1,5 +1,5 @@
 ---
-source-git-commit: 0df07e865c3c4fc4ac14483972643eafa8814726
+source-git-commit: 6a686858394e65dfbb665bb76332ee13348dad7e
 workflow-type: tm+mt
 source-wordcount: '921'
 ht-degree: 0%
@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # Gereedschappen
 
-**Versie**: 2002.2.0
+**Versie**: 2002.2.1
 
 Deze verwijzing bevat 34 opdrachten die beschikbaar zijn via het opdrachtregelprogramma van `ece-tools` .
 De eerste lijst wordt automatisch gegenereerd met de opdracht `ece-tools list` in Adobe Commerce op de cloud-infrastructuur.
@@ -453,7 +453,7 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 ece-tools cloud:config:create <configuration>
 ```
 
-Maakt een `.magento.env.yaml` -bestand met de opgegeven configuratie van variabelen voor samenstellen, implementeren en achteraf implementeren. Hiermee overschrijft u een bestaand `.magento,.env.yaml` -bestand.
+Maakt een `.magento.env.yaml` -bestand met de opgegeven configuratie van variabelen voor samenstellen, implementeren en achteraf implementeren. Hiermee overschrijft u een bestaand `.magento.env.yaml` -bestand.
 
 ### Argumenten
 
