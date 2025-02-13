@@ -3,21 +3,21 @@ title: Opmerkingen bij de release Cloud Tools Suite
 description: Meer informatie over de nieuwste verbeteringen in de Cloud Tools Suite voor Adobe Commerce.
 feature: Cloud, Release Notes
 exl-id: ee2bc2e9-bdf4-4f7b-9724-8f4dd1e61378
-source-git-commit: 3c6800bc14d8ed43d85fb87eeb24decff72ac77d
+source-git-commit: 126514af11498758036455580d5cab5037dc9bf3
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 0%
 
 ---
 
-# Opmerkingen bij de release voor de Commerce Cloud Tools Suite
+# Opmerkingen bij de release van Commerce Cloud Tools Suite
 
 Deze release bevat informatie over de meest recente verbeteringen in de Cloud Tools Suite voor Commerce-pakketten die zijn ontworpen om Adobe Commerce-installaties en -upgrades op het Cloud-platform te implementeren en beheren.
 
 | Opmerkingen bij de release | Versie | Beschrijving | Source |
 | ----------------- |-----------| ---------------------------------------- | --------------------------- |
 | [`ece-tools` package ](ece-tools-package.md) | 2002,2,1 | Een set scripts en tools die zijn ontworpen voor het beheren en implementeren van Cloud-projecten | [`magento/ece-tools`](https://github.com/magento/ece-tools/tree/2002.2.1) |
-| [ Haalt de Patches van de Wolk voor Commerce ](cloud-patches.md) | 1.1.3. | Een reeks patches die de integratie van alle Adobe Commerce-versies in de Cloud-omgeving verbeteren. Dit pakket bevat Adobe Commerce-patches en beschikbare hotfixes die worden toegepast wanneer u `ece-tools` gebruikt om | [`magento/magento-cloud-patches`](https://github.com/magento/magento-cloud-patches/tree/1.1.3) |
+| [ Haalt de Patches van de Wolk voor Commerce ](cloud-patches.md) | 1.1.4. | Een reeks patches die de integratie van alle Adobe Commerce-versies in de Cloud-omgeving verbeteren. Dit pakket bevat Adobe Commerce-patches en beschikbare hotfixes die worden toegepast wanneer u `ece-tools` gebruikt om | [`magento/magento-cloud-patches`](https://github.com/magento/magento-cloud-patches/tree/1.1.4) |
 | [ Docker van de Wolk voor Commerce ](cloud-docker.md) | 1.4.1. | Functie- en configuratiebestanden voor Docker-images om Adobe Commerce in een lokale cloudomgeving te implementeren | [`magento/magento-cloud-docker`](https://github.com/magento/magento-cloud-docker/tree/1.4.1) |
 | [ de Componenten van de Wolk van Commerce ](cloud-components.md) | 1.1. | Uitgebreide Adobe Commerce-kernfunctionaliteit voor sites die worden geïmplementeerd op de Cloud-infrastructuur | [`magento/magento-cloud-components`](https://github.com/magento/magento-cloud-components/tree/1.1.1) |
 

@@ -4,9 +4,9 @@ description: Zie een lijst met de meest recente verbeteringen in het pakket met 
 recommendations: noDisplay, catalog
 last-substantial-update: 2025-02-06T00:00:00Z
 exl-id: a4454ebc-72a4-42c1-b591-6237c97fe913
-source-git-commit: 33f89e5c9af7c172ad0592b61343e285b456fc1a
+source-git-commit: 4c8da3e40561a43674906cdf7f461bbcb1066c30
 workflow-type: tm+mt
-source-wordcount: '2326'
+source-wordcount: '2347'
 ht-degree: 0%
 
 ---
@@ -29,14 +29,17 @@ Het pakket `magento/magento-cloud-patches` gebruikt de volgende versiereeks: `<m
 
 <!--Add release notes below-->
 
-## v1.1.3 {#latest}
+## v1.1.4 {#latest}
 
+Releasedatum: 13 februari 2025
+
+- ![ nieuw pictogram ](../../assets/new.svg) **Toegevoegd flard voor Commerce 2.4.4 aan 2.4.7** - Deze updatepatches [ CVE-2025-24434 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08).<!-- MCLOUD-13240	 - -->
+
+## v1.1.3
 
 Releasedatum: 6 februari 2025
 
 - ![ nieuw pictogram ](../../assets/new.svg) **PHP 8.4** - toegevoegde steun voor PHP 8.4.<!-- MCLOUD-13149	 - -->
-
-
 
 ## v1.1.2
 
@@ -124,9 +127,9 @@ Releasedatum: 11 augustus 2022
 
 Kritieke patch voor Adobe Commerce 2.4.5:
 
-- **Uitgave met orden die Braintree betalingen gebruiken** - Dit flard lost een kritieke kwestie op die beheerders verhindert nieuwe orden of herschikkingen te plaatsen.<!-- MCLOUD-9137 -->
+- **Uitgave met orden die de betalingen van Braintree gebruiken** - Dit flard lost een kritieke kwestie op die beheerders verhindert nieuwe orden of herschikkingen te plaatsen.<!-- MCLOUD-9137 -->
 
-Zie [ Admin kan geen orde tot stand brengen/opnieuw rangschikken wanneer de betaling van de Braintree ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/admin-cant-create-order-reorder-when-braintree-payment-enabled.html) werd toegelaten.
+Zie [ Admin kan geen orde tot stand brengen/opnieuw rangschikken wanneer Braintree betaling ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/admin-cant-create-order-reorder-when-braintree-payment-enabled.html) toeliet.
 
 ## v1.0.17
 
@@ -142,7 +145,7 @@ Kritieke patch voor Adobe Commerce 2.3.3-p1 en latere versies:
 
 De bijgewerkte flarden om a **kritieke** kwetsbaarheid op te lossen die in unauthenticated verre codeuitvoering resulteert.<!-- MCLOUD-8479 -->
 
-Zie [ bulletin van de Veiligheid van de Adobe APSB22-12 ](https://helpx.adobe.com/security/products/magento/apsb22-12.html).
+Zie [ bulletin van de Veiligheid van Adobe APSB22-12 ](https://helpx.adobe.com/security/products/magento/apsb22-12.html).
 
 ## v1.0.15
 
@@ -159,7 +162,7 @@ Kritieke patch voor Adobe Commerce 2.3.3-p1 en latere versies:
 
 Toegevoegd een flard om a **kritieke** kwetsbaarheid op te lossen die in unauthenticated verre codeuitvoering resulteert.<!-- MCLOUD-8461 -->
 
-Zie [ bulletin van de Veiligheid van de Adobe APSB22-12 ](https://helpx.adobe.com/security/products/magento/apsb22-12.html).
+Zie [ bulletin van de Veiligheid van Adobe APSB22-12 ](https://helpx.adobe.com/security/products/magento/apsb22-12.html).
 
 ## v1.0.13
 
@@ -216,7 +219,7 @@ Releasedatum: 14 oktober 2020
 
 - **Redis flarden voor Adobe Commerce 2.3.0 tot 2.3.5, 2.4.0** - werkte de Redis flarden bij om het toevoegen van producten aan een categorie te steunen wanneer het uitvoeren van Niveau 2 geheim voorgeheugen. <!--MCLOUD-6659-->
 
-- **VBE van de Braintree VBE flard** - lost een kwestie op die een fout produceerde toen een Beheerder probeerde om een Rapport van de Regeling van de Braintree te bekijken. <!--MCLOUD-6684-->
+- **het flard van Braintree VBE** - lost een kwestie op die een fout produceerde toen een Beheerder probeerde om een Rapport van de Regeling van Braintree te bekijken. <!--MCLOUD-6684-->
 
 - De opdracht `ece-patches apply` gebruikt nu de opdracht Unix `patch` om patches toe te passen als Git niet beschikbaar is op het hostsysteem. <!--MCLOUD-7069-->
 
@@ -261,9 +264,9 @@ Releasedatum: 12 mei 2020
 
 - **de prestatieverbetering van de Plaats** - lost een prestatieskwestie met de `Magento\Framework\App\DeploymentConfig\Reader::load` functie op, die periodiek lange ladingstijden ervoer die plaatsprestaties beïnvloedden. <!--MCLOUD-5650-->
 
-- Bijgewerkte flardtoewijzing voor de patches van de betalingsmethode om de betalingsmodules te richten in plaats van het basispakket van het Magento (magento/magento2-base) zodat de betalingspatches alleen worden toegepast als de betalingsmodules bestaan.<!--MCLOUD-5666-->
+- Bijgewerkte patchtoewijzing voor patches voor betalingsmethoden om de betalingsmodules als doel in te stellen in plaats van het Magento-basispakket (magento/magento2-base), zodat de betalingspatches alleen worden toegepast als de betalingsmodules bestaan.<!--MCLOUD-5666-->
 
-- Bijgewerkte flarden voor verenigbaarheid met Magento Open Source.<!--MCLOUD-5701-->
+- Bijgewerkte patches voor compatibiliteit met Magento Open Source.<!--MCLOUD-5701-->
 
 ## v1.0.3
 
@@ -287,7 +290,7 @@ Deze release bevat de volgende patches en oplossingen voor problemen:
 
 - **de plaatsingsmoeilijke situatie van de Toepassing** - voegde een flard toe om een kwestie te bevestigen die het volledige paginacache tijdens het plaatsingsproces onbruikbaar maakte. Deze patch is van toepassing op Adobe Commerce 2.3.2 en latere versies.
 
-- **de parameter van het Werkingsgebied voor Async/Bulk API** - werkte dit flard bij om een syntaxisfout in het `composer.json` dossier te bevestigen. Deze patch is van toepassing op Magento Open Source 2.3.1 en 2.3.2. Zie de volledige patchbeschrijving op de pagina voor het downloaden van de patch.
+- **de parameter van het Werkingsgebied voor Async/Bulk API** - werkte dit flard bij om een syntaxisfout in het `composer.json` dossier te bevestigen. Deze patch geldt voor Magento Open Source 2.3.1 en 2.3.2. Zie de volledige patchbeschrijving op de pagina voor het downloaden van de patch.
 
 ## v1.0.1
 
@@ -303,9 +306,9 @@ Deze release bevat de volgende patches en oplossingen voor problemen:
 
    - Voegt a _opnieuw probeert_ verrichting toe om blokkering tijdens updates aan de gegevens in de `cron_schedule` lijst te vermijden.
 
-- **werkte `magento/magento-cloud-patches` bij om alle beschikbare flarden voor Magento Open Source 2.x** te omvatten - werkte het magento/magento-cloud-flardpakket bij om alle Magento Open Source 2.x flarden te omvatten beschikbaar op de pagina van de softwaredownloads. Als u om het even welke Magento Open Source flarden in uw Adobe Commerce op het project van de wolkeninfrastructuur eerder kopieerde, verwijder hen om conflicten te vermijden.<!--MAGECLOUD-4606-->
+- **werkte `magento/magento-cloud-patches` bij om alle beschikbare flarden voor Magento Open Source 2.x** te omvatten - werkte het magento/magento-cloud-flardpakket bij om alle Magento Open Source 2.x flarden te omvatten beschikbaar op de pagina van de softwaredownloads. Als u eerder Magento Open Source-patches naar uw Adobe Commerce hebt gekopieerd op een cloudinfrastructuurproject, verwijdert u deze om conflicten te voorkomen.<!--MAGECLOUD-4606-->
 
-- **de pagineringsmoeilijke situatie van de cataloguscatalogus van de Elasticsearch** - verving het de pagineringsflard van de Elasticsearch die in magento/magento-cloud-patches v1.0 met een effectievere moeilijke situatie wordt geleverd.<!--MAGECLOUD-4847-->
+- **de cataloguspagineringsmoeilijke situatie van Elasticsearch** - verving de de cataloguspagineringsflard van Elasticsearch die in magento/magento-cloud-patches v1.0 met een effectievere moeilijke situatie wordt geleverd.<!--MAGECLOUD-4847-->
 
 - **de flarden van de Bouwer van de Pagina** - in de flarden van de Wolk voor Commerce 1.0.0, bundelden wij de flarden van de Bouwer van de Pagina om een bekende de verre codeuitvoering van de Bouwer van de Pagina te richten (RCE), met de aanvankelijke moeilijke situatie die op Adobe Commerce 2.3.3 wordt gebaseerd. We hebben deze patches bijgewerkt met een stabielere implementatie op basis van Adobe Commerce 2.3.4. Dit omvat meerdere optimalisaties voor het verhelpen van het probleem.<!--MAGECLOUD-4884-->
 
@@ -325,4 +328,4 @@ Deze release bevat de volgende patches en oplossingen voor problemen:
 
 - **Achterwaartse Verenigbaarheid van nieuwe Interfaces van de Post** - lost een achterwaartse onverenigbaarheidskwestie op die door de `Magento\Framework\Mail\EmailMessageInterface` PHP interface wordt veroorzaakt die in Adobe Commerce v2.3.3 wordt geïntroduceerd. In het bereik van deze patch zijn de nieuwe `EmailMessageInterface` overervingen van de oude `MessageInterface` en zijn Adobe Commerce-kernmodules weer afhankelijk van `MessageInterface` . <!--MAGECLOUD-4422-->
 
-- **de paginering van de Catalogus werkt niet aan Elasticsearch 6.x** - lost een kritieke kwestie met de paginering van het onderzoeksresultaat op die klanten gebruikend Elasticsearch 6.x als motor van het catalogusonderzoek.<!--MAGECLOUD-4448-->
+- **de paginering van de Catalogus werkt niet op Elasticsearch 6.x** - lost een kritieke kwestie met de paginering van het onderzoeksresultaat op die klanten gebruikend Elasticsearch 6.x als motor van de catalogusonderzoek.<!--MAGECLOUD-4448-->
