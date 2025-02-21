@@ -2,23 +2,24 @@
 title: Back-up maken van de database
 description: Leer hoe u met ECE-tools een back-up kunt maken van de database voor een Adobe Commerce on cloud-infrastructuurproject.
 feature: Cloud, Iaas, Storage
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 351f7691-3153-4b8a-83af-8b8895b93d98
+source-git-commit: 3a3b0cd6e28f3e6ed3521a86f7c7c8868be0cf83
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '361'
 ht-degree: 0%
 
 ---
 
 # Back-up maken van de database
 
-U kunt een kopie van uw database maken met de opdracht `ece-tools db-dump` zonder alle omgevingsgegevens van services en montage vast te leggen. Met deze opdracht maakt u standaard back-ups in de map `/app/var/dump-main` voor alle databaseverbindingen die in de omgevingsconfiguratie zijn opgegeven. De de stortplaatsverrichting van DB schakelt de toepassing aan onderhoudswijze, houdt de processen van de consumentenrij tegen, en maakt cron banen onbruikbaar alvorens de stortplaats begint.
+U kunt een kopie van uw database maken met de opdracht `ece-tools db-dump` zonder alle omgevingsgegevens van services en montage vast te leggen. Met deze opdracht maakt u standaard back-ups in de map `app/var/` voor alle databaseverbindingen die in de omgevingsconfiguratie zijn opgegeven. De de stortplaatsverrichting van DB schakelt de toepassing aan onderhoudswijze, houdt de processen van de consumentenrij tegen, en maakt cron banen onbruikbaar alvorens de stortplaats begint.
 
 Overweeg de volgende richtlijnen voor stortplaats van DB:
 
-- Voor Productomgevingen, adviseert de Adobe de verrichtingen van de gegevensbestandstortplaats tijdens off-peak uren te voltooien om de dienstverstoringen te minimaliseren die voorkomen wanneer de plaats op onderhoudswijze is.
+- Voor productieomgevingen raadt Adobe aan de databasedumportbewerkingen tijdens niet-piekuren uit te voeren om de onderbreking van de service die optreedt wanneer de site in de onderhoudsmodus staat, tot een minimum te beperken.
 - Als een fout tijdens de stortplaatsverrichting voorkomt, schrapt het bevel het stortplaatsdossier om schijfruimte te besparen. Bekijk de logboeken voor details (`var/log/cloud.log`).
 - Voor Pro de milieu&#39;s van de Productie, dumpt dit bevel slechts van _één_ van de drie high-availability knopen, zodat zouden de productiegegevens die aan een verschillende knoop tijdens de stortplaats worden geschreven niet kunnen worden gekopieerd. De opdracht genereert een `var/dbdump.lock` -bestand om te voorkomen dat de opdracht op meer dan één knooppunt wordt uitgevoerd.
-- Voor een steun van alle milieudiensten, adviseert de Adobe creërend a [ steun ](snapshots.md).
+- Voor een steun van alle milieudiensten, adviseert Adobe creërend a [ steun ](snapshots.md).
 
 U kunt verkiezen aan file veelvoudige gegevensbestanden door de gegevensbestandnamen aan het bevel toe te voegen. In het volgende voorbeeld wordt een back-up gemaakt van twee databases: `main` en `sales` :
 
@@ -28,8 +29,8 @@ php vendor/bin/ece-tools db-dump main sales
 
 Gebruik de opdracht `php vendor/bin/ece-tools db-dump --help` voor meer opties:
 
-- `--dump-directory=<dir>` - Kies een doelmap voor de databasedumpit
-- `--remove-definers`—Verwijder DEFINITIEVE instructies uit de databasedumpdump
+- `--dump-directory=<dir>` - Kies een doelmap voor de databasedumpdump. **kies geen openbare Webfolders zoals `pub/media` of`pub/static`**.
+- `--remove-definers` - verwijder DEFINER-instructies van de database-dump.
 
 **om een gegevensbestandstortplaats in het het Opvoeren of milieu van de Productie te creëren**:
 
@@ -49,6 +50,10 @@ Gebruik de opdracht `php vendor/bin/ece-tools db-dump --help` voor meer opties:
 
 1. Maak een back-up van de database. Als u een doelmap voor de DB-dump wilt kiezen, gebruikt u de optie `--dump-directory` .
 
+   >[!WARNING]
+   >
+   >Als u een doelmap opgeeft, kiest u geen openbare webmappen zoals `pub/media` of `pub/static` .
+
    ```bash
    php vendor/bin/ece-tools db-dump -- main
    ```
@@ -65,7 +70,7 @@ Gebruik de opdracht `php vendor/bin/ece-tools db-dump --help` voor meer opties:
    [2020-01-28 16:38:10] INFO: Running Magento cron and consumers processes were not found.
    [2020-01-28 16:38:10] INFO: Waiting for lock on db dump.
    [2020-01-28 16:38:10] INFO: Start creation DB dump for main database...
-   [2020-01-28 16:38:10] INFO: Finished DB dump for main database, it can be found here: /tmp/qxmtlseakof6y/dump-main-1580229490.sql.gz
+   [2020-01-28 16:38:10] INFO: Finished DB dump for main database, it can be found here: /app/qxmtlseakof6y/var/dump-main-1580229490.sql.gz
    [2020-01-28 16:38:10] INFO: Backup completed.
    [2020-01-28 16:38:11] NOTICE: Maintenance mode is disabled.
    ```

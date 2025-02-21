@@ -2,9 +2,10 @@
 title: Back-upbeheer
 description: Leer hoe u handmatig een back-up voor uw Adobe Commerce-infrastructuurproject in de cloud kunt maken en herstellen.
 feature: Cloud, Paas, Snapshots, Storage
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: e73a57e7-e56c-42b4-aa7b-2960673a7b68
+source-git-commit: b5fa153b4eb0569fd16c78fb7bf47c54222752cd
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '737'
 ht-degree: 0%
 
 ---
@@ -14,6 +15,10 @@ ht-degree: 0%
 U kunt op elk gewenst moment een handmatige back-up van de actieve Starter-omgeving maken met de knop **[!UICONTROL Backup]** in de [!DNL Cloud Console] of met de opdracht `magento-cloud snapshot:create` .
 
 Een steun of _momentopname_ is een volledige steun van omgevingsgegevens die alle blijvende gegevens van het runnen van de diensten (gegevensbestand MySQL) en om het even welke dossiers omvat die op de opgezette volumes (var, pub/media, app/etc) worden opgeslagen. De momentopname omvat __ geen code, aangezien de code reeds in de op git-Gebaseerde bewaarplaats wordt opgeslagen. U kunt geen kopie van een opname downloaden.
+
+>[!WARNING]
+>
+>Zorg dat back-ups doorgaans de inhoud van gekoppelde mappen bevatten, inclusief openbare webmappen zoals `pub/media` , en verplaats back-upuitvoerbestanden niet naar openbare webmappen zoals `pub/media` of `pub/static` .
 
 De reserve/momentopnamefunctie is **niet** op de Pro het Staging en milieu&#39;s van de Productie van toepassing, die regelmatige steunen voor de doeleinden van de rampenterugwinning door gebrek ontvangen. Verwijs naar [ Pro Steun &amp; de Terugwinning van de Ramp ](../architecture/pro-architecture.md#backup-and-disaster-recovery) voor meer informatie. In tegenstelling tot de automatische levende steunen op de Pro het Staging en milieu&#39;s van de Productie, zijn de steunen **niet** automatisch. Het is _uw_ verantwoordelijkheid om een steun manueel tot stand te brengen of opstelling een kroonbaan om een steun van uw Starter of Pro integratiemilieu&#39;s periodiek tot stand te brengen.
 
