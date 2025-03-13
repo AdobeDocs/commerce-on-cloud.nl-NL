@@ -4,9 +4,10 @@ description: Leer hoe u SSH-toetsen op uw Adobe Commerce kunt toepassen op een c
 role: Developer
 feature: Cloud, Security
 topic: Security
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 73af13d8-7085-4ac8-9cfe-9772bc6bc112
+source-git-commit: c25e5b74ae8105995107860246ecb9ba45910bb1
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '979'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,7 @@ Creeer een SSH zeer belangrijk paar op elke machine en werkruimte die toegang to
 
 ## Een SSH-openbare sleutel toevoegen aan uw account
 
-Nadat u de openbare SSH-sleutel aan uw Adobe Commerce hebt toegevoegd op een cloud-infrastructuuraccount, dient u alle actieve omgevingen op uw account opnieuw te implementeren om de sleutel te installeren.
+Nadat u toevoegt of uw openbare sleutel van SSH aan uw Adobe Commerce op de rekening van de wolkeninfrastructuur bijwerkt, [ herstelt alle actieve milieu&#39;s ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-reference#environmentredeploy) op uw rekening om de sleutel te installeren.
 
 U kunt SSH-sleutels aan uw account toevoegen met een van de volgende methoden: Cloud CLI of [!DNL Cloud Console] .
 
