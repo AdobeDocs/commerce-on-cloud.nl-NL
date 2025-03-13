@@ -2,7 +2,8 @@
 title: Web Application Firewall (WAF)
 description: Leer hoe de Fastly WAF dienst ontdekt, registreert, en kwaadwillig verzoekverkeer blokkeert alvorens het het netwerk of de plaatsen van Adobe Commerce kan beschadigen.
 feature: Cloud, Configuration, Security
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: f00e35f2-9800-4e24-a4d0-d36fde59a003
+source-git-commit: 7e61673b343fb954b53bf7cbae88efaf7bbfab4c
 workflow-type: tm+mt
 source-wordcount: '930'
 ht-degree: 0%
@@ -17,10 +18,10 @@ De WAF-service biedt de volgende voordelen:
 
 - **naleving PCI** - WAF enablement zorgt ervoor dat Adobe Commerce storefronts in de milieu&#39;s van de Productie aan PCI DSS 6.6 veiligheidsvereisten voldoen.
 - **StandaardWAF beleid** - het standaardWAF beleid, dat door Fastly wordt gevormd en wordt gehandhaafd, verstrekt een inzameling van veiligheidsregels die worden gemaakt om uw het Webtoepassingen van Adobe Commerce tegen een brede waaier van aanvallen, met inbegrip van injectieaanvallen, kwaadwillige input, dwars-plaats scripting, gegevenscontrole, het protocolschendingen van HTTP, en andere [ Top tien van OWASP ](https://owasp.org/www-project-top-ten/) veiligheidsbedreigingen te beschermen.
-- **WAF on boarding en enablement** - de Adobe stelt en laat het standaard beleid van WAF in uw milieu van de Productie binnen 2 tot 3 weken toe nadat de levering definitief is.
+- **WAF on boarding en enablement** - Adobe stelt en laat het standaard beleid van WAF in uw milieu van de Productie binnen 2 tot 3 weken toe nadat de levering definitief is.
 - **Verrichtingen en onderhoudssteun**—
-   - U kunt uw logbestanden, regels en waarschuwingen voor de WAF-service snel Adoben en instellen en beheren.
-   - De Adobe brengt klantensteunkaartjes met betrekking tot de dienstkwesties van WAF in werking die wettig verkeer als Prioriteit 1 kwesties blokkeren.
+   - Adobe en snel uw logboeken, regels en waarschuwingen voor de WAF-service instellen en beheren.
+   - Adobe maakt gebruik van tickets voor klantenondersteuning die gerelateerd zijn aan WAF-servicekwesties die legitiem verkeer blokkeren als Prioriteit 1-problemen.
    - Geautomatiseerde upgrades naar de WAF-serviceversie zorgen voor directe dekking voor nieuwe of zich ontwikkelende explosies. Zie [ onderhoud en verbeteringen van WAF ](#waf-maintenance-and-updates).
 
 >[!TIP]
@@ -29,7 +30,7 @@ De WAF-service biedt de volgende voordelen:
 
 ## WAF inschakelen
 
-Met Adobe kan de WAF-service binnen twee tot drie weken na de definitieve provisioning op nieuwe accounts worden uitgevoerd. De WAF wordt geïmplementeerd via de Fastly CDN-service. U hoeft geen hardware of software te installeren of te onderhouden.
+Adobe biedt de WAF-service op nieuwe accounts binnen 2 tot 3 weken nadat de provisioning is voltooid. De WAF wordt geïmplementeerd via de Fastly CDN-service. U hoeft geen hardware of software te installeren of te onderhouden.
 
 >[!NOTE]
 >
@@ -39,7 +40,7 @@ Met Adobe kan de WAF-service binnen twee tot drie weken na de definitieve provis
 
 De dienst van WAF integreert met Fastly en gebruikt de geheim voorgeheugenlogica binnen de Fastly dienst CDN om verkeer bij de Fastly globale knopen te filtreren. Wij laten de dienst van WAF in uw milieu van de Productie met een standaardWAF beleid toe dat op [ wordt gebaseerd ModSecurity Regels van Trustwave SpiderLabs ](https://github.com/owasp-modsecurity/ModSecurity) en de Top Tien van OWASP veiligheidsbedreigingen.
 
-De dienst van WAF inspecteert HTTP en HTTPS verkeer (GET en POST verzoeken) tegen de regels van WAF en blokkeert verkeer dat kwaadwillig is of niet aan specifieke regels voldoet. De dienst inspecteert slechts oorsprong-gebonden verkeer dat probeert om het geheime voorgeheugen te verfrissen. Dientengevolge, houden wij het meeste aanvalsverkeer bij het Fastly geheime voorgeheugen tegen, beschermend uw oorsprongsverkeer tegen kwaadwillige aanvallen. Door slechts oorsprongverkeer te verwerken, behoudt de dienst van WAF geheim voorgeheugenprestaties, introducerend slechts een geschatte 1.5 milliseconden aan 20 milliseconden van latentie aan elk niet caching verzoek.
+De dienst van WAF inspecteert HTTP en HTTPS verkeer (GET en POST- verzoeken) tegen de regels van WAF en blokkeert verkeer dat kwaadwillig is of niet aan specifieke regels voldoet. De dienst inspecteert slechts oorsprong-gebonden verkeer dat probeert om het geheime voorgeheugen te verfrissen. Dientengevolge, houden wij het meeste aanvalsverkeer bij het Fastly geheime voorgeheugen tegen, beschermend uw oorsprongsverkeer tegen kwaadwillige aanvallen. Door slechts oorsprongverkeer te verwerken, behoudt de dienst van WAF geheim voorgeheugenprestaties, introducerend slechts een geschatte 1.5 milliseconden aan 20 milliseconden van latentie aan elk niet caching verzoek.
 
 ## Problemen met geblokkeerde aanvragen oplossen
 
@@ -49,7 +50,7 @@ Wanneer de dienst van WAF wordt toegelaten, inspecteert het al Web en admin verk
 
 U kunt deze pagina met foutreacties aanpassen via de beheerfunctie. Zie [ de de reactiepagina van WAF ](fastly-custom-response.md#customize-the-waf-error-page) aanpassen.
 
-Als uw Adobe Commerce admin pagina of storefront een `403 Forbidden` foutenpagina in antwoord op een wettig verzoek URL terugkeert, leg een [ kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voor. Kopieer de referentie-id van de pagina met foutreacties en plak deze in de beschrijving van het ticket.
+Als uw Adobe Commerce admin pagina of storefront een `403 Forbidden` foutenpagina in antwoord op een wettig verzoek URL terugkeert, leg een [ kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) voor. Kopieer de referentie-id van de pagina met foutreacties en plak deze in de beschrijving van het ticket.
 
 Als u de WAF-reactie voor een bepaalde aanvraag wilt identificeren met New Relic, gaat u naar het volgende:
 
@@ -60,7 +61,7 @@ Als u de WAF-reactie voor een bepaalde aanvraag wilt identificeren met New Relic
 
 Snellere updates en implementeert patches voor nieuwe CVE&#39;s/sjabloonregels op basis van regelupdates van commerciële derden, snel onderzoek en open bronnen. De gepubliceerde regels worden zo nodig snel bijgewerkt in een beleid of wanneer wijzigingen in de regels beschikbaar zijn uit de respectieve bronnen. Bovendien kunt u met Snelheid regels toevoegen die overeenkomen met de gepubliceerde klassen regels in de WAF-instantie van elke service nadat de WAF-service is ingeschakeld. Deze updates zorgen voor onmiddellijke dekking voor nieuwe of zich ontwikkelende exploitaties.
 
-Adobe en beheer snel het updateproces om ervoor te zorgen dat de nieuwe of gewijzigde regels van WAF effectief in uw milieu van de Productie werken alvorens de updates op het blokkeren wijze worden opgesteld.
+Adobe en Fastly beheren het updateproces om ervoor te zorgen dat nieuwe of gewijzigde WAF-regels effectief werken in uw productieomgeving voordat de updates worden geïmplementeerd in de blokkeermodus.
 
 ## Problemen
 
