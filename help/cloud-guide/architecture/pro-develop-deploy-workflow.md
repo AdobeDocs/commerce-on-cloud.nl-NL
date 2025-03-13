@@ -2,9 +2,10 @@
 title: Workflow voor Pro-projecten
 description: Leer hoe u de workflows voor ontwikkeling en implementatie van Pro gebruikt.
 feature: Cloud, Iaas, Paas
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: efe41991-8940-4d5c-a720-80369274bee3
+source-git-commit: b4905acf71e4cb71eb369cb6d4bb3abe9ada4e9d
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '800'
 ht-degree: 0%
 
 ---
@@ -27,7 +28,7 @@ In de volgende afbeelding ziet u hoe de workflow voor het ontwikkelen en impleme
 
 ## Ontwikkelingsworkflow
 
-De integratieomgeving biedt één basisvertakking `integration` met uw Adobe Commerce op code voor de cloud-infrastructuur. U kunt één extra actieve omgevingsvertakking maken. Dit staat voor maximaal twee actieve takken toe die aan Platform als de dienstcontainers (PaaS) worden opgesteld. Het aantal niet-actieve omgevingen is onbeperkt.
+De integratieomgeving biedt één basisvertakking `integration` met uw Adobe Commerce op code voor de cloud-infrastructuur. U kunt één extra actieve omgevingsvertakking maken. Dit staat voor maximaal twee actieve takken toe die aan Platform als de dienstcontainers (PaaS) worden opgesteld. Er is geen limiet voor het aantal niet-actieve omgevingen, maar hoe meer inactieve omgevingen er zijn, hoe langer het duurt voordat de Cloud Console wordt geladen.
 
 {{enhanced-integration-envs}}
 
