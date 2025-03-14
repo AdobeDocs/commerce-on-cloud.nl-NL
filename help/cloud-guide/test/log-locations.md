@@ -2,7 +2,8 @@
 title: Logbestanden weergeven en beheren
 description: Begrijp de typen logbestanden die beschikbaar zijn in de cloudinfrastructuur en waar u ze kunt vinden.
 last-substantial-update: 2023-05-23T00:00:00Z
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: f0bb8830-8010-4764-ac23-d63d62dc0117
+source-git-commit: 7615347cd5b528406c2a0e72be3450350655eeb9
 workflow-type: tm+mt
 source-wordcount: '1083'
 ht-degree: 0%
@@ -208,13 +209,13 @@ Voor Pro Staging- en productieomgevingen zijn de logbestanden Implementeren, Pos
 
 | Logbestand | Pro Staging | Pro Production |
 | ------------------- | --------------------------------------------------- | ----------------------------------------------- |
-| **Deploy logboek** | Alleen eerste knooppunt:<br>`/var/log/platform/<project-ID>_stg/deploy.log` | Alleen eerste knooppunt:<br>`/var/log/platform/<project-ID>/deploy.log` |
-| **Logboek van de post-opstellen** | Alleen eerste knooppunt:<br>`/var/log/platform/<project-ID>_stg/post_deploy.log` | Alleen eerste knooppunt:<br>`/var/log/platform/<project-ID>/post_deploy.log` |
-| **het logboek van het Gewas** | Alleen eerste knooppunt:<br>`/var/log/platform/<project-ID>_stg/cron.log` | Alleen eerste knooppunt:<br>`/var/log/platform/<project-ID>/cron.log` |
-| **Nginx toegangslogboek** | `/var/log/platform/<project-ID>_stg/access.log` | `/var/log/platform/<project-ID>/access.log` |
-| **Nginx foutenlogboek** | `/var/log/platform/<project-ID>_stg/error.log` | `/var/log/platform/<project-ID>/error.log` |
-| **PHP toegangslogboek** | `/var/log/platform/<project-ID>_stg/php.access.log` | `/var/log/platform/<project-ID>/php.access.log` |
-| **PHP FPM logboek** | `/var/log/platform/<project-ID>_stg/php5-fpm.log` | `/var/log/platform/<project-ID>/php5-fpm.log` |
+| **Deploy logboek** | Alleen eerste knooppunt:<br>`/var/log/platform/<project-ID>_stg*/deploy.log` | Alleen eerste knooppunt:<br>`/var/log/platform/<project-ID>/deploy.log` |
+| **Logboek van de post-opstellen** | Alleen eerste knooppunt:<br>`/var/log/platform/<project-ID>_stg*/post_deploy.log` | Alleen eerste knooppunt:<br>`/var/log/platform/<project-ID>/post_deploy.log` |
+| **het logboek van het Gewas** | Alleen eerste knooppunt:<br>`/var/log/platform/<project-ID>_stg*/cron.log` | Alleen eerste knooppunt:<br>`/var/log/platform/<project-ID>/cron.log` |
+| **Nginx toegangslogboek** | `/var/log/platform/<project-ID>_stg*/access.log` | `/var/log/platform/<project-ID>/access.log` |
+| **Nginx foutenlogboek** | `/var/log/platform/<project-ID>_stg*/error.log` | `/var/log/platform/<project-ID>/error.log` |
+| **PHP toegangslogboek** | `/var/log/platform/<project-ID>_stg*/php.access.log` | `/var/log/platform/<project-ID>/php.access.log` |
+| **PHP FPM logboek** | `/var/log/platform/<project-ID>_stg*/php5-fpm.log` | `/var/log/platform/<project-ID>/php5-fpm.log` |
 
 ### Gearchiveerde logbestanden
 
@@ -234,13 +235,13 @@ De gearchiveerde logboekdossiers worden altijd opgeslagen in de folder waar het 
 
 Omdat elke dienst in een afzonderlijke container loopt, zijn de de dienstlogboeken niet beschikbaar in het integratiemilieu. Adobe Commerce on cloud Infrastructure biedt alleen toegang tot de webservercontainer in de integratieomgeving. De volgende locaties van het servicelogboek zijn bestemd voor de Pro Production- en Staging-omgevingen:
 
-- **Redis logboek**: `/var/log/platform/<project-ID>_stg/redis-server-<project-ID>_stg.log`
-- **logboek van de Elasticsearch**: `/var/log/elasticsearch/elasticsearch.log`
+- **Redis logboek**: `/var/log/platform/<project-ID>*/redis-server-<project-ID>*.log`
+- **het logboek van Elasticsearch**: `/var/log/elasticsearch/elasticsearch.log`
 - **logboek van de huisvuilinzameling van Java**: `/var/log/elasticsearch/gc.log`
 - **het logboek van de Post**: `/var/log/mail.log`
 - **MySQL foutenlogboek**: `/var/log/mysql/mysql-error.log`
 - **MySQL langzaam logboek**: `/var/log/mysql/mysql-slow.log`
-- **het logboek van RabbitMQ**: `/var/log/rabbitmq/rabbit@host1.log`
+- **Logboek RabbitMQ**: `/var/log/rabbitmq/rabbit@host1.log`
 
 De logboeken van de dienst worden gearchiveerd en voor verschillende periodes, afhankelijk van het logboektype bewaard. In MySQL-logboeken is bijvoorbeeld de kortste levensduur verwijderd na zeven dagen.
 
