@@ -2,9 +2,10 @@
 title: PHP-instellingen
 description: Meer informatie over de optimale PHP-instellingen voor de configuratie van Commerce-toepassingen in de cloudinfrastructuur.
 feature: Cloud, Configuration, Extensions
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 83094c16-7407-41fa-ba1c-46b206aa160d
+source-git-commit: 1725741cfab62a2791fe95cfae9ed9dffa352339
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
@@ -66,10 +67,16 @@ Met deze instellingen kunnen PHP-processen paden naar bestanden in cache plaatse
 
 ### Aangepaste PHP-instellingen controleren
 
-Nadat u de `php.ini` wijzigingen in uw Cloud-omgeving hebt aangebracht, kunt u controleren of de aangepaste PHP-configuratie aan uw omgeving is toegevoegd. Gebruik bijvoorbeeld SSH om u aan te melden bij de externe omgeving en het bestand weer te geven met iets dat lijkt op het volgende:
+Nadat u de `php.ini` wijzigingen in uw Cloud-omgeving hebt aangebracht, kunt u controleren of de aangepaste PHP-configuratie aan uw omgeving is toegevoegd. Gebruik bijvoorbeeld SSH om u aan te melden bij de externe omgeving, geef PHP-configuratiegegevens weer en filter voor de instructie `register_argc_argv` :
 
 ```bash
-cat /etc/php/<php-version>/fpm/php.ini
+php -i | grep register_argc_ar
+```
+
+Voorbeelduitvoer:
+
+```text
+register_argc_argv => On => On
 ```
 
 >[!WARNING]
