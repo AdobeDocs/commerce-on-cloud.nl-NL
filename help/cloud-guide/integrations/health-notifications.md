@@ -1,10 +1,11 @@
 ---
 title: Gezondheidsmeldingen
-description: Leer hoe u Slack-, e-mail- en PagerDuty-meldingen voor schijfruimtegebruik op uw Adobe Commerce configureert voor een cloudinfratuuropbouwproject.
+description: Leer hoe u Slack-, e-mail- en PagerDuty-meldingen voor gebruik van schijfruimte op uw Adobe Commerce configureert voor een cloud-infrastructuurproject.
 feature: Cloud, Observability, Integration
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 5a7f37e9-e8f9-4b6b-b628-60dcaa60cc64
+source-git-commit: c3c708656e3d79c0893d1c02e60dcdf2ad8d7c7c
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
@@ -31,7 +32,7 @@ magento-cloud integration:add --type health.email --from-address you@example.com
 
 ## Slack-kanaalmeldingen
 
-Slack is een externe service die interactieve apps, bots genaamd, gebruikt om berichten in een chatroom te posten. Alvorens u gezondheidsberichten in Slack kunt ontvangen, moet u een douane [ allebei gebruiker ](https://api.slack.com/bot-users) voor uw groep van de Slack tot stand brengen. Nadat u de botgebruiker voor uw kanaal, of kanalen vormt, sparen het [ bot teken ](https://api.slack.com/docs/token-types#bot) dat door Slack wordt verstrekt om uw integratie te registreren. In het volgende voorbeeld worden gezondheidsmeldingen geregistreerd in een Slack-kanaal:
+Slack is een externe service die interactieve apps, bots genaamd, gebruikt om berichten in een chatroom te posten. Alvorens u gezondheidsberichten in Slack kunt ontvangen, moet u een douane [ allebei gebruiker ](https://api.slack.com/bot-users) voor uw groep van Slack tot stand brengen. Nadat u de beide gebruiker voor uw kanaal, of kanalen vormt, sparen het [ bot teken ](https://api.slack.com/docs/token-types#bot) dat door Slack wordt verstrekt om uw integratie te registreren. In het volgende voorbeeld worden gezondheidsmeldingen geregistreerd in een Slack-kanaal:
 
 ```bash
 magento-cloud integration:add --type health.slack --token SLACK_BOT_TOKEN --channel '#slack-channel-name'
@@ -44,3 +45,13 @@ PagerDuty is een externe dienst die teamleden op vraag van belangrijke kwesties 
 ```bash
 magento-cloud integration:add --type health.pagerduty --routing-key PAGERDUTY_ROUTING_KEY
 ```
+
+## Logbeheer
+
+Als u meer beschikbare schijfruimte wilt, kunt u logbestanden afkappen of verwijderen uit uw omgeving. Als logrotate wordt toegelaten, download eerst een reserveexemplaar van het logboeken, dan verwijder hen:
+
+```bash
+rm -rf some-log-file.log.gz
+```
+
+U kunt ook afzonderlijke logbestanden afkappen om de bestandsgrootte te verkleinen. Voor een gedetailleerd voorbeeld van logboekdossierbeknotting, zie de videoleerprogramma&#39;s van de Boomstam van het Logboek van de Boomstam {target="_blank"}.
