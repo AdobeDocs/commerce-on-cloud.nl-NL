@@ -2,11 +2,11 @@
 title: Opmerkingen bij de release ECE-Tools
 description: Zie een lijst met de meest recente verbeteringen in het pakket ECE-Tools.
 recommendations: noDisplay, catalog
-last-substantial-update: 2024-02-06T00:00:00Z
+last-substantial-update: 2024-04-03T00:00:00Z
 exl-id: 3cbfe698-d75d-4a16-877a-52c214595344
-source-git-commit: 33f89e5c9af7c172ad0592b61343e285b456fc1a
+source-git-commit: 3d5c84890f48a26938b42783b591b876fd2a2fd1
 workflow-type: tm+mt
-source-wordcount: '3022'
+source-wordcount: '3059'
 ht-degree: 0%
 
 ---
@@ -28,8 +28,14 @@ De opmerkingen bij de release omvatten:
 
 <!--Add release notes below-->
 
-## v2002.2.1 {#latest}
+## v2002.2.2 {#latest}
 
+Releasedatum: 3 april 2025
+
+- ![ nieuw pictogram ](../../assets/new.svg) **Valkey** - toegevoegde steun voor de nieuwe dienst (Valkey), die een vervanging voor Redis is.<!-- MCLOUD-13455	 - -->
+- ![ fixpictogram ](../../assets/fix.svg) **Openssearch2 voor 2.4.4/2.4.5** - toegevoegde steun voor `opensearch2` in de versies van Adobe Commerce 2.4.4/2.4.5. <!-- MCLOUD-13493	 - -->
+
+## v2002.2.1
 
 Releasedatum: 6 februari 2024
 
@@ -94,7 +100,7 @@ Releasedatum: 10 maart 2023
 
 Releasedatum: 27 oktober 2022
 
-- ![ nieuw pictogram ](../../assets/new.svg) **Toegevoegde steun voor Adobe I/O Events voor Adobe Commerce**. De ontwikkelaars van de uitbreiding kunnen het [ Adobe I/O Events ](https://developer.adobe.com/events/docs/) kader nu gebruiken om de gebeurtenisinformatie van Commerce van de instanties van de Wolk naar hun toepassingen te verzenden die voor [ worden geschreven Adobe App Builder ](https://developer.adobe.com/app-builder/docs/overview/). Adobe I/O Events for Adobe Commerce is in de Voorproef van de Partner.<!-- CEXT-932 -->
+- ![ nieuw pictogram ](../../assets/new.svg) **Toegevoegde steun voor Adobe I/O Events voor Adobe Commerce**. De ontwikkelaars van de uitbreiding kunnen het [ Adobe I/O Events ](https://developer.adobe.com/events/docs/) kader nu gebruiken om de gebeurtenisinformatie van Commerce van de instanties van de Wolk naar hun toepassingen te verzenden die voor [ App Builder van Adobe ](https://developer.adobe.com/app-builder/docs/overview/) worden geschreven. Adobe I/O Events for Adobe Commerce is in de Voorproef van de Partner.<!-- CEXT-932 -->
 - ![ nieuw pictogram ](../../assets/new.svg) **Validator voor configuratie OPcache** - voegde een validator toe om de configuratie OPcache voor uitgesloten wegen te controleren.<!-- MCLOUD-9485 -->
 - ![ fixpictogram ](../../assets/fix.svg) **Vaste een kwestie met het geheim voorgeheugenconfiguratie van GraphQL** - nu ECE-Hulpmiddelen houdt de GraphQL `id_salt` waarde in `cache` configuratie in het `app/etc/env.php` dossier.<!-- MCLOUD-9486 -->
 
@@ -128,7 +134,7 @@ Releasedatum: 10 maart 2022
 - ![ herstellingspictogram ](../../assets/fix.svg) **symfony/proces** - voegde de verenigbaarheid met symfony/proces ^5.3 toe.<!-- MCLOUD-8283 -->
 
 - ![ nieuw pictogram ](../../assets/new.svg) **Verbruiks veelvoudige processen** - toegevoegd a `multiple_processes` optie zodat u het aantal processen kunt specificeren om voor elke consument te kweken. Zie de `CRON_CONSUMERS_RUNNER` veranderlijke beschrijving in [ stelt variabelen ](../environment/variables-deploy.md#cron_consumers_runner) op.<!-- MCLOUD-8295 -->
-- ![ nieuw pictogram ](../../assets/new.svg) **regeling OpenSearch en volledige gastheerweg** - voegde de capaciteit toe om een Elasticsearch regeling en volledige gastheerweg te vormen.
+- ![ nieuw pictogram ](../../assets/new.svg) **regeling OpenSearch en volledige gastheerweg** - voegde de capaciteit toe om een regeling van Elasticsearch en volledige gastheerweg te vormen.
 - ![ fixpictogram ](../../assets/fix.svg) **AWS S3** - veranderde de methode van AWS S3 enablement.
 - ![ fixpictogram ](../../assets/fix.svg) **Fix driver_options reader** - Toegevoegde het lezen driver_options configuratie voor de verbinding van DB van het `env.php` dossier door `ece-tools` voor validators.<!-- MCLOUD-8420 -->
 
@@ -159,13 +165,13 @@ Releasedatum: 20 april 2021
 
 - ![ nieuw pictogram ](../../assets/new.svg) **opnieuw afgeeft authentificatiegeloofsbrieven** - Toegevoegd de capaciteit om Redis vergunningsgeloofsbrieven van het `relationships` bezit tijdens op te stellen fase te lezen.<!--MCLOUD-7694-->
 
-- ![ nieuw pictogram ](../../assets/new.svg) **de autorisatiegeloofsbrieven van de Elasticsearch** - voegde de capaciteit toe om de geloofsbrieven van de autorisatie van de Elasticsearch van het `relationships` bezit tijdens op te stellen fase te lezen.<!--MCLOUD-7695-->
+- ![ nieuw pictogram ](../../assets/new.svg) **de vergunningsgeloofsbrieven van Elasticsearch** - voegde de capaciteit toe om de vergunningsgeloofsbrieven van Elasticsearch van het `relationships` bezit tijdens op te stellen fase te lezen.<!--MCLOUD-7695-->
 
 - ![ nieuw pictogram ](../../assets/new.svg) **Dedicated de dienst van de zittingsopslag** - toegevoegd `redis-session` als tweede optie voor zittingsopslag. U kunt de `redis-session` dienst gebruiken om zittingsinformatie op te slaan en de `redis` dienst voor geheim voorgeheugen te gebruiken om betere prestaties te verstrekken.<!--MCLOUD-7698-->
 
 - ![ nieuw pictogram ](../../assets/new.svg) **Afgekeurde SPLIT_DB- berichten** - Toegevoegde validatorwaarschuwing en kritieke berichten voor de afgekeurde `SPLIT_DB` optie voor Adobe Commerce 2.4.2 en zijn verwijdering in Adobe Commerce 2.5.0.<!--MCLOUD-7806-->
 
-- ![ herstellingspictogram ](../../assets/fix.svg) **versie van de Elasticsearch van verhoudingen** - Vaste Taafvalidator van de Dienst om de correcte versie van Elasticsearch van de `relationships` eigenschappen in de Server van de Wolk en integratiemilieu&#39;s terug te winnen.<!--MCLOUD-7572-->
+- ![ fixpictogram ](../../assets/fix.svg) **versie van Elasticsearch van verhoudingen** - Vaste de bevestiging van de Dienst om de correcte versie van Elasticsearch van de `relationships` eigenschappen in de Server van de Wolk en integratiemilieu&#39;s terug te winnen.<!--MCLOUD-7572-->
 
 - ![ herstellingspictogram ](../../assets/fix.svg) **Flexibele havenbevestiging** - kan nu de haven in een verbinding van het douanegeheime voorgeheugen van `server` URL bevestigen. U kunt bijvoorbeeld als volgt uw poortnummer aan de URL van de server toevoegen: `server: 'tcp://rfs-store-simple-page-cache:26379'` . Hiermee voorkomt u validatiefouten waarbij de optie `port` ontbreekt of onjuist is.<!--MCLOUD-7722-->
 
@@ -217,13 +223,13 @@ Releasedatum: 9 november 2020
 
 - ![ nieuw pictogram ](../../assets/new.svg) toegevoegde onderzoek-motor bevestiging om ervoor te zorgen dat `elasticsearch` voor Adobe Commerce op wolkeninfrastructuur 2.4 en later wordt geplaatst. Als de bevestiging ontbreekt, wordt de plaatsing tegengehouden met een kritiek foutenbericht dat oplossingen voor de kwestie voorstelt. Zie [ Kritieke Fouten, opstellen stadium ](../dev-tools/error-reference.md#deploy-stage).<!--MCLOUD-6937-->
 
-- ![ nieuw pictogram ](../../assets/new.svg) Toegevoegde bevestiging van de Elasticsearch om de verenigbaarheid tussen de de dienstversie van de Elasticsearch en de versie van Adobe Commerce te controleren.<!--MCLOUD-7193-->
+- ![ nieuw pictogram ](../../assets/new.svg) Toegevoegde bevestiging van Elasticsearch om de verenigbaarheid tussen de de dienstversie van Elasticsearch en de versie van Adobe Commerce te controleren.<!--MCLOUD-7193-->
 
-- ![ nieuw pictogram ](../../assets/new.svg) werkte het foutbericht van de de verenigbaarheidsfout van de Elasticsearch bij om de versies van Elasticsearch te tonen die met de module van de Elasticsearch van Adobe Commerce compatibel zijn. Het foutbericht bevat nu de specifieke versies voor Elasticsearch die in uw Cloud-infrastructuur moeten worden geïnstalleerd, zodat deze compatibel zijn met de module Elasticsearch die door uw versie van Adobe Commerce wordt gebruikt. Zie {de Fouten van de 0} Waarschuwing, opstellen stadium ](../dev-tools/error-reference.md#deploy-stage-1).<!--MCLOUD-6698-->[
+- ![ nieuw pictogram ](../../assets/new.svg) werkte het de verenigbaarheidsfoutenmelding van Elasticsearch bij om de versies van Elasticsearch te tonen die met de module van Adobe Commerce Elasticsearch compatibel zijn. Het foutbericht bevat nu de specifieke Elasticsearch-versies die in uw Cloud-infrastructuur moeten worden geïnstalleerd, zodat deze compatibel zijn met de Elasticsearch-module die door uw versie van Adobe Commerce wordt gebruikt. Zie {de Fouten van de 0} Waarschuwing, opstellen stadium ](../dev-tools/error-reference.md#deploy-stage-1).<!--MCLOUD-6698-->[
 
 - ![ nieuw pictogram ](../../assets/new.svg) Toegevoegde waarschuwingsfouten `2026` en `2027` voor ongeldige `MAGE_MODE` milieu veranderlijke het plaatsen. De enige geldige waarde is `production` . Vóór deze correctie kan `MAGE_MODE` zonder implementatiefouten op `developer` worden ingesteld, alleen om later fouten te veroorzaken bij het schrijven naar alleen-lezen bestanden. Zie [ de Fouten van de Waarschuwing ](../dev-tools/error-reference.md#warning-errors).<!--MCLOUD-6708-->
 
-- ](../../assets/fix.svg) Vaste bevestiging van het 0} fixpictogram {voor Redis, RabbitMQ, en de diensten MySQL om ervoor te zorgen dat deze versies met de versie van Adobe Commerce compatibel zijn. ![ Geldige versies van deze services worden nu naar de map `cloud.log` geschreven. <!--MCLOUD-7098-->
+- ![ fixpictogram ](../../assets/fix.svg) Vaste bevestiging voor Redis, RabbitMQ, en de diensten MySQL om ervoor te zorgen dat deze versies met de versie van Adobe Commerce compatibel zijn. Geldige versies van deze services worden nu naar de map `cloud.log` geschreven. <!--MCLOUD-7098-->
 
 - ![ fixpictogram ](../../assets/fix.svg) werkte `cloud.log` bij om de gezamenlijke verzoekgrens te omvatten om verzoeken tijdens geheim voorgeheugenwarmte te verzenden. Deze waarde wordt gevormd in [ WARM_UP_CONCURRENCY ](../environment/variables-post-deploy.md#warm_up_concurrency) post-opstellen variabele.<!--MCLOUD-5563-->
 
@@ -253,7 +259,7 @@ Releasedatum: 5 augustus 2020
 
    - Foutcode 102—Aanvullende controles toegevoegd voor problemen die optreden wanneer het `env.php` -bestand niet beschrijfbaar is <!--MCLOUD-6221-->
 
-- ![ nieuw pictogram ](../../assets/new.svg) voegde **QUALITY_PATCH** milieuvariabele toe om één of meerdere kwaliteitspatches te specificeren tijdens het plaatsingsproces van toepassing te zijn. Zie [ variabelen bouwen ](../environment/variables-build.md#quality_patches).<!--MCLOUD-6375-->
+- ![ nieuw pictogram ](../../assets/new.svg) voegde **QUALITY_PATCHES** milieuvariabele toe om één of meerdere kwaliteitspatches te specificeren tijdens het plaatsingsproces van toepassing te zijn. Zie [ variabelen bouwen ](../environment/variables-build.md#quality_patches).<!--MCLOUD-6375-->
 
 ## v2002.1.1
 
@@ -293,7 +299,7 @@ Releasedatum: 25 juni 2020
 
 - ![ nieuw pictogram ](../../assets/new.svg) **de verbeteringen van de Bevestiging** -
 
-   - ![ nieuw pictogram ](../../assets/new.svg) **Elasticsearch 7.x verenigbaarheidscontroles** - bijgewerkte bevestiging van de Elasticsearch voor Elasticsearch 7.x de controles van de softwareverenigbaarheid.<!--MCLOUD-5542-->
+   - ![ nieuw pictogram ](../../assets/new.svg) **Elasticsearch 7.x verenigbaarheidscontroles** - bijgewerkte bevestiging van Elasticsearch voor Elasticsearch 7.x de controles van de softwareverenigbaarheid.<!--MCLOUD-5542-->
 
    - ![ nieuw pictogram ](../../assets/new.svg) **Bijgewerkte de dienstversie en de bevestigingscontroles EOL** - bijgewerkte bevestiging om geïnstalleerde de dienstversies tegen Adobe Commerce 2.4 te controleren.<!--MCLOUD-6144-->
 
@@ -361,7 +367,7 @@ Releasedatum: 6 februari 2020
 
    - ![ nieuw pictogram ](../../assets/new.svg) Toegevoegde bevestiging om geïnstalleerde de dienstversies tegen de datum EOL voor elke dienst te controleren. Nu, ontvangen de klanten een bericht als een de dienstversie binnen drie maanden na de datum EOL is, en een waarschuwing als de datum EOL in het verleden is.<!--MAGECLOUD-4076-->
 
-   - ![ fixpictogram ](../../assets/fix.svg) Vaste een de configuratiekwestie van de Elasticsearch om ervoor te zorgen dat de correcte montages van de Elasticsearch in alle milieu&#39;s worden gevormd.<!--MAGECLOUD-4474-->
+   - ![ fixpictogram ](../../assets/fix.svg) Vaste een de configuratiekwestie van Elasticsearch om ervoor te zorgen dat de correcte montages van Elasticsearch in alle milieu&#39;s worden gevormd.<!--MAGECLOUD-4474-->
 
 >[!NOTE]
 >

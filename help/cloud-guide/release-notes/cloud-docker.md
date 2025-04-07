@@ -3,11 +3,11 @@ title: Cloud Docker-pakket
 description: Zie een lijst met de meest recente verbeteringen in het Cloud Docker-pakket.
 feature: Cloud, Docker, Release Notes
 recommendations: noDisplay, catalog
-last-substantial-update: 2025-02-06T00:00:00Z
+last-substantial-update: 2025-04-03T00:00:00Z
 exl-id: 95cf4f30-6bce-4bac-8e11-cfe53cac2c70
-source-git-commit: 7f62dbc7db9924abfe304b46ed62d9577471386d
+source-git-commit: 3d5c84890f48a26938b42783b591b876fd2a2fd1
 workflow-type: tm+mt
-source-wordcount: '3697'
+source-wordcount: '3710'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,14 @@ De opmerkingen bij de release omvatten:
 
 <!--Add release notes below-->
 
-## v1.4.1 {#latest}
+## v1.4.2 {#latest}
+
+Releasedatum: 3 april 2025
+
+- ![ nieuw pictogram ](../../assets/new.svg) **PHP 8.4** - toegevoegd `php-cli` 8.4 en `php-fpm` 8.4 beelden.
+
+
+## v1.4.1
 
 Releasedatum: 6 februari 2025
 
@@ -96,7 +103,7 @@ Releasedatum: 10 maart 2022
    - Bijgewerkte versie xDebug 3.1.2
    - Bijgewerkt xmlrpc 1.0.0RC3
 
-- ](../../assets/fix.svg) **Elasticsearch &amp; verbeteringen OpenSearch** - Verbeteringen in Elasticsearch en Dockerfiles OpenSearch; verwijder Elasticsearch 5.2 beeld.![
+- ![ fixpictogram ](../../assets/fix.svg) **verbeteringen Elasticsearch &amp; OpenSearch** - Verbeteringen in Elasticsearch en OpenSearch Dockerfiles; verwijderde Elasticsearch 5.2 beeld.
 - ![ fixpictogram ](../../assets/fix.svg) **Natriumuitbreiding** - Toegelaten de `sodium` uitbreiding door gebrek in alle PHP beelden.
 - ](../../assets/fix.svg) **het geheime voorgeheugenvolume van de Composer** - Vaste weg voor het geheim voorgeheugenvolume van Composer om in het voorgeheugen ondergebrachte Composer pakketten te hebben.![
 - ![ fixpictogram ](../../assets/fix.svg) **de beperking van het Geheugen in nginx** - Vaste beperking van geheugen in NGINX beeld.
@@ -146,7 +153,7 @@ Releasedatum: 20 april 2021
   ./vendor/bin/ece-docker build:compose --custom-registry=my-registry.example.com
   ```
 
-- ![ nieuw pictogram ](../../assets/new.svg) **Verwijderde oude versies van de Elasticsearch** - Verwijderde versies van de Elasticsearch 1.7 en 2.4 uit de beelden van de Elasticsearch.<!--MCLOUD-7504-->
+- ![ nieuw pictogram ](../../assets/new.svg) **Verwijderde oude versies van Elasticsearch** - Verwijderde versies van Elasticsearch 1.7 en 2.4 uit de beelden van Elasticsearch.<!--MCLOUD-7504-->
 - ![ nieuw pictogram ](../../assets/new.svg) **auto-produceert NGINX certificaten** - Verwijderde de bestaande certificaten uit het beeld NGINX. De NGINX-certificaten worden nu automatisch gegenereerd bij elke nieuwe implementatie voor verbeterde beveiliging.<!--MCLOUD-7396-->
 - ![ fixpictogram ](../../assets/fix.svg) **Toegelaten`opcache.validate_timestamps`** - Toegelaten `opcache.validate_timestamps` PHP plaatsend door gebrek op ontwikkelaarwijze. Het toelaten van deze het plaatsen verholpen de kwestie waar de veranderingen in het filesystem niet in Docker werden erkend.<!--MCLOUD-7466-->
 - ![ bevestigen pictogram ](../../assets/fix.svg) **Vast`build:custom:compose`** - Vaste het `build:custom:compose` bevel om een fout te werpen wanneer de dossiers niet tijdens het bouwstijlproces kunnen worden beschreven. Door een fout te genereren voorkomt u situaties waarin `docker-compose up` de verkeerde bestanden zou kunnen gebruiken. <!--MCLOUD-7457-->
@@ -190,13 +197,13 @@ Releasedatum: 9 november 2020
 
    - ![ fixpictogram ](../../assets/fix.svg) **container van het Gegevensbestand** - Vaste de gezondheidscontrole van de gegevensbestandcontainer door het vereiste gegevensbestandwachtwoord aan het bevel van de gezondheidscontrole toe te voegen.<!--MCLOUD-7122-->
 
-   - ![ nieuw pictogram ](../../assets/new.svg) **container van de Elasticsearch**
+   - ![ nieuw pictogram ](../../assets/new.svg) **de container van Elasticsearch**
 
-      - Toegevoegde steun voor Elasticsearch 7.9 voor verenigbaarheid met de aanstaande versies van Adobe Commerce.<!--MCLOUD-7190-->
+      - Extra ondersteuning voor Elasticsearch 7.9 voor compatibiliteit met komende Adobe Commerce-releases.<!--MCLOUD-7190-->
 
-      - **Elasticsearch plug-in configuratie** - Toegevoegde steun om de configuratieinformatie van de Elasticsearch plug-in van het `services.yaml` dossier te gebruiken om het `docker-compose.yaml` dossier voor een Dok van de Wolk voor het milieu van Commerce te produceren. Zie [ de stoppen van de Elasticsearch ](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#elasticsearch-plugins).<!--MCLOUD-2789-->
+      - **de insteekmoduleconfiguratie van Elasticsearch** - Toegevoegde steun om de informatie van de de insteekmoduleconfiguratie van Elasticsearch van het `services.yaml` dossier te gebruiken om het `docker-compose.yaml` dossier voor een Dok van de Wolk voor het milieu van Commerce te produceren. Zie [ de stoppen van Elasticsearch ](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#elasticsearch-plugins).<!--MCLOUD-2789-->
 
-      - **de insteekmodule van de Elasticsearch steun** - toegevoegde steun voor de volgende Elasticsearch stop-ins: `analysis-icu`, `analysis-phonetic`, `analysis-stempel`, en `analysis-nori`. De plug-ins `analysis-icu` en `analysis-phonetic` worden standaard geïnstalleerd. U kunt de plug-ins `analysis-stempel` en `analysis-nori` naar wens toevoegen of verwijderen. <!--MCLOUD-2789-->
+      - **de insteekmodule van Elasticsearch steunt** - toegevoegde steun voor de volgende insteekmodules van Elasticsearch: `analysis-icu`, `analysis-phonetic`, `analysis-stempel`, en `analysis-nori`. De plug-ins `analysis-icu` en `analysis-phonetic` worden standaard geïnstalleerd. U kunt de plug-ins `analysis-stempel` en `analysis-nori` naar wens toevoegen of verwijderen. <!--MCLOUD-2789-->
 
    - ![ nieuw pictogram ](../../assets/new.svg) **CLI container**
 
@@ -261,9 +268,9 @@ Releasedatum: 25 juni 2020
 
 - ![ nieuw pictogram ](../../assets/new.svg) **Toegevoegde steun voor de gespleten oplossing van de gegevensbestandprestaties** - nu kunt u een opslag vormen en opstellen gebruikend de Gesplitste oplossing van de gegevensbestandprestaties in het milieu van het Dok van de Wolk.<!--MCLOUD-3740-->
 
-- ![ nieuw pictogram ](../../assets/new.svg) **Steun voor Adobe Commerce en plaatsing van de Magento Open Source** - nu kunt u het Dok van de Wolk voor Commerce gebruiken om een lokale ontwikkelomgeving voor projecten op te stellen die niet op Adobe Commerce op wolkeninfrastructuur worden ontvangen.<!--MCLOUD-5667-->
+- ![ nieuw pictogram ](../../assets/new.svg) **Steun voor plaatsing van Adobe Commerce en Magento Open Source** - nu kunt u het Dok van de Wolk voor Commerce gebruiken om een lokale ontwikkelomgeving voor projecten op te stellen die niet op Adobe Commerce op wolkeninfrastructuur worden ontvangen.<!--MCLOUD-5667-->
 
-- ![ nieuw pictogram ](../../assets/new.svg) **Blackfire.io steun** - Toegevoegde steun om de {](https://developer.adobe.com/commerce/cloud-tools/docker/test/blackfire/) uitbreiding 4} Blackfire.io voor geautomatiseerde prestaties te gebruiken testend. [ [ Reparatie die door Adarsh Manickam van de Technologie van Zilker ](https://github.com/magento/magento-cloud-docker/pull/202) wordt voorgelegd <!--MCLOUD-5857-->
+- ![ nieuw pictogram ](../../assets/new.svg) **steun Blackfire.io** - Toegevoegde steun om de [ uitbreiding Blackfire.io ](https://developer.adobe.com/commerce/cloud-tools/docker/test/blackfire/) voor geautomatiseerde prestaties te gebruiken testend. [ Reparatie die door Adarsh Manickam van de Technologie van Zilker ](https://github.com/magento/magento-cloud-docker/pull/202) wordt voorgelegd <!--MCLOUD-5857-->
 
 - ![ nieuw pictogram ](../../assets/new.svg) **de updates van de Container**
 
@@ -291,15 +298,15 @@ Releasedatum: 25 juni 2020
 
       - Toegevoegde steun voor Elasticsearch 6.8, 7.2, 7.5, en 7.6.<!--MCLOUD-4050, MCLOUD-5855,MCLOUD-5860-->
 
-      - Toegevoegd de capaciteit om de [ de containerconfiguratie van de Elasticsearch ](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#elasticsearch-container) aan te passen wanneer u het Docker samenstelt configuratiedossier produceert.<!--MCLOUD-3059-->
+      - Toegevoegd de capaciteit om de [ de containerconfiguratie van Elasticsearch ](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#elasticsearch-container) aan te passen wanneer u het Docker samenstelt configuratiedossier produceert.<!--MCLOUD-3059-->
 
-      - De optie `--no-es` is toegevoegd aan de opties voor serviceconfiguratie voor het genereren van het configuratiebestand Docker Compose. Gebruik deze optie om de containerinstallatie van de Elasticsearch over te slaan en in plaats daarvan MySQL-zoekopdracht te gebruiken. Deze optie wordt slechts gesteund voor versies 2.3.5 van Adobe Commerce en vroeger.<!--MCLOUD-3766-->
+      - De optie `--no-es` is toegevoegd aan de opties voor serviceconfiguratie voor het genereren van het configuratiebestand Docker Compose. Gebruik deze optie om de installatie van de Elasticsearch-container over te slaan en MySQL-zoekopdracht te gebruiken. Deze optie wordt slechts gesteund voor versies 2.3.5 van Adobe Commerce en vroeger.<!--MCLOUD-3766-->
 
    - ![ nieuw pictogram ](../../assets/new.svg) **FPM-XDEBUG container** - voegde een optie van de de dienstconfiguratie toe om Xdebug voor het zuiveren PHP in uw milieu van het Dok van de Wolk te installeren en te vormen. Zie [ Xdebug ](https://developer.adobe.com/commerce/cloud-tools/docker/test/configure-xdebug/) vormen.<!--MCLOUD-4098-->
 
 - ![ nieuw pictogram ](../../assets/new.svg) **de configuratieveranderingen van de Docker**
 
-   - Toegevoegde gezondheidscontroles voor PHP-FPM, Redis, Elasticsearch, en MySQL de dienstcontainers van de Dok.<!--MCLOUD-3335 and MCLOUD-5856-->
+   - Added health checks for PHP-FPM, Redis, Elasticsearch, en MySQL de dienstcontainers van de Dok.<!--MCLOUD-3335 and MCLOUD-5856-->
 
    - Veranderde standaardwijze van de dossiersynchronisatie in `native` op de wijze van de Ontwikkelaar.<!--MCLOUD-3890 -->
 
@@ -316,8 +323,8 @@ Releasedatum: 25 juni 2020
 | Redis-cache wissen | `bin/magento-docker flush-redis` |
 | Varnish-cache wissen | `bin/magento-docker flush-varnish` |
 | De standaardinstallatie van Varnish overslaan | `.vendor/bin/ece-docker build:compose --no-varnish`<!--MCLOUD-2634--> |
-| [ pas Elasticsearch opties ](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#elasticsearch-container) aan | `.vendor/bin/ece-docker build:compose --es-env-var`<!--MCLOUD-3059--> |
-| [ verwijdert de configuratie van de Elasticsearch ](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#elasticsearch-container) | `.vendor/bin/ece-docker build:compose --no-es`<!--MCLOUD-3766--> |
+| [ pas de opties van Elasticsearch aan ](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#elasticsearch-container) | `.vendor/bin/ece-docker build:compose --es-env-var`<!--MCLOUD-3059--> |
+| [ verwijdert de configuratie van Elasticsearch ](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#elasticsearch-container) | `.vendor/bin/ece-docker build:compose --no-es`<!--MCLOUD-3766--> |
 | DB-container configureren met MySQL versie 5.6 of 5.7 | `./vendor/bin/ece-docker build:compose --db <mysql-version-number> --db-image mysql`<!--MCLOUD-5691--> |
 | Aangepaste basis-URL opgeven | `./vendor/bin/ece-docker build:compose --host=<hostname> --port=<port-number>`<!--MCLOUD-3063--> |
 | [ voeg container voor configuratie Xdebug ](https://developer.adobe.com/commerce/cloud-tools/docker/test/configure-xdebug/) toe | `.vendor/bin/ece-docker build:compose --mode developer --sync-engine native --with-xdebug`<!--MCLOUD-4098--> |
@@ -360,7 +367,7 @@ Releasedatum: 5 februari 2020
 
       - ![ nieuw pictogram ](../../assets/new.svg) **Auto-geproduceerde NGINX certificaten** - het de configuratiedossier van de Docker omvat nu de configuratie om NGINX certificaten voor de container van het Web auto-te produceren.<!--MAGECLOUD-4258-->
 
-   - ![ nieuw pictogram ](../../assets/new.svg) **Nieuwe container van Selenium** - Toegevoegd a [ container van Selenium ](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#selenium-container) om de toepassing van Adobe Commerce te steunen die het Magento het Functionele Testen Kader (MFTF) testen.<!--MAGECLOUD-4040-->
+   - ![ nieuw pictogram ](../../assets/new.svg) **Nieuwe container van Selenium** - toegevoegd a [ container van Selenium ](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#selenium-container) om de toepassing die van Adobe Commerce te steunen het gebruiken van het Functionele het Testen Kader van Magento (MFTF) testen.<!--MAGECLOUD-4040-->
 
    - ![ nieuw pictogram ](../../assets/new.svg) **[!DNL RabbitMQ]versiessteun** - werkte de [!DNL RabbitMQ] containerconfiguratie bij om [!DNL RabbitMQ] versie 3.8 te steunen.<!--MAGECLOUD-4674-->
 
@@ -416,4 +423,4 @@ Releasedatum: 5 februari 2020
 
    - ![ nieuw pictogram ](../../assets/new.svg) Toegevoegde bevestiging aan het plaatsingsproces voor lokale de ontwikkelomgevingen van de Docker om te verifiëren dat de het omgevingsconfiguratie van de Wolk de encryptiesleutel omvat die wordt vereist om het gegevensbestand te decrypteren. Nu, krijgt u een foutenmelding in het logboek als de milieuconfiguratie geen waarde voor de encryptiesleutel specificeert.<!--MAGECLOUD-4423-->
 
-   - ![ nieuw pictogram ](../../assets/new.svg) voegde een controle van de containergezondheid aan de dienst van de Elasticsearch toe om ervoor te zorgen dat de dienst klaar is alvorens met bouwstijl voort te gaan en verwerking op te stellen. Als de gezondheidscontrole een fout terugkeert, begint de container automatisch opnieuw.<!--MAGECLOUD-4456-->
+   - ![ nieuw pictogram ](../../assets/new.svg) voegde een controle van de containergezondheid aan de dienst van Elasticsearch toe om ervoor te zorgen dat de dienst klaar is alvorens met bouwstijl voort te gaan en verwerking op te stellen. Als de gezondheidscontrole een fout terugkeert, begint de container automatisch opnieuw.<!--MAGECLOUD-4456-->
