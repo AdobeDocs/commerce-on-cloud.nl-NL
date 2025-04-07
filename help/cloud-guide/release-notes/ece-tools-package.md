@@ -2,11 +2,11 @@
 title: Opmerkingen bij de release ECE-Tools
 description: Zie een lijst met de meest recente verbeteringen in het pakket ECE-Tools.
 recommendations: noDisplay, catalog
-last-substantial-update: 2024-04-03T00:00:00Z
+last-substantial-update: 2024-04-07T00:00:00Z
 exl-id: 3cbfe698-d75d-4a16-877a-52c214595344
-source-git-commit: 3d5c84890f48a26938b42783b591b876fd2a2fd1
+source-git-commit: 2522e606aebac79285793cd40428d3e064a3c1db
 workflow-type: tm+mt
-source-wordcount: '3059'
+source-wordcount: '3065'
 ht-degree: 0%
 
 ---
@@ -30,17 +30,17 @@ De opmerkingen bij de release omvatten:
 
 ## v2002.2.2 {#latest}
 
-Releasedatum: 3 april 2025
+Releasedatum: 7 april 2025
 
-- ![ nieuw pictogram ](../../assets/new.svg) **Valkey** - toegevoegde steun voor de nieuwe dienst (Valkey), die een vervanging voor Redis is.<!-- MCLOUD-13455	 - -->
-- ![ fixpictogram ](../../assets/fix.svg) **Openssearch2 voor 2.4.4/2.4.5** - toegevoegde steun voor `opensearch2` in de versies van Adobe Commerce 2.4.4/2.4.5. <!-- MCLOUD-13493	 - -->
+- ![ nieuw pictogram ](../../assets/new.svg) **Valkey** - toegevoegde steun voor de nieuwe dienst (Valkey), die een vervanging voor Redis is.&lt;!— MCLOUD-13455 —>
+- ![ fixpictogram ](../../assets/fix.svg) **Openssearch2 voor 2.4.4/2.4.5** - toegevoegde steun voor `opensearch2` in de versies van Adobe Commerce 2.4.4/2.4.5. &lt;!— MCLOUD-13493 —>
 
 ## v2002.2.1
 
 Releasedatum: 6 februari 2024
 
-- ![ nieuw pictogram ](../../assets/new.svg) **PHP 8.4** - toegevoegde steun voor PHP 8.4.<!-- MCLOUD-13145	 - -->
-- ![ fixpictogram ](../../assets/fix.svg) **Validator voor Openssearch** - Vaste validator die een misleidend bericht over de verkeerde versie van de dienst produceerde.<!-- MCLOUD-13184	 - -->
+- ![ nieuw pictogram ](../../assets/new.svg) **PHP 8.4** - toegevoegde steun voor PHP 8.4.<!-- MCLOUD-13145     - -->
+- ![ fixpictogram ](../../assets/fix.svg) **Validator voor Openssearch** - Vaste validator die een misleidend bericht over de verkeerde versie van de dienst produceerde.&lt;!— MCLOUD-13184 —>
 
 
 ## v2002.2.0
