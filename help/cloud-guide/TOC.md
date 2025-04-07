@@ -3,9 +3,9 @@ user-guide-title: Handleiding voor Commerce in de cloud
 user-guide-description: Leer hoe u de Adobe Commerce-toepassing beheert op cloudinfrastructuur.
 product: magento
 feature: Cloud
-source-git-commit: 4e107bb8696c3c7cb76a0a702624aeb754648f70
+source-git-commit: fd7879e8f3c9e1965cf4aa3d99824e577971529d
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '357'
 ht-degree: 4%
 
 ---
@@ -136,6 +136,7 @@ ht-degree: 4%
       + [OpenSearch](services/opensearch.md)
       + [KonijnMQ](services/rabbitmq.md)
       + [Redis](services/redis.md)
+      + [Valkey](services/valkey.md)
 + Snelle services {#cdn}
    + [Overzicht](cdn/fastly.md)
    + Snelle installatie {#setup-fastly}
