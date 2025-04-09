@@ -1,5 +1,5 @@
 ---
-source-git-commit: 6a686858394e65dfbb665bb76332ee13348dad7e
+source-git-commit: 9fbcca6f545276e7afedcdb6e6061a87dd8f2dd9
 workflow-type: tm+mt
 source-wordcount: '921'
 ht-degree: 0%
@@ -7,20 +7,20 @@ ht-degree: 0%
 ---
 # Gereedschappen
 
-**Versie**: 2002.2.1
+**Versie**: 2002.2.2
 
 Deze verwijzing bevat 34 opdrachten die beschikbaar zijn via het opdrachtregelprogramma van `ece-tools` .
 De eerste lijst wordt automatisch gegenereerd met de opdracht `ece-tools list` in Adobe Commerce op de cloud-infrastructuur.
 
 ## Algemeen
 
-Deze verwijzing wordt gegenereerd op basis van de toepassingscodebase. Om de inhoud te veranderen, _geef ons terugkoppelen_ (vind de verbinding bij het hogere recht). Voor bijdragerichtsnoeren, zie {de Bijdragen van de Code 0} ](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).[
+Deze verwijzing wordt gegenereerd op basis van de applicatiecodebase. Om de inhoud te wijzigen, _Geef ons feedback_ (zoek de link rechtsboven). Voor richtlijnen voor bijdragen, zie [Code Bijdragen](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
 
-### Algemene opties
+### Wereldwijde opties
 
 #### `--help`, `-h`
 
-Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
+Toon hulp voor de gegeven opdracht. Wanneer geen bevel vertoningshulp voor het lijstbevel wordt gegeven
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -41,29 +41,29 @@ Verhoog de breedheid van berichten: 1 voor normale output, 2 voor meer uitgebrei
 
 #### `--version`, `-V`
 
-Deze toepassingsversie weergeven
+Deze applicatieversie weergeven
 
-- Standaard: `false`
+- Verstek: `false`
 - Accepteert geen waarde
 
 #### `--ansi`
 
-ANSI-uitvoer forceren (of uitschakelen —no-ansi)
+Forceer (of schakel --no-ansi) ANSI-uitvoer uit
 
 - Accepteert geen waarde
 
 #### `--no-ansi`
 
-De optie &quot;—ansi&quot; negeren
+Delig de optie &quot;--ansi&quot;
 
-- Standaard: `false`
+- Verstek: `false`
 - Accepteert geen waarde
 
 #### `--no-interaction`, `-n`
 
-Geen interactieve vraag stellen
+Stel geen interactieve vraag
 
-- Standaard: `false`
+- Verstek: `false`
 - Accepteert geen waarde
 
 
@@ -73,28 +73,28 @@ Geen interactieve vraag stellen
 ece-tools _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [-a|--api-version API-VERSION] [-S|--symfony SYMFONY]
 ```
 
-Interne opdracht voor suggesties voor shell-voltooiing
+Intern commando om suggesties voor het voltooien van de shell te geven
 
 ### Opties
 
-Voor globale opties, zie [ Globale opties ](#global-options).
+Zie [Globale opties voor algemene opties](#global-options).
 
 #### `--shell`, `-s`
 
-Het schelpdiertype (&quot;bash&quot;, &quot;fish&quot;, &quot;zsh&quot;)
+Het schelptype (&quot;bash&quot;, &quot;fish&quot;, &quot;zsh&quot;)
 
 - Vereist een waarde
 
 #### `--input`, `-i`
 
-Een array van invoertokens (bv. COMP_WORDS of argv)
+Een array van invoertokens (bijv. COMP_WORDS of argv)
 
-- Standaard: `[]`
+- Verstek: `[]`
 - Vereist een waarde
 
 #### `--current`, `-c`
 
-De index van de &quot;input&quot;-array waarin de cursor zich bevindt (bijvoorbeeld COMP_CWORD)
+De index van de &quot;input&quot;-array waarin de cursor zich bevindt (bijv. COMP_CWORD)
 
 - Vereist een waarde
 
@@ -117,7 +117,7 @@ verouderd
 ece-tools build
 ```
 
-Builds-toepassing.
+Bouwt applicatie.
 
 ### Opties
 
@@ -169,7 +169,7 @@ Het shell type (bijvoorbeeld &quot;bash&quot;), de waarde van &quot;$SHELL&quot;
 
 ### Opties
 
-Voor globale opties, zie [ Globale opties ](#global-options).
+Zie [Globale opties voor algemene opties](#global-options).
 
 #### `--debug`
 
@@ -191,9 +191,9 @@ Maakt databaseback-ups.
 
 #### `databases`
 
-Databases voor back-up. Beschikbare Waarden: [ belangrijkste citaatverkoop ]. Als de argumentwaarde niet wordt gespecificeerd, zullen de gegevensbestandsteunen worden gecreeerd gebruikend de geloofsbrieven die in `MAGENTO_CLOUD_RELATIONSHIP` worden opgeslagen omgevingsvariabele of/en het `stage.deploy.DATABASE_CONFIGURATION` bezit van het .magento.env.yaml configuratiedossier.
+Databases voor back-up. Beschikbare waarden: [belangrijkste offerte verkoop]. Als de argumentwaarde niet is opgegeven, worden databaseback-ups gemaakt met behulp van de referenties die zijn opgeslagen in de `MAGENTO_CLOUD_RELATIONSHIP` omgevingsvariabele en/of de `stage.deploy.DATABASE_CONFIGURATION` eigenschap van het .magento.env.yaml-configuratiebestand.
 
-- Standaard: `[]`
+- Verstek: `[]`
 - Array
 
 ### Opties
@@ -233,7 +233,7 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 ece-tools help [--format FORMAT] [--raw] [--] [<command_name>]
 ```
 
-Help weergeven voor een opdracht
+Help voor een opdracht weergeven
 
 ```
 The help command displays help for a given command:
@@ -251,26 +251,26 @@ To display the list of available commands, please use the list command.
 
 #### `command_name`
 
-De opdrachtnaam
+De naam van de opdracht
 
-- Standaard: `help`
+- Verstek: `help`
 
 ### Opties
 
-Voor globale opties, zie [ Globale opties ](#global-options).
+Zie [Globale opties voor algemene opties](#global-options).
 
 #### `--format`
 
-De uitvoerindeling (txt, xml, json of md)
+Het uitvoerformaat (txt, xml, json of md)
 
-- Standaard: `txt`
+- Verstek: `txt`
 - Vereist een waarde
 
 #### `--raw`
 
-Help bij de opdracht Uitvoeren
+Help om ruwe opdrachten uit te voeren
 
-- Standaard: `false`
+- Verstek: `false`
 - Accepteert geen waarde
 
 
@@ -280,7 +280,7 @@ Help bij de opdracht Uitvoeren
 ece-tools list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
 ```
 
-Lijstopdrachten
+Opdrachten weergeven
 
 ```
 The list command lists all commands:
@@ -304,11 +304,11 @@ It's also possible to get raw list of commands (useful for embedding command run
 
 #### `namespace`
 
-De naamruimtenaam
+De naam van de naamruimte
 
 ### Opties
 
-Voor globale opties, zie [ Globale opties ](#global-options).
+Zie [Globale opties voor algemene opties](#global-options).
 
 #### `--raw`
 
@@ -342,7 +342,7 @@ Hiermee past u aangepaste patches toe.
 
 ### Opties
 
-Voor globale opties, zie [ Globale opties ](#global-options).
+Zie [Globale opties voor algemene opties](#global-options).
 
 
 ## `post-deploy`
@@ -351,11 +351,11 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 ece-tools post-deploy
 ```
 
-Voert uit na plaatsingsverrichtingen.
+Voert uit na implementatiebewerkingen.
 
 ### Opties
 
-Voor globale opties, zie [ Globale opties ](#global-options).
+Zie [Globale opties voor algemene opties](#global-options).
 
 
 ## `run`
@@ -364,7 +364,7 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 ece-tools run <scenario>...
 ```
 
-Voer scenario(s) uit.
+Scenario(&#39;s) uitvoeren.
 
 ### Argumenten
 
@@ -401,17 +401,17 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 ece-tools backup:restore [-f|--force] [--file [FILE]]
 ```
 
-Belangrijke configuratiebestanden herstellen. Back-up uitvoeren:lijst met reservekopieën weergeven.
+Belangrijke configuratiebestanden herstellen. Voer backup:list uit om de lijst met back-upbestanden weer te geven.
 
 ### Opties
 
-Voor globale opties, zie [ Globale opties ](#global-options).
+Zie [Globale opties voor algemene opties](#global-options).
 
 #### `--force`, `-f`
 
-Bestaande bestanden overschrijven tijdens het herstellen van een back-up
+Bestaande bestanden overschrijven tijdens het terugzetten van een back-up
 
-- Standaard: `false`
+- Verstek: `false`
 - Accepteert geen waarde
 
 #### `--file`
@@ -459,13 +459,13 @@ Maakt een `.magento.env.yaml` -bestand met de opgegeven configuratie van variabe
 
 #### `configuration`
 
-Configuratie in JSON-indeling
+Configuratie in JSON-formaat
 
 - Vereist
 
 ### Opties
 
-Voor globale opties, zie [ Globale opties ](#global-options).
+Zie [Globale opties voor algemene opties](#global-options).
 
 
 ## `cloud:config:update`
@@ -474,19 +474,19 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 ece-tools cloud:config:update <configuration>
 ```
 
-Werkt het bestaande `.magento.env.yaml` dossier met de gespecificeerde configuratie bij. Maakt een `.magento.env.yaml` -bestand als dit niet bestaat.
+Werkt het bestaande `.magento.env.yaml` bestand bij met de opgegeven configuratie. Maakt `.magento.env.yaml` een bestand aan als het niet bestaat.
 
 ### Argumenten
 
 #### `configuration`
 
-Configuratie in JSON-indeling
+Configuratie in JSON-formaat
 
 - Vereist
 
 ### Opties
 
-Voor globale opties, zie [ Globale opties ](#global-options).
+Zie [Globale opties voor algemene opties](#global-options).
 
 
 ## `cloud:config:validate`
@@ -495,11 +495,11 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 ece-tools cloud:config:validate
 ```
 
-Valideert het configuratiebestand `.magento.env.yaml`
+Valideert `.magento.env.yaml` het configuratiebestand
 
 ### Opties
 
-Voor globale opties, zie [ Globale opties ](#global-options).
+Zie [Globale opties voor algemene opties](#global-options).
 
 
 ## `config:dump`
@@ -508,11 +508,11 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 ece-tools config:dumpdump
 ```
 
-Vorm van de pomp voor statische inhoudsplaatsing.
+Dumpconfiguratie voor de implementatie van statische inhoud.
 
 ### Opties
 
-Voor globale opties, zie [ Globale opties ](#global-options).
+Zie [Globale opties voor algemene opties](#global-options).
 
 
 ## `cron:disable`
@@ -521,7 +521,7 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 ece-tools cron:disable
 ```
 
-Schakel alle processen voor het uitsnijden van Magento&#39;s uit en beëindigt alle actieve processen.
+Alle Magento-snijprocessen uitschakelen en alle actieve processen beëindigen.
 
 ### Opties
 
@@ -534,7 +534,7 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 ece-tools cron:enable
 ```
 
-Hiermee schakelt u snijprocessen voor Magento&#39;s in.
+Hiermee schakelt u Magento-snijprocessen in.
 
 ### Opties
 
@@ -547,7 +547,7 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 ece-tools cron:kill
 ```
 
-Beëindigt alle processen van de Magento kruin.
+Beëindigt alle Magento-snijprocessen.
 
 ### Opties
 
@@ -564,13 +564,13 @@ Ontgrendel de banen van de kroon die in &quot;lopende&quot;staat bleven.
 
 ### Opties
 
-Voor globale opties, zie [ Globale opties ](#global-options).
+Zie [Globale opties voor algemene opties](#global-options).
 
 #### `--job-code`
 
-Taakcode uitsnijden die moet worden ontgrendeld.
+Cron-taakcode om te ontgrendelen.
 
-- Standaard: `[]`
+- Verstek: `[]`
 - Accepteert meerdere waarden
 
 
@@ -580,7 +580,7 @@ Taakcode uitsnijden die moet worden ontgrendeld.
 ece-tools dev:generate:schema-error
 ```
 
-Genereert het bestand dist/error-codes.md uit het bestand schema.error.yaml.
+Genereert het bestand dist/error-codes.md op basis van het bestand schema.error.yaml.
 
 ### Opties
 
@@ -606,7 +606,7 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 ece-tools env:config:show [<variable>...]
 ```
 
-Gecodeerde omgevingsvariabelen voor cloudconfiguratie weergeven.
+Geef gecodeerde omgevingsvariabelen voor cloudconfiguratie weer.
 
 ### Argumenten
 
@@ -619,7 +619,7 @@ Te tonen omgevingsvariabelen, mogelijke opties: services, routes, variabelen
 
 ### Opties
 
-Voor globale opties, zie [ Globale opties ](#global-options).
+Zie [Globale opties voor algemene opties](#global-options).
 
 
 ## `error:show`
@@ -628,13 +628,13 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 ece-tools error:show [-j|--json] [--] [<error-code>]
 ```
 
-Hier wordt informatie weergegeven over fout-id of informatie over alle fouten van de laatste implementatie.
+Geeft informatie weer over fouten per fout-id of informatie over alle fouten van de laatste implementatie.
 
 ### Argumenten
 
 #### `error-code`
 
-Foutcode: als er geen informatie over de opdrachtweergave wordt doorgegeven over alle fouten van de laatste implementatie
+Foutcode, indien niet doorgegeven, geeft informatie weer over alle fouten van de laatste implementatie
 
 ### Opties
 
@@ -667,11 +667,11 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 ece-tools schema:generate
 ```
 
-Genereert het schema *.dist-bestand.
+Genereert het schema *.dist bestand.
 
 ### Opties
 
-Voor globale opties, zie [ Globale opties ](#global-options).
+Zie [Globale opties voor algemene opties](#global-options).
 
 
 ## `wizard:ideal-state`
@@ -680,11 +680,11 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 ece-tools wizard:ideal-state
 ```
 
-Verifieert ideale staat van configuratie.
+Verifieert de ideale configuratiestatus.
 
 ### Opties
 
-Voor globale opties, zie [ Globale opties ](#global-options).
+Zie [Globale opties voor algemene opties](#global-options).
 
 
 ## `wizard:master-slave`
@@ -693,11 +693,11 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 ece-tools wizard:master-slave
 ```
 
-Verifieert master-slave configuratie.
+Controleert de master-slave-configuratie.
 
 ### Opties
 
-Voor globale opties, zie [ Globale opties ](#global-options).
+Zie [Globale opties voor algemene opties](#global-options).
 
 
 ## `wizard:scd-on-build`
@@ -706,11 +706,11 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 ece-tools wizard:scd-on-build
 ```
 
-Verifieert SCD bij bouwstijlconfiguratie.
+Controleert SCD bij buildconfiguratie.
 
 ### Opties
 
-Voor globale opties, zie [ Globale opties ](#global-options).
+Zie [Globale opties voor algemene opties](#global-options).
 
 
 ## `wizard:scd-on-demand`
@@ -719,11 +719,11 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 ece-tools wizard:scd-on-demand
 ```
 
-Verifieert SCD op bestelling configuratie.
+Controleert de configuratie van SCD op aanvraag.
 
 ### Opties
 
-Voor globale opties, zie [ Globale opties ](#global-options).
+Zie [Globale opties voor algemene opties](#global-options).
 
 
 ## `wizard:scd-on-deploy`
@@ -732,11 +732,11 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 ece-tools wizard:scd-on-deploy
 ```
 
-Verifieert SCD bij opstellen configuratie.
+Controleert SCD bij implementatieconfiguratie.
 
 ### Opties
 
-Voor globale opties, zie [ Globale opties ](#global-options).
+Zie [Globale opties voor algemene opties](#global-options).
 
 
 ## `wizard:split-db-state`
@@ -745,7 +745,7 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 ece-tools wizard:split-db-state
 ```
 
-Controleert de mogelijkheid om DB te splitsen en of DB al gesplitst was of niet.
+Controleert de mogelijkheid om DB te splitsen en of DB al was gesplitst of niet.
 
 ### Opties
 
