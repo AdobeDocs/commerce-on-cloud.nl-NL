@@ -2,7 +2,8 @@
 title: Eigenschappen
 description: Gebruik de bezitslijst als verwijzing wanneer configuratie de  [!DNL Commerce]  toepassing voor bouwt en aan de wolkeninfrastructuur opstelt.
 feature: Cloud, Configuration, Build, Deploy, Roles/Permissions, Storage
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 32bd1f64-43d6-48a3-84b7-bea22f125bb0
+source-git-commit: 1cea1cdebf3aba2a1b43f305a61ca6b55e3b9d08
 workflow-type: tm+mt
 source-wordcount: '816'
 ht-degree: 0%
@@ -54,7 +55,7 @@ De eigenschap `build` bepaalt wat er standaard gebeurt bij het bouwen van het pr
 
 ```yaml
 # The toolstack used to build the application.
-type: php:8.3
+type: php:8.4
 build:
     flavor: none
 
@@ -129,13 +130,13 @@ Zie [ PHP montages ](php-settings.md) voor details over het toelaten van uitbrei
 
 ## `disk`
 
-Definieert de permanente schijfgrootte van de toepassing in MB.
+Definieert de persistente schijfgrootte van de toepassing in MB.
 
 ```yaml
 disk: 5120
 ```
 
-De minimale aanbevolen schijfgrootte is 256 MB. Als de fout `UserError: Error building the project: Disk size may not be smaller than 128MB` wordt weergegeven, vergroot u de grootte tot 256 MB.
+De minimale aanbevolen schijfgrootte is 256 MB. Als u de fout `UserError: Error building the project: Disk size may not be smaller than 128MB`ziet, vergroot u de grootte naar 256 MB.
 
 >[!NOTE]
 >
