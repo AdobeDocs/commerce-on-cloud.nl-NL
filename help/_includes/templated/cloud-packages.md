@@ -1,7 +1,7 @@
 ---
-source-git-commit: 0df07e865c3c4fc4ac14483972643eafa8814726
+source-git-commit: 5567f425f28cb4d19aaa0db80f0ede1fd525a686
 workflow-type: tm+mt
-source-wordcount: '2191'
+source-wordcount: '2275'
 ht-degree: 0%
 
 ---
@@ -23,17 +23,17 @@ Adobe Commerce on cloud Infrastructure gebruikt Composer om PHP-pakketten te beh
 
 In het bestand `composer.json` wordt de lijst met pakketten gedeclareerd, terwijl in het bestand van `composer.lock` een volledige lijst met pakketten (een volledige versie van elk pakket en de bijbehorende afhankelijkheden) is opgeslagen die zijn gebruikt om een installatie van Adobe Commerce te maken.
 
-De volgende referentiedocumentatie wordt gegenereerd uit het `composer.lock` -bestand en heeft betrekking op vereiste pakketten die in Adobe Commerce zijn opgenomen op cloudinfrastructuur 2.4.7.
+De volgende referentiedocumentatie wordt gegenereerd uit het `composer.lock` -bestand en heeft betrekking op vereiste pakketten die in Adobe Commerce zijn opgenomen op cloudinfrastructuur 2.4.8-p1.
 
 ## Afhankelijkheden
 
-`magento/magento-cloud-metapackage 2.4.7` heeft de volgende afhankelijkheden:
+`magento/magento-cloud-metapackage 2.4.8-p1` heeft de volgende afhankelijkheden:
 
 ```config
 fastly/magento2: ^1.2.34
-magento/ece-tools: ^2002.1.0
+magento/ece-tools: ^2002.2.0
 magento/module-paypal-on-boarding: ~100.5.0
-magento/product-enterprise-edition: >=2.4.7 <2.4.8
+magento/product-enterprise-edition: >=2.4.8 <2.4.9
 ```
 
 ## Licenties van derden
@@ -49,13 +49,6 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
     </tr>
   </thead>
   <tbody>
-  <tr>
-    <td>
-      <a href="https://github.com/elastic/elasticsearch-php.git"> elasticsearch/elasticsearch </a>
-    </td>
-    <td>bibliotheek</td>
-    <td>PHP-client voor Elasticsearch</td>
-  </tr>
   <tr>
     <td>
       <a href="https://github.com/opensearch-project/opensearch-php.git"> openssearch-project/openssearch-php </a>
@@ -100,10 +93,24 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/opentelemetry-php/api.git"> open-telemetry/api </a>
+    </td>
+    <td>bibliotheek</td>
+    <td>API voor OpenTelemetry PHP.</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/opentelemetry-php/context.git"> open-telemetrie/context </a>
+    </td>
+    <td>bibliotheek</td>
+    <td>Context-implementatie voor OpenTelemetry PHP.</td>
+  </tr>
+  <tr>
+    <td>
       paypal/module-breintree
     </td>
     <td>pakket</td>
-    <td>Magento Braintree</td>
+    <td>Braintree Magento</td>
   </tr>
   <tr>
     <td>
@@ -177,6 +184,13 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/duosecurity/duo_universal_php.git"> duosecurity/duo_Universal_php </a>
+    </td>
+    <td>bibliotheek</td>
+    <td>Een PHP-implementatie van de Duo Universal SDK.</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/fastly/fastly-magento2.git"> faals/magento2 </a>
     </td>
     <td>magento2-module</td>
@@ -188,13 +202,6 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
     </td>
     <td>bibliotheek</td>
     <td>Een eenvoudige bibliotheek voor het coderen en decoderen van JSON Web Tokens (JWT) in PHP. Moet in overeenstemming zijn met de huidige specificatie.</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/google/recaptcha.git"> google/recaptcha </a>
-    </td>
-    <td>bibliotheek</td>
-    <td>Clientbibliotheek voor reCAPTCHA, een gratis service die websites beschermt tegen spam en misbruik.</td>
   </tr>
   <tr>
     <td>
@@ -216,20 +223,6 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
     </td>
     <td>bibliotheek</td>
     <td>biedt een geneste, op objecteigenschappen gebaseerde gebruikersinterface voor toegang tot deze configuratiegegevens binnen de toepassingscode</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/laminas/laminas-crypt.git"> laminas/laminas-crypt </a>
-    </td>
-    <td>bibliotheek</td>
-    <td>Krachtige cryptografie en wachtwoordhashing</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/laminas/laminas-db.git"> laminas/laminas-db </a>
-    </td>
-    <td>bibliotheek</td>
-    <td>De abstractielaag van het gegevensbestand, SQL abstractie, resultaatvastgestelde abstractie, en implementaties RowDataGateway en TableDataGateway</td>
   </tr>
   <tr>
     <td>
@@ -258,13 +251,6 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
     </td>
     <td>bibliotheek</td>
     <td>biedt functionaliteit voor het maken en gebruiken van RSS- en Atom-feeds</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/laminas/laminas-file.git"> laminas/laminas-dossier </a>
-    </td>
-    <td>bibliotheek</td>
-    <td>PHP-lesbestanden zoeken</td>
   </tr>
   <tr>
     <td>
@@ -303,27 +289,6 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-mail.git"> laminas/laminas-mail </a>
-    </td>
-    <td>bibliotheek</td>
-    <td>Verstrekt algemene functionaliteit om zowel tekst als MIME-Volgzame meerdelige e-mailberichten samen te stellen en te verzenden</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/laminas/laminas-math.git"> laminas/laminas-math </a>
-    </td>
-    <td>bibliotheek</td>
-    <td>Cryptografisch veilige pseudo-willekeurige getallen maken en grote gehele getallen beheren</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/laminas/laminas-mime.git"> laminas/laminas-mime </a>
-    </td>
-    <td>bibliotheek</td>
-    <td>MIME-berichten en -onderdelen maken en parseren</td>
-  </tr>
-  <tr>
-    <td>
       <a href="https://github.com/laminas/laminas-modulemanager.git"> laminas/laminas-modulemanager </a>
     </td>
     <td>bibliotheek</td>
@@ -335,13 +300,6 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
     </td>
     <td>bibliotheek</td>
     <td>De gebeurtenis-gedreven laag MVC van Laminas, met inbegrip van Toepassingen MVC, Controllers, en Insteekmodules</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/laminas/laminas-oauth.git"> laminas/laminas-oauth </a>
-    </td>
-    <td>bibliotheek</td>
-    <td></td>
   </tr>
   <tr>
     <td>
@@ -408,6 +366,13 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/laminas/laminas-translator.git"> laminas/laminas-vertaler </a>
+    </td>
+    <td>bibliotheek</td>
+    <td>Interfaces voor de component Translator van laminas-i18n</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/laminas/laminas-uri.git"> laminas/laminas-uri </a>
     </td>
     <td>bibliotheek</td>
@@ -429,10 +394,24 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/marc-mabe/php-enum.git"> marc-mabe/php-enum </a>
+    </td>
+    <td>bibliotheek</td>
+    <td>Eenvoudige en snelle implementatie van opsommingen met native PHP</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/nikic/PHP-Parser.git"> nikic/php-parser </a>
     </td>
     <td>bibliotheek</td>
     <td>Een PHP parser geschreven in PHP</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/phpfui/recaptcha.git"> phpfui/recaptcha </a>
+    </td>
+    <td>bibliotheek</td>
+    <td>Clientbibliotheek voor Google reCAPTCHA voor PHP 8.4 en hoger</td>
   </tr>
   <tr>
     <td>
@@ -537,7 +516,7 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
       <a href="https://github.com/braintree/braintree_php.git"> breintree/braintree_php </a>
     </td>
     <td>bibliotheek</td>
-    <td>Braintree PHP-clientbibliotheek</td>
+    <td>Braintree PHP Client Library</td>
   </tr>
   <tr>
     <td>
@@ -632,6 +611,34 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/doctrine/lexer.git"> doctrine/lexer </a>
+    </td>
+    <td>bibliotheek</td>
+    <td>PHP Doctrine Lexer parser bibliotheek die gebruikt kan worden in top-down, Recursive Descent Parsers.</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/egulias/EmailValidator.git"> egulias/e-mail-validator </a>
+    </td>
+    <td>bibliotheek</td>
+    <td>Een bibliotheek voor het valideren van e-mailberichten op verschillende RFC's</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/elastic/elastic-transport-php.git"> elastic/vervoer </a>
+    </td>
+    <td>bibliotheek</td>
+    <td>HTTP transport PHP bibliotheek voor Elastic producten</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/elastic/elasticsearch-php.git"> elasticsearch/elasticsearch </a>
+    </td>
+    <td>bibliotheek</td>
+    <td>PHP-client voor Elasticsearch</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/endroid/qr-code.git"> endroid/qr-code </a>
     </td>
     <td>bibliotheek</td>
@@ -695,6 +702,13 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/illuminate/conditionable.git"> verlicht/conditionable </a>
+    </td>
+    <td>bibliotheek</td>
+    <td>Het Conditionable pakket van de Belichting.</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/illuminate/config.git"> verlicht/config </a>
     </td>
     <td>bibliotheek</td>
@@ -737,6 +751,13 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/thephpleague/flysystem-local.git"> liga/flysystem-local </a>
+    </td>
+    <td>bibliotheek</td>
+    <td>Lokale bestandssysteemadapter voor Flysystem.</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/thephpleague/mime-type-detection.git"> liga/mime-type-opsporing </a>
     </td>
     <td>bibliotheek</td>
@@ -758,7 +779,7 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/briannesbitt/Carbon.git"> nesbot/koolstof </a>
+      <a href="https://github.com/CarbonPHP/carbon.git"> nesbot/koolstof </a>
     </td>
     <td>bibliotheek</td>
     <td>Een API-extensie voor DateTime die ondersteuning biedt voor 281 verschillende talen.</td>
@@ -782,7 +803,28 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
       <a href="https://github.com/MyIntervals/emogrifier.git"> pelago/emogrifier </a>
     </td>
     <td>bibliotheek</td>
-    <td>Hiermee converteert u CSS-stijlen naar inline-stijlkenmerken in uw HTML-code</td>
+    <td>Hiermee zet u CSS-stijlen om in inline stijlkenmerken in uw HTML-code</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/php-http/discovery.git"> php-http/discovery </a>
+    </td>
+    <td>composer-plug-in</td>
+    <td>Vindt en installeert PSR-7, PSR-17, PSR-18 en HTTPlug implementaties</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/php-http/httplug.git"> php-http/httplug </a>
+    </td>
+    <td>bibliotheek</td>
+    <td>HTTPlug, de HTTP client abstractie voor PHP</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/php-http/promise.git"> php-http/promise </a>
+    </td>
+    <td>bibliotheek</td>
+    <td>Promise die voor asynchrone HTTP- verzoeken wordt gebruikt</td>
   </tr>
   <tr>
     <td>
@@ -961,6 +1003,13 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/symfony/clock.git"> symfony/klok </a>
+    </td>
+    <td>bibliotheek</td>
+    <td>Ontkoppelt toepassingen van de systeemklok</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/symfony/config.git"> symfony/config </a>
     </td>
     <td>bibliotheek</td>
@@ -1066,6 +1115,20 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/symfony/mailer.git"> symfony/mailer </a>
+    </td>
+    <td>bibliotheek</td>
+    <td>Hulp bij het verzenden van e-mails</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/symfony/mime.git"> symfony/mime </a>
+    </td>
+    <td>bibliotheek</td>
+    <td>MIME-berichten kunnen worden bewerkt</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/symfony/polyfill-ctype.git"> symfony/polyfill-type </a>
     </td>
     <td>bibliotheek</td>
@@ -1101,13 +1164,6 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/symfony/polyfill-php72.git"> symfony/polyfill-php72 </a>
-    </td>
-    <td>bibliotheek</td>
-    <td>Symfony polyfill geeft een aantal functies van PHP 7.2+ terug naar lagere PHP versies</td>
-  </tr>
-  <tr>
-    <td>
       <a href="https://github.com/symfony/polyfill-php73.git"> symfony/polyfill-php73 </a>
     </td>
     <td>bibliotheek</td>
@@ -1126,6 +1182,13 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
     </td>
     <td>bibliotheek</td>
     <td>Symfony polyfill geeft een aantal functies van PHP 8.1+ terug naar lagere PHP versies</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/symfony/polyfill-php82.git"> symfony/polyfill-php82 </a>
+    </td>
+    <td>bibliotheek</td>
+    <td>Symfony polyfill geeft een aantal functies van PHP 8.2+ terug naar lagere PHP versies</td>
   </tr>
   <tr>
     <td>
@@ -1213,13 +1276,6 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/webmozarts/assert.git"> webmozart/beweert </a>
-    </td>
-    <td>bibliotheek</td>
-    <td>Bevestigingen om methodeinput/output met aardige foutenmeldingen te bevestigen.</td>
-  </tr>
-  <tr>
-    <td>
       <a href="https://github.com/webonyx/graphql-php.git"> webonyx/graphql-php </a>
     </td>
     <td>bibliotheek</td>
@@ -1255,6 +1311,13 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
   </tr>
   <tr>
     <td>
+      paypal/module-braintree-gift-card
+    </td>
+    <td>magento2-module</td>
+    <td>NVT</td>
+  </tr>
+  <tr>
+    <td>
       paypal/module-braintree-gift-card-account
     </td>
     <td>magento2-module</td>
@@ -1270,6 +1333,13 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
   <tr>
     <td>
       paypal/module-braintree-graph-ql
+    </td>
+    <td>magento2-module</td>
+    <td>NVT</td>
+  </tr>
+  <tr>
+    <td>
+      paypal/module-braintree-promise
     </td>
     <td>magento2-module</td>
     <td>NVT</td>
