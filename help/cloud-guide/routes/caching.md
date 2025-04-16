@@ -2,9 +2,10 @@
 title: Caching
 description: Leer hoe u caching inschakelt voor uw Adobe Commerce in omgevingen met cloudinfrastructuren.
 feature: Cloud, Cache, Routes
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: e73c36d6-9a58-45c0-9220-86074c1f46f0
+source-git-commit: a1ed2818cbaf5adf8b673df0ee9b9218e6f700a2
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---
@@ -130,7 +131,7 @@ Er is een speciaal geval als de `cookies` -toets de `["*"]` -waarde heeft. Deze 
 
 Cookies hebben de volgende beperkingen:
 
-- U kunt maximum van **50 koekjes** in het systeem plaatsen. Anders genereert de toepassing een `Unable to send the cookie. Maximum number of cookies would be exceeded` -uitzondering.
+- Er is een vastgestelde maximum van **50 koekjes** in het systeem. Anders genereert de toepassing een `Unable to send the cookie. Maximum number of cookies would be exceeded` -uitzondering. Om het aantal koekjes aan 200 te verhogen, pas het [ MDVA-12304 flard ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html) toe gebruikend het [ Hulpmiddel van de Patches van de Kwaliteit ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/tools/quality-patch-tool).
 - Een maximumkoekjesgrootte is **4096 bytes**. Anders genereert de toepassing een `Unable to send the cookie. Size of '%name' is %size bytes` -uitzondering.
 
 ### `default_ttl`
