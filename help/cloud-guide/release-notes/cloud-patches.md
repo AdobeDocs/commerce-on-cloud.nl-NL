@@ -2,11 +2,11 @@
 title: Cloudpatches voor Commerce
 description: Zie een lijst met de meest recente verbeteringen in het pakket met cloudpatches.
 recommendations: noDisplay, catalog
-last-substantial-update: 2025-04-15T00:00:00Z
+last-substantial-update: 2025-04-24T00:00:00Z
 exl-id: a4454ebc-72a4-42c1-b591-6237c97fe913
-source-git-commit: cebf68dfc1722a055a6217fa50552116d216d579
+source-git-commit: db8d20cdf999657c059202131111e71faf50b8e9
 workflow-type: tm+mt
-source-wordcount: '2372'
+source-wordcount: '2402'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,13 @@ Het pakket `magento/magento-cloud-patches` gebruikt de volgende versiereeks: `<m
 
 <!--Add release notes below-->
 
-## v1.1.5 {#latest}
+## v1.1.6 {#latest}
+
+Releasedatum: 24 april 2025
+
+- ![ nieuw pictogram ](../../assets/new.svg) **Bijgewerkt flard voor Commerce 2.4.4 aan 2.4.7** - dit is een bijgewerkt flard voor [ CVE-2025-24434 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08), dat in 1.1.4 <!-- MCLOUD-13240 --> werd vrijgegeven
+
+## v1.1.5
 
 Releasedatum: 15 april 2025
 
