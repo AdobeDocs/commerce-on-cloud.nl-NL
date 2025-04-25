@@ -1,13 +1,13 @@
 ---
-source-git-commit: 713008d26d05f05e3e39e33c0d0df766f4dbe0b0
+source-git-commit: 2207508cf769b712705de5d41e0876ed60e5f614
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 # Gereedschappen
 
-**Versie**: 2002.2.3
+**Versie**: 2002.2.4
 
 Deze verwijzing bevat 34 opdrachten die beschikbaar zijn via het opdrachtregelprogramma van `ece-tools` .
 De eerste lijst wordt automatisch gegenereerd met de opdracht `ece-tools list` in Adobe Commerce op de cloud-infrastructuur.
