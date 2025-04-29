@@ -2,9 +2,10 @@
 title: Cacheconfiguratie aanpassen
 description: Leer hoe u de instellingen van de cacheconfiguratie kunt controleren en aanpassen nadat de service Fastly is ingesteld.
 feature: Cloud, Configuration, Iaas, Cache
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: f6901931-7b3f-40a8-9514-168c6243cc43
+source-git-commit: dcf585e25a4b06ff903642e42e72a71820bad008
 workflow-type: tm+mt
-source-wordcount: '1808'
+source-wordcount: '1857'
 ht-degree: 0%
 
 ---
@@ -17,7 +18,7 @@ In de volgende secties vindt u een overzicht en instructies voor het configurere
 
 ## TLS forceren
 
-Verstrekt snel de _Kracht TLS_ optie voor het opnieuw richten van ongecodeerde verzoeken (HTTP) aan Fastly. Nadat uw het Opvoeren of milieu van de Productie van het Staging is voorzien met a [ geldig SSL/TLS certificaat ](fastly-configuration.md#provision-ssltls-certificates), kunt u de Snelle configuratie voor uw opslag bijwerken om de optie van TLS van de Kracht toe te laten. Zie de Snelle [ gids van TLS van de Kracht ](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/FORCE-TLS.md) in de _Snelle Module CDN voor Magento 2_ documentatie.
+Verstrekt snel de _Kracht TLS_ optie voor het opnieuw richten van ongecodeerde verzoeken (HTTP) aan Fastly. Nadat uw het Opvoeren of milieu van de Productie van het Staging is voorzien met a [ geldig SSL/TLS certificaat ](fastly-configuration.md#provision-ssltls-certificates), kunt u de Snelle configuratie voor uw opslag bijwerken om de optie van TLS van de Kracht toe te laten. Zie de Fastly [ gids van TLS van de Kracht ](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/FORCE-TLS.md) in de _Fastly CDN Module voor Magento 2_ documentatie.
 
 >[!NOTE]
 >
@@ -30,6 +31,8 @@ In de Fastly-serviceconfiguratie wordt een standaardtime-outperiode van 180 seco
 Om bulkacties te voltooien die langer dan 3 minuten duren verander de _onderbrekingen van de weg Admin_ value_ om 503 fouten te verhinderen.
 
 >[!NOTE]
+>
+>Als u een eindpunt van de Weg van douaneAdmin in het **gebied van de Weg van Admin van de Douane in** Opslag **>** Configuratie **>** Geavanceerd **>** Admin **>** Admin Basis URL **hebt gespecificeerd, zult u ook de [ variabele ADMIN_URL ](../environment/variables-admin.md#change-the-admin-url) in dat milieu moeten plaatsen op dezelfde waarde.** Als de instellingen verschillen, werkt de time-out niet.
 >
 >Om snel onderbrekingsparameters voor buiten Admin in Snelle UI uit te breiden, zie [ Onderbreking van de Verhoging voor Lange Banen ](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/Edge-Modules/EDGE-MODULE-INCREASE-TIMEOUTS-LONG-JOBS.md).
 
@@ -51,7 +54,7 @@ Hiermee wordt het beheerpad voor het genereren van het VCL-bestand snel opgehaal
 
 ## Opties voor leegmaken configureren
 
-Kies deze optie om snel meerdere typen verwijderingsopties op de pagina Cache Management van uw Magento te plaatsen, waaronder opties voor het leegmaken van de productcategorie, de productelementen en de inhoud. Wanneer deze optie is ingeschakeld, zoekt Fastly naar gebeurtenissen om deze cache automatisch leeg te maken. Als u een optie voor leegmaken uitschakelt, kunt u de cache met snelheden handmatig leegmaken nadat de updates via de pagina Cachebeheer zijn voltooid.
+Kies deze optie om snel meerdere typen verwijderingsopties op de Magento Cache Management-pagina weer te geven, waaronder opties voor het leegmaken van de productcategorie, de productelementen en de inhoud. Wanneer deze optie is ingeschakeld, zoekt Fastly naar gebeurtenissen om deze cache automatisch leeg te maken. Als u een optie voor leegmaken uitschakelt, kunt u de cache met snelheden handmatig leegmaken nadat de updates via de pagina Cachebeheer zijn voltooid.
 
 De volgende opties voor leegmaken zijn beschikbaar:
 
