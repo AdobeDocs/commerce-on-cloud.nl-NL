@@ -19,7 +19,7 @@ In deze handleiding wordt ervan uitgegaan dat u enige praktische kennis en inzic
 
 - [ de Documentatie van de Ontwikkelaar van Adobe Commerce ](https://developer.adobe.com/commerce/docs/) (plaats van Adobe Developer) - ontwikkelt, past, integreert, breidt, en gebruikt geavanceerde mogelijkheden uit
 
-- [ de Documentatie van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce.html) (Adobe Experience League) - Plan, voert uit, werkt, bevordert en handhaaft uw projecten van Commerce
+- [ de Documentatie van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce.html?lang=nl-NL) (Adobe Experience League) - Plan, voert uit, werkt, bevordert en handhaaft uw projecten van Commerce
 
 >[!TIP]
 >

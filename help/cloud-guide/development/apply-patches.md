@@ -14,15 +14,15 @@ ht-degree: 0%
 [ de Patches van de Wolk voor Commerce ](https://github.com/magento/magento-cloud-patches) en het [ Hulpmiddel van de Patches van de Kwaliteit ](https://github.com/magento/quality-patches) leveren flarden aan uw geïnstalleerde toepassing van Adobe Commerce.
 
 - Het Cloud Patches for Commerce-pakket biedt vereiste patches met kritieke oplossingen
-- De flarden van de kwaliteit leveren facultatieve, low-impact kwaliteitsmoeilijke situaties als [ individuele flarden ](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/versioning-policy.html#individual-patch) die achterwaartse onverenigbare veranderingen niet bevatten
+- De flarden van de kwaliteit leveren facultatieve, low-impact kwaliteitsmoeilijke situaties als [ individuele flarden ](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/versioning-policy.html?lang=nl-NL#individual-patch) die achterwaartse onverenigbare veranderingen niet bevatten
 
-Zie [ Beschikbare Patches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in de _Gids van de Hulpmiddelen van de Verrichtingen van Commerce_ om een volledige lijst van vrijgegeven flarden te herzien.
+Zie [ Beschikbare Patches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) in de _Gids van de Hulpmiddelen van de Verrichtingen van Commerce_ om een volledige lijst van vrijgegeven flarden te herzien.
 
 Beide pakketten verbeteren de integratie van alle Adobe Commerce-versies met Cloud-omgevingen en ondersteunen snelle levering van kritieke, optionele en aangepaste oplossingen. U kunt deze pakketten gebruiken om algemene informatie over alle afzonderlijke patches die beschikbaar zijn voor Commerce toe te passen, terug te draaien en weer te geven.
 
 >[!TIP]
 >
->U kunt het [ Hulpmiddel van de Patches van de Kwaliteit ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en de Patches van de Wolk voor Commerce als stand-alone pakketten voor Magento Open Source en de projecten van Adobe Commerce gebruiken. We raden u aan het gereedschap Kwaliteitspatches te gebruiken voor niet-cloud-projecten.
+>U kunt het [ Hulpmiddel van de Patches van de Kwaliteit ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) en de Patches van de Wolk voor Commerce als stand-alone pakketten voor Magento Open Source en de projecten van Adobe Commerce gebruiken. We raden u aan het gereedschap Kwaliteitspatches te gebruiken voor niet-cloud-projecten.
 
 Wanneer u wijzigingen in de externe omgeving implementeert, gebruikt het `ece-tools` -pakket `magento/magento-cloud-patches` en `magento/quality-patches` om te controleren op in behandeling zijnde patches en past het deze automatisch toe in de volgende volgorde:
 

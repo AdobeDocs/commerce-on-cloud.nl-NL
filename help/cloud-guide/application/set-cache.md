@@ -15,7 +15,7 @@ De cache-TTL (time-to-live) voor uw media en statische bestanden wordt in het co
 
 >[!NOTE]
 >
->Voordat u de productieomgeving bijwerkt, is het belangrijk dat u de wijzigingen in de testomgeving test. [ leg een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voor hulp met het bijwerken van de configuratie op deze milieu&#39;s voor.
+>Voordat u de productieomgeving bijwerkt, is het belangrijk dat u de wijzigingen in de testomgeving test. [ leg een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voor hulp met het bijwerken van de configuratie op deze milieu&#39;s voor.
 
 1. Geef de TTL-tijd (in seconden) op in de eigenschap [`web` ](web-property.md) van het `.magento.app.yaml` -bestand. U kunt de `expires` -toets toevoegen onder `locations` of onder `"/media"` en `"/static"` .
 

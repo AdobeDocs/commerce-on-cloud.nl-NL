@@ -61,7 +61,7 @@ Bekijk deze best practices en overwegingen voor uw implementatieproces:
 
 - **verifieer de dienstversies en verhoudingen en de capaciteit om** te verbinden
 
-  Controleer welke services beschikbaar zijn voor uw toepassing en zorg ervoor dat u de meest actuele, compatibele versie gebruikt. Zie &lbrace;de verhoudingen van de Dienst [&#128279;](../services/services-yaml.md#service-relationships) en [ vereisten van het Systeem ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in de _gids van de Installatie_ voor geadviseerde versies.
+  Controleer welke services beschikbaar zijn voor uw toepassing en zorg ervoor dat u de meest actuele, compatibele versie gebruikt. Zie &lbrace;de verhoudingen van de Dienst [&#128279;](../services/services-yaml.md#service-relationships) en [ vereisten van het Systeem ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=nl-NL) in de _gids van de Installatie_ voor geadviseerde versies.
 
 - **Test plaatselijk en in het integratiemilieu alvorens aan het Opvoeren en Productie** op te stellen
 
@@ -117,7 +117,7 @@ In deze fase wordt ook `composer install` uitgevoerd om afhankelijkheden op te h
 Deze fase bouwt de codebase en voert haken in de `build` sectie van `.magento.app.yaml` uit. De standaardbuild-haak is de opdracht `php ./vendor/bin/ece-tools` en voert het volgende uit:
 
 - Past patches toe in `vendor/magento/ece-patches` en optionele, projectspecifieke patches in `m2-hotfixes`
-- Regenereert code en de [ configuratie van de gebiedsdeelinjectie ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary) (namelijk de `generated/` folder, die `generated/code` en `generated/metapackage` omvat) gebruikend `bin/magento setup:di:compile`.
+- Regenereert code en de [ configuratie van de gebiedsdeelinjectie ](https://experienceleague.adobe.com/nl/docs/commerce-operations/implementation-playbook/glossary) (namelijk de `generated/` folder, die `generated/code` en `generated/metapackage` omvat) gebruikend `bin/magento setup:di:compile`.
 - Controleert of het [`app/etc/config.php`](../store/store-settings.md) -bestand in de codebase bestaat. Adobe Commerce genereert dit bestand automatisch als het tijdens de constructiefase niet wordt gedetecteerd en bevat een lijst met modules en extensies. Als het bestaat, gaat de bouwstijlfase als normaal verder, comprimeert statische dossiers gebruikend GZIP, en stelt op, die onderbreking in de plaatsingsfase vermindert. Verwijs naar [ bouwt opties ](../environment/variables-build.md) om over het aanpassen van of het onbruikbaar maken van dossiercompressie te leren.
 
 >[!WARNING]
@@ -144,7 +144,7 @@ De schuine streep omvat alle dossiers en omslagen **exclusief de volgende** in `
 
 ### Fase 4: Slakken en cluster implementeren
 
-Uw toepassingen en alle [ achterste ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary) de dienstvoorziening als volgt:
+Uw toepassingen en alle [ achterste ](https://experienceleague.adobe.com/nl/docs/commerce-operations/implementation-playbook/glossary) de dienstvoorziening als volgt:
 
 - Elke service in een container koppelen, zoals een webserver, OpenSearch, [!DNL RabbitMQ]
 - Hiermee wordt het lees-schrijfbestandssysteem gemonteerd (op een opslagraster met hoge beschikbaarheid)
@@ -170,13 +170,13 @@ Als het `app/etc/config.php` -bestand niet bestaat in de codebase, worden statis
 
 Er zijn twee implementatiehaken. De `pre-deploy.php` haak voltooit noodzakelijke schoonmaak en terugwinning van middelen en code die in de bouwstijlhaak wordt geproduceerd. Met de `php ./vendor/bin/ece-tools deploy` -haak wordt een reeks opdrachten en scripts uitgevoerd:
 
-- Als Adobe Commerce **niet geïnstalleerd** is, installeert het met `bin/magento setup:install`, werkt de plaatsingsconfiguratie, `app/etc/env.php`, en het gegevensbestand voor uw gespecificeerde milieu, zoals Redis en website URLs bij. **Belangrijk:** toen u de [ Eerste plaatsing ](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/launch/overview.html) tijdens opstelling voltooide, werd Adobe Commerce geïnstalleerd en over alle milieu&#39;s opgesteld.
+- Als Adobe Commerce **niet geïnstalleerd** is, installeert het met `bin/magento setup:install`, werkt de plaatsingsconfiguratie, `app/etc/env.php`, en het gegevensbestand voor uw gespecificeerde milieu, zoals Redis en website URLs bij. **Belangrijk:** toen u de [ Eerste plaatsing ](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/launch/overview.html?lang=nl-NL) tijdens opstelling voltooide, werd Adobe Commerce geïnstalleerd en over alle milieu&#39;s opgesteld.
 
 - Als Adobe Commerce **&#x200B;**&#x200B;geïnstalleerd is, voer om het even welke noodzakelijke verbeteringen uit. Het plaatsingsmanuscript stelt `bin/magento setup:upgrade` in werking om het gegevensbestandschema en de gegevens (die na uitbreiding of kerncode updates noodzakelijk is) bij te werken, en werkt ook de plaatsingsconfiguratie, `app/etc/env.php`, en het gegevensbestand voor uw milieu bij. Tot slot wist het plaatsingsmanuscript het geheime voorgeheugen van Adobe Commerce.
 
 - Het script genereert optioneel statische webinhoud met de opdracht `magento setup:static-content:deploy` .
 
-- Gebruikt werkingsgebied (`-s` vlag in bouwstijlmanuscripten) met het gebrek dat van `quick` voor de statische strategie van de inhoudsplaatsing plaatst. U kunt de strategie aanpassen met de omgevingsvariabele [`SCD_STRATEGY`](../environment/variables-deploy.md#scd_strategy) . Voor details op deze opties en eigenschappen, zie [ Statische strategieën van de dossierplaatsing ](../deploy/static-content.md) en de `-s` vlag voor [ Statische meningsdossiers ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html) opstellen.
+- Gebruikt werkingsgebied (`-s` vlag in bouwstijlmanuscripten) met het gebrek dat van `quick` voor de statische strategie van de inhoudsplaatsing plaatst. U kunt de strategie aanpassen met de omgevingsvariabele [`SCD_STRATEGY`](../environment/variables-deploy.md#scd_strategy) . Voor details op deze opties en eigenschappen, zie [ Statische strategieën van de dossierplaatsing ](../deploy/static-content.md) en de `-s` vlag voor [ Statische meningsdossiers ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html?lang=nl-NL) opstellen.
 
 >[!NOTE]
 >

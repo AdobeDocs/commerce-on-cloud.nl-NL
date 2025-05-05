@@ -140,7 +140,7 @@ De minimale aanbevolen schijfgrootte is 256 MB. Als u de fout `UserError: Error 
 
 >[!NOTE]
 >
->Voor Pro het Opvoeren en van de Productie milieu&#39;s, moet u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voorleggen om de `mounts` en `disk` configuratie voor uw toepassing bij te werken. Wanneer u het ticket verzendt, geeft u de vereiste configuratiewijzigingen aan en neemt u een bijgewerkte versie van het `.magento.app.yaml` -bestand op.
+>Voor Pro het Opvoeren en van de Productie milieu&#39;s, moet u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voorleggen om de `mounts` en `disk` configuratie voor uw toepassing bij te werken. Wanneer u het ticket verzendt, geeft u de vereiste configuratiewijzigingen aan en neemt u een bijgewerkte versie van het `.magento.app.yaml` -bestand op.
 >
 >Het is niet mogelijk om de schijfopslag in Staging of Productie tijdelijk te verhogen; dit proces is niet omkeerbaar.
 
@@ -191,7 +191,7 @@ De indeling voor het toevoegen van de hoeveelheid aan deze lijst is als volgt:
 
 >[!NOTE]
 >
->Voor Pro het Opvoeren en van de Productie milieu&#39;s, moet u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voorleggen om de `mounts` en `disk` configuratie voor uw toepassing bij te werken. Wanneer u het ticket verzendt, geeft u de vereiste configuratiewijzigingen aan en neemt u een bijgewerkte versie van het `.magento.app.yaml` -bestand op.
+>Voor Pro het Opvoeren en van de Productie milieu&#39;s, moet u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voorleggen om de `mounts` en `disk` configuratie voor uw toepassing bij te werken. Wanneer u het ticket verzendt, geeft u de vereiste configuratiewijzigingen aan en neemt u een bijgewerkte versie van het `.magento.app.yaml` -bestand op.
 
 U kunt het koppelingsweb toegankelijk maken door het toe te voegen aan het [`web`](web-property.md) -blok met locaties.
 

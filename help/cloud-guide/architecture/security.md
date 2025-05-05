@@ -66,9 +66,9 @@ De Adobe test regelmatig de kerntoepassingscode op veiligheidskwetsbaarheid. Pat
 - OWASPZAP
 - andSqlMap
 
-De volledige codebasis wordt gescand met deze hulpmiddelen op een tweewekelijkse basis. De klanten worden op de hoogte gebracht van veiligheidspatches door directe e-mail, berichten in de toepassing, en in het [ Centrum van de Veiligheid ](https://helpx.adobe.com/security.html).
+De volledige codebasis wordt gescand met deze hulpmiddelen op een tweewekelijkse basis. De klanten worden op de hoogte gebracht van veiligheidspatches door directe e-mail, berichten in de toepassing, en in het [ Centrum van de Veiligheid ](https://helpx.adobe.com/nl/security.html).
 
-Klanten moeten ervoor zorgen dat deze patches binnen 30 dagen na de release op hun aangepaste toepassing worden toegepast, volgens de PCI-richtlijnen. De Adobe verstrekt ook het Hulpmiddel van het Scannen van de a [ Veiligheid ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) dat verkopers toelaat om hun plaatsen regelmatig te controleren en updates over bekende veiligheidsrisico&#39;s, malware, en onbevoegde toegang te ontvangen. Het hulpprogramma Beveiligingsscan is gratis en kan worden uitgevoerd op elke versie van Adobe Commerce.
+Klanten moeten ervoor zorgen dat deze patches binnen 30 dagen na de release op hun aangepaste toepassing worden toegepast, volgens de PCI-richtlijnen. De Adobe verstrekt ook het Hulpmiddel van het Scannen van de a [ Veiligheid ](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/security/security-scan) dat verkopers toelaat om hun plaatsen regelmatig te controleren en updates over bekende veiligheidsrisico&#39;s, malware, en onbevoegde toegang te ontvangen. Het hulpprogramma Beveiligingsscan is gratis en kan worden uitgevoerd op elke versie van Adobe Commerce.
 
 Om veiligheidsonderzoekers aan te moedigen om kwetsbaarheid te identificeren en te melden, heeft Adobe Commerce a [ insect-hinderlijk programma ](https://hackerone.com/magento) naast interne het testen. Bovendien wordt de klant de volledige broncode van de toepassing verstrekt voor hun eigen overzicht indien gewenst.
 
@@ -108,7 +108,7 @@ GDPR dringt erop aan dat alle persoonlijk identificeerbare informatie (zoals nam
 
 >[!NOTE]
 >
->Deze pagina biedt een algemeen overzicht van wat u in overweging kunt nemen voor GDPR. Zie de _[Gids van de Veiligheid en van de Naleving ](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/overview)_ voor details over hoe Adobe Commerce persoonlijke informatie opslaat. Om te bepalen hoe uw zaken om het even welke wettelijke verplichtingen zouden moeten naleven, raadpleeg uw wettelijke raadsman of verwijs naar de [ officiële tekst ](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
+>Deze pagina biedt een algemeen overzicht van wat u in overweging kunt nemen voor GDPR. Zie de _[Gids van de Veiligheid en van de Naleving ](https://experienceleague.adobe.com/nl/docs/commerce-operations/security-and-compliance/overview)_ voor details over hoe Adobe Commerce persoonlijke informatie opslaat. Om te bepalen hoe uw zaken om het even welke wettelijke verplichtingen zouden moeten naleven, raadpleeg uw wettelijke raadsman of verwijs naar de [ officiële tekst ](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
 
 ## Back-ups
 

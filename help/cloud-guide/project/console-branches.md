@@ -33,7 +33,7 @@ De vertakkingsstrategie gebruikt een algemene Git-workflow waar u code ontwikkel
 
 Uw rekening steunt een beperkt aantal ![ actieve tak ](../../assets/icon-active.png){width="32"} (active) and an unlimited number of ![inactive branch](../../assets/icon-inactive.png){width="32"} (inactieve) ontwikkelingstakken. Actieve en inactieve vertakkingen beheren door een vertakking toe te voegen of te verwijderen met alleen de vertakking [!DNL Cloud Console] of de Cloud CLI. Alvorens u een tak kunt schrappen, deactiveert u de tak, die in de _1&rbrace; lijst van Milieu&#39;s &lbrace;als_ inactief _blijft._ U kunt de tak later opnieuw activeren of u kunt [ de tak ](../dev-tools/cloud-cli-overview.md#) in milieumontages schrappen of Cloud CLI gebruiken.
 
-Als u extra actieve milieu&#39;s voor ontwikkeling nodig hebt, leg a [ kaartje van de Steun ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voor.
+Als u extra actieve milieu&#39;s voor ontwikkeling nodig hebt, leg a [ kaartje van de Steun ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voor.
 
 **om een tak** toe te voegen:
 

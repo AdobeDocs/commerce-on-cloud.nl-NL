@@ -58,14 +58,14 @@ SELECT average(cpuPercent) FROM SystemSample FACET hostname, apmApplicationNames
 
 ## Automatisch schalen inschakelen
 
-Om auto het schrapen voor uw Adobe Commerce op het project van de wolkeninfrastructuur toe te laten of onbruikbaar te maken, [ leg een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voor. Kies de volgende redenen in het ticket:
+Om auto het schrapen voor uw Adobe Commerce op het project van de wolkeninfrastructuur toe te laten of onbruikbaar te maken, [ leg een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voor. Kies de volgende redenen in het ticket:
 
 - **reden van het Contact**: Verzoek van de Verandering van de infrastructuur
 - **Reden van het Contact van de Infrastructuur van Adobe Commerce**: Andere Verzoek van de Verandering van de Infrastructuur
 
 >[!IMPORTANT]
 >
->Met de functie voor automatisch schalen worden onverwachte gebeurtenissen vastgelegd. Zelfs als u toegelaten auto het schrapen hebt, adviseert de Adobe dat u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) blijft voorleggen als u een aanstaande gebeurtenis verwacht.
+>Met de functie voor automatisch schalen worden onverwachte gebeurtenissen vastgelegd. Zelfs als u toegelaten auto het schrapen hebt, adviseert de Adobe dat u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) blijft voorleggen als u een aanstaande gebeurtenis verwacht.
 
 ### Laden testen
 

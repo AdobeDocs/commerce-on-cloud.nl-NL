@@ -30,7 +30,7 @@ De volgende instructies gebruiken een combinatie van `magento-cloud` bevelen CLI
 
 **om een project `master` milieu** te klonen:
 
-1. Login aan uw lokaal werkstation met de eigenaar van het a [ dossiersysteem ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html) rekening.
+1. Login aan uw lokaal werkstation met de eigenaar van het a [ dossiersysteem ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html?lang=nl-NL) rekening.
 
 1. Verandering in de Webserver of virtuele gastheer _docroot_ folder.
 

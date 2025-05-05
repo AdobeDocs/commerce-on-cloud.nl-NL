@@ -171,7 +171,7 @@ U kunt de configuratiegegevens voor alle de dienstverhoudingen van de [`$MAGENTO
 
 ## Serviceversies
 
-Serviceversie en compatibiliteitsondersteuning voor Adobe Commerce op cloudinfrastructuur worden bepaald door versies die worden geïmplementeerd en getest op de cloudinfrastructuur en verschillen soms van versies die worden ondersteund door Adobe Commerce-implementaties op locatie. Zie {de vereisten van het 0} Systeem [&#128279;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in de _gids van de Installatie_ voor een lijst van derdesoftware gebiedsdelen die de Adobe met specifieke versies van Adobe Commerce en van de Magento Open Source heeft getest.
+Serviceversie en compatibiliteitsondersteuning voor Adobe Commerce op cloudinfrastructuur worden bepaald door versies die worden geïmplementeerd en getest op de cloudinfrastructuur en verschillen soms van versies die worden ondersteund door Adobe Commerce-implementaties op locatie. Zie {de vereisten van het 0} Systeem [&#128279;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=nl-NL) in de _gids van de Installatie_ voor een lijst van derdesoftware gebiedsdelen die de Adobe met specifieke versies van Adobe Commerce en van de Magento Open Source heeft getest.
 
 ### Software EOL-controles
 

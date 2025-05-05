@@ -18,7 +18,7 @@ Wanneer MFA op een project wordt toegelaten, vereisen alle gebruikersrekeningen 
 
 >[!NOTE]
 >
->MFA is niet standaard ingeschakeld voor Cloud-projecten. De eigenaar van de Rekening voor Adobe Commerce op het project van de wolkeninfrastructuur moet [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voorleggen om het toe te laten. Wanneer MFA wordt toegelaten, moeten alle gebruikers dubbel-factor authentificatie (TFA) hebben die op hun Adobe Commerce op de rekening van de wolkeninfrastructuur voor de toegang van SSH tot de projectmilieu&#39;s wordt toegelaten.
+>MFA is niet standaard ingeschakeld voor Cloud-projecten. De eigenaar van de Rekening voor Adobe Commerce op het project van de wolkeninfrastructuur moet [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voorleggen om het toe te laten. Wanneer MFA wordt toegelaten, moeten alle gebruikers dubbel-factor authentificatie (TFA) hebben die op hun Adobe Commerce op de rekening van de wolkeninfrastructuur voor de toegang van SSH tot de projectmilieu&#39;s wordt toegelaten.
 
 ## Certificaten voor SSH-toegang
 

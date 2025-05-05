@@ -9,8 +9,8 @@ ht-degree: 0%
 
 Deze site bevat de meest recente ontwikkelaarsdocumentatie voor Commerce on Cloud Infrastructure.
 
-- [ Commerce op de Gids van de Infrastructuur van de Wolk ](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/overview.html)
-- [ krijgen Begonnen met Commerce ](https://experienceleague.adobe.com/docs/commerce-on-cloud/start/overview.html) op de infrastructuur van de Wolk
+- [ Commerce op de Gids van de Infrastructuur van de Wolk ](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/overview.html?lang=nl-NL)
+- [ krijgen Begonnen met Commerce ](https://experienceleague.adobe.com/docs/commerce-on-cloud/start/overview.html?lang=nl-NL) op de infrastructuur van de Wolk
 
 ## Adobe Open gedragscode van Source
 
@@ -19,7 +19,7 @@ Zie [ bijdragend ](contributing.md) artikel.
 
 ### Kleine wijzigingen
 
-Als u minder belangrijke updates bijdraagt, open het artikel en klik **uitgeven** verbinding, die u aan de bron GitHub voor het artikel neemt. Gebruik GitHub UI om uw updates te maken. Zie de algemene [ de bijdragegids van Docs van de Adobe ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+Als u minder belangrijke updates bijdraagt, open het artikel en klik **uitgeven** verbinding, die u aan de bron GitHub voor het artikel neemt. Gebruik GitHub UI om uw updates te maken. Zie de algemene [ de bijdragegids van Docs van de Adobe ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=nl-NL).
 
 Kleine correcties of verduidelijkingen die u ter documentatie en codevoorbeelden in dit antwoord aanbrengt, vallen onder de gebruiksvoorwaarden van de Adobe.
 
@@ -35,7 +35,7 @@ Als u een technisch schrijver, programmamanager, of ontwikkelaar van een team va
 
 Communautaire contribuanten kunnen GitHub UI voor basishet uitgeven of vork gebruiken het repo om belangrijke bijdragen te leveren.
 
-Zie de [ Gids van de Medewerker van Docs van de Adobe ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) voor details.
+Zie de [ Gids van de Medewerker van Docs van de Adobe ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=nl-NL) voor details.
 
 ## Markering
 

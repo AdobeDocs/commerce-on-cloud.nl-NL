@@ -13,7 +13,7 @@ ht-degree: 0%
 
 De `mysql` dienst verstrekt blijvende gegevensopslag die op [ wordt gebaseerd MariaDB ](https://mariadb.com/) versies 10.2 tot 10.4, ondersteunend de [ XtraDB ](https://docs.percona.com/percona-xtradb-cluster/8.0/index.html) opslagmotor en heropgezette eigenschappen van MySQL 5.6 en 5.7.
 
-Het opnieuw indexeren op MariaDB 10.4 neemt meer tijd in vergelijking met andere versies MariaDB of MySQL. Zie [ Indexers ](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html#indexers) in de _Beste praktijken van Prestaties_ gids.
+Het opnieuw indexeren op MariaDB 10.4 neemt meer tijd in vergelijking met andere versies MariaDB of MySQL. Zie [ Indexers ](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html?lang=nl-NL#indexers) in de _Beste praktijken van Prestaties_ gids.
 
 >[!WARNING]
 >
@@ -72,7 +72,7 @@ mysql:
             optimizer_use_condition_selectivity: 1
 ```
 
-`properties` in het bovenstaande voorbeeld wijzigt de standaard `optimizer` montages zoals [ geadviseerd in de gids van Beste praktijken van Prestaties ](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html#indexers).
+`properties` in het bovenstaande voorbeeld wijzigt de standaard `optimizer` montages zoals [ geadviseerd in de gids van Beste praktijken van Prestaties ](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html?lang=nl-NL#indexers).
 
 **MariaDB configuratieopties**:
 
@@ -88,7 +88,7 @@ mysql:
 
 U kunt desgewenst meerdere gebruikers instellen met verschillende machtigingen voor toegang tot de `main` -database.
 
-Standaard is er één eindpunt met de naam `mysql` dat beheerderstoegang tot de database heeft. Als u meerdere databasegebruikers wilt instellen, moet u meerdere eindpunten in het `services.yaml` -bestand definiëren en de relaties in het `.magento.app.yaml` -bestand declareren. Voor Pro het Opvoeren en de milieu&#39;s van de Productie, [ voorleggen een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) om de extra gebruiker te verzoeken.
+Standaard is er één eindpunt met de naam `mysql` dat beheerderstoegang tot de database heeft. Als u meerdere databasegebruikers wilt instellen, moet u meerdere eindpunten in het `services.yaml` -bestand definiëren en de relaties in het `.magento.app.yaml` -bestand declareren. Voor Pro het Opvoeren en de milieu&#39;s van de Productie, [ voorleggen een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) om de extra gebruiker te verzoeken.
 
 Gebruik een geneste array om de eindpunten voor specifieke gebruikerstoegang te definiëren. Elk eindpunt kan toegang tot één of meerdere schema&#39;s (gegevensbestanden) en verschillende niveaus van toestemming op elk aanwijzen.
 
@@ -212,13 +212,13 @@ Als u rechtstreeks toegang wilt krijgen tot de MariaDB-database, moet u een SSH 
 >
 >Deze functie is alleen beschikbaar voor Pro Production- en Staging-clusters.
 
-Soms, moet u met het secundaire gegevensbestand verbinden om gegevensbestandprestaties te verbeteren of gegevensbestand het sluiten kwesties op te lossen. Als deze configuratie vereist is, gebruikt u `"port" : 3304` om de verbinding tot stand te brengen. Zie [ Beste praktijken om het MySQL slave verbindings ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/mysql-configuration.html) onderwerp in de _gids van de Beste praktijken van de Implementatie_ te vormen.
+Soms, moet u met het secundaire gegevensbestand verbinden om gegevensbestandprestaties te verbeteren of gegevensbestand het sluiten kwesties op te lossen. Als deze configuratie vereist is, gebruikt u `"port" : 3304` om de verbinding tot stand te brengen. Zie [ Beste praktijken om het MySQL slave verbindings ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/mysql-configuration.html?lang=nl-NL) onderwerp in de _gids van de Beste praktijken van de Implementatie_ te vormen.
 
 ## Problemen oplossen
 
 Raadpleeg de volgende Adobe Commerce Support-artikelen voor hulp bij het oplossen van MySQL-problemen:
 
-- [ die langzame vragen controleert en MySQL ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/database/checking-slow-queries-and-processes-mysql.html) verwerkt
-- [ creeer gegevensbestandstortplaats op Wolk ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud.html)
-- [ het oplossen van problemen van het Hulpmiddel van de Migratie van Gegevens ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
-- [ verbetering van Adobe Commerce: compact aan dynamische lijsten 2.2.x, 2.3.x aan 2.4.x ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html)
+- [ die langzame vragen controleert en MySQL ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/database/checking-slow-queries-and-processes-mysql.html?lang=nl-NL) verwerkt
+- [ creeer gegevensbestandstortplaats op Wolk ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud.html?lang=nl-NL)
+- [ het oplossen van problemen van het Hulpmiddel van de Migratie van Gegevens ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=nl-NL)
+- [ verbetering van Adobe Commerce: compact aan dynamische lijsten 2.2.x, 2.3.x aan 2.4.x ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html?lang=nl-NL)

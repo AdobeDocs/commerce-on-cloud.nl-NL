@@ -26,7 +26,7 @@ Het bijwerken van de `enable_smtp` bezitswaarde door [ bevellijn ](#enable-email
 
 Gebruik **[!UICONTROL Outgoing emails]** knevel in _vormt milieu_ mening om e-mailsteun toe te laten of onbruikbaar te maken.
 
-Als de uitgaande e-mails moeten worden onbruikbaar gemaakt of op ProProductie of het Opvoeren milieu&#39;s opnieuw worden toegelaten, kunt u een [ kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) voorleggen.
+Als de uitgaande e-mails moeten worden onbruikbaar gemaakt of op ProProductie of het Opvoeren milieu&#39;s opnieuw worden toegelaten, kunt u een [ kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) voorleggen.
 
 >[!TIP]
 >

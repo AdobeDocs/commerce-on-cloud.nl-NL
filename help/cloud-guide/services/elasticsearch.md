@@ -264,6 +264,6 @@ Als u de insteekmodules verwijdert uit `elasticsearch:` in `.magento/services.ya
 
 Raadpleeg de volgende Adobe Commerce Support-artikelen voor hulp bij het oplossen van problemen met de Elasticsearch:
 
-- [ Elasticsearch 5 wordt gevormd, maar de onderzoekspagina laadt niet met &quot;de gegevens van het Gebied is gehandicapt...&quot;fout ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsearch-5-is-configured-but-search-page-does-not-load-with-fielddata-is-disabled...-error.html)
+- [ Elasticsearch 5 wordt gevormd, maar de onderzoekspagina laadt niet met &quot;de gegevens van het Gebied is gehandicapt...&quot;fout ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsearch-5-is-configured-but-search-page-does-not-load-with-fielddata-is-disabled...-error.html?lang=nl-NL)
 - [ Elasticsearch in de probleemoplosser van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsearch-in-magento-troubleshooter.html)
-- [ de Status van de Index van de Elasticsearch is `yellow` of `red` ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsearch-index-status-is-yellow-or-red.html)
+- [ de Status van de Index van de Elasticsearch is `yellow` of `red` ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsearch-index-status-is-yellow-or-red.html?lang=nl-NL)

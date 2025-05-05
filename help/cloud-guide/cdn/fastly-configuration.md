@@ -39,7 +39,7 @@ U hebt de Fastly geloofsbrieven nodig om de Snelle diensten CDN van Admin te vor
 
 >[!NOTE]
 >
->Met Adobe Commerce op cloudinfrastructuur hebt u niet rechtstreeks toegang tot de snelbeheerder. Gebruik de beheerder om de snelconfiguratie voor uw omgevingen te controleren en bij te werken. Als u geen kwestie kunt oplossen gebruikend de Fastly mogelijkheden in Admin, leg een [ kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voor.
+>Met Adobe Commerce op cloudinfrastructuur hebt u niet rechtstreeks toegang tot de snelbeheerder. Gebruik de beheerder om de snelconfiguratie voor uw omgevingen te controleren en bij te werken. Als u geen kwestie kunt oplossen gebruikend de Fastly mogelijkheden in Admin, leg een [ kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voor.
 
 Gebruik de volgende methoden om de Fastly-service-id en API-token voor uw omgeving te zoeken en op te slaan:
 
@@ -135,7 +135,7 @@ Nadat u de Fastly module toelaat, upload de standaard [ code VCL ](https://githu
 
 ## SSL/TLS-certificaten leveren
 
-Adobe biedt een door domein gevalideerd SSL/TLS-certificaat waarmee snel veilig HTTPS-verkeer kan worden aangeboden. Adobe verstrekt één certificaat voor elke ProProductie, het Staging, en het milieu van de Productie van de Aanzet om alle domeinen in dat milieu te beveiligen. Voor gedetailleerde informatie over het verstrekte certificaat, zie [ Adobe SSL (TLS) certificaten voor Adobe Commerce op wolkeninfrastructuur ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/ssl-tls-certificates-for-magento-commerce-cloud-faq.html).
+Adobe biedt een door domein gevalideerd SSL/TLS-certificaat waarmee snel veilig HTTPS-verkeer kan worden aangeboden. Adobe verstrekt één certificaat voor elke ProProductie, het Staging, en het milieu van de Productie van de Aanzet om alle domeinen in dat milieu te beveiligen. Voor gedetailleerde informatie over het verstrekte certificaat, zie [ Adobe SSL (TLS) certificaten voor Adobe Commerce op wolkeninfrastructuur ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/ssl-tls-certificates-for-magento-commerce-cloud-faq.html?lang=nl-NL).
 
 >[!NOTE]
 >
@@ -239,7 +239,7 @@ Om verkeer van uw opslag URLs aan de Snelle dienst te leiden werkt uw DNS config
 
    >[!NOTE]
    >
-   >Als alternatief aan het gebruiken van Cloud CLI, kunt u Basis URL van [ Admin ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html) bijwerken
+   >Als alternatief aan het gebruiken van Cloud CLI, kunt u Basis URL van [ Admin ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html?lang=nl-NL) bijwerken
 
 1. Start de webbrowser opnieuw.
 
@@ -314,4 +314,4 @@ Nadat u de Snelle diensten op de Staging plaats verifieert, herhaal het verbeter
 
 >[!TIP]
 >
-> Als u kwesties met de Snelle diensten in uw milieu&#39;s van Adobe Commerce hebt, zie [ snel de probleemoplosser van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/magento-fastly-troubleshooter.html).
+> Als u kwesties met de Snelle diensten in uw milieu&#39;s van Adobe Commerce hebt, zie [ snel de probleemoplosser van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/magento-fastly-troubleshooter.html?lang=nl-NL).

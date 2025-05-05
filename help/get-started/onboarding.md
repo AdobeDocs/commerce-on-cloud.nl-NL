@@ -53,5 +53,5 @@ De pagina biedt een status voor Adobe Commerce-componenten en -services, gevolgd
 <!-- link definitions -->
 
 [Verkoop]: https://business.adobe.com/products/magento/get-demo.html
-[Gedeelde toegang]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#shared-access
+[Gedeelde toegang]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#shared-access
 [Statuspagina]: https://status.adobe.com/products/503473

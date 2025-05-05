@@ -27,7 +27,7 @@ Verzamel de volgende sleutels en accounttoegang voordat u een werkruimte instelt
 
 - **Sleutel van de Encryptie van Adobe Commerce**
 
-  Wanneer u alleen een bestaand systeem importeert, legt u de coderingssleutel vast die wordt gebruikt om uw toegang en gegevens voor de database te beveiligen. Voor details op deze sleutel, zie [ kwesties met encryptiesleutel oplossen ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolve-issues-with-encryption-key.html)
+  Wanneer u alleen een bestaand systeem importeert, legt u de coderingssleutel vast die wordt gebruikt om uw toegang en gegevens voor de database te beveiligen. Voor details op deze sleutel, zie [ kwesties met encryptiesleutel oplossen ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolve-issues-with-encryption-key.html?lang=nl-NL)
 
 ## Gereedschappen voor ontwikkelaars
 

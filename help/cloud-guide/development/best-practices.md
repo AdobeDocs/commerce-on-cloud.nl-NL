@@ -49,9 +49,9 @@ Volg beste praktijken voor bouwstijlen en plaatsing, en gebruik het [ Upgrades e
 
    - Gebruik SSH om u aan te melden bij de externe server en controleer het volgende:
 
-      - Controleer de indexeerstatus en herdex naar wens. Zie [ de indexen ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) in de _gids van de Configuratie_ leiden.
+      - Controleer de indexeerstatus en herdex naar wens. Zie [ de indexen ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=nl-NL) in de _gids van de Configuratie_ leiden.
 
       - Controleer de `cron` -logbestanden en de `cron_schedule` -tabel in de Adobe Commerce-database om de uitsnijstatus te controleren en voer de taken voor uitsnijden zo nodig opnieuw uit.
-Zie [ het Registreren ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html#logging) in de _Gids van de Configuratie_.
+Zie [ het Registreren ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=nl-NL#logging) in de _Gids van de Configuratie_.
 
    - Voltooi het testen van gebruikersacceptatietests na de upgrade op de testomgeving voor het opslaan en produceren van bestanden en los eventuele problemen op die te maken hebben met upgrades van derden en aangepaste extensies.

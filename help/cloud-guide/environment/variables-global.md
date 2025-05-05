@@ -177,7 +177,7 @@ stage:
 - **Gebrek** - _niet plaats_
 - **Versie** - Adobe Commerce 2.1.4 en later
 
-Gebruik de `X_FRAME_CONFIGURATION` variabele om de [`X-Frame-Options` ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/security/xframe-options.html) kopbalconfiguratie voor uw plaats van Adobe Commerce te veranderen. Deze configuratie bepaalt hoe de browser een pagina in een `<frame>`, `<iframe>` of `<object>` rendert. Gebruik een van de volgende opties:
+Gebruik de `X_FRAME_CONFIGURATION` variabele om de [`X-Frame-Options` ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/security/xframe-options.html?lang=nl-NL) kopbalconfiguratie voor uw plaats van Adobe Commerce te veranderen. Deze configuratie bepaalt hoe de browser een pagina in een `<frame>`, `<iframe>` of `<object>` rendert. Gebruik een van de volgende opties:
 
 - `DENY` - De pagina kan niet in een kader worden getoond.
 - `SAMEORIGIN`—(De standaard Adobe Commerce-instelling.) De pagina kan alleen worden weergegeven in een kader dat zich op dezelfde oorsprong bevindt als de pagina zelf.

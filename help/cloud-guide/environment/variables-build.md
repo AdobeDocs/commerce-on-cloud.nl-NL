@@ -185,7 +185,7 @@ stage:
 - **Gebrek** - `quick`
 - **Versie** - Adobe Commerce 2.2.0 en later
 
-Pas de [ plaatsingsstrategie ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy.html) voor statische inhoud aan. Zie [ statische meningsdossiers ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html) opstellen.
+Pas de [ plaatsingsstrategie ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy.html?lang=nl-NL) voor statische inhoud aan. Zie [ statische meningsdossiers ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html?lang=nl-NL) opstellen.
 
 Gebruik deze opties _slechts_ als u meer dan één scène hebt:
 

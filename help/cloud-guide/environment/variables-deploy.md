@@ -62,7 +62,7 @@ stage:
             database: 11
 ```
 
-Het volgende voorbeeld gebruikt [ preload eigenschap ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache.html#redis-preload-feature) zoals die in de _gids van de Configuratie_ wordt bepaald:
+Het volgende voorbeeld gebruikt [ preload eigenschap ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache.html?lang=nl-NL#redis-preload-feature) zoals die in de _gids van de Configuratie_ wordt bepaald:
 
 ```yaml
 stage:
@@ -97,7 +97,7 @@ stage:
 - **Gebrek** - `true`
 - **Versie** - Adobe Commerce 2.1.4 en later
 
-Laat of maakt het schoonmaken [ statische inhoudsdossiers ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html) toe onbruikbaar tijdens de bouwstijl wordt geproduceerd of fase opstelt. Gebruik de standaardwaarde _waar_ in ontwikkeling als beste praktijken.
+Laat of maakt het schoonmaken [ statische inhoudsdossiers ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html?lang=nl-NL) toe onbruikbaar tijdens de bouwstijl wordt geproduceerd of fase opstelt. Gebruik de standaardwaarde _waar_ in ontwikkeling als beste praktijken.
 
 - **`true`** - Hiermee verwijdert u alle bestaande statische inhoud voordat u de bijgewerkte statische inhoud implementeert.
 - **`false`** - De implementatie overschrijft alleen bestaande bestanden met statische inhoud als de gegenereerde inhoud een nieuwere versie bevat.
@@ -156,7 +156,7 @@ stage:
       consumers: []
 ```
 
-Standaard overschrijft het implementatieproces alle instellingen in het `env.php` -bestand. Zie [ berichtrijen ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues.html) in de _Gids van de Configuratie van Commerce_ voor op-gebouw Adobe Commerce beheren.
+Standaard overschrijft het implementatieproces alle instellingen in het `env.php` -bestand. Zie [ berichtrijen ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues.html?lang=nl-NL) in de _Gids van de Configuratie van Commerce_ voor op-gebouw Adobe Commerce beheren.
 
 ## `CONSUMERS_WAIT_FOR_MAX_MESSAGES`
 
@@ -186,7 +186,7 @@ stage:
 
 >[!WARNING]
 >
->Stel de `CRYPT_KEY` -waarde in via [!DNL Cloud Console] in plaats van het `.magento.env.yaml` -bestand om te voorkomen dat de sleutel in de broncodeopslagplaats voor uw omgeving toegankelijk wordt gemaakt. Zie [ plaats milieu en projectvariabelen ](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/project/overview.html#configure-environment).
+>Stel de `CRYPT_KEY` -waarde in via [!DNL Cloud Console] in plaats van het `.magento.env.yaml` -bestand om te voorkomen dat de sleutel in de broncodeopslagplaats voor uw omgeving toegankelijk wordt gemaakt. Zie [ plaats milieu en projectvariabelen ](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/project/overview.html?lang=nl-NL#configure-environment).
 
 Wanneer u het gegevensbestand van één milieu aan een andere zonder installatieproces verplaatst, hebt u de overeenkomstige cryptografische informatie nodig. Adobe Commerce gebruikt de waarde van de coderingssleutel die in de [!DNL Cloud Console] is ingesteld als de `crypt/key` -waarde in het `env.php` -bestand.
 
@@ -277,7 +277,7 @@ stage:
 
 >[!NOTE]
 >
->Op een Pro Staging/de cluster van de Productie die drie knopen (of drie de dienstknopen op [ Geschaalde Architectuur ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture#service-tier) heeft, zou `indices_settings` als volgt moeten worden geplaatst:
+>Op een Pro Staging/de cluster van de Productie die drie knopen (of drie de dienstknopen op [ Geschaalde Architectuur ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture#service-tier) heeft, zou `indices_settings` als volgt moeten worden geplaatst:
 >
 >```yaml
 >           indices_settings:
@@ -356,7 +356,7 @@ stage:
     LOCK_PROVIDER: "db"
 ```
 
-Zie [ vormen het slot ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/lock-provider.html) in _gids_ installeren.
+Zie [ vormen het slot ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/lock-provider.html?lang=nl-NL) in _gids_ installeren.
 
 ## `MYSQL_USE_SLAVE_CONNECTION`
 
@@ -442,7 +442,7 @@ stage:
 
 >[!NOTE]
 >
->Als u `\Magento\Framework\Cache\Backend\RemoteSynchronizedCache` als Redis achterste model specificeert om [ L2 geheime voorgeheugen ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html) toe te laten, `ece-tools` produceert automatisch de geheim voorgeheugenconfiguratie. Zie een voorbeeld [ configuratiedossier ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html#configuration-example) in de _Gids van de Configuratie van Adobe Commerce_. Om de geproduceerde geheim voorgeheugenconfiguratie met voeten te treden, gebruik [ CACHE_CONFIGURATION ](#cache_configuration) veranderlijk opstelt.
+>Als u `\Magento\Framework\Cache\Backend\RemoteSynchronizedCache` als Redis achterste model specificeert om [ L2 geheime voorgeheugen ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html?lang=nl-NL) toe te laten, `ece-tools` produceert automatisch de geheim voorgeheugenconfiguratie. Zie een voorbeeld [ configuratiedossier ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html?lang=nl-NL#configuration-example) in de _Gids van de Configuratie van Adobe Commerce_. Om de geproduceerde geheim voorgeheugenconfiguratie met voeten te treden, gebruik [ CACHE_CONFIGURATION ](#cache_configuration) veranderlijk opstelt.
 
 ## `REDIS_USE_SLAVE_CONNECTION`
 
@@ -581,7 +581,7 @@ stage:
 - **Gebrek** - `quick`
 - **Versie** - Adobe Commerce 2.2.0 en later
 
-Staat u toe om de [ plaatsingsstrategie ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy.html) voor statische inhoud aan te passen. Zie [ statische meningsdossiers ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html) opstellen.
+Staat u toe om de [ plaatsingsstrategie ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy.html?lang=nl-NL) voor statische inhoud aan te passen. Zie [ statische meningsdossiers ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html?lang=nl-NL) opstellen.
 
 Gebruik deze opties _slechts_ als u meer dan één scène hebt:
 

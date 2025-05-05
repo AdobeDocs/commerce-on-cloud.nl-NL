@@ -56,7 +56,7 @@ In de integratieomgeving kunt u zich aanmelden bij de beheerder om de systeemcon
    ![ verander de scène ](../../assets/locale-options.png)
 
 1. Klik **sparen Config**.
-1. Indien ertoe aangezet, [ spoel het geheime voorgeheugen ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management).
+1. Indien ertoe aangezet, [ spoel het geheime voorgeheugen ](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/tools/cache-management).
 1. Afmelden bij de beheerder.
 
 ## Waarden exporteren en config.php overbrengen naar uw lokale systeem
@@ -159,7 +159,7 @@ Configuratiewaarden toevoegen in de integratieomgeving Admin. In dit voorbeeld w
 1. In de juiste ruit, breid **Montages van JavaScript** uit.
 1. Van de **lijst van de Dossiers van JavaScript van de Fusie**, klik **ja**.
 1. Klik **sparen Config**.
-1. Indien ertoe aangezet, [ spoel het geheime voorgeheugen ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management).
+1. Indien ertoe aangezet, [ spoel het geheime voorgeheugen ](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/tools/cache-management).
 1. Afmelden bij de beheerder.
 
 Door het dumpbevel opnieuw in werking te stellen, wordt de nieuwe configuratie toegevoegd aan het dossier.

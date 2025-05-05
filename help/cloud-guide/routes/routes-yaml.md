@@ -167,7 +167,7 @@ Geef alle pagina&#39;s weer via TLS. Voor deze configuratie, moet u redirects vo
       upstream: "mymagento:http"
   ```
 
-- Voor het Opvoeren en de milieu&#39;s van de Productie, laat [ TLS op Fastly ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/redirect-http-to-https-for-all-pages-on-cloud-force-tls.html) optie van Admin UI toe. Wanneer u deze optie gebruikt, handelt u snel de omleiding naar HTTPS af, zodat u de configuratie `routes.yaml` niet hoeft bij te werken.
+- Voor het Opvoeren en de milieu&#39;s van de Productie, laat [ TLS op Fastly ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/redirect-http-to-https-for-all-pages-on-cloud-force-tls.html?lang=nl-NL) optie van Admin UI toe. Wanneer u deze optie gebruikt, handelt u snel de omleiding naar HTTPS af, zodat u de configuratie `routes.yaml` niet hoeft bij te werken.
 
 ## Routopties
 

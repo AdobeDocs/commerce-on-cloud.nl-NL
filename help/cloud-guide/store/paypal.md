@@ -58,7 +58,7 @@ PayPal Express Checkout configureren:
    * **de Wijze van Sandbox** uitgezocht ja of Nr om erop te wijzen als de geloofsbrieven u inging voor zandbak zijn. Als u productiereferenties hebt ingevoerd, selecteert u Nee.
    * **API gebruikt Volmacht** uitgezocht ja of Neen om te plaatsen als het systeem een volmachtsserver gebruikt om een verbinding tussen Adobe Commerce en het PayPal betalingssysteem te vestigen. Als ja, ga de volmachtsgastheer en de haven in.
 
-1. Voor gedetailleerde informatie en stappen voor het vormen van uw rekening, zie [ Uitdrukkelijke Controle PayPal ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/paypal/paypal-express-checkout) die met Stap 2 begint voltooit de Vereiste Montages.
+1. Voor gedetailleerde informatie en stappen voor het vormen van uw rekening, zie [ Uitdrukkelijke Controle PayPal ](https://experienceleague.adobe.com/nl/docs/commerce-admin/stores-sales/payments/paypal/paypal-express-checkout) die met Stap 2 begint voltooit de Vereiste Montages.
 
 Als de account is geconfigureerd en geverifieerd, kunt u PayPal-betalingsopties in- en uitschakelen bij Vereiste PayPal-instellingen:
 

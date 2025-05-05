@@ -57,7 +57,7 @@ In eerdere versies van ECE-Tools kon u de opdrachten `m2-ece-build` en `m2-ece-d
 
 ## Wijzigingen in cloudpatches
 
-- **verwijdert gedownloade flarden** - het `magento/magento-cloud-patches` pakket bundelt alle flarden beschikbaar van de [ software downloadt ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/commerce.html) pagina en past hen automatisch toe wanneer u aan de Wolk opstelt. Om flardconflicten na bevordering aan ECE-Tools 2002.1.0 of later te verhinderen, verwijder om het even welke Adobe-geleverde flarden die u aan uw project manueel downloadde en toevoegde.
+- **verwijdert gedownloade flarden** - het `magento/magento-cloud-patches` pakket bundelt alle flarden beschikbaar van de [ software downloadt ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/commerce.html?lang=nl-NL) pagina en past hen automatisch toe wanneer u aan de Wolk opstelt. Om flardconflicten na bevordering aan ECE-Tools 2002.1.0 of later te verhinderen, verwijder om het even welke Adobe-geleverde flarden die u aan uw project manueel downloadde en toevoegde.
 
 - **Bijwerkend het toepassen bevel van flarden** - wij bewogen het bevel voor het toepassen van flarden van de `vendor/bin/ece-tools` folder aan de `vendor/bin/ece-patches` folder. Gebruik het nieuwe pad als u deze opdracht gebruikt om handmatig patches toe te passen.
 

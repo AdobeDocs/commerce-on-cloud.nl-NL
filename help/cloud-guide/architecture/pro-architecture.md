@@ -176,7 +176,7 @@ Adobe Commerce op cloudinfrastructuur maakt gebruik van een architectuur met hog
 
 >[!NOTE]
 >
->De opgezette volumes omvatten slechts/verwijzen naar de [ beschrijfbare steunen ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/properties#mounts) en zullen niet al uw `app/` folder omvatten. Zoals voor de andere dossiers, worden zij gecreeerd/geproduceerd door [ bouwt en plaatsingsproces ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow), en u zult ook uw bewaarplaats van het Git voor resterende dossiers moeten controleren.
+>De opgezette volumes omvatten slechts/verwijzen naar de [ beschrijfbare steunen ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/app/properties/properties#mounts) en zullen niet al uw `app/` folder omvatten. Zoals voor de andere dossiers, worden zij gecreeerd/geproduceerd door [ bouwt en plaatsingsproces ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow), en u zult ook uw bewaarplaats van het Git voor resterende dossiers moeten controleren.
 
 {{pro-backups}}
 
@@ -210,4 +210,4 @@ Het Pro cluster rangschikken en _verwerkt_ configuraties afhankelijk van de geko
 
 De overtollige architectuur laat de Adobe wolkeninfrastructuur toe om zonder onderbreking te verhogen. Bij upscaling roteert elk van de drie instanties om de capaciteit te upgraden zonder dat dit invloed heeft op de sitebewerking. U kunt bijvoorbeeld extra webservers toevoegen aan een bestaande cluster als de beperking zich op PHP-niveau bevindt in plaats van op databaseniveau. Dit verstrekt _horizontaal schrapen_ om het verticale schrapen aan te vullen die door extra CPUs op het gegevensbestandniveau wordt verstrekt. Zie [ Schaalde architectuur ](scaled-architecture.md).
 
-Als u een significante toename van verkeer voor een gebeurtenis of een andere reden verwacht, kunt u om een tijdelijke verhoging van capaciteit verzoeken. Zie [ hoe te om een tijdelijke upsize ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize.html) in het _Centrum van de Hulp van Commerce_ te verzoeken.
+Als u een significante toename van verkeer voor een gebeurtenis of een andere reden verwacht, kunt u om een tijdelijke verhoging van capaciteit verzoeken. Zie [ hoe te om een tijdelijke upsize ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize.html?lang=nl-NL) in het _Centrum van de Hulp van Commerce_ te verzoeken.

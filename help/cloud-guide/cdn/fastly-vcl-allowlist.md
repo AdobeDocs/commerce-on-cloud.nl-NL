@@ -74,7 +74,7 @@ De volgende aangepaste VCL-fragmentcode (JSON-indeling) toont de logica voor het
 }
 ```
 
-Alvorens [ creërend een douanefragment ](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html#add-the-custom-vcl-snippet) van dit voorbeeld, herzie de waarden om te bepalen of u om het even welke veranderingen moet aanbrengen. Voer vervolgens elke waarde in de desbetreffende velden, zoals `type` in het veld Type `content` in het veld Inhoud.
+Alvorens [ creërend een douanefragment ](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html?lang=nl-NL#add-the-custom-vcl-snippet) van dit voorbeeld, herzie de waarden om te bepalen of u om het even welke veranderingen moet aanbrengen. Voer vervolgens elke waarde in de desbetreffende velden, zoals `type` in het veld Type `content` in het veld Inhoud.
 
 - `name` — Naam voor het VCL-fragment. Voor dit voorbeeld, `allowlist`.
 

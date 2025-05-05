@@ -40,7 +40,7 @@ hooks:
 
 >[!NOTE]
 >
->Met de versie van `ece-tools` 2002.1.x, is er een nieuw [ hooks configuratie ](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/configure/app/properties/hooks-property.html) formaat. De oudere indeling uit `ece-tools` 2002.0.x-releases wordt nog steeds ondersteund. Nochtans, moet u aan het nieuwe formaat bijwerken om de op scenario-gebaseerde plaatsingseigenschap te gebruiken.
+>Met de versie van `ece-tools` 2002.1.x, is er een nieuw [ hooks configuratie ](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/configure/app/properties/hooks-property.html?lang=nl-NL) formaat. De oudere indeling uit `ece-tools` 2002.0.x-releases wordt nog steeds ondersteund. Nochtans, moet u aan het nieuwe formaat bijwerken om de op scenario-gebaseerde plaatsingseigenschap te gebruiken.
 
 ## Evaluatiescenario-stappen
 

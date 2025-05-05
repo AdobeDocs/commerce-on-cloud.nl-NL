@@ -50,7 +50,7 @@ Wanneer de dienst van WAF wordt toegelaten, inspecteert het al Web en admin verk
 
 U kunt deze pagina met foutreacties aanpassen via de beheerfunctie. Zie [ de de reactiepagina van WAF ](fastly-custom-response.md#customize-the-waf-error-page) aanpassen.
 
-Als uw Adobe Commerce admin pagina of storefront een `403 Forbidden` foutenpagina in antwoord op een wettig verzoek URL terugkeert, leg een [ kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) voor. Kopieer de referentie-id van de pagina met foutreacties en plak deze in de beschrijving van het ticket.
+Als uw Adobe Commerce admin pagina of storefront een `403 Forbidden` foutenpagina in antwoord op een wettig verzoek URL terugkeert, leg een [ kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) voor. Kopieer de referentie-id van de pagina met foutreacties en plak deze in de beschrijving van het ticket.
 
 Als u de WAF-reactie voor een bepaalde aanvraag wilt identificeren met New Relic, gaat u naar het volgende:
 

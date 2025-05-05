@@ -31,7 +31,7 @@ Voorbeelden voor de domeinen Productie en Staging:
 
 Zie [ Opstelling veelvoudige websites of opslag ](../cloud-guide/store/multiple-sites.md) in _Commerce op de gids van de Infrastructuur van de Wolk_ voor verdere begeleiding op veelvoudige of unieke domeinen.
 
-Zie [ Veelvoudige Snelle Rekeningen en toegewezen domeinen ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly#multiple-fastly-accounts-and-assigned-domains){target="_blank"}  als u een bestaande Fastly rekening hebt die de zelfde apex en subdomeinen verbindt die op uw plaats van Adobe Commerce worden gebruikt.
+Zie [ Veelvoudige Snelle Rekeningen en toegewezen domeinen ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/cdn/fastly#multiple-fastly-accounts-and-assigned-domains){target="_blank"}  als u een bestaande Fastly rekening hebt die de zelfde apex en subdomeinen verbindt die op uw plaats van Adobe Commerce worden gebruikt.
 
 ## Transactioneel e-maildomein
 

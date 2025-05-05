@@ -18,7 +18,7 @@ De gebruikers die administratieve toegang tot Adobe Commerce op het project van 
 
 U kunt de aanmeldingsgegevens van Admin-gebruikers tijdens de Commerce-installatie overschrijven met de ADMIN-variabelen in de volgende tabel.
 
-Als u de waarden na installatie wilt veranderen, verbind met uw milieu gebruikend SSH en gebruik het [`admin:user` bevel ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/admin.html) van Adobe Commerce CLI om de Admin gebruikersgeloofsbrieven tot stand te brengen of uit te geven.
+Als u de waarden na installatie wilt veranderen, verbind met uw milieu gebruikend SSH en gebruik het [`admin:user` bevel ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/admin.html?lang=nl-NL) van Adobe Commerce CLI om de Admin gebruikersgeloofsbrieven tot stand te brengen of uit te geven.
 
 | Variabele | Standaard | Beschrijving |
 | -------------- | --------------------------- | ----------- |

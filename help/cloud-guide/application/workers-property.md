@@ -17,7 +17,7 @@ U kunt een worker definiëren die onafhankelijk van de webinstantie moet worden 
 
 Workers zijn alleen beschikbaar voor gebruik met Pro Staging- en Productomgevingen. De pro integratie en de milieu&#39;s van de Aanzet kunnen verkiezen om [ CRON_CONSUMERS_RUNNER ](../environment/variables-deploy.md#cron_consumers_runner) variabele te gebruiken.
 
-Om een arbeider in Pro het Opvoeren of Productie te vormen, [ leg een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voor en omvat de volgende informatie:
+Om een arbeider in Pro het Opvoeren of Productie te vormen, [ leg een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voor en omvat de volgende informatie:
 
 - Project-id
 - Milieu-id

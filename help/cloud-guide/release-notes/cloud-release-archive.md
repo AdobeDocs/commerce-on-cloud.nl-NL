@@ -27,7 +27,7 @@ In de release `ece-tools` 2002.0.22 wordt de structuur van het `ece-tools` -pakk
 
    - ![ nieuw pictogram ](../../assets/new.svg) werkte het `composer.json` dossier voor het `ece-tools` pakket bij om een gebiedsdeel voor het `magento/magento-cloud-patches` v1.0.0 pakket toe te voegen.
 
-   - ![ fixpictogram ](../../assets/fix.svg) Vaste een kwestie die het `ece-tools` patchproces veroorzaakte om te breken wanneer het toepassen van flardreeksen bovenop veiligheid-slechts versies, die met versie 2.3.2-p2 en later beginnen. Deze kwestie werd geïntroduceerd door de nieuwe versieringsregeling die voor [ wordt goedgekeurd veiligheid-slechts flarden ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/overview).<!--MAGECLOUD-4661-->
+   - ![ fixpictogram ](../../assets/fix.svg) Vaste een kwestie die het `ece-tools` patchproces veroorzaakte om te breken wanneer het toepassen van flardreeksen bovenop veiligheid-slechts versies, die met versie 2.3.2-p2 en later beginnen. Deze kwestie werd geïntroduceerd door de nieuwe versieringsregeling die voor [ wordt goedgekeurd veiligheid-slechts flarden ](https://experienceleague.adobe.com/nl/docs/commerce-operations/release/notes/security-patches/overview).<!--MAGECLOUD-4661-->
 
 - ![ herstellingspictogram ](../../assets/fix.svg) **Patches en kritieke moeilijke situaties** - werk uw milieu&#39;s van de Wolk met `ece-tools` versie 2002.0.22 bij om de volgende flarden en kritieke moeilijke situaties toe te passen. Deze patches worden opgenomen in het pakket `magento/magento-cloud-patches` v1.0.0.
 
@@ -71,7 +71,7 @@ In de release `ece-tools` 2002.0.22 wordt de structuur van het `ece-tools` -pakk
 
 - ![ nieuw pictogram ](../../assets/new.svg) Toegevoegde steun voor versie 3.8 RabitMQ.<!-- MAGECLOUD-4674-->
 
-- ![ nieuw pictogram ](../../assets/new.svg) Bijgewerkte interactieve bevestigingen voor de dienstverenigbaarheid om op gesteunde versies voor nieuwe versies van Adobe Commerce 2.3.3 en 2.2.10 te wijzen. Zie {de vereisten van het 0} Systeem &rbrack;(https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) in de _gids van de Installatie_ voor geadviseerde versies.<!-- MAGECLOUD-4018 -->&lbrack;
+- ![ nieuw pictogram ](../../assets/new.svg) Bijgewerkte interactieve bevestigingen voor de dienstverenigbaarheid om op gesteunde versies voor nieuwe versies van Adobe Commerce 2.3.3 en 2.2.10 te wijzen. Zie {de vereisten van het 0} Systeem &rbrack;(https://experienceleague.adobe.com/nl/docs/commerce-operations/installation-guide/system-requirements) in de _gids van de Installatie_ voor geadviseerde versies.<!-- MAGECLOUD-4018 -->&lbrack;
 
 - ![ bevestig pictogram ](../../assets/fix.svg) verbeterde het logboekbericht teruggekeerd wanneer het proces van het baanbeheer van de cron in opstellen fase probeert om een hulpbaan te stoppen die reeds heeft gebeëindigd om te verduidelijken dat deze kwestie geen fout is. Veranderde het logboekniveau van `INFO` in `DEBUG`.<!-- MAGECLOUD-3653-->
 
@@ -89,7 +89,7 @@ In de release `ece-tools` 2002.0.22 wordt de structuur van het `ece-tools` -pakk
 
    - ![ nieuw pictogram ](../../assets/new.svg) U kunt functioneel het testen nu uitvoeren gebruikend het `ece-tools` pakket in het milieu van het Dok. Zie [ toepassing het testen ](https://developer.adobe.com/commerce/cloud-tools/docker/test/code-testing/).<!-- MAGECLOUD-3129/3684 -->
 
-   - ![ nieuw pictogram ](../../assets/new.svg) Toegevoegde steun voor het vormen PHP modules gebruikend het `.magento.app.yaml` dossier. Om het even welke [ PHP Uitbreidingen die in het `.magento.app.yaml` dossier ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) worden gespecificeerd worden beschikbaar in de containers PHP van de Dokker.<!-- MAGECLOUD-3357 -->
+   - ![ nieuw pictogram ](../../assets/new.svg) Toegevoegde steun voor het vormen PHP modules gebruikend het `.magento.app.yaml` dossier. Om het even welke [ PHP Uitbreidingen die in het `.magento.app.yaml` dossier ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) worden gespecificeerd worden beschikbaar in de containers PHP van de Dokker.<!-- MAGECLOUD-3357 -->
 
    - ![ nieuw pictogram ](../../assets/new.svg) Er zijn nieuwe bevelen beschikbaar om de ervaring van de het bevellijn van het Docker te verbeteren. Zie de [`bin/magento-docker` sectie van de verwijzing van de Dokker ](https://developer.adobe.com/commerce/cloud-tools/docker/quick-reference/#cloud-docker-cli).<!-- MAGECLOUD-3569 -->
 
@@ -125,7 +125,7 @@ In de release `ece-tools` 2002.0.22 wordt de structuur van het `ece-tools` -pakk
 
 - ![ fixpictogram ](../../assets/fix.svg) Vaste een kwestie die een plaatsingsmislukking veroorzaakte als basis URL niet in het gegevensbestand bestond.<!-- MAGECLOUD-3075 -->
 
-- ![ nieuw pictogram ](../../assets/new.svg) voegde een nieuw **`env:config:show`bevel** aan het `ece-tools` pakket toe dat de omgevingsdiensten, routes, of variabelen toont. Zie [ Diensten, routes, en variabelen ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/package-overview#services-routes-and-variables). [ Eigenschap die door Vladimir Kerkhoff ](https://github.com/magento/ece-tools/pull/486) wordt voorgelegd.<!-- MAGECLOUD-3451 -->
+- ![ nieuw pictogram ](../../assets/new.svg) voegde een nieuw **`env:config:show`bevel** aan het `ece-tools` pakket toe dat de omgevingsdiensten, routes, of variabelen toont. Zie [ Diensten, routes, en variabelen ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/package-overview#services-routes-and-variables). [ Eigenschap die door Vladimir Kerkhoff ](https://github.com/magento/ece-tools/pull/486) wordt voorgelegd.<!-- MAGECLOUD-3451 -->
 
 - ![ fixpictogram ](../../assets/fix.svg) Vaste een kwestie die een kritieke fout wanneer het proberen om Adobe Commerce 2.2.6 te installeren of vroeger met `ece-tools` ontwikkelden na shell refactoring veroorzaakte.<!-- MAGECLOUD-3665 -->
 
@@ -143,7 +143,7 @@ In de release `ece-tools` 2002.0.22 wordt de structuur van het `ece-tools` -pakk
 
 - ![ nieuw pictogram ](../../assets/new.svg) **de Updates van de Docker** -
 
-   - ![ nieuw pictogram ](../../assets/new.svg) nu, steunt het milieu van de Dokker de kanonconfiguratie die in het [ wordt bepaald krons bezit van het.magento.app.yaml- dossier ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property).<!-- MAGECLOUD-3150 -->
+   - ![ nieuw pictogram ](../../assets/new.svg) nu, steunt het milieu van de Dokker de kanonconfiguratie die in het [ wordt bepaald krons bezit van het.magento.app.yaml- dossier ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property).<!-- MAGECLOUD-3150 -->
 
    - ![ nieuw pictogram ](../../assets/new.svg) **Nieuwe Container van de Docker** - Toegevoegd a [ TLS de container van de beëindigingsvolmacht ](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#varnish-container) om de Varnish SSL beëindiging over HTTPS te vergemakkelijken.<!-- MAGECLOUD-2890 -->
 
@@ -151,7 +151,7 @@ In de release `ece-tools` 2002.0.22 wordt de structuur van het `ece-tools` -pakk
 
    - ![ nieuw pictogram ](../../assets/new.svg) **Docker bouwt wijzen** - nu kunt u verkiezen om het milieu van de Docker op [ wijze van de Productie of wijze van de Ontwikkelaar ](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/#launch-mode) te lanceren. De wijze van de ontwikkelaar steunt actieve ontwikkeling met volledige, schrijfbare filesystem toestemmingen.<!-- MAGECLOUD-3152/3511 -->
 
-   - ![ fixpictogram ](../../assets/fix.svg) Vaste een kwestie die de opstelling van de Docker veroorzaakte om met a `Name or service not known` fout te ontbreken als het geheime voorgeheugen voor de dienst wordt gevormd die niet beschikbaar is. Nu, kunt u de dienst uit het [`.magento/services.yaml` dossier ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) verwijderen. De de configuratiegenerator van de Dokker werkt de dienst in het `docker/config.php.dist` dossier automatisch bij.<!-- MAGECLOUD-3369 -->
+   - ![ fixpictogram ](../../assets/fix.svg) Vaste een kwestie die de opstelling van de Docker veroorzaakte om met a `Name or service not known` fout te ontbreken als het geheime voorgeheugen voor de dienst wordt gevormd die niet beschikbaar is. Nu, kunt u de dienst uit het [`.magento/services.yaml` dossier ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) verwijderen. De de configuratiegenerator van de Dokker werkt de dienst in het `docker/config.php.dist` dossier automatisch bij.<!-- MAGECLOUD-3369 -->
 
    - ![ nieuw pictogram ](../../assets/new.svg) toegevoegde interactieve bevestigingen voor de dienstverenigbaarheid. Nu, als een gevraagde dienst met de versie van Adobe Commerce of andere diensten onverenigbaar is, veroorzaakt de _interactieve wijze_ de gebruiker met een bericht en een keus om verder te gaan. Zie de [ versies van de Dienst ](https://developer.adobe.com/commerce/cloud-tools/docker/containers/#service-containers) beschikbaar voor Docker. Gebruik de optie `-n` om de interactiviteit voor CICD-doeleinden over te slaan.<!-- MAGECLOUD-3251 -->
 
@@ -215,15 +215,15 @@ In de release `ece-tools` 2002.0.22 wordt de structuur van het `ece-tools` -pakk
 
    - Probleem verholpen met webservicerechten tijdens het genereren van het `docker-compose.yml` -bestand. <!-- MAGECLOUD-2883 -->
 
-- ![ nieuw pictogram ](../../assets/new.svg) **verbetering van de Verbetering** - Toegevoegde bevestiging om te bevestigen dat het `autoload` bezit in het `composer.json` dossier vereiste configuratieveranderingen bevat alvorens aan Adobe Commerce v2.3 te bevorderen. Zie [ versie van de Verbetering ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/commerce-version).<!-- MAGECLOUD-2392 -->
+- ![ nieuw pictogram ](../../assets/new.svg) **verbetering van de Verbetering** - Toegevoegde bevestiging om te bevestigen dat het `autoload` bezit in het `composer.json` dossier vereiste configuratieveranderingen bevat alvorens aan Adobe Commerce v2.3 te bevorderen. Zie [ versie van de Verbetering ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/develop/upgrade/commerce-version).<!-- MAGECLOUD-2392 -->
 
-- ![ nieuw pictogram ](../../assets/new.svg) het compressieproces in het opstellen van statische inhoud omvat nu alle activa-nefast geproduceerd of aangepast-en komt tijdens de bouwstijlfase bij het begin van de [`build:transfer` sectie ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/hooks-property) voor. Eerder was het compressieproces vóór het toepassen van aangepaste minificatie en bundeling van statische elementen. [ Fix die door Rafael Garcia Lepper van Tryzens Limited ](https://github.com/magento/ece-tools/pull/413) wordt voorgelegd.<!-- MAGECLOUD-3104 -->
+- ![ nieuw pictogram ](../../assets/new.svg) het compressieproces in het opstellen van statische inhoud omvat nu alle activa-nefast geproduceerd of aangepast-en komt tijdens de bouwstijlfase bij het begin van de [`build:transfer` sectie ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/app/properties/hooks-property) voor. Eerder was het compressieproces vóór het toepassen van aangepaste minificatie en bundeling van statische elementen. [ Fix die door Rafael Garcia Lepper van Tryzens Limited ](https://github.com/magento/ece-tools/pull/413) wordt voorgelegd.<!-- MAGECLOUD-3104 -->
 
 - ![ fixpictogram ](../../assets/fix.svg) Vaste een fout van de gegevensbestandverbinding die tijdens plaatsing onmiddellijk na het vormen van een extra gegevensbestand en de dienstverhouding voorkwam. Bovendien verhelpt deze oplossing een probleem dat zich heeft voorgedaan tijdens het configuratieproces van Commerce Reporting for Starter. Voor de Starter, is deze verbetering &quot;moet&quot;hebben voor het gebruiken van de Rapportering van Commerce.<!-- MAGECLOUD-3035 -->
 
 - ![ fixpictogram ](../../assets/fix.svg) Vaste een bevestigingskwestie met de gegevensbestandconfiguratie die het opstellen proces om veroorzaakte te ontbreken.<!-- MAGECLOUD-3003 -->
 
-- ![ fixpictogram ](../../assets/fix.svg) werkte de beperking met de aangewezen versie van het `symfony/yaml` pakket bij om met [ PHP constanten ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/configure-env-yaml#php-constants) te gebruiken. Constante het ontleden werkt niet wanneer het gebruiken van een `symfony/yaml` pakketversie vroeger dan 3.2. [ Repareren die door Vladimir Kerkhoff ](https://github.com/magento/ece-tools/pull/404) wordt voorgelegd.<!-- MAGECLOUD-2956 -->
+- ![ fixpictogram ](../../assets/fix.svg) werkte de beperking met de aangewezen versie van het `symfony/yaml` pakket bij om met [ PHP constanten ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/env/configure-env-yaml#php-constants) te gebruiken. Constante het ontleden werkt niet wanneer het gebruiken van een `symfony/yaml` pakketversie vroeger dan 3.2. [ Repareren die door Vladimir Kerkhoff ](https://github.com/magento/ece-tools/pull/404) wordt voorgelegd.<!-- MAGECLOUD-2956 -->
 
 - ![ nieuw pictogram ](../../assets/new.svg) **de configuratiecontrole van het Milieu** - Toegevoegde bevestiging om de PHP versie te controleren en gebruikers te waarschuwen als zij niet de recentste geadviseerde versie gebruiken.<!--MAGECLOUD-2903-->
 
@@ -257,7 +257,7 @@ In de release `ece-tools` 2002.0.22 wordt de structuur van het `ece-tools` -pakk
 
    - **ADMIN variabelen** - <!-- MAGECLOUD-2573/MAGECLOUD-2848 -->
 
-      - Verbeterde beveiliging bij het beheren van referenties voor de Admin-gebruiker met omgevingsvariabelen. U kunt de ADMIN_EMAIL, ADMIN_USERNAME, en ADMIN_PASSWORD milieuvariabelen niet meer gebruiken om admin geloofsbrieven tijdens verbeteringen met voeten te treden. Als u niet tot het Admin paneel kunt toegang hebben, gebruik _vergeten wachtwoordeigenschap_ of het `admin:user:create` bevel CLI om een nieuwe admin gebruiker tot stand te brengen. Zie [ Toegang tot uw Admin paneel ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/onboarding#admin).
+      - Verbeterde beveiliging bij het beheren van referenties voor de Admin-gebruiker met omgevingsvariabelen. U kunt de ADMIN_EMAIL, ADMIN_USERNAME, en ADMIN_PASSWORD milieuvariabelen niet meer gebruiken om admin geloofsbrieven tijdens verbeteringen met voeten te treden. Als u niet tot het Admin paneel kunt toegang hebben, gebruik _vergeten wachtwoordeigenschap_ of het `admin:user:create` bevel CLI om een nieuwe admin gebruiker tot stand te brengen. Zie [ Toegang tot uw Admin paneel ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/start/onboarding#admin).
 
       - ADMIN_EMAIL is niet meer vereist wanneer u patches upgradet of toepast.
 
@@ -279,7 +279,7 @@ In de release `ece-tools` 2002.0.22 wordt de structuur van het `ece-tools` -pakk
 
       - Redis 3.2 en 4.0 <!-- MAGECLOUD-2886 -->
 
-- ![ nieuw pictogram ](../../assets/new.svg) **vormt met PHP constanten** - Toegevoegde steun voor [ PHP constanten ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/configure-env-yaml#php-constants) in het `.magento.env.yaml` configuratiedossier.<!-- MAGECLOUD- 2575 -->
+- ![ nieuw pictogram ](../../assets/new.svg) **vormt met PHP constanten** - Toegevoegde steun voor [ PHP constanten ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/env/configure-env-yaml#php-constants) in het `.magento.env.yaml` configuratiedossier.<!-- MAGECLOUD- 2575 -->
 
 - ![ nieuw pictogram ](../../assets/new.svg) **Nieuwe milieu variabele** - door gebrek, slechts heeft het milieu van de Productie toegelaten Googles Analytics. U kunt Googles Analytics op de het Opvoeren en milieu&#39;s van de Integratie toelaten gebruikend [ ENABLE_GOOGLE_ANALYTICS omgevingsvariabele ](../environment/variables-deploy.md#enable_google_analytics).<!--MAGECLOUD-2879-->
 
@@ -343,13 +343,13 @@ In de release `ece-tools` 2002.0.22 wordt de structuur van het `ece-tools` -pakk
 
    - Nu hebt u het vermogen van de stortplaats van DB wanneer het gebruiken van de Dok van de Wolk [ gegevensbestandcontainer ](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#database-container). Ook, kunt u dossiers &rbrack;(https://developer.adobe.com/commerce/cloud-tools/docker/containers/#sharing-data-between-host-machine-and-container) tussen een gastheermachine en een container delen gebruikend de `docker/mnt` folder.<!-- MAGECLOUD-2577 -->&lbrack;
 
-   - **de dienststeun van Varnish** - voegde een beeld van Varnish toe, dat automatisch aan een container van de Dok wordt opgesteld. Na plaatsing, kunt u Varnish na de beste praktijken van Adobe Commerce manueel vormen. Zie [ vormen en gebruiken Vierkant ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/varnish/config-varnish).&lt;!—MAGECLOUD—2358—>
+   - **de dienststeun van Varnish** - voegde een beeld van Varnish toe, dat automatisch aan een container van de Dok wordt opgesteld. Na plaatsing, kunt u Varnish na de beste praktijken van Adobe Commerce manueel vormen. Zie [ vormen en gebruiken Vierkant ](https://experienceleague.adobe.com/nl/docs/commerce-operations/configuration-guide/cache/varnish/config-varnish).&lt;!—MAGECLOUD—2358—>
 
    - Toegang tot de site beveiligen—Toegevoegde SSL-ondersteuning voor toegang tot uw Adobe Commerce-winkel en het deelvenster Beheer.&lt;!—MAGECLOUD—2360—>
 
-- ![ fixpictogram ](../../assets/fix.svg) **Verbeterde Adobe Commerce op de uitbreidingssteun van de wolkeninfrastructuur** - Gedowngraded de minimumversievereiste voor het guzzlehttp/guzzle pakket in Adobe Commerce op het dossier van de wolkeninfrastructuur [ composer.json ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/overview) aan versie 6.2 zodat het `ece-tools` pakket met meer uitbreidingen compatibel is.<!--MAGECLOUD-2205-->
+- ![ fixpictogram ](../../assets/fix.svg) **Verbeterde Adobe Commerce op de uitbreidingssteun van de wolkeninfrastructuur** - Gedowngraded de minimumversievereiste voor het guzzlehttp/guzzle pakket in Adobe Commerce op het dossier van de wolkeninfrastructuur [ composer.json ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/develop/overview) aan versie 6.2 zodat het `ece-tools` pakket met meer uitbreidingen compatibel is.<!--MAGECLOUD-2205-->
 
-- ![ nieuw pictogram ](../../assets/new.svg) **pas douaneveranderingen in uw toepassing van Adobe Commerce tijdens bouwstijlfase** toe - wij verdelen de bouwstijlfase in twee afzonderlijke processen zodat u haken kunt gebruiken om douaneveranderingen op de geproduceerde statische inhoud toe te passen alvorens de toepassing voor plaatsing te verpakken. _bouwt:produceert_ proces produceert code, past flarden toe, en produceert statische inhoud. _bouwt voort:overdracht_ proces brengt de geproduceerde code en statische inhoud aan de definitieve bestemming over. Zie [ de haken van de Toepassing ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/hooks-property).<!--MAGECLOUD-2363-->
+- ![ nieuw pictogram ](../../assets/new.svg) **pas douaneveranderingen in uw toepassing van Adobe Commerce tijdens bouwstijlfase** toe - wij verdelen de bouwstijlfase in twee afzonderlijke processen zodat u haken kunt gebruiken om douaneveranderingen op de geproduceerde statische inhoud toe te passen alvorens de toepassing voor plaatsing te verpakken. _bouwt:produceert_ proces produceert code, past flarden toe, en produceert statische inhoud. _bouwt voort:overdracht_ proces brengt de geproduceerde code en statische inhoud aan de definitieve bestemming over. Zie [ de haken van de Toepassing ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/app/properties/hooks-property).<!--MAGECLOUD-2363-->
 
 - ![&#128279;](../../assets/fix.svg) **de configuratiecontroles van het Milieu 1&rbrace;  bevestigen pictogram** - Verbeterde bevestiging van de milieuconfiguratie om klanten over versionverenigbaarheden en configuratiefouten te waarschuwen alvorens Adobe Commerce op wolkeninfrastructuur te bouwen en op te stellen.
 
@@ -357,7 +357,7 @@ In de release `ece-tools` 2002.0.22 wordt de structuur van het `ece-tools` -pakk
 
    - Er is een compatibiliteitscontrole voor Elasticsearch toegevoegd om gebruikers te waarschuwen voor problemen met de configuratie van Elasticsearch. De implementatie mislukt nu als de versie van de service Elasticsearch op de server niet compatibel is met Adobe Commerce. Eerder, slaagde de plaatsing zelfs als de versie van de Elasticsearch incompatibel was, die de kwesties van de productcatalogus na plaatsplaatsing veroorzaakte.<!--MAGECLOUD-2389-->
 
-     U kunt de onverenigbaarheid oplossen door [ een kaartje van de Steun ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/best-practices) voor te leggen om Elasticsearch aan een compatibele versie te bevorderen, of de configuratie van Adobe Commerce te veranderen om een compatibele versie van de cliënt van Elasticsearch te specificeren PHP.
+     U kunt de onverenigbaarheid oplossen door [ een kaartje van de Steun ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/develop/deploy/best-practices) voor te leggen om Elasticsearch aan een compatibele versie te bevorderen, of de configuratie van Adobe Commerce te veranderen om een compatibele versie van de cliënt van Elasticsearch te specificeren PHP.
 
       - Voor Adobe Commerce versie 2.1.x tot 2.2.2, bevorder Elasticsearch aan versie 2.4.
 
@@ -393,7 +393,7 @@ In de release `ece-tools` 2002.0.22 wordt de structuur van het `ece-tools` -pakk
 
 - ![ fixpictogram ](../../assets/fix.svg) Vaste een kwestie met het [ statische proces van de inhoudscompressie ](../environment/variables-intro.md) (`gzip`) dat `not overwritten` en `no such file or directory` fouten veroorzaakte wanneer het van verwijzingen voorzien van naar het samengeperste dossier tijdens het plaatsingsproces.<!-- MAGECLOUD-2182-->
 
-- ![ fixpictogram ](../../assets/fix.svg) Vaste een kwestie die het `php ./vendor/bin/ece-tools config:dump` bevel verhinderde overtollige secties uit het `config.php` dossier tijdens het stortplaatsproces te verwijderen als de opslagscène niet wordt gespecificeerd. Nu kunt u uw configuratiebestanden eenvoudig tussen omgevingen verplaatsen. Nadat u de update naar `ece-tools` v2002.0.13 hebt uitgevoerd, kunt u oudere `config.php` -bestanden opnieuw genereren met de verbeterde opdracht `config:dump` . Zie [ beheer van de Configuratie voor opslagmontages ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/store-settings).<!--MAGECLOUD-2444-->
+- ![ fixpictogram ](../../assets/fix.svg) Vaste een kwestie die het `php ./vendor/bin/ece-tools config:dump` bevel verhinderde overtollige secties uit het `config.php` dossier tijdens het stortplaatsproces te verwijderen als de opslagscène niet wordt gespecificeerd. Nu kunt u uw configuratiebestanden eenvoudig tussen omgevingen verplaatsen. Nadat u de update naar `ece-tools` v2002.0.13 hebt uitgevoerd, kunt u oudere `config.php` -bestanden opnieuw genereren met de verbeterde opdracht `config:dump` . Zie [ beheer van de Configuratie voor opslagmontages ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure-store/store-settings).<!--MAGECLOUD-2444-->
 
 - ![ fixpictogram ](../../assets/fix.svg) Vaste een kwestie die een fout tijdens opstelt fase veroorzaakte als de routeconfiguratie in het `.magento/routes.yaml` dossier van een [ apex ](https://blog.cloudflare.com/zone-apex-naked-domain-root-domain-cname-supp/) domein aan a `www` domein opnieuw richt.<!--MAGECLOUD-2556-->
 
@@ -561,7 +561,7 @@ In de release `ece-tools` 2002.0.22 wordt de structuur van het `ece-tools` -pakk
 
 - **Nieuw kroonbevel** - u kunt specifieke vastgezette kroonbanen in plaats van het tegenhouden van en het opnieuw lanceren van allen met het [`cron:unlock` nu ontgrendelen ](https://support.magento.com/hc/en-us/articles/360033099451) bevel. Niet beschikbaar in 2.1.<!-- MAGECLOUD-1367 -->
 
-- **Verenigd configuratiedossier** - u kunt bouwt en stadia nu vormen gebruikend a [`.magento.env.yaml` ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/configure-env-yaml) dossier.<!-- MAGECLOUD-1369 -->
+- **Verenigd configuratiedossier** - u kunt bouwt en stadia nu vormen gebruikend a [`.magento.env.yaml` ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/env/configure-env-yaml) dossier.<!-- MAGECLOUD-1369 -->
 
 - **de configuratiedossiers van de Steun** - Het plaatsingsproces leidt nu automatisch tot een steun van de `app/etc/env.php` en `app/etc/config.php` configuratiedossiers na plaatsing. Wij hebben ook a [ nieuw CLI bevel ](https://support.magento.com/hc/en-us/articles/360033182871) toegevoegd om deze configuratiedossiers van een steun te herstellen.<!-- MAGECLOUD-1372 -->
 
@@ -623,11 +623,11 @@ In de release `ece-tools` 2002.0.22 wordt de structuur van het `ece-tools` -pakk
 
    - [Statische prestaties voor implementatie van inhoud](../deploy/static-content.md)
 
-   - [ proces van de Plaatsing ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/best-practices)
+   - [ proces van de Plaatsing ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/develop/deploy/best-practices)
 
-- **beheer van de Configuratie** - wij nu auto-produceren een `app/etc/config.php` dossier in uw bewaarplaats van het Git tijdens de bouwstijlfase als het niet reeds bestaat. Het automatisch gegenereerde bestand bevat alleen een lijst met modules en extensies. Als het bestand al bestaat, gaat de constructiefase verder als normaal. Als u [ Beheer van de Configuratie ](../store/store-settings.md) in een recentere tijd volgt, werken de bevelen het dossier bij zonder extra stappen te vereisen. Verwijs naar [ proces van de Plaatsing ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/best-practices) voor meer informatie.
+- **beheer van de Configuratie** - wij nu auto-produceren een `app/etc/config.php` dossier in uw bewaarplaats van het Git tijdens de bouwstijlfase als het niet reeds bestaat. Het automatisch gegenereerde bestand bevat alleen een lijst met modules en extensies. Als het bestand al bestaat, gaat de constructiefase verder als normaal. Als u [ Beheer van de Configuratie ](../store/store-settings.md) in een recentere tijd volgt, werken de bevelen het dossier bij zonder extra stappen te vereisen. Verwijs naar [ proces van de Plaatsing ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/develop/deploy/best-practices) voor meer informatie.
 
-- **dumps van het Gegevensbestand** - wij hebben a `magento/ece-tools` CLI bevel voor het creëren van gegevensbestanddumps in alle milieu&#39;s toegevoegd. Voor de milieu&#39;s van de Productie van het Pro-plan, laat dit bevel slechts dumpen van één van drie high-availability knopen, zodat kunnen de productiegegevens die aan een verschillende knoop tijdens de stortplaats worden geschreven niet worden gekopieerd. Wij adviseren het zetten van de toepassing op onderhoudswijze alvorens een gegevensbestandstortplaats in de milieu&#39;s van de Productie te doen. Zie [ Reservekopiebeheer ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/snapshots) voor meer informatie.
+- **dumps van het Gegevensbestand** - wij hebben a `magento/ece-tools` CLI bevel voor het creëren van gegevensbestanddumps in alle milieu&#39;s toegevoegd. Voor de milieu&#39;s van de Productie van het Pro-plan, laat dit bevel slechts dumpen van één van drie high-availability knopen, zodat kunnen de productiegegevens die aan een verschillende knoop tijdens de stortplaats worden geschreven niet worden gekopieerd. Wij adviseren het zetten van de toepassing op onderhoudswijze alvorens een gegevensbestandstortplaats in de milieu&#39;s van de Productie te doen. Zie [ Reservekopiebeheer ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/develop/storage/snapshots) voor meer informatie.
 
 - **opgeheven het intervalbeperkingen van de Kroon** - het standaardkantelinterval voor alle milieu&#39;s die in de us-3, eu-3, en ap-3 gebieden worden voorzien is 1 minuut. Het standaardinterval voor uitsnijden in alle andere gebieden is 5 minuten voor Pro-integratieomgevingen en 1 minuut voor Pro Staging- en Productieomgevingen. Als u uw bestaande uitsnijdtaken wilt wijzigen, bewerkt u de instellingen in `.magento.app.yaml` of maakt u een ondersteuningsticket voor productie-/parkeeromgevingen. Verwijs naar [ de banen van de opstelling cron ](../application/crons-property.md#set-up-cron-jobs) voor meer informatie.
 
@@ -671,7 +671,7 @@ In de release `ece-tools` 2002.0.22 wordt de structuur van het `ece-tools` -pakk
 
 **Nieuwe eigenschappen:**
 
-- Adobe Commerce op wolkeninfrastructuur steunt nu werkingsgebied en [ statische strategieën van de inhoudsplaatsing ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy). De parameter `–s` is toegevoegd met de standaardinstelling `quick` voor de strategie voor de implementatie van statische inhoud. U kunt het milieu veranderlijke [ SCD_STRATEGY ](../environment/variables-deploy.md) gebruiken om deze strategieën met uw te passen en acties op te stellen en op te stellen. Deze variabele ondersteunt de opties `standard` , `quick` of `compact` . Als u `compact` selecteert, overschrijven we de `STATIC_CONTENT_THREADS` waarde met `1` , wat de implementatie kan vertragen, vooral in productieomgevingen. Niet beschikbaar in 2.1.<!--- MAGECLOUD-1057 -->
+- Adobe Commerce op wolkeninfrastructuur steunt nu werkingsgebied en [ statische strategieën van de inhoudsplaatsing ](https://experienceleague.adobe.com/nl/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy). De parameter `–s` is toegevoegd met de standaardinstelling `quick` voor de strategie voor de implementatie van statische inhoud. U kunt het milieu veranderlijke [ SCD_STRATEGY ](../environment/variables-deploy.md) gebruiken om deze strategieën met uw te passen en acties op te stellen en op te stellen. Deze variabele ondersteunt de opties `standard` , `quick` of `compact` . Als u `compact` selecteert, overschrijven we de `STATIC_CONTENT_THREADS` waarde met `1` , wat de implementatie kan vertragen, vooral in productieomgevingen. Niet beschikbaar in 2.1.<!--- MAGECLOUD-1057 -->
 
 - We hebben een logbestand voor omgevingen gemaakt om acties vast te leggen en te compileren en implementeren. Het `var/log/cloud.log` -bestand bevindt zich in de hoofdmap van de toepassing. <!--- MAGECLOUD-1014 & MAGECLOUD-1023 -->
 

@@ -31,7 +31,7 @@ Omgevingsvariabelen die specifiek zijn voor Adobe Commerce op cloudinfrastructuu
 
 >[!WARNING]
 >
->Om milieuvariabelen aan [ met voeten te treden configuratiemontages ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/paths/override-config-settings.html) gebruikend [[!DNL Cloud Console]](../project/overview.md), moet u de veranderlijke naam met `env:` zoals in het volgende voorbeeld prepend:
+>Om milieuvariabelen aan [ met voeten te treden configuratiemontages ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/paths/override-config-settings.html?lang=nl-NL) gebruikend [[!DNL Cloud Console]](../project/overview.md), moet u de veranderlijke naam met `env:` zoals in het volgende voorbeeld prepend:
 >
 >![ veranderlijk voorbeeld van het Milieu ](../../assets/set-env-variable-ui.png)
 

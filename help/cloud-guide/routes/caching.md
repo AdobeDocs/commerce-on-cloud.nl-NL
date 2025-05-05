@@ -131,7 +131,7 @@ Er is een speciaal geval als de `cookies` -toets de `["*"]` -waarde heeft. Deze 
 
 Cookies hebben de volgende beperkingen:
 
-- Er is een vastgestelde maximum van **50 koekjes** in het systeem. Anders genereert de toepassing een `Unable to send the cookie. Maximum number of cookies would be exceeded` -uitzondering. Om het aantal koekjes aan 200 te verhogen, pas het [ MDVA-12304 flard ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html) toe gebruikend het [ Hulpmiddel van de Patches van de Kwaliteit ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/tools/quality-patch-tool).
+- Er is een vastgestelde maximum van **50 koekjes** in het systeem. Anders genereert de toepassing een `Unable to send the cookie. Maximum number of cookies would be exceeded` -uitzondering. Om het aantal koekjes aan 200 te verhogen, pas het [ MDVA-12304 flard ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=nl-NL) toe gebruikend het [ Hulpmiddel van de Patches van de Kwaliteit ](https://experienceleague.adobe.com/nl/docs/commerce-learn/tutorials/tools/quality-patch-tool).
 - Een maximumkoekjesgrootte is **4096 bytes**. Anders genereert de toepassing een `Unable to send the cookie. Size of '%name' is %size bytes` -uitzondering.
 
 ### `default_ttl`

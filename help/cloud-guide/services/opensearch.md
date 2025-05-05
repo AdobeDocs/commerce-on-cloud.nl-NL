@@ -38,7 +38,7 @@ Met OpenSearch kunt u gegevens van elke bron, elke indeling en in real-time zoek
        disk: 1024
    ```
 
-   Voor Pro projecten, moet u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voorleggen om de versie OpenSearch in de het Opvoeren en milieu&#39;s van de Productie te veranderen.
+   Voor Pro projecten, moet u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voorleggen om de versie OpenSearch in de het Opvoeren en milieu&#39;s van de Productie te veranderen.
 
 1. Stel de eigenschap `relationships` in het `.magento.app.yaml` -bestand in of controleer deze.
 
@@ -91,7 +91,7 @@ Wanneer u uw Adobe Commerce op het project van de wolkeninfrastructuur installee
 
 - **verbetering van het Project** - verifieer dat de cliënt OpenSearch PHP in de nieuwe toepassingsversie compatibel is met de OpenSearch de dienstversie die op de wolkeninfrastructuur wordt geïnstalleerd.
 
-De versie van de dienst en verenigbaarheidssteun wordt bepaald door versies die op de infrastructuur van de Wolk worden getest en worden opgesteld, en verschillen soms van versies die door Adobe Commerce op-gebouw plaatsingen worden gesteund. Zie {de vereisten van het 0} Systeem [&#128279;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in de _Gids van de Installatie_ voor een lijst van gesteunde versies.
+De versie van de dienst en verenigbaarheidssteun wordt bepaald door versies die op de infrastructuur van de Wolk worden getest en worden opgesteld, en verschillen soms van versies die door Adobe Commerce op-gebouw plaatsingen worden gesteund. Zie {de vereisten van het 0} Systeem [&#128279;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=nl-NL) in de _Gids van de Installatie_ voor een lijst van gesteunde versies.
 
 **om de softwareverenigbaarheid te verifiëren OpenSearch**:
 

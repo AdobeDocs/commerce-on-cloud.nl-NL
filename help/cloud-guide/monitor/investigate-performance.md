@@ -30,7 +30,7 @@ Alle verzamelde gegevensdetails de tijd die aan acties wordt doorgebracht die ge
 
 >[!TIP]
 >
->Voor details bij het gebruiken van dit gegeven om de kwesties van toepassingsprestaties problemen op te lossen, zie [ prestaties problemen oplossen gebruikend New Relic ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html) in het _Centrum van de Hulp van Adobe Commerce_.
+>Voor details bij het gebruiken van dit gegeven om de kwesties van toepassingsprestaties problemen op te lossen, zie [ prestaties problemen oplossen gebruikend New Relic ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html?lang=nl-NL) in het _Centrum van de Hulp van Adobe Commerce_.
 
 ## Prestaties bewaken met beheerde waarschuwingen
 
@@ -46,7 +46,7 @@ De Adobe verstrekt _Beheerde Alarm voor Adobe Commerce_ waakzaam beleid om prest
 | MariaDB-query laden | NRI | Pro |
 | Herdis-geheugen | NRI | Pro |
 
-Wanneer de infrastructuur of de toepassingsvoorwaarden van de plaats een waakzame drempel teweegbrengen, verzendt New Relic waakzame berichten zodat u de kwestie kunt proactief behandelen. Zie [ Beheerde Alarm voor Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html) in het _Centrum van de Hulp van Adobe Commerce_ voor details over waakzame drempels en het oplossen van problemenstappen om de kwesties op te lossen die de waakzaamheid teweegbrachten.
+Wanneer de infrastructuur of de toepassingsvoorwaarden van de plaats een waakzame drempel teweegbrengen, verzendt New Relic waakzame berichten zodat u de kwestie kunt proactief behandelen. Zie [ Beheerde Alarm voor Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html?lang=nl-NL) in het _Centrum van de Hulp van Adobe Commerce_ voor details over waakzame drempels en het oplossen van problemenstappen om de kwesties op te lossen die de waakzaamheid teweegbrachten.
 
 >[!TIP]
 >
@@ -76,7 +76,7 @@ Wanneer de infrastructuur of de toepassingsvoorwaarden van de plaats een waakzam
 
      >[!NOTE]
      >
-     >Als het _Beheerde Alarm voor het beleid van Adobe Commerce_ niet beschikbaar is, zie [ Beheerde Alarm voor Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html) in het _Centrum van de Hulp van Adobe Commerce_.
+     >Als het _Beheerde Alarm voor het beleid van Adobe Commerce_ niet beschikbaar is, zie [ Beheerde Alarm voor Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html?lang=nl-NL) in het _Centrum van de Hulp van Adobe Commerce_.
 
 1. Klik op het tabblad **[!UICONTROL Alert conditions]** om de waarschuwingsvoorwaarden te bekijken die in het beleid zijn gedefinieerd.
 

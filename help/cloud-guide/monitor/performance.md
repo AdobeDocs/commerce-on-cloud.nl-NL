@@ -15,7 +15,7 @@ ht-degree: 0%
 U kunt de volgende services gebruiken om de prestaties van uw cloudomgevingen te controleren:
 
 - [ de berichten van de Gezondheid ](../integrations/health-notifications.md) - een integratie die een alarm van de schijfruimte op Starter en Pro integratiemilieu&#39;s verstrekt.
-- [ Waarneming voor de Gids van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html) - Uitgebreide controle voor alle plaatsen van Commerce die logboekgegevens van veelvoudige bronnen combineert om u te helpen uw de plaatsprestaties van Adobe Commerce beter beheren en kwesties diagnostiseren.
+- [ Waarneming voor de Gids van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html?lang=nl-NL) - Uitgebreide controle voor alle plaatsen van Commerce die logboekgegevens van veelvoudige bronnen combineert om u te helpen uw de plaatsprestaties van Adobe Commerce beter beheren en kwesties diagnostiseren.
 
 ## New Relic-service
 

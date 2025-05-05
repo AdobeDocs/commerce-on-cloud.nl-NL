@@ -49,7 +49,7 @@ Hoewel deze sectie bespreekt hoe te om de naam Composer en de versie van een uit
 
 ## Een extensie installeren
 
-Adobe raadt u aan in een ontwikkelingsvertakking te werken wanneer u een extensie toevoegt aan uw implementatie. Wanneer het installeren van een uitbreiding, wordt de uitbreidingsnaam (`<VendorName>_<ComponentName>`) automatisch opgenomen in het [`app/etc/config.php` ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/deployment-files.html) dossier. U hoeft het bestand niet rechtstreeks te bewerken.
+Adobe raadt u aan in een ontwikkelingsvertakking te werken wanneer u een extensie toevoegt aan uw implementatie. Wanneer het installeren van een uitbreiding, wordt de uitbreidingsnaam (`<VendorName>_<ComponentName>`) automatisch opgenomen in het [`app/etc/config.php` ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/deployment-files.html?lang=nl-NL) dossier. U hoeft het bestand niet rechtstreeks te bewerken.
 
 **om een uitbreiding** te installeren:
 
@@ -155,7 +155,7 @@ Schakel een extensie nooit in of uit wanneer u bent aangemeld bij de externe omg
 
 ## Een extensie upgraden
 
-Voordat u verdergaat, hebt u de naam en de versie van de Composer nodig voor de extensie. Controleer ook of de extensie compatibel is met uw project en de Adobe Commerce-versie. Met name, [ controleer de vereiste PHP versie ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) alvorens u begint.
+Voordat u verdergaat, hebt u de naam en de versie van de Composer nodig voor de extensie. Controleer ook of de extensie compatibel is met uw project en de Adobe Commerce-versie. Met name, [ controleer de vereiste PHP versie ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=nl-NL) alvorens u begint.
 
 **om een uitbreiding** bij te werken:
 
@@ -189,4 +189,4 @@ Voordat u verdergaat, hebt u de naam en de versie van de Composer nodig voor de 
    git push origin <branch-names>
    ```
 
-Als u fouten ontmoet, zie [ Herstel van componentenmislukking ](../deploy/recover-failed-deployment.md). Meer over het gebruiken van uitbreidingen met Adobe Commerce leren, zie [ Uitbreidingen ](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/extensions.html) in de _Gids Admin_.
+Als u fouten ontmoet, zie [ Herstel van componentenmislukking ](../deploy/recover-failed-deployment.md). Meer over het gebruiken van uitbreidingen met Adobe Commerce leren, zie [ Uitbreidingen ](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/extensions.html?lang=nl-NL) in de _Gids Admin_.

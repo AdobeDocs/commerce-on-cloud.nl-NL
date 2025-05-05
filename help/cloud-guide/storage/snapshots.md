@@ -137,7 +137,7 @@ De hersteltijden variëren afhankelijk van de grootte van de database:
 
 ## Een momentopname voor noodherstel herstellen
 
-Om de Momentopname van de Terugwinning van de Ramp in Pro het Opvoeren en milieu&#39;s van de Productie te herstellen, [ voer direct de gegevensbestandstortplaats van de server ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3) in.
+Om de Momentopname van de Terugwinning van de Ramp in Pro het Opvoeren en milieu&#39;s van de Productie te herstellen, [ voer direct de gegevensbestandstortplaats van de server ](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3) in.
 
 ## Code terugdraaien
 

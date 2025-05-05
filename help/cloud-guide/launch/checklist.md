@@ -90,7 +90,7 @@ Wanneer u bereid bent om uw plaats te lanceren, moet u de DNS configuratie bijwe
      php bin/magento setup:store-config:set --base-url="https://www.<domain-name>.com/"
      ```
 
-   **NOTA**: U kunt de Basis URL van Admin ook bijwerken. Zie [ opslag URLs ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html) in de _Opslag van Adobe Commerce en Gids van de Ervaring van de Aankoop_.
+   **NOTA**: U kunt de Basis URL van Admin ook bijwerken. Zie [ opslag URLs ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html?lang=nl-NL) in de _Opslag van Adobe Commerce en Gids van de Ervaring van de Aankoop_.
 
 1. Wacht een paar minuten totdat de site is bijgewerkt.
 
@@ -104,7 +104,7 @@ Hieronder vindt u aanbevolen wijzigingen en controles:
 
 - [Uitgaande e-mailtests voltooid](../project/outgoing-emails.md)
 
-- [ Veilige configuratie voor geloofsbrieven Admin en Basis Admin URL ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-admin)
+- [ Veilige configuratie voor geloofsbrieven Admin en Basis Admin URL ](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/security/security-admin)
 
 - [Alle afbeeldingen voor het web optimaliseren](../cdn/fastly-image-optimization.md)
 
@@ -136,9 +136,9 @@ U kunt ook testen met de volgende opties van derden:
 
 - [Beveiligingsscan instellen](overview.md#set-up-the-security-scan-tool)
 
-- [ Veilige configuratie voor Admin gebruiker ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-admin)
+- [ Veilige configuratie voor Admin gebruiker ](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/security/security-admin)
 
-- [ Veilige configuratie voor Admin URL ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls#use-a-custom-admin-url)
+- [ Veilige configuratie voor Admin URL ](https://experienceleague.adobe.com/nl/docs/commerce-admin/stores-sales/site-store/store-urls#use-a-custom-admin-url)
 
 - [Gebruikers die zich niet meer op de Adobe Commerce bevinden, verwijderen uit het infrastructuurproject voor de cloud](../project/user-access.md)
 

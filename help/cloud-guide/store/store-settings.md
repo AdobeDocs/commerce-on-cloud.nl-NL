@@ -15,14 +15,14 @@ De standaardconfiguraties voor uw opslag worden opgeslagen in een `config.xml` v
 
 De montages van de opslag, die naar de configuraties in Admin **verwijzen Slaat** > **Montages** > **de sectie van de Configuratie**, worden opgeslagen in de dossiers van de plaatsingsconfiguratie die op het type van configuratie worden gebaseerd:
 
-- `app/etc/config.php` - configuratie-instellingen voor winkels, websites, modules of extensies, statische optimalisatie van bestanden en systeemwaarden met betrekking tot de implementatie van statische inhoud. Zie de {[&#128279;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/config-reference-configphp.html) referentie 0} config.php in de _Gids van de Configuratie_.
-- `app/etc/env.php` - waarden voor systeem-specifieke met voeten treedt en gevoelige montages die _NIET_ in broncontrole zouden moeten worden opgeslagen. Zie [ env.php verwijzing ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/config-reference-envphp.html) in de _Gids van de Configuratie_.
+- `app/etc/config.php` - configuratie-instellingen voor winkels, websites, modules of extensies, statische optimalisatie van bestanden en systeemwaarden met betrekking tot de implementatie van statische inhoud. Zie de {[&#128279;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/config-reference-configphp.html?lang=nl-NL) referentie 0} config.php in de _Gids van de Configuratie_.
+- `app/etc/env.php` - waarden voor systeem-specifieke met voeten treedt en gevoelige montages die _NIET_ in broncontrole zouden moeten worden opgeslagen. Zie [ env.php verwijzing ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/config-reference-envphp.html?lang=nl-NL) in de _Gids van de Configuratie_.
 
 >[!NOTE]
 >
 >Omdat Adobe Commerce op wolkeninfrastructuur slechts de productie en onderhoudswijzen steunt, is de **Geavanceerde** > **sectie van de Ontwikkelaar** niet toegankelijk in Admin. U moet {de voorrechten van Admin van 0} milieu [&#128279;](../project/user-access.md) hebben om de taken van het configuratiebeheer te voltooien.  U kunt extra montages vormen gebruikend [ milieuvariabelen ](../environment/configure-env-yaml.md).
 
-Het beheer van de configuratie verstrekt een manier om verenigbare opslagmontages over uw milieu&#39;s met minimale onderbreking op te stellen gebruikend de plaatsing van de Pijpleiding. Adobe Commerce op het project van de wolkeninfrastructuur omvat de bouwstijlserver, bouwt en stelt manuscripten, en plaatsingsmilieu&#39;s op die met de [ strategie van de pijpleidingsplaatsing ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html) in mening worden ontworpen.
+Het beheer van de configuratie verstrekt een manier om verenigbare opslagmontages over uw milieu&#39;s met minimale onderbreking op te stellen gebruikend de plaatsing van de Pijpleiding. Adobe Commerce op het project van de wolkeninfrastructuur omvat de bouwstijlserver, bouwt en stelt manuscripten, en plaatsingsmilieu&#39;s op die met de [ strategie van de pijpleidingsplaatsing ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html?lang=nl-NL) in mening worden ontworpen.
 
 ## Configuratieoverschrijvingsschema
 
@@ -36,7 +36,7 @@ Samengevat overschrijven omgevingsvariabelen alle andere waarden.
 
 >[!TIP]
 >
->Zie [ het beheer van de Configuratie ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html) in de _gids van de Configuratie_ voor meer over de opheffingsregeling voor pijpleidingsplaatsing.
+>Zie [ het beheer van de Configuratie ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html?lang=nl-NL) in de _gids van de Configuratie_ voor meer over de opheffingsregeling voor pijpleidingsplaatsing.
 
 Als het zelfde plaatsen in veelvoudige plaatsen wordt gevormd, baseert de toepassing zich op de volgende configuratiehiërarchie om te bepalen welke waarde op het milieu van toepassing is:
 
@@ -69,7 +69,7 @@ De gegevens &quot;gedumpt&quot;aan het `app/etc/config.php` dossier worden _gesl
 
 Alle gevoelige configuraties worden naar het `app/etc/env.php` -bestand geëxporteerd wanneer u de opdracht `bin/magento app:config:dump` gebruikt. U kunt vertrouwelijke waarden plaatsen gebruikend het CLI bevel: `bin/magento config:sensitive:set`. Zie [ Gevoelige en milieu-specifieke montages ](https://developer.adobe.com/commerce/php/development/configuration/sensitive-environment-settings/) in de _gids van de Uitbreidingen van Commerce PHP_ leren hoe te om configuratiemontages als gevoelig of systeem-specifiek aan te wijzen.
 
-Zie een lijst van [ Gevoelige of systeem-specifieke montages ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/paths/config-reference-sens.html) in de _Gids van de Configuratie_.
+Zie een lijst van [ Gevoelige of systeem-specifieke montages ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/paths/config-reference-sens.html?lang=nl-NL) in de _Gids van de Configuratie_.
 
 ### SCD-prestaties
 

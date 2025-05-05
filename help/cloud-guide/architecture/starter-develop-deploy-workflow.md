@@ -104,9 +104,9 @@ Wanneer u klaar bent om uw winkel te configureren, drukt u op al uw code naar de
 Raadpleeg de documentatie voor Adobe Commerce en de geïnstalleerde extensies voor de beste informatie over configuraties. Hier volgen enkele koppelingen en ideeën die u helpen om aan de slag te gaan:
 
 - [ Beste praktijken voor opslagconfiguratie ](../store/best-practices.md) voor specifieke beste praktijken in de wolk
-- [ Basisconfiguratie ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/store-details) voor opslag admin toegang, naam, talen, valuta, branding, plaatsen, opslagmeningen en meer
-- [ Thema ](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/content-menu#design-features) voor uw blik en gevoel van de plaats en opslag met inbegrip van CSS en lay-outs
-- [ configuratie van het Systeem ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/guide-overview) voor rollen, hulpmiddelen, berichten, en uw encryptiesleutel voor uw gegevensbestand
+- [ Basisconfiguratie ](https://experienceleague.adobe.com/nl/docs/commerce-admin/start/setup/store-details) voor opslag admin toegang, naam, talen, valuta, branding, plaatsen, opslagmeningen en meer
+- [ Thema ](https://experienceleague.adobe.com/nl/docs/commerce-admin/content-design/content-menu#design-features) voor uw blik en gevoel van de plaats en opslag met inbegrip van CSS en lay-outs
+- [ configuratie van het Systeem ](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/guide-overview) voor rollen, hulpmiddelen, berichten, en uw encryptiesleutel voor uw gegevensbestand
 - Instellingen voor extensies gebruiken in de documentatie
 
 Buiten enkel opslagmontages, kunt u veelvoudige plaatsen en opslag, de gevormde diensten, en meer verder vormen. Zie [ uw opslag ](../store/overview.md) vormen.
@@ -162,9 +162,9 @@ Als u functies ontwikkelt, extensies toevoegt en thema&#39;s ontwerpt, is het ha
 
 Productiegegevens exporteren als testgegevens voor gebruik in staging- en integratieomgevingen:
 
-- [ stel de bevelen van de steunnut ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html) CLI (geadviseerd) in werking wanneer het uitvoeren van een beschermde steun van klant en opslaggegevens gebruikend uw de encryptiesleutel van Adobe Commerce
+- [ stel de bevelen van de steunnut ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html?lang=nl-NL) CLI (geadviseerd) in werking wanneer het uitvoeren van een beschermde steun van klant en opslaggegevens gebruikend uw de encryptiesleutel van Adobe Commerce
 
-- [ het hulpmiddel van de Inzameling van Gegevens ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector) om gegevens te produceren en uit te voeren
+- [ het hulpmiddel van de Inzameling van Gegevens ](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/tools/support#data-collector) om gegevens te produceren en uit te voeren
 
 Om dit gegeven te migreren, zie [ en stel statische dossiers en gegevens ](../deploy/staging-production.md#migrate-static-files) op.
 
@@ -172,7 +172,7 @@ Om dit gegeven te migreren, zie [ en stel statische dossiers en gegevens ](../de
 
 >[!NOTE]
 >
->Voordat u de gegevens naar een andere omgeving verplaatst, moet u overwegen de gegevens te ontsmetten. U hebt een paar opties met inbegrip van [ gebruikend steunnut ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html) of het ontwikkelen van een manuscript om klantengegevens te schrobben.
+>Voordat u de gegevens naar een andere omgeving verplaatst, moet u overwegen de gegevens te ontsmetten. U hebt een paar opties met inbegrip van [ gebruikend steunnut ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html?lang=nl-NL) of het ontwikkelen van een manuscript om klantengegevens te schrobben.
 
 >[!WARNING]
 >

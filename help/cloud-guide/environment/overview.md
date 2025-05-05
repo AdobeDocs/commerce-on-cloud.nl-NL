@@ -27,7 +27,7 @@ U kunt toepassingsmontages, routes vormen, acties bouwen en opstellen, en berich
 
 ## Configuratie-updates voor Pro-omgevingen
 
-Voor Adobe Commerce op cloud Infrastructure Pro Staging and Production-omgevingen kunt u veel configuratieopties bijwerken in uw lokale ontwikkelomgeving en de wijzigingen doorvoeren om deze toe te passen op deze omgevingen. Nochtans, moet u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voorleggen om de volgende configuratieopties bij te werken:
+Voor Adobe Commerce op cloud Infrastructure Pro Staging and Production-omgevingen kunt u veel configuratieopties bijwerken in uw lokale ontwikkelomgeving en de wijzigingen doorvoeren om deze toe te passen op deze omgevingen. Nochtans, moet u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voorleggen om de volgende configuratieopties bij te werken:
 
 - Installeer of werk de diensten in het `.magento/services.yaml` dossier bij.
 - Wijzig de configuratie voor de eigenschappen `mounts` en `disk` in het `.magento.app.yaml` -bestand.

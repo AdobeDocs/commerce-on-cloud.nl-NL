@@ -23,7 +23,7 @@ In het volgende voorbeeld ziet u hoe u omleidingsregels voor uw Adobe Commerce k
 
 >[!WARNING]
 >
->Voor Adobe Commerce op projecten met cloudinfrastructuur kan het configureren van een groot aantal niet-regex omleidingen en herschrijvingen in het `routes.yaml` -bestand prestatieproblemen veroorzaken. Als het `routes.yaml` -bestand 32 kB of groter is, kunt u de niet-regex omleiden en snel herschrijven. Zie [ de niet-regex van de Offload richt aan Fastly in plaats van Nginx (routes) ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/offload-non-regex-redirects-to-fastly-instead-of-nginx-routes.html) in het _Centrum van de Hulp van Adobe Commerce_.
+>Voor Adobe Commerce op projecten met cloudinfrastructuur kan het configureren van een groot aantal niet-regex omleidingen en herschrijvingen in het `routes.yaml` -bestand prestatieproblemen veroorzaken. Als het `routes.yaml` -bestand 32 kB of groter is, kunt u de niet-regex omleiden en snel herschrijven. Zie [ de niet-regex van de Offload richt aan Fastly in plaats van Nginx (routes) ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/offload-non-regex-redirects-to-fastly-instead-of-nginx-routes.html?lang=nl-NL) in het _Centrum van de Hulp van Adobe Commerce_.
 
 ## Hele-routeomleidingen
 

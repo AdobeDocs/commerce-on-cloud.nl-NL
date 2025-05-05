@@ -78,7 +78,7 @@ ssh 1.ent-project-environment-id@ssh.region.magento.cloud "cat var/log/cron.log"
 >
 >Voor Pro Staging- en Pro Production-omgevingen zijn automatische logrotatie, compressie en verwijdering ingeschakeld voor logbestanden met een vaste bestandsnaam. Elk logboekbestandstype heeft een roterend patroon en een levensduur.
 >Meer informatie over de logrotatie en de levensduur van gecomprimeerde logbestanden in de omgeving vindt u in: `/etc/logrotate.conf` en `/etc/logrotate.d/<various>` .
->Voor Pro het Opvoeren en de Pro milieu&#39;s van de Productie, moet u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voorleggen om voor veranderingen in de configuratie van de logboekomwenteling te vragen.
+>Voor Pro het Opvoeren en de Pro milieu&#39;s van de Productie, moet u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voorleggen om voor veranderingen in de configuratie van de logboekomwenteling te vragen.
 
 >[!TIP]
 >
@@ -189,7 +189,7 @@ title: The configured state is not ideal
 type: warning
 ```
 
-De meeste foutberichten bevatten een beschrijving en voorgestelde actie. Gebruik de [ het berichtverwijzing van de Fout voor ECE-Hulpmiddelen ](../dev-tools/error-reference.md) om de foutencode voor verdere begeleiding op te zoeken. Voor verdere begeleiding, gebruik de [ de plaatsingsprobleemoplosser van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html).
+De meeste foutberichten bevatten een beschrijving en voorgestelde actie. Gebruik de [ het berichtverwijzing van de Fout voor ECE-Hulpmiddelen ](../dev-tools/error-reference.md) om de foutencode voor verdere begeleiding op te zoeken. Voor verdere begeleiding, gebruik de [ de plaatsingsprobleemoplosser van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html?lang=nl-NL).
 
 ## Toepassingslogboeken
 
