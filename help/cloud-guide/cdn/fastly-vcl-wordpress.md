@@ -45,6 +45,6 @@ Gebruik snel Edge Modules om aangepaste VCL-code van de Admin te maken en te upl
 
    - Vorm de _Andere CMS/backend integratie_ Module van Edge om URL te behandelen herschrijft van Adobe Commerce aan de WordPress achterkant.
 
-     Voor gedetailleerde instructies, zie {de Modules van 0} Snelle Edge - Andere integratie CMS/Backend ](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/Edge-Modules/EDGE-MODULE-OTHER-CMS-INTEGRATION.md) in de _Snelle CDN module voor Magento 2_ documentatie.[
+     Voor gedetailleerde instructies, zie {de Modules van 0} Snelle Edge - Andere integratie CMS/Backend [&#128279;](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/Edge-Modules/EDGE-MODULE-OTHER-CMS-INTEGRATION.md) in de _Snelle CDN module voor Magento 2_ documentatie.
 
 1. Nadat u de configuratie van de Fastly-service hebt bijgewerkt, test u de Adobe Commerce-winkel om te controleren of de opgegeven URL-aanvragen voor WordPress correct zijn uitgevoerd.

@@ -16,7 +16,7 @@ De eerste lijst wordt automatisch gegenereerd met de opdracht `magento-cloud lis
 
 ## Algemeen
 
-Deze verwijzing wordt gegenereerd op basis van de toepassingscodebase. Om de inhoud te veranderen, kunt u de broncode voor de overeenkomstige bevelimplementatie in de [ codebase ](https://github.com/magento/magento-cloud-cli) bewaarplaats bijwerken en uw veranderingen voor overzicht voorleggen. Een andere manier is ons _geven terugkoppelt_ (vind de verbinding bij het hogere recht). Voor bijdragerichtsnoeren, zie {de Bijdragen van de Code 0} ](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).[
+Deze verwijzing wordt gegenereerd op basis van de toepassingscodebase. Om de inhoud te veranderen, kunt u de broncode voor de overeenkomstige bevelimplementatie in de [ codebase ](https://github.com/magento/magento-cloud-cli) bewaarplaats bijwerken en uw veranderingen voor overzicht voorleggen. Een andere manier is ons _geven terugkoppelt_ (vind de verbinding bij het hogere recht). Voor bijdragerichtsnoeren, zie {de Bijdragen van de Code 0} [&#128279;](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
 
 ### Algemene opties
 

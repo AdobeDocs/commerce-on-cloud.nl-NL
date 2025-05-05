@@ -145,7 +145,7 @@ magento-cloud integration:add --type=gitlab --project=<project-ID> --token=<your
 
 ### Webhaak toevoegen in GitLab
 
-Om gebeurtenissen —zoals een duw of fusieverzoeken— met uw server van de Git van de Wolk mee te delen, moet u een webhaak ](https://docs.gitlab.com/ee/user/project/integrations/webhooks.html#overview) voor uw bewaarplaats van GitLab [ tot stand brengen
+Om gebeurtenissen —zoals een duw of fusieverzoeken— met uw server van de Git van de Wolk mee te delen, moet u een webhaak [&#128279;](https://docs.gitlab.com/ee/user/project/integrations/webhooks.html#overview) voor uw bewaarplaats van GitLab  tot stand brengen
 
 1. In uw bewaarplaats GitLab, klik de **Montages** tabel.
 

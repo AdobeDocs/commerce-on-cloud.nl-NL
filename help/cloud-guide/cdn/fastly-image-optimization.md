@@ -64,7 +64,7 @@ Controleer en werk zo nodig de standaard IO-configuratie-instellingen voor optim
 
 1. Herzie en werk de Fastly IO configuratiemontages op de _standaard configuratieopties van het Beeld_ pagina bij:
 
-   ](../../assets/cdn/fastly-io-config-options.png) van de het overzicht snel IO configuratie ![
+   ![&#128279;](../../assets/cdn/fastly-io-config-options.png) van de het overzicht snel IO configuratie 
 
    - **AutoWebP?** - verlaat standaard het plaatsen (`Yes`) om beelden in formaat om te zetten WebP in browsers die het steunen. Als u het plaatsen in **Nr** verandert, gebruikt het snelst het type van beelddossier in plaats van het omzetten van het beeld in formaat WebP.
 
@@ -78,13 +78,13 @@ Controleer en werk zo nodig de standaard IO-configuratie-instellingen voor optim
 
    - **Resize filter** - verlaat het gebrek plaatsend (`Lancsoz3`), of selecteer een alternatief. Met deze instelling geeft u aan welk filter wordt gebruikt voor het leveren van een afbeelding waarvan de grootte is gewijzigd. Afhankelijk van het geselecteerde filter kan het gewijzigde formaat van de afbeelding een hoger of lager aantal pixels hebben.
 
-      - `Lanczos3` (standaard) - Levert de afbeelding van de beste kwaliteit. Het vergroot de mogelijkheid om randen en lineaire functies in een afbeelding te detecteren en het gebruik van _[!DNL sinc]_resampling voor de beste reconstructie.
+      - `Lanczos3` (standaard) - Levert de afbeelding van de beste kwaliteit. Het vergroot de mogelijkheid om randen en lineaire functies in een afbeelding te detecteren en het gebruik van _[!DNL sinc]_&#x200B;resampling voor de beste reconstructie.
       - `Lanczos2` - Hiermee wordt hetzelfde filter gebruikt als `Lancsoz3` , maar met een minder nauwkeurige benadering van de functie Nieuwe pixels berekenen in _[!DNL sinc]_.
       - `Bicubic` - Dit filter heeft een natuurlijk verscherpingseffect wanneer u een afbeelding kleiner maakt.
       - `Bilinear` - Dit filter heeft een natuurlijk vloeiend effect wanneer u een afbeelding groter maakt.
       - `Nearest` - Heeft een natuurlijk pixeleffect wanneer het resizing van pixelkunst.
 
-1. Nadat u de IO configuratiemontages voor de Snelle dienst specificeert, annuleert de uitgezochte **** om aan de Fastly configuratiemontages terug te keren.
+1. Nadat u de IO configuratiemontages voor de Snelle dienst specificeert, annuleert de uitgezochte **&#x200B;**&#x200B;om aan de Fastly configuratiemontages terug te keren.
 
 1. In de configuratie van de Optimalisering van het Beeld _laat diep beeld optimalisering_ gebied toe, selecteer **ja** om diepe beeldoptimalisering aan te zetten.
 
@@ -115,7 +115,7 @@ Als u het omzetten met verlies (`WebP Auto? = No`) uitschakelt, wijzigt Fastly I
 ### Diepe optimalisatie van afbeeldingen
 
 Diepe optimalisatie van afbeeldingen is standaard uitgeschakeld. Als u deze optie inschakelt, wordt het formaat van de ingebouwde Adobe Commerce uitgeschakeld en wordt het volledig geoffload naar de Fastly IO-service.
-Deze eigenschap resizes _slechts productafbeeldingen 0}._ CMS-afbeeldingen worden niet vergroot of verkleind.
+Deze eigenschap resizes _slechts productafbeeldingen 0&rbrace;._ CMS-afbeeldingen worden niet vergroot of verkleind.
 
 Als u uitgebreide optimalisatie van afbeeldingen inschakelt, voegt u een achtergrondkleurdefinitie toe aan elke afbeelding zoals die in uw thema is gedefinieerd. Het resultaat is dat WebP-afbeeldingen worden overgeschakeld van WebP-verlies naar WebP-verlies. Een van de belangrijkste verschillen tussen verliesloos en verlies is dat bij verlies het alfakanaal van PNG-afbeeldingen wordt verwijderd, wat veel kleinere afbeeldingen oplevert. Afbeeldingen met transparanties kunnen er echter vreemd uitzien op product- en campagnepagina&#39;s die een andere achtergrond gebruiken.
 

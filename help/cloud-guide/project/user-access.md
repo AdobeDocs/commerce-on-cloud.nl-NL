@@ -39,7 +39,7 @@ U kunt gebruikers toevoegen en rollen toewijzen met behulp van de `magento-cloud
 **Eerste vereisten:**
 
 - Een geregistreerde gebruiker bij een Adobe ID. Een gebruiker moet [ voor een rekening van de Adobe ](https://account.adobe.com) registreren en dan [ hun rekening van de Wolk ](https://console.adobecommerce.com) initialiseren alvorens u hen aan een project van de Wolk kunt toevoegen.
-- Een gebruiker toegewezen de **Admin** rol kan gebruikers met `magento-cloud` CLI niet leiden. Slechts kunnen de gebruikers die de **rol van de Eigenaar van de 0} Rekening worden verleend gebruikers beheren.**
+- Een gebruiker toegewezen de **Admin** rol kan gebruikers met `magento-cloud` CLI niet leiden. Slechts kunnen de gebruikers die de **rol van de Eigenaar van de 0&rbrace; Rekening worden verleend gebruikers beheren.**
 
 >[!ENDSHADEBOX]
 

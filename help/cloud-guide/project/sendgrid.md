@@ -62,7 +62,7 @@ Voor SendGrid om transactie-e-mails namens u van de milieu&#39;s van de Proprodu
 
 >[!TIP]
 >
->Zorg ervoor dat u de **[!UICONTROLSopslag E-mailadressen]** met het juiste domein in **[!UICONTROL Stores > Configuration > General > Store Email Addresses]** vormt. De domeinauthentificatie wordt uitgevoerd op het e-mailadres van de afzender. Als de standaardinstelling (`example.com`) is geconfigureerd, worden de e-mails van `example.com` geblokkeerd door Sendgrid.
+>Zorg ervoor dat u de **[!UICONTROL Sopslag E-mailadressen]** met het juiste domein in **[!UICONTROL Stores > Configuration > General > Store Email Addresses]** vormt. De domeinauthentificatie wordt uitgevoerd op het e-mailadres van de afzender. Als de standaardinstelling (`example.com`) is geconfigureerd, worden de e-mails van `example.com` geblokkeerd door Sendgrid.
 
 **om domeinauthentificatie** toe te laten:
 

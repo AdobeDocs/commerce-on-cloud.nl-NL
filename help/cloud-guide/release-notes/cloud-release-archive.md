@@ -31,13 +31,13 @@ In de release `ece-tools` 2002.0.22 wordt de structuur van het `ece-tools` -pakk
 
 - ![ herstellingspictogram ](../../assets/fix.svg) **Patches en kritieke moeilijke situaties** - werk uw milieu&#39;s van de Wolk met `ece-tools` versie 2002.0.22 bij om de volgende flarden en kritieke moeilijke situaties toe te passen. Deze patches worden opgenomen in het pakket `magento/magento-cloud-patches` v1.0.0.
 
-   - ](../../assets/fix.svg) **de veiligheidspatches van de Bouwer van de Steek van 0} moeilijke situatie {voor 2.3.1.x en 2.3.2.x versies** - lost een kwestie in de voorproef van de Bouwer van de Pagina op die ongeautoriseerde gebruikers toestaat om tot sommige malplaatjemethodes toegang te hebben die kunnen worden gebruikt om willekeurige codeuitvoering over het netwerk (RCE) te teweegbrengen die in globale informatielekken. ![ Dit probleem kan zich voordoen bij het gebruik van niet-ondersteunde versies van Page Builder met Adobe Commerce versies 2.3.1 en 2.3.2.<!--MAGECLOUD-4649-->
+   - ![&#128279;](../../assets/fix.svg) **de veiligheidspatches van de Bouwer van de Steek van 0&rbrace; moeilijke situatie &lbrace;voor 2.3.1.x en 2.3.2.x versies** - lost een kwestie in de voorproef van de Bouwer van de Pagina op die ongeautoriseerde gebruikers toestaat om tot sommige malplaatjemethodes toegang te hebben die kunnen worden gebruikt om willekeurige codeuitvoering over het netwerk (RCE) te teweegbrengen die in globale informatielekken.  Dit probleem kan zich voordoen bij het gebruik van niet-ondersteunde versies van Page Builder met Adobe Commerce versies 2.3.1 en 2.3.2.<!--MAGECLOUD-4649-->
 
-   - ](../../assets/fix.svg) **de flarden MSI van 0} fixepictogram** - moeilijke situaties die indexerende fouten en prestatieskwesties veroorzaakten wanneer het gebruiken van standaardinventarismontages voor het beheren van voorraad.<!--MAGECLOUD-4428-->![
+   - &rbrack;(../../assets/fix.svg) **de flarden MSI van 0&rbrace; fixepictogram** - moeilijke situaties die indexerende fouten en prestatieskwesties veroorzaakten wanneer het gebruiken van standaardinventarismontages voor het beheren van voorraad.<!--MAGECLOUD-4428-->!&lbrack;
 
    - ![ fixpictogram ](../../assets/fix.svg) **Achterwaartse Verenigbaarheid van nieuwe Interfaces van de Post** - lost een achterwaartse onverenigbaarheidskwestie op die door de `Magento\Framework\Mail\EmailMessageInterface` PHP interface wordt veroorzaakt die in Adobe Commerce v2.3.3 wordt geïntroduceerd. In het bereik van deze patch zijn de nieuwe `EmailMessageInterface` overervingen van de oude `MessageInterface` en zijn Adobe Commerce-kernmodules weer afhankelijk van `MessageInterface` . <!--MAGECLOUD-4422-->
 
-   - ](../../assets/fix.svg) **de paginering van de Catalogus van 0} bevestigt pictogram {niet aan Elasticsearch 6.x** - lost een kritieke kwestie met de paginering van het onderzoeksresultaat op die klanten gebruikend Elasticsearch 6.x als motor van het catalogusonderzoek.<!--MAGECLOUD-4448-->![
+   - &rbrack;(../../assets/fix.svg) **de paginering van de Catalogus van 0&rbrace; bevestigt pictogram &lbrace;niet aan Elasticsearch 6.x** - lost een kritieke kwestie met de paginering van het onderzoeksresultaat op die klanten gebruikend Elasticsearch 6.x als motor van het catalogusonderzoek.<!--MAGECLOUD-4448-->!&lbrack;
 
 ## v2002.0.21
 
@@ -71,7 +71,7 @@ In de release `ece-tools` 2002.0.22 wordt de structuur van het `ece-tools` -pakk
 
 - ![ nieuw pictogram ](../../assets/new.svg) Toegevoegde steun voor versie 3.8 RabitMQ.<!-- MAGECLOUD-4674-->
 
-- ![ nieuw pictogram ](../../assets/new.svg) Bijgewerkte interactieve bevestigingen voor de dienstverenigbaarheid om op gesteunde versies voor nieuwe versies van Adobe Commerce 2.3.3 en 2.2.10 te wijzen. Zie {de vereisten van het 0} Systeem ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) in de _gids van de Installatie_ voor geadviseerde versies.<!-- MAGECLOUD-4018 -->[
+- ![ nieuw pictogram ](../../assets/new.svg) Bijgewerkte interactieve bevestigingen voor de dienstverenigbaarheid om op gesteunde versies voor nieuwe versies van Adobe Commerce 2.3.3 en 2.2.10 te wijzen. Zie {de vereisten van het 0} Systeem &rbrack;(https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) in de _gids van de Installatie_ voor geadviseerde versies.<!-- MAGECLOUD-4018 -->&lbrack;
 
 - ![ bevestig pictogram ](../../assets/fix.svg) verbeterde het logboekbericht teruggekeerd wanneer het proces van het baanbeheer van de cron in opstellen fase probeert om een hulpbaan te stoppen die reeds heeft gebeëindigd om te verduidelijken dat deze kwestie geen fout is. Veranderde het logboekniveau van `INFO` in `DEBUG`.<!-- MAGECLOUD-3653-->
 
@@ -245,7 +245,7 @@ In de release `ece-tools` 2002.0.22 wordt de structuur van het `ece-tools` -pakk
 
    - **[X_FRAME_CONFIGURATION globale variabele](../environment/variables-global.md#x_frame_configuration)** - gebruik deze variabele om de `X-Frame-Options` kopbalconfiguratie voor het teruggeven van een pagina van Adobe Commerce in a `<frame>`, `<iframe>`, of `<object>` te veranderen.<!-- MAGECLOUD-3048 -->
 
-- ](../../assets/fix.svg) **veranderlijke updates van het Milieu 1} fixpictogram** - veranderde de volgende milieuvariabelen:![
+- ![&#128279;](../../assets/fix.svg) **veranderlijke updates van het Milieu 1&rbrace; fixpictogram** - veranderde de volgende milieuvariabelen:
 
    - **[WARM_UP_PAGES](../environment/variables-post-deploy.md)** - voegde het vermogen toe om het geheime voorgeheugen voor gespecificeerde pagina&#39;s op alle domeinen vooraf te laden die voor een opslag van Adobe Commerce worden bepaald. Eerder, als uw plaats met veelvoudige domeinen werd gevormd, kon het post-opstellen proces niet het geheime voorgeheugen voor de gespecificeerde pagina&#39;s op niet standaarddomeinen vooraf laden en de volgende fout in het post-opstellen logboek terugkeren: `ERROR: Warming up failed: <uri>`<!-- MAGECLOUD-2466 -->
 
@@ -305,7 +305,7 @@ In de release `ece-tools` 2002.0.22 wordt de structuur van het `ece-tools` -pakk
 
 - ![ nieuw pictogram ](../../assets/new.svg) **de verbetering van de Plaatsing** - Toegevoegde bevestiging om klanten te waarschuwen als een het Opvoeren of milieu van de Productie `dev` heeft, `debug`, of `debug_logging` toegelaten opties om prestatieskwesties te verhinderen die door bovenmatige registrerenactiviteit worden veroorzaakt.<!--MAGECLOUD-2517-->
 
-- ](../../assets/fix.svg) **moeilijke situaties van de Plaatsing 0} fixpictogram** -![
+- ![&#128279;](../../assets/fix.svg) **moeilijke situaties van de Plaatsing 0&rbrace; fixpictogram** -
 
    - Nu wordt de onderhoudswijze toegelaten bij het begin van de opstellen fase en gehandicapt aan het eind. Als de plaatsing ontbreekt, blijft de plaats op onderhoudswijze tot de plaatsingskwesties worden opgelost. Eerder, keerde de plaats aan productiemodus terug zelfs als de plaatsing ontbrak.<!--MAGECLOUD-2603-->
 
@@ -341,7 +341,7 @@ In de release `ece-tools` 2002.0.22 wordt de structuur van het `ece-tools` -pakk
 
    - **Redis de dienststeun** - voegde een beeld Redis toe, dat aan een container van het Dok wordt opgesteld en automatisch wordt gevormd om met uw installatie van het Docker te werken.&lt;!—MAGECLOUD—2442—>
 
-   - Nu hebt u het vermogen van de stortplaats van DB wanneer het gebruiken van de Dok van de Wolk [ gegevensbestandcontainer ](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#database-container). Ook, kunt u dossiers ](https://developer.adobe.com/commerce/cloud-tools/docker/containers/#sharing-data-between-host-machine-and-container) tussen een gastheermachine en een container delen gebruikend de `docker/mnt` folder.<!-- MAGECLOUD-2577 -->[
+   - Nu hebt u het vermogen van de stortplaats van DB wanneer het gebruiken van de Dok van de Wolk [ gegevensbestandcontainer ](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#database-container). Ook, kunt u dossiers &rbrack;(https://developer.adobe.com/commerce/cloud-tools/docker/containers/#sharing-data-between-host-machine-and-container) tussen een gastheermachine en een container delen gebruikend de `docker/mnt` folder.<!-- MAGECLOUD-2577 -->&lbrack;
 
    - **de dienststeun van Varnish** - voegde een beeld van Varnish toe, dat automatisch aan een container van de Dok wordt opgesteld. Na plaatsing, kunt u Varnish na de beste praktijken van Adobe Commerce manueel vormen. Zie [ vormen en gebruiken Vierkant ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/varnish/config-varnish).&lt;!—MAGECLOUD—2358—>
 
@@ -351,7 +351,7 @@ In de release `ece-tools` 2002.0.22 wordt de structuur van het `ece-tools` -pakk
 
 - ![ nieuw pictogram ](../../assets/new.svg) **pas douaneveranderingen in uw toepassing van Adobe Commerce tijdens bouwstijlfase** toe - wij verdelen de bouwstijlfase in twee afzonderlijke processen zodat u haken kunt gebruiken om douaneveranderingen op de geproduceerde statische inhoud toe te passen alvorens de toepassing voor plaatsing te verpakken. _bouwt:produceert_ proces produceert code, past flarden toe, en produceert statische inhoud. _bouwt voort:overdracht_ proces brengt de geproduceerde code en statische inhoud aan de definitieve bestemming over. Zie [ de haken van de Toepassing ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/hooks-property).<!--MAGECLOUD-2363-->
 
-- ](../../assets/fix.svg) **de configuratiecontroles van het Milieu 1} ![ bevestigen pictogram** - Verbeterde bevestiging van de milieuconfiguratie om klanten over versionverenigbaarheden en configuratiefouten te waarschuwen alvorens Adobe Commerce op wolkeninfrastructuur te bouwen en op te stellen.
+- ![&#128279;](../../assets/fix.svg) **de configuratiecontroles van het Milieu 1&rbrace;  bevestigen pictogram** - Verbeterde bevestiging van de milieuconfiguratie om klanten over versionverenigbaarheden en configuratiefouten te waarschuwen alvorens Adobe Commerce op wolkeninfrastructuur te bouwen en op te stellen.
 
    - Toegevoegde versie-specifieke bevestiging om niet gestaafde of verouderde omgevingsvariabelen en waarden te identificeren.<!--MAGECLOUD-2183-->
 
@@ -367,13 +367,13 @@ In de release `ece-tools` 2002.0.22 wordt de structuur van het `ece-tools` -pakk
 
    - Verbeterde validatie van omgevingsvariabelen om configuratie-instellingen te identificeren die conflicten kunnen veroorzaken tijdens de fasen build, implementatie en implementatie na implementatie. Bijvoorbeeld, toont een waarschuwingsbericht tijdens installatie en verbeteringsproces als het globale plaatsen voor statische inhoudsplaatsing met montages op bouwt of opstelt fase in conflict is.<!--MAGECLOUD-2156-->
 
-- ](../../assets/fix.svg) **veranderlijke updates van het Milieu 1} fixpictogram** - veranderde de volgende milieuvariabelen:![
+- ![&#128279;](../../assets/fix.svg) **veranderlijke updates van het Milieu 1&rbrace; fixpictogram** - veranderde de volgende milieuvariabelen:
 
    - **[SKIP_HTML_MINIFICATION globale variabele](../environment/variables-global.md#skip_html_minification)** - veranderde de standaardwaarde in `true` om op bestelling de inhoudminificatie van de HTML toe te laten, die onderbreking wanneer het opstellen aan het Opvoeren en de milieu&#39;s van de Productie minimaliseert. Deze configuratie wordt vereist voor nul-onderbreking plaatsingen.<!--MAGECLOUD-2435-->
 
    - **[CLEAN_STATIC_FILES stelt veranderlijk](../environment/variables-deploy.md#clean_static_files)** op - toegevoegd het vermogen om het schone statische die dossierverwerking voor statische inhoud te beheren tijdens de bouwstijlfase wordt geproduceerd die op CLEAN_STATIC_FILES milieu veranderlijke het plaatsen wordt gebaseerd. Eerder, werden de statische inhoudsdossiers die tijdens de bouwstijlfase werden geproduceerd altijd schoongemaakt.<!--MAGECLOUD-1506-->
 
-- ](../../assets/fix.svg) **Logging** - van het de fixpictogram van 0} {{om de volgende veranderingen aan te brengen om logboekberichten te verbeteren en logboekgrootte te verminderen:![
+- ![&#128279;](../../assets/fix.svg) **Logging** - van het de fixpictogram van 0&rbrace; &lbrace;&lbrace;om de volgende veranderingen aan te brengen om logboekberichten te verbeteren en logboekgrootte te verminderen:
 
    - De de mislukkingslogboekingangen van de plaatsing omvatten nu de beveloutput van de verrichtingen die de mislukkingen veroorzaken zelfs als uw milieuconfiguratie niet zuivert niveau registreren specificeert. Zie [`MIN_LOGGING_LEVEL`](../environment/variables-global.md#min_logging_level).<!--MAGECLOUD-2489-->
 
@@ -403,7 +403,7 @@ In de release `ece-tools` 2002.0.22 wordt de structuur van het `ece-tools` -pakk
 
 ## v2002.0.12
 
-- ![ nieuw pictogram ](../../assets/new.svg) **Samenstellen van het Dock voor Wolk** - toegevoegd een bevel - `docker:build` - om a [ Docker te produceren stelt ](https://developer.adobe.com/commerce/cloud-tools/docker/configure/) configuratie van de 7} bewaarplaats van de Wolk samen.<!-- MAGECLOUD-2250 -->`ece-tools`
+- ![ nieuw pictogram ](../../assets/new.svg) **Samenstellen van het Dock voor Wolk** - toegevoegd een bevel - `docker:build` - om a [ Docker te produceren stelt ](https://developer.adobe.com/commerce/cloud-tools/docker/configure/) configuratie van de 7&rbrace; bewaarplaats van de Wolk samen.<!-- MAGECLOUD-2250 -->`ece-tools`
 
 - ![ nieuw pictogram ](../../assets/new.svg) **de Plaatsen van de Verandering** - nu kunt u opslagscène zonder het uitvoeren en het invoeren configuratieproces veranderen. Terwijl de toepassing in Productie is en SCD_ON_DEMAND wordt toegelaten, zijn de opslag en admin scèneopties beschikbaar.<!-- MAGECLOUD-2019 -->
 
@@ -429,7 +429,7 @@ In de release `ece-tools` 2002.0.22 wordt de structuur van het `ece-tools` -pakk
 
    - Toegevoegd [ DATABASE_CONFIGURATION ](../environment/variables-deploy.md#database_configuration) milieuvariabele om uw gegevensbestandverbindingen voor plaatsing aan te passen.<!-- MAGECLOUD-2047 -->
 
-   - De nieuwe {](../environment/variables-global.md#min_logging_level) variabele 0} MIN_LOGGING_LEVEL treedt het minimumregistrerenniveau voor alle outputstromen met voeten zonder veranderingen in de code aan te brengen.<!-- MAGECLOUD-2129 -->[
+   - De nieuwe {&rbrack;(../environment/variables-global.md#min_logging_level) variabele 0} MIN_LOGGING_LEVEL treedt het minimumregistrerenniveau voor alle outputstromen met voeten zonder veranderingen in de code aan te brengen.<!-- MAGECLOUD-2129 -->&lbrack;
 
 - ![ fixpictogram ](../../assets/fix.svg) Vaste een kwestie die onderbreking tussen opstelt en post-opstelt fase veroorzaakte. Nu, begint de post-opstellen fase _onmiddellijk_ na de opstellen faseeinden.
 
@@ -473,7 +473,7 @@ In de release `ece-tools` 2002.0.22 wordt de structuur van het `ece-tools` -pakk
 
    - **NOTA** - Deze versie richt vele op elkaar betrekking hebbende kwesties. Als u momenteel sommige op elkaar betrekking hebbende flarden in _m2-hotfixes_ gebruikt, verwijder hen.
 
-- ](../../assets/fix.svg) **SCD-Specifieke verbeteringen** van het 0} fixpictogram {![
+- ![&#128279;](../../assets/fix.svg) **SCD-Specifieke verbeteringen** van het 0&rbrace; fixpictogram &lbrace;
 
    - U kunt `VERBOSE_COMMANDS` en `SCD_COMPRESSION_LEVEL` milieuvariabelen tijdens zowel _gebruiken bouwt_ en de_ploy fasen.<!-- MAGECLOUD-1819 -->
 
@@ -527,7 +527,7 @@ In de release `ece-tools` 2002.0.22 wordt de structuur van het `ece-tools` -pakk
 
 - ![ nieuw pictogram ](../../assets/new.svg) **Onderzoek, AMQP, en Redis de dienstverbeteringen** - wij verenigden de stroom van de de dienstconfiguratie zodat het zich nu de zelfde manier voor alle diensten gedraagt. Het handmatig bewerken van het `env.php` -bestand om services te configureren, wordt niet meer ondersteund. U moet omgevingsvariabelen of het `.magento.env.yaml` -bestand gebruiken. <!-- MAGECLOUD-1437 -->
 
-- ](../../assets/fix.svg) **de variabelen van het Milieu 1} bevestigen** -![
+- ![&#128279;](../../assets/fix.svg) **de variabelen van het Milieu 1&rbrace; bevestigen** -
 
    - Het gebruik van `env:STATIC_CONTENT_THREADS` is vervangen en wordt in een toekomstige versie verwijderd. Gebruik [ SCD_THREADS ](../environment/variables-deploy.md#scd_threads) in plaats daarvan.<!-- MAGECLOUD-1507 -->
 
@@ -567,7 +567,7 @@ In de release `ece-tools` 2002.0.22 wordt de structuur van het `ece-tools` -pakk
 
 - **de bevestigingsfouten van het Oplossen van problemen** - wij veranderden het bevel u moet gebruiken om bevestigingsfouten op te lossen wanneer `config.php` niet genoeg gegevens voor statische inhoudsplaatsing bevat. Eerder werd u door het foutbericht opgedragen `bin/magento app:config:dump` uit te voeren. Nu moet u `php ./vendor/bin/ece-tools config:dump` uitvoeren.<!-- MAGECLOUD-1491 -->
 
-- **Nieuwe milieu variabelen** - u kan milieu variabelen nu gebruiken om het onderzoek van de douane [ ](../environment/variables-deploy.md#search_configuration) en [ op AMQP-Gebaseerde ](../environment/variables-deploy.md#queue_configuration) diensten met uw plaats te verbinden.<!-- MAGECLOUD-1410 -->
+- **Nieuwe milieu variabelen** - u kan milieu variabelen nu gebruiken om het onderzoek van de douane [&#128279;](../environment/variables-deploy.md#search_configuration) en [ op AMQP-Gebaseerde ](../environment/variables-deploy.md#queue_configuration) diensten met uw plaats te verbinden.<!-- MAGECLOUD-1410 -->
 
 - We hebben intelligente patching geïmplementeerd. Nu past het pakket patches toe die niet op Adobe Commerce zijn gebaseerd op de versie van de cloudinfrastructuur, maar op de versie van het patchpakket.<!--MAGECLOUD-1090-->
 

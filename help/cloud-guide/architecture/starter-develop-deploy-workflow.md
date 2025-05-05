@@ -158,7 +158,7 @@ Als u voorbeeldgegevens nodig hebt bij het ontwikkelen van uw winkel, kunt u voo
 
 Voeg al uw producten, catalogi, site-inhoud enzovoort rechtstreeks toe aan de `production` -omgeving. Door deze gegevens toe te voegen aan de productieomgeving, kunt u bijgewerkte prijzen, coupons, voorraad, verkoopmededelingen, informatie over toekomstig aanbod en meer voor uw klanten verstrekken. Deze gegevens omvatten geen uitbreidingsconfiguraties, die u in uw lokale ontwikkelingstak vormt.
 
-Als u functies ontwikkelt, extensies toevoegt en thema&#39;s ontwerpt, is het handig om echte gegevens te gebruiken. Op elk ogenblik, kunt u een gegevensbestandstortplaats ](../storage/database-dump.md) van het productiemilieu tot stand brengen en duwen dat aan uw het Opvoeren en integratiemilieu&#39;s zonodig.[
+Als u functies ontwikkelt, extensies toevoegt en thema&#39;s ontwerpt, is het handig om echte gegevens te gebruiken. Op elk ogenblik, kunt u een gegevensbestandstortplaats [&#128279;](../storage/database-dump.md) van het productiemilieu tot stand brengen en duwen dat aan uw het Opvoeren en integratiemilieu&#39;s zonodig.
 
 Productiegegevens exporteren als testgegevens voor gebruik in staging- en integratieomgevingen:
 

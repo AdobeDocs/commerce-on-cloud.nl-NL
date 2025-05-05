@@ -14,7 +14,7 @@ De eerste lijst wordt automatisch gegenereerd met de opdracht `ece-tools list` i
 
 ## Algemeen
 
-Deze verwijzing wordt gegenereerd op basis van de toepassingscodebase. Om de inhoud te veranderen, _geef ons terugkoppelen_ (vind de verbinding bij het hogere recht). Voor bijdragerichtsnoeren, zie {de Bijdragen van de Code 0} ](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).[
+Deze verwijzing wordt gegenereerd op basis van de toepassingscodebase. Om de inhoud te veranderen, _geef ons terugkoppelen_ (vind de verbinding bij het hogere recht). Voor bijdragerichtsnoeren, zie {de Bijdragen van de Code 0} [&#128279;](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
 
 ### Algemene opties
 

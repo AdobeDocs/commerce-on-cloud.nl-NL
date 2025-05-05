@@ -30,7 +30,7 @@ Door gebrek, zijn deze `ece-tools` bevelen in het [ hooks bezit ](../application
 
 ## Docker-configuratiegenerator
 
-Het `ece-tools` pakket omvat een gebiedsdeel voor het [ magento/magento-cloud-docker ] pakket, dat functionaliteit en configuratiedossiers voor de beelden van Docker verstrekt om een de ontwikkelomgeving van het Docker voor Adobe Commerce op wolkeninfrastructuur te lanceren. U kunt Cloud Docker voor Commerce ook als een zelfstandig pakket uitvoeren. Zie {de ontwikkeling van 0} Docker ](../dev-tools/cloud-docker.md).[
+Het `ece-tools` pakket omvat een gebiedsdeel voor het [ magento/magento-cloud-docker ] pakket, dat functionaliteit en configuratiedossiers voor de beelden van Docker verstrekt om een de ontwikkelomgeving van het Docker voor Adobe Commerce op wolkeninfrastructuur te lanceren. U kunt Cloud Docker voor Commerce ook als een zelfstandig pakket uitvoeren. Zie {de ontwikkeling van 0} Docker [&#128279;](../dev-tools/cloud-docker.md).
 
 ## Services, routes en variabelen
 

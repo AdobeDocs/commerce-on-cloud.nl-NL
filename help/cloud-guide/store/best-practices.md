@@ -53,7 +53,7 @@ Voor extra stappen, kunt u met instructies met [ Veranderingen van het Programma
 
 Prijsregels kunnen logica en voorwaarden bevatten die zo beperkt zijn als uw marketingverbeelding. Tot de populaire voorbeelden behoren Koop één gratis ophalen, Koop één voor 50% korting, een korting voor $25 voor bestellingen van meer dan $100 en meer.
 
-Om een Regel van de Prijs tot stand te brengen, zie {de Gids van de Gebruiker van 0} Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog-create.html).[
+Om een Regel van de Prijs tot stand te brengen, zie {de Gids van de Gebruiker van 0} Adobe Commerce [&#128279;](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog-create.html).
 
 In het volgende voorbeeld ziet u hoe u een prijsregel maakt voor een korting van Alleen eerste bestelling. Voor deze korting wilt u:
 

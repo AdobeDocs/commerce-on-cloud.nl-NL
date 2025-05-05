@@ -31,7 +31,7 @@ Voorbeelden voor de domeinen Productie en Staging:
 
 Zie [ Opstelling veelvoudige websites of opslag ](../cloud-guide/store/multiple-sites.md) in _Commerce op de gids van de Infrastructuur van de Wolk_ voor verdere begeleiding op veelvoudige of unieke domeinen.
 
-Zie [ Veelvoudige Snelle Rekeningen en toegewezen domeinen ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly#multiple-fastly-accounts-and-assigned-domains) {target="_blank"} als u een bestaande Fastly rekening hebt die de zelfde apex en subdomeinen verbindt die op uw plaats van Adobe Commerce worden gebruikt.
+Zie [ Veelvoudige Snelle Rekeningen en toegewezen domeinen ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly#multiple-fastly-accounts-and-assigned-domains){target="_blank"}  als u een bestaande Fastly rekening hebt die de zelfde apex en subdomeinen verbindt die op uw plaats van Adobe Commerce worden gebruikt.
 
 ## Transactioneel e-maildomein
 
@@ -41,7 +41,7 @@ Adobe Commerce on Cloud gebruikt de SendGrid Simple Mail Transfer Protocol (SMTP
 
 Voorbeeld voor SendGrid-domein: `example@your-store.com`
 
-Zie [ de postdienst SendGrid ](../cloud-guide/project/sendgrid.md) in _Commerce op de 3} gids van de Infrastructuur van de Wolk voor verdere begeleiding over transactie e-mail en domeinmontages._
+Zie [ de postdienst SendGrid ](../cloud-guide/project/sendgrid.md) in _Commerce op de 3&rbrace; gids van de Infrastructuur van de Wolk voor verdere begeleiding over transactie e-mail en domeinmontages._
 
 ## Opslagtoewijzing
 
@@ -69,7 +69,7 @@ Zie [ een kaart van de wolkengebieden van Adobe Commerce ](../cloud-guide/overvi
 
 Adobe Commerce on cloud Infrastructure ondersteunt integratie met de AWS Private Link of Azure Private Link-service. Hoewel deze service optioneel is, wordt PrivateLink gebruikt om een veilige, persoonlijke communicatie tot stand te brengen tussen cloudinframingevingen met services en toepassingen die op externe systemen worden gehost.
 
-Het is belangrijk dat u rekening houdt met uw cloudservicestrategie (AWS of Azure), zodat het Adobe Commerce-exemplaar binnen dezelfde regio toegankelijk is. Zie {de dienst PrivateLink ](../cloud-guide/development/privatelink-service.md) in _Commerce op de gids van de Infrastructuur van de Wolk_ voor verdere verduidelijking over regionale toegankelijkheid.[
+Het is belangrijk dat u rekening houdt met uw cloudservicestrategie (AWS of Azure), zodat het Adobe Commerce-exemplaar binnen dezelfde regio toegankelijk is. Zie &lbrace;de dienst PrivateLink [&#128279;](../cloud-guide/development/privatelink-service.md) in _Commerce op de gids van de Infrastructuur van de Wolk_ voor verdere verduidelijking over regionale toegankelijkheid.
 
 ## Doelsite starten
 

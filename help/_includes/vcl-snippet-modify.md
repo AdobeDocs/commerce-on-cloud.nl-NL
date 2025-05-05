@@ -25,4 +25,4 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->De _optie UI van de fragmenten van de Douane VCL van 0} toont slechts de fragmenten die door Adobe Commerce worden toegevoegd Admin._ Als u fragmenten toevoegt die Snelle API gebruiken, gebruik API om hen [ te beheren ](/help/cloud-guide/cdn/fastly-vcl-custom-snippets.md#manage-custom-vcl-snippets-using-the-api).
+>De _optie UI van de fragmenten van de Douane VCL van 0&rbrace; toont slechts de fragmenten die door Adobe Commerce worden toegevoegd Admin._ Als u fragmenten toevoegt die Snelle API gebruiken, gebruik API om hen [ te beheren ](/help/cloud-guide/cdn/fastly-vcl-custom-snippets.md#manage-custom-vcl-snippets-using-the-api).

@@ -12,7 +12,7 @@ ht-degree: 0%
 
 Als u voorbeeldgegevens nodig hebt bij het ontwikkelen van uw winkel, kunt u voorbeeldgegevens installeren. Deze gegevens simuleren een actieve Adobe Commerce-winkel met klanten, producten en andere gegevens. Deze voorbeeldgegevens werken het best met een nieuwe Adobe Commerce op de sjablooninstallatie van de cloudinfrastructuur.
 
-U kunt het beste voorbeeldgegevens installeren in ontwikkelings- en integratieomgevingen. Als u steekproefgegevens in het Opvoeren of de Productie gebruikt, dan moet u [ ](#reset-or-uninstall-sample-data) de informatie en de producten verwijderen alvorens levend te gaan.
+U kunt het beste voorbeeldgegevens installeren in ontwikkelings- en integratieomgevingen. Als u steekproefgegevens in het Opvoeren of de Productie gebruikt, dan moet u [&#128279;](#reset-or-uninstall-sample-data) de informatie en de producten verwijderen alvorens levend te gaan.
 
 ## Voorbeeldgegevens installeren
 

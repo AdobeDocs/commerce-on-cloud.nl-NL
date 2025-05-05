@@ -50,7 +50,7 @@ Met een ontwikkelde codevertakking en de overeenkomstige configuratiedossiers, z
 
 - **Genererend configuratiebeheersdossiers** - sommige configuratiemontages zijn _slechts Lees_ in een opgesteld milieu.
 
-- **Vormend uw opslag** - u zou alle opslagmontages volledig moeten vormen gebruikend het integratiemilieu. U kunt **Admin URL van de Opslag** op de _integratie_ milieumening in _[!DNL Cloud Console]_vinden.
+- **Vormend uw opslag** - u zou alle opslagmontages volledig moeten vormen gebruikend het integratiemilieu. U kunt **Admin URL van de Opslag** op de _integratie_ milieumening in _[!DNL Cloud Console]_&#x200B;vinden.
 
 ## Implementatieworkflow
 
@@ -105,4 +105,4 @@ Na grondig het testen in het opvoeren milieu, fusie aan het productiemilieu en g
 
 Duw altijd een exemplaar van de productiecode aan Globaal `master` voor het geval er een opkomende behoefte is om het productiemilieu te zuiveren zonder de diensten te onderbreken.
 
-Maak **** geen tak van Globaal `master`. Gebruik de `integration` -vertakking om nieuwe, actieve vertakkingen te maken voor ontwikkeling en oplossingen.
+Maak **&#x200B;**&#x200B;geen tak van Globaal `master`. Gebruik de `integration` -vertakking om nieuwe, actieve vertakkingen te maken voor ontwikkeling en oplossingen.

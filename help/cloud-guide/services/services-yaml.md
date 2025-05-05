@@ -171,7 +171,7 @@ U kunt de configuratiegegevens voor alle de dienstverhoudingen van de [`$MAGENTO
 
 ## Serviceversies
 
-Serviceversie en compatibiliteitsondersteuning voor Adobe Commerce op cloudinfrastructuur worden bepaald door versies die worden geïmplementeerd en getest op de cloudinfrastructuur en verschillen soms van versies die worden ondersteund door Adobe Commerce-implementaties op locatie. Zie {de vereisten van het 0} Systeem ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in de _gids van de Installatie_ voor een lijst van derdesoftware gebiedsdelen die de Adobe met specifieke versies van Adobe Commerce en van de Magento Open Source heeft getest.[
+Serviceversie en compatibiliteitsondersteuning voor Adobe Commerce op cloudinfrastructuur worden bepaald door versies die worden geïmplementeerd en getest op de cloudinfrastructuur en verschillen soms van versies die worden ondersteund door Adobe Commerce-implementaties op locatie. Zie {de vereisten van het 0} Systeem [&#128279;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in de _gids van de Installatie_ voor een lijst van derdesoftware gebiedsdelen die de Adobe met specifieke versies van Adobe Commerce en van de Magento Open Source heeft getest.
 
 ### Software EOL-controles
 
@@ -180,7 +180,7 @@ Tijdens het implementatieproces controleert het `ece-tools` -pakket de geïnstal
 - Als een de dienstversie binnen drie maanden na de datum EOL is, toont een bericht in het opstellen logboek.
 - Als de datum EOL in het verleden is, toont een waarschuwingsbericht.
 
-Om de veiligheid van de opslag te handhaven, werk geïnstalleerde softwareversies bij alvorens zij EOL bereiken. U kunt de data EOL in het `eol.yaml` dossier van 0} controleren-hulpmiddelen ](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml).[
+Om de veiligheid van de opslag te handhaven, werk geïnstalleerde softwareversies bij alvorens zij EOL bereiken. U kunt de data EOL in het `eol.yaml` dossier van 0&rbrace; controleren-hulpmiddelen [&#128279;](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml).
 
 ### Migreren naar OpenSearch
 

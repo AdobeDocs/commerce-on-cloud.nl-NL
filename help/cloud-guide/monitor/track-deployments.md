@@ -15,7 +15,7 @@ ht-degree: 0%
 
 U kunt de de veranderingen _eigenschap van het Spoor van New Relic_ toelaten om plaatsingsgebeurtenissen op uw Commerce op het project van de wolkeninfrastructuur te controleren.
 
-De de gegevensinzameling van Plaatsingen helpt de invloed van plaatsingsveranderingen in algemene prestaties, zoals CPU, geheugen, reactietijd, en meer analyseren. Zie {de veranderingen van het 0} Spoor gebruikend NerdGraph ](https://docs.newrelic.com/docs/change-tracking/change-tracking-graphql/) in de _documentatie van New Relic_.[
+De de gegevensinzameling van Plaatsingen helpt de invloed van plaatsingsveranderingen in algemene prestaties, zoals CPU, geheugen, reactietijd, en meer analyseren. Zie {de veranderingen van het 0} Spoor gebruikend NerdGraph [&#128279;](https://docs.newrelic.com/docs/change-tracking/change-tracking-graphql/) in de _documentatie van New Relic_.
 
 >[!PREREQUISITES]
 >

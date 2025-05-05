@@ -106,4 +106,4 @@ Een thema installeren met Composer:
 
 ## Meerdere thema&#39;s
 
-Wanneer u meerdere thema&#39;s gebruikt, zoals verschillende thema&#39;s per landinstelling, bekijkt u de omgevingsvariabele van `SCD_MATRIX` om de implementatie van thema&#39;s aan te passen. Zie [ bouwen ](../environment/variables-build.md#scd_matrix) of [ ](../environment/variables-deploy.md#scd_matrix) stadia in de [ milieuconfiguratie ](../environment/configure-env-yaml.md) opstellen.
+Wanneer u meerdere thema&#39;s gebruikt, zoals verschillende thema&#39;s per landinstelling, bekijkt u de omgevingsvariabele van `SCD_MATRIX` om de implementatie van thema&#39;s aan te passen. Zie [ bouwen ](../environment/variables-build.md#scd_matrix) of [&#128279;](../environment/variables-deploy.md#scd_matrix) stadia in de [ milieuconfiguratie ](../environment/configure-env-yaml.md) opstellen.

@@ -31,7 +31,7 @@ De vertakkingsstrategie gebruikt een algemene Git-workflow waar u code ontwikkel
 - Maak bij Starter een `staging` -vertakking vanuit de `master` -vertakking en vertakking vanuit `staging` voor ontwikkeling.
 - Voor Pro maakt u een ontwikkelingsvertakking vanuit de `Integration` -omgeving.
 
-Uw rekening steunt een beperkt aantal ![ actieve tak ](../../assets/icon-active.png){width="32"} (active) and an unlimited number of ![inactive branch](../../assets/icon-inactive.png){width="32"} (inactieve) ontwikkelingstakken. Actieve en inactieve vertakkingen beheren door een vertakking toe te voegen of te verwijderen met alleen de vertakking [!DNL Cloud Console] of de Cloud CLI. Alvorens u een tak kunt schrappen, deactiveert u de tak, die in de _1} lijst van Milieu&#39;s {als_ inactief _blijft._ U kunt de tak later opnieuw activeren of u kunt [ de tak ](../dev-tools/cloud-cli-overview.md#) in milieumontages schrappen of Cloud CLI gebruiken.
+Uw rekening steunt een beperkt aantal ![ actieve tak ](../../assets/icon-active.png){width="32"} (active) and an unlimited number of ![inactive branch](../../assets/icon-inactive.png){width="32"} (inactieve) ontwikkelingstakken. Actieve en inactieve vertakkingen beheren door een vertakking toe te voegen of te verwijderen met alleen de vertakking [!DNL Cloud Console] of de Cloud CLI. Alvorens u een tak kunt schrappen, deactiveert u de tak, die in de _1&rbrace; lijst van Milieu&#39;s &lbrace;als_ inactief _blijft._ U kunt de tak later opnieuw activeren of u kunt [ de tak ](../dev-tools/cloud-cli-overview.md#) in milieumontages schrappen of Cloud CLI gebruiken.
 
 Als u extra actieve milieu&#39;s voor ontwikkeling nodig hebt, leg a [ kaartje van de Steun ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voor.
 
@@ -87,7 +87,7 @@ Voordat u een omgeving kunt verwijderen, moet u deze deactiveren. Als een omgevi
 
 1. Klik op het configuratiepictogram aan de rechterkant van de bovenste navigatiebalk om de omgevingsinstellingen te openen.
 
-1. Ga naar het tabblad _[!UICONTROL General]_, blader omlaag naar de_[!UICONTROL Deactivate environment]_ -sectie en klik **[!UICONTROL Deactivate environment and delete data]** en volg de instructies.
+1. Ga naar het tabblad _[!UICONTROL General]_, blader omlaag naar de&#x200B;_[!UICONTROL Deactivate environment]_ -sectie en klik **[!UICONTROL Deactivate environment and delete data]** en volg de instructies.
 
 ## Een omgeving synchroniseren
 
@@ -258,7 +258,7 @@ U hebt vanuit elke locatie toegang tot uw project en omgevingen via een webbrows
 
 1. Selecteer een omgeving en klik op het configuratiepictogram op de navigatiebalk.
 
-1. Op het milieu montages _Algemene_ lusje, klik **** voor **[!UICONTROL HTTP access control enabled]** om veilige toegang toe te laten. U kunt tussen geloofsbrieven of IP adressen kiezen om voor toegang te filtreren.
+1. Op het milieu montages _Algemene_ lusje, klik **&#x200B;**&#x200B;voor **[!UICONTROL HTTP access control enabled]** om veilige toegang toe te laten. U kunt tussen geloofsbrieven of IP adressen kiezen om voor toegang te filtreren.
 
 1. Als u op referenties wilt filteren, klikt u op **[!UICONTROL Add Login]** , voert u een gebruikersnaam en wachtwoord in en klikt u op **[!UICONTROL Add Login]** om toe te voegen.
 

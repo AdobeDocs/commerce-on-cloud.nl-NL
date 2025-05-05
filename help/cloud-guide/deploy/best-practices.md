@@ -37,7 +37,7 @@ Bekijk deze best practices en overwegingen voor uw implementatieproces:
 
 - **zorg ervoor dat u de huidigste versie van het `ece-tools` pakket** in werking stelt
 
-  Zie {de nota&#39;s van de Versie voor ECE-Hulpmiddelen ](../release-notes/ece-tools-package.md).[
+  Zie &lbrace;de nota&#39;s van de Versie voor ECE-Hulpmiddelen [&#128279;](../release-notes/ece-tools-package.md).
 
 - **volg het bouwstijl en stel proces** op
 
@@ -61,7 +61,7 @@ Bekijk deze best practices en overwegingen voor uw implementatieproces:
 
 - **verifieer de dienstversies en verhoudingen en de capaciteit om** te verbinden
 
-  Controleer welke services beschikbaar zijn voor uw toepassing en zorg ervoor dat u de meest actuele, compatibele versie gebruikt. Zie {de verhoudingen van de Dienst ](../services/services-yaml.md#service-relationships) en [ vereisten van het Systeem ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in de _gids van de Installatie_ voor geadviseerde versies.[
+  Controleer welke services beschikbaar zijn voor uw toepassing en zorg ervoor dat u de meest actuele, compatibele versie gebruikt. Zie &lbrace;de verhoudingen van de Dienst [&#128279;](../services/services-yaml.md#service-relationships) en [ vereisten van het Systeem ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in de _gids van de Installatie_ voor geadviseerde versies.
 
 - **Test plaatselijk en in het integratiemilieu alvorens aan het Opvoeren en Productie** op te stellen
 
@@ -87,7 +87,7 @@ Bekijk deze best practices en overwegingen voor uw implementatieproces:
 
 - **Monitor het opstellen proces**
 
-  Herzie de berichten van de plaatsingsstatus en verminder kwesties zoals nodig. Herzie de Logboeken van de Wolk [ ](../test/log-locations.md#) voor gedetailleerde logboekberichten.
+  Herzie de berichten van de plaatsingsstatus en verminder kwesties zoals nodig. Herzie de Logboeken van de Wolk [&#128279;](../test/log-locations.md#) voor gedetailleerde logboekberichten.
 
 ## Vijf fasen van integratie bouwen en plaatsing
 
@@ -172,7 +172,7 @@ Er zijn twee implementatiehaken. De `pre-deploy.php` haak voltooit noodzakelijke
 
 - Als Adobe Commerce **niet geïnstalleerd** is, installeert het met `bin/magento setup:install`, werkt de plaatsingsconfiguratie, `app/etc/env.php`, en het gegevensbestand voor uw gespecificeerde milieu, zoals Redis en website URLs bij. **Belangrijk:** toen u de [ Eerste plaatsing ](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/launch/overview.html) tijdens opstelling voltooide, werd Adobe Commerce geïnstalleerd en over alle milieu&#39;s opgesteld.
 
-- Als Adobe Commerce **** geïnstalleerd is, voer om het even welke noodzakelijke verbeteringen uit. Het plaatsingsmanuscript stelt `bin/magento setup:upgrade` in werking om het gegevensbestandschema en de gegevens (die na uitbreiding of kerncode updates noodzakelijk is) bij te werken, en werkt ook de plaatsingsconfiguratie, `app/etc/env.php`, en het gegevensbestand voor uw milieu bij. Tot slot wist het plaatsingsmanuscript het geheime voorgeheugen van Adobe Commerce.
+- Als Adobe Commerce **&#x200B;**&#x200B;geïnstalleerd is, voer om het even welke noodzakelijke verbeteringen uit. Het plaatsingsmanuscript stelt `bin/magento setup:upgrade` in werking om het gegevensbestandschema en de gegevens (die na uitbreiding of kerncode updates noodzakelijk is) bij te werken, en werkt ook de plaatsingsconfiguratie, `app/etc/env.php`, en het gegevensbestand voor uw milieu bij. Tot slot wist het plaatsingsmanuscript het geheime voorgeheugen van Adobe Commerce.
 
 - Het script genereert optioneel statische webinhoud met de opdracht `magento setup:static-content:deploy` .
 

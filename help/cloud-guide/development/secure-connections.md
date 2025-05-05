@@ -158,7 +158,7 @@ Voor **de milieu&#39;s van de Aanzet en Pro integratiemilieu&#39;s**, kunt u [ o
 Voor **Pro het Opvoeren en de milieu&#39;s van de Productie**, als u geen toegang SSH tot het milieu hebt, moet u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voorleggen om sFTP- toegang en een onderstelpunt voor toegang tot de specifieke omslag, b.v., `pub/media` te verzoeken.
 
 >[!NOTE]
->Voor Pro het Opvoeren en Productie, als de sFTP verbinding voor a _generische_ gebruiker is die **** niet [ moet worden toegevoegd aan het project van de Wolk ](../project/user-access.md), moet u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) met hun **openbare** sleutel in bijlage voorleggen. **verstrekt nooit uw privé sleutel van SSH.**
+>Voor Pro het Opvoeren en Productie, als de sFTP verbinding voor a _generische_ gebruiker is die **&#x200B;**&#x200B;niet [ moet worden toegevoegd aan het project van de Wolk ](../project/user-access.md), moet u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) met hun **openbare** sleutel in bijlage voorleggen. **verstrekt nooit uw privé sleutel van SSH.**
 
 ## SSH-tunneling
 

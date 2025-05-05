@@ -39,7 +39,7 @@ Nadat u projectspecifieke variabelen hebt ingesteld, moet u de externe omgeving 
 
 **om variabelen te plaatsen gebruikend[!DNL Cloud Console]**:
 
-1. Klik in _[!DNL Cloud Console]_op het configuratiepictogram rechts van de projectnavigatie.
+1. Klik in _[!DNL Cloud Console]_&#x200B;op het configuratiepictogram rechts van de projectnavigatie.
 
    ![ vorm project ](../../assets/icon-configure.png){width="36"}
 

@@ -17,7 +17,7 @@ Wanneer een verzoek aan de Fastly oorsprong ontbreekt, keert de Snelle standaard
 
 U kunt uw Adobe Commerce-winkelconfiguratie bijwerken en zo sommige standaardresponspagina&#39;s vervangen door pagina&#39;s met vriendelijker berichten en verbeterde HTML-opmaak, zoals in het volgende voorbeeld wordt getoond.
 
-![ de pagina van de de douanefout van de snelheid {](../../assets/cdn/fastly-new-error-page.png)
+![ de pagina van de de douanefout van de snelheid &lbrace;](../../assets/cdn/fastly-new-error-page.png)
 
 Momenteel kunt u de volgende snelstresponspagina&#39;s aanpassen voor uw Adobe Commerce-project voor cloudinfrastructuur.
 

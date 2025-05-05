@@ -14,7 +14,7 @@ ht-degree: 0%
 
 U moet een verificatietoets hebben om toegang te krijgen tot de Adobe Commerce-opslagplaats en om installatie- en updateopdrachten voor uw Adobe Commerce in te schakelen voor het infrastructuurproject in de cloud. Er zijn twee methoden om de autorisatiegegevens van de Composer op te geven.
 
-- **authentificatiedossier** - een dossier dat uw 2} autorisatiereferenties van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) in uw Adobe Commerce op de folder van de de wortelfolder van de wolkeninfrastructuur bevat.[
+- **authentificatiedossier** - een dossier dat uw 2&rbrace; autorisatiereferenties van Adobe Commerce [&#128279;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) in uw Adobe Commerce op de folder van de de wortelfolder van de wolkeninfrastructuur bevat.
 - **milieu veranderlijk** - een milieu variabele aan opstellingsauthentificatietoetsen in uw Adobe Commerce op het project van de wolkeninfrastructuur om toevallige blootstelling te verhinderen.
 
 >[!BEGINSHADEBOX]
@@ -57,7 +57,7 @@ De volgende methode is de beste manier om onbedoelde blootstelling van gevoelige
 
 **om authentificatietoetsen toe te voegen gebruikend een omgevingsvariabele**:
 
-1. Klik in _[!DNL Cloud Console]_op het configuratiepictogram rechts van de projectnavigatie.
+1. Klik in _[!DNL Cloud Console]_&#x200B;op het configuratiepictogram rechts van de projectnavigatie.
 
    ![ vorm project ](../../assets/icon-configure.png){width="36"}
 

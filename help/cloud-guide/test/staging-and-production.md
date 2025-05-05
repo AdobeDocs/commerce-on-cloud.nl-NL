@@ -207,7 +207,7 @@ Gebruik de volgende gereedschappen voor de beste resultaten:
 - [ Siege ](https://www.joedog.org/siege-home/) - Verkeer die en software vormen te testen om uw opslag aan de grens te duwen. Plaats uw site met een configureerbaar aantal gesimuleerde clients. Siege ondersteunt basisverificatie, cookies, HTTP-, HTTPS- en FTP-protocollen.
 - [ Jmeter ](https://jmeter.apache.org) - Uitstekende lading het testen om prestaties voor verrijkt verkeer, als voor flitsverkoop te meten. Aangepaste tests maken die op uw site worden uitgevoerd.
 - [ New Relic ](../monitor/new-relic-service.md) (verstrekt) - Helpt van processen en gebieden van de plaats de plaats bepalen veroorzakend langzame prestaties met bijgehouden tijd die per actie wordt doorgebracht zoals het overbrengen van gegevens, vragen, Redis, en meer.
-- [ WebPageTest ](https://www.webpagetest.org) en [ het 3} - in real time analyse van uw pagina&#39;s van de plaats laden tijd met verschillende oorsprongsplaatsen. ](https://www.pingdom.com) Het koninkrijk kan een vergoeding vragen. WebPageTest is een gratis hulpmiddel.
+- [ WebPageTest ](https://www.webpagetest.org) en [ het 3&rbrace; - in real time analyse van uw pagina&#39;s van de plaats laden tijd met verschillende oorsprongsplaatsen. ](https://www.pingdom.com) Het koninkrijk kan een vergoeding vragen. WebPageTest is een gratis hulpmiddel.
 
 ## Functionele tests
 

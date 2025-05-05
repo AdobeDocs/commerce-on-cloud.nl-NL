@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Externe omgevingen van Adobe Commerce in de cloudinfrastructuur zijn **alleen-lezen**, inclusief alle Starter-omgevingen en alle Pro-integratie-, faserings- en productieomgevingen. In een lokale ontwikkelomgeving kunt u code schrijven en testen voordat u deze naar een integratieomgeving pusht voor verder testen en implementeren in testomgeving en productie.
 
-Voordat u uw lokale werkruimte voorbereidt, moet u ervoor zorgen dat u over uw [inloggegevens beschikt.](../../get-started/prepare-workspace.md) Lokale ontwikkeling vereist de installatie van PHP en Composer, tenzij u ervoor kiest om Cloud Docker for Commerce](#docker-environment) te gebruiken[.
+Voordat u uw lokale werkruimte voorbereidt, moet u ervoor zorgen dat u over uw [inloggegevens beschikt.](../../get-started/prepare-workspace.md) Lokale ontwikkeling vereist de installatie van PHP en Composer, tenzij u ervoor kiest om Cloud Docker for Commerce[&#128279;](#docker-environment) te gebruiken.
 
 ## Benodigde pakketten
 

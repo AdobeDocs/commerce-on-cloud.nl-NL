@@ -38,8 +38,8 @@ je bent klaar om te gaan !
 ## Codebeoordelingen
 
 Alle opmerkingen moeten in de vorm van een &quot;pull&quot;-verzoek worden ingediend en moeten worden herzien
-door projectbevrachters. Lees {de documentatie van het trekvraag van 0} GitHub ](https://docs.github.com/articles/about-pull-requests/)
-voor meer informatie over het verzenden van trekkingsverzoeken.[
+door projectbevrachters. Lees {de documentatie van het trekvraag van 0} GitHub 
+voor meer informatie over het verzenden van trekkingsverzoeken.[&#128279;](https://docs.github.com/articles/about-pull-requests/)
 
 <!--
 Lastly, please follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when

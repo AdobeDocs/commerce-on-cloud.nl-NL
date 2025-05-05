@@ -212,7 +212,7 @@ Waar de routeneconfiguratie bepaalt hoe URLs wordt verwerkt, bepaalt het `web` b
 
 ### Websites, winkels en winkels instellen
 
-In _Admin UI_, opstelling uw Websites van Adobe Commerce ****, **Sporen**, en **Mening van de Opslag**. Zie [ Opstelling veelvoudige websites, opslag, en opslagmeningen in Admin ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-admin.html) in de _Gids van de Configuratie_.
+In _Admin UI_, opstelling uw Websites van Adobe Commerce **&#x200B;**, **Sporen**, en **Mening van de Opslag**. Zie [ Opstelling veelvoudige websites, opslag, en opslagmeningen in Admin ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-admin.html) in de _Gids van de Configuratie_.
 
 Het is belangrijk om dezelfde naam en code van uw websites te gebruiken, en meningen van uw Admin op te slaan wanneer u opstelling uw lokale installatie. U hebt deze waarden nodig wanneer u het `magento-vars.php` -bestand bijwerkt.
 

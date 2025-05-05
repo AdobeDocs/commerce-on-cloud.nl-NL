@@ -81,8 +81,8 @@ mysql:
 | `default_charset` | De standaardtekenset. | utf8mb4 |
 | `default_collation` | De standaardsortering. | utf8mb4_unicode_ci |
 | `max_allowed_packet` | Maximale grootte voor pakketten, in MB. Bereik `1` tot `100` . | 16 |
-| `optimizer_switch` | Stel waarden in voor de functie voor query-optimalisatie. Zie {de documentatie van 0} MariaDB ](https://mariadb.com/kb/en/server-system-variables/#optimizer_switch).[ | |
-| `optimizer_use_condition_selectivity` | Selecteer de statistieken die door optimizer worden gebruikt. Bereik `1` tot `5` . Zie {de documentatie van 0} MariaDB ](https://mariadb.com/kb/en/server-system-variables/#optimizer_use_condition_selectivity).[ | 4 voor 10.4 en hoger |
+| `optimizer_switch` | Stel waarden in voor de functie voor query-optimalisatie. Zie {de documentatie van 0} MariaDB [&#128279;](https://mariadb.com/kb/en/server-system-variables/#optimizer_switch). | |
+| `optimizer_use_condition_selectivity` | Selecteer de statistieken die door optimizer worden gebruikt. Bereik `1` tot `5` . Zie {de documentatie van 0} MariaDB [&#128279;](https://mariadb.com/kb/en/server-system-variables/#optimizer_use_condition_selectivity). | 4 voor 10.4 en hoger |
 
 ### Meerdere databasegebruikers instellen
 

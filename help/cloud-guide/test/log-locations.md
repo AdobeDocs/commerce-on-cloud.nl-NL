@@ -247,10 +247,10 @@ De logboeken van de dienst worden gearchiveerd en voor verschillende periodes, a
 
 >[!TIP]
 >
->De bestandslocaties van logbestanden in de geschaalde architectuur zijn afhankelijk van het type knooppunt. Zie {de plaatsen van het 0} Logboek in het Schaalde architectuur ](../architecture/scaled-architecture.md#log-locations) onderwerp.[
+>De bestandslocaties van logbestanden in de geschaalde architectuur zijn afhankelijk van het type knooppunt. Zie {de plaatsen van het 0} Logboek in het Schaalde architectuur [&#128279;](../architecture/scaled-architecture.md#log-locations) onderwerp.
 
 ## Loggegevens voor Pro Production en Staging
 
 Voor ProProductie en het Opvoeren milieu&#39;s, gebruik [ New Relic logboekbeheer ](../monitor/log-management.md) geïntegreerd met uw project om samengevoegde logboekgegevens van alle logboeken te beheren verbonden aan uw Adobe Commerce op het project van de wolkeninfrastructuur.
 
-De New Relic Logs-toepassing biedt een gecentraliseerd logbeheerdashboard om Adobe Commerce problemen op te lossen en te controleren in productieomgevingen en testomgevingen voor cloudinfrastructuur. Het dashboard verleent ook toegang tot logboekgegevens voor de Snelle diensten van CDN, van de Optimalisering van het Beeld, en van de de toepassingsfirewall van het Web (WAF). Zie {de diensten van 0} New Relic ](../monitor/new-relic-service.md).[
+De New Relic Logs-toepassing biedt een gecentraliseerd logbeheerdashboard om Adobe Commerce problemen op te lossen en te controleren in productieomgevingen en testomgevingen voor cloudinfrastructuur. Het dashboard verleent ook toegang tot logboekgegevens voor de Snelle diensten van CDN, van de Optimalisering van het Beeld, en van de de toepassingsfirewall van het Web (WAF). Zie {de diensten van 0} New Relic [&#128279;](../monitor/new-relic-service.md).

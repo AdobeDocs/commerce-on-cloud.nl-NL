@@ -16,7 +16,7 @@ Deze eigenschap gebruikt **scenario&#39;s** en **stappen** in de configuratie:
 
 - {de configuratie van het 0} Scenario **-Elke plaatsingshaak is a *scenario*, dat een de configuratiedossier is van XML dat de opeenvolging en configuratieparameters beschrijft om plaatsingstaken te voltooien.** U configureert de scenario&#39;s in de sectie `hooks` van het `.magento.app.yaml` -bestand.
 
-- **- elk scenario van de 1} Stap gebruikt een opeenvolging van *stappen* die programmatically de verrichtingen beschrijven die worden vereist om plaatsingstaken te voltooien.** U vormt de stappen in een op XML-Gebaseerd dossier van de scenarioconfiguratie.
+- **- elk scenario van de 1&rbrace; Stap gebruikt een opeenvolging van *stappen* die programmatically de verrichtingen beschrijven die worden vereist om plaatsingstaken te voltooien.** U vormt de stappen in een op XML-Gebaseerd dossier van de scenarioconfiguratie.
 
 Adobe Commerce op wolkeninfrastructuur verstrekt een reeks [ standaardscenario&#39;s ](https://github.com/magento/ece-tools/tree/2002.1/scenario) en [ standaardstappen ](https://github.com/magento/ece-tools/tree/2002.1/src/Step) in het `ece-tools` pakket. U kunt plaatsingsgedrag aanpassen door de configuratiedossiers van douaneXML te creëren om de standaardconfiguratie met voeten te treden of aan te passen. U kunt ook scenario&#39;s en stappen gebruiken om code uit aangepaste modules uit te voeren.
 

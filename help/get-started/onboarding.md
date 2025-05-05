@@ -48,7 +48,7 @@ De pagina biedt een status voor Adobe Commerce-componenten en -services, gevolgd
 >
 > Open de nieuwe [!DNL Cloud Console] en bekijk project- en omgevingsactiviteiten.
 >
->**Volgende stap**: [ Login aan Cl [!DNL ]oud Console ](cloud-console.md)
+>**Volgende stap**: [ Login aan Cl oud Console ](cloud-console.md)
 
 <!-- link definitions -->
 

@@ -81,7 +81,7 @@ register_argc_argv => On => On
 
 >[!WARNING]
 >
->Als u het Dok van de Wolk voor Commerce voor lokale ontwikkeling gebruikt, zie {de dienstcontainers van 0} Docker ](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#fpm-container) voor informatie over het gebruiken van een douane `php.ini` dossier in een milieu van het Dok.[
+>Als u het Dok van de Wolk voor Commerce voor lokale ontwikkeling gebruikt, zie {de dienstcontainers van 0} Docker [&#128279;](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#fpm-container) voor informatie over het gebruiken van een douane `php.ini` dossier in een milieu van het Dok.
 
 ## Extensies inschakelen
 

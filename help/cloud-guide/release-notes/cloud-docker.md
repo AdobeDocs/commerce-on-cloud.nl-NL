@@ -21,7 +21,7 @@ Het pakket `magento/magento-cloud-docker` gebruikt de volgende versiereeks: `<ma
 De opmerkingen bij de release omvatten:
 
 - ![ nieuw pictogram ](../../assets/new.svg) Nieuwe eigenschappen
-- ](../../assets/fix.svg) Bevestigingspictogram van 0} moeilijke situatie en verbeteringen![
+- ![&#128279;](../../assets/fix.svg) Bevestigingspictogram van 0&rbrace; moeilijke situatie en verbeteringen
 
 <!--Add release notes below-->
 
@@ -68,7 +68,7 @@ Releasedatum: 10 maart 2023
 - ![ nieuw pictogram ](../../assets/new.svg) **ionCube** - voegde de IonCube uitbreiding voor PHP 8.1 beeld toe.
 - ![ nieuw pictogram ](../../assets/new.svg) **Toegevoegde nieuwe de dienstversies** - OpenSearch 2.3 en 2.4, PHP 8.2, Varnish 7.1.1.
 - ![ nieuw pictogram ](../../assets/new.svg) **Verbeterde steun voor PHP 8.2** - Vaste verenigbaarheidskwesties met bepaalde PHP 8.2.x versies om Commerce 2.4.6 te steunen.
-- ](../../assets/fix.svg) **de kwestie-Vaste kwesties van de 2} componist van de moeilijke situatie ![ {** die na het bijwerken van de versie Composer binnen de containers van de Docker voorkwamen.
+- ![&#128279;](../../assets/fix.svg) **de kwestie-Vaste kwesties van de 2&rbrace; componist van de moeilijke situatie  &lbrace;** die na het bijwerken van de versie Composer binnen de containers van de Docker voorkwamen.
 
 ## v1.3.4
 
@@ -105,14 +105,14 @@ Releasedatum: 10 maart 2022
 
 - ![ fixpictogram ](../../assets/fix.svg) **verbeteringen Elasticsearch &amp; OpenSearch** - Verbeteringen in Elasticsearch en OpenSearch Dockerfiles; verwijderde Elasticsearch 5.2 beeld.
 - ![ fixpictogram ](../../assets/fix.svg) **Natriumuitbreiding** - Toegelaten de `sodium` uitbreiding door gebrek in alle PHP beelden.
-- ](../../assets/fix.svg) **het geheime voorgeheugenvolume van de Composer** - Vaste weg voor het geheim voorgeheugenvolume van Composer om in het voorgeheugen ondergebrachte Composer pakketten te hebben.![
+- ![&#128279;](../../assets/fix.svg) **het geheime voorgeheugenvolume van de Composer** - Vaste weg voor het geheim voorgeheugenvolume van Composer om in het voorgeheugen ondergebrachte Composer pakketten te hebben.
 - ![ fixpictogram ](../../assets/fix.svg) **de beperking van het Geheugen in nginx** - Vaste beperking van geheugen in NGINX beeld.
 
 ## v1.3.0
 
 Releasedatum: 25 oktober 2021
 
-- ![ fixpictogram ](../../assets/fix.svg) **verbetert het werkschema van de wijze van de Ontwikkelaar** - eerder, moest u de wijze in de bouwstijl specificeren en stappen opstellen. De optie `--mode` in de stap `build` bepaalt nu de modus in de latere stap `deploy` . Het instellen van de modus na de implementatie is niet meer vereist. Zie {de wijze van de 0} Ontwikkelaar ](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/developer-mode/).<!-- ACMP-1086 -->[
+- ![ fixpictogram ](../../assets/fix.svg) **verbetert het werkschema van de wijze van de Ontwikkelaar** - eerder, moest u de wijze in de bouwstijl specificeren en stappen opstellen. De optie `--mode` in de stap `build` bepaalt nu de modus in de latere stap `deploy` . Het instellen van de modus na de implementatie is niet meer vereist. Zie {de wijze van de 0} Ontwikkelaar &rbrack;(https://developer.adobe.com/commerce/cloud-tools/docker/deploy/developer-mode/).<!-- ACMP-1086 -->&lbrack;
 - ![ fixpictogram ](../../assets/fix.svg) **Verbeteringen voor read-only filesystem** - <!-- ACMP-1106 -->
    - Probleem verhelpen met een PHP-container voor e-mailconfiguratie.
    - Kan omgevingsvariabelen gebruiken in INI-bestanden.
@@ -157,7 +157,7 @@ Releasedatum: 20 april 2021
 - ![ nieuw pictogram ](../../assets/new.svg) **auto-produceert NGINX certificaten** - Verwijderde de bestaande certificaten uit het beeld NGINX. De NGINX-certificaten worden nu automatisch gegenereerd bij elke nieuwe implementatie voor verbeterde beveiliging.<!--MCLOUD-7396-->
 - ![ fixpictogram ](../../assets/fix.svg) **Toegelaten`opcache.validate_timestamps`** - Toegelaten `opcache.validate_timestamps` PHP plaatsend door gebrek op ontwikkelaarwijze. Het toelaten van deze het plaatsen verholpen de kwestie waar de veranderingen in het filesystem niet in Docker werden erkend.<!--MCLOUD-7466-->
 - ![ bevestigen pictogram ](../../assets/fix.svg) **Vast`build:custom:compose`** - Vaste het `build:custom:compose` bevel om een fout te werpen wanneer de dossiers niet tijdens het bouwstijlproces kunnen worden beschreven. Door een fout te genereren voorkomt u situaties waarin `docker-compose up` de verkeerde bestanden zou kunnen gebruiken. <!--MCLOUD-7457-->
-- ](../../assets/fix.svg) Vast **het pictogram van de moeilijke situatie `--sync_engine="native"` optie** - Vaste de kwestie waar op productiemodus (`--mode="production"`), de `--sync_engine="native"` optie geen ingangen voor lokale omslagen in het `docker.composer.yml` dossier zou creëren.<!--MCLOUD-7254-->![
+- &rbrack;(../../assets/fix.svg) Vast **het pictogram van de moeilijke situatie `--sync_engine="native"` optie** - Vaste de kwestie waar op productiemodus (`--mode="production"`), de `--sync_engine="native"` optie geen ingangen voor lokale omslagen in het `docker.composer.yml` dossier zou creëren.<!--MCLOUD-7254-->!&lbrack;
 - ![ herstellingspictogram ](../../assets/fix.svg) **Vaste de bevestigingsfouten van de de dienstversie** - Toegevoegde de dienstversies voor [!DNL RabbitMQ], Elasticsearch, en andere diensten aan het `type` bezit in de `MAGENTO_CLOUD_RELATIONSHIP` variabele. Het toevoegen van deze versies aan de `relationships` variabele herstelde de bevestigingsfouten die tijdens plaatsingsfase voorkwamen.<!--MCLOUD-7572-->
 
 ## v1.2.1
@@ -363,7 +363,7 @@ Releasedatum: 5 februari 2020
 
    - ![ nieuw pictogram ](../../assets/new.svg) **container van het Web** -
 
-      - ![ nieuw pictogram ](../../assets/new.svg) **pas NGINX configuratie** toe - voegde het vermogen toe om een douane `nginx.conf` dossier aan het Dok van de Wolk voor het milieu van Commerce op te zetten. Zie {de container van 0} Web ](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#web-container).<!--MAGECLOUD-4204-->[
+      - ![ nieuw pictogram ](../../assets/new.svg) **pas NGINX configuratie** toe - voegde het vermogen toe om een douane `nginx.conf` dossier aan het Dok van de Wolk voor het milieu van Commerce op te zetten. Zie {de container van 0} Web &rbrack;(https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#web-container).<!--MAGECLOUD-4204-->&lbrack;
 
       - ![ nieuw pictogram ](../../assets/new.svg) **Auto-geproduceerde NGINX certificaten** - het de configuratiedossier van de Docker omvat nu de configuratie om NGINX certificaten voor de container van het Web auto-te produceren.<!--MAGECLOUD-4258-->
 

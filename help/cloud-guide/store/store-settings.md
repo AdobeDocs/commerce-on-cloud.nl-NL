@@ -15,12 +15,12 @@ De standaardconfiguraties voor uw opslag worden opgeslagen in een `config.xml` v
 
 De montages van de opslag, die naar de configuraties in Admin **verwijzen Slaat** > **Montages** > **de sectie van de Configuratie**, worden opgeslagen in de dossiers van de plaatsingsconfiguratie die op het type van configuratie worden gebaseerd:
 
-- `app/etc/config.php` - configuratie-instellingen voor winkels, websites, modules of extensies, statische optimalisatie van bestanden en systeemwaarden met betrekking tot de implementatie van statische inhoud. Zie de {](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/config-reference-configphp.html) referentie 0} config.php in de _Gids van de Configuratie_.[
+- `app/etc/config.php` - configuratie-instellingen voor winkels, websites, modules of extensies, statische optimalisatie van bestanden en systeemwaarden met betrekking tot de implementatie van statische inhoud. Zie de {[&#128279;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/config-reference-configphp.html) referentie 0} config.php in de _Gids van de Configuratie_.
 - `app/etc/env.php` - waarden voor systeem-specifieke met voeten treedt en gevoelige montages die _NIET_ in broncontrole zouden moeten worden opgeslagen. Zie [ env.php verwijzing ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/config-reference-envphp.html) in de _Gids van de Configuratie_.
 
 >[!NOTE]
 >
->Omdat Adobe Commerce op wolkeninfrastructuur slechts de productie en onderhoudswijzen steunt, is de **Geavanceerde** > **sectie van de Ontwikkelaar** niet toegankelijk in Admin. U moet {de voorrechten van Admin van 0} milieu ](../project/user-access.md) hebben om de taken van het configuratiebeheer te voltooien. [ U kunt extra montages vormen gebruikend [ milieuvariabelen ](../environment/configure-env-yaml.md).
+>Omdat Adobe Commerce op wolkeninfrastructuur slechts de productie en onderhoudswijzen steunt, is de **Geavanceerde** > **sectie van de Ontwikkelaar** niet toegankelijk in Admin. U moet {de voorrechten van Admin van 0} milieu [&#128279;](../project/user-access.md) hebben om de taken van het configuratiebeheer te voltooien.  U kunt extra montages vormen gebruikend [ milieuvariabelen ](../environment/configure-env-yaml.md).
 
 Het beheer van de configuratie verstrekt een manier om verenigbare opslagmontages over uw milieu&#39;s met minimale onderbreking op te stellen gebruikend de plaatsing van de Pijpleiding. Adobe Commerce op het project van de wolkeninfrastructuur omvat de bouwstijlserver, bouwt en stelt manuscripten, en plaatsingsmilieu&#39;s op die met de [ strategie van de pijpleidingsplaatsing ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html) in mening worden ontworpen.
 

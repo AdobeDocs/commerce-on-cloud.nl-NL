@@ -136,7 +136,7 @@ In dit voorbeeld wordt de ISO 3166-1-landcode van twee tekens gebruikt voor het 
 
 >[!NOTE]
 >
->In plaats van het gebruiken van een fragment van douaneVCL, kunt u de Snelle ](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BLOCKING.md) eigenschap van het Blokkeren [ in Adobe Commerce op beheerder van de wolkeninfrastructuur gebruiken om het blokkeren door landcode of een lijst van landcodes te vormen.
+>In plaats van het gebruiken van een fragment van douaneVCL, kunt u de Snelle [&#128279;](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BLOCKING.md) eigenschap van het Blokkeren  in Adobe Commerce op beheerder van de wolkeninfrastructuur gebruiken om het blokkeren door landcode of een lijst van landcodes te vormen.
 
 ### Voorbeeld van VCL-code: Blok door aanvraagheader van HTTP-gebruikersagent
 

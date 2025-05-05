@@ -42,7 +42,7 @@ In het volgende voorbeeld van een New Relic-query wordt het aantal hosts in de o
 SELECT uniqueCount(SystemSample.entityId) AS 'Infrastructure hosts', uniqueCount(Transaction.host) AS 'APM hosts seen' FROM SystemSample, Transaction where (Transaction.appName = 'cluster-id_stg' AND Transaction.transactionType = 'Web') OR SystemSample.apmApplicationNames LIKE '%|cluster-id_stg|%' TIMESERIES SINCE 3 HOURS AGO
 ```
 
-In het volgende schermafbeelding, **zien de gastheren van APM** {naar het aantal gastheren met transacties verwijzen die tijdens de geselecteerde periode worden geregistreerd.
+In het volgende schermafbeelding, **zien de gastheren van APM** &lbrace;naar het aantal gastheren met transacties verwijzen die tijdens de geselecteerde periode worden geregistreerd.
 
 ![ de gastheertelling van New Relic ](../../assets/new-relic/host-count.png)
 

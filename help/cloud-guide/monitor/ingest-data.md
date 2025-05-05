@@ -18,7 +18,7 @@ New Relic verstrekt a _het beheer van Gegevens_ mening die uw plangebruik door g
 **om uw ingegane gegevens en bronnen** te bekijken:
 
 1. Klik in het gebruikersmenu van New Relic op **[!UICONTROL Manage your data]** .
-1. Klik **[!UICONTROL Data management]** in de _2} lijst van het Beleid {._
+1. Klik **[!UICONTROL Data management]** in de _2&rbrace; lijst van het Beleid &lbrace;._
 
    ![ het beheer van Gegevens ](../../assets/new-relic/data-ingestion.png)
 

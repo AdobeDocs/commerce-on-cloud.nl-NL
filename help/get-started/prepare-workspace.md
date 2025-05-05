@@ -65,4 +65,4 @@ Een veilige verbinding is essentieel voor interactie met de externe omgeving. Vo
 
 >[!TIP]
 >
->De Adobe voorziet uw aanvankelijke projectmilieu gebruikend een malplaatjebewaarplaats die pakketinstructies voor een specifieke versie van Adobe Commerce omvat. Herzie het ](../cloud-guide/project/file-structure.md) onderwerp van het 0} projectdossier structuur en leer meer over belangrijke projectdossiers en wolkenmalplaatjes.[
+>De Adobe voorziet uw aanvankelijke projectmilieu gebruikend een malplaatjebewaarplaats die pakketinstructies voor een specifieke versie van Adobe Commerce omvat. Herzie het [&#128279;](../cloud-guide/project/file-structure.md) onderwerp van het 0&rbrace; projectdossier structuur en leer meer over belangrijke projectdossiers en wolkenmalplaatjes.

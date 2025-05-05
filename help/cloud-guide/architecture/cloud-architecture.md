@@ -75,7 +75,7 @@ U kunt de volgende services configureren:
 
 >[!NOTE]
 >
->Zie {de vereisten van het 0} Systeem ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in de _gids van de Installatie_ voor geadviseerde versies.[
+>Zie {de vereisten van het 0} Systeem [&#128279;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in de _gids van de Installatie_ voor geadviseerde versies.
 
 De snelste CDN-module wordt gebruikt voor CDN- en caching-services op staging- en productieomgevingen. Zie [ vormen de Snelle diensten ](../cdn/fastly.md).
 

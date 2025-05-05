@@ -165,7 +165,7 @@ relationships:
     rabbitmq: "rabbitmq:rabbitmq"
 ```
 
-Zie ](../services/services-yaml.md) de Diensten van 0} {voor een volledige lijst van momenteel gesteunde de diensttypes en eindpunten.[
+Zie [&#128279;](../services/services-yaml.md) de Diensten van 0&rbrace; &lbrace;voor een volledige lijst van momenteel gesteunde de diensttypes en eindpunten.
 
 ## `mounts`
 

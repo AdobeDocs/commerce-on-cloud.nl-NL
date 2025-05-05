@@ -44,7 +44,7 @@ De woordenboeken en ACL gegevens worden opgesteld aan de Fastly Edge knopen die 
 Deze zelfstudie en voorbeelden demonstreren het gebruik van gewone aangepaste VCL-fragmenten met Edge-woordenboeken en Edge ACL&#39;s om de Fastly-serviceconfiguratie voor Adobe Commerce aan te passen. Raadpleeg de documentatie bij Snelheid voor meer informatie:
 
 - [ Gids om snel VCL ](https://docs.fastly.com/guides/vcl/guide-to-vcl) - Informatie over de Fastly Varnish implementatie, de Snelle uitbreidingen van VCL, en middelen voor het leren van meer over Varnish en VCL.
-- [ VCL verwijzing 1} - Gedetailleerde programmeringsverwijzing snel om douaneVCL en de fragmenten van douaneVCL te ontwikkelen en problemen op te lossen.](https://docs.fastly.com/guides/vcl/)
+- [ VCL verwijzing 1&rbrace; - Gedetailleerde programmeringsverwijzing snel om douaneVCL en de fragmenten van douaneVCL te ontwikkelen en problemen op te lossen.](https://docs.fastly.com/guides/vcl/)
 
 U kunt aangepaste VCL-fragmenten maken en beheren via Adobe Commerce Admin of met de snelheids-API:
 

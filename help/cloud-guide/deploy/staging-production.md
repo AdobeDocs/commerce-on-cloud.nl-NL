@@ -50,7 +50,7 @@ De het Staging milieu verstrekt een bijna-productiemilieu dat een gegevensbestan
    ![ Fusie ](../../assets/button-merge.png){width="150"}
 
 1. Voltooi al [ het testen ](../test/staging-and-production.md) in het milieu van het Staging.
-1. Wanneer het Staging klaar is, selecteer de **1} optie van de Fusie {om aan Productie op te stellen.**
+1. Wanneer het Staging klaar is, selecteer de **1&rbrace; optie van de Fusie &lbrace;om aan Productie op te stellen.**
 
 **voor Begin, stel de ontwikkelingstak aan het opvoeren** op:
 
@@ -61,7 +61,7 @@ De het Staging milieu verstrekt een bijna-productiemilieu dat een gegevensbestan
    ![ Fusie ](../../assets/button-merge.png){width="150"}
 
 1. Voltooi al [ het testen ](../test/staging-and-production.md) in het milieu van het Staging.
-1. Wanneer het Staging klaar is, selecteer de **1} optie van de Fusie {om aan Productie (`master`) op te stellen.**
+1. Wanneer het Staging klaar is, selecteer de **1&rbrace; optie van de Fusie &lbrace;om aan Productie (`master`) op te stellen.**
 
 ### Code implementeren met de opdrachtregel
 
@@ -205,11 +205,11 @@ Voor deze opdracht worden de volgende opties gebruikt:
 - `v`-verbose
 - `P` gedeeltelijke voortgang
 
-Zie ](https://linux.die.net/man/1/rsync) hulp 0} opnieuw synchroniseren.[
+Zie [&#128279;](https://linux.die.net/man/1/rsync) hulp 0&rbrace; opnieuw synchroniseren.
 
 >[!NOTE]
 >
->Om media van ver-aan-verre milieu&#39;s direct over te brengen, moet u de agent van SSH toelaten door:sturen, zie {de begeleiding van 0} GitHub ](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/using-ssh-agent-forwarding).[
+>Om media van ver-aan-verre milieu&#39;s direct over te brengen, moet u de agent van SSH toelaten door:sturen, zie {de begeleiding van 0} GitHub [&#128279;](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/using-ssh-agent-forwarding).
 
 **om statische dossiers van ver-aan-verre milieu&#39;s direct te migreren (snelle benadering)**:
 
@@ -253,7 +253,7 @@ Adobe **adviseert** migrerend gegevens van Productie in het Opvoeren om uw plaat
 
 >[!NOTE]
 >
->Om media van ver-aan-verre milieu&#39;s rechtstreeks over te brengen moet u de agent toelaten door:sturen, zie {de begeleiding van 0} GitHub ](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/using-ssh-agent-forwarding).[
+>Om media van ver-aan-verre milieu&#39;s rechtstreeks over te brengen moet u de agent toelaten door:sturen, zie {de begeleiding van 0} GitHub [&#128279;](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/using-ssh-agent-forwarding).
 
 ### Back-up maken van de database
 

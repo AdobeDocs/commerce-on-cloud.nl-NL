@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Met Adobe Commerce on cloud Infrastructure kunt u omgevingsvariabelen toewijzen om configuratieopties te overschrijven. Het `ece-tools` pakket plaatst waarden in het `env.php` dossier dat op waarden van [ variabelen van de Wolk ](variables-cloud.md) wordt gebaseerd, variabelen die in [!DNL Cloud Console] worden geplaatst, en het `.magento.env.yaml` configuratiedossier.
 
-De omgevingsvariabelen in het `.magento.env.yaml` -bestand passen de Cloud-omgeving aan door de bestaande Commerce-configuratie te overschrijven. Als een standaardwaarde `Not Set` is, dan neemt het `ece-tools` pakket **** actie NO en gebruikt het [!DNL Commerce] gebrek of de waarde van de `MAGENTO_CLOUD_RELATIONSHIPS` configuratie. Als de standaardwaarde is ingesteld, wordt die standaardwaarde ingesteld door het `ece-tools` -pakket.
+De omgevingsvariabelen in het `.magento.env.yaml` -bestand passen de Cloud-omgeving aan door de bestaande Commerce-configuratie te overschrijven. Als een standaardwaarde `Not Set` is, dan neemt het `ece-tools` pakket **&#x200B;**&#x200B;actie NO en gebruikt het [!DNL Commerce] gebrek of de waarde van de `MAGENTO_CLOUD_RELATIONSHIPS` configuratie. Als de standaardwaarde is ingesteld, wordt die standaardwaarde ingesteld door het `ece-tools` -pakket.
 
 De typen omgevingsvariabelen zijn:
 

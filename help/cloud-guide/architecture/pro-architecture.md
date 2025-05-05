@@ -33,7 +33,7 @@ De volgende tabel geeft een overzicht van de verschillen tussen omgevingen:
 
 >[!NOTE]
 >
->Adobe biedt het hulpprogramma Cloud Docker voor Commerce voor het implementeren naar een lokale Cloud Docker-omgeving zodat u Adobe Commerce-projecten kunt ontwikkelen en testen. Zie {de ontwikkeling van 0} Docker ](../dev-tools/cloud-docker.md).[
+>Adobe biedt het hulpprogramma Cloud Docker voor Commerce voor het implementeren naar een lokale Cloud Docker-omgeving zodat u Adobe Commerce-projecten kunt ontwikkelen en testen. Zie {de ontwikkeling van 0} Docker [&#128279;](../dev-tools/cloud-docker.md).
 
 ## Omgevingsarchitectuur
 
@@ -47,7 +47,7 @@ Bij Pro-projecten biedt de `master` -vertakking een actieve PaaS-omgeving met uw
 
 **beveats:**
 
-- Creëer **** geen tak die op de `master` tak wordt gebaseerd. Gebruik de integratieomgeving om actieve vertakkingen voor ontwikkeling te maken.
+- Creëer **&#x200B;**&#x200B;geen tak die op de `master` tak wordt gebaseerd. Gebruik de integratieomgeving om actieve vertakkingen voor ontwikkeling te maken.
 
 - Gebruik de `master` -omgeving niet voor ontwikkelings-, UAT- of prestatietests
 

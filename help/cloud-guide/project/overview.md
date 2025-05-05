@@ -144,7 +144,7 @@ Klik op **[!UICONTROL Environments]** en selecteer een specifieke omgeving in de
 
 ## Snelle en New Relic-gebruikersgegevens
 
-Uw project omvat [ ](../cdn/fastly.md) en [ snel New Relic ](../monitor/new-relic-service.md). De projectdetails tonen informatie voor uw projectplan en belangrijke vergunningen en penningen voor deze integratie. Alleen de eigenaar van de licentie heeft initiële toegang tot de referenties en services. Geef deze gegevens desgewenst door aan de technische en ontwikkelaars.
+Uw project omvat [&#128279;](../cdn/fastly.md) en [ snel New Relic ](../monitor/new-relic-service.md). De projectdetails tonen informatie voor uw projectplan en belangrijke vergunningen en penningen voor deze integratie. Alleen de eigenaar van de licentie heeft initiële toegang tot de referenties en services. Geef deze gegevens desgewenst door aan de technische en ontwikkelaars.
 
 - [ snel ](https://www.fastly.com/) verstrekt inhoudslevering (CDN), beeldoptimalisering, en de veiligheidsdiensten (DDoS en WAF) voor uw Adobe Commerce op de projecten van de wolkeninfrastructuur. Zie [ krijgen de Snelle geloofsbrieven ](../cdn/fastly-configuration.md#get-fastly-credentials).
 

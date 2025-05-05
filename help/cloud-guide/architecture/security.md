@@ -29,7 +29,7 @@ De snelste firewall van de Toepassing van het Web (WAF) wordt gebruikt om extra 
 
 De WAF-regels worden door Adobe Commerce bijgewerkt als er nieuwe kwetsbaarheden worden gedetecteerd, zodat Managed Services beveiligingsproblemen voor softwarepatches zo goed mogelijk kan verhelpen. De Fastly WAF biedt geen snelheidsbeperkende of botdetectiediensten. Indien gewenst kunnen klanten een licentie voor een service voor botdetectie van derden verkrijgen die compatibel is met Fastly.
 
-Zie {de Firewall van de Toepassing van 0} Web (WAF) ](../cdn/fastly-waf-service.md).[
+Zie {de Firewall van de Toepassing van 0} Web (WAF) [&#128279;](../cdn/fastly-waf-service.md).
 
 ## Virtuele privécloud
 
@@ -82,7 +82,7 @@ De enige manier om uitvoerbare code in de de productieomgeving van Managed Servi
 
 ## Logboekregistratie
 
-Alle AWS-activiteiten zijn aangemeld bij AWS CloudTrail. Besturingssysteem-, toepassingsserver- en databaselogboeken worden opgeslagen op de productieservers en opgeslagen in back-ups. Alle wijzigingen in de broncode worden vastgelegd in een Git-opslagplaats. De geschiedenis van de plaatsing is beschikbaar in de Interface van het Web van het Project van Adobe Commerce [ ](../project/overview.md). Alle ondersteuningstoegang wordt geregistreerd en de steunzittingen worden geregistreerd.
+Alle AWS-activiteiten zijn aangemeld bij AWS CloudTrail. Besturingssysteem-, toepassingsserver- en databaselogboeken worden opgeslagen op de productieservers en opgeslagen in back-ups. Alle wijzigingen in de broncode worden vastgelegd in een Git-opslagplaats. De geschiedenis van de plaatsing is beschikbaar in de Interface van het Web van het Project van Adobe Commerce [&#128279;](../project/overview.md). Alle ondersteuningstoegang wordt geregistreerd en de steunzittingen worden geregistreerd.
 
 Zie [ Mening en beheer logboeken ](../test/log-locations.md).
 

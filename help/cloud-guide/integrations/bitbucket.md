@@ -266,7 +266,7 @@ U kunt de integratie met Bitmap veilig verwijderen uit uw project zonder dat dit
    magento-cloud integration:delete <int-ID>
    ```
 
-Ook, kunt u de integratie van de Bitmap verwijderen door het programma te openen aan uw Bitmap rekening en het intrekken van de OAuth subsidie op de 1} pagina van de rekening _Montages {._
+Ook, kunt u de integratie van de Bitmap verwijderen door het programma te openen aan uw Bitmap rekening en het intrekken van de OAuth subsidie op de 1&rbrace; pagina van de rekening _Montages &lbrace;._
 
 ## Integratie van bitmapserver
 

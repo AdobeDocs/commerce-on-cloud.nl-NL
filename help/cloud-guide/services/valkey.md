@@ -13,7 +13,7 @@ ht-degree: 0%
 
 [ Valkey ](https://valkey.io) is een facultatieve, achterste geheim voorgeheugenoplossing die `Zend Framework Zend_Cache_Backend_File` vervangt, die Adobe Commerce door gebrek gebruikt.
 
-Zie [ Valkey ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/valkey/config-valkey.html) vormen {target="_blank"} in de _gids van de Configuratie_.
+Zie [ Valkey ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/valkey/config-valkey.html){target="_blank"} vormen  in de _gids van de Configuratie_.
 
 {{service-instruction}}
 

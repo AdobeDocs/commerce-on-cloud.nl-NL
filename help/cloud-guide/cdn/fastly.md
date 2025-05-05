@@ -21,7 +21,7 @@ In Fastly worden de volgende services geleverd voor het optimaliseren en beveili
 
 - **beheer van het Geheime voorgeheugen** - Geheime voorgeheugen uw plaatspagina&#39;s, activa, CSS, en meer in achterste gegevenscentra die u opstelling om bandbreedtetoevoer en kosten te drukken
 
-   - Het gebruik {de fragmenten van 0} snel douaneVCL ](fastly-vcl-custom-snippets.md) (Varnish 2.1 volgzaam) om te wijzigen hoe het in het voorgeheugen onderbrengen aan verzoeken beantwoordt[
+   - Het gebruik {de fragmenten van 0} snel douaneVCL [&#128279;](fastly-vcl-custom-snippets.md) (Varnish 2.1 volgzaam) om te wijzigen hoe het in het voorgeheugen onderbrengen aan verzoeken beantwoordt
 
    - De de dienststeun van de opstelling [ GeoIP ](fastly-custom-cache-configuration.md#configure-geoip-handling)
 
@@ -33,7 +33,7 @@ In Fastly worden de volgende services geleverd voor het optimaliseren en beveili
 
 - **Veiligheid** - nadat u de Snelle diensten voor de plaatsen van Adobe Commerce toelaat, zijn de extra veiligheidseigenschappen beschikbaar om uw plaatsen en netwerk te beschermen:
 
-   - ](fastly-waf-service.md) (WAF) - de Beheerde dienst van de de firewalltoepassing van het Web van 0} Firewall van de Toepassing van het Web die PCI-Volgzame bescherming verleent om kwaadwillig verkeer te blokkeren alvorens het uw productieAdobe Commerce op de plaatsen van de wolkeninfrastructuur en netwerk kan beschadigen. [ De WAF-service is alleen beschikbaar in Pro- en Starter Production-omgevingen.
+   - [&#128279;](fastly-waf-service.md) (WAF) - de Beheerde dienst van de de firewalltoepassing van het Web van 0&rbrace; Firewall van de Toepassing van het Web die PCI-Volgzame bescherming verleent om kwaadwillig verkeer te blokkeren alvorens het uw productieAdobe Commerce op de plaatsen van de wolkeninfrastructuur en netwerk kan beschadigen.  De WAF-service is alleen beschikbaar in Pro- en Starter Production-omgevingen.
 
    - [ Verdeelde Ontkenning van de bescherming van de Dienst (DDoS) ](#ddos-protection) - ingebouwde bescherming DDoS tegen gemeenschappelijke aanvallen zoals het Pingelen van Dood, de aanvallen van Smurf, en andere op ICMP-Gebaseerde overstromingsaanvallen.
 

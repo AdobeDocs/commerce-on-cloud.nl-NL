@@ -38,7 +38,7 @@ Als de uitgaande e-mails moeten worden onbruikbaar gemaakt of op ProProductie of
 1. Selecteer een project van de _Alle projecten_ lijst.
 1. Voor het dashboard van het Project, klik het configuratiepictogram in het hogere recht.
 1. Klik op **[!UICONTROL Environments]** en selecteer een specifieke omgeving in de lijst (behalve Staging en Productie voor Pro).
-1. Om uitgaande e-mail toe te laten of onbruikbaar te maken, knevel _uitgaande e-mail_ **** of **weg** toe.
+1. Om uitgaande e-mail toe te laten of onbruikbaar te maken, knevel _uitgaande e-mail_ **&#x200B;**&#x200B;of **weg** toe.
 
    ![ laat uitgaande e-mailconfiguratie ](../../assets/outgoing-emails.png) toe
 
