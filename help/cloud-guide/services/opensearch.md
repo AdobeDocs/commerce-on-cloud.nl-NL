@@ -92,7 +92,7 @@ Wanneer u uw Adobe Commerce op het project van de wolkeninfrastructuur installee
 
 - **verbetering van het Project** - verifieer dat de cliënt OpenSearch PHP in de nieuwe toepassingsversie compatibel is met de OpenSearch de dienstversie die op de wolkeninfrastructuur wordt geïnstalleerd.
 
-De versie van de dienst en verenigbaarheidssteun wordt bepaald door versies die op de infrastructuur van de Wolk worden getest en worden opgesteld, en verschillen soms van versies die door Adobe Commerce op-gebouw plaatsingen worden gesteund. Zie {de vereisten van het 0} Systeem ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in de _Gids van de Installatie_ voor een lijst van gesteunde versies.[
+De versie van de dienst en verenigbaarheidssteun wordt bepaald door versies die op de infrastructuur van de Wolk worden getest en worden opgesteld, en verschillen soms van versies die door Adobe Commerce op-gebouw plaatsingen worden gesteund. Zie {de vereisten van het 0} Systeem [&#128279;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in de _Gids van de Installatie_ voor een lijst van gesteunde versies.
 
 **om de softwareverenigbaarheid te verifiëren OpenSearch**:
 
@@ -196,7 +196,7 @@ Zie het [ Project OpenSearch ](https://github.com/opensearch-project) voor meer 
 
 ### Insteekmodules voor OpenSearch verwijderen
 
-Het verwijderen van de insteekmoduleingangen uit de `opensearch:` sectie van het `.magento/services.yaml` dossier **** schrapt of maakt de dienst niet onbruikbaar. Als u de service volledig wilt uitschakelen, moet u de OpenSearch-gegevens opnieuw indexeren nadat u de plug-ins uit het `.magento/services.yaml` -bestand hebt verwijderd. Dit ontwerp voorkomt mogelijk gegevensverlies of -beschadiging die afhankelijk is van deze plug-ins.
+Het verwijderen van de insteekmoduleingangen uit de `opensearch:` sectie van het `.magento/services.yaml` dossier **&#x200B;**&#x200B;schrapt of maakt de dienst niet onbruikbaar. Als u de service volledig wilt uitschakelen, moet u de OpenSearch-gegevens opnieuw indexeren nadat u de plug-ins uit het `.magento/services.yaml` -bestand hebt verwijderd. Dit ontwerp voorkomt mogelijk gegevensverlies of -beschadiging die afhankelijk is van deze plug-ins.
 
 **om stopSearch te verwijderen**:
 
