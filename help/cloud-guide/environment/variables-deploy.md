@@ -4,9 +4,10 @@ description: Zie de lijst met omgevingsvariabelen die acties in de Adobe Commerc
 feature: Cloud, Configuration, Cache, Deploy, SCD, Storage, Search
 recommendations: noDisplay, catalog
 role: Developer
-source-git-commit: 0d9d3d64cd0ad4792824992af354653f61e4388d
+exl-id: 980ec809-8c68-450a-9db5-29c5674daa16
+source-git-commit: 275a2a5c58b7c5db12f8f31bffed85004e77172f
 workflow-type: tm+mt
-source-wordcount: '2209'
+source-wordcount: '2483'
 ht-degree: 0%
 
 ---
@@ -62,7 +63,7 @@ stage:
             database: 11
 ```
 
-Het volgende voorbeeld gebruikt [ preload eigenschap ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache.html?lang=nl-NL#redis-preload-feature) zoals die in de _gids van de Configuratie_ wordt bepaald:
+Het volgende voorbeeld gebruikt [ preload eigenschap ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache.html#redis-preload-feature) zoals die in de _gids van de Configuratie_ wordt bepaald:
 
 ```yaml
 stage:
@@ -97,7 +98,7 @@ stage:
 - **Gebrek** - `true`
 - **Versie** - Adobe Commerce 2.1.4 en later
 
-Laat of maakt het schoonmaken [ statische inhoudsdossiers ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html?lang=nl-NL) toe onbruikbaar tijdens de bouwstijl wordt geproduceerd of fase opstelt. Gebruik de standaardwaarde _waar_ in ontwikkeling als beste praktijken.
+Laat of maakt het schoonmaken [ statische inhoudsdossiers ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html) toe onbruikbaar tijdens de bouwstijl wordt geproduceerd of fase opstelt. Gebruik de standaardwaarde _waar_ in ontwikkeling als beste praktijken.
 
 - **`true`** - Hiermee verwijdert u alle bestaande statische inhoud voordat u de bijgewerkte statische inhoud implementeert.
 - **`false`** - De implementatie overschrijft alleen bestaande bestanden met statische inhoud als de gegenereerde inhoud een nieuwere versie bevat.
@@ -156,7 +157,7 @@ stage:
       consumers: []
 ```
 
-Standaard overschrijft het implementatieproces alle instellingen in het `env.php` -bestand. Zie [ berichtrijen ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues.html?lang=nl-NL) in de _Gids van de Configuratie van Commerce_ voor op-gebouw Adobe Commerce beheren.
+Standaard overschrijft het implementatieproces alle instellingen in het `env.php` -bestand. Zie [ berichtrijen ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues.html) in de _Gids van de Configuratie van Commerce_ voor op-gebouw Adobe Commerce beheren.
 
 ## `CONSUMERS_WAIT_FOR_MAX_MESSAGES`
 
@@ -186,7 +187,7 @@ stage:
 
 >[!WARNING]
 >
->Stel de `CRYPT_KEY` -waarde in via [!DNL Cloud Console] in plaats van het `.magento.env.yaml` -bestand om te voorkomen dat de sleutel in de broncodeopslagplaats voor uw omgeving toegankelijk wordt gemaakt. Zie [ plaats milieu en projectvariabelen ](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/project/overview.html?lang=nl-NL#configure-environment).
+>Stel de `CRYPT_KEY` -waarde in via [!DNL Cloud Console] in plaats van het `.magento.env.yaml` -bestand om te voorkomen dat de sleutel in de broncodeopslagplaats voor uw omgeving toegankelijk wordt gemaakt. Zie [ plaats milieu en projectvariabelen ](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/project/overview.html#configure-environment).
 
 Wanneer u het gegevensbestand van één milieu aan een andere zonder installatieproces verplaatst, hebt u de overeenkomstige cryptografische informatie nodig. Adobe Commerce gebruikt de waarde van de coderingssleutel die in de [!DNL Cloud Console] is ingesteld als de `crypt/key` -waarde in het `env.php` -bestand.
 
@@ -277,7 +278,7 @@ stage:
 
 >[!NOTE]
 >
->Op een Pro Staging/de cluster van de Productie die drie knopen (of drie de dienstknopen op [ Geschaalde Architectuur ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture#service-tier) heeft, zou `indices_settings` als volgt moeten worden geplaatst:
+>Op een Pro Staging/de cluster van de Productie die drie knopen (of drie de dienstknopen op [ Geschaalde Architectuur ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture#service-tier) heeft, zou `indices_settings` als volgt moeten worden geplaatst:
 >
 >```yaml
 >           indices_settings:
@@ -302,7 +303,7 @@ stage:
 **Bekende beperkingen**:
 
 - Als u de zoekmachine wijzigt in een ander type dan `elasticsuite` , treedt een implementatiefout op, vergezeld van een geschikte validatiefout
-- Het verwijderen van de dienst van de Elasticsearch veroorzaakt een implementatiefout vergezeld van een aangewezen bevestigingsfout
+- Het verwijderen van de Elasticsearch-service veroorzaakt een implementatiefout die vergezeld gaat van een geschikte validatiefout
 
 >[!NOTE]
 >
@@ -313,10 +314,10 @@ stage:
 - **Gebrek** - `false`
 - **Versie** - Adobe Commerce 2.1.4 en later
 
-Laat en maakt Googles Analytics toe onbruikbaar wanneer het opstellen aan het Opvoeren en de milieu&#39;s van de Integratie. Googles Analytics gelden standaard alleen voor de productieomgeving. Stel deze waarde in op `true` als u Googles Analytics wilt inschakelen in de omgevingen voor Staging en Integratie.
+Hiermee schakelt u Google Analytics in en uit bij de implementatie naar omgevingen voor Staging en Integratie. Google Analytics geldt standaard alleen voor de productieomgeving. Stel deze waarde in op `true` om Google Analytics in te schakelen in de omgevingen voor Staging en Integratie.
 
-- **`true`** - Laat Googles Analytics op het Opvoeren en de milieu&#39;s van de Integratie toe.
-- **`false`** - Maakt Googles Analytics op het Opvoeren en de milieu&#39;s van de Integratie onbruikbaar.
+- **`true`** - Hiermee schakelt u Google Analytics in voor Stage and Integration-omgevingen.
+- **`false`** - Maakt Google Analytics op het Opvoeren en de milieu&#39;s van de Integratie onbruikbaar.
 
 Voeg de omgevingsvariabele `ENABLE_GOOGLE_ANALYTICS` toe aan het `deploy` werkgebied in het `.magento.env.yaml` -bestand:
 
@@ -328,7 +329,7 @@ stage:
 
 >[!NOTE]
 >
->Het implementatieproces maakt altijd Googles Analytics in productieomgevingen mogelijk.
+>Het implementatieproces maakt altijd Google Analytics op Production-omgevingen mogelijk.
 
 ## `FORCE_UPDATE_URLS`
 
@@ -356,7 +357,7 @@ stage:
     LOCK_PROVIDER: "db"
 ```
 
-Zie [ vormen het slot ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/lock-provider.html?lang=nl-NL) in _gids_ installeren.
+Zie [ vormen het slot ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/lock-provider.html) in _gids_ installeren.
 
 ## `MYSQL_USE_SLAVE_CONNECTION`
 
@@ -442,7 +443,7 @@ stage:
 
 >[!NOTE]
 >
->Als u `\Magento\Framework\Cache\Backend\RemoteSynchronizedCache` als Redis achterste model specificeert om [ L2 geheime voorgeheugen ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html?lang=nl-NL) toe te laten, `ece-tools` produceert automatisch de geheim voorgeheugenconfiguratie. Zie een voorbeeld [ configuratiedossier ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html?lang=nl-NL#configuration-example) in de _Gids van de Configuratie van Adobe Commerce_. Om de geproduceerde geheim voorgeheugenconfiguratie met voeten te treden, gebruik [ CACHE_CONFIGURATION ](#cache_configuration) veranderlijk opstelt.
+>Als u `\Magento\Framework\Cache\Backend\RemoteSynchronizedCache` als Redis achterste model specificeert om [ L2 geheime voorgeheugen ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html) toe te laten, `ece-tools` produceert automatisch de geheim voorgeheugenconfiguratie. Zie een voorbeeld [ configuratiedossier ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html#configuration-example) in de _Gids van de Configuratie van Adobe Commerce_. Om de geproduceerde geheim voorgeheugenconfiguratie met voeten te treden, gebruik [ CACHE_CONFIGURATION ](#cache_configuration) veranderlijk opstelt.
 
 ## `REDIS_USE_SLAVE_CONNECTION`
 
@@ -451,7 +452,7 @@ stage:
 
 >[!WARNING]
 >
->Laat __ deze variabele op a [ geschaalde architectuur ](../architecture/scaled-architecture.md) project niet toe. Dit veroorzaakt verbindingsfouten van Redis. Redis-slaven zijn nog steeds actief, maar worden niet gebruikt voor Redis-lezen. Als alternatief raadt de Adobe aan Adobe Commerce 2.3.5 of hoger te gebruiken, een nieuwe Redis-back-endconfiguratie te implementeren en L2-caching voor Redis te implementeren.
+>Laat __ deze variabele op a [ geschaalde architectuur ](../architecture/scaled-architecture.md) project niet toe. Dit veroorzaakt verbindingsfouten van Redis. Redis-slaven zijn nog steeds actief, maar worden niet gebruikt voor Redis-lezen. Als alternatief raadt Adobe aan Adobe Commerce 2.3.5 of hoger te gebruiken, een nieuwe Redis-back-endconfiguratie te implementeren en L2-caching voor Redis te implementeren.
 
 >[!TIP]
 >
@@ -468,6 +469,58 @@ stage:
 U moet een Redis-service hebben geconfigureerd in het `.magento.app.yaml` -bestand en in het `services.yaml` -bestand.
 
 [ ECE-Hulpmiddelen versie 2002.0.18 ](../release-notes/cloud-release-archive.md#v2002018) en later gebruik meer fout-verdraagzame montages. Als Adobe Commerce geen gegevens van Redis _slave_ instantie kan lezen, dan leest het gegevens van Redis _meester_ instantie.
+
+De read-only verbinding is niet beschikbaar voor gebruik in het integratiemilieu of als u [`CACHE_CONFIGURATION` variabele ](#cache_configuration) gebruikt.
+
+## `VALKEY_BACKEND`
+
+- **Gebrek** - `Cm_Cache_Backend_Redis`
+- **Versie** - Adobe Commerce 2.8.0 en later
+
+`VALKEY_BACKEND` geeft de achtergrondmodelconfiguratie voor de Valkey-cache op.
+
+Adobe Commerce versie 2.8.0 en hoger bevat de volgende back-endmodellen:
+
+- `Cm_Cache_Backend_Redis`
+- `\Magento\Framework\Cache\Backend\Redis`
+- `\Magento\Framework\Cache\Backend\RemoteSynchronizedCache`
+
+In het volgende voorbeeld wordt beschreven hoe u `VALKEY_BACKEND` instelt:
+
+```yaml
+stage:
+  deploy:
+    VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+```
+
+>[!NOTE]
+>
+>Als u `\Magento\Framework\Cache\Backend\RemoteSynchronizedCache` als Valkey achterste model specificeert om [ L2 geheime voorgeheugen ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html) toe te laten, `ece-tools` produceert automatisch de geheim voorgeheugenconfiguratie. Zie een voorbeeld [ configuratiedossier ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html#configuration-example) in de _Gids van de Configuratie van Adobe Commerce_. Om de geproduceerde geheim voorgeheugenconfiguratie met voeten te treden, gebruik [ CACHE_CONFIGURATION ](#cache_configuration) veranderlijk opstelt.
+
+## `VALKEY_USE_SLAVE_CONNECTION`
+
+- **Gebrek** - `false`
+- **Versie** - Adobe Commerce 2.4.8 en later
+
+>[!WARNING]
+>
+>Laat __ deze variabele op a [ geschaalde architectuur ](../architecture/scaled-architecture.md) project niet toe. Dit veroorzaakt verbindingsfouten van Valkey. Redis-slaven zijn nog steeds actief, maar worden niet gebruikt voor Redis-lezen. Alternatief, adviseert Adobe het gebruiken van Adobe Commerce 2.4.8 of later, die een nieuwe Valkey backend configuratie, en het uitvoeren van L2 caching voor Valkey uitvoeren.
+
+>[!TIP]
+>
+>De variabele `VALKEY_USE_SLAVE_CONNECTION` wordt alleen ondersteund in Adobe Commerce op omgevingen met Staging- en Production Pro-clusters met cloudinfrastructuur en niet in Starter-projecten.
+
+Adobe Commerce kan meerdere Redis-instanties asynchroon lezen. `VALKEY_USE_SLAVE_CONNECTION` Reeks aan `true` om a _read-only_ verbinding aan een instantie van Redis automatisch te gebruiken om read-only verkeer op een niet hoofdknoop te ontvangen. Deze verbinding verbetert prestaties door lading het in evenwicht brengen, omdat slechts één knoop lees-schrijf verkeer behandelt. Stel `VALKEY_USE_SLAVE_CONNECTION` in op `false` om een bestaande alleen-lezen-verbindingsarray uit het `env.php` -bestand te verwijderen.
+
+```yaml
+stage:
+  deploy:
+    VALKEY_USE_SLAVE_CONNECTION: true
+```
+
+U moet een Redis-service hebben geconfigureerd in het `.magento.app.yaml` -bestand en in het `services.yaml` -bestand.
+
+[ ECE-Hulpmiddelen versie 2002.0.18 ](../release-notes/cloud-release-archive.md#v2002018) en later gebruik meer fout-verdraagzame montages. Als Adobe Commerce geen gegevens van de Valkey _slave_ instantie kan lezen, dan leest het gegevens van Redis _meester_ instantie.
 
 De read-only verbinding is niet beschikbaar voor gebruik in het integratiemilieu of als u [`CACHE_CONFIGURATION` variabele ](#cache_configuration) gebruikt.
 
@@ -581,7 +634,7 @@ stage:
 - **Gebrek** - `quick`
 - **Versie** - Adobe Commerce 2.2.0 en later
 
-Staat u toe om de [ plaatsingsstrategie ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy.html?lang=nl-NL) voor statische inhoud aan te passen. Zie [ statische meningsdossiers ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html?lang=nl-NL) opstellen.
+Staat u toe om de [ plaatsingsstrategie ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy.html) voor statische inhoud aan te passen. Zie [ statische meningsdossiers ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html) opstellen.
 
 Gebruik deze opties _slechts_ als u meer dan één scène hebt:
 
@@ -617,7 +670,7 @@ Om plaatsingstijd verder te verminderen, gebruik [ het Beheer van de Configurati
 
 Gebruik deze omgevingsvariabele om aangepaste instellingen voor zoekservices tussen implementaties te behouden. Bijvoorbeeld:
 
-Configuratie Elasticsearch:
+Elasticsearch-configuratie:
 
 ```yaml
 stage:

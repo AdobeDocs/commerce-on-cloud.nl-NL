@@ -2,7 +2,8 @@
 title: Valkey-service instellen
 description: Leer hoe u Valkey instelt en optimaliseert als back-end cacheoplossing voor Adobe Commerce op Cloud Infrastructure.
 feature: Cloud, Cache, Services
-source-git-commit: f73c742cbdbf56ac073802074d5a9cd921591f0f
+exl-id: f8933e0d-a308-4c75-8547-cb26ab6df947
+source-git-commit: 242582ea61d0d93725a7f43f2ca834db9e1a7c29
 workflow-type: tm+mt
 source-wordcount: '188'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 [ Valkey ](https://valkey.io) is een facultatieve, achterste geheim voorgeheugenoplossing die `Zend Framework Zend_Cache_Backend_File` vervangt, die Adobe Commerce door gebrek gebruikt.
 
-Zie [ Valkey ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/valkey/config-valkey.html?lang=nl-NL){target="_blank"} vormen  in de _gids van de Configuratie_.
+Zie [ Valkey ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/valkey/config-valkey.html){target="_blank"} in de _gids van de Configuratie_ vormen.
 
 {{service-instruction}}
 
@@ -59,7 +60,7 @@ Ervan uitgaande dat de Valkey-relatie `valkey` heet, kunt u deze openen met het 
 1. Open een tunnel SSH aan een gastheer.
 
    ```bash
-   valkey-cli -h valkeycache.internal
+   valkey-cli -h valkey.internal
    ```
 
 ## Geïnstalleerde Valkey-versie ophalen
@@ -67,7 +68,7 @@ Ervan uitgaande dat de Valkey-relatie `valkey` heet, kunt u deze openen met het 
 Gebruik de volgende opdracht om de Valkey-versie op een integratieomgeving te installeren:
 
 ```bash
-valkey-cli -h valkeycache.internal info | grep version
+valkey-cli -h valkey.internal info | grep version
 ```
 
 Reactie:
