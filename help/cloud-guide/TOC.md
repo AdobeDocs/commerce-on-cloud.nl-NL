@@ -3,9 +3,9 @@ user-guide-title: Handleiding voor Commerce in de cloud
 user-guide-description: Leer hoe u de Adobe Commerce-toepassing beheert op cloudinfrastructuur.
 product: magento
 feature: Cloud
-source-git-commit: fd7879e8f3c9e1965cf4aa3d99824e577971529d
+source-git-commit: 3347ad0a5fe202cbd80d08b7289c20a1c98ed1e3
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '359'
 ht-degree: 4%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 4%
    + [Pro-workflow](architecture/pro-develop-deploy-workflow.md)
    + [Schaalbare architectuur](architecture/scaled-architecture.md)
    + [Automatisch schalen](architecture/autoscaling.md)
-+ [ begonnen worden ](https://experienceleague.adobe.com/docs/commerce-on-cloud/start/overview.html?lang=nl-NL)
++ [ begonnen worden ](https://experienceleague.adobe.com/docs/commerce-on-cloud/start/overview.html)
 + Opmerkingen bij de release {#release-notes}
    + [Cloud Tools-suite](release-notes/cloud-tools-suite.md)
    + [ECE-gereedschapspakket](release-notes/ece-tools-package.md)
@@ -34,7 +34,7 @@ ht-degree: 4%
    + [Cloud Packages](release-notes/cloud-packages.md)
    + [Achteruit incompatibele wijzigingen](release-notes/backward-incompatible-changes.md)
    + [Archief met opmerkingen vrijgeven](release-notes/cloud-release-archive.md)
-+ Cloudproject {#project}
++ Cloud-project {#project}
    + [Overzicht van project](project/overview.md)
    + [Projectstructuur](project/file-structure.md)
    + [Toegang van gebruikers](project/user-access.md)
@@ -50,7 +50,7 @@ ht-degree: 4%
       + [CLI-overzicht](dev-tools/cloud-cli-overview.md)
       + [CLI-verwijzing](dev-tools/cloud-cli-reference.md)
    + [Cloud Docker](dev-tools/cloud-docker.md)
-   + ECE-Tools {#ece-tools}
+   + ECE-gereedschappen {#ece-tools}
       + [Overzicht van pakket](dev-tools/package-overview.md)
       + [Eenmalige upgrade voor gebruik van ECE-tools](dev-tools/install-package.md)
       + [Het pakket ECE-gereedschappen bijwerken](dev-tools/update-package.md)
@@ -137,7 +137,7 @@ ht-degree: 4%
       + [KonijnMQ](services/rabbitmq.md)
       + [Redis](services/redis.md)
       + [Valkey](services/valkey.md)
-+ Snelle services {#cdn}
++ Sneldiensten {#cdn}
    + [Overzicht](cdn/fastly.md)
    + Snelle installatie {#setup-fastly}
       + [Services voor snel configureren](cdn/fastly-configuration.md)
@@ -153,7 +153,7 @@ ht-degree: 4%
       + [IP LIJST VAN GEWEZEN PERSONEN](cdn/fastly-vcl-blocking.md)
       + [Snelcache omzeilen](cdn/fastly-vcl-bypass-to-origin.md)
    + [Snelle probleemoplossing](cdn/fastly-troubleshooting.md)
-+ Instellingen opslaan {#configure-store}
++ Opslaginstellingen {#configure-store}
    + [Overzicht](store/overview.md)
    + [Aanbevolen procedures](store/best-practices.md)
    + [Aangepast thema](store/custom-theme.md)
@@ -167,8 +167,9 @@ ht-degree: 4%
    + [Overzicht](launch/overview.md)
    + [Checklist starten](launch/checklist.md)
    + [Stappen starten](launch/steps.md)
-+ Site controleren {#monitor}
++ Monitorsite {#monitor}
    + [Prestaties](monitor/performance.md)
+   + [Operationele telemetrie](monitor/operational-telemetry.md)
    + New Relic-service {#new-relic}
       + [New Relic-overzicht](monitor/new-relic-service.md)
       + [Account- en gebruikersbeheer](monitor/account-management.md)
