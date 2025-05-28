@@ -1,5 +1,5 @@
 ---
-source-git-commit: 350cfea06f036f0787b330e6e40c5af46a30f5ad
+source-git-commit: 7f2934af84c947046fed3a32c3b6e2937aed418a
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 4%
@@ -19,10 +19,10 @@ Kritieke fouten wijzen op een probleem met Commerce op de projectconfiguratie va
 | - | - | - | - |
 | 2 |  | Kan niet schrijven naar het `./app/etc/env.php` -bestand | Implementatiescript kan geen vereiste wijzigingen aanbrengen in het `/app/etc/env.php` -bestand. Controleer de bestandssysteemmachtigingen. |
 | 3 |  | Configuration is not defined in the `schema.yaml` file | Configuration is not defined in the `./vendor/magento/ece-tools/config/schema.yaml` file. Controleer of de naam van de configuratievariabele correct en bepaald is. |
-| 4 |  | Kan het bestand `.magento.env.yaml` niet parseren | Het `./.magento.env.yaml` bestandsformaat is ongeldig. Gebruik een YAML-parser om de syntaxis te controleren en eventuele fouten op te lossen. |
-| 5 |  | Kan het `.magento.env.yaml` bestand niet lezen | Kan het `./.magento.env.yaml` bestand niet lezen. Controleer de bestandsmachtigingen. |
-| 6 |  | Kan het `.schema.yaml` bestand niet lezen | Kan het `./vendor/magento/ece-tools/config/magento.env.yaml` bestand niet lezen. Controleer de bestandsrechten en implementeer opnieuw (`magento-cloud environment:redeploy`). |
-| 7 | Refresh-modules | Kan niet schrijven naar het `./app/etc/config.php` -bestand | Het implementatiescript kan geen vereiste wijzigingen aanbrengen in het `/app/etc/config.php` -bestand. Controleer de bestandssysteemmachtigingen. |
+| 4 |  | Kan het bestand `.magento.env.yaml` niet parseren | De bestandsindeling `./.magento.env.yaml` is ongeldig. Gebruik een parser YAML om de syntaxis te controleren en om het even welke fouten te bevestigen. |
+| 5 |  | Kan het bestand `.magento.env.yaml` niet lezen | Kan het `./.magento.env.yaml` -bestand niet lezen. Controleer de bestandsmachtigingen. |
+| 6 |  | Kan het bestand `.schema.yaml` niet lezen | Kan het `./vendor/magento/ece-tools/config/magento.env.yaml` -bestand niet lezen. Controleer bestandsmachtigingen en hergebruik (`magento-cloud environment:redeploy`). |
+| 7 | verfrissingsmodules | Kan niet schrijven naar het `./app/etc/config.php` -bestand | Het implementatiescript kan geen vereiste wijzigingen aanbrengen in het `/app/etc/config.php` -bestand. Controleer de bestandssysteemmachtigingen. |
 | 8 | validate-config | Kan het `composer.json` -bestand niet lezen | Kan het `./composer.json` -bestand niet lezen. Controleer de bestandsmachtigingen. |
 | 9 | validate-config | De sectie Automatisch laden van het bestand `composer.json` ontbreekt | De sectie Required `autoload` ontbreekt in het `composer.json` -bestand. Vergelijk de sectie Automatisch laden met het `composer.json` -bestand in de Cloud-sjabloon en voeg de ontbrekende configuratie toe. |
 | 10 | validate-config | Het bestand `.magento.env.yaml` bevat een optie die niet in het schema is gedeclareerd of een optie die is geconfigureerd met een ongeldige waarde of een ongeldig werkgebied | Het bestand `./.magento.env.yaml` bevat een ongeldige configuratie. Controleer het foutenlogboek voor gedetailleerde informatie. |
@@ -34,9 +34,9 @@ Kritieke fouten wijzen op een probleem met Commerce op de projectconfiguratie va
 | 16 | dump-autoload | Opdracht is mislukt: `composer dump-autoload` | De opdracht `composer dump-autoload` is mislukt. Raadpleeg `cloud.log` voor meer informatie. |
 | 17 | renbaan | Het uitvoeren van de opdracht `Baler` voor JavaScript-bundeling is mislukt | Controleer de `SCD_USE_BALER` omgevingsvariabele om te controleren of de Baler-module is geconfigureerd en ingeschakeld voor JS-bundeling. Stel `SCD_USE_BALER: false` in als u de module Baler niet nodig hebt. |
 | 18 | compress-static-content | Vereist hulpprogramma niet gevonden (timeout, bash) |  |
-| 19 | implementatie-statische inhoud | Opdracht `/bin/magento setup:static-content:deploy` mislukt | Kijk op de `cloud.log` voor meer informatie. Voeg de `VERBOSE_COMMANDS: '-vvv'` optie toe aan het `.magento.env.yaml` bestand voor een meer gedetailleerde opdrachtuitvoer. |
-| 20 | comprimeren-statische-inhoud | Statische inhoudscompressie is mislukt | Raadpleeg `cloud.log` voor meer informatie. |
-| 21 | Back-upgegevens: statische inhoud | Kan statische inhoud niet naar de `init` map kopiëren | Kijk op de `cloud.log` voor meer informatie. |
+| 19 | implementatie-statische inhoud | Opdracht `/bin/magento setup:static-content:deploy` mislukt | Raadpleeg `cloud.log` voor meer informatie. Voeg de optie `VERBOSE_COMMANDS: '-vvv'` toe aan het `.magento.env.yaml` -bestand voor meer gedetailleerde uitvoer van opdrachten. |
+| 20 | compress-static-content | Statische inhoudscompressie is mislukt | Raadpleeg `cloud.log` voor meer informatie. |
+| 21 | back-upgegevens: statische inhoud | Kan statische inhoud niet kopiëren naar de map `init` . | Raadpleeg `cloud.log` voor meer informatie. |
 | 22 | back-upgegevens: schrijfbare dirs | Kan sommige beschrijfbare mappen niet kopiëren naar de map `init` . | Kan beschrijfbare mappen niet naar de map `./init` kopiëren. Controleer de bestandssysteemmachtigingen. |
 | 23 |  | Kan geen logboekobject maken |  |
 | 24 | back-upgegevens: statische inhoud | Kan de map `./init/pub/static/` niet opschonen | Kan de map `./init/pub/static` niet opschonen. Controleer de bestandssysteemmachtigingen. |
@@ -53,10 +53,10 @@ Kritieke fouten wijzen op een probleem met Commerce op de projectconfiguratie va
 | 104 |  | Kan het bestand `.magento.env.yaml` niet parseren | Configuration is not defined in the `./vendor/magento/ece-tools/config/schema.yaml` file. Controleer of de naam van de configuratievariabele correct is en of deze is gedefinieerd. |
 | 105 |  | Kan het bestand `.magento.env.yaml` niet lezen | Kan het `./.magento.env.yaml` -bestand niet lezen. Controleer de bestandsmachtigingen. |
 | 106 |  | Kan het bestand `.schema.yaml` niet lezen |  |
-| 107 | vooraf implementeren: clean-redis-cache | Kan de Redis-cache niet opschonen | Kan de Redis-cache niet opschonen. Controleer of de cachemonfiguratie van Redis correct is en of de service Redis beschikbaar is. Zie [ Redis de dienst van de Opstelling ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/service/redis). |
-| 140 | Vooraf implementeren: clean-valkey-cache | Kan de Valkey-cache niet opschonen | Kan de Valkey-cache niet opschonen. Controleer of de Valkey-cacheconfiguratie correct is en of de Valkey-service beschikbaar is. Zie [Valkey-service](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/service/valkey) instellen. |
+| 107 | vooraf implementeren: clean-redis-cache | Kan de Redis-cache niet opschonen | Kan de Redis-cache niet opschonen. Controleer of de cachemonfiguratie van Redis correct is en of de service Redis beschikbaar is. Zie [ Redis de dienst van de Opstelling ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/redis.html). |
+| 140 | vooraf implementeren: clean-valkey-cache | Kan de Valkey-cache niet opschonen | Kan de Valkey-cache niet opschonen. Controleer of de configuratie van het Valkey-cachegeheugen correct is en of de service Valkey beschikbaar is. Zie [ de dienst van Valkey van de Opstelling ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/valkey.html). |
 | 108 | pre-implementatie: set-production-mode | Opdracht `/bin/magento maintenance:enable` mislukt | Raadpleeg `cloud.log` voor meer informatie. Voeg de optie `VERBOSE_COMMANDS: '-vvv'` toe aan het `.magento.env.yaml` -bestand voor meer gedetailleerde uitvoer van opdrachten. |
-| 109 | validate-config | Onjuiste databaseconfiguratie | Controleer of de `DATABASE_CONFIGURATION` omgevingsvariabele correct is geconfigureerd. |
+| 109 | validate-config | Onjuiste databaseconfiguratie | Controleer of de omgevingsvariabele `DATABASE_CONFIGURATION` correct is geconfigureerd. |
 | 110 | validate-config | Onjuiste sessieconfiguratie | Controleer of de omgevingsvariabele `SESSION_CONFIGURATION` correct is geconfigureerd. De configuratie moet ten minste de parameter `save` bevatten. |
 | 111 | validate-config | Onjuiste zoekconfiguratie | Controleer of de omgevingsvariabele `SEARCH_CONFIGURATION` correct is geconfigureerd. De configuratie moet ten minste de parameter `engine` bevatten. |
 | 112 | validate-config | Onjuiste bronconfiguratie | Controleer of de omgevingsvariabele `RESOURCE_CONFIGURATION` correct is geconfigureerd. De configuratie moet ten minste `connection` parameter bevatten. |
@@ -71,14 +71,14 @@ Kritieke fouten wijzen op een probleem met Commerce op de projectconfiguratie va
 | 121 | implementeren-statische inhoud:genereren | Kan de geïmplementeerde versie niet bijwerken | Kan het `./pub/static/deployed_version.txt` -bestand niet bijwerken. Controleer de bestandssysteemmachtigingen. |
 | 122 | zuiver-statische inhoud | Kan bestanden met statische inhoud niet opschonen |  |
 | 123 | install-update: split-db | Opdracht `/bin/magento setup:db-schema:split` mislukt | Raadpleeg `cloud.log` voor meer informatie. Voeg de optie `VERBOSE_COMMANDS: '-vvv'` toe aan het `.magento.env.yaml` -bestand voor meer gedetailleerde uitvoer van opdrachten. |
-| 124 | onbewerkt | Kan de map `var/view_preprocessed` niet opschonen | Kan de `./var/view_preprocessed` map niet opschonen. Controleer de bestandssysteemmachtigingen. |
+| 124 | onbewerkt | Kan de map `var/view_preprocessed` niet opschonen | Kan de map `./var/view_preprocessed` niet opschonen. Controleer de bestandssysteemmachtigingen. |
 | 125 | install-update: reset-password | Kan het `/var/credentials_email.txt` -bestand niet bijwerken | Kan het `/var/credentials_email.txt` -bestand niet bijwerken. Controleer de bestandssysteemmachtigingen. |
 | 126 | install-update: update | Opdracht `/bin/magento setup:upgrade` mislukt | Raadpleeg `cloud.log` en `install_upgrade.log` voor meer informatie. Voeg de optie `VERBOSE_COMMANDS: '-vvv'` toe aan het `.magento.env.yaml` -bestand voor meer gedetailleerde uitvoer van opdrachten. |
 | 127 | schone cache | Opdracht `/bin/magento cache:flush` mislukt | Raadpleeg `cloud.log` voor meer informatie. Voeg de optie `VERBOSE_COMMANDS: '-vvv'` toe aan het `.magento.env.yaml` -bestand voor meer gedetailleerde uitvoer van opdrachten. |
 | 128 | uit-onderhoud-modus | Opdracht `/bin/magento maintenance:disable` mislukt | Raadpleeg `cloud.log` voor meer informatie. Voeg `VERBOSE_COMMANDS: '-vvv'` toe aan `.magento.env.yaml` voor meer gedetailleerde opdrachtuitvoer. |
 | 129 | install-update: reset-password | Kan de sjabloon voor opnieuw instellen van wachtwoord niet lezen |  |
 | 130 | install-update: cache_type | Opdracht is mislukt: `php ./bin/magento cache:enable` | Opdracht `php ./bin/magento cache:enable` wordt alleen uitgevoerd wanneer Adobe Commerce is geïnstalleerd, maar het `./app/etc/env.php` -bestand is niet aanwezig of leeg aan het begin van de implementatie. Raadpleeg `cloud.log` voor meer informatie. Voeg `VERBOSE_COMMANDS: '-vvv'` toe aan `.magento.env.yaml` voor meer gedetailleerde opdrachtuitvoer. |
-| 131 | installeren-bijwerken | De waarde van de sleutel `crypt/key` bestaat niet in het `./app/etc/env.php` -bestand of de omgevingsvariabele van de cloud`CRYPT_KEY` | Deze fout treedt op als het `./app/etc/env.php` -bestand niet aanwezig is wanneer de Adobe Commerce-implementatie begint of als de `crypt/key` -waarde ongedefinieerd is. Als u de database uit een andere omgeving hebt gemigreerd, haalt u de waarde van de cryptsleutel uit die omgeving op. Dan, voeg de waarde aan [ CRYPT_KEY ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#crypt_key) de variabele van het wolkenmilieu in uw huidig milieu toe. Zie [ de encryptiesleutel van Adobe Commerce ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/develop/overview#gather-credentials). Als u per ongeluk het `./app/etc/env.php` -bestand hebt verwijderd, gebruikt u de volgende opdracht om het bestand te herstellen van de back-upbestanden die zijn gemaakt op basis van een vorige implementatie: `./vendor/bin/ece-tools backup:restore` CLI-opdracht.&quot; |
+| 131 | installeren-bijwerken | De waarde van de sleutel `crypt/key` bestaat niet in het `./app/etc/env.php` -bestand of de omgevingsvariabele van de cloud`CRYPT_KEY` | Deze fout treedt op als het `./app/etc/env.php` -bestand niet aanwezig is wanneer de Adobe Commerce-implementatie begint of als de `crypt/key` -waarde ongedefinieerd is. Als u de database uit een andere omgeving hebt gemigreerd, haalt u de waarde van de cryptsleutel uit die omgeving op. Dan, voeg de waarde aan [ CRYPT_KEY ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#crypt_key) de variabele van het wolkenmilieu in uw huidig milieu toe. Zie [ de encryptiesleutel van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/overview.html#gather-credentials). Als u per ongeluk het `./app/etc/env.php` -bestand hebt verwijderd, gebruikt u de volgende opdracht om het bestand te herstellen van de back-upbestanden die zijn gemaakt op basis van een vorige implementatie: `./vendor/bin/ece-tools backup:restore` CLI-opdracht.&quot; |
 | 132 |  | Kan geen verbinding maken met de Elasticsearch-service | Controleren op geldige Elasticsearch-referenties en controleren of de service wordt uitgevoerd |
 | 137 |  | Kan geen verbinding maken met de OpenSearch-service | Controleren op geldige OpenSearch-referenties en controleren of de service wordt uitgevoerd |
 | 133 | validate-config | Magento Braintree-moduleconfiguratie verwijderen die niet meer wordt ondersteund in Adobe Commerce of Magento Open Source 2.4 en latere versies. | Ondersteuning voor de Braintree-module is niet meer inbegrepen bij Adobe Commerce of Magento Open Source 2.4.0 en hoger. Verwijder de variabele CONFIG__STORES__DEFAULT__PAYMENT__BRAINTREE__CHANNEL uit de sectie variables van het `.magento.app.yaml` bestand. Gebruik voor Braintree-ondersteuning een officiële Braintree Payments-extensie van de Commerce Marketplace. |
@@ -140,7 +140,7 @@ Waarschuwingsfouten geven een probleem aan met de Commerce op de projectconfigur
 | 2002 | validate-config | De geconfigureerde status is niet ideaal |  |
 | 2003 | validate-config | De geneste niveauwaarde van de folder voor fout het melden is niet gevormd |  |
 | 2004 | validate-config | Ongeldige configuratie in de ./pub/errors/local.xml. |  |
-| 2005 | validate-config | Beheerdersgegevens worden alleen gebruikt om een beheerdersgebruiker te maken tijdens de eerste installatie. Eventuele wijzigingen in beheerdersgegevens worden genegeerd tijdens het upgradeproces. | Na de eerste installatie kunt u de beheergegevens uit de configuratie verwijderen. |
+| 2005 | validate-config | Beheerdersgegevens worden alleen tijdens de eerste installatie gebruikt om een beheerder te maken. Wijzigingen in de beheergegevens worden tijdens het upgradeproces genegeerd. | Na de eerste installatie kunt u de beheergegevens uit de configuratie verwijderen. |
 | 2006 | validate-config | Admin-gebruiker is niet gemaakt omdat e-mail met beheerder niet is ingesteld | Na de installatie kunt u handmatig een beheerder maken: gebruik SSH om verbinding te maken met uw omgeving. Voer vervolgens de opdracht `bin/magento admin:user:create` uit. |
 | 2007 | validate-config | PHP-versie bijwerken naar aanbevolen versie |  |
 | 2008 | validate-config | Solr-ondersteuning is afgekeurd in Adobe Commerce en Magento Open Source 2.1. |  |
@@ -151,7 +151,7 @@ Waarschuwingsfouten geven een probleem aan met de Commerce op de projectconfigur
 | 2013 | validate-config | SCD opties genegeerd omdat het plaatsingsproces niet op de bouwstijlfase werd in werking gesteld |  |
 | 2014 | validate-config | De configuratie bevat vervangen variabelen of waarden |  |
 | 2015 | validate-config | Omgevingsconfiguratie is niet geldig |  |
-| 2016 | validate-config | Kan JSON-typeconfiguratie niet decoderen |  |
+| 2016 | validate-config | JSON-typeconfiguratie kan niet worden gedecodeerd |  |
 | 2017 | validate-config | De huidige configuratie is niet compatibel met deze versie van Adobe Commerce |  |
 | 2018 | validate-config | Sommige services zijn overgegaan tot EOL |  |
 | 2019 | validate-config | De MySQL optie van de onderzoeksconfiguratie is verouderd | Gebruik in plaats hiervan Elasticsearch. |
@@ -172,7 +172,7 @@ Waarschuwingsfouten geven een probleem aan met de Commerce op de projectconfigur
 | Foutcode | Stap na implementatie | Foutbeschrijving (titel) | Voorgestelde actie |
 | - | - | - | - |
 | 3001 | validate-config | Foutopsporingsregistratie is ingeschakeld in Adobe Commerce | Als u schijfruimte wilt besparen, moet u foutopsporingslogboekregistratie niet inschakelen voor uw productieomgevingen. |
-| 3002 | opwarmen | OpslagURL&#39;s kunnen niet worden opgehaald |  |
+| 3002 | opwarmen | Kan winkelURL&#39;s niet ophalen |  |
 | 3003 | opwarmen | Kan URL winkel niet ophalen |  |
 | 3004 | back-up | Kan geen back-upbestanden maken |  |
 
@@ -180,4 +180,4 @@ Waarschuwingsfouten geven een probleem aan met de Commerce op de projectconfigur
 
 | Foutcode | Algemene stap | Foutbeschrijving (titel) | Voorgestelde actie |
 | - | - | - | - |
-| 4001 |  | Het aantal systeemprocessors kan niet worden opgehaald: |  |
+| 4001 |  | Kan het aantal systeemprocessors niet ophalen: |  |

@@ -1,20 +1,20 @@
 ---
-source-git-commit: 2207508cf769b712705de5d41e0876ed60e5f614
+source-git-commit: 7f2934af84c947046fed3a32c3b6e2937aed418a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '921'
 ht-degree: 0%
 
 ---
 # Gereedschappen
 
-**Versie**: 2002.2.4
+**Versie**: 2002.2.5
 
 Deze verwijzing bevat 34 opdrachten die beschikbaar zijn via het opdrachtregelprogramma van `ece-tools` .
 De eerste lijst wordt automatisch gegenereerd met de opdracht `ece-tools list` in Adobe Commerce op de cloud-infrastructuur.
 
 ## Algemeen
 
-Deze verwijzing wordt gegenereerd op basis van de toepassingscodebase. Om de inhoud te veranderen, _geef ons terugkoppelen_ (vind de verbinding bij het hogere recht). Voor bijdragerichtsnoeren, zie {de Bijdragen van de Code 0} [&#128279;](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
+Deze verwijzing wordt gegenereerd op basis van de toepassingscodebase. Om de inhoud te veranderen, _geef ons terugkoppelen_ (vind de verbinding bij het hogere recht). Voor bijdragerichtsnoeren, zie {de Bijdragen van de Code 0} ](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).[
 
 ### Algemene opties
 
