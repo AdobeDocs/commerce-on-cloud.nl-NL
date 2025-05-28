@@ -3,9 +3,9 @@ title: Back-upbeheer
 description: Leer hoe u handmatig een back-up voor uw Adobe Commerce-infrastructuurproject in de cloud kunt maken en herstellen.
 feature: Cloud, Paas, Snapshots, Storage
 exl-id: e73a57e7-e56c-42b4-aa7b-2960673a7b68
-source-git-commit: b5fa153b4eb0569fd16c78fb7bf47c54222752cd
+source-git-commit: 3efc5478428c4ede9e2106e1cbef8362c525ccd8
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '759'
 ht-degree: 0%
 
 ---
@@ -83,6 +83,8 @@ U kunt een handmatige back-up maken van elke actieve Starter-omgeving en integra
    +---------------------------+----------------------+------------+
    ```
 
+Om een gegevensbestandstortplaats van om het even welk milieu, met inbegrip van het Opvoeren en Productie tot stand te brengen, zie [ een artikel van de Kennisbank van de gegevensbestandstortplaats ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud) creëren.
+
 ## Een handmatige back-up herstellen
 
 U moet [ toegang Admin ](../project/user-access.md) tot het milieu hebben. U hebt tot **zeven dagen** aan _herstel_ een handsteun. Bij het herstellen van een back-up wordt de code van de huidige git-vertakking niet gewijzigd. Het herstellen van een steun op deze manier is niet van toepassing op Pro het opvoeren en productiemilieu&#39;s; zie [ Pro Steun &amp; de Terugwinning van de Ramp ](../architecture/pro-architecture.md#backup-and-disaster-recovery).
@@ -137,7 +139,7 @@ De hersteltijden variëren afhankelijk van de grootte van de database:
 
 ## Een momentopname voor noodherstel herstellen
 
-Om de Momentopname van de Terugwinning van de Ramp in Pro het Opvoeren en milieu&#39;s van de Productie te herstellen, [ voer direct de gegevensbestandstortplaats van de server ](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3) in.
+Om de Momentopname van de Terugwinning van de Ramp in Pro het Opvoeren en milieu&#39;s van de Productie te herstellen, [ voer direct de gegevensbestandstortplaats van de server ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3) in.
 
 ## Code terugdraaien
 
