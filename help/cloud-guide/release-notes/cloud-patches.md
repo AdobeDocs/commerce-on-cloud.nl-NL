@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Cloudpatches voor Commerce
 
-Het ](https://github.com/magento/magento-cloud-patches) pakket van de Patches van de Wolk 1} verstrekt een reeks vereiste flarden die de integratie van alle versies van Adobe Commerce met de milieu&#39;s van de Wolk verbeteren en snelle levering van kritieke moeilijke situaties steunt.[
+Het [&#128279;](https://github.com/magento/magento-cloud-patches) pakket van de Patches van de Wolk 1&rbrace; verstrekt een reeks vereiste flarden die de integratie van alle versies van Adobe Commerce met de milieu&#39;s van de Wolk verbeteren en snelle levering van kritieke moeilijke situaties steunt.
 
 Het pakket Cloud Patches voor Commerce is afhankelijk van het pakket ECE-Tools en wordt geïnstalleerd en bijgewerkt wanneer u het pakket ECE-Tools installeert of bijwerkt. U kunt Cloud Patches voor Commerce ook gebruiken en beheren als een zelfstandig pakket om patches toe te passen op een Adobe Commerce-project dat zich niet op het Cloud-platform bevindt. In deze releaseopmerkingen worden de meest recente verbeteringen aan dit pakket beschreven.
 
@@ -33,7 +33,7 @@ Het pakket `magento/magento-cloud-patches` gebruikt de volgende versiereeks: `<m
 
 Releasedatum: 3 juni 2025
 
-- ](../../assets/fix.svg) **Verbeterde verenigbaarheid met 2.4.8** - Bijgewerkte derdebibliotheken voor betere verenigbaarheid met 2.4.8 <!-- MCLOUD-13707	 - -->![
+- &rbrack;(../../assets/fix.svg) **Verbeterde verenigbaarheid met 2.4.8** - Bijgewerkte derdebibliotheken voor betere verenigbaarheid met 2.4.8 <!-- MCLOUD-13707	 - -->!&lbrack;
 
 ## v1.1.7
 
@@ -82,7 +82,7 @@ Releasedatum: 5 november 2024
 Releasedatum: 7 oktober 2024
 
 - ![ fixpictogram ](../../assets/fix.svg) **Refactored code** - Verwijderde steun van oude PHP versies (7.4, 7.3, 7.2) en verwante bibliotheken.<!-- MCLOUD-9278 - -->
-- ](../../assets/fix.svg) **Bevestigingspictogram ![ Bevorderde versie Monolog** - Toegevoegde steun voor monolog 3.6.<!-- MCLOUD-12855 - -->
+- ![&#128279;](../../assets/fix.svg) **Bevestigingspictogram  Bevorderde versie Monolog** - Toegevoegde steun voor monolog 3.6.<!-- MCLOUD-12855 - -->
 - ![ fixpictogram ](../../assets/fix.svg) **Reparatie voor de Server van de Toepassing** - lost een bekende kwestie met de Server van de Toepassing van GraphQL op. Specifiek, bevatte `CatalogGraphQl\\Model\\Config\\AttributeReader` in versie 2.4.7 een insect dat tot GraphQL verzoeken kon leiden die reacties terugwinnen op verouderde configuratie van Attributen worden gebaseerd.<!-- ACPT-1876 -->
 
 ## v1.0.27

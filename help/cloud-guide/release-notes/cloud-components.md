@@ -12,14 +12,14 @@ ht-degree: 0%
 
 # Cloud Components voor Commerce
 
-Het ](https://github.com/magento/magento-cloud-components) pakket van de Componenten van de Wolk [ verstrekt uitgebreide de kernfunctionaliteit van Adobe Commerce voor plaatsen die op de infrastructuur van de Wolk worden opgesteld. Dit pakket is afhankelijk van het pakket ECE-Tools. Deze versienota&#39;s beschrijven de recentste verbeteringen aan dit pakket, dat een component van [ de Reeks van Hulpmiddelen van de Wolk voor Commerce ](cloud-tools-suite.md) is.
+Het [&#128279;](https://github.com/magento/magento-cloud-components) pakket van de Componenten van de Wolk  verstrekt uitgebreide de kernfunctionaliteit van Adobe Commerce voor plaatsen die op de infrastructuur van de Wolk worden opgesteld. Dit pakket is afhankelijk van het pakket ECE-Tools. Deze versienota&#39;s beschrijven de recentste verbeteringen aan dit pakket, dat een component van [ de Reeks van Hulpmiddelen van de Wolk voor Commerce ](cloud-tools-suite.md) is.
 
 Het pakket `magento/magento-cloud-components` gebruikt de volgende versiereeks: `<major>.<minor>.<patch>`
 
 De opmerkingen bij de release omvatten:
 
 - ![ nieuw pictogram ](../../assets/new.svg) Nieuwe eigenschappen
-- ](../../assets/fix.svg) Bevestigingspictogram van 0} moeilijke situatie en verbeteringen![
+- ![&#128279;](../../assets/fix.svg) Bevestigingspictogram van 0&rbrace; moeilijke situatie en verbeteringen
 
 <!--Add release notes below-->
 
@@ -27,7 +27,7 @@ De opmerkingen bij de release omvatten:
 
 Releasedatum: 3 juni 2025
 
-- ](../../assets/fix.svg) **Verbeterde verenigbaarheid met 2.4.8** - Bijgewerkte derdebibliotheken voor betere verenigbaarheid met 2.4.8 <!-- MCLOUD-13707	 - -->![
+- &rbrack;(../../assets/fix.svg) **Verbeterde verenigbaarheid met 2.4.8** - Bijgewerkte derdebibliotheken voor betere verenigbaarheid met 2.4.8 <!-- MCLOUD-13707	 - -->!&lbrack;
 
 ## v1.1.1
 
@@ -42,7 +42,7 @@ Releasedatum: 6 februari 2025
 Releasedatum: 7 oktober 2024
 
 - ![ fixpictogram ](../../assets/fix.svg) **Refactored code** - Verwijderde steun van oude PHP versies 7.4, 7.3, 7.2 en verwante bibliotheken.<!-- MCLOUD-9278 - -->
-- ](../../assets/fix.svg) **Bevestigingspictogram ![ Bevorderde versie Monolog** - Toegevoegde steun voor monolog 3.6.<!-- MCLOUD-12855 - -->
+- ![&#128279;](../../assets/fix.svg) **Bevestigingspictogram  Bevorderde versie Monolog** - Toegevoegde steun voor monolog 3.6.<!-- MCLOUD-12855 - -->
 
 ## v1.0.14
 
