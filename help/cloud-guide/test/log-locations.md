@@ -3,9 +3,9 @@ title: Logbestanden weergeven en beheren
 description: Begrijp de typen logbestanden die beschikbaar zijn in de cloudinfrastructuur en waar u ze kunt vinden.
 last-substantial-update: 2023-05-23T00:00:00Z
 exl-id: f0bb8830-8010-4764-ac23-d63d62dc0117
-source-git-commit: 7615347cd5b528406c2a0e72be3450350655eeb9
+source-git-commit: 731cc36816afdb5374269e871d337e056a71c050
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1205'
 ht-degree: 0%
 
 ---
@@ -77,13 +77,13 @@ ssh 1.ent-project-environment-id@ssh.region.magento.cloud "cat var/log/cron.log"
 >[!TIP]
 >
 >Voor Pro Staging- en Pro Production-omgevingen zijn automatische logrotatie, compressie en verwijdering ingeschakeld voor logbestanden met een vaste bestandsnaam. Elk logboekbestandstype heeft een roterend patroon en een levensduur.
->Meer informatie over de logrotatie en de levensduur van gecomprimeerde logbestanden in de omgeving vindt u in: `/etc/logrotate.conf` en `/etc/logrotate.d/<various>` .
->Voor Pro het Opvoeren en de Pro milieu&#39;s van de Productie, moet u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voorleggen om voor veranderingen in de configuratie van de logboekomwenteling te vragen.
+>>Meer informatie over de logrotatie en de levensduur van gecomprimeerde logbestanden in de omgeving vindt u in: `/etc/logrotate.conf` en `/etc/logrotate.d/<various>` .
+>>Voor Pro het Opvoeren en de Pro milieu&#39;s van de Productie, moet u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voorleggen om voor veranderingen in de configuratie van de logboekomwenteling te vragen.
 
 >[!TIP]
 >
 >Logrotatie kan niet worden geconfigureerd in Pro-integratieomgevingen.
->Voor ProIntegratie, moet u een douaneoplossing/manuscript uitvoeren en [ vormt uw kruin ](../application/crons-property.md) om het manuscript in werking te stellen zoals nodig.
+>>Voor ProIntegratie, moet u een douaneoplossing/manuscript uitvoeren en [ vormt uw kruin ](../application/crons-property.md) om het manuscript in werking te stellen zoals nodig.
 
 >[!NOTE]
 >
@@ -189,7 +189,7 @@ title: The configured state is not ideal
 type: warning
 ```
 
-De meeste foutberichten bevatten een beschrijving en voorgestelde actie. Gebruik de [ het berichtverwijzing van de Fout voor ECE-Hulpmiddelen ](../dev-tools/error-reference.md) om de foutencode voor verdere begeleiding op te zoeken. Voor verdere begeleiding, gebruik de [ de plaatsingsprobleemoplosser van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html?lang=nl-NL).
+De meeste foutberichten bevatten een beschrijving en voorgestelde actie. Gebruik de [ het berichtverwijzing van de Fout voor ECE-Hulpmiddelen ](../dev-tools/error-reference.md) om de foutencode voor verdere begeleiding op te zoeken. Voor verdere begeleiding, gebruik de [ de plaatsingsprobleemoplosser van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html).
 
 ## Toepassingslogboeken
 
@@ -219,13 +219,17 @@ Voor Pro Staging- en productieomgevingen zijn de logbestanden Implementeren, Pos
 
 ### Gearchiveerde logbestanden
 
-De toepassingslogboeken worden samengeperst en één keer per dag gearchiveerd en voor **30 dagen** gehouden. De gecomprimeerde logbestanden krijgen een naam met een unieke id die overeenkomt met de naam `Number of Days Ago + 1` . In Pro-productieomgevingen wordt bijvoorbeeld een PHP-toegangslogboek voor 21 dagen in het verleden opgeslagen en als volgt benoemd:
+De toepassingslogboeken worden samengeperst en één keer per dag gearchiveerd en voor **365 dagen** gehouden door gebrek (voor Pro het Staging en clusters van de Productie) - en de logboekomwenteling is niet beschikbaar in alle integratie/Startermilieu&#39;s. De gecomprimeerde logbestanden krijgen een naam met een unieke id die overeenkomt met de naam `Number of Days Ago + 1` . In Pro-productieomgevingen wordt bijvoorbeeld een PHP-toegangslogboek voor 21 dagen in het verleden opgeslagen en als volgt benoemd:
 
 ```
 /var/log/platform/<project-ID>/php.access.log.22.gz
 ```
 
 De gearchiveerde logboekdossiers worden altijd opgeslagen in de folder waar het originele dossier vóór compressie werd gevestigd.
+
+U kunt [ een steunkaartje ](https://experienceleague.adobe.com/home?support-tab=home#support) voorleggen om veranderingen in uw logboekbehoudperiode of locatieconfiguratie te verzoeken. U kunt de bewaarperiode tot maximaal 365 dagen verhogen, het verminderen om opslagquota te behouden, of extra logboekwegen toevoegen aan de lokale configuratie. Deze wijzigingen zijn beschikbaar voor Pro Staging- en Productieclusters.
+
+Als u bijvoorbeeld een aangepast pad maakt voor het opslaan van logbestanden in de map `var/log/mymodule` , kunt u een logrotatie aanvragen voor dit pad. De huidige infrastructuur vereist echter consistente bestandsnamen voor Adobe om de logrotatie op de juiste manier te configureren. Adobe raadt aan lognamen consistent te houden om configuratieproblemen te voorkomen.
 
 >[!NOTE]
 >
@@ -247,10 +251,10 @@ De logboeken van de dienst worden gearchiveerd en voor verschillende periodes, a
 
 >[!TIP]
 >
->De bestandslocaties van logbestanden in de geschaalde architectuur zijn afhankelijk van het type knooppunt. Zie {de plaatsen van het 0} Logboek in het Schaalde architectuur [&#128279;](../architecture/scaled-architecture.md#log-locations) onderwerp.
+>De bestandslocaties van logbestanden in de geschaalde architectuur zijn afhankelijk van het type knooppunt. Zie {de plaatsen van het 0} Logboek in het Schaalde architectuur ](../architecture/scaled-architecture.md#log-locations) onderwerp.[
 
 ## Loggegevens voor Pro Production en Staging
 
 Voor ProProductie en het Opvoeren milieu&#39;s, gebruik [ New Relic logboekbeheer ](../monitor/log-management.md) geïntegreerd met uw project om samengevoegde logboekgegevens van alle logboeken te beheren verbonden aan uw Adobe Commerce op het project van de wolkeninfrastructuur.
 
-De New Relic Logs-toepassing biedt een gecentraliseerd logbeheerdashboard om Adobe Commerce problemen op te lossen en te controleren in productieomgevingen en testomgevingen voor cloudinfrastructuur. Het dashboard verleent ook toegang tot logboekgegevens voor de Snelle diensten van CDN, van de Optimalisering van het Beeld, en van de de toepassingsfirewall van het Web (WAF). Zie {de diensten van 0} New Relic [&#128279;](../monitor/new-relic-service.md).
+De New Relic Logs-toepassing biedt een gecentraliseerd logbeheerdashboard om Adobe Commerce problemen op te lossen en te controleren in productieomgevingen en testomgevingen voor cloudinfrastructuur. Het dashboard verleent ook toegang tot logboekgegevens voor de Snelle diensten van CDN, van de Optimalisering van het Beeld, en van de de toepassingsfirewall van het Web (WAF). Zie {de diensten van 0} New Relic ](../monitor/new-relic-service.md).[
