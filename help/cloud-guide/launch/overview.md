@@ -43,7 +43,7 @@ Als onderdeel van Adobe Commerce voor een abonnement op een cloudinfrastructuur 
 
 >[!NOTE]
 >
->Als u uw eigen Uitgebreide SSL van de Bevestiging voor uw bedrijf in plaats van het gebruiken van het certificaat van de Encryptie van de Let wilt opstellen, contacteer uw CTA of [ leg een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voor.
+>Als u uw eigen Uitgebreide SSL van de Bevestiging voor uw bedrijf in plaats van het gebruiken van het certificaat van de Encryptie van de Let wilt opstellen, contacteer uw CTA of [ leg een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voor.
 
 ## Het gereedschap Beveiligingsscan instellen
 
@@ -69,7 +69,7 @@ Met het hulpprogramma Beveiligingsscan kunt u regelmatig uw winkelwebsites contr
 >
 >Adobe raadt u aan het hulpprogramma Beveiligingsscan te gebruiken in plaats van andere hulpmiddelen van derden om de beste kwaliteit van de service tijdens het onderzoek naar de bevindingen te garanderen.
 
-Zie de [ Gids van de Gebruiker ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) voor informatie over vestiging en het gebruiken van het hulpmiddel van het veiligheidsaftasten. Doorgaans gebruikt u dit gereedschap wanneer u met het testen van gebruikersacceptatie (UAT) begint.
+Zie de [ Gids van de Gebruiker ](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/security/security-scan) voor informatie over vestiging en het gebruiken van het hulpmiddel van het veiligheidsaftasten. Doorgaans gebruikt u dit gereedschap wanneer u met het testen van gebruikersacceptatie (UAT) begint.
 
 Elke site die u scant, moet zijn geregistreerd via het tabblad Beveiligingsscan. Tijdens het registratieproces moet u de disclaimer accepteren voordat u kunt beginnen met scannen. U beheert het schema en machtigt de gebruiker om meldingen te ontvangen wanneer elke scan is voltooid. U kunt scans voor een specifieke, terugkomende datum en tijd plannen, of een aftasten in werking stellen wanneer nodig.
 
