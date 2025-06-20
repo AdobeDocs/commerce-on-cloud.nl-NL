@@ -42,8 +42,8 @@ Voor het genereren van statische inhoud hebt u toegang tot thema&#39;s en landin
 
 >[!NOTE]
 >Nadat u het `config:dump` bevel in het `ece-tools` pakket in werking stelt, zijn de configuraties die aan het `config.php` dossier [ worden gedumpt gesloten (grijs uit) in het Admin dashboard ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/locked-fields-in-magento-admin). de enige manier om die configuraties in Admin bij te werken is hen van het dossier plaatselijk te schrappen en het project opnieuw op te stellen.
->>Telkens wanneer u een nieuwe store/store-groep/website aan uw instantie toevoegt, moet u bovendien de opdracht `config:dump` uitvoeren om ervoor te zorgen dat de database synchroon is. U kunt ook kiezen [ welke configuraties ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/export-configuration?lang=en) in het `config.php` dossier zouden moeten worden gedumpt.
->>Als u de opslag/opslaggroep/websiteconfiguratie uit het `config.php` dossier schrapt omdat de gebieden uit grayed maar verwaarloosd zijn om deze stap uit te voeren, worden de nieuwe entiteiten die niet werden gedumpt geschrapt uit het gegevensbestand op de volgende plaatsing.
+>&#x200B;>Telkens wanneer u een nieuwe store/store-groep/website aan uw instantie toevoegt, moet u bovendien de opdracht `config:dump` uitvoeren om ervoor te zorgen dat de database synchroon is. U kunt ook kiezen [ welke configuraties ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/export-configuration?lang=en) in het `config.php` dossier zouden moeten worden gedumpt.
+>&#x200B;>Als u de opslag/opslaggroep/websiteconfiguratie uit het `config.php` dossier schrapt omdat de gebieden uit grayed maar verwaarloosd zijn om deze stap uit te voeren, worden de nieuwe entiteiten die niet werden gedumpt geschrapt uit het gegevensbestand op de volgende plaatsing.
 
 **om uw project te vormen om SCD op bouwstijl** te produceren:
 
