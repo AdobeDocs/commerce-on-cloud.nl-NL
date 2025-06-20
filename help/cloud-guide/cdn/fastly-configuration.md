@@ -3,9 +3,9 @@ title: Services voor snel configureren
 description: Leer hoe u snelle services instelt en configureert voor uw Adobe Commerce-project.
 feature: Cloud, Configuration, Iaas, Cache, Security
 exl-id: f9ce1e8b-4e9f-488e-8a4d-f866567c41d8
-source-git-commit: 184f961a39611ea14dc96648b16644742407badc
+source-git-commit: 867abffd6cbed6e026c20b646ff641cc6ab40580
 workflow-type: tm+mt
-source-wordcount: '1968'
+source-wordcount: '2063'
 ht-degree: 0%
 
 ---
@@ -40,13 +40,23 @@ U hebt de Fastly geloofsbrieven nodig om de Snelle diensten CDN van Admin van Ad
 
 Met Adobe Commerce op cloudinfrastructuur hebt u niet rechtstreeks toegang tot het dashboard voor snelbeheer.
 
-U moet de Adobe Commerce-beheerder gebruiken om de configuratie Snelst voor uw omgeving te controleren en bij te werken. Als u geen kwestie kunt oplossen gebruikend de Fastly mogelijkheden in Admin, leg een [ kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voor.
+U moet de Adobe Commerce-beheerder gebruiken om de configuratie Snelst voor uw omgeving te controleren en bij te werken. Als u geen kwestie kunt oplossen gebruikend de Fastly mogelijkheden in Admin, leg een [ kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voor.
 
 ## Snelle gebruikersgegevens ophalen
 
 Gebruik de volgende methoden om de Fastly-service-id en API-token voor uw omgeving te zoeken en op te slaan:
 
 **om uw Snelle geloofsbrieven** te bekijken:
+
+>[!NOTE]
+>
+>Deel uw API-token niet in ondersteuningstickets, openbare forums of openbare locaties. Bovendien moet u geen API-tokens toewijzen aan gegevensopslagruimten: opslagruimten mogen alleen onveranderlijke bestanden zonder vertrouwelijke informatie bevatten.
+>
+>Adobe Commerce Support heeft al toegang tot de vereiste toetsen, dus u hoeft uw API-token niet te geven wanneer u hulp zoekt.
+>
+>Als uw API Token ooit openbaar wordt gedeeld of aan een steunkaartje wordt vastgemaakt, zal het als gecompromitteerd worden beschouwd. In dergelijke gevallen is Adobe verplicht een nieuwe token te genereren.
+>
+>Verwant: [ Fout wanneer het bevestigen van de Fastly geloofsbrieven ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/error-when-validating-fastly-credentials#solution)
 
 De methode voor het bekijken van geloofsbrieven is verschillend voor Pro en de projecten van de Aanzet.
 
@@ -138,7 +148,7 @@ Nadat u de Fastly module toelaat, upload de standaard [ code VCL ](https://githu
 
 ## SSL/TLS-certificaten leveren
 
-Adobe biedt een door domein gevalideerd SSL/TLS-certificaat waarmee snel veilig HTTPS-verkeer kan worden aangeboden. Adobe verstrekt één certificaat voor elke ProProductie, Staging, en het milieu van de Productie van de Aanzet om alle domeinen in dat milieu te beveiligen. Voor gedetailleerde informatie over het verstrekte certificaat, zie [ SSL van Adobe (TLS) certificaten voor Adobe Commerce op wolkeninfrastructuur ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/ssl-tls-certificates-for-magento-commerce-cloud-faq.html?lang=nl-NL).
+Adobe biedt een door domein gevalideerd SSL/TLS-certificaat waarmee snel veilig HTTPS-verkeer kan worden aangeboden. Adobe verstrekt één certificaat voor elke ProProductie, Staging, en het milieu van de Productie van de Aanzet om alle domeinen in dat milieu te beveiligen. Voor gedetailleerde informatie over het verstrekte certificaat, zie [ SSL van Adobe (TLS) certificaten voor Adobe Commerce op wolkeninfrastructuur ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/ssl-tls-certificates-for-magento-commerce-cloud-faq.html).
 
 >[!NOTE]
 >
@@ -242,7 +252,7 @@ Om verkeer van uw opslag URLs aan de Snelle dienst te leiden werkt uw DNS config
 
    >[!NOTE]
    >
-   >Als alternatief aan het gebruiken van Cloud CLI, kunt u Basis URL van [ Admin ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html?lang=nl-NL) bijwerken
+   >Als alternatief aan het gebruiken van Cloud CLI, kunt u Basis URL van [ Admin ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html) bijwerken
 
 1. Start de webbrowser opnieuw.
 
@@ -317,4 +327,4 @@ Nadat u de Snelle diensten op de Staging plaats verifieert, herhaal het verbeter
 
 >[!TIP]
 >
-> Als u kwesties met de Snelle diensten in uw milieu&#39;s van Adobe Commerce hebt, zie [ snel de probleemoplosser van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/magento-fastly-troubleshooter.html?lang=nl-NL).
+> Als u kwesties met de Snelle diensten in uw milieu&#39;s van Adobe Commerce hebt, zie [ snel de probleemoplosser van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/magento-fastly-troubleshooter.html).
