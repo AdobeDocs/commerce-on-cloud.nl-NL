@@ -132,7 +132,7 @@ Twee [ configuratiedossiers ](../environment/overview.md) controleren de toewijz
 
 >[!IMPORTANT]
 >
->Voor ProProductie en het Opvoeren milieu&#39;s, moet u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voorleggen om de toewijzing van de schijfruimte te veranderen. Een grootteverhoging van de milieu&#39;s van de Proproductie en van het Staging kan slechts met bepaalde intervallen voorkomen, zodat, afhankelijk van uw huidig gebruik van de schijfruimte, de steun zou kunnen adviseren om schijftoewijzing met een minimum van 10 GB te verhogen. Als deze eenmaal zijn toegewezen, kan de opslagverhoging voor Pro-opslag en -productie niet worden teruggedraaid. Opslag kan niet opnieuw worden toegewezen of herverdeeld tussen bronnen. Als u meer opslagruimte voor bestanden wilt toevoegen, verkleint u de schijfruimte die aan MySQL is toegewezen.
+>Voor ProProductie en het Opvoeren milieu&#39;s, moet u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voorleggen om de toewijzing van de schijfruimte te veranderen. Een grootteverhoging van de milieu&#39;s van de Proproductie en van het Staging kan slechts met bepaalde intervallen voorkomen, zodat, afhankelijk van uw huidig gebruik van de schijfruimte, de steun zou kunnen adviseren om schijftoewijzing met een minimum van 10 GB te verhogen. Als deze eenmaal zijn toegewezen, kan de opslagverhoging voor Pro-opslag en -productie niet worden teruggedraaid. Opslag kan niet opnieuw worden toegewezen of herverdeeld tussen bronnen. Als u meer opslagruimte voor bestanden wilt toevoegen, verkleint u de schijfruimte die aan MySQL is toegewezen.
 
 ### Schijfruimte van toepassing
 
@@ -188,7 +188,7 @@ Het bestand `.magento/services.yaml` bestuurt de schijfruimte die beschikbaar is
 
 ## Schijfruimte van monitor
 
-In een Pro Production-omgeving kunt u de schijfruimte en andere prestatie-indicatoren controleren aan de hand van de Beheerde waarschuwingen voor het Adobe Commerce-waarschuwingsbeleid voor New Relic. Voor details, zie [ prestaties van de Monitor met Beheerde Alarm ](../monitor/investigate-performance.md#monitor-performance-with-managed-alerts). Voor verdere begeleiding, zie [ Beste praktijken om de kwesties van gegevensbestandprestaties ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html) op te lossen.
+In een Pro Production-omgeving kunt u de schijfruimte en andere prestatie-indicatoren controleren aan de hand van de Beheerde waarschuwingen voor het Adobe Commerce-waarschuwingsbeleid voor New Relic. Voor details, zie [ prestaties van de Monitor met Beheerde Alarm ](../monitor/investigate-performance.md#monitor-performance-with-managed-alerts). Voor verdere begeleiding, zie [ Beste praktijken om de kwesties van gegevensbestandprestaties ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=nl-NL) op te lossen.
 
 ## Geen ruimte meer over
 
