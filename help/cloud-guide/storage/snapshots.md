@@ -30,7 +30,7 @@ U kunt een handmatige back-up maken van elke actieve Starter-omgeving en integra
 >
 >U kunt een steun van de code op ProProductie en het Opvoeren clusters tot stand brengen door het volgende bevel in de terminal in werking te stellen - die het voor om het even welke omslagen/wegen aanpast die u wilt omvatten/uitsluiten:
 >
-```bash
+>```bash
 >mkdir -p var/support
 >/usr/bin/nice -n 15 /bin/tar -czhf var/support/code-$(date +"%Y%m%d%H%M%p").tar.gz app bin composer.* dev lib pub/*.php pub/errors setup vendor --exclude='pub/media'
 >```
