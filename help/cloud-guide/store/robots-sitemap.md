@@ -41,7 +41,7 @@ Hiervoor is ECE-Tools versie 2002.0.12 en hoger vereist met een bijgewerkt `.mag
 
 1. Open de beheerder.
 1. Voor het _menu van de Inhoud_, klik **Configuratie** in de _sectie van het Ontwerp_.
-1. In de _mening van de Configuratie van het Ontwerp_, geeft de klik **** voor de website in de _kolom van de Actie_ uit.
+1. In de _mening van de Configuratie van het Ontwerp_, geeft de klik **&#x200B;**&#x200B;voor de website in de _kolom van de Actie_ uit.
 1. In de _Belangrijkste mening van de Website_, klik **Robots van de Motor van het Onderzoek**.
 1. Werk **uit geeft douaneinstructie van robots.txt** gebied uit.
 1. Klik **sparen Configuratie**.
@@ -53,7 +53,7 @@ Hiervoor is ECE-Tools versie 2002.0.12 en hoger vereist met een bijgewerkt `.mag
 
 ## Herschrijven met VCL-fragment snel
 
-Als u verschillende domeinen hebt en u afzonderlijke site-overzichten nodig hebt, kunt u een VCL maken om naar de juiste sitemap te leiden. Genereer het bestand `sitemap.xml` in het deelvenster Beheer zoals hierboven beschreven en maak vervolgens een aangepast, snel VCL-fragment om het omleiden te beheren. Zie {de fragmenten van 0} Snelle VCL van de Douane {](../cdn/fastly-vcl-custom-snippets.md).[
+Als u verschillende domeinen hebt en u afzonderlijke site-overzichten nodig hebt, kunt u een VCL maken om naar de juiste sitemap te leiden. Genereer het bestand `sitemap.xml` in het deelvenster Beheer zoals hierboven beschreven en maak vervolgens een aangepast, snel VCL-fragment om het omleiden te beheren. Zie {de fragmenten van 0} Snelle VCL van de Douane &lbrace;[&#128279;](../cdn/fastly-vcl-custom-snippets.md).
 
 >[!NOTE]
 >
