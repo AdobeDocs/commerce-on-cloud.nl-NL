@@ -37,7 +37,7 @@ U kunt een handmatige back-up maken van elke actieve Starter-omgeving en integra
 
 **om een gegevensbestandsteun van Pro milieu** tot stand te brengen:
 
-Om een gegevensbestandstortplaats van om het even welk Pro milieu, met inbegrip van het Opvoeren en Productie tot stand te brengen, zie [ een artikel van de Kennisbank van de gegevensbestandstortplaats ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud) creëren.
+Om een gegevensbestandstortplaats van om het even welk Pro milieu, met inbegrip van het Opvoeren en Productie tot stand te brengen, zie [ een artikel van de Kennisbank van de gegevensbestandstortplaats ](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud) creëren.
 
 **om een steun van om het even welke milieu te creëren van de Aanzet gebruikend[!DNL Cloud Console]**:
 
@@ -150,7 +150,7 @@ De hersteltijden variëren afhankelijk van de grootte van de database:
 
 ## Een momentopname voor noodherstel herstellen
 
-Om de Momentopname van de Terugwinning van de Ramp in Pro het Opvoeren en milieu&#39;s van de Productie te herstellen, [ voer direct de gegevensbestandstortplaats van de server ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3) in.
+Om de Momentopname van de Terugwinning van de Ramp in Pro het Opvoeren en milieu&#39;s van de Productie te herstellen, [ voer direct de gegevensbestandstortplaats van de server ](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3) in.
 
 ## Code terugdraaien
 
