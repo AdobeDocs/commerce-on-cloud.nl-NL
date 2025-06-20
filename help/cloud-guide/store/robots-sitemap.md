@@ -49,7 +49,7 @@ Hiervoor is ECE-Tools versie 2002.0.12 en hoger vereist met een bijgewerkt `.mag
 
 >[!NOTE]
 >
->Als het `<domain.your.project>/robots.txt` dossier a `404 error` produceert, [ legt een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voor om het omleiden van `/robots.txt` aan `/media/robots.txt` te verwijderen.
+>Als het `<domain.your.project>/robots.txt` dossier a `404 error` produceert, [ legt een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voor om het omleiden van `/robots.txt` aan `/media/robots.txt` te verwijderen.
 
 ## Herschrijven met VCL-fragment snel
 
