@@ -2,9 +2,10 @@
 title: Statische implementatie van inhoud
 description: Leer meer over strategieën voor het implementeren van statische inhoud, zoals afbeeldingen, scripts en CSS, op Adobe Commerce op cloud-infrastructuurprojecten.
 feature: Cloud, Build, Deploy, SCD
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 8f30cae7-a3a0-4ce4-9c73-d52649ef4d7a
+source-git-commit: 325b7584daa38ad788905a6124e6d037cf679332
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '836'
 ht-degree: 0%
 
 ---
@@ -15,7 +16,7 @@ De statische plaatsing van de inhoud (SCD) heeft een significante invloed op het
 
 ## JavaScript- en HTML-inhoud optimaliseren
 
-U kunt bundeling en miniatuur gebruiken om geoptimaliseerde JavaScript- en HTML-inhoud te maken tijdens de implementatie van statische inhoud.
+U kunt bundelen en miniaturen gebruiken om geoptimaliseerde JavaScript- en HTML-inhoud te maken tijdens de implementatie van statische inhoud.
 
 ### Inhoud minimaliseren
 
@@ -23,13 +24,13 @@ U kunt de ladingstijd SCD tijdens het plaatsingsproces verbeteren als u het kopi
 
 >[!NOTE]
 >
->Vanaf `ece-tools` package version 2002.0.13, is de standaardwaarde voor de SKIP_HTML_MINIFICATION-variabele ingesteld op `true` .
+>Vanaf `ece-tools` package version 2002.0.13, is de standaardwaarde voor de variabele SKIP_HTML_MINIFICATION ingesteld op `true` .
 
 U kunt **meer** plaatsingstijd en schijfruimte besparen door het aantal onnodige themadossiers te verminderen. U kunt bijvoorbeeld het thema `magento/backend` in het Engels en een aangepast thema in andere talen gebruiken. U kunt deze themamontages met [ vormen SCD_MATRIX ](../environment/variables-deploy.md#scdmatrix) milieuvariabele.
 
 ## Een implementatiestrategie kiezen
 
-De strategieën van de plaatsing verschillen gebaseerd op of u verkiest om statische inhoud tijdens de _bouwt_ fase, _op te stellen_ fase, of _op bestelling_. Zoals gezien in de volgende grafiek, is het produceren van statische inhoud tijdens de opstellen fase de minste optimale keus. Zelfs met geminiateerde HTML, moet elk inhoudsbestand naar de gekoppelde `~/pub/static` -map worden gekopieerd. Dit kan lang duren. Het genereren van statische inhoud op aanvraag lijkt de optimale keuze. Als het inhoudsbestand echter niet bestaat in de cache die het op dat moment genereert, wordt het opgevraagd. Hierdoor wordt laadtijd toegevoegd aan de gebruikerservaring. Daarom is het produceren van statische inhoud tijdens de bouwstijlfase de meest optimale.
+De strategieën van de plaatsing verschillen gebaseerd op of u verkiest om statische inhoud tijdens de _bouwt_ fase, _op te stellen_ fase, of _op bestelling_. Zoals gezien in de volgende grafiek, is het produceren van statische inhoud tijdens de opstellen fase de minste optimale keus. Zelfs bij geminificeerde HTML moet elk inhoudsbestand naar de gekoppelde `~/pub/static` -map worden gekopieerd. Dit kan lang duren. Het genereren van statische inhoud op aanvraag lijkt de optimale keuze. Als het inhoudsbestand echter niet bestaat in de cache die het op dat moment genereert, wordt het opgevraagd. Hierdoor wordt laadtijd toegevoegd aan de gebruikerservaring. Daarom is het produceren van statische inhoud tijdens de bouwstijlfase de meest optimale.
 
 ![ SCD Vergelijking van de Lading ](../../assets/scd-load-times.png)
 
@@ -38,6 +39,11 @@ De strategieën van de plaatsing verschillen gebaseerd op of u verkiest om stati
 Het produceren van statische inhoud tijdens de bouwstijlfase met geminiateerde HTML is de optimale configuratie voor [**nul-onderbreking** plaatsingen ](reduce-downtime.md), ook gekend als **ideale staat**. In plaats van bestanden naar een gekoppeld station te kopiëren, maakt dit een koppeling vanuit de map `./init/pub/static` .
 
 Voor het genereren van statische inhoud hebt u toegang tot thema&#39;s en landinstellingen nodig. Adobe Commerce slaat thema&#39;s op in het bestandssysteem, dat toegankelijk is tijdens de constructiefase. Adobe Commerce slaat de landinstellingen echter op in de database. Het gegevensbestand is _niet_ beschikbaar tijdens de bouwstijlfase. Als u statische inhoud wilt genereren tijdens de constructiefase, moet u de opdracht `config:dump` in het `ece-tools` -pakket gebruiken om landinstellingen naar het bestandssysteem te verplaatsen. De landinstellingen worden gelezen en in het `app/etc/config.php` -bestand opgeslagen.
+
+>[!NOTE]
+>Nadat u het `config:dump` bevel in het `ece-tools` pakket in werking stelt, zijn de configuraties die aan het `config.php` dossier [ worden gedumpt gesloten (grijs uit) in het Admin dashboard ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/locked-fields-in-magento-admin). de enige manier om die configuraties in Admin bij te werken is hen van het dossier plaatselijk te schrappen en het project opnieuw op te stellen.
+>>Telkens wanneer u een nieuwe store/store-groep/website aan uw instantie toevoegt, moet u bovendien de opdracht `config:dump` uitvoeren om ervoor te zorgen dat de database synchroon is. U kunt ook kiezen [ welke configuraties ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/export-configuration?lang=en) in het `config.php` dossier zouden moeten worden gedumpt.
+>>Als u de opslag/opslaggroep/websiteconfiguratie uit het `config.php` dossier schrapt omdat de gebieden uit grayed maar verwaarloosd zijn om deze stap uit te voeren, worden de nieuwe entiteiten die niet werden gedumpt geschrapt uit het gegevensbestand op de volgende plaatsing.
 
 **om uw project te vormen om SCD op bouwstijl** te produceren:
 
