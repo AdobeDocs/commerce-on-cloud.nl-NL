@@ -78,7 +78,7 @@ ssh 1.ent-project-environment-id@ssh.region.magento.cloud "cat var/log/cron.log"
 >
 >Voor Pro Staging- en Pro Production-omgevingen zijn automatische logrotatie, compressie en verwijdering ingeschakeld voor logbestanden met een vaste bestandsnaam. Elk logboekbestandstype heeft een roterend patroon en een levensduur.
 >&#x200B;>Meer informatie over de logrotatie en de levensduur van gecomprimeerde logbestanden in de omgeving vindt u in: `/etc/logrotate.conf` en `/etc/logrotate.d/<various>` .
->&#x200B;>Voor Pro het Opvoeren en de Pro milieu&#39;s van de Productie, moet u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voorleggen om voor veranderingen in de configuratie van de logboekomwenteling te vragen.
+>&#x200B;>Voor Pro het Opvoeren en de Pro milieu&#39;s van de Productie, moet u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voorleggen om voor veranderingen in de configuratie van de logboekomwenteling te vragen.
 
 >[!TIP]
 >
@@ -189,7 +189,7 @@ title: The configured state is not ideal
 type: warning
 ```
 
-De meeste foutberichten bevatten een beschrijving en voorgestelde actie. Gebruik de [ het berichtverwijzing van de Fout voor ECE-Hulpmiddelen ](../dev-tools/error-reference.md) om de foutencode voor verdere begeleiding op te zoeken. Voor verdere begeleiding, gebruik de [ de plaatsingsprobleemoplosser van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html).
+De meeste foutberichten bevatten een beschrijving en voorgestelde actie. Gebruik de [ het berichtverwijzing van de Fout voor ECE-Hulpmiddelen ](../dev-tools/error-reference.md) om de foutencode voor verdere begeleiding op te zoeken. Voor verdere begeleiding, gebruik de [ de plaatsingsprobleemoplosser van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html?lang=nl-NL).
 
 ## Toepassingslogboeken
 
@@ -227,7 +227,7 @@ De toepassingslogboeken worden samengeperst en één keer per dag gearchiveerd e
 
 De gearchiveerde logboekdossiers worden altijd opgeslagen in de folder waar het originele dossier vóór compressie werd gevestigd.
 
-U kunt [ een steunkaartje ](https://experienceleague.adobe.com/home?support-tab=home#support) voorleggen om veranderingen in uw logboekbehoudperiode of locatieconfiguratie te verzoeken. U kunt de bewaarperiode tot maximaal 365 dagen verhogen, het verminderen om opslagquota te behouden, of extra logboekwegen toevoegen aan de lokale configuratie. Deze wijzigingen zijn beschikbaar voor Pro Staging- en Productieclusters.
+U kunt [ een steunkaartje ](https://experienceleague.adobe.com/home?lang=nl-NL&support-tab=home#support) voorleggen om veranderingen in uw logboekbehoudperiode of locatieconfiguratie te verzoeken. U kunt de bewaarperiode tot maximaal 365 dagen verhogen, het verminderen om opslagquota te behouden, of extra logboekwegen toevoegen aan de lokale configuratie. Deze wijzigingen zijn beschikbaar voor Pro Staging- en Productieclusters.
 
 Als u bijvoorbeeld een aangepast pad maakt voor het opslaan van logbestanden in de map `var/log/mymodule` , kunt u een logrotatie aanvragen voor dit pad. De huidige infrastructuur vereist echter consistente bestandsnamen voor Adobe om de logrotatie op de juiste manier te configureren. Adobe raadt aan lognamen consistent te houden om configuratieproblemen te voorkomen.
 
