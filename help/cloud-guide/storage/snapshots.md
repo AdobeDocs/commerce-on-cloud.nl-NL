@@ -3,9 +3,9 @@ title: Back-upbeheer
 description: Leer hoe u handmatig een back-up voor uw Adobe Commerce-infrastructuurproject in de cloud kunt maken en herstellen.
 feature: Cloud, Paas, Snapshots, Storage
 exl-id: e73a57e7-e56c-42b4-aa7b-2960673a7b68
-source-git-commit: b9bbbb9b83ed995951feaa9391015f02a9661206
+source-git-commit: 13cb5e3231c2173d5687aec3e4e64ecc154ee962
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -26,8 +26,18 @@ De reserve/momentopnamefunctie is **niet** op de Pro het Staging en milieu&#39;s
 
 U kunt een handmatige back-up maken van elke actieve Starter-omgeving en integratie Pro-omgeving vanuit de [!DNL Cloud Console] of een momentopname maken vanuit de Cloud CLI. U moet een [ rol Admin ](../project/user-access.md) voor het milieu hebben.
 
+>[!NOTE]
+>
+>U kunt een steun van de code op ProProductie en het Opvoeren clusters tot stand brengen door het volgende bevel in de terminal in werking te stellen - die het voor om het even welke omslagen/wegen aanpast die u wilt omvatten/uitsluiten:
+>
+```bash
+>mkdir -p var/support
+>/usr/bin/nice -n 15 /bin/tar -czhf var/support/code-$(date +"%Y%m%d%H%M%p").tar.gz app bin composer.* dev lib pub/*.php pub/errors setup vendor --exclude='pub/media'
+>```
+
 **om een gegevensbestandsteun van Pro milieu** tot stand te brengen:
-Om een gegevensbestandstortplaats van om het even welk Pro milieu, met inbegrip van het Opvoeren en Productie tot stand te brengen, zie [ een artikel van de Kennisbank van de gegevensbestandstortplaats ](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud) creëren.
+
+Om een gegevensbestandstortplaats van om het even welk Pro milieu, met inbegrip van het Opvoeren en Productie tot stand te brengen, zie [ een artikel van de Kennisbank van de gegevensbestandstortplaats ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud) creëren.
 
 **om een steun van om het even welke milieu te creëren van de Aanzet gebruikend[!DNL Cloud Console]**:
 
@@ -140,10 +150,15 @@ De hersteltijden variëren afhankelijk van de grootte van de database:
 
 ## Een momentopname voor noodherstel herstellen
 
-Om de Momentopname van de Terugwinning van de Ramp in Pro het Opvoeren en milieu&#39;s van de Productie te herstellen, [ voer direct de gegevensbestandstortplaats van de server ](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3) in.
+Om de Momentopname van de Terugwinning van de Ramp in Pro het Opvoeren en milieu&#39;s van de Productie te herstellen, [ voer direct de gegevensbestandstortplaats van de server ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3) in.
 
 ## Code terugdraaien
 
 De steunen en de momentopnamen omvatten __ geen exemplaar van uw code. Uw code is al opgeslagen in de op Git gebaseerde gegevensopslagruimte, zodat u Git-gebaseerde opdrachten kunt gebruiken om code terug te draaien (of terug te draaien). Bijvoorbeeld, gebruik `git log --oneline` om door vorige begaat te scrollen; dan gebruik [`git revert` ](https://git-scm.com/docs/git-revert) om code van te herstellen specifiek begaat.
 
 Ook, kunt u verkiezen om code in een _inactieve_ tak op te slaan. Gebruik git-opdrachten om een vertakking te maken in plaats van `magento-cloud` -opdrachten. Zie over [ bevelen van de Git ](../dev-tools/cloud-cli-overview.md#git-commands) in het Cloud CLI onderwerp.
+
+## Verwante informatie
+
+- [Back-up maken van de database](database-dump.md)
+- [ Steun en rampenterugwinning ](../architecture/pro-architecture.md#backup-and-disaster-recovery) voor ProProductie en het Opvoeren clusters
