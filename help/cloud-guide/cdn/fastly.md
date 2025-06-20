@@ -2,9 +2,10 @@
 title: Overzicht van snelle services
 description: Leer hoe u met de snelste services die bij Adobe Commerce worden geleverd via de cloudinfrastructuur de levering van inhoud voor uw Adobe Commerce-sites kunt optimaliseren en beveiligen.
 feature: Cloud, Configuration, Iaas, Paas, Cache, Security, Services
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 429b6762-0b01-438b-a962-35376306895b
+source-git-commit: 3cef442321120d8ca813c760d2fd0435f4961235
 workflow-type: tm+mt
-source-wordcount: '1426'
+source-wordcount: '1443'
 ht-degree: 0%
 
 ---
@@ -21,7 +22,7 @@ In Fastly worden de volgende services geleverd voor het optimaliseren en beveili
 
 - **beheer van het Geheime voorgeheugen** - Geheime voorgeheugen uw plaatspagina&#39;s, activa, CSS, en meer in achterste gegevenscentra die u opstelling om bandbreedtetoevoer en kosten te drukken
 
-   - Het gebruik {de fragmenten van 0} snel douaneVCL [&#128279;](fastly-vcl-custom-snippets.md) (Varnish 2.1 volgzaam) om te wijzigen hoe het in het voorgeheugen onderbrengen aan verzoeken beantwoordt
+   - Het gebruik {de fragmenten van 0} snel douaneVCL ](fastly-vcl-custom-snippets.md) (Varnish 2.1 volgzaam) om te wijzigen hoe het in het voorgeheugen onderbrengen aan verzoeken beantwoordt[
 
    - De de dienststeun van de opstelling [ GeoIP ](fastly-custom-cache-configuration.md#configure-geoip-handling)
 
@@ -33,7 +34,7 @@ In Fastly worden de volgende services geleverd voor het optimaliseren en beveili
 
 - **Veiligheid** - nadat u de Snelle diensten voor de plaatsen van Adobe Commerce toelaat, zijn de extra veiligheidseigenschappen beschikbaar om uw plaatsen en netwerk te beschermen:
 
-   - [&#128279;](fastly-waf-service.md) (WAF) - de Beheerde dienst van de de firewalltoepassing van het Web van 0&rbrace; Firewall van de Toepassing van het Web die PCI-Volgzame bescherming verleent om kwaadwillig verkeer te blokkeren alvorens het uw productieAdobe Commerce op de plaatsen van de wolkeninfrastructuur en netwerk kan beschadigen.  De WAF-service is alleen beschikbaar in Pro- en Starter Production-omgevingen.
+   - ](fastly-waf-service.md) (WAF) - de Beheerde dienst van de de firewalltoepassing van het Web van 0} Firewall van de Toepassing van het Web die PCI-Volgzame bescherming verleent om kwaadwillig verkeer te blokkeren alvorens het uw productieAdobe Commerce op de plaatsen van de wolkeninfrastructuur en netwerk kan beschadigen. [ De WAF-service is alleen beschikbaar in Pro- en Starter Production-omgevingen.
 
    - [ Verdeelde Ontkenning van de bescherming van de Dienst (DDoS) ](#ddos-protection) - ingebouwde bescherming DDoS tegen gemeenschappelijke aanvallen zoals het Pingelen van Dood, de aanvallen van Smurf, en andere op ICMP-Gebaseerde overstromingsaanvallen.
 
@@ -43,33 +44,35 @@ In Fastly worden de volgende services geleverd voor het optimaliseren en beveili
 
 - **Oorsprong het camoufleren** - verhindert verkeer om snel WAF te mijden en verbergt de IP adressen van uw oorsprongsservers om hen tegen directe toegang en aanvallen te beschermen DDoS.
 
-  Oorspronkelijke camouflage is standaard ingeschakeld in Adobe Commerce op cloudinfrastructuur Pro Production-projecten. Om oorsprong het camoufleren op Adobe Commerce op de projecten van de Productie van de Aanzet van de wolkeninfrastructuur toe te laten, leg een [ kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voor. Als u verkeer hebt dat geen caching vereist, kunt u de Fastly de dienstconfiguratie aanpassen om verzoeken toe te staan om [ het Fastly geheime voorgeheugen ](fastly-vcl-bypass-to-origin.md) te mijden.
+  Oorspronkelijke camouflage is standaard ingeschakeld in Adobe Commerce op cloudinfrastructuur Pro Production-projecten. Om oorsprong het camoufleren op Adobe Commerce op de projecten van de Productie van de Aanzet van de wolkeninfrastructuur toe te laten, leg een [ kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voor. Als u verkeer hebt dat geen caching vereist, kunt u de Fastly de dienstconfiguratie aanpassen om verzoeken toe te staan om [ het Fastly geheime voorgeheugen ](fastly-vcl-bypass-to-origin.md) te mijden.
 
 - **[optimalisering van het Beeld](fastly-image-optimization.md)** - ontlaadt beeldverwerking en het resizing lading aan de Snelle dienst zodat de servers orden en omzettingen efficiënter kunnen verwerken.
 
 - **[snel CDN en de logboeken van WAF](../monitor/new-relic-service.md#new-relic-log-management)** - voor Adobe Commerce op de Pro projecten van de wolkeninfrastructuur, kunt u de dienst van Logs van New Relic gebruiken om snel CDN en het logboekgegevens van WAF te herzien en te analyseren.
 
-## Snelle CDN-module voor Magento 2
+## Fastly CDN module for Magento 2
 
-De snelle diensten voor Adobe Commerce op wolkeninfrastructuur gebruiken de [ snelste CDN module voor Magento 2 ] geïnstalleerd in de volgende milieu&#39;s: Pro het Staging en Productie, de Productie van de Aanzet (`master` tak).
+De snelle diensten voor Adobe Commerce op wolkeninfrastructuur gebruiken de [ snelste CDN module voor Magento 2 ] die in de volgende milieu&#39;s wordt geïnstalleerd: Pro Staging en Productie, de Productie van de Aanzet (`master` tak).
 
-Bij eerste levering of upgrade van uw Adobe Commerce-project installeert Adobe de nieuwste versie van de Fastly CDN-module in uw staging- en productieomgeving. Als u de updates van de module Fastly loslaat, ontvangt u meldingen in Admin voor uw omgevingen. Adobe raadt u aan uw omgevingen bij te werken om de nieuwste versie te gebruiken. Zie [ Snelle Verbetering ](fastly-configuration.md#upgrade-the-fastly-module).
+Bij de initiële provisioning of upgrade van uw Adobe Commerce-project installeert Adobe de nieuwste versie van de Fastly CDN-module in uw Staging- en Productomgevingen. Als u de updates van de module Fastly loslaat, ontvangt u meldingen in Admin voor uw omgevingen. Adobe raadt u aan uw omgevingen bij te werken om de nieuwste versie te gebruiken. Zie [ Snelle Verbetering ](fastly-configuration.md#upgrade-the-fastly-module).
 
 ## Snelle de dienstrekening en geloofsbrieven
 
-Adobe Commerce on cloud Infrastructure projects krijgt geen toegewezen Fastly account. De snelservice wordt beheerd in een gecentraliseerde account die is geregistreerd voor Adobe en het beheerdashboard is alleen toegankelijk voor het ondersteuningsteam voor cloud.
+Adobe Commerce on cloud Infrastructure projects krijgt geen toegewezen Fastly account. De snelservice wordt beheerd in een gecentraliseerde account die bij Adobe is geregistreerd, en het beheerdashboard is alleen toegankelijk voor het ondersteuningsteam voor cloud.
 
 In plaats daarvan heeft elke omgeving voor Staging en Productie unieke Fastly-referenties (API-token en service-id) voor het configureren en beheren van Fastly-services van Commerce Admin. De snelste API is beschikbaar voor het uitvoeren van geavanceerd beheer van de sneldienst, die de geloofsbrieven zal vereisen om die verzoeken voor te leggen.
 
-Tijdens projectlevering, voegt de Adobe uw project aan de Fastly de dienstrekening voor Adobe Commerce op wolkeninfrastructuur toe en voegt de Fastly geloofsbrieven aan de configuratie voor de het Opvoeren en milieu&#39;s van de Productie toe. Zie [ krijgen de Snelle geloofsbrieven ](fastly-configuration.md#get-fastly-credentials).
+Tijdens projectlevering, voegt Adobe uw project aan de Fastly de dienstrekening voor Adobe Commerce op wolkeninfrastructuur toe en voegt de Fastly geloofsbrieven aan de configuratie voor de het Opvoeren en milieu&#39;s van de Productie toe. Zie [ krijgen de Snelle geloofsbrieven ](fastly-configuration.md#get-fastly-credentials).
 
 ### Fastly API-token wijzigen
 
-Verzend een Adobe Commerce Support-ticket om de Fastly API-tokenreferentie te wijzigen. Wanneer u het nieuwe token ontvangt, werkt u de omgeving voor Staging of Productie bij om het nieuwe token te gebruiken.
+Verzend een kaartje van de Steun van Adobe Commerce om een nieuwe Fastly API symbolische referentie [ uit te geven als het bevestiging/is verlopen ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/error-when-validating-fastly-credentials) ontbreekt, of als u gelooft dat het is gecompromitteerd.
+
+Wanneer u het nieuwe token ontvangt, werkt u de omgeving voor Staging of Productie bij om het nieuwe token te gebruiken.
 
 **om de Fastly API symbolische referentie** te veranderen:
 
-1. [ legt een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voor het vragen van nieuwe Fastly API geloofsbrieven.
+1. [ legt een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voor het vragen van nieuwe Fastly API geloofsbrieven.
 
    Neem uw Adobe Commerce op in de projectid van de cloud-infrastructuur en de omgevingen die een nieuwe referentie vereisen.
 
@@ -115,18 +118,18 @@ DDOS-beveiliging is ingebouwd in de Fastly CDN-service. Zodra u de Snelle dienst
 
   Beheert snel de vlakke aanvallen van TCP bij de geheim voorgeheugenlaag. Deze strategie verstrekt de noodzakelijke schaal en de context per cliënt om een de overstromingsaanval van SYN en zijn vele varianten, met inbegrip van de stapel van TCP, middelaanvallen, en de aanvallen van TLS binnen Fastly systemen te behandelen.
 
-- Verstrekt snel ook bescherming tegen Laag 7 aanvallen. Als er prestatieproblemen optreden in uw winkel en u vermoedt dat er een Layer 7 DDoS-aanval plaatsvindt, stuurt u een Adobe Commerce Support-ticket naar u. De Adobe kan douaneregels tot stand brengen en toepassen op de Snelle dienst om kwaadwillige verzoeken te inspecteren en uit te filtreren die op kopbal, lading, of een combinatie attributen worden gebaseerd die het aanvalsverkeer identificeren. Zie [ Controleren op aanvallen DDoS ] en [ hoe te kwaadwillig verkeer ] in het *Centrum van de Hulp van Adobe Commerce* blokkeren.
+- Verstrekt snel ook bescherming tegen Laag 7 aanvallen. Als er prestatieproblemen optreden in uw winkel en u vermoedt dat er een Layer 7 DDoS-aanval plaatsvindt, stuurt u een Adobe Commerce Support-ticket naar u. Adobe kan douaneregels tot stand brengen en toepassen op de Snelle dienst om kwaadwillige verzoeken te inspecteren en uit te filtreren die op kopbal, lading, of een combinatie attributen worden gebaseerd die het aanvalsverkeer identificeren. Zie [ Controleren op aanvallen DDoS ] en [ hoe te kwaadwillig verkeer ] in het *Centrum van de Hulp van Adobe Commerce* blokkeren.
 
 <!--Link definitions-->
 
 [Caching with Fastly]: https://developer.adobe.com/commerce/webapi/graphql/usage/caching/#caching-with-fastly
 
-[Controleren op DDoS-aanvallen]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-for-ddos-attack-from-cli.html?lang=nl-NL
+[Controleren op DDoS-aanvallen]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-for-ddos-attack-from-cli.html
 
-[Snelle CDN-module voor Magento 2]: https://github.com/fastly/fastly-magento2
+[Fastly CDN module for Magento 2]: https://github.com/fastly/fastly-magento2
 
 [Kaart voor snelle ondersteuning]: https://docs.fastly.com/products/support-description-and-sla#support-requests
 
-[Hoe te om kwaadwillig verkeer te blokkeren]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level.html?lang=nl-NL
+[Hoe te om kwaadwillig verkeer te blokkeren]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level.html
 
 [Werken met domeinen]: https://docs.fastly.com/en/guides/working-with-domains
