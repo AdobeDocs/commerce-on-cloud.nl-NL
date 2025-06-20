@@ -44,7 +44,7 @@ In Fastly worden de volgende services geleverd voor het optimaliseren en beveili
 
 - **Oorsprong het camoufleren** - verhindert verkeer om snel WAF te mijden en verbergt de IP adressen van uw oorsprongsservers om hen tegen directe toegang en aanvallen te beschermen DDoS.
 
-  Oorspronkelijke camouflage is standaard ingeschakeld in Adobe Commerce op cloudinfrastructuur Pro Production-projecten. Om oorsprong het camoufleren op Adobe Commerce op de projecten van de Productie van de Aanzet van de wolkeninfrastructuur toe te laten, leg een [ kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voor. Als u verkeer hebt dat geen caching vereist, kunt u de Fastly de dienstconfiguratie aanpassen om verzoeken toe te staan om [ het Fastly geheime voorgeheugen ](fastly-vcl-bypass-to-origin.md) te mijden.
+  Oorspronkelijke camouflage is standaard ingeschakeld in Adobe Commerce op cloudinfrastructuur Pro Production-projecten. Om oorsprong het camoufleren op Adobe Commerce op de projecten van de Productie van de Aanzet van de wolkeninfrastructuur toe te laten, leg een [ kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voor. Als u verkeer hebt dat geen caching vereist, kunt u de Fastly de dienstconfiguratie aanpassen om verzoeken toe te staan om [ het Fastly geheime voorgeheugen ](fastly-vcl-bypass-to-origin.md) te mijden.
 
 - **[optimalisering van het Beeld](fastly-image-optimization.md)** - ontlaadt beeldverwerking en het resizing lading aan de Snelle dienst zodat de servers orden en omzettingen efficiënter kunnen verwerken.
 
@@ -66,13 +66,13 @@ Tijdens projectlevering, voegt Adobe uw project aan de Fastly de dienstrekening 
 
 ### Fastly API-token wijzigen
 
-Verzend een kaartje van de Steun van Adobe Commerce om een nieuwe Fastly API symbolische referentie [ uit te geven als het bevestiging/is verlopen ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/error-when-validating-fastly-credentials) ontbreekt, of als u gelooft dat het is gecompromitteerd.
+Verzend een kaartje van de Steun van Adobe Commerce om een nieuwe Fastly API symbolische referentie [ uit te geven als het bevestiging/is verlopen ](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/error-when-validating-fastly-credentials) ontbreekt, of als u gelooft dat het is gecompromitteerd.
 
 Wanneer u het nieuwe token ontvangt, werkt u de omgeving voor Staging of Productie bij om het nieuwe token te gebruiken.
 
 **om de Fastly API symbolische referentie** te veranderen:
 
-1. [ legt een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voor het vragen van nieuwe Fastly API geloofsbrieven.
+1. [ legt een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voor het vragen van nieuwe Fastly API geloofsbrieven.
 
    Neem uw Adobe Commerce op in de projectid van de cloud-infrastructuur en de omgevingen die een nieuwe referentie vereisen.
 
@@ -124,12 +124,12 @@ DDOS-beveiliging is ingebouwd in de Fastly CDN-service. Zodra u de Snelle dienst
 
 [Caching with Fastly]: https://developer.adobe.com/commerce/webapi/graphql/usage/caching/#caching-with-fastly
 
-[Controleren op DDoS-aanvallen]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-for-ddos-attack-from-cli.html
+[Controleren op DDoS-aanvallen]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-for-ddos-attack-from-cli.html?lang=nl-NL
 
 [Fastly CDN module for Magento 2]: https://github.com/fastly/fastly-magento2
 
 [Kaart voor snelle ondersteuning]: https://docs.fastly.com/products/support-description-and-sla#support-requests
 
-[Hoe te om kwaadwillig verkeer te blokkeren]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level.html
+[Hoe te om kwaadwillig verkeer te blokkeren]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level.html?lang=nl-NL
 
 [Werken met domeinen]: https://docs.fastly.com/en/guides/working-with-domains
