@@ -2,9 +2,10 @@
 title: Schijfruimte beheren
 description: Leer hoe u schijfruimte beheert met behulp van de opdrachtregelinterface.
 feature: Cloud, Storage
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 1d13dc4e-56eb-4153-a8b1-48d2263ebc4c
+source-git-commit: b8cabaad4b7805858563cecbe5ffc2fdb9aeac58
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '716'
 ht-degree: 0%
 
 ---
@@ -35,7 +36,7 @@ _&quot;Onze controle heeft dossieropslag op uw cluster (project-id-milieu) ontde
 
 >[!TIP]
 >
->U wordt aangeraden regelmatig uw opslagcapaciteit te controleren en deze goed onder de 90% te houden om deze automatische verhogingen te voorkomen. Als deze eenmaal zijn toegewezen, kan de opslagverhoging voor Pro-opslag en -productie niet worden teruggedraaid.
+>Adobe raadt u aan regelmatig uw opslagcapaciteit te controleren en deze ruim onder de 90% te houden om deze automatische verhogingen te voorkomen. Als de opslagruimte eenmaal is toegewezen, is de opslagverhoging voor de opslag en productie van Pro permanent en kan deze niet worden teruggedraaid.
 
 ## Integratieomgeving controleren
 
@@ -131,7 +132,7 @@ Twee [ configuratiedossiers ](../environment/overview.md) controleren de toewijz
 
 >[!IMPORTANT]
 >
->Voor ProProductie en het Opvoeren milieu&#39;s, moet u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voorleggen om de toewijzing van de schijfruimte te veranderen. Een grootteverhoging van de milieu&#39;s van de Proproductie en van het Staging kan slechts met bepaalde intervallen voorkomen, zodat, afhankelijk van uw huidig gebruik van de schijfruimte, de steun zou kunnen adviseren om schijftoewijzing met een minimum van 10 GB te verhogen. Als deze eenmaal zijn toegewezen, kan de opslagverhoging voor Pro-opslag en -productie niet worden teruggedraaid. Opslag kan niet opnieuw worden toegewezen of herverdeeld tussen bronnen. Als u meer opslagruimte voor bestanden wilt toevoegen, verkleint u de schijfruimte die aan MySQL is toegewezen.
+>Voor ProProductie en het Opvoeren milieu&#39;s, moet u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voorleggen om de toewijzing van de schijfruimte te veranderen. Een grootteverhoging van de milieu&#39;s van de Proproductie en van het Staging kan slechts met bepaalde intervallen voorkomen, zodat, afhankelijk van uw huidig gebruik van de schijfruimte, de steun zou kunnen adviseren om schijftoewijzing met een minimum van 10 GB te verhogen. Als deze eenmaal zijn toegewezen, kan de opslagverhoging voor Pro-opslag en -productie niet worden teruggedraaid. Opslag kan niet opnieuw worden toegewezen of herverdeeld tussen bronnen. Als u meer opslagruimte voor bestanden wilt toevoegen, verkleint u de schijfruimte die aan MySQL is toegewezen.
 
 ### Schijfruimte van toepassing
 
@@ -187,7 +188,7 @@ Het bestand `.magento/services.yaml` bestuurt de schijfruimte die beschikbaar is
 
 ## Schijfruimte van monitor
 
-In een Pro Production-omgeving kunt u de schijfruimte en andere prestatie-indicatoren controleren aan de hand van de Beheerde waarschuwingen voor het Adobe Commerce-waarschuwingsbeleid voor New Relic. Voor details, zie [ prestaties van de Monitor met Beheerde Alarm ](../monitor/investigate-performance.md#monitor-performance-with-managed-alerts). Voor verdere begeleiding, zie [ Beste praktijken om de kwesties van gegevensbestandprestaties ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=nl-NL) op te lossen.
+In een Pro Production-omgeving kunt u de schijfruimte en andere prestatie-indicatoren controleren aan de hand van de Beheerde waarschuwingen voor het Adobe Commerce-waarschuwingsbeleid voor New Relic. Voor details, zie [ prestaties van de Monitor met Beheerde Alarm ](../monitor/investigate-performance.md#monitor-performance-with-managed-alerts). Voor verdere begeleiding, zie [ Beste praktijken om de kwesties van gegevensbestandprestaties ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html) op te lossen.
 
 ## Geen ruimte meer over
 
