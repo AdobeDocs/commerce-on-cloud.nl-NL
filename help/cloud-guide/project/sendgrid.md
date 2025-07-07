@@ -1,9 +1,10 @@
 ---
 title: E-mailservice SendGrid
 description: Leer over de SendGrid e-mailservice voor Adobe Commerce op cloudinfrastructuur en hoe u uw DNS-configuratie kunt testen.
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 06236068-df32-468f-99ec-c379984be136
+source-git-commit: 771fc9d0aed0e3ab6b9d693e7274ce1a7ffcf7ad
 workflow-type: tm+mt
-source-wordcount: '1317'
+source-wordcount: '1359'
 ht-degree: 0%
 
 ---
@@ -18,7 +19,7 @@ De SendGrid Eenvoudige de volmachtsdienst van de Overdracht van de Post van het 
 * Aangepaste domeinregistratie (alleen voor Pro)
 * Geautomatiseerde integratie voor Starter- en Pro-integratieomgevingen. Pro-productie- en staging-omgevingen vereisen handmatige provisioning en configuratie tijdens het hardwareinrichtingsproces voor de infrastructuur als service (IaaS)
 
-De SMTP-proxy van SendGrid is niet bedoeld voor gebruik als e-mailserver voor algemene doeleinden voor het ontvangen van binnenkomende e-mail of voor gebruik met e-mailmarketingcampagnes.
+De SMTP-proxy van SendGrid is niet bedoeld voor gebruik als e-mailserver voor algemene doeleinden voor het ontvangen van binnenkomende e-mail of voor gebruik met e-mailmarketingcampagnes. Als u welkome e-mails wilt importeren en verzenden naar een groot aantal klanten (bijvoorbeeld 10.000 of meer), splitst u het importeren en verzenden van e-mailberichten over meerdere dagen. Deze praktijk helpt binnen dagelijkse verzendende grenzen te blijven en beschermt uw afzenderreputatie.
 
 >[!TIP]
 >
@@ -30,7 +31,7 @@ U kunt uitgaande e-mailberichten voor elke omgeving in- of uitschakelen via de c
 
 Standaard zijn uitgaande e-mails ingeschakeld in Pro Production- en Staging-omgevingen. Nochtans, [!UICONTROL Outgoing emails] kan gehandicapt in de milieu montages verschijnen tot u het `enable_smtp` bezit door de [ bevellijn ](outgoing-emails.md#enable-emails-in-the-cli) of [ Console van de Wolk ](outgoing-emails.md#enable-emails-in-the-cloud-console) plaatst. U kunt uitgaande e-mails voor integratie- en staging-omgevingen inschakelen om tweefasenverificatie te verzenden of wachtwoorde-mails voor gebruikers van Cloud-projecten opnieuw in te stellen. Zie [ e-mails voor het testen ](outgoing-emails.md) vormen.
 
-Als de uitgaande e-mails moeten worden onbruikbaar gemaakt of op ProProductie of het Opvoeren milieu&#39;s opnieuw worden toegelaten, kunt u een [ kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) voorleggen.
+Als de uitgaande e-mails moeten worden onbruikbaar gemaakt of op ProProductie of het Opvoeren milieu&#39;s opnieuw worden toegelaten, kunt u een [ kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) voorleggen.
 
 >[!TIP]
 >
@@ -40,7 +41,7 @@ Als de uitgaande e-mails moeten worden onbruikbaar gemaakt of op ProProductie of
 
 Alle Cloud-projecten worden beheerd onder een centraal account, zodat alleen Support toegang heeft tot het SendGrid-dashboard. SendGrid biedt geen beperkingen voor subaccounts.
 
-Om de logboeken van de Activiteit voor leveringsstatus of een lijst van teruggestuurde, verworpen of geblokkeerde e-mailadressen te herzien, [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) voorleggen. Het team van de Steun **kan** activiteitenlogboeken niet terugwinnen ouder dan 30 dagen.
+Om de logboeken van de Activiteit voor leveringsstatus of een lijst van teruggestuurde, verworpen of geblokkeerde e-mailadressen te herzien, [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) voorleggen. Het team van de Steun **kan** activiteitenlogboeken niet terugwinnen ouder dan 30 dagen.
 
 Indien mogelijk, neem de volgende informatie met uw verzoek op:
 
@@ -54,7 +55,7 @@ DKIM is een technologie van de e-mailauthentificatie die de Dienstverleners van 
 
 >[!WARNING]
 >
->De handtekeningen van SendGrid DKIM en de steun van de domeinauthentificatie zijn slechts beschikbaar op de Productie en het Staging milieu&#39;s voor Pro projecten, maar niet voor alle milieu&#39;s van de Aanzet. Als gevolg hiervan worden uitgaande e-mailberichten over transacties waarschijnlijk gemarkeerd door spamfilters. Als u DKIM gebruikt, wordt de levering sneller uitgevoerd als geverifieerde e-mailafzender. Om de snelheid van de berichtlevering te verbeteren, kunt u van Starter aan Pro bevorderen of uw eigen server SMTP of dienstverlener van de e-maillevering gebruiken. Zie [ E-mailverbindingen ](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/communications/email-communications) in de _gids van Systemen Admin_ vormen.
+>De handtekeningen van SendGrid DKIM en de steun van de domeinauthentificatie zijn slechts beschikbaar op de Productie en het Staging milieu&#39;s voor Pro projecten, maar niet voor alle milieu&#39;s van de Aanzet. Als gevolg hiervan worden uitgaande e-mailberichten over transacties waarschijnlijk gemarkeerd door spamfilters. Als u DKIM gebruikt, wordt de levering sneller uitgevoerd als geverifieerde e-mailafzender. Om de snelheid van de berichtlevering te verbeteren, kunt u van Starter aan Pro bevorderen of uw eigen server SMTP of dienstverlener van de e-maillevering gebruiken. Zie [ E-mailverbindingen ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/communications/email-communications) in de _gids van Systemen Admin_ vormen.
 
 ### Afzender en domeinverificatie
 
@@ -62,11 +63,11 @@ Voor SendGrid om transactie-e-mails namens u van de milieu&#39;s van de Proprodu
 
 >[!TIP]
 >
->Zorg ervoor dat u de **[!UICONTROL Sopslag E-mailadressen]** met het juiste domein in **[!UICONTROL Stores > Configuration > General > Store Email Addresses]** vormt. De domeinauthentificatie wordt uitgevoerd op het e-mailadres van de afzender. Als de standaardinstelling (`example.com`) is geconfigureerd, worden de e-mails van `example.com` geblokkeerd door Sendgrid.
+>Zorg ervoor dat u de **[!UICONTROLSopslag E-mailadressen]** met het juiste domein in **[!UICONTROL Stores > Configuration > General > Store Email Addresses]** vormt. De domeinauthentificatie wordt uitgevoerd op het e-mailadres van de afzender. Als de standaardinstelling (`example.com`) is geconfigureerd, worden de e-mails van `example.com` geblokkeerd door Sendgrid.
 
 **om domeinauthentificatie** toe te laten:
 
-1. Verzend a [ steunkaartje ](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) om het toelaten van DKIM voor een specifiek domein (**Pro het Opvoeren en de milieu&#39;s van de Productie slechts**) te verzoeken.
+1. Verzend a [ steunkaartje ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) om het toelaten van DKIM voor een specifiek domein (**Pro het Opvoeren en de milieu&#39;s van de Productie slechts**) te verzoeken.
 1. Werk uw DNS-configuratie bij met de `TXT` - en `CNAME` -records die in het ondersteuningsticket aan u worden geleverd.
 
 **Voorbeeld `TXT` verslag met rekeningsidentiteitskaart**:
@@ -117,7 +118,7 @@ dig CNAME s2._domainkey.domain_name
 
 De drempel voor transactie-e-mail verwijst naar het aantal transactie-e-mailberichten dat u vanuit Pro-omgevingen binnen een specifieke periode kunt verzenden, zoals 12.000 e-mailberichten per maand vanuit niet-productieomgevingen. De drempel is ontworpen om te beschermen tegen het verzenden van spam en mogelijk uw e-mailreputatie te beschadigen.
 
-Er zijn geen harde grenzen aan het aantal e-mails dat kan worden verzonden in de Productieomgeving, zolang de score voor de reproductie van de afzender meer dan 95% bedraagt. De reputatie wordt beïnvloed door het aantal gebrande of verworpen e-mails en of op DNS-Gebaseerde spamregisters uw domein als potentiële spambron hebben gemarkeerd. Zie [ E-mails niet verzonden wanneer de credits SendGrid op Adobe Commerce ](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/emails-not-being-sent-sendgrid-credits-exceeded) in de _Kennisbank van de Steun van Commerce_ werden overschreden.
+Er zijn geen harde grenzen aan het aantal e-mails dat kan worden verzonden in de Productieomgeving, zolang de score voor de reproductie van de afzender meer dan 95% bedraagt. De reputatie wordt beïnvloed door het aantal gebrande of verworpen e-mails en of op DNS-Gebaseerde spamregisters uw domein als potentiële spambron hebben gemarkeerd. Zie [ E-mails niet verzonden wanneer de credits SendGrid op Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/emails-not-being-sent-sendgrid-credits-exceeded) in de _Kennisbank van de Steun van Commerce_ werden overschreden.
 
 **om te controleren als de maximumkredieten** worden overschreden:
 
@@ -131,7 +132,7 @@ Er zijn geen harde grenzen aan het aantal e-mails dat kan worden verzonden in de
 
 1. Controleer de `/var/log/mail.log` op `authentication failed : Maxium credits exceeded` -items.
 
-   Als u om het even welke `authentication failed` logboekingangen ziet en **E-mail verzendende reputatie** is bij een minimum van 95, kunt u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) voorleggen om een verhoging van de krediettoewijzing te verzoeken.
+   Als u om het even welke `authentication failed` logboekingangen ziet en **E-mail verzendende reputatie** is bij een minimum van 95, kunt u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) voorleggen om een verhoging van de krediettoewijzing te verzoeken.
 
 ### E-mailverzendingsreputatie
 
@@ -143,6 +144,6 @@ Een lijst met e-mailsuppressies is een lijst met ontvangers waarnaar geen e-mail
 
 Om e-mails te verhinderen worden verzonden naar de spamomslag in de eerste plaats, volg het beste praktijken artikel van Sendgrid, [ waarom Mijn e-mails naar Spam gaan?](https://sendgrid.com/en-us/blog/10-tips-to-keep-email-out-of-the-spam-folder).
 
-Als sommige ontvangers uw e-mails niet ontvangen, kunt u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) voorleggen om een overzicht van de suppressielijsten te verzoeken en ontvanger(s) indien nodig te verwijderen.
+Als sommige ontvangers uw e-mails niet ontvangen, kunt u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) voorleggen om een overzicht van de suppressielijsten te verzoeken en ontvanger(s) indien nodig te verwijderen.
 
 Voor meer details, verwijs naar [ wat een Lijst van de Onderdrukking is?](https://sendgrid.com/en-us/blog/what-is-a-suppression-list)
