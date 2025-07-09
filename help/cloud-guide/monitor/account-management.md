@@ -3,18 +3,21 @@ title: New Relic-accountbeheer
 description: Leer hoe u toegang krijgt tot uw New Relic-account en toegang, integratie en het gebruik van tools voor uw Adobe Commerce kunt beheren voor een cloud-infrastructuurproject.
 feature: Cloud, Observability
 role: Admin
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 7aeedd12-7a81-47eb-a82f-3079e16ecb06
+source-git-commit: 5b633108f4113b26f6487073c1ccedebb632b111
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '687'
 ht-degree: 0%
 
 ---
 
 # New Relic-accountbeheer
 
-Wanneer de Adobe uw project van de wolkeninfrastructuur voorziet, ontvangt de Eigenaar van de Vergunning een e-mail van New Relic met geloofsbrieven en instructies voor de toegang tot van de rekening van New Relic. Als u het e-mailbericht niet hebt ontvangen, gebruikt u het e-mailadres van de eigenaar van de licentie om het New Relic-wachtwoord opnieuw in te stellen.
+Wanneer Adobe uw cloud-infrastructuurproject verzorgt, ontvangt de Eigenaar van de licentie een e-mail van New Relic met referenties en instructies voor toegang tot de New Relic-account. Als u het e-mailbericht niet hebt ontvangen, gebruikt u het e-mailadres van de eigenaar van de licentie om het New Relic-wachtwoord opnieuw in te stellen.
 
-## Gebruikerstoegang beheren
+Als de Eigenaar van de Vergunning werd veranderd en de nieuwe Eigenaar van de Vergunning heeft momenteel geen toegang tot New Relic, [ voorlegt een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+
+## Gebruikerstoegang beheren (beheerdersrol)
 
 >[!NOTE]
 >
@@ -38,7 +41,7 @@ Zie [ Gebruikersbeheer ](https://docs.newrelic.com/docs/accounts/accounts-billin
 
 >[!NOTE]
 >
->**Pro milieu&#39;s** worden preconfigured om de diensten van New Relic te gebruiken en kunnen overslaan laat en verbindt instructies toe. Als New Relic APM niet geïnstalleerd op de het Opvoeren en van de Productie milieu&#39;s of de Infrastructuur van New Relic niet beschikbaar in het milieu van de Productie is, [ voorlegt een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) om installatie te verzoeken.
+>**Pro milieu&#39;s** worden preconfigured om de diensten van New Relic te gebruiken en kunnen overslaan laat en verbindt instructies toe. Als New Relic APM niet geïnstalleerd op de het Opvoeren en van de Productie milieu&#39;s of de Infrastructuur van New Relic niet beschikbaar in het milieu van de Productie is, [ voorlegt een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) om installatie te verzoeken.
 
 Voor Starter-omgevingen moet u het `.magento.app.yaml` -bestand controleren om te controleren of de sectie `runtime` de New Relic-extensie bevat. Als de extensie niet is geconfigureerd, voegt u het volgende toe:
 
@@ -54,11 +57,11 @@ runtime:
 
 Als u een Cloud-omgeving wilt verbinden met New Relic, voegt u de New Relic-licentiecode toe aan de omgeving.
 
-- Voor **Pro projecten**, voegt de Adobe de vergunningssleutel aan uw Productie en het Staging milieu&#39;s tijdens het inrichtingsproces toe. U kunt login aan uw [ rekening van New Relic ](https://login.newrelic.com/login) om connectiviteit tussen uw Adobe Commerce op de plaats van de wolkeninfrastructuur en New Relic te verifiëren.
+- Voor **Pro projecten**, voegt Adobe de vergunningssleutel aan uw Productie en het Staging milieu&#39;s tijdens het inrichtingsproces toe. U kunt login aan uw [ rekening van New Relic ](https://login.newrelic.com/login) om connectiviteit tussen uw Adobe Commerce op de plaats van de wolkeninfrastructuur en New Relic te verifiëren.
 
 - Voor **de projecten van de Aanzet**, hebt u een de vergunningssleutel van New Relic die tot _drie_ milieu&#39;s steunt. U moet de sleutel aan uw omgevingsconfiguraties manueel toevoegen. Starteromgevingen zijn niet vooraf ingericht voor gebruik van de New Relic-service.
 
-Voor Starter-omgevingen schakelt u de New Relic-integratie in door de New Relic-licentiecode toe te voegen aan de omgevingsconfiguratie. Voeg de sleutel toe aan de het Staging en milieu&#39;s van de Productie en één andere milieu van uw keus. Alleen de New Relic-licentiecode is vereist voor de configuratie. U kunt informatie over extra configuratieopties in [ New Relic vinden die ](https://experienceleague.adobe.com/docs/commerce-admin/config/general/new-relic-reporting.html?lang=nl-NL) onderwerp in de _Gids van de Gebruiker van Adobe Commerce_ melden.
+Voor Starter-omgevingen schakelt u de New Relic-integratie in door de New Relic-licentiecode toe te voegen aan de omgevingsconfiguratie. Voeg de sleutel toe aan de het Staging en milieu&#39;s van de Productie en één andere milieu van uw keus. Alleen de New Relic-licentiecode is vereist voor de configuratie. U kunt informatie over extra configuratieopties in [ New Relic vinden die ](https://experienceleague.adobe.com/docs/commerce-admin/config/general/new-relic-reporting.html) onderwerp in de _Gids van de Gebruiker van Adobe Commerce_ melden.
 
 {{redeploy-warning}}
 
@@ -66,7 +69,7 @@ Voor Starter-omgevingen schakelt u de New Relic-integratie in door de New Relic-
 >
 >- Aanmeldingsgegevens voor de Adobe Commerce-accountpagina of voor de New Relic-licentie voor uw project
 >- [ Admin-vlakke toegang ](../project/user-access.md) aan de milieu&#39;s van de Aanzet om te vormen
->- De geloofsbrieven om tot [ Admin ](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions.html?lang=nl-NL) voor het milieu toegang te hebben
+>- De geloofsbrieven om tot [ Admin ](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions.html) voor het milieu toegang te hebben
 
 **om New Relic voor Startermilieu&#39;s** te vormen:
 
@@ -99,7 +102,7 @@ Voor Starter-omgevingen schakelt u de New Relic-integratie in door de New Relic-
      magento-cloud variable:update php:newrelic.license --value <newrelic-license-key>
      ```
 
-   Naar keuze, kunt u het van [ Commerce Admin ](https://experienceleague.adobe.com/docs/commerce-admin/start/reporting/new-relic-reporting.html?lang=nl-NL#step-3%3A-configure-your-store) toevoegen.
+   Naar keuze, kunt u het van [ Commerce Admin ](https://experienceleague.adobe.com/docs/commerce-admin/start/reporting/new-relic-reporting.html#step-3%3A-configure-your-store) toevoegen.
 
 1. Login aan uw [ rekening van New Relic ](https://login.newrelic.com/login) om te verifiëren dat u gegevens van het milieu van Adobe Commerce kunt bekijken. Zie [ prestaties ](investigate-performance.md) onderzoeken.
 
