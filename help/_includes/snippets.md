@@ -38,7 +38,7 @@ Stel de optie `_merge` in op een van de volgende opties:
 
 >[!WARNING]
 >
->Sommige **Pro projecten** vereisen een steunkaartje om de routeconfiguratie in het `routes.yaml` dossier en de kroonconfiguratie in het `.magento.app.yaml` dossier bij te werken. Adobe raadt aan YAML-configuratiebestanden bij te werken en te testen in een integratieomgeving en vervolgens wijzigingen in de staging-omgeving in te voeren. Als uw veranderingen niet op het Opvoeren plaatsen na u worden toegepast en er geen verwante foutenmeldingen in het logboek zijn, dan MOET u **** een kaartje van de Steun van Adobe Commerce [ voorleggen dat de geprobeerd configuratieveranderingen beschrijft. ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) Neem de bijgewerkte YAML-configuratiebestanden op in het ticket.
+>Sommige **Pro projecten** vereisen een steunkaartje om de routeconfiguratie in het `routes.yaml` dossier en de kroonconfiguratie in het `.magento.app.yaml` dossier bij te werken. Adobe raadt aan YAML-configuratiebestanden bij te werken en te testen in een integratieomgeving en vervolgens wijzigingen in de staging-omgeving in te voeren. Als uw veranderingen niet op het Opvoeren plaatsen na u worden toegepast en er geen verwante foutenmeldingen in het logboek zijn, dan MOET u **&#x200B;**&#x200B;een kaartje van de Steun van Adobe Commerce [ voorleggen dat de geprobeerd configuratieveranderingen beschrijft. ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) Neem de bijgewerkte YAML-configuratiebestanden op in het ticket.
 
 ## Pro-services-ondersteuning {#pro-update-service}
 
@@ -58,7 +58,7 @@ Stel de optie `_merge` in op een van de volgende opties:
 >
 >Op Pro het Opvoeren en de milieu&#39;s van de Productie, moet u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voorleggen om een specifieke steun terug te winnen noterend de datum, de tijd, en de tijdzone in het kaartje.
 >
->Adobe herstelt **** geen milieu&#39;s van een automatische steun. Zie [ herstellen een momentopname van DB van het Opvoeren of Productie ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production.html) voor hulp die een methode kiezen om een het Opname van het Opvoeren of van de Productie te herstellen.
+>Adobe herstelt **&#x200B;**&#x200B;geen milieu&#39;s van een automatische steun. Zie [ herstellen een momentopname van DB van het Opvoeren of Productie ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production.html) voor hulp die een methode kiezen om een het Opname van het Opvoeren of van de Productie te herstellen.
 
 ## Waarschuwing bij opnieuw implementeren {#redeploy-warning}
 
@@ -78,7 +78,7 @@ Stel de optie `_merge` in op een van de volgende opties:
 >
 >Als er problemen optreden met statische inhoudsbestanden in uw toepassing na de implementatie, zoals ontbrekende aangepaste themabestanden, verhoogt u de maximale verwachte uitvoeringstijd tot 900 seconden of langer.
 
-## Implementatie op basis van scenario&#39;s {#scenarios}
+## Implementatie op basis van scenario's {#scenarios}
 
 >[!NOTE]
 >
