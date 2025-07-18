@@ -3,9 +3,9 @@ title: Valkey-service instellen
 description: Leer hoe u Valkey instelt en optimaliseert als back-end cacheoplossing voor Adobe Commerce op Cloud Infrastructure.
 feature: Cloud, Cache, Services
 exl-id: f8933e0d-a308-4c75-8547-cb26ab6df947
-source-git-commit: 242582ea61d0d93725a7f43f2ca834db9e1a7c29
+source-git-commit: cf2e659267445603b3f5eaf877f4eb7ac0c1b54c
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '201'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 [ Valkey ](https://valkey.io) is een facultatieve, achterste geheim voorgeheugenoplossing die `Zend Framework Zend_Cache_Backend_File` vervangt, die Adobe Commerce door gebrek gebruikt.
 
-Zie [ Valkey ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/valkey/config-valkey.html?lang=nl-NL){target="_blank"} in de _gids van de Configuratie_ vormen.
+Zie [ Valkey ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/valkey/config-valkey.html){target="_blank"} in de _gids van de Configuratie_ vormen.
 
 {{service-instruction}}
 
-**om Valkey** toe te laten:
+**Redis met Valkey vervangen, werk de configuratie in de volgende drie dossiers** bij:
 
 1. Voeg de vereiste naam en het vereiste type aan het `.magento/services.yaml` dossier toe.
 
@@ -41,10 +41,19 @@ Zie [ Valkey ](https://experienceleague.adobe.com/docs/commerce-operations/confi
        valkey: "cache:valkey"
    ```
 
+1. Configureer `.magento.env.yaml` als volgt:
+
+   ```yaml
+    stage:
+        deploy:
+        VALKEY_USE_SLAVE_CONNECTION: true
+        VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+   ```
+
 1. U kunt wijzigingen in de code toevoegen, doorvoeren en doorvoeren.
 
    ```bash
-   git add .magento/services.yaml .magento.app.yaml && git commit -m "Enable valkey service" && git push origin <branch-name>
+   git add .magento/services.yaml .magento.app.yaml .magento.env.yaml && git commit -m "Enable valkey service" && git push origin <branch-name>
    ```
 
 1. [ verifieer de de dienstverhoudingen ](services-yaml.md#service-relationships).
