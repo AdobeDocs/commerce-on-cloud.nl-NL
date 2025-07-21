@@ -3,9 +3,9 @@ title: OpenSearch-service instellen
 description: Leer hoe u de OpenSearch-service voor Adobe Commerce kunt inschakelen voor cloudinfrastructuur.
 feature: Cloud, Search, Services
 exl-id: e704ab2a-2f6b-480b-9b36-1e97c406e873
-source-git-commit: 81b8ac7b611f9b8c6fe3011a554786bd2e48aabc
+source-git-commit: 1f965749e59e3c48be2d8e04ac58683234e7b685
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '701'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Met OpenSearch kunt u gegevens van elke bron, elke indeling en in real-time zoek
        disk: 1024
    ```
 
-   Voor Pro projecten, moet u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voorleggen om de versie OpenSearch in de het Opvoeren en milieu&#39;s van de Productie te veranderen.
+   Voor Pro projecten, moet u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voorleggen om de versie OpenSearch in de het Opvoeren en milieu&#39;s van de Productie te veranderen.
 
 1. Stel de eigenschap `relationships` in het `.magento.app.yaml` -bestand in of controleer deze.
 
@@ -92,7 +92,7 @@ Wanneer u uw Adobe Commerce op het project van de wolkeninfrastructuur installee
 
 - **verbetering van het Project** - verifieer dat de cliënt OpenSearch PHP in de nieuwe toepassingsversie compatibel is met de OpenSearch de dienstversie die op de wolkeninfrastructuur wordt geïnstalleerd.
 
-De versie van de dienst en verenigbaarheidssteun wordt bepaald door versies die op de infrastructuur van de Wolk worden getest en worden opgesteld, en verschillen soms van versies die door Adobe Commerce op-gebouw plaatsingen worden gesteund. Zie {de vereisten van het 0} Systeem [&#128279;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=nl-NL) in de _Gids van de Installatie_ voor een lijst van gesteunde versies.
+De versie van de dienst en verenigbaarheidssteun wordt bepaald door versies die op de infrastructuur van de Wolk worden getest en worden opgesteld, en verschillen soms van versies die door Adobe Commerce op-gebouw plaatsingen worden gesteund. Zie {de vereisten van het 0} Systeem [ in de ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) Gids van de Installatie _voor een lijst van gesteunde versies._
 
 **om de softwareverenigbaarheid te verifiëren OpenSearch**:
 
@@ -182,6 +182,11 @@ Als u de OpenSearch-service opnieuw wilt starten, moet u contact opnemen met de 
 
 U kunt desgewenst plug-ins voor OpenSearch toevoegen door de sectie `configuration:plugins` toe te voegen aan de OpenSearch-service in het `.magento/services.yaml` -bestand. Met de volgende code worden bijvoorbeeld de insteekmodules voor ICU-analyse en Fonetische analyse ingeschakeld.
 
+>[!NOTE]
+>
+>Dit geldt alleen voor integratie- en starteromgevingen. Om plugins in een Pro het Opvoeren of cluster van de Productie te installeren, [ voorlegt een steunverzoek ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case).
+
+
 ```yaml
 opensearch:
     type: opensearch:2
@@ -196,9 +201,14 @@ Zie het [ Project OpenSearch ](https://github.com/opensearch-project) voor meer 
 
 ### Insteekmodules voor OpenSearch verwijderen
 
-Het verwijderen van de insteekmoduleingangen uit de `opensearch:` sectie van het `.magento/services.yaml` dossier **&#x200B;**&#x200B;schrapt of maakt de dienst niet onbruikbaar. Als u de service volledig wilt uitschakelen, moet u de OpenSearch-gegevens opnieuw indexeren nadat u de plug-ins uit het `.magento/services.yaml` -bestand hebt verwijderd. Dit ontwerp voorkomt mogelijk gegevensverlies of -beschadiging die afhankelijk is van deze plug-ins.
+Het verwijderen van de insteekmoduleingangen uit de `opensearch:` sectie van het `.magento/services.yaml` dossier **** schrapt of maakt de dienst niet onbruikbaar. Als u de service volledig wilt uitschakelen, moet u de OpenSearch-gegevens opnieuw indexeren nadat u de plug-ins uit het `.magento/services.yaml` -bestand hebt verwijderd. Dit ontwerp voorkomt mogelijk gegevensverlies of -beschadiging die afhankelijk is van deze plug-ins.
+
 
 **om stopSearch te verwijderen**:
+
+>[!NOTE]
+>
+>Deze wijziging geldt alleen voor integratie- en starteromgevingen. U zult een steunkaartje [ moeten voorleggen om de stop in een Pro Staging of cluster van de Productie te verwijderen.](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case)
 
 1. Verwijder de items van de OpenSearch-insteekmodule uit het `.magento/services.yaml` -bestand.
 1. U kunt wijzigingen in de code toevoegen, doorvoeren en doorvoeren.
@@ -216,7 +226,7 @@ Het verwijderen van de insteekmoduleingangen uit de `opensearch:` sectie van het
    ```
 
 1. Leg de `.magento/services.yaml` -wijzigingen vast in uw cloudopslagplaats.
-1. Indexeer de zoekindex van de catalogus opnieuw.
+1. Wijzig de index van het Onderzoek van de Catalogus (alle milieu&#39;s: Integratie, Starter, Pro het Opvoeren en clusters van de Productie).
 
    ```bash
    bin/magento indexer:reindex catalogsearch_fulltext
