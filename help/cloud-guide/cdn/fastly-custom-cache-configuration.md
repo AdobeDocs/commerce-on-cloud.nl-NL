@@ -44,7 +44,7 @@ Om bulkacties te voltooien die langer dan 3 minuten duren verander de _onderbrek
 
 1. In de _Snelle sectie van de Configuratie_, breid **Geavanceerde Configuratie** uit.
 
-1. Plaats de **waarde van de de wegonderbreking van 0} Admin {in seconden.** Deze waarde mag niet langer zijn dan 10 minuten (600 seconden).
+1. Plaats de **waarde van de de wegonderbreking van 0&rbrace; Admin &lbrace;in seconden.** Deze waarde mag niet langer zijn dan 10 minuten (600 seconden).
 
 >[!NOTE]
 >
@@ -99,7 +99,7 @@ De module Snelheid bevat GeoIP-afhandeling om bezoekers automatisch om te leiden
 
 1. Voor Actie GeoIP, selecteer als de bezoeker automatisch met **opnieuw richt** wordt omgeleid of een lijst van opslag verstrekt om van met **Dialoog** te selecteren.
 
-1. Voor **Afbeelding van het Land**, **** toevoegen om een twee-brief landcode in te gaan om met een specifieke opslag van Adobe Commerce van een lijst in kaart te brengen.
+1. Voor **Afbeelding van het Land**, **&#x200B;**&#x200B;toevoegen om een twee-brief landcode in te gaan om met een specifieke opslag van Adobe Commerce van een lijst in kaart te brengen.
 
    ![ voeg GeoIP landkaarten ](/help/assets/cdn/fastly-geo-code.png) toe
 
@@ -175,7 +175,7 @@ Als u gebruikerstoegang toevoegt en basisauthentificatie bij het Opvoeren toelaa
 
 Steunt snel een aangepaste versie van de Taal van de Configuratie van de Varnish (VCL) om de Snelle de dienstconfiguratie aan te passen. U kunt bijvoorbeeld toegang voor bepaalde gebruikers of IP-adressen toestaan, blokkeren of omleiden met VCL-codeblokken met de woordenboeken Rand en Toegangsbeheer (ACL).
 
-Voor instructies om de fragmenten van douaneVCL, randwoordenboeken, en ACLs tot stand te brengen, zie {de fragmenten van VCL van de Douane VCL [.](fastly-vcl-custom-snippets.md)
+Voor instructies om de fragmenten van douaneVCL, randwoordenboeken, en ACLs tot stand te brengen, zie &lbrace;de fragmenten van VCL van de Douane VCL [.](fastly-vcl-custom-snippets.md)
 
 >[!NOTE]
 >
