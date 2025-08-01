@@ -3,9 +3,9 @@ title: Cacheconfiguratie aanpassen
 description: Leer hoe u de instellingen van de cacheconfiguratie kunt controleren en aanpassen nadat de service Fastly is ingesteld.
 feature: Cloud, Configuration, Iaas, Cache
 exl-id: f6901931-7b3f-40a8-9514-168c6243cc43
-source-git-commit: eaa9980c437a9398f0d20d3c27832aecffc78fd9
+source-git-commit: 551a00932165dd1c0a876b8151ba14752ceac802
 workflow-type: tm+mt
-source-wordcount: '1898'
+source-wordcount: '1953'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Om bulkacties te voltooien die langer dan 3 minuten duren verander de _onderbrek
 
 >[!NOTE]
 >
->Als u een eindpunt van de Weg van douaneAdmin in het **gebied van de Weg van Admin van de Douane in** Opslag **>** Configuratie **>** Geavanceerd **>** Admin **>** Admin Basis URL **hebt gespecificeerd, zult u ook de [ variabele ADMIN_URL ](../environment/variables-admin.md#change-the-admin-url) in dat milieu moeten plaatsen op dezelfde waarde.** Als de instellingen verschillen, werkt de time-out niet.
+>Als u een eindpunt van de Weg van douaneAdmin in het **gebied van de Weg van Admin van de Douane in** Opslag **>** Configuratie **>** Geavanceerd **>** Admin **>** Admin Basis URL **hebt gespecificeerd, zult u ook de** variabele ADMIN_URL [ in dat milieu moeten plaatsen op dezelfde waarde. ](../environment/variables-admin.md#change-the-admin-url) Als de instellingen verschillen, werkt de time-out niet.
 >
 >Om snel onderbrekingsparameters voor buiten Admin in Snelle UI uit te breiden, zie [ Onderbreking van de Verhoging voor Lange Banen ](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/Edge-Modules/EDGE-MODULE-INCREASE-TIMEOUTS-LONG-JOBS.md).
 
@@ -44,7 +44,7 @@ Om bulkacties te voltooien die langer dan 3 minuten duren verander de _onderbrek
 
 1. In de _Snelle sectie van de Configuratie_, breid **Geavanceerde Configuratie** uit.
 
-1. Plaats de **waarde van de de wegonderbreking van 0&rbrace; Admin &lbrace;in seconden.** Deze waarde mag niet langer zijn dan 10 minuten (600 seconden).
+1. Plaats de **waarde van de de wegonderbreking van 0} Admin {in seconden.** Deze waarde mag niet langer zijn dan 10 minuten (600 seconden).
 
 >[!NOTE]
 >
@@ -99,7 +99,7 @@ De module Snelheid bevat GeoIP-afhandeling om bezoekers automatisch om te leiden
 
 1. Voor Actie GeoIP, selecteer als de bezoeker automatisch met **opnieuw richt** wordt omgeleid of een lijst van opslag verstrekt om van met **Dialoog** te selecteren.
 
-1. Voor **Afbeelding van het Land**, **&#x200B;**&#x200B;toevoegen om een twee-brief landcode in te gaan om met een specifieke opslag van Adobe Commerce van een lijst in kaart te brengen.
+1. Voor **Afbeelding van het Land**, **** toevoegen om een twee-brief landcode in te gaan om met een specifieke opslag van Adobe Commerce van een lijst in kaart te brengen.
 
    ![ voeg GeoIP landkaarten ](/help/assets/cdn/fastly-geo-code.png) toe
 
@@ -119,7 +119,7 @@ De snel Edge Modules is een flexibel kader dat definitie van UI componenten en b
 
 Met Edge-modules kunt u specifieke functionaliteit inschakelen, zoals CORS-headers, Cloud Sitemap herschrijft en integratie configureren tussen uw Adobe Commerce-winkel en andere CMS-systemen of backends.
 
-Om tot het menu van Modules van Edge toegang te hebben om, de beschikbare modules te bekijken te vormen en te beheren, _aanzet snel Edge modules_ optie toe. Zie {de Modules van Edge van 0} de Snelheid [&#128279;](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/Edge-Modules/EDGE-MODULES.md) in de Fastly CDN moduledocumentatie.
+Om tot het menu van Modules van Edge toegang te hebben om, de beschikbare modules te bekijken te vormen en te beheren, _aanzet snel Edge modules_ optie toe. Zie {de Modules van Edge van 0} de Snelheid [ in de Fastly CDN moduledocumentatie.](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/Edge-Modules/EDGE-MODULES.md)
 
 ## Teruguiteinden en afscherming van oorsprong configureren
 
@@ -131,7 +131,7 @@ De standaard VCL-code met snelheden geeft standaardwaarden op voor Oorspronkelij
 
 >[!NOTE]
 >
->Als uw plaats functioneel geleverd door een achterstandsintegratie zoals [ Wordpress ](fastly-vcl-wordpress.md) vereist, pas uw Fastly de dienstconfiguratie aan om het achtereind toe te voegen en redirects van uw opslag van Adobe Commerce aan Wordpress te beheren. Voor details, zie {de Modules van 0} Snelle Edge - Andere integratie CMS/Backend [&#128279;](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/Edge-Modules/EDGE-MODULE-OTHER-CMS-INTEGRATION.md) in de de moduledocumentatie van de Fastly.
+>Als uw plaats functioneel geleverd door een achterstandsintegratie zoals [ Wordpress ](fastly-vcl-wordpress.md) vereist, pas uw Fastly de dienstconfiguratie aan om het achtereind toe te voegen en redirects van uw opslag van Adobe Commerce aan Wordpress te beheren. Voor details, zie {de Modules van 0} Snelle Edge - Andere integratie CMS/Backend [ in de de moduledocumentatie van de Fastly.](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/Edge-Modules/EDGE-MODULE-OTHER-CMS-INTEGRATION.md)
 
 **om de configuratie van achterste montages** te herzien:
 
@@ -161,19 +161,21 @@ Voor meer informatie, zie de [ gids van de Montages van de Achtergrond ](https:/
 
 ## Basisverificatie
 
-Standaardverificatie is een functie om elke pagina en elk element op uw site te beveiligen
-met een gebruikersnaam en wachtwoord. Wij **adviseren niet** activerend basis
-verificatie in uw productieomgeving. U kunt het bij het Plaatsen vormen
-om uw site tijdens het ontwikkelingsproces te beschermen. Zie de [ Basis Gids van de Authentificatie ](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BASIC-AUTH.md) in de Fastly CDN moduledocumentatie.
+Standaardverificatie is een functie waarmee u elke pagina en elk element op uw site kunt beveiligen met een gebruikersnaam en wachtwoord.
 
-Als u gebruikerstoegang toevoegt en basisauthentificatie bij het Opvoeren toelaat, kunt u nog
-toegang tot de beheerder zonder extra referenties te vereisen.
+Adobe **adviseert** het activeren van basisauthentificatie op uw milieu van de Productie niet. U kunt het vormen op Staging om uw plaats tijdens het ontwikkelingsproces te beschermen. Zie de [ Basis Gids van de Authentificatie ](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BASIC-AUTH.md) in de Fastly CDN moduledocumentatie.
+
+Als u gebruikerstoegang toevoegt en basisauthentificatie bij het Opvoeren toelaat, kunt u tot Admin nog toegang hebben zonder extra geloofsbrieven te vereisen.
+
+>[!NOTE]
+>
+>**niet** controle [!UICONTROL Enable HTTP access control] in de Console van de Wolk voor om het even welk milieu waar de Fastly (zoals het Opvoeren of niet-levende milieu&#39;s van de Productie) wordt toegelaten. Als toegangsbeheer deze manier wordt gevormd, kunnen de gebruikers die eerder toegang hadden tot de plaats nog toegang hebben als hun geloofsbrieven door Fastly in het voorgeheugen ondergebracht blijven, zelfs nadat hun toegang is geannuleerd.
 
 ## Aangepaste VCL-fragmenten maken
 
 Steunt snel een aangepaste versie van de Taal van de Configuratie van de Varnish (VCL) om de Snelle de dienstconfiguratie aan te passen. U kunt bijvoorbeeld toegang voor bepaalde gebruikers of IP-adressen toestaan, blokkeren of omleiden met VCL-codeblokken met de woordenboeken Rand en Toegangsbeheer (ACL).
 
-Voor instructies om de fragmenten van douaneVCL, randwoordenboeken, en ACLs tot stand te brengen, zie &lbrace;de fragmenten van VCL van de Douane VCL [&#128279;](fastly-vcl-custom-snippets.md).
+Voor instructies om de fragmenten van douaneVCL, randwoordenboeken, en ACLs tot stand te brengen, zie {de fragmenten van VCL van de Douane VCL [.](fastly-vcl-custom-snippets.md)
 
 >[!NOTE]
 >
@@ -185,7 +187,7 @@ Voor zowel Starter- als Pro-projecten kunt u de optie [!UICONTROL Domains] gebru
 
 - Voor Starter-projecten gaat u naar Project URL onder het tabblad [!UICONTROL Domains] in [!DNL Cloud Console] om de URL van het project toe te voegen.
 
-- Voor Pro projecten, leg een [ kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voor om het domein aan uw configuratie van het wolkenproject toe te voegen. Het ondersteuningsteam werkt ook de Adobe Commerce Fastly-accountconfiguratie bij om het domein toe te voegen.
+- Voor Pro projecten, leg een [ kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voor om het domein aan uw configuratie van het wolkenproject toe te voegen. Het ondersteuningsteam werkt ook de Adobe Commerce Fastly-accountconfiguratie bij om het domein toe te voegen.
 
 **om Snelle domeinconfiguratie van Admin** te beheren:
 
