@@ -20,7 +20,7 @@ Het pakket `magento/magento-cloud-components` gebruikt de volgende versiereeks: 
 De opmerkingen bij de release omvatten:
 
 - ![ nieuw pictogram ](../../assets/new.svg) Nieuwe eigenschappen
-- ![ Bevestigingspictogram van 0} moeilijke situatie en verbeteringen](../../assets/fix.svg)
+- ![ Bevestigingspictogram van 0&rbrace; moeilijke situatie en verbeteringen](../../assets/fix.svg)
 
 <!--Add release notes below-->
 

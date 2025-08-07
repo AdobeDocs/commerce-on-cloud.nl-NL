@@ -21,7 +21,7 @@ Het pakket `magento/magento-cloud-docker` gebruikt de volgende versiereeks: `<ma
 De opmerkingen bij de release omvatten:
 
 - ![ nieuw pictogram ](../../assets/new.svg) Nieuwe eigenschappen
-- ![ Bevestigingspictogram van 0} moeilijke situatie en verbeteringen](../../assets/fix.svg)
+- ![ Bevestigingspictogram van 0&rbrace; moeilijke situatie en verbeteringen](../../assets/fix.svg)
 
 <!--Add release notes below-->
 
@@ -30,7 +30,7 @@ De opmerkingen bij de release omvatten:
 Releasedatum: 7 augustus 2025
 
 - ![ fixpictogram ](../../assets/fix.svg) **PHP 8.4** - Toegevoegde PHP 8.4 tests.<!-- MCLOUD-13311 -->
-- ![ ](../../assets/fix.svg) de uitbreiding van FTP 1} **- Toegevoegde moeilijke situatie voor de uitbreiding van FTP.**<!-- MCLOUD-13843 -->
+- ![ ](../../assets/fix.svg) de uitbreiding van FTP 1&rbrace; **- Toegevoegde moeilijke situatie voor de uitbreiding van FTP.**<!-- MCLOUD-13843 -->
 - ![ nieuw pictogram ](../../assets/new.svg) **Openssearch3 beeld** - Toegevoegde steun van Openssearch3.<!-- MCLOUD-13766 -->
 - ![ nieuw pictogram ](../../assets/new.svg) **tests Openssearch3** - Toegevoegde PHP 8.4 tests voor Openssearch3.<!-- MCLOUD-13768 -->
 - ![ nieuw pictogram ](../../assets/new.svg) **Valkey** - toegevoegde steun voor Valkey.<!-- MCLOUD-13558 -->
@@ -84,7 +84,7 @@ Releasedatum: 10 maart 2023
 - ![ nieuw pictogram ](../../assets/new.svg) **ionCube** - voegde de IonCube uitbreiding voor PHP 8.1 beeld toe.
 - ![ nieuw pictogram ](../../assets/new.svg) **Toegevoegde nieuwe de dienstversies** - OpenSearch 2.3 en 2.4, PHP 8.2, Varnish 7.1.1.
 - ![ nieuw pictogram ](../../assets/new.svg) **Verbeterde steun voor PHP 8.2** - Vaste verenigbaarheidskwesties met bepaalde PHP 8.2.x versies om Commerce 2.4.6 te steunen.
-- ![ ](../../assets/fix.svg) de kwestie-Vaste kwesties van de 2} componist van de moeilijke situatie **{** die na het bijwerken van de versie Composer binnen de containers van de Docker voorkwamen.
+- ![ ](../../assets/fix.svg) de kwestie-Vaste kwesties van de 2&rbrace; componist van de moeilijke situatie **&lbrace;** die na het bijwerken van de versie Composer binnen de containers van de Docker voorkwamen.
 
 ## v1.3.4
 

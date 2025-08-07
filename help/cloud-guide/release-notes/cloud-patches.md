@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Cloudpatches voor Commerce
 
-Het [ pakket van de Patches van de Wolk 1} verstrekt een reeks vereiste flarden die de integratie van alle versies van Adobe Commerce met de milieu&#39;s van de Wolk verbeteren en snelle levering van kritieke moeilijke situaties steunt.](https://github.com/magento/magento-cloud-patches)
+Het [ pakket van de Patches van de Wolk 1&rbrace; verstrekt een reeks vereiste flarden die de integratie van alle versies van Adobe Commerce met de milieu&#39;s van de Wolk verbeteren en snelle levering van kritieke moeilijke situaties steunt.](https://github.com/magento/magento-cloud-patches)
 
 Het pakket Cloud Patches voor Commerce is afhankelijk van het pakket ECE-Tools en wordt geïnstalleerd en bijgewerkt wanneer u het pakket ECE-Tools installeert of bijwerkt. U kunt Cloud Patches voor Commerce ook gebruiken en beheren als een zelfstandig pakket om patches toe te passen op een Adobe Commerce-project dat zich niet op het Cloud-platform bevindt. In deze releaseopmerkingen worden de meest recente verbeteringen aan dit pakket beschreven.
 
