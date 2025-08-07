@@ -2,32 +2,39 @@
 title: Cloud Components voor Commerce
 description: Zie een lijst met de meest recente verbeteringen in het pakket met Cloud Components.
 recommendations: noDisplay, catalog
+last-substantial-update: 2025-08-07T00:00:00Z
 exl-id: 34aec593-e2ea-4060-a6b9-6f4cb95a11c0
-source-git-commit: dcf71ffbdafae46e6a02735c090c33a8fe248bc6
+source-git-commit: b90959335c91dd0631d270ebb522524cf1db6ff0
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '653'
 ht-degree: 0%
 
 ---
 
 # Cloud Components voor Commerce
 
-Het [&#128279;](https://github.com/magento/magento-cloud-components) pakket van de Componenten van de Wolk  verstrekt uitgebreide de kernfunctionaliteit van Adobe Commerce voor plaatsen die op de infrastructuur van de Wolk worden opgesteld. Dit pakket is afhankelijk van het pakket ECE-Tools. Deze versienota&#39;s beschrijven de recentste verbeteringen aan dit pakket, dat een component van [ de Reeks van Hulpmiddelen van de Wolk voor Commerce ](cloud-tools-suite.md) is.
+Het [ pakket van de Componenten van de Wolk ](https://github.com/magento/magento-cloud-components) verstrekt uitgebreide de kernfunctionaliteit van Adobe Commerce voor plaatsen die op de infrastructuur van de Wolk worden opgesteld. Dit pakket is afhankelijk van het pakket ECE-Tools. Deze versienota&#39;s beschrijven de recentste verbeteringen aan dit pakket, dat een component van [ de Reeks van Hulpmiddelen van de Wolk voor Commerce ](cloud-tools-suite.md) is.
 
 Het pakket `magento/magento-cloud-components` gebruikt de volgende versiereeks: `<major>.<minor>.<patch>`
 
 De opmerkingen bij de release omvatten:
 
 - ![ nieuw pictogram ](../../assets/new.svg) Nieuwe eigenschappen
-- ![&#128279;](../../assets/fix.svg) Bevestigingspictogram van 0&rbrace; moeilijke situatie en verbeteringen
+- ![ Bevestigingspictogram van 0} moeilijke situatie en verbeteringen](../../assets/fix.svg)
 
 <!--Add release notes below-->
 
-## v1.1.2 {#latest}
+## v1.1.3 {#latest}
+
+Releasedatum: 7 augustus 2025
+
+- ![ nieuw pictogram ](../../assets/new.svg) **PHP 8.4** - Toegevoegde functionele test voor PHP 8.4 en moeilijke situaties.<!-- MCLOUD-13313 -->
+
+## v1.1.2
 
 Releasedatum: 3 juni 2025
 
-- &rbrack;(../../assets/fix.svg) **Verbeterde verenigbaarheid met 2.4.8** - Bijgewerkte derdebibliotheken voor betere verenigbaarheid met 2.4.8 <!-- MCLOUD-13707	 - -->!&lbrack;
+- ![ ](../../assets/fix.svg) Verbeterde verenigbaarheid met 2.4.8 **- Bijgewerkte derdebibliotheken voor betere verenigbaarheid met 2.4.8**<!-- MCLOUD-13707	 - -->
 
 ## v1.1.1
 
@@ -42,7 +49,7 @@ Releasedatum: 6 februari 2025
 Releasedatum: 7 oktober 2024
 
 - ![ fixpictogram ](../../assets/fix.svg) **Refactored code** - Verwijderde steun van oude PHP versies 7.4, 7.3, 7.2 en verwante bibliotheken.<!-- MCLOUD-9278 - -->
-- ![&#128279;](../../assets/fix.svg) **Bevestigingspictogram  Bevorderde versie Monolog** - Toegevoegde steun voor monolog 3.6.<!-- MCLOUD-12855 - -->
+- ![ ](../../assets/fix.svg) Bevestigingspictogram **Bevorderde versie Monolog** - Toegevoegde steun voor monolog 3.6.<!-- MCLOUD-12855 - -->
 
 ## v1.0.14
 
@@ -60,7 +67,7 @@ Releasedatum: 10 maart 2023
 
 Releasedatum: 13 september 2022
 
-- ![ herstellingspictogram ](../../assets/fix.svg) **Fouten op warmte** - Vaste een kwestie die aan [ warmte ](../environment/variables-post-deploy.md#warm_up_pages) probeerde toen de paginazichtbaarheid aan [**niet Zichtbaar individueel** ](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/data-transfer/data-attributes-product#simple-product-csv-file-structure) in Admin wordt geplaatst, resulterend in `ERROR: Warming up failed: <link to page>` fouten in het plaatsingslogboek.<!-- MCLOUD-9134 -->
+- ![ herstellingspictogram ](../../assets/fix.svg) **Fouten op warmte** - Vaste een kwestie die aan [ warmte ](../environment/variables-post-deploy.md#warm_up_pages) probeerde toen de paginazichtbaarheid aan [**niet Zichtbaar individueel** ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-attributes-product#simple-product-csv-file-structure) in Admin wordt geplaatst, resulterend in `ERROR: Warming up failed: <link to page>` fouten in het plaatsingslogboek.<!-- MCLOUD-9134 -->
 
 ## v1.0.11
 
