@@ -1,20 +1,20 @@
 ---
-source-git-commit: 7f2934af84c947046fed3a32c3b6e2937aed418a
+source-git-commit: 69b764a03e6c272498e57645dca40d29c4e79626
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '934'
 ht-degree: 0%
 
 ---
 # Gereedschappen
 
-**Versie**: 2002.2.5
+**Versie**: 2002.2.7
 
 Deze verwijzing bevat 34 opdrachten die beschikbaar zijn via het opdrachtregelprogramma van `ece-tools` .
 De eerste lijst wordt automatisch gegenereerd met de opdracht `ece-tools list` in Adobe Commerce op de cloud-infrastructuur.
 
 ## Algemeen
 
-Deze verwijzing wordt gegenereerd op basis van de toepassingscodebase. Om de inhoud te veranderen, _geef ons terugkoppelen_ (vind de verbinding bij het hogere recht). Voor bijdragerichtsnoeren, zie {de Bijdragen van de Code 0} [&#128279;](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
+Deze verwijzing wordt gegenereerd op basis van de toepassingscodebase. Om de inhoud te veranderen, _geef ons terugkoppelen_ (vind de verbinding bij het hogere recht). Voor bijdragerichtsnoeren, zie {de Bijdragen van de Code 0} [.](https://developer.adobe.com/commerce/contributor/guides/code-contributions/)
 
 ### Algemene opties
 
@@ -25,9 +25,16 @@ Help weergeven voor de opgegeven opdracht. Wanneer geen bevel vertoningshulp voo
 - Standaard: `false`
 - Accepteert geen waarde
 
-#### `--quiet`, `-q`
+#### `--silent`
 
 Geen bericht uitvoeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+#### `--quiet`, `-q`
+
+Alleen fouten worden weergegeven. Alle andere uitvoer wordt onderdrukt
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -56,7 +63,6 @@ ANSI-uitvoer forceren (of uitschakelen —no-ansi)
 
 De optie &quot;—ansi&quot; negeren
 
-- Standaard: `false`
 - Accepteert geen waarde
 
 #### `--no-interaction`, `-n`
@@ -401,7 +407,7 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 ece-tools backup:restore [-f|--force] [--file [FILE]]
 ```
 
-Belangrijke configuratiebestanden herstellen. Back-up uitvoeren:lijst met reservekopieën weergeven.
+Belangrijke configuratiebestanden herstellen. De steun van de looppas :list om de lijst van reservedossiers te tonen.
 
 ### Opties
 
