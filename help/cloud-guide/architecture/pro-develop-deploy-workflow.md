@@ -3,9 +3,9 @@ title: Workflow voor Pro-projecten
 description: Leer hoe u de workflows voor ontwikkeling en implementatie van Pro gebruikt.
 feature: Cloud, Iaas, Paas
 exl-id: efe41991-8940-4d5c-a720-80369274bee3
-source-git-commit: b4905acf71e4cb71eb369cb6d4bb3abe9ada4e9d
+source-git-commit: 8aacac9ae721bc98cbe29e67ddf23d784e478e55
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '835'
 ht-degree: 0%
 
 ---
@@ -20,11 +20,20 @@ Het Pro-project bevat één Git-opslagplaats met een globale `master` vertakking
 
 ![ Pro milieulijst ](../../assets/pro-environments.png)
 
-Dit zijn `read-only` omgevingen die geïmplementeerde codewijzigingen accepteren vanuit vertakkingen die vanuit uw lokale werkruimte worden gepresenteerd. Zie [ Pro architectuur ](pro-architecture.md) voor een volledig overzicht van de Pro milieu&#39;s. Zie [[!DNL Cloud Console]](../project/overview.md#cloud-console) voor een overzicht van de lijst met Pro-omgevingen in de projectweergave.
+Dit zijn `read-only` omgevingen die geïmplementeerde codewijzigingen accepteren die alleen vanuit uw lokale werkruimte worden doorgegeven.
 
 In de volgende afbeelding ziet u hoe de workflow voor het ontwikkelen en implementeren van Pro is gebaseerd op een eenvoudige, vertakkende aanpak. U [ ontwikkelt ](#development-workflow) code gebruikend een actieve tak die op het `integration` milieu wordt gebaseerd, _duwend_ en _trekken_ codeveranderingen aan en van uw verre, Actieve tak. U stelt geverifieerde code door _samen te voegen_ de verre tak aan de basistak op, die een geautomatiseerd [ bouwt en ](#deployment-workflow) proces voor dat milieu opstelt.
 
 ![ mening op hoog niveau van het Pro werkschema van de architectuurontwikkeling ](../../assets/pro-dev-workflow.png)
+
+Omdat de omgeving alleen-lezen is, kunt u geen wijzigingen in de code rechtstreeks in de Cloud-omgeving doorvoeren. Als u `composer install` probeert uit te voeren om modules te installeren, wordt een fout gegenereerd, bijvoorbeeld:
+
+```bash
+file_put_contents(...): Failed to open stream: Read-only file system  
+The disk hosting /app/<cluster_ID> is full
+```
+
+Voor meer informatie, zie [ Pro architectuur ](pro-architecture.md) voor een overzicht van Pro milieu&#39;s, en zie [[!DNL Cloud Console]](../project/overview.md#cloud-console) voor een overzicht van de Pro milieu&#39;s lijst in de projectweergave.
 
 ## Ontwikkelingsworkflow
 
@@ -50,7 +59,7 @@ Met een ontwikkelde codevertakking en de overeenkomstige configuratiedossiers, z
 
 - **Genererend configuratiebeheersdossiers** - sommige configuratiemontages zijn _slechts Lees_ in een opgesteld milieu.
 
-- **Vormend uw opslag** - u zou alle opslagmontages volledig moeten vormen gebruikend het integratiemilieu. U kunt **Admin URL van de Opslag** op de _integratie_ milieumening in _[!DNL Cloud Console]_&#x200B;vinden.
+- **Vormend uw opslag** - u zou alle opslagmontages volledig moeten vormen gebruikend het integratiemilieu. U kunt **Admin URL van de Opslag** op de _integratie_ milieumening in _[!DNL Cloud Console]_vinden.
 
 ## Implementatieworkflow
 
@@ -105,4 +114,4 @@ Na grondig het testen in het opvoeren milieu, fusie aan het productiemilieu en g
 
 Duw altijd een exemplaar van de productiecode aan Globaal `master` voor het geval er een opkomende behoefte is om het productiemilieu te zuiveren zonder de diensten te onderbreken.
 
-Maak **&#x200B;**&#x200B;geen tak van Globaal `master`. Gebruik de `integration` -vertakking om nieuwe, actieve vertakkingen te maken voor ontwikkeling en oplossingen.
+Maak **** geen tak van Globaal `master`. Gebruik de `integration` -vertakking om nieuwe, actieve vertakkingen te maken voor ontwikkeling en oplossingen.
