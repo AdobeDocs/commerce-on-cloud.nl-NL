@@ -3,7 +3,7 @@ title: Aan de slag met aangepaste VCL-fragmenten
 description: Leer over het gebruiken van de codefragmenten van de Taal van de Controle van de Varnish om de Fastly de dienstconfiguratie voor Adobe Commerce aan te passen.
 feature: Cloud, Configuration, Services
 exl-id: 90f0bea6-4365-4657-94e9-92a0fd1145fd
-source-git-commit: 71fb8f5b3f32553d8b247de44fea29b1bb945584
+source-git-commit: a51946f65ccd606cde6fbb4278f625a49ae42dad
 workflow-type: tm+mt
 source-wordcount: '2037'
 ht-degree: 0%
@@ -45,7 +45,7 @@ De woordenboeken en ACL gegevens worden opgesteld aan de Fastly Edge knopen die 
 Deze zelfstudie en voorbeelden demonstreren het gebruik van gewone aangepaste VCL-fragmenten met Edge-woordenboeken en Edge ACL&#39;s om de Fastly-serviceconfiguratie voor Adobe Commerce aan te passen. Raadpleeg de documentatie bij Snelheid voor meer informatie:
 
 - [ Gids om snel VCL ](https://docs.fastly.com/guides/vcl/guide-to-vcl) - Informatie over de Fastly Varnish implementatie, de Snelle uitbreidingen van VCL, en middelen voor het leren van meer over Varnish en VCL.
-- [ VCL verwijzing 1&rbrace; - Gedetailleerde programmeringsverwijzing snel om douaneVCL en de fragmenten van douaneVCL te ontwikkelen en problemen op te lossen.](https://docs.fastly.com/guides/vcl/)
+- [ VCL verwijzing 1} - Gedetailleerde programmeringsverwijzing snel om douaneVCL en de fragmenten van douaneVCL te ontwikkelen en problemen op te lossen.](https://docs.fastly.com/guides/vcl/)
 
 U kunt aangepaste VCL-fragmenten maken en beheren via Adobe Commerce Admin of met de snelheids-API:
 
@@ -88,7 +88,7 @@ De volgende lijst verstrekt details over zeer belangrijke gegevens voor de fragm
 | `content` | Het fragment van VCL-code dat moet worden uitgevoerd. Snelheid biedt geen ondersteuning voor alle VCL-taalfuncties. Bovendien beschikt Fastly over aangepaste functionaliteit voor extensies. Voor details over gesteunde eigenschappen, zie de [ VCL programmeringsverwijzing van de Snelle VCL ](https://docs.fastly.com/vcl/reference/). |
 | `dynamic` | Dynamische status van een fragment. Keert `false` voor [ regelmatige fragmenten ](https://docs.fastly.com/en/guides/about-vcl-snippets) inbegrepen in versioned VCL voor de Snelle de dienstconfiguratie terug. Keert `true` voor a [ dynamisch fragment ](https://docs.fastly.com/vcl/vcl-snippets/using-dynamic-vcl-snippets/) terug dat kan worden gewijzigd en worden opgesteld zonder een nieuwe versie te vereisen VCL. |
 | `number` | VCL-versienummer waar het fragment wordt opgenomen. Gebruikt snel *Bewerkbare Versie #* in hun voorbeeldwaarden. Als u aangepaste fragmenten uit de API toevoegt, neemt u het versienummer op in de API-aanvraag. Als u aangepaste VCL toevoegt via de beheerfunctie, is de versie beschikbaar voor u. |
-| `priority` | Numerieke waarde van `1` tot `100` die opgeeft wanneer de aangepaste VCL-fragmentcode wordt uitgevoerd. Fragmenten met lagere prioriteitswaarden worden eerst uitgevoerd. Als deze waarde niet wordt opgegeven, wordt de standaardwaarde `100` gebruikt.`priority`<p>Elk aangepast VCL-fragment met een prioriteitswaarde van `5` wordt direct uitgevoerd. Dit is het meest geschikt voor VCL-code die aanvraag routering implementeert (blok en lijsten van gewenste personen en omleidingen). Prioriteit `100` is het meest geschikt voor het overschrijven van standaard VCL-fragmentcode.<p>Alle [ standaardVCL fragmenten ](fastly-configuration.md#upload-vcl-snippets) inbegrepen in de Magento-Fastly module hebben `priority=50`.<ul><li>Wijs een hoge prioriteit toe zoals `100` om aangepaste VCL-code na alle andere VCL-functies uit te voeren en de standaard VCL-code te overschrijven.</li></ul> |
+| `priority` | Numerieke waarde van `1` tot `100` die opgeeft wanneer de aangepaste VCL-fragmentcode wordt uitgevoerd. Fragmenten met lagere prioriteitswaarden worden eerst uitgevoerd. Als deze waarde niet wordt opgegeven, wordt de standaardwaarde `priority` gebruikt.`100`<p>Elk aangepast VCL-fragment met een prioriteitswaarde van `5` wordt direct uitgevoerd. Dit is het meest geschikt voor VCL-code die aanvraag routering implementeert (blok en lijsten van gewenste personen en omleidingen). Prioriteit `100` is het meest geschikt voor het overschrijven van standaard VCL-fragmentcode.<p>Alle [ standaardVCL fragmenten ](fastly-configuration.md#upload-vcl-snippets) inbegrepen in de Magento-Fastly module hebben `priority=50`.<ul><li>Wijs een hoge prioriteit toe zoals `100` om aangepaste VCL-code na alle andere VCL-functies uit te voeren en de standaard VCL-code te overschrijven.</li></ul> |
 | `service_id` | De snelste service-id voor een specifieke omgeving voor Staging of Productie. Deze identiteitskaart wordt toegewezen wanneer uw project aan Adobe Commerce op de de dienstrekening van de wolkeninfrastructuur [ wordt toegevoegd Fastly ](fastly.md#fastly-service-account-and-credentials). |
 | `type` | Geeft de locatie op voor het invoegen van het gegenereerde fragment, zoals `init` (boven subroutines) en `recv` (binnen subroutines). Voor details, zie de Snelle [ VCL fragmenten ](https://docs.fastly.com/api/config#api-section-snippet) verwijzing. |
 
@@ -108,6 +108,20 @@ De volgende voorbeelden laten zien hoe u aangepaste VCL-fragmenten maakt en behe
 - [Aangepaste VCL voor IP-lijst van gewenste personen](fastly-vcl-allowlist.md)
 - [Aangepaste VCL voor IP-lijst van gewezen personen](fastly-vcl-blocking.md)
 - [Snelcache omzeilen](fastly-vcl-bypass-to-origin.md)
+
+## Fragmenten die niet kunnen worden weergegeven of gewijzigd in Commerce Admin
+
+Sommige fragmenten kunt u niet rechtstreeks in Commerce Admin weergeven of wijzigen. Bijvoorbeeld, [ dynamische fragmenten ](https://docs.fastly.com/en/guides/using-dynamic-vcl-snippets). In de sectie van de Fragmenten van de Douane VCL, zult u geen fragmenten zien die door het team van de Steun van de Wolk direct aan het [ Fastly beheersdashboard ](fastly.md#fastly-service-account-and-credentials) werden toegevoegd.
+
+
+**om de fragmenten waar te nemen die door het team van de Steun van de Wolk worden toegevoegd:**
+
+1. Ga naar de **sectie van Hulpmiddelen**.
+
+1. Klik **Lijst alle versies** naast _de Geschiedenis van de Versie_.
+
+1. Klik het oogpictogram naast de toepasselijke Versie van VCL om de bestaande fragmenten te bekijken.
+
 
 ## VCL beheren met de API
 
@@ -270,6 +284,7 @@ Nadat u een aangepast VCL-fragment hebt toegevoegd, wordt het fragment snel inge
    curl -H "Fastly-Key: $FASTLY_API_TOKEN" https://api.fastly.com/service/$FASTLY_SERVICE_ID/version/$FASTLY_EDIT_VERSION/activate -X PUT
    ```
 
+
 ## Snelle API-referentie voor VCL-fragmenten
 
 In deze API-aanvraagvoorbeelden worden geëxporteerde omgevingsvariabelen gebruikt om de referenties te leveren die u snel wilt verifiëren. Voor details op deze bevelen, zie [ Snelle API verwijzing ](https://docs.fastly.com/api/config#vcl).
@@ -317,16 +332,3 @@ In deze API-aanvraagvoorbeelden worden geëxporteerde omgevingsvariabelen gebrui
 - **Overschrijf waarden in het [ gebrek VCL code ](https://github.com/fastly/fastly-magento2/tree/master/etc/vcl_snippets)**
 
   Maak een fragment met bijgewerkte waarden en wijs een prioriteit van `100` toe.
-
-## Fragmenten die niet kunnen worden weergegeven of gewijzigd in Commerce Admin
-
-Sommige fragmenten kunt u niet rechtstreeks in Commerce Admin weergeven of wijzigen. Bijvoorbeeld, [ dynamische fragmenten ](https://docs.fastly.com/en/guides/using-dynamic-vcl-snippets). In de sectie van de Fragmenten van de Douane VCL, zult u geen fragmenten zien die door het team van de Steun van de Wolk direct aan het [ Fastly beheersdashboard ](fastly.md#fastly-service-account-and-credentials) werden toegevoegd.
-
-
-**om de fragmenten waar te nemen die door het team van de Steun van de Wolk worden toegevoegd:**
-
-1. Ga naar de **sectie van Hulpmiddelen**.
-
-1. Klik **Lijst alle versies** naast _de Geschiedenis van de Versie_.
-
-1. Klik het oogpictogram naast de toepasselijke Versie van VCL om de bestaande fragmenten te bekijken.
