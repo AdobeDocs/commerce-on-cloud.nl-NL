@@ -2,7 +2,8 @@
 title: Blokverwijzingsspam
 description: Blokkeer de verwijzingspamme van uw site met behulp van het Fastly Edge-woordenboek en een aangepast VCL-fragment.
 feature: Cloud, Configuration, Security
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 4ed47a71-7fee-4f37-a7da-3e30052004df
+source-git-commit: d08ef7d46e3b94ae54ee99aa63de1b267f4e94a0
 workflow-type: tm+mt
 source-wordcount: '684'
 ht-degree: 0%
@@ -79,7 +80,7 @@ Voordat u een op dit voorbeeld gebaseerd fragment maakt, controleert u de waarde
 
 - `dynamic` — Waarde 0 wijst op a [ regelmatig fragment ](https://docs.fastly.com/en/guides/using-regular-vcl-snippets) om aan versioned VCL voor de Snelle configuratie te uploaden.
 
-- `priority` — Hiermee bepaalt u wanneer het VCL-fragment wordt uitgevoerd. De prioriteit is `5` om deze fragmentcode in werking te stellen alvorens om het even welk standaard Magento VCL fragmenten (`magentomodule_*`) toegewezen een prioriteit van 50. Stel de prioriteit voor elk aangepast fragment in op een waarde hoger of lager dan 50, afhankelijk van het tijdstip waarop het fragment moet worden uitgevoerd. Fragmenten met een lagere prioriteit worden eerst uitgevoerd.
+- `priority` — Hiermee bepaalt u wanneer het VCL-fragment wordt uitgevoerd. De prioriteit is `5` om deze fragmentcode in werking te stellen alvorens om het even welke standaardMagento VCL fragmenten (`magentomodule_*`) toegewezen een prioriteit van 50. Stel de prioriteit voor elk aangepast fragment in op een waarde hoger of lager dan 50, afhankelijk van het tijdstip waarop het fragment moet worden uitgevoerd. Fragmenten met een lagere prioriteit worden eerst uitgevoerd.
 
 - `type` — Geeft een locatie op waar het fragment moet worden ingevoegd in de VCL-versie. In dit voorbeeld is het VCL-fragment een `recv` -fragment. Wanneer het fragment in de VCL-versie wordt ingevoegd, wordt het toegevoegd aan de `vcl_recv` -subroutine, onder de standaard VCL-code snel en boven alle objecten.
 
@@ -135,3 +136,5 @@ Hiermee valideert u de bijgewerkte VCL-versie snel tijdens het uploadproces. Als
 {{$include /help/_includes/vcl-snippet-modify.md}}
 
 {{$include /help/_includes/vcl-snippet-delete.md}}
+
+<!-- Last updated from includes: 2025-01-27 17:16:28 -->

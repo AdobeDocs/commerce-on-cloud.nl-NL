@@ -3,7 +3,7 @@ title: PHP-instellingen
 description: Meer informatie over de optimale PHP-instellingen voor de configuratie van Commerce-toepassingen in de cloudinfrastructuur.
 feature: Cloud, Configuration, Extensions
 exl-id: 83094c16-7407-41fa-ba1c-46b206aa160d
-source-git-commit: 1725741cfab62a2791fe95cfae9ed9dffa352339
+source-git-commit: d08ef7d46e3b94ae54ee99aa63de1b267f4e94a0
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # PHP-instellingen
 
-U kunt kiezen welke [ versie van PHP ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=nl-NL) in uw `.magento.app.yaml` dossier in werking te stellen:
+U kunt kiezen welke [ versie van PHP ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in uw `.magento.app.yaml` dossier in werking te stellen:
 
 ```yaml
 name: mymagento
@@ -63,7 +63,7 @@ Met deze instellingen kunnen PHP-processen paden naar bestanden in cache plaatse
 
 >[!NOTE]
 >
->Voor een lijst van geadviseerde PHP configuratiemontages, zie [ Vereiste PHP montages ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/php-settings.html?lang=nl-NL) in de _gids van de Installatie_.
+>Voor een lijst van geadviseerde PHP configuratiemontages, zie [ Vereiste PHP montages ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/php-settings.html) in de _gids van de Installatie_.
 
 ### Aangepaste PHP-instellingen controleren
 
@@ -81,7 +81,7 @@ register_argc_argv => On => On
 
 >[!WARNING]
 >
->Als u het Dok van de Wolk voor Commerce voor lokale ontwikkeling gebruikt, zie {de dienstcontainers van 0} Docker [&#128279;](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#fpm-container) voor informatie over het gebruiken van een douane `php.ini` dossier in een milieu van het Dok.
+>Als u het Dok van de Wolk voor Commerce voor lokale ontwikkeling gebruikt, zie {de dienstcontainers van 0} Docker [ voor informatie over het gebruiken van een douane ](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#fpm-container) dossier in een milieu van het Dok.`php.ini`
 
 ## Extensies inschakelen
 
@@ -118,7 +118,7 @@ In de volgende tabel worden de ondersteunde PHP-extensies weergegeven wanneer Ad
 
 {{$include /help/_includes/templated/php-extensions-cloud.md}}
 
-PHP module requirements is linked to the Adobe Commerce version. Zie [ PHP vereisten ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/php-settings.html?lang=nl-NL).
+PHP module requirements is linked to the Adobe Commerce version. Zie [ PHP vereisten ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/php-settings.html).
 
 ### Ondersteuning voor extensies
 
@@ -136,8 +136,10 @@ sourceguardian.restrict_unencoded = "1"
 
 Zie [ sectie 3.5 van de documentatie SourceGuardian ](https://sourceguardian.com/demofiles/files/SourceGuardian%20for%20Linux%20User%20Manual.pdf). _dit is een verbinding aan een PDF_.
 
-[ leg een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voor hulp met het installeren van deze PHP uitbreidingen in alle milieu&#39;s van de Productie en Pro het Staging milieu&#39;s voor. Neem het bijgewerkte `.magento/services.yaml` -bestand, `.magento.app.yaml` -bestand op met de bijgewerkte PHP-versie en eventuele extra PHP-extensies. Voor wijzigingen in een live productieomgeving moet u een minimale opzegtermijn van 48 uur opgeven. Het kan tot 48 uur duren voordat het infrastructuurteam van de cloud uw project kan bijwerken.
+[ leg een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voor hulp met het installeren van deze PHP uitbreidingen in alle milieu&#39;s van de Productie en Pro het Staging milieu&#39;s voor. Neem het bijgewerkte `.magento/services.yaml` -bestand, `.magento.app.yaml` -bestand op met de bijgewerkte PHP-versie en eventuele extra PHP-extensies. Voor wijzigingen in een live productieomgeving moet u een minimale opzegtermijn van 48 uur opgeven. Het kan tot 48 uur duren voordat het infrastructuurteam van de cloud uw project kan bijwerken.
 
 >[!WARNING]
 >
 >PHP die is gecompileerd met foutopsporing, wordt niet ondersteund en de sonde kan conflicteren met [!DNL XDebug] of [!DNL XHProf] . Schakel die extensies uit wanneer u de sonde inschakelt. De sonde veroorzaakt een conflict met sommige PHP-extensies zoals [!DNL Pinba] of IonCube.
+
+<!-- Last updated from includes: 2025-04-14 09:39:27 -->

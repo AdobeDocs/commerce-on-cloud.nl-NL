@@ -2,7 +2,8 @@
 title: Aangepaste VCL voor het toestaan van aanvragen
 description: De inkomende verzoeken van de filter en verleent toegang door IP adres voor de plaatsen van Adobe Commerce door met een Fastly Edge ACL lijst en een douaneVCL fragment.
 feature: Cloud, Configuration, Security
-source-git-commit: 0d9d3d64cd0ad4792824992af354653f61e4388d
+exl-id: 836779b5-5029-4a21-ad77-0c82ebbbcdd5
+source-git-commit: d08ef7d46e3b94ae54ee99aa63de1b267f4e94a0
 workflow-type: tm+mt
 source-wordcount: '848'
 ht-degree: 0%
@@ -74,11 +75,11 @@ De volgende aangepaste VCL-fragmentcode (JSON-indeling) toont de logica voor het
 }
 ```
 
-Alvorens [ creërend een douanefragment ](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html?lang=nl-NL#add-the-custom-vcl-snippet) van dit voorbeeld, herzie de waarden om te bepalen of u om het even welke veranderingen moet aanbrengen. Voer vervolgens elke waarde in de desbetreffende velden, zoals `type` in het veld Type `content` in het veld Inhoud.
+Alvorens [ creërend een douanefragment ](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html#add-the-custom-vcl-snippet) van dit voorbeeld, herzie de waarden om te bepalen of u om het even welke veranderingen moet aanbrengen. Voer vervolgens elke waarde in de desbetreffende velden, zoals `type` in het veld Type `content` in het veld Inhoud.
 
 - `name` — Naam voor het VCL-fragment. Voor dit voorbeeld, `allowlist`.
 
-- `priority` — Hiermee bepaalt u wanneer het VCL-fragment wordt uitgevoerd. De prioriteit is `5` om onmiddellijk in werking te stellen en te controleren of een Admin- verzoeken uit een toegestaan IP adres komen. Het fragment loopt vóór om het even welk standaard Magento VCL fragmenten (`magentomodule_*`) toegewezen een prioriteit van 50. Stel de prioriteit voor elk aangepast fragment in op een waarde hoger of lager dan 50, afhankelijk van het tijdstip waarop het fragment moet worden uitgevoerd. Fragmenten met een lagere prioriteit worden eerst uitgevoerd.
+- `priority` — Hiermee bepaalt u wanneer het VCL-fragment wordt uitgevoerd. De prioriteit is `5` om onmiddellijk in werking te stellen en te controleren of een Admin- verzoeken uit een toegestaan IP adres komen. Het fragment loopt vóór om het even welke standaardMagento VCL fragmenten (`magentomodule_*`) toegewezen een prioriteit van 50. Stel de prioriteit voor elk aangepast fragment in op een waarde hoger of lager dan 50, afhankelijk van het tijdstip waarop het fragment moet worden uitgevoerd. Fragmenten met een lagere prioriteit worden eerst uitgevoerd.
 
 - `type` — Geeft een locatie op waar het fragment moet worden ingevoegd in de versioned VCL-code. Dit VCL is een `recv` fragmenttype dat de fragmentcode toevoegt aan de `vcl_recv` -subroutine onder de standaard VCL-code (Fastly VCL) en boven objecten.
 
@@ -129,3 +130,5 @@ Hiermee wordt de bijgewerkte versie van de VCL-code snel gevalideerd tijdens het
 {{$include /help/_includes/vcl-snippet-modify.md}}
 
 {{$include /help/_includes/vcl-snippet-delete.md}}
+
+<!-- Last updated from includes: 2025-01-27 17:16:28 -->

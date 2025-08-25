@@ -2,7 +2,8 @@
 title: Aangepaste VCL voor het blokkeren van aanvragen
 description: Blok inkomende verzoeken door IP adres gebruikend een lijst van het Toegangsbeheer van Edge (ACL) met een fragment van douaneVCL.
 feature: Cloud, Configuration, Security
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: eb21c166-21ae-4404-85d9-c3a26137f82c
+source-git-commit: d08ef7d46e3b94ae54ee99aa63de1b267f4e94a0
 workflow-type: tm+mt
 source-wordcount: '996'
 ht-degree: 0%
@@ -58,7 +59,7 @@ Voordat u een op dit voorbeeld gebaseerd fragment maakt, controleert u de waarde
 
 - `name`: naam voor het VCL-fragment. In dit voorbeeld hebben we de naam `blocklist` gebruikt.
 
-- `priority`: hiermee wordt bepaald wanneer het VCL-fragment wordt uitgevoerd. De prioriteit is `5` om onmiddellijk in werking te stellen en te controleren of een Admin- verzoek uit een toegestaan IP adres komt. Het fragment loopt vóór om het even welk standaard Magento VCL fragmenten (`magentomodule_*`) toegewezen een prioriteit van 50. Stel de prioriteit voor elk aangepast fragment in op een waarde hoger of lager dan 50, afhankelijk van het tijdstip waarop het fragment moet worden uitgevoerd. Fragmenten met een lagere prioriteit worden eerst uitgevoerd.
+- `priority`: hiermee wordt bepaald wanneer het VCL-fragment wordt uitgevoerd. De prioriteit is `5` om onmiddellijk in werking te stellen en te controleren of een Admin- verzoek uit een toegestaan IP adres komt. Het fragment loopt vóór om het even welke standaardMagento VCL fragmenten (`magentomodule_*`) toegewezen een prioriteit van 50. Stel de prioriteit voor elk aangepast fragment in op een waarde hoger of lager dan 50, afhankelijk van het tijdstip waarop het fragment moet worden uitgevoerd. Fragmenten met een lagere prioriteit worden eerst uitgevoerd.
 
 - `type` - Geeft het type VCL-fragment op dat de locatie van het fragment in de gegenereerde VCL-code bepaalt. In dit voorbeeld gebruiken we `recv` , dat de VCL-code in de `vcl_recv` -subroutine invoegt, onder de vaste plaat VCL en boven alle objecten. Zie de [ Snelle VCL fragmentverwijzing ](https://docs.fastly.com/api/config#api-section-snippet) voor de lijst van fragmenttypes.
 
@@ -136,7 +137,7 @@ In dit voorbeeld wordt de ISO 3166-1-landcode van twee tekens gebruikt voor het 
 
 >[!NOTE]
 >
->In plaats van het gebruiken van een fragment van douaneVCL, kunt u de Snelle [&#128279;](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BLOCKING.md) eigenschap van het Blokkeren  in Adobe Commerce op beheerder van de wolkeninfrastructuur gebruiken om het blokkeren door landcode of een lijst van landcodes te vormen.
+>In plaats van het gebruiken van een fragment van douaneVCL, kunt u de Snelle [ eigenschap van het Blokkeren ](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BLOCKING.md) in Adobe Commerce op beheerder van de wolkeninfrastructuur gebruiken om het blokkeren door landcode of een lijst van landcodes te vormen.
 
 ### Voorbeeld van VCL-code: Blok door aanvraagheader van HTTP-gebruikersagent
 
@@ -155,3 +156,5 @@ In dit voorbeeld wordt de ISO 3166-1-landcode van twee tekens gebruikt voor het 
 {{$include /help/_includes/vcl-snippet-modify.md}}
 
 {{$include /help/_includes/vcl-snippet-delete.md}}
+
+<!-- Last updated from includes: 2025-01-27 17:16:28 -->

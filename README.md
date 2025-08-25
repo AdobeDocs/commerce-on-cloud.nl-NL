@@ -1,52 +1,133 @@
 ---
-source-git-commit: 0d9d3d64cd0ad4792824992af354653f61e4388d
+source-git-commit: d08ef7d46e3b94ae54ee99aa63de1b267f4e94a0
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 0%
+source-wordcount: '685'
+ht-degree: 1%
 
 ---
 # Adobe Commerce on Cloud Infrastructure
 
 Deze site bevat de meest recente ontwikkelaarsdocumentatie voor Commerce on Cloud Infrastructure.
 
-- [ Commerce op de Gids van de Infrastructuur van de Wolk ](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/overview.html?lang=nl-NL)
-- [ krijgen Begonnen met Commerce ](https://experienceleague.adobe.com/docs/commerce-on-cloud/start/overview.html?lang=nl-NL) op de infrastructuur van de Wolk
+- [ Commerce op de Gids van de Infrastructuur van de Wolk ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
+- [ krijgen Begonnen met Commerce ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/overview) op de infrastructuur van de Wolk
 
-## Adobe Open gedragscode van Source
+## Adobe Open Source-gedragscode
 
-Dit project heeft de [ Adobe Open Code van Source van Gedrag ](code-of-conduct.md) of de [ .NET Code van de Stichting van Gedrag ](https://dotnetfoundation.org/about/policies/code-of-conduct) goedgekeurd.
-Zie [ bijdragend ](contributing.md) artikel.
+Dit project heeft de [ Adobe Open Code van Source van Gedrag ](code-of-conduct.md) goedgekeurd. Zie het artikel [Bijdragen](contributing.md) voor meer informatie.
+
+## Over je bijdragen aan Adobe-inhoud
+
+Zie de [ Gids van de Medewerker van de Docent van Adobe ](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction).
+
+Hoe u een bijdrage levert, hangt af van wie u bent en van het soort wijzigingen dat u wilt bijdragen:
 
 ### Kleine wijzigingen
 
-Als u minder belangrijke updates bijdraagt, open het artikel en klik **uitgeven** verbinding, die u aan de bron GitHub voor het artikel neemt. Gebruik GitHub UI om uw updates te maken. Zie de algemene [ de bijdragegids van Docs van de Adobe ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=nl-NL).
+Als u minder belangrijke updates bijdraagt, bezoek het artikel en klik het terugkoppelen gebied dat bij de bodem van het artikel verschijnt, klik **Gedetailleerde terugkoppelt opties**, en klik dan **Voorstellen en** uitgeven om naar het prijsonderdrukkingsbrondossier op GitHub te gaan. Gebruik GitHub UI om uw updates te maken.
 
-Kleine correcties of verduidelijkingen die u ter documentatie en codevoorbeelden in dit antwoord aanbrengt, vallen onder de gebruiksvoorwaarden van de Adobe.
+Kleine correcties of verduidelijkingen die u ter documentatie en codevoorbeelden in dit antwoord aanbrengt, worden behandeld in de gebruiksvoorwaarden van Adobe.
 
 ### Belangrijke wijzigingen of nieuwe artikelen van leden van de gemeenschap
 
-Als u deel uitmaakt van de gemeenschap van de Adobe en u een artikel wilt creëren of belangrijke veranderingen voorleggen, voorlegt een kwestie op het lusje van Kwesties om een gesprek met het documentatieteam te beginnen. Zodra u met een regeling hebt ingestemd, werk met een werknemer om de inhoud te bouwen en te plaatsen.
+Als u deel uitmaakt van de Adobe-community en u een nieuw artikel wilt maken of belangrijke wijzigingen wilt indienen, gebruikt u het tabblad Issues in de Git-opslagplaats om een uitgave in te dienen die een gesprek met het documentatieteam kan beginnen. Als u eenmaal akkoord bent gegaan met een abonnement, moet u samenwerken met een medewerker om die nieuwe inhoud mee te brengen via een combinatie van werk in de openbare en particuliere opslagruimten.
 
-### Belangrijke wijzigingen van Adobe werknemers
+### Belangrijke wijzigingen van werknemers van Adobe
 
-Als u een technisch schrijver, programmamanager, of ontwikkelaar van een team van het product van de Adobe bent, en het uw baan is om aan technische artikelen bij te dragen of te ontwerpen, gebruik de privé bewaarplaats bij `https://git.corp.adobe.com/AdobeDocs`.
+Als u een technisch schrijver, programmamanager, of ontwikkelaar van het productteam voor een oplossing van Adobe Experience Cloud bent en het uw baan is om tot technische artikelen bij te dragen of te schrijven, zou u de privé bewaarplaats bij `https://git.corp.adobe.com/AdobeDocs` moeten gebruiken.
 
 ## Gereedschappen en instellen
 
 Communautaire contribuanten kunnen GitHub UI voor basishet uitgeven of vork gebruiken het repo om belangrijke bijdragen te leveren.
 
-Zie de [ Gids van de Medewerker van Docs van de Adobe ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=nl-NL) voor details.
+Zie de [ Gids van de Medewerker van de Docent van Adobe ](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction) voor details.
 
-## Markering
+## Hoe te om prijsdaling te gebruiken om uw onderwerp te formatteren
 
 Alle artikelen in deze repository gebruiken GitHub gearomatiseerde prijsopgave. Als u niet vertrouwd bent met markering, zie:
 
 - [ Grondbeginselen van de Prijsverlaging ](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
-- [ Afdrukbare prijsdaling ](https://docs.github.com/en/get-started/quickstart/git-cheatsheet)
+- [ Afdrukbare prijsdaling ](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
-## Labels
+## Sjablonen
 
-In de openbare bewaarplaats, worden de geautomatiseerde etiketten toegewezen om verzoeken te trekken om ons te helpen de werkschema van het trekkingsverzoek beheren en u te helpen over de status van uw trekpleverzoek informeren:
+Voor sommige onderwerpen, gebruiken wij gegevensdossiers en malplaatjes om gepubliceerde inhoud te produceren. De gevallen van het gebruik voor deze benadering omvatten:
 
-- **Verandering die naar auteur** wordt verzonden: De auteur is op de hoogte gebracht van het hangende trekkingsverzoek.
-- **klaar-aan-samenvoegen**: Klaar voor overzicht door het team van de het overzicht van het trekkingsverzoek.
+- Grote sets met programmatisch gegenereerde inhoud publiceren
+- Het verstrekken van één enkele bron van waarheid voor klanten over veelvoudige systemen die machine-leesbare dossierformaten, zoals YAML, voor integratie vereisen (b.v., de hulpmiddelen van de wolk CLI, de dienstconfiguraties)
+
+Voorbeelden van sjablooninhoud zijn onder andere:
+
+- [Cloud CLI-verwijzing](help/templated/cloud-cli-ref.md)
+- [Cloud-pakketten](help/templated/cloud-packages.md)
+- [Referentie ECE-gereedschappen](help/templated/ece-tools.md)
+- [PHP-extensies voor cloud](help/templated/php-extensions-cloud.md)
+
+### Sjablooninhoud genereren
+
+In het algemeen, moeten de meeste schrijvers slechts een versieversie aan de de productbeschikbaarheid en lijsten van de systeemvereisten toevoegen. Het onderhoud voor alle andere sjablooninhoud wordt automatisch of beheerd door een toegewezen teamlid. Deze instructies zijn bedoeld voor de meeste schrijvers.
+
+>**NOTA:**
+>
+>- Voor het genereren van gesjabloonde inhoud moet u op de opdrachtregel in een terminal werken.
+>- Ruby moet zijn geïnstalleerd om het renderscript uit te voeren. Zie [_jekyll/.ruby-version ](_jekyll/.ruby-version) voor de vereiste versie.
+
+Zie het volgende voor een beschrijving van de bestandsstructuur voor sjablooninhoud:
+
+- `_jekyll`—Bevat sjablonen voor onderwerpen en vereiste elementen
+- `_jekyll/_data`—Bevat de machineleesbare bestandsindelingen die worden gebruikt om sjablonen te renderen
+- `_jekyll/templated`—Bevat op HTML gebaseerde sjabloonbestanden die de taal voor vloeiende sjablonen gebruiken
+- `help/_includes/templated`—Bevat de gegenereerde uitvoer voor sjablooninhoud in `.md` -bestandsindeling zodat deze kan worden gepubliceerd in Experience League-onderwerpen; het renderscript schrijft automatisch gegenereerde uitvoer naar deze map voor u
+
+Sjablooninhoud bijwerken:
+
+1. Open een gegevensbestand in de map `_jekyll/_data` in de teksteditor. Bijvoorbeeld:
+
+   - [ Cloud CLI verwijzing ](help/templated/cloud-cli-ref.md): `_jekyll/_data/cloud-cli-ref.yaml`
+   - [ de pakketten van de Wolk ](help/templated/cloud-packages.md): `_jekyll/_data/cloud-packages.yaml`
+   - [ ECE hulpmiddelverwijzing ](help/templated/ece-tools.md): `_jekyll/_data/ece-tools.yaml`
+
+2. Gebruik de bestaande YAML-structuur om items te maken.
+
+3. Navigeer naar de map `_jekyll` .
+
+   ```bash
+   cd _jekyll
+   ```
+
+4. Genereer sjablooninhoud en schrijf de uitvoer naar de map `help/_includes/templated` .
+
+   ```bash
+   rake render
+   ```
+
+   >**NOTA:** u moet het manuscript van de `_jekyll` folder in werking stellen. Als dit de eerste keer is om het script uit te voeren, moet u Ruby-afhankelijkheden eerst installeren met de opdracht `bundle install` .
+
+5. Navigeer terug naar de map `root` .
+
+   ```bash
+   cd ..
+   ```
+
+6. Controleer of de verwachte `help/_includes/templated` -bestanden zijn gewijzigd.
+
+   ```bash
+   git status
+   ```
+
+   U zou output gelijkend op het volgende moeten zien:
+
+   ```bash
+   modified:   _data/cloud-cli-ref.yaml
+   modified:   help/_includes/templated/cloud-cli-ref.md
+   ```
+
+7. Druk op de wijzigingen.
+
+   ```bash
+   git add .
+   git commit -m "descriptive message of the intended commit"
+   git push
+   ```
+
+Zie de documentatie van Jekyll voor meer details over [ Dossiers van Gegevens ](https://jekyllrb.com/docs/datafiles), [ Vloeiende filters ](https://jekyllrb.com/docs/liquid/filters/), en andere eigenschappen.

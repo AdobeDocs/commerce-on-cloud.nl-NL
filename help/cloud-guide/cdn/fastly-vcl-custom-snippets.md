@@ -3,7 +3,7 @@ title: Aan de slag met aangepaste VCL-fragmenten
 description: Leer over het gebruiken van de codefragmenten van de Taal van de Controle van de Varnish om de Fastly de dienstconfiguratie voor Adobe Commerce aan te passen.
 feature: Cloud, Configuration, Services
 exl-id: 90f0bea6-4365-4657-94e9-92a0fd1145fd
-source-git-commit: a51946f65ccd606cde6fbb4278f625a49ae42dad
+source-git-commit: d08ef7d46e3b94ae54ee99aa63de1b267f4e94a0
 workflow-type: tm+mt
 source-wordcount: '2037'
 ht-degree: 0%
@@ -45,7 +45,7 @@ De woordenboeken en ACL gegevens worden opgesteld aan de Fastly Edge knopen die 
 Deze zelfstudie en voorbeelden demonstreren het gebruik van gewone aangepaste VCL-fragmenten met Edge-woordenboeken en Edge ACL&#39;s om de Fastly-serviceconfiguratie voor Adobe Commerce aan te passen. Raadpleeg de documentatie bij Snelheid voor meer informatie:
 
 - [ Gids om snel VCL ](https://docs.fastly.com/guides/vcl/guide-to-vcl) - Informatie over de Fastly Varnish implementatie, de Snelle uitbreidingen van VCL, en middelen voor het leren van meer over Varnish en VCL.
-- [ VCL verwijzing 1&rbrace; - Gedetailleerde programmeringsverwijzing snel om douaneVCL en de fragmenten van douaneVCL te ontwikkelen en problemen op te lossen.](https://docs.fastly.com/guides/vcl/)
+- [ VCL verwijzing 1} - Gedetailleerde programmeringsverwijzing snel om douaneVCL en de fragmenten van douaneVCL te ontwikkelen en problemen op te lossen.](https://docs.fastly.com/guides/vcl/)
 
 U kunt aangepaste VCL-fragmenten maken en beheren via Adobe Commerce Admin of met de snelheids-API:
 
@@ -332,3 +332,5 @@ In deze API-aanvraagvoorbeelden worden geëxporteerde omgevingsvariabelen gebrui
 - **Overschrijf waarden in het [ gebrek VCL code ](https://github.com/fastly/fastly-magento2/tree/master/etc/vcl_snippets)**
 
   Maak een fragment met bijgewerkte waarden en wijs een prioriteit van `100` toe.
+
+<!-- Last updated from includes: 2025-01-27 17:16:28 -->
