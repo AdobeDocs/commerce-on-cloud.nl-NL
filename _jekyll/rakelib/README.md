@@ -1,7 +1,7 @@
 ---
-source-git-commit: d08ef7d46e3b94ae54ee99aa63de1b267f4e94a0
+source-git-commit: f75dbbc9726ff21a648b1bb3d8f06cb45a5d6b08
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -11,15 +11,30 @@ Deze map bevat definities van lijntaken die op functionaliteit zijn geordend. Me
 
 ## Bestandsorganisatie
 
+### `adobe-docs-tasks.rake`
+
+Bevat veelvoorkomende taken op het gebied van vereisten, gedeelde functionaliteit en taken zonder naamgeving voor Adobe Commerce in de Experience League-documentatieopslagplaats:
+
+- `whatsnew` - Gegevens genereren voor nieuwsoverzicht (standaard: sinds laatste update)
+- `render` - Geslaagde bestanden renderen en include-bestanden onderhouden
+
 ### `includes.rake`
 
-Bevat alle taken met betrekking tot een include-teken onder de naamruimte `:includes` :
+Bevat beheertaken die zijn geordend in de naamruimte `:includes` :
 
-- `includes:maintain_relationships` - Inclusief relaties detecteren en onderhouden
+- `includes:maintain_relationships` - Inclusief relaties in markeringsbestanden detecteren en onderhouden
 - `includes:maintain_timestamps` - Tijdstempels toevoegen/bijwerken op basis van bestandswijzigingen opnemen
 - `includes:maintain_all` - Beide bewerkingen op volgorde uitvoeren
+- `includes:unused` - Ongebruikte include-bestanden zoeken
 
-## Hoe het werkt
+### `images.rake`
+
+Bevat taken voor afbeeldingsbeheer die zijn ingedeeld in de naamruimte `:images` :
+
+- `images:optimize` - Afbeeldingen optimaliseren in gewijzigde, niet-toegewezen bestanden
+- `images:unused` - Ongebruikte afbeeldingen zoeken in het project
+
+## Hoe werkt het
 
 Met Omtrekken worden alle `.rake` -bestanden in de map `rakelib/` automatisch gedetecteerd en geladen. Op die manier kunnen wij:
 
