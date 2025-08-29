@@ -70,7 +70,7 @@ In het algemeen, moeten de meeste schrijvers slechts een versieversie aan de de 
 >**NOTA:**
 >
 >- Voor het genereren van gesjabloonde inhoud moet u op de opdrachtregel in een terminal werken.
->- Ruby moet zijn geïnstalleerd om het renderscript uit te voeren. Zie [_jekyll/.ruby-version ](_jekyll/.ruby-version) voor de vereiste versie.
+>- Ruby moet zijn geïnstalleerd om het renderscript uit te voeren. Zie [_jekyll/.ruby-version ] (_jekyll/.ruby-version) voor de vereiste versie.
 
 Zie het volgende voor een beschrijving van de bestandsstructuur voor sjablooninhoud:
 
