@@ -1,7 +1,7 @@
 ---
-source-git-commit: d08ef7d46e3b94ae54ee99aa63de1b267f4e94a0
+source-git-commit: 5236f2718e5091dfc2fc140e15d4ac87a073d1d0
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '781'
 ht-degree: 1%
 
 ---
@@ -9,8 +9,8 @@ ht-degree: 1%
 
 Deze site bevat de meest recente ontwikkelaarsdocumentatie voor Commerce on Cloud Infrastructure.
 
-- [ Commerce op de Gids van de Infrastructuur van de Wolk ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/overview)
-- [ krijgen Begonnen met Commerce ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/start/overview) op de infrastructuur van de Wolk
+- [ Commerce op de Gids van de Infrastructuur van de Wolk ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
+- [ krijgen Begonnen met Commerce ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/overview) op de infrastructuur van de Wolk
 
 ## Adobe Open Source-gedragscode
 
@@ -18,7 +18,7 @@ Dit project heeft de [ Adobe Open Code van Source van Gedrag ](code-of-conduct.m
 
 ## Over je bijdragen aan Adobe-inhoud
 
-Zie de [ Gids van de Medewerker van de Docent van Adobe ](https://experienceleague.adobe.com/nl/docs/contributor/contributor-guide/introduction).
+Zie de [ Gids van de Medewerker van de Docent van Adobe ](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction).
 
 Hoe u een bijdrage levert, hangt af van wie u bent en van het soort wijzigingen dat u wilt bijdragen:
 
@@ -40,7 +40,7 @@ Als u een technisch schrijver, programmamanager, of ontwikkelaar van het product
 
 Communautaire contribuanten kunnen GitHub UI voor basishet uitgeven of vork gebruiken het repo om belangrijke bijdragen te leveren.
 
-Zie de [ Gids van de Medewerker van de Docent van Adobe ](https://experienceleague.adobe.com/nl/docs/contributor/contributor-guide/introduction) voor details.
+Zie de [ Gids van de Medewerker van de Docent van Adobe ](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction) voor details.
 
 ## Hoe te om prijsdaling te gebruiken om uw onderwerp te formatteren
 
@@ -70,7 +70,7 @@ In het algemeen, moeten de meeste schrijvers slechts een versieversie aan de de 
 >**NOTA:**
 >
 >- Voor het genereren van gesjabloonde inhoud moet u op de opdrachtregel in een terminal werken.
->- Ruby moet zijn geïnstalleerd om het renderscript uit te voeren. Zie [_jekyll/.ruby-version ] (_jekyll/.ruby-version) voor de vereiste versie.
+>- Ruby moet zijn geïnstalleerd om het renderscript uit te voeren. Zie [_jekyll/.ruby-version ](_jekyll/.ruby-version) voor de vereiste versie.
 
 Zie het volgende voor een beschrijving van de bestandsstructuur voor sjablooninhoud:
 
@@ -131,3 +131,31 @@ Sjablooninhoud bijwerken:
    ```
 
 Zie de documentatie van Jekyll voor meer details over [ Dossiers van Gegevens ](https://jekyllrb.com/docs/datafiles), [ Vloeiende filters ](https://jekyllrb.com/docs/liquid/filters/), en andere eigenschappen.
+
+## Koppelingen vooraf toewijzen voor optimalisatie van afbeeldingen
+
+Deze opslagplaats omvat geautomatiseerde haken die vooraf worden vastgelegd en die afbeeldingen optimaliseren voordat ze worden vastgelegd. **Alle contribuanten zouden deze haken** moeten toelaten om verenigbare beeldoptimalisering en verminderde bewaarplaatsgrootte te verzekeren.
+
+### Snelle installatie
+
+Nadat u de opslagplaats hebt gekloond, voert u het volgende uit:
+
+```bash
+.githooks/setup-hooks.sh
+```
+
+### Wat de haken doen
+
+- Gelaagde afbeeldingsbestanden automatisch detecteren (PNG, JPG, JPEG, GIF, SVG)
+- `image_optim` uitvoeren om afbeeldingen te comprimeren en te optimaliseren
+- Geoptimaliseerde afbeeldingen automatisch opnieuw plaatsen
+- Zorg ervoor dat alle toegewezen images correct zijn geoptimaliseerd
+
+### Voordelen
+
+- Beperkte grootte opslagplaats
+- Snellere paginabelasting voor documentatie
+- Consistente beeldkwaliteit voor alle contribuanten
+- Geen handmatige optimalisatie vereist
+
+Zie [`.githooks/README.md`](.githooks/README.md) voor gedetailleerde installatie-instructies, probleemoplossing en configuratie.
