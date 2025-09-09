@@ -4,16 +4,16 @@ description: Zie een lijst met de meest recente verbeteringen in het pakket met 
 recommendations: noDisplay, catalog
 last-substantial-update: 2025-08-07T00:00:00Z
 exl-id: a4454ebc-72a4-42c1-b591-6237c97fe913
-source-git-commit: b90959335c91dd0631d270ebb522524cf1db6ff0
+source-git-commit: 09d392bb527699403d0b9537ea3c71e189bc0cf4
 workflow-type: tm+mt
-source-wordcount: '2486'
+source-wordcount: '2498'
 ht-degree: 0%
 
 ---
 
 # Cloudpatches voor Commerce
 
-Het [ pakket van de Patches van de Wolk 1&rbrace; verstrekt een reeks vereiste flarden die de integratie van alle versies van Adobe Commerce met de milieu&#39;s van de Wolk verbeteren en snelle levering van kritieke moeilijke situaties steunt.](https://github.com/magento/magento-cloud-patches)
+Het [ pakket van de Patches van de Wolk 1} verstrekt een reeks vereiste flarden die de integratie van alle versies van Adobe Commerce met de milieu&#39;s van de Wolk verbeteren en snelle levering van kritieke moeilijke situaties steunt.](https://github.com/magento/magento-cloud-patches)
 
 Het pakket Cloud Patches voor Commerce is afhankelijk van het pakket ECE-Tools en wordt geïnstalleerd en bijgewerkt wanneer u het pakket ECE-Tools installeert of bijwerkt. U kunt Cloud Patches voor Commerce ook gebruiken en beheren als een zelfstandig pakket om patches toe te passen op een Adobe Commerce-project dat zich niet op het Cloud-platform bevindt. In deze releaseopmerkingen worden de meest recente verbeteringen aan dit pakket beschreven.
 
@@ -29,7 +29,13 @@ Het pakket `magento/magento-cloud-patches` gebruikt de volgende versiereeks: `<m
 
 <!--Add release notes below-->
 
-## v1.1.10 {#latest}
+## v1.1.11 {#latest}
+
+Releasedatum: 9 september 2025
+
+- ![ fixpictogram ](../../assets/fix.svg) **WebAPI** - moeilijke situatie voor CVE-2025-54236.<!-- MCLOUD-14016 -->
+
+## v1.1.10
 
 Releasedatum: 7 augustus 2025
 
@@ -52,13 +58,13 @@ Releasedatum: 3 juni 2025
 
 Releasedatum: 5 mei 2025
 
-- ![ nieuw pictogram ](../../assets/new.svg) **Bijgewerkt flard voor Commerce 2.4.4 aan 2.4.8** - dit is een bijgewerkt flard voor [ CVE-2025-24434 ](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/increased-execution-time-for-bulk-asynchronous-web-endpoints-post-apsb25-08-security-patch), dat in 1.1.7 <!-- MCLOUD-13619 --> werd vrijgegeven
+- ![ nieuw pictogram ](../../assets/new.svg) **Bijgewerkt flard voor Commerce 2.4.4 aan 2.4.8** - dit is een bijgewerkt flard voor [ CVE-2025-24434 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/increased-execution-time-for-bulk-asynchronous-web-endpoints-post-apsb25-08-security-patch), dat in 1.1.7 <!-- MCLOUD-13619 --> werd vrijgegeven
 
 ## v1.1.6
 
 Releasedatum: 24 april 2025
 
-- ![ nieuw pictogram ](../../assets/new.svg) **Bijgewerkt flard voor Commerce 2.4.4 aan 2.4.7** - dit is een bijgewerkt flard voor [ CVE-2025-24434 ](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08), dat in 1.1.4 <!-- MCLOUD-13240 --> werd vrijgegeven
+- ![ nieuw pictogram ](../../assets/new.svg) **Bijgewerkt flard voor Commerce 2.4.4 aan 2.4.7** - dit is een bijgewerkt flard voor [ CVE-2025-24434 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08), dat in 1.1.4 <!-- MCLOUD-13240 --> werd vrijgegeven
 
 ## v1.1.5
 
@@ -70,7 +76,7 @@ Releasedatum: 15 april 2025
 
 Releasedatum: 13 februari 2025
 
-- ![ nieuw pictogram ](../../assets/new.svg) **Toegevoegd flard voor Commerce 2.4.4 aan 2.4.7** - Deze updatepatches [ CVE-2025-24434 ](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08).<!-- MCLOUD-13240	 - -->
+- ![ nieuw pictogram ](../../assets/new.svg) **Toegevoegd flard voor Commerce 2.4.4 aan 2.4.7** - Deze updatepatches [ CVE-2025-24434 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08).<!-- MCLOUD-13240	 - -->
 
 ## v1.1.3
 
@@ -82,13 +88,13 @@ Releasedatum: 6 februari 2025
 
 Releasedatum: 5 november 2024
 
-- ![ fixpictogram ](../../assets/fix.svg) **Toegevoegd flard voor Commerce 2.4.4 aan 2.4.7** - Deze update bevestigt een kritieke [ CVE-2024-45115 ](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-73) kwetsbaarheid voor Adobe Commerce wanneer het gebruiken van de module B2B.<!-- MCLOUD-12980 - -->
+- ![ fixpictogram ](../../assets/fix.svg) **Toegevoegd flard voor Commerce 2.4.4 aan 2.4.7** - Deze update bevestigt een kritieke [ CVE-2024-45115 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-73) kwetsbaarheid voor Adobe Commerce wanneer het gebruiken van de module B2B.<!-- MCLOUD-12980 - -->
 
 ## v1.1.1
 
 Releasedatum: 5 november 2024
 
-- ![ fixpictogram ](../../assets/fix.svg) **Toegevoegd flard voor Commerce 2.4.4 aan 2.4.7** - Deze updatepatches een kritieke [ CVE-2024-34102 ](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102?lang=en) kwetsbaarheid CosmicSting.<!-- MCLOUD-12980 - -->
+- ![ fixpictogram ](../../assets/fix.svg) **Toegevoegd flard voor Commerce 2.4.4 aan 2.4.7** - Deze updatepatches een kritieke [ CVE-2024-34102 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102?lang=en) kwetsbaarheid CosmicSting.<!-- MCLOUD-12980 - -->
 
 ## v1.1.0
 
@@ -166,7 +172,7 @@ Kritieke patch voor Adobe Commerce 2.4.5:
 
 - **Uitgave met orden die de betalingen van Braintree gebruiken** - Dit flard lost een kritieke kwestie op die beheerders verhindert nieuwe orden of herschikkingen te plaatsen.<!-- MCLOUD-9137 -->
 
-Zie [ Admin kan geen orde tot stand brengen/opnieuw rangschikken wanneer Braintree betaling ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/admin-cant-create-order-reorder-when-braintree-payment-enabled.html?lang=nl-NL) toeliet.
+Zie [ Admin kan geen orde tot stand brengen/opnieuw rangschikken wanneer Braintree betaling ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/admin-cant-create-order-reorder-when-braintree-payment-enabled.html) toeliet.
 
 ## v1.0.17
 
@@ -182,7 +188,7 @@ Kritieke patch voor Adobe Commerce 2.3.3-p1 en latere versies:
 
 De bijgewerkte flarden om a **kritieke** kwetsbaarheid op te lossen die in unauthenticated verre codeuitvoering resulteert.<!-- MCLOUD-8479 -->
 
-Zie [ bulletin van de Veiligheid van Adobe APSB22-12 ](https://helpx.adobe.com/nl/security/products/magento/apsb22-12.html).
+Zie [ bulletin van de Veiligheid van Adobe APSB22-12 ](https://helpx.adobe.com/security/products/magento/apsb22-12.html).
 
 ## v1.0.15
 
@@ -199,7 +205,7 @@ Kritieke patch voor Adobe Commerce 2.3.3-p1 en latere versies:
 
 Toegevoegd een flard om a **kritieke** kwetsbaarheid op te lossen die in unauthenticated verre codeuitvoering resulteert.<!-- MCLOUD-8461 -->
 
-Zie [ bulletin van de Veiligheid van Adobe APSB22-12 ](https://helpx.adobe.com/nl/security/products/magento/apsb22-12.html).
+Zie [ bulletin van de Veiligheid van Adobe APSB22-12 ](https://helpx.adobe.com/security/products/magento/apsb22-12.html).
 
 ## v1.0.13
 
@@ -215,7 +221,7 @@ Releasedatum: 12 augustus 2021
 
 Kritieke patch voor Adobe Commerce 2.4.3 en 2.3.7-p1:
 
-- **Uitgave met API tarief beperkt** - Dit flard verbetert een standaardtariefgrens die Web APIs verhinderde verzoeken met meer dan 20 punten in een serie te verwerken. Deze patch verhoogt de standaardwaarde van de tariefgrens. Zie Adobe Commerce [ 2.4.3 versienota&#39;s ](https://experienceleague.adobe.com/nl/docs/commerce-operations/release/notes/adobe-commerce/2-4-3#apply-mc-43048__set_rate_limits__243patch-to-address-issue-with-api-rate-limiting).<!-- MC-43048 -->
+- **Uitgave met API tarief beperkt** - Dit flard verbetert een standaardtariefgrens die Web APIs verhinderde verzoeken met meer dan 20 punten in een serie te verwerken. Deze patch verhoogt de standaardwaarde van de tariefgrens. Zie Adobe Commerce [ 2.4.3 versienota&#39;s ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-3#apply-mc-43048__set_rate_limits__243patch-to-address-issue-with-api-rate-limiting).<!-- MC-43048 -->
 
 ## v1.0.11
 
