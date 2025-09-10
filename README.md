@@ -1,7 +1,7 @@
 ---
-source-git-commit: 5236f2718e5091dfc2fc140e15d4ac87a073d1d0
+source-git-commit: b151aac666510594751937e80dc3d9db4ede41b7
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '815'
 ht-degree: 1%
 
 ---
@@ -9,8 +9,8 @@ ht-degree: 1%
 
 Deze site bevat de meest recente ontwikkelaarsdocumentatie voor Commerce on Cloud Infrastructure.
 
-- [ Commerce op de Gids van de Infrastructuur van de Wolk ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/overview)
-- [ krijgen Begonnen met Commerce ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/start/overview) op de infrastructuur van de Wolk
+- [ Commerce op de Gids van de Infrastructuur van de Wolk ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
+- [ krijgen Begonnen met Commerce ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/overview) op de infrastructuur van de Wolk
 
 ## Adobe Open Source-gedragscode
 
@@ -18,7 +18,7 @@ Dit project heeft de [ Adobe Open Code van Source van Gedrag ](code-of-conduct.m
 
 ## Over je bijdragen aan Adobe-inhoud
 
-Zie de [ Gids van de Medewerker van de Docent van Adobe ](https://experienceleague.adobe.com/nl/docs/contributor/contributor-guide/introduction).
+Zie de [ Gids van de Medewerker van de Docent van Adobe ](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction).
 
 Hoe u een bijdrage levert, hangt af van wie u bent en van het soort wijzigingen dat u wilt bijdragen:
 
@@ -40,7 +40,7 @@ Als u een technisch schrijver, programmamanager, of ontwikkelaar van het product
 
 Communautaire contribuanten kunnen GitHub UI voor basishet uitgeven of vork gebruiken het repo om belangrijke bijdragen te leveren.
 
-Zie de [ Gids van de Medewerker van de Docent van Adobe ](https://experienceleague.adobe.com/nl/docs/contributor/contributor-guide/introduction) voor details.
+Zie de [ Gids van de Medewerker van de Docent van Adobe ](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction) voor details.
 
 ## Hoe te om prijsdaling te gebruiken om uw onderwerp te formatteren
 
@@ -70,7 +70,7 @@ In het algemeen, moeten de meeste schrijvers slechts een versieversie aan de de 
 >**NOTA:**
 >
 >- Voor het genereren van gesjabloonde inhoud moet u op de opdrachtregel in een terminal werken.
->- Ruby moet zijn geïnstalleerd om het renderscript uit te voeren. Zie [_jekyll/.ruby-version ] (_jekyll/.ruby-version) voor de vereiste versie.
+>- Ruby moet zijn geïnstalleerd om het renderscript uit te voeren. Zie [_jekyll/.ruby-version ](_jekyll/.ruby-version) voor de vereiste versie.
 
 Zie het volgende voor een beschrijving van de bestandsstructuur voor sjablooninhoud:
 
@@ -98,10 +98,10 @@ Sjablooninhoud bijwerken:
 4. Genereer sjablooninhoud en schrijf de uitvoer naar de map `help/_includes/templated` .
 
    ```bash
-   rake render
+   bundle exec rake render
    ```
 
-   >**NOTA:** u moet het manuscript van de `_jekyll` folder in werking stellen. Als dit de eerste keer is om het script uit te voeren, moet u Ruby-afhankelijkheden eerst installeren met de opdracht `bundle install` .
+   >**NOTA:** u moet het manuscript van de `_jekyll` folder in werking stellen. Als dit de eerste keer is om het script uit te voeren, moet u Ruby-afhankelijkheden eerst installeren met de opdracht `bundle install` . De lijntaken worden geleverd door de `adobe-comdox-exl-rake-tasks` gem voor betere onderhoudbaarheid in alle Adobe Commerce-documentatieruimten.
 
 5. Navigeer terug naar de map `root` .
 
@@ -131,6 +131,15 @@ Sjablooninhoud bijwerken:
    ```
 
 Zie de documentatie van Jekyll voor meer details over [ Dossiers van Gegevens ](https://jekyllrb.com/docs/datafiles), [ Vloeiende filters ](https://jekyllrb.com/docs/liquid/filters/), en andere eigenschappen.
+
+## Beschikbare taken
+
+Deze gegevensopslagruimte gebruikt taken die door de `adobe-comdox-exl-rake-tasks` gem worden geleverd. Voer de volgende handelingen uit om alle beschikbare taken weer te geven:
+
+```bash
+cd _jekyll
+bundle exec rake --tasks
+```
 
 ## Koppelingen vooraf toewijzen voor optimalisatie van afbeeldingen
 
