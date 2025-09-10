@@ -9,8 +9,8 @@ ht-degree: 1%
 
 Deze site bevat de meest recente ontwikkelaarsdocumentatie voor Commerce on Cloud Infrastructure.
 
-- [ Commerce op de Gids van de Infrastructuur van de Wolk ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
-- [ krijgen Begonnen met Commerce ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/overview) op de infrastructuur van de Wolk
+- [ Commerce op de Gids van de Infrastructuur van de Wolk ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/overview)
+- [ krijgen Begonnen met Commerce ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/start/overview) op de infrastructuur van de Wolk
 
 ## Adobe Open Source-gedragscode
 
@@ -18,7 +18,7 @@ Dit project heeft de [ Adobe Open Code van Source van Gedrag ](code-of-conduct.m
 
 ## Over je bijdragen aan Adobe-inhoud
 
-Zie de [ Gids van de Medewerker van de Docent van Adobe ](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction).
+Zie de [ Gids van de Medewerker van de Docent van Adobe ](https://experienceleague.adobe.com/nl/docs/contributor/contributor-guide/introduction).
 
 Hoe u een bijdrage levert, hangt af van wie u bent en van het soort wijzigingen dat u wilt bijdragen:
 
@@ -40,7 +40,7 @@ Als u een technisch schrijver, programmamanager, of ontwikkelaar van het product
 
 Communautaire contribuanten kunnen GitHub UI voor basishet uitgeven of vork gebruiken het repo om belangrijke bijdragen te leveren.
 
-Zie de [ Gids van de Medewerker van de Docent van Adobe ](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction) voor details.
+Zie de [ Gids van de Medewerker van de Docent van Adobe ](https://experienceleague.adobe.com/nl/docs/contributor/contributor-guide/introduction) voor details.
 
 ## Hoe te om prijsdaling te gebruiken om uw onderwerp te formatteren
 
