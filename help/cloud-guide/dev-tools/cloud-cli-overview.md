@@ -1,27 +1,30 @@
 ---
 title: Cloud CLI
 description: Leer meer over de magento-cloud CLI en hoe u hiermee lokale ontwikkelomgevingen voor uw Adobe Commerce kunt beheren op het infrastructuurproject voor de cloud.
-source-git-commit: 0d9d3d64cd0ad4792824992af354653f61e4388d
+exl-id: 71a705f2-8672-4125-b539-b7b1621f2f64
+source-git-commit: 82d89f442792baec995dd0be40f2a49cba168f76
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '805'
 ht-degree: 0%
 
 ---
 
-
 # Cloud CLI
 
-Met het CLI-hulpprogramma van `magento-cloud` kunnen ontwikkelaars en systeembeheerders Cloud-projecten en -omgevingen beheren, routines uitvoeren en automatiseringstaken lokaal uitvoeren. De CLI van `magento-cloud` breidt de eigenschappen en de functionaliteit van [[!DNL Cloud Console]](../../get-started/cloud-console.md) uit. Nadat u de CLI van `magento-cloud` op uw lokale werkstation hebt geïnstalleerd, kunt u deze gebruiken om uw Adobe Commerce te beheren in de Starter- en Pro-integratieomgevingen van de cloudinfrastructuur.
+`magento-cloud` CLI is een bevel-lijn hulpmiddel dat ontwikkelaars en systeembeheerders toelaat om Adobe Commerce op de projecten en milieu&#39;s van de wolkeninfrastructuur van hun lokaal werkstation te beheren.
+
+Dit hulpmiddel breidt de functionaliteit van [[!DNL Cloud Console]](../../get-started/cloud-console.md) uit door extra automatiseringsmogelijkheden en directe toegang tot de eigenschappen van het projectbeheer te verstrekken. Nadat u het programma lokaal hebt geïnstalleerd, kunt u het gebruiken voor het beheren van de integratie-omgevingen van zowel Starter als Pro.
 
 >[!NOTE]
 >
->Dit is een lokaal programma en kan met deze methode niet worden geïnstalleerd in de cloud-omgeving (alleen-lezen). U kunt modules op het milieu van de Wolk door het **plaatsingswerkschema** slechts installeren
->- [ Pro plaatsingswerkschema ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow)
->- [ de plaatsingswerkschema van de Aanzet ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow)
+>Dit is een lokaal hulpmiddel en wordt alleen ondersteund op Unix-gebaseerde besturingssystemen. Windows wordt niet ondersteund. Deze kan niet worden geïnstalleerd in de cloud-omgeving (alleen-lezen) met de methode die op deze pagina wordt beschreven. U kunt modules op het milieu van de Wolk door één van de volgende **plaatsingswerkschema&#39;s** slechts installeren.
+>
+>- [ Pro plaatsingswerkschema ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow)
+>- [ de plaatsingswerkschema van de Aanzet ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow)
 
 **om `magento-cloud` CLI** te installeren:
 
-1. Op uw _lokale werkstation_, verandering in de folder waar u van plan bent het project van de Wolk te klonen en waar de [ eigenaar van het dossiersysteem ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html?lang=nl-NL) _heeft schrijven_ toegang.
+1. Op uw _lokale werkstation_, verandering in de folder waar u van plan bent het project van de Wolk te klonen en waar de [ eigenaar van het dossiersysteem ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html) _heeft schrijven_ toegang.
 
 1. Installeer de `magento-cloud` CLI.
 
@@ -134,7 +137,7 @@ De volgende stappen tonen het gebruiken van CLI en van het Git bevelen onderling
 
 1. Wijzig op uw lokale werkstation de projectmap.
 
-1. Schakelaar aan de [ eigenaar van het dossiersysteem ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html?lang=nl-NL).
+1. Schakelaar aan de [ eigenaar van het dossiersysteem ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html).
 
 1. Meld u aan bij uw project.
 
