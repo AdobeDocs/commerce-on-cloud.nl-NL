@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # OpenSearch-service instellen
 
-De [ OpenSearch ](https://www.opensearch.org) dienst is een open-bron vork van Elasticsearch 7.10.2, na de vergunningsveranderingen voor Elasticsearch. Zie het [ Project OpenSource ](https://github.com/opensearch-project) in GitHub.
+De [&#x200B; OpenSearch &#x200B;](https://www.opensearch.org) dienst is een open-bron vork van Elasticsearch 7.10.2, na de vergunningsveranderingen voor Elasticsearch. Zie het [&#x200B; Project OpenSource &#x200B;](https://github.com/opensearch-project) in GitHub.
 
 {{elasticsearch-support}}
 
@@ -27,7 +27,7 @@ Met OpenSearch kunt u gegevens van elke bron, elke indeling en in real-time zoek
 
 >[!TIP]
 >
->Tenzij u [ Levend Onderzoek ](https://experienceleague.adobe.com/en/docs/commerce/live-search/overview) gebruikt, adviseert Adobe dat u opstelling OpenSearch voor uw Adobe Commerce op het project van de wolkeninfrastructuur altijd zelfs als u van plan bent om een derdeonderzoekshulpmiddel voor uw toepassing van Adobe Commerce te vormen. Het instellen van OpenSearch biedt een fallback-optie als het zoekgereedschap van derden mislukt.
+>Tenzij u [&#x200B; Levend Onderzoek &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/live-search/overview) gebruikt, adviseert Adobe dat u opstelling OpenSearch voor uw Adobe Commerce op het project van de wolkeninfrastructuur altijd zelfs als u van plan bent om een derdeonderzoekshulpmiddel voor uw toepassing van Adobe Commerce te vormen. Het instellen van OpenSearch biedt een fallback-optie als het zoekgereedschap van derden mislukt.
 
 **om OpenSearch** toe te laten:
 
@@ -39,7 +39,7 @@ Met OpenSearch kunt u gegevens van elke bron, elke indeling en in real-time zoek
        disk: 1024
    ```
 
-   Voor Pro projecten, moet u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voorleggen om de versie OpenSearch in de het Opvoeren en milieu&#39;s van de Productie te veranderen.
+   Voor Pro projecten, moet u [&#x200B; een kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voorleggen om de versie OpenSearch in de het Opvoeren en milieu&#39;s van de Productie te veranderen.
 
 1. Stel de eigenschap `relationships` in het `.magento.app.yaml` -bestand in of controleer deze.
 
@@ -62,7 +62,7 @@ Met OpenSearch kunt u gegevens van elke bron, elke indeling en in real-time zoek
    git push origin <branch-name>
    ```
 
-   Voor informatie over hoe deze veranderingen uw milieu&#39;s beïnvloeden, zie [ de diensten ](services-yaml.md) vormen.
+   Voor informatie over hoe deze veranderingen uw milieu&#39;s beïnvloeden, zie [&#x200B; de diensten &#x200B;](services-yaml.md) vormen.
 
 1. Nadat het plaatsingsproces voltooit, gebruik SSH aan login aan het verre milieu.
 
@@ -86,13 +86,13 @@ Met OpenSearch kunt u gegevens van elke bron, elke indeling en in real-time zoek
 
 ## Compatibiliteit met OpenSearch-software
 
-Wanneer u uw Adobe Commerce op het project van de wolkeninfrastructuur installeert of bevordert, controleert altijd verenigbaarheid tussen de OpenSearch de dienstversie en [ OpenSearch PHP ](https://github.com/opensearch-project/opensearch-php) cliënt voor Adobe Commerce.
+Wanneer u uw Adobe Commerce op het project van de wolkeninfrastructuur installeert of bevordert, controleert altijd verenigbaarheid tussen de OpenSearch de dienstversie en [&#x200B; OpenSearch PHP &#x200B;](https://github.com/opensearch-project/opensearch-php) cliënt voor Adobe Commerce.
 
 - **eerste opstelling** - bevestig dat de versie OpenSearch die in het `services.yaml` dossier wordt gespecificeerd compatibel is met de cliënt OpenSearch PHP die voor Adobe Commerce wordt gevormd.
 
 - **verbetering van het Project** - verifieer dat de cliënt OpenSearch PHP in de nieuwe toepassingsversie compatibel is met de OpenSearch de dienstversie die op de wolkeninfrastructuur wordt geïnstalleerd.
 
-De versie van de dienst en verenigbaarheidssteun wordt bepaald door versies die op de infrastructuur van de Wolk worden getest en worden opgesteld, en verschillen soms van versies die door Adobe Commerce op-gebouw plaatsingen worden gesteund. Zie {de vereisten van het 0} Systeem [ in de ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) Gids van de Installatie _voor een lijst van gesteunde versies._
+De versie van de dienst en verenigbaarheidssteun wordt bepaald door versies die op de infrastructuur van de Wolk worden getest en worden opgesteld, en verschillen soms van versies die door Adobe Commerce op-gebouw plaatsingen worden gesteund. Zie {de vereisten van het 0} Systeem [&#x200B; in de &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) Gids van de Installatie _voor een lijst van gesteunde versies._
 
 **om de softwareverenigbaarheid te verifiëren OpenSearch**:
 
@@ -174,7 +174,7 @@ Als u de OpenSearch-service opnieuw wilt starten, moet u contact opnemen met de 
 
 ## Aanvullende zoekconfiguratie
 
-- Standaard wordt de zoekconfiguratie voor Cloud-omgevingen telkens opnieuw gegenereerd wanneer u deze implementeert. Met de implementatievariabele van `SEARCH_CONFIGURATION` kunt u aangepaste zoekinstellingen tussen implementaties behouden. Zie [ variabelen opstellen ](../environment/variables-deploy.md#search_configuration).
+- Standaard wordt de zoekconfiguratie voor Cloud-omgevingen telkens opnieuw gegenereerd wanneer u deze implementeert. Met de implementatievariabele van `SEARCH_CONFIGURATION` kunt u aangepaste zoekinstellingen tussen implementaties behouden. Zie [&#x200B; variabelen opstellen &#x200B;](../environment/variables-deploy.md#search_configuration).
 
 - Nadat u de OpenSearch-service voor uw project hebt ingesteld, gebruikt u de beheerinterface om de OpenSearch-verbinding te testen en de OpenSearch-instellingen voor Adobe Commerce aan te passen.
 
@@ -184,7 +184,7 @@ U kunt desgewenst plug-ins voor OpenSearch toevoegen door de sectie `configurati
 
 >[!NOTE]
 >
->Dit geldt alleen voor integratie- en starteromgevingen. Om plugins in een Pro het Opvoeren of cluster van de Productie te installeren, [ voorlegt een steunverzoek ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case).
+>Dit geldt alleen voor integratie- en starteromgevingen. Om plugins in een Pro het Opvoeren of cluster van de Productie te installeren, [&#x200B; voorlegt een steunverzoek &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case).
 
 
 ```yaml
@@ -197,18 +197,18 @@ opensearch:
             - analysis-phonetic
 ```
 
-Zie het [ Project OpenSearch ](https://github.com/opensearch-project) voor meer informatie over stoppen.
+Zie het [&#x200B; Project OpenSearch &#x200B;](https://github.com/opensearch-project) voor meer informatie over stoppen.
 
 ### Insteekmodules voor OpenSearch verwijderen
 
-Het verwijderen van de insteekmoduleingangen uit de `opensearch:` sectie van het `.magento/services.yaml` dossier **** schrapt of maakt de dienst niet onbruikbaar. Als u de service volledig wilt uitschakelen, moet u de OpenSearch-gegevens opnieuw indexeren nadat u de plug-ins uit het `.magento/services.yaml` -bestand hebt verwijderd. Dit ontwerp voorkomt mogelijk gegevensverlies of -beschadiging die afhankelijk is van deze plug-ins.
+Het verwijderen van de insteekmoduleingangen uit de `opensearch:` sectie van het `.magento/services.yaml` dossier **&#x200B;**&#x200B;schrapt of maakt de dienst niet onbruikbaar. Als u de service volledig wilt uitschakelen, moet u de OpenSearch-gegevens opnieuw indexeren nadat u de plug-ins uit het `.magento/services.yaml` -bestand hebt verwijderd. Dit ontwerp voorkomt mogelijk gegevensverlies of -beschadiging die afhankelijk is van deze plug-ins.
 
 
 **om stopSearch te verwijderen**:
 
 >[!NOTE]
 >
->Deze wijziging geldt alleen voor integratie- en starteromgevingen. U zult een steunkaartje [ moeten voorleggen om de stop in een Pro Staging of cluster van de Productie te verwijderen.](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case)
+>Deze wijziging geldt alleen voor integratie- en starteromgevingen. U zult een steunkaartje [&#x200B; moeten voorleggen om de stop in een Pro Staging of cluster van de Productie te verwijderen.](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case)
 
 1. Verwijder de items van de OpenSearch-insteekmodule uit het `.magento/services.yaml` -bestand.
 1. U kunt wijzigingen in de code toevoegen, doorvoeren en doorvoeren.
