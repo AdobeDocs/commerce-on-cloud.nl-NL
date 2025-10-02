@@ -3,9 +3,9 @@ title: OpenSearch-service instellen
 description: Leer hoe u de OpenSearch-service voor Adobe Commerce kunt inschakelen voor cloudinfrastructuur.
 feature: Cloud, Search, Services
 exl-id: e704ab2a-2f6b-480b-9b36-1e97c406e873
-source-git-commit: 1f965749e59e3c48be2d8e04ac58683234e7b685
+source-git-commit: a6f927d7931d0fbbf37269cb41b4b6006ac04268
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '708'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Met OpenSearch kunt u gegevens van elke bron, elke indeling en in real-time zoek
 
 >[!TIP]
 >
->Adobe raadt u aan om altijd OpenSearch voor uw Adobe Commerce in te stellen op het infrastructuurproject voor de cloud, zelfs als u een zoekprogramma van derden voor uw Adobe Commerce-toepassing wilt configureren. Het instellen van OpenSearch biedt een fallback-optie als het zoekgereedschap van derden mislukt.
+>Tenzij u [ Levend Onderzoek ](https://experienceleague.adobe.com/en/docs/commerce/live-search/overview) gebruikt, adviseert Adobe dat u opstelling OpenSearch voor uw Adobe Commerce op het project van de wolkeninfrastructuur altijd zelfs als u van plan bent om een derdeonderzoekshulpmiddel voor uw toepassing van Adobe Commerce te vormen. Het instellen van OpenSearch biedt een fallback-optie als het zoekgereedschap van derden mislukt.
 
 **om OpenSearch** toe te laten:
 
@@ -39,7 +39,7 @@ Met OpenSearch kunt u gegevens van elke bron, elke indeling en in real-time zoek
        disk: 1024
    ```
 
-   Voor Pro projecten, moet u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voorleggen om de versie OpenSearch in de het Opvoeren en milieu&#39;s van de Productie te veranderen.
+   Voor Pro projecten, moet u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voorleggen om de versie OpenSearch in de het Opvoeren en milieu&#39;s van de Productie te veranderen.
 
 1. Stel de eigenschap `relationships` in het `.magento.app.yaml` -bestand in of controleer deze.
 
@@ -92,7 +92,7 @@ Wanneer u uw Adobe Commerce op het project van de wolkeninfrastructuur installee
 
 - **verbetering van het Project** - verifieer dat de cliënt OpenSearch PHP in de nieuwe toepassingsversie compatibel is met de OpenSearch de dienstversie die op de wolkeninfrastructuur wordt geïnstalleerd.
 
-De versie van de dienst en verenigbaarheidssteun wordt bepaald door versies die op de infrastructuur van de Wolk worden getest en worden opgesteld, en verschillen soms van versies die door Adobe Commerce op-gebouw plaatsingen worden gesteund. Zie {de vereisten van het 0} Systeem [ in de ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=nl-NL) Gids van de Installatie _voor een lijst van gesteunde versies._
+De versie van de dienst en verenigbaarheidssteun wordt bepaald door versies die op de infrastructuur van de Wolk worden getest en worden opgesteld, en verschillen soms van versies die door Adobe Commerce op-gebouw plaatsingen worden gesteund. Zie {de vereisten van het 0} Systeem [ in de ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) Gids van de Installatie _voor een lijst van gesteunde versies._
 
 **om de softwareverenigbaarheid te verifiëren OpenSearch**:
 
@@ -184,7 +184,7 @@ U kunt desgewenst plug-ins voor OpenSearch toevoegen door de sectie `configurati
 
 >[!NOTE]
 >
->Dit geldt alleen voor integratie- en starteromgevingen. Om plugins in een Pro het Opvoeren of cluster van de Productie te installeren, [ voorlegt een steunverzoek ](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case).
+>Dit geldt alleen voor integratie- en starteromgevingen. Om plugins in een Pro het Opvoeren of cluster van de Productie te installeren, [ voorlegt een steunverzoek ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case).
 
 
 ```yaml
@@ -201,14 +201,14 @@ Zie het [ Project OpenSearch ](https://github.com/opensearch-project) voor meer 
 
 ### Insteekmodules voor OpenSearch verwijderen
 
-Het verwijderen van de insteekmoduleingangen uit de `opensearch:` sectie van het `.magento/services.yaml` dossier **&#x200B;**&#x200B;schrapt of maakt de dienst niet onbruikbaar. Als u de service volledig wilt uitschakelen, moet u de OpenSearch-gegevens opnieuw indexeren nadat u de plug-ins uit het `.magento/services.yaml` -bestand hebt verwijderd. Dit ontwerp voorkomt mogelijk gegevensverlies of -beschadiging die afhankelijk is van deze plug-ins.
+Het verwijderen van de insteekmoduleingangen uit de `opensearch:` sectie van het `.magento/services.yaml` dossier **** schrapt of maakt de dienst niet onbruikbaar. Als u de service volledig wilt uitschakelen, moet u de OpenSearch-gegevens opnieuw indexeren nadat u de plug-ins uit het `.magento/services.yaml` -bestand hebt verwijderd. Dit ontwerp voorkomt mogelijk gegevensverlies of -beschadiging die afhankelijk is van deze plug-ins.
 
 
 **om stopSearch te verwijderen**:
 
 >[!NOTE]
 >
->Deze wijziging geldt alleen voor integratie- en starteromgevingen. U zult een steunkaartje [ moeten voorleggen om de stop in een Pro Staging of cluster van de Productie te verwijderen.](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case)
+>Deze wijziging geldt alleen voor integratie- en starteromgevingen. U zult een steunkaartje [ moeten voorleggen om de stop in een Pro Staging of cluster van de Productie te verwijderen.](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case)
 
 1. Verwijder de items van de OpenSearch-insteekmodule uit het `.magento/services.yaml` -bestand.
 1. U kunt wijzigingen in de code toevoegen, doorvoeren en doorvoeren.
