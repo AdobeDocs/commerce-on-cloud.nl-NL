@@ -14,17 +14,17 @@ ht-degree: 0%
 
 Gebruik de volgende informatie om de Fastly CDN module voor Magento 2 in uw Adobe Commerce op het projectmilieu van de wolkeninfrastructuur problemen op te lossen en te beheren. U kunt bijvoorbeeld de headerwaarden van reacties en het gedrag van caching onderzoeken om problemen met services en prestaties snel op te lossen.
 
-Op ProProductie en het Staging milieu&#39;s, kunt u [ logboeken van New Relic ](../monitor/log-management.md) gebruiken om snel CDN en het logboekgegevens van WAF te bekijken en te analyseren om fouten en prestatiesproblemen problemen op te lossen.
+Op ProProductie en het Staging milieu&#39;s, kunt u [&#x200B; logboeken van New Relic &#x200B;](../monitor/log-management.md) gebruiken om snel CDN en het logboekgegevens van WAF te bekijken en te analyseren om fouten en prestatiesproblemen problemen op te lossen.
 
 >[!NOTE]
 >
->Voor informatie over vestiging en het vormen van Fastly, zie [ Opstelling Fastly ](fastly.md).
+>Voor informatie over vestiging en het vormen van Fastly, zie [&#x200B; Opstelling Fastly &#x200B;](fastly.md).
 
 ## Service-id snel zoeken
 
 U hebt de snelste service-id nodig om snel vanaf de beheerder te configureren of snel API-aanvragen voor geavanceerde snelle configuratie en probleemoplossing in te dienen.
 
-Als Fastly in uw projectmilieu wordt toegelaten, kunt u de dienstidentiteitskaart van Admin krijgen. Zie [ krijgen de Snelle geloofsbrieven ](fastly-configuration.md#get-fastly-credentials).
+Als Fastly in uw projectmilieu wordt toegelaten, kunt u de dienstidentiteitskaart van Admin krijgen. Zie [&#x200B; krijgen de Snelle geloofsbrieven &#x200B;](fastly-configuration.md#get-fastly-credentials).
 
 Ontwikkelaars en gevorderde VCL-gebruikers kunnen aangepaste VCL gebruiken om de service-id op te halen met behulp van de snelvariabele `req.service_id` . U kunt bijvoorbeeld de instructie `req.service_id` toevoegen aan de aangepaste logboekinstructie in uw VCL om de waarde van de service-id vast te leggen:
 
@@ -32,21 +32,21 @@ Ontwikkelaars en gevorderde VCL-gebruikers kunnen aangepaste VCL gebruiken om de
 log {"syslog"} req.service_id {" my_logging_endpoint_name :: "}
 ```
 
-U kunt dezelfde VCL gebruiken voor productie- en testomgevingen. Zie [`vcl_log` ](https://www.fastly.com/documentation/reference/vcl/subroutines/log/) in de _Snelle Documentatie_.
+U kunt dezelfde VCL gebruiken voor productie- en testomgevingen. Zie [`vcl_log` &#x200B;](https://www.fastly.com/documentation/reference/vcl/subroutines/log/) in de _Snelle Documentatie_.
 
 ## Problemen met de prestaties, leegmaken en cache van de site
 
 Gebruik de volgende lijst om problemen met betrekking tot de Fastly-serviceconfiguratie voor uw Adobe Commerce in de cloud-infrastructuur te identificeren en op te lossen.
 
-- **het menu van de Opslag toont of werkt niet** - u zou een verbinding of een tijdelijke verbinding rechtstreeks aan de oorsprongserver in plaats van het gebruiken van levende plaats URL kunnen gebruiken, of u gebruikte `-H "host:URL"` in het bevel van a [ cURL ](#check-live-site-through-fastly). Als u Fastly naar de oorspronkelijke server overslaat, werkt het hoofdmenu niet en worden onjuiste kopteksten weergegeven die caching op de browserzijde toestaan.
+- **het menu van de Opslag toont of werkt niet** - u zou een verbinding of een tijdelijke verbinding rechtstreeks aan de oorsprongserver in plaats van het gebruiken van levende plaats URL kunnen gebruiken, of u gebruikte `-H "host:URL"` in het bevel van a [&#x200B; cURL &#x200B;](#check-live-site-through-fastly). Als u Fastly naar de oorspronkelijke server overslaat, werkt het hoofdmenu niet en worden onjuiste kopteksten weergegeven die caching op de browserzijde toestaan.
 
-- **De hoogste navigatie werkt niet** - de hoogste navigatie baseert zich op de Zijde van Edge omvat (ESI) verwerking die wordt toegelaten wanneer u het gebrek van Magento snel VCL fragmenten uploadt. Als de navigatie niet werkt, [ uploadt de Fastly VCL ](fastly-configuration.md#upload-vcl-to-fastly) en controleert de plaats opnieuw.
+- **De hoogste navigatie werkt niet** - de hoogste navigatie baseert zich op de Zijde van Edge omvat (ESI) verwerking die wordt toegelaten wanneer u het gebrek van Magento snel VCL fragmenten uploadt. Als de navigatie niet werkt, [&#x200B; uploadt de Fastly VCL &#x200B;](fastly-configuration.md#upload-vcl-to-fastly) en controleert de plaats opnieuw.
 
-- **Geo-location/GeoIP werkt niet** - de standaard fragmenten van Magento snel VCL voegen de landcode aan URL toe. Als de landcode niet werkt, [ uploadt de Fastly VCL ](fastly-configuration.md#upload-vcl-to-fastly) en controleert de plaats opnieuw.
+- **Geo-location/GeoIP werkt niet** - de standaard fragmenten van Magento snel VCL voegen de landcode aan URL toe. Als de landcode niet werkt, [&#x200B; uploadt de Fastly VCL &#x200B;](fastly-configuration.md#upload-vcl-to-fastly) en controleert de plaats opnieuw.
 
-- **de Pagina&#39;s zijn niet caching** - door gebrek, leidt de Fastly geen pagina&#39;s met de `Set-Cookies` kopbal in het voorgeheugen op. Adobe Commerce stelt cookies zelfs in op cacheable pages (TTL > 0). De standaard Magento Fastly VCL verwijdert deze cookies op cacheable pagina&#39;s. Als de pagina&#39;s niet in het voorgeheugen onderbrengen, [ uploadt de Fastly VCL ](fastly-configuration.md#upload-vcl-to-fastly) en controleert de plaats opnieuw.
+- **de Pagina&#39;s zijn niet caching** - door gebrek, leidt de Fastly geen pagina&#39;s met de `Set-Cookies` kopbal in het voorgeheugen op. Adobe Commerce stelt cookies zelfs in op cacheable pages (TTL > 0). De standaard Magento Fastly VCL verwijdert deze cookies op cacheable pagina&#39;s. Als de pagina&#39;s niet in het voorgeheugen onderbrengen, [&#x200B; uploadt de Fastly VCL &#x200B;](fastly-configuration.md#upload-vcl-to-fastly) en controleert de plaats opnieuw.
 
-  Deze kwestie kan ook voorkomen als een paginablok in een malplaatje uncacheable duidelijk is. In dat geval, wordt het probleem zeer waarschijnlijk veroorzaakt door een derdemodule of een uitbreiding die de kopballen van Adobe Commerce blokkeren of verwijderen. Om de kwestie op te lossen, zie [ x-Geheime voorgeheugen slechts MISS, geen HIT ](#x-cache-contains-only-miss-no-hit) bevat.
+  Deze kwestie kan ook voorkomen als een paginablok in een malplaatje uncacheable duidelijk is. In dat geval, wordt het probleem zeer waarschijnlijk veroorzaakt door een derdemodule of een uitbreiding die de kopballen van Adobe Commerce blokkeren of verwijderen. Om de kwestie op te lossen, zie [&#x200B; x-Geheime voorgeheugen slechts MISS, geen HIT &#x200B;](#x-cache-contains-only-miss-no-hit) bevat.
 
 - **zuivert verzoeken ontbreken** - keert snel de volgende fout terug wanneer u een zuiveringsverzoek voorlegt:
 
@@ -59,7 +59,7 @@ Gebruik de volgende lijst om problemen met betrekking tot de Fastly-serviceconfi
    - Ongeldige Fastly geloofsbrieven in de Fastly de dienstconfiguratie voor de Adobe Commerce op het projectmilieu van de wolkeninfrastructuur
    - Ongeldige code in een aangepast VCL-fragment
 
-  Om de kwestie op te lossen, zie [ Fout die het geheime voorgeheugen van de Fout op Cloud ](https://support.magento.com/hc/en-us/articles/115001853194-Error-purging-Fastly-cache-on-Cloud-The-purge-request-was-not-processed-successfully-) in het Centrum van de Hulp van Adobe Commerce leegmaakt.
+  Om de kwestie op te lossen, zie [&#x200B; Fout die het geheime voorgeheugen van de Fout op Cloud &#x200B;](https://support.magento.com/hc/en-us/articles/115001853194-Error-purging-Fastly-cache-on-Cloud-The-purge-request-was-not-processed-successfully-) in het Centrum van de Hulp van Adobe Commerce leegmaakt.
 
 ## 503 fouten van snel
 
@@ -67,7 +67,7 @@ Als er snel 503 time-outfouten worden geretourneerd, controleert u de foutlogboe
 
 >[!NOTE]
 >
->Als de onderbreking wanneer het runnen van bulkverrichtingen voorkomt, kunt u [ de Snelle onderbreking voor Admin ](fastly-custom-cache-configuration.md#extend-fastly-timeout) uitbreiden.
+>Als de onderbreking wanneer het runnen van bulkverrichtingen voorkomt, kunt u [&#x200B; de Snelle onderbreking voor Admin &#x200B;](fastly-custom-cache-configuration.md#extend-fastly-timeout) uitbreiden.
 
 Als u een fout 503 ontvangt, controleer het van de de milieufout van de Productie of het Staging milieu en php toegangslogboek om de kwestie problemen op te lossen.
 
@@ -89,7 +89,7 @@ Als u een fout 503 ontvangt, controleer het van de de milieufout van de Producti
 
   Zoek in het logbestand naar HTTP 200-reacties op de URL die de fout 503 heeft geretourneerd. Als u het antwoord van 200 vindt, betekent dit dat Adobe Commerce de pagina zonder fouten heeft geretourneerd. Dit geeft aan dat de kwestie mogelijk is opgetreden na het interval dat de `first_byte_timeout` -waarde overschrijdt die is ingesteld in de Fastly-serviceconfiguratie.
 
-Wanneer er een fout van 503 optreedt, wordt de reden snel geretourneerd op de fout- en onderhoudspagina. U zou niet de reden kunnen zien als u code voor de pagina van de a [ douanereactie ](fastly-custom-response.md) toevoegde. Als u de redencode op de standaardfoutpagina wilt weergeven, kunt u de HTML-code voor de aangepaste foutpagina verwijderen.
+Wanneer er een fout van 503 optreedt, wordt de reden snel geretourneerd op de fout- en onderhoudspagina. U zou niet de reden kunnen zien als u code voor de pagina van de a [&#x200B; douanereactie &#x200B;](fastly-custom-response.md) toevoegde. Als u de redencode op de standaardfoutpagina wilt weergeven, kunt u de HTML-code voor de aangepaste foutpagina verwijderen.
 
 **om de Fastly 503 foutenpagina** te controleren:
 
@@ -101,7 +101,7 @@ Wanneer er een fout van 503 optreedt, wordt de reden snel geretourneerd op de fo
 
 1. In de **Snelle sectie van de Configuratie**, breid **de Synthetische Pagina&#39;s van de Douane uit** aangezien het volgende cijfer toont.
 
-   ![ Douane 503 foutenpagina ](../../assets/cdn/fastly-custom-synthetic-pages-edit-html.png)
+   ![&#x200B; Douane 503 foutenpagina &#x200B;](../../assets/cdn/fastly-custom-synthetic-pages-edit-html.png)
 
 1. Klik **Reeks HTML**.
 
@@ -113,15 +113,15 @@ Wanneer er een fout van 503 optreedt, wordt de reden snel geretourneerd op de fo
 
 1. Open de URL die de fout 503 heeft veroorzaakt. Retourneert snel een foutpagina met de reden zoals in het volgende voorbeeld wordt getoond.
 
-   ![ Snelle fout ](../../assets/cdn/fastly-503-example.png)
+   ![&#x200B; Snelle fout &#x200B;](../../assets/cdn/fastly-503-example.png)
 
 ## Apex- en subdomeinen die al zijn gekoppeld aan een snelaccount
 
 Als het apex-domein en de subdomeinen voor uw Adobe Commerce on cloud-infrastructuurproject al zijn gekoppeld aan een bestaand Fastly-account met een toegewezen Service-id, kunt u pas starten wanneer u de Fastly-configuratie bijwerkt:
 
-- Werk de apex- en subdomeinconfiguratie bij op de bestaande Fastly-account. Zie [ Veelvoudige Snelle rekeningen en toegewezen domeinen ](fastly.md#multiple-fastly-accounts-and-assigned-domains).
+- Werk de apex- en subdomeinconfiguratie bij op de bestaande Fastly-account. Zie [&#x200B; Veelvoudige Snelle rekeningen en toegewezen domeinen &#x200B;](fastly.md#multiple-fastly-accounts-and-assigned-domains).
 
-- [ laat en vormt snel ](fastly-configuration.md#enable-fastly-caching) toe en voltooit de [ DNS configuratie ](../launch/checklist.md#update-dns-configuration-with-production-settings)
+- [&#x200B; laat en vormt snel &#x200B;](fastly-configuration.md#enable-fastly-caching) toe en voltooit de [&#x200B; DNS configuratie &#x200B;](../launch/checklist.md#update-dns-configuration-with-production-settings)
 
 ## Verifieer of zuivert de Snelle diensten
 
@@ -131,7 +131,7 @@ U kunt problemen met de prestaties of caching oplossen voor een Adobe Commerce o
 
 Gebruik de snelheids-API om de `Fastly-Magento-VCL-Uploaded` - en `X-Cache` -antwoordheaders te controleren die door uw livesite worden geretourneerd.
 
-Snelle API-aanvragen worden doorgegeven via de snelheidsuitbreiding om een antwoord te krijgen van uw oorspronkelijke servers. Als de reactie onjuiste kopballen terugkeert, test direct de [ oorsprongservers ](#bypass-fastly-cache-to-check-adobe-commerce-sites).
+Snelle API-aanvragen worden doorgegeven via de snelheidsuitbreiding om een antwoord te krijgen van uw oorspronkelijke servers. Als de reactie onjuiste kopballen terugkeert, test direct de [&#x200B; oorsprongservers &#x200B;](#bypass-fastly-cache-to-check-adobe-commerce-sites).
 
 **om de reactiekopballen** te controleren:
 
@@ -151,7 +151,7 @@ Snelle API-aanvragen worden doorgegeven via de snelheidsuitbreiding om een antwo
    >
    >Als u deze opdracht met de optie `--resolve` wilt gebruiken, moet u TLS hebben ingeschakeld met Fastly via een SSL/TLS-certificaat en moet u het IP-adres van het cacheknooppunt zoeken.
 
-1. In de reactie, verifieer de [ kopballen ](#check-cache-hit-and-miss-response-headers) om ervoor te zorgen dat de Fastly werkt. De volgende unieke kopteksten worden weergegeven in het antwoord:
+1. In de reactie, verifieer de [&#x200B; kopballen &#x200B;](#check-cache-hit-and-miss-response-headers) om ervoor te zorgen dat de Fastly werkt. De volgende unieke kopteksten worden weergegeven in het antwoord:
 
    ```http
    < Fastly-Magento-VCL-Uploaded: 1.2.222
@@ -166,7 +166,7 @@ Zie de volgende informatie als de kopteksten niet de juiste waarden hebben:
 
 ### Snelcache omzeilen om Adobe Commerce-sites te controleren
 
-Als de Fastly dienst onjuiste kopballen terugkeert, kunt u een fragment tot stand brengen VCL dat u toestaat om verzoeken te verzenden die de Fastly geheime voorgeheugen overslaan. Zie [ snel geheime voorgeheugen van de Bekeerling ](fastly-vcl-bypass-to-origin.md).
+Als de Fastly dienst onjuiste kopballen terugkeert, kunt u een fragment tot stand brengen VCL dat u toestaat om verzoeken te verzenden die de Fastly geheime voorgeheugen overslaan. Zie [&#x200B; snel geheime voorgeheugen van de Bekeerling &#x200B;](fastly-vcl-bypass-to-origin.md).
 
 Nadat u het VCL-fragment hebt toegevoegd, gebruikt u cURL-opdrachten om vanaf het opgegeven IP-adres aanvragen bij de oorspronkelijke server in te dienen. Controleer vervolgens de reacties op fouten.
 
@@ -178,9 +178,9 @@ Controleer of de geretourneerde reactie de volgende informatie bevat:
 
 - De waarde van de header `Fastly-Module-Enabled` is `Yes` of het versienummer van de Fastly for CDN Magento 2-module die in de projectomgeving is geïnstalleerd
 
-- [ cache-Controle: max-age ](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9) is groter dan 0
+- [&#x200B; cache-Controle: max-age &#x200B;](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9) is groter dan 0
 
-- [ Pragma ](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.32) het plaatsen is `cache`
+- [&#x200B; Pragma &#x200B;](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.32) het plaatsen is `cache`
 
 In het volgende fragment uit de uitvoer van de opdracht cURL worden de juiste waarden voor de headers `Pragma` , `X-Magento-Tags` en `Fastly-Module-Enabled` weergegeven:
 
@@ -221,7 +221,7 @@ In het volgende fragment uit de uitvoer van de opdracht cURL worden de juiste wa
 
 >[!NOTE]
 >
->Voor gedetailleerde informatie over klappen en missen, zie [ Begrip van de kopballen van het geheime voorgeheugen HIT en van MISS met de beschermde diensten ](https://docs.fastly.com/guides/performance-tuning/understanding-cache-hit-and-miss-headers-with-shielded-services) in de Fastly documentatie.
+>Voor gedetailleerde informatie over klappen en missen, zie [&#x200B; Begrip van de kopballen van het geheime voorgeheugen HIT en van MISS met de beschermde diensten &#x200B;](https://docs.fastly.com/guides/performance-tuning/understanding-cache-hit-and-miss-headers-with-shielded-services) in de Fastly documentatie.
 
 ### Fouten in responsheaders oplossen
 
@@ -229,7 +229,7 @@ Deze sectie bevat suggesties voor het oplossen van fouten die worden geretournee
 
 #### Module Snelheid is niet ingeschakeld
 
-Als de Fastly module niet (`Fastly-Module-Enabled: no`) wordt toegelaten of als de kopbal mist, [ gebruik SSH aan login ](../development/secure-connections.md#connect-to-a-remote-environment) aan het project. Voer vervolgens de volgende opdracht uit om de status van de module te controleren.
+Als de Fastly module niet (`Fastly-Module-Enabled: no`) wordt toegelaten of als de kopbal mist, [&#x200B; gebruik SSH aan login &#x200B;](../development/secure-connections.md#connect-to-a-remote-environment) aan het project. Voer vervolgens de volgende opdracht uit om de status van de module te controleren.
 
 ```bash
 php bin/magento module:status Fastly_Cdn
@@ -237,11 +237,11 @@ php bin/magento module:status Fastly_Cdn
 
 Gebaseerd op de teruggekeerde status, gebruik de volgende instructies om de Fastly configuratie bij te werken.
 
-- `Module does not exist` - als de module niet [ bestaat installeer en vorm ](https://github.com/fastly/fastly-magento2/blob/master/Documentation/INSTALLATION.md) de FastlyCDN Module voor Magento 2 in een integratietak. Nadat de installatie is voltooid, schakelt u de module in en configureert u deze. Zie [ Opstelling snel ](fastly-configuration.md).
+- `Module does not exist` - als de module niet [&#x200B; bestaat installeer en vorm &#x200B;](https://github.com/fastly/fastly-magento2/blob/master/Documentation/INSTALLATION.md) de FastlyCDN Module voor Magento 2 in een integratietak. Nadat de installatie is voltooid, schakelt u de module in en configureert u deze. Zie [&#x200B; Opstelling snel &#x200B;](fastly-configuration.md).
 
-- `Module is disabled` - Als de module Snelheid is uitgeschakeld, werkt u de omgevingsconfiguratie op een `integration` -vertakking in uw lokale omgeving bij om deze in te schakelen. Druk vervolgens op de wijzigingen in Staging en Production. Zie [ uitbreidingen ](../store/extensions.md#install-an-extension) beheren.
+- `Module is disabled` - Als de module Snelheid is uitgeschakeld, werkt u de omgevingsconfiguratie op een `integration` -vertakking in uw lokale omgeving bij om deze in te schakelen. Druk vervolgens op de wijzigingen in Staging en Production. Zie [&#x200B; uitbreidingen &#x200B;](../store/extensions.md#install-an-extension) beheren.
 
-  Als u [ Beheer van de Configuratie ](../store/store-settings.md#configure-store) gebruikt, controleer de Fastly CDN modulestatus in het `app/etc/config.php` configuratiedossier alvorens u veranderingen in de Productie of het Opvoeren milieu duwt.
+  Als u [&#x200B; Beheer van de Configuratie &#x200B;](../store/store-settings.md#configure-store) gebruikt, controleer de Fastly CDN modulestatus in het `app/etc/config.php` configuratiedossier alvorens u veranderingen in de Productie of het Opvoeren milieu duwt.
 
   Als de module niet is ingeschakeld (`Fastly_CDN => 0`) in het `config.php` -bestand, verwijdert u het bestand en voert u de volgende opdracht uit om `config.php` bij te werken met de meest recente configuratie-instellingen.
 
@@ -251,7 +251,7 @@ Gebaseerd op de teruggekeerde status, gebruik de volgende instructies om de Fast
 
 #### VCL is niet snel geüpload
 
-Als Fastly VCL niet is geupload (`Fastly-Magento-VCL-Uploaded`: `false`), gebruik *uploadt VCL* optie in Admin om het te uploaden. Zie [ snel VCL fragmenten ](fastly-configuration.md#upload-vcl-to-fastly) uploaden.
+Als Fastly VCL niet is geupload (`Fastly-Magento-VCL-Uploaded`: `false`), gebruik *uploadt VCL* optie in Admin om het te uploaden. Zie [&#x200B; snel VCL fragmenten &#x200B;](fastly-configuration.md#upload-vcl-to-fastly) uploaden.
 
 #### X-cache bevat alleen MISS, geen HIT
 
@@ -259,7 +259,7 @@ Als de header `X-Cache` `HIT` (`HIT, HIT` of `HIT, MISS` ) bevat, geeft dit aan 
 
 Als de `X-Cache` header `MISS, MISS` is en niet `HIT` bevat, voert u de opdracht `curl` opnieuw uit om ervoor te zorgen dat de pagina niet onlangs uit de cache is verwijderd.
 
-Als u het zelfde resultaat krijgt, gebruik [`curl` bevelen ](#check-live-site-through-fastly) en verifieer de [ reactiekopballen ](#check-cache-hit-and-miss-response-headers):
+Als u het zelfde resultaat krijgt, gebruik [`curl` bevelen &#x200B;](#check-live-site-through-fastly) en verifieer de [&#x200B; reactiekopballen &#x200B;](#check-cache-hit-and-miss-response-headers):
 
 - `Pragma` is `cache`
 - `X-Magento-Tags` exists
@@ -285,7 +285,7 @@ Als het probleem zich blijft voordoen, worden deze headers waarschijnlijk opnieu
 
    - Schakel één extensie tegelijk in, sla de configuratie op en verwijder de Adobe Commerce-cache.
 
-   - Voer de [`curl` bevelen ](#check-live-site-through-fastly) in werking om de [ reactiekopballen ](#check-cache-hit-and-miss-response-headers) te verifiëren.
+   - Voer de [`curl` bevelen &#x200B;](#check-live-site-through-fastly) in werking om de [&#x200B; reactiekopballen &#x200B;](#check-cache-hit-and-miss-response-headers) te verifiëren.
 
    Herhaal dit proces voor elke extensie. Als de headers voor snelle reactie niet meer worden weergegeven, hebt u de extensie geïdentificeerd die problemen met Snelheid veroorzaakt.
 
@@ -293,7 +293,7 @@ Nadat u de extensie hebt geïdentificeerd die de sneltoetsen opnieuw instelt, ne
 
 ## Snelconfiguratie terugdraaien
 
-Als de de fragmentupdates van douaneVCL of andere Fastly configuratieveranderingen een Adobe Commerce op de plaats van de wolkeninfrastructuur veroorzaken om fouten te breken of terug te keren, gebruik snel API [ activeer ](https://docs.fastly.com/api/config#version_0b79ae1ba6aee61d64cc4d43fed1e0d5) bevel om terug naar een vroegere versie terug te rollen VCL. U kunt de VCL-versie niet terugdraaien vanuit de beheerfunctie.
+Als de de fragmentupdates van douaneVCL of andere Fastly configuratieveranderingen een Adobe Commerce op de plaats van de wolkeninfrastructuur veroorzaken om fouten te breken of terug te keren, gebruik snel API [&#x200B; activeer &#x200B;](https://docs.fastly.com/api/config#version_0b79ae1ba6aee61d64cc4d43fed1e0d5) bevel om terug naar een vroegere versie terug te rollen VCL. U kunt de VCL-versie niet terugdraaien vanuit de beheerfunctie.
 
 **om terug versie te rollen VCL**:
 
@@ -309,4 +309,4 @@ Als de de fragmentupdates van douaneVCL of andere Fastly configuratieverandering
    curl -H "Fastly-Key: <FASTLY_API_TOKEN>" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json" -X PUT https://api.fastly.com/service/<FASTLY_SERVICE_ID>/version/<VERSION_ID>/activate
    ```
 
-Voor details over het gebruiken van Fastly API om VCL te herzien en te beheren, zie [ VCL beheren gebruikend API ](fastly-vcl-custom-snippets.md#manage-custom-vcl-snippets-using-the-api).
+Voor details over het gebruiken van Fastly API om VCL te herzien en te beheren, zie [&#x200B; VCL beheren gebruikend API &#x200B;](fastly-vcl-custom-snippets.md#manage-custom-vcl-snippets-using-the-api).
