@@ -191,7 +191,7 @@ Voor zowel Starter- als Pro-projecten kunt u de optie [!UICONTROL Domains] gebru
 
 - Voor Starter-projecten gaat u naar Project URL onder het tabblad [!UICONTROL Domains] in [!DNL Cloud Console] om de URL van het project toe te voegen.
 
-- Voor Pro projecten, leg een [&#x200B; kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voor om het domein aan uw configuratie van het wolkenproject toe te voegen. Het ondersteuningsteam werkt ook de Adobe Commerce Fastly-accountconfiguratie bij om het domein toe te voegen.
+- Voor Pro projecten, leg een [&#x200B; kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voor om het domein aan uw configuratie van het wolkenproject toe te voegen. Het ondersteuningsteam werkt ook de Adobe Commerce Fastly-accountconfiguratie bij om het domein toe te voegen.
 
 **om Snelle domeinconfiguratie van Admin** te beheren:
 

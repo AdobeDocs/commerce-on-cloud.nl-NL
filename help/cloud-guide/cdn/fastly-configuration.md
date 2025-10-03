@@ -40,7 +40,7 @@ U hebt de Fastly geloofsbrieven nodig om de Snelle diensten CDN van Admin van Ad
 
 Met Adobe Commerce op cloudinfrastructuur hebt u niet rechtstreeks toegang tot het dashboard voor snelbeheer.
 
-Gebruik de Adobe Commerce-beheerder om de configuratie Snelst voor uw omgevingen te bekijken en bij te werken. Als u geen kwestie kunt oplossen gebruikend de Fastly mogelijkheden in Admin, leg een [&#x200B; kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) voor.
+Gebruik de Adobe Commerce-beheerder om de configuratie Snelst voor uw omgevingen te bekijken en bij te werken. Als u geen kwestie kunt oplossen gebruikend de Fastly mogelijkheden in Admin, leg een [&#x200B; kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL) voor.
 
 ## Snelle gebruikersgegevens ophalen
 
@@ -76,7 +76,7 @@ Voor Cloud Starter-projecten kunt u de aanmeldingsgegevens ophalen via de Cloud 
 
 - Neem contact op met de Adobe Customer Technical Advisor (CTA) als u de gegevens voor de testomgeving of productieomgeving niet snel kunt vinden.
 
-- [&#x200B; Fout wanneer het bevestigen van de Fastly geloofsbrieven &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/error-when-validating-fastly-credentials#solution).
+- [&#x200B; Fout wanneer het bevestigen van de Fastly geloofsbrieven &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/error-when-validating-fastly-credentials#solution).
 
 ## Beveilig uw geloofsbrieven
 
@@ -156,7 +156,7 @@ Nadat u de Fastly module toelaat, upload de standaard [&#x200B; code VCL &#x200B
 
 ## SSL/TLS-certificaten leveren
 
-Adobe biedt een door domein gevalideerd SSL/TLS-certificaat waarmee snel veilig HTTPS-verkeer kan worden aangeboden. Adobe verstrekt één certificaat voor elke ProProductie, Staging, en het milieu van de Productie van de Aanzet om alle domeinen in dat milieu te beveiligen. Voor gedetailleerde informatie over het verstrekte certificaat, zie [&#x200B; SSL van Adobe (TLS) certificaten voor Adobe Commerce op wolkeninfrastructuur &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/ssl-tls-certificates-for-magento-commerce-cloud-faq).
+Adobe biedt een door domein gevalideerd SSL/TLS-certificaat waarmee snel veilig HTTPS-verkeer kan worden aangeboden. Adobe verstrekt één certificaat voor elke ProProductie, Staging, en het milieu van de Productie van de Aanzet om alle domeinen in dat milieu te beveiligen. Voor gedetailleerde informatie over het verstrekte certificaat, zie [&#x200B; SSL van Adobe (TLS) certificaten voor Adobe Commerce op wolkeninfrastructuur &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/how-to/ssl-tls-certificates-for-magento-commerce-cloud-faq).
 
 >[!NOTE]
 >
@@ -260,7 +260,7 @@ Om verkeer van uw opslag URLs aan de Snelle dienst te leiden werkt uw DNS config
 
    >[!NOTE]
    >
-   >Als alternatief aan het gebruiken van Cloud CLI, kunt u Basis URL van [&#x200B; Admin &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls) bijwerken
+   >Als alternatief aan het gebruiken van Cloud CLI, kunt u Basis URL van [&#x200B; Admin &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/stores-sales/site-store/store-urls) bijwerken
 
 1. Start de webbrowser opnieuw.
 
@@ -337,4 +337,4 @@ Nadat u de Snelle diensten op de Staging plaats verifieert, herhaal het verbeter
 
 >[!TIP]
 >
-> Als u kwesties met de Snelle diensten in uw milieu&#39;s van Adobe Commerce hebt, zie [&#x200B; snel de probleemoplosser van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/magento-fastly-troubleshooter).
+> Als u kwesties met de Snelle diensten in uw milieu&#39;s van Adobe Commerce hebt, zie [&#x200B; snel de probleemoplosser van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/magento-fastly-troubleshooter).
