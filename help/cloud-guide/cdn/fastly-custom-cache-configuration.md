@@ -3,9 +3,9 @@ title: Cacheconfiguratie aanpassen
 description: Leer hoe u de instellingen van de cacheconfiguratie kunt controleren en aanpassen nadat de service Fastly is ingesteld.
 feature: Cloud, Configuration, Iaas, Cache
 exl-id: f6901931-7b3f-40a8-9514-168c6243cc43
-source-git-commit: 551a00932165dd1c0a876b8151ba14752ceac802
+source-git-commit: a2f5e2f67c7739302a87eaa27df25a62fca1acb7
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1995'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,11 @@ ht-degree: 0%
 
 Nadat u opstelling en de Snelle dienst in uw het Staging en milieu&#39;s van de Productie test, herzie en pas montages van de geheim voorgeheugenconfiguratie aan. U kunt bijvoorbeeld instellingen bijwerken om ervoor te zorgen dat TLS HTTP-aanvragen snel kan doorsturen, instellingen voor leegmaken kan bijwerken en standaardverificatie kan inschakelen om uw site tijdens de ontwikkeling met een wachtwoord te beveiligen.
 
-In de volgende secties vindt u een overzicht en instructies voor het configureren van bepaalde cacheinstellingen. Vind extra informatie over de beschikbare configuratieopties in de [ Snelle Module CDN voor Magento 2 ](https://github.com/fastly/fastly-magento2/tree/master/Documentation) documentatie.
+In de volgende secties vindt u een overzicht en instructies voor het configureren van bepaalde cacheinstellingen.
+
+>[!IMPORTANT]
+>
+>Welke beheeropties beschikbaar zijn voor het configureren van de snelcache, is afhankelijk van de versie van de snelste CDN-module voor Magento 2. Adobe adviseert dat u [ de Fastly module ](fastly-configuration.md#upgrade) bevordert de Fastly module in uw het Opvoeren en milieu&#39;s van de Productie aan de recentste versie. Voor de recentste informatie, zie de [ Nota&#39;s van de Versie voor Fastly CDN voor Magento2 module ](https://github.com/fastly/fastly-magento2/blob/master/Release-Notes.md).
 
 ## TLS forceren
 
@@ -44,7 +48,7 @@ Om bulkacties te voltooien die langer dan 3 minuten duren verander de _onderbrek
 
 1. In de _Snelle sectie van de Configuratie_, breid **Geavanceerde Configuratie** uit.
 
-1. Plaats de **waarde van de de wegonderbreking van 0&rbrace; Admin &lbrace;in seconden.** Deze waarde mag niet langer zijn dan 10 minuten (600 seconden).
+1. Plaats de **waarde van de de wegonderbreking van 0} Admin {in seconden.** Deze waarde mag niet langer zijn dan 10 minuten (600 seconden).
 
 >[!NOTE]
 >
@@ -99,7 +103,7 @@ De module Snelheid bevat GeoIP-afhandeling om bezoekers automatisch om te leiden
 
 1. Voor Actie GeoIP, selecteer als de bezoeker automatisch met **opnieuw richt** wordt omgeleid of een lijst van opslag verstrekt om van met **Dialoog** te selecteren.
 
-1. Voor **Afbeelding van het Land**, **&#x200B;**&#x200B;toevoegen om een twee-brief landcode in te gaan om met een specifieke opslag van Adobe Commerce van een lijst in kaart te brengen.
+1. Voor **Afbeelding van het Land**, **** toevoegen om een twee-brief landcode in te gaan om met een specifieke opslag van Adobe Commerce van een lijst in kaart te brengen.
 
    ![ voeg GeoIP landkaarten ](/help/assets/cdn/fastly-geo-code.png) toe
 
@@ -175,7 +179,7 @@ Als u gebruikerstoegang toevoegt en basisauthentificatie bij het Opvoeren toelaa
 
 Steunt snel een aangepaste versie van de Taal van de Configuratie van de Varnish (VCL) om de Snelle de dienstconfiguratie aan te passen. U kunt bijvoorbeeld toegang voor bepaalde gebruikers of IP-adressen toestaan, blokkeren of omleiden met VCL-codeblokken met de woordenboeken Rand en Toegangsbeheer (ACL).
 
-Voor instructies om de fragmenten van douaneVCL, randwoordenboeken, en ACLs tot stand te brengen, zie &lbrace;de fragmenten van VCL van de Douane VCL [.](fastly-vcl-custom-snippets.md)
+Voor instructies om de fragmenten van douaneVCL, randwoordenboeken, en ACLs tot stand te brengen, zie {de fragmenten van VCL van de Douane VCL [.](fastly-vcl-custom-snippets.md)
 
 >[!NOTE]
 >
@@ -187,7 +191,7 @@ Voor zowel Starter- als Pro-projecten kunt u de optie [!UICONTROL Domains] gebru
 
 - Voor Starter-projecten gaat u naar Project URL onder het tabblad [!UICONTROL Domains] in [!DNL Cloud Console] om de URL van het project toe te voegen.
 
-- Voor Pro projecten, leg een [ kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voor om het domein aan uw configuratie van het wolkenproject toe te voegen. Het ondersteuningsteam werkt ook de Adobe Commerce Fastly-accountconfiguratie bij om het domein toe te voegen.
+- Voor Pro projecten, leg een [ kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voor om het domein aan uw configuratie van het wolkenproject toe te voegen. Het ondersteuningsteam werkt ook de Adobe Commerce Fastly-accountconfiguratie bij om het domein toe te voegen.
 
 **om Snelle domeinconfiguratie van Admin** te beheren:
 

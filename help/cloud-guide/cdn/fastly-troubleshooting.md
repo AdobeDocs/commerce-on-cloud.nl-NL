@@ -2,7 +2,8 @@
 title: Snelle probleemoplossing
 description: Leer hoe u de snelste CDN-module en -services voor Adobe Commerce kunt oplossen en beheren.
 feature: Cloud, Configuration, Cache, Services
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 69954ef9-9ece-411e-934e-814a56542290
+source-git-commit: f496a4a96936558e6808b3ce74eac32dfdb9db19
 workflow-type: tm+mt
 source-wordcount: '1834'
 ht-degree: 0%
@@ -11,7 +12,7 @@ ht-degree: 0%
 
 # Snelle probleemoplossing
 
-Gebruik de volgende informatie om de Fastly CDN module voor Magento 2 in uw Adobe Commerce op het projectmilieu&#39;s van de wolkeninfrastructuur problemen op te lossen en te beheren. U kunt bijvoorbeeld de headerwaarden van reacties en het gedrag van caching onderzoeken om problemen met services en prestaties snel op te lossen.
+Gebruik de volgende informatie om de Fastly CDN module voor Magento 2 in uw Adobe Commerce op het projectmilieu van de wolkeninfrastructuur problemen op te lossen en te beheren. U kunt bijvoorbeeld de headerwaarden van reacties en het gedrag van caching onderzoeken om problemen met services en prestaties snel op te lossen.
 
 Op ProProductie en het Staging milieu&#39;s, kunt u [ logboeken van New Relic ](../monitor/log-management.md) gebruiken om snel CDN en het logboekgegevens van WAF te bekijken en te analyseren om fouten en prestatiesproblemen problemen op te lossen.
 
@@ -39,11 +40,11 @@ Gebruik de volgende lijst om problemen met betrekking tot de Fastly-serviceconfi
 
 - **het menu van de Opslag toont of werkt niet** - u zou een verbinding of een tijdelijke verbinding rechtstreeks aan de oorsprongserver in plaats van het gebruiken van levende plaats URL kunnen gebruiken, of u gebruikte `-H "host:URL"` in het bevel van a [ cURL ](#check-live-site-through-fastly). Als u Fastly naar de oorspronkelijke server overslaat, werkt het hoofdmenu niet en worden onjuiste kopteksten weergegeven die caching op de browserzijde toestaan.
 
-- **De hoogste navigatie werkt niet** - de hoogste navigatie baseert zich op de Zijde van Edge omvat (ESI) verwerking die wordt toegelaten wanneer u het standaardMagento snel VCL fragmenten uploadt. Als de navigatie niet werkt, [ uploadt de Fastly VCL ](fastly-configuration.md#upload-vcl-to-fastly) en controleert de plaats opnieuw.
+- **De hoogste navigatie werkt niet** - de hoogste navigatie baseert zich op de Zijde van Edge omvat (ESI) verwerking die wordt toegelaten wanneer u het gebrek van Magento snel VCL fragmenten uploadt. Als de navigatie niet werkt, [ uploadt de Fastly VCL ](fastly-configuration.md#upload-vcl-to-fastly) en controleert de plaats opnieuw.
 
-- **Geo-location/GeoIP werkt niet** - de fragmenten VCL van het standaardMagento voegen de landcode aan URL snel toe. Als de landcode niet werkt, [ uploadt de Fastly VCL ](fastly-configuration.md#upload-vcl-to-fastly) en controleert de plaats opnieuw.
+- **Geo-location/GeoIP werkt niet** - de standaard fragmenten van Magento snel VCL voegen de landcode aan URL toe. Als de landcode niet werkt, [ uploadt de Fastly VCL ](fastly-configuration.md#upload-vcl-to-fastly) en controleert de plaats opnieuw.
 
-- **de Pagina&#39;s zijn niet caching** - door gebrek, leidt de Fastly geen pagina&#39;s met de `Set-Cookies` kopbal in het voorgeheugen op. Adobe Commerce stelt cookies zelfs in op cacheable pages (TTL > 0). Met het standaard Magento VCL worden deze cookies op pagina&#39;s die in een cache kunnen worden geplaatst, snel verwijderd. Als de pagina&#39;s niet in het voorgeheugen onderbrengen, [ uploadt de Fastly VCL ](fastly-configuration.md#upload-vcl-to-fastly) en controleert de plaats opnieuw.
+- **de Pagina&#39;s zijn niet caching** - door gebrek, leidt de Fastly geen pagina&#39;s met de `Set-Cookies` kopbal in het voorgeheugen op. Adobe Commerce stelt cookies zelfs in op cacheable pages (TTL > 0). De standaard Magento Fastly VCL verwijdert deze cookies op cacheable pagina&#39;s. Als de pagina&#39;s niet in het voorgeheugen onderbrengen, [ uploadt de Fastly VCL ](fastly-configuration.md#upload-vcl-to-fastly) en controleert de plaats opnieuw.
 
   Deze kwestie kan ook voorkomen als een paginablok in een malplaatje uncacheable duidelijk is. In dat geval, wordt het probleem zeer waarschijnlijk veroorzaakt door een derdemodule of een uitbreiding die de kopballen van Adobe Commerce blokkeren of verwijderen. Om de kwestie op te lossen, zie [ x-Geheime voorgeheugen slechts MISS, geen HIT ](#x-cache-contains-only-miss-no-hit) bevat.
 
@@ -102,7 +103,7 @@ Wanneer er een fout van 503 optreedt, wordt de reden snel geretourneerd op de fo
 
    ![ Douane 503 foutenpagina ](../../assets/cdn/fastly-custom-synthetic-pages-edit-html.png)
 
-1. Klik **Vastgestelde HTML**.
+1. Klik **Reeks HTML**.
 
 1. Verwijder de aangepaste code. U kunt de sjabloon opslaan in een tekstprogramma en deze later weer toevoegen.
 
@@ -153,7 +154,7 @@ Snelle API-aanvragen worden doorgegeven via de snelheidsuitbreiding om een antwo
 1. In de reactie, verifieer de [ kopballen ](#check-cache-hit-and-miss-response-headers) om ervoor te zorgen dat de Fastly werkt. De volgende unieke kopteksten worden weergegeven in het antwoord:
 
    ```http
-   < Fastly-Magento-VCL-Uploaded: yes
+   < Fastly-Magento-VCL-Uploaded: 1.2.222
    < X-Cache: HIT, MISS
    ```
 
@@ -175,7 +176,7 @@ Controleer of de geretourneerde reactie de volgende informatie bevat:
 
 - Bevat de header `X-Magento-Tags`
 
-- De waarde van de header `Fastly-Module-Enabled` is `Yes` of het versienummer van de module Fastly voor CDN Magento 2 die in de projectomgeving is geïnstalleerd
+- De waarde van de header `Fastly-Module-Enabled` is `Yes` of het versienummer van de Fastly for CDN Magento 2-module die in de projectomgeving is geïnstalleerd
 
 - [ cache-Controle: max-age ](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9) is groter dan 0
 
@@ -278,7 +279,7 @@ Als het probleem zich blijft voordoen, worden deze headers waarschijnlijk opnieu
 
 1. Klik **Systeem** > **Hulpmiddelen** > **het Beheer van het Geheime voorgeheugen**.
 
-1. Klik **het Geheime voorgeheugen van het Magento van de Duw**.
+1. Klik **het Geheime voorgeheugen van Magento van de Duw**.
 
 1. Voer de volgende stappen uit voor elke extensie die mogelijk problemen veroorzaakt met snelkopteksten:
 
