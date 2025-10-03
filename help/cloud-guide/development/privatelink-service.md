@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # PrivateLink-service
 
-Adobe Commerce op de infrastructuur van de wolk steunt integratie met [ AWS PrivateLink ](https://aws.amazon.com/privatelink/) of [ Azure Private Link ](https://learn.microsoft.com/en-us/azure/private-link/) dienst. U kunt PrivateLink gebruiken om veilige, persoonlijke communicatie tot stand te brengen tussen Adobe Commerce in omgevingen met cloudinfrastructuren met services en toepassingen die worden gehost op externe systemen. Zowel de Adobe Commerce-toepassing als externe systemen moeten toegankelijk zijn via Virtual Private Cloud (VPC)-eindpunten die op hetzelfde cloudplatform (AWS of Azure) in dezelfde cloudregio zijn geconfigureerd.
+Adobe Commerce op de infrastructuur van de wolk steunt integratie met [&#x200B; AWS PrivateLink &#x200B;](https://aws.amazon.com/privatelink/) of [&#x200B; Azure Private Link &#x200B;](https://learn.microsoft.com/en-us/azure/private-link/) dienst. U kunt PrivateLink gebruiken om veilige, persoonlijke communicatie tot stand te brengen tussen Adobe Commerce in omgevingen met cloudinfrastructuren met services en toepassingen die worden gehost op externe systemen. Zowel de Adobe Commerce-toepassing als externe systemen moeten toegankelijk zijn via Virtual Private Cloud (VPC)-eindpunten die op hetzelfde cloudplatform (AWS of Azure) in dezelfde cloudregio zijn geconfigureerd.
 
 >[!TIP]
 >
->PrivateLink kan het best worden gebruikt voor het beveiligen van verbindingen voor niet-HTTP(S)-integratie, zoals database- of bestandsoverdrachten. Als u van plan bent om uw toepassing met Adobe Commerce APIs te integreren, zie hoe te om een [ Adobe API Net ](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/) in _API Net voor Adobe Developer App Builder_ tot stand te brengen.
+>PrivateLink kan het best worden gebruikt voor het beveiligen van verbindingen voor niet-HTTP(S)-integratie, zoals database- of bestandsoverdrachten. Als u van plan bent om uw toepassing met Adobe Commerce APIs te integreren, zie hoe te om een [&#x200B; Adobe API Net &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/) in _API Net voor Adobe Developer App Builder_ tot stand te brengen.
 
 ## Functies en ondersteuning
 
@@ -33,11 +33,11 @@ De PrivateLink-service-integratie voor Adobe Commerce op cloud-infrastructuurpro
 ## Beperkingen
 
 - Ondersteuning voor PrivateLink is alleen beschikbaar in Pro Production- en Staging-omgevingen. Het is niet beschikbaar op lokale of integratieomgevingen, of op Starter-projecten.
-- U kunt geen verbindingen tot stand brengen SSH gebruikend PrivateLink. Zie [ SSH sleutels ](secure-connections.md) toelaten.
+- U kunt geen verbindingen tot stand brengen SSH gebruikend PrivateLink. Zie [&#x200B; SSH sleutels &#x200B;](secure-connections.md) toelaten.
 - Adobe Commerce-ondersteuning biedt geen ondersteuning voor het oplossen van problemen met AWS PrivateLink buiten initiële activering.
 - Klanten zijn verantwoordelijk voor de kosten die gepaard gaan met het beheer van hun eigen VPC.
 - **HTTPS protocol (haven 443) steun door platform:**
-   - **Azure Privé Verbinding**: U kunt niet het protocol HTTPS (haven 443) gebruiken om met Adobe Commerce op wolkeninfrastructuur te verbinden toe te schrijven aan [ het snelst van oorsprong het camoufleren ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html).
+   - **Azure Privé Verbinding**: U kunt niet het protocol HTTPS (haven 443) gebruiken om met Adobe Commerce op wolkeninfrastructuur te verbinden toe te schrijven aan [&#x200B; het snelst van oorsprong het camoufleren &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html).
    - **AWS PrivateLink**: HTTPS protocol (haven 443) de verbindingen worden gesteund.
 - PrivateDNS is niet beschikbaar.
 
@@ -45,7 +45,7 @@ De PrivateLink-service-integratie voor Adobe Commerce op cloud-infrastructuurpro
 
 Er zijn twee PrivateLink verbindingstypes beschikbaar-getoond in het volgende netwerkdiagram-om veilige communicatie tussen uw opslag en externe systemen te vestigen die buiten het milieu van de Wolk worden ontvangen.
 
-![ PrivateLink netwerkdiagram ](../../assets/privatelink-architecture-diagram.png)
+![&#x200B; PrivateLink netwerkdiagram &#x200B;](../../assets/privatelink-architecture-diagram.png)
 
 Kies een van de verbindingstypen voor PrivateLink die het meest geschikt zijn voor uw Adobe Commerce in omgevingen met cloudinfrastructuren:
 
@@ -57,7 +57,7 @@ Kies een van de verbindingstypen voor PrivateLink die het meest geschikt zijn vo
 
 >[!TIP]
 >
->Werk met uw netwerkbeheerder of Cloud platform provider voor hulp bij het selecteren van het verbindingstype PrivateLink of hulp bij het instellen en beheren van VPC. Zie het platform PrivateLink van de Wolk documentatie: [ AWS PrivateLink ](https://aws.amazon.com/privatelink/) of [ Azure Private Link ](https://learn.microsoft.com/en-us/azure/private-link/).
+>Werk met uw netwerkbeheerder of Cloud platform provider voor hulp bij het selecteren van het verbindingstype PrivateLink of hulp bij het instellen en beheren van VPC. Zie het platform PrivateLink van de Wolk documentatie: [&#x200B; AWS PrivateLink &#x200B;](https://aws.amazon.com/privatelink/) of [&#x200B; Azure Private Link &#x200B;](https://learn.microsoft.com/en-us/azure/private-link/).
 
 ## Enable PrivateLink aanvragen
 
@@ -67,18 +67,18 @@ Kies een van de verbindingstypen voor PrivateLink die het meest geschikt zijn vo
 
 ### Vereisten
 
-![ controle ](../../assets/fix.svg) de rekening van de Wolk van A (AWS of Azure) in het zelfde gebied zoals Adobe Commerce op de instantie van de wolkeninfrastructuur.
+![&#x200B; controle &#x200B;](../../assets/fix.svg) de rekening van de Wolk van A (AWS of Azure) in het zelfde gebied zoals Adobe Commerce op de instantie van de wolkeninfrastructuur.
 
-![ controle ](../../assets/fix.svg) een VPC in het klantenmilieu dat gastheren de diensten om door PrivateLink te verbinden. Raadpleeg de documentatie bij AWS of Azure voor hulp bij de installatie van VPC of neem contact op met uw netwerkbeheerder.
+![&#x200B; controle &#x200B;](../../assets/fix.svg) een VPC in het klantenmilieu dat gastheren de diensten om door PrivateLink te verbinden. Raadpleeg de documentatie bij AWS of Azure voor hulp bij de installatie van VPC of neem contact op met uw netwerkbeheerder.
 
-![ controle ](../../assets/fix.svg) voor bidirectionele verbindingen PrivateLink, moet u de configuratie van de eindpuntdienst voor uw toepassing of dienst tot stand brengen, en een eindpunt in uw milieu van VPC creëren alvorens om PrivateLink te verzoeken enablement. Zie [ Opstelling voor bidirectionele verbindingen PrivateLink ](#set-up-for-bidirectional-privatelink-connections).
+![&#x200B; controle &#x200B;](../../assets/fix.svg) voor bidirectionele verbindingen PrivateLink, moet u de configuratie van de eindpuntdienst voor uw toepassing of dienst tot stand brengen, en een eindpunt in uw milieu van VPC creëren alvorens om PrivateLink te verzoeken enablement. Zie [&#x200B; Opstelling voor bidirectionele verbindingen PrivateLink &#x200B;](#set-up-for-bidirectional-privatelink-connections).
 
 Verzamel de volgende gegevens die voor PrivateLink worden vereist toelaat:
 
 - **de rekeningsaantal van de Klant Cloud** (AWS of Azure) - moet in het zelfde gebied zoals Adobe Commerce op de instantie van de wolkeninfrastructuur zijn
 - **gebied van de Wolk** - verstrek het gebied van de Wolk waar de rekening voor verificatiedoeleinden wordt ontvangen
 - **de Diensten en communicatie havens** - Adobe moet havens openen om de dienstmededeling tussen VPCs, bijvoorbeeld SQL haven 3306, haven 2222 toe te laten SFTP
-- **identiteitskaart van het Project** - verstrek Adobe Commerce op het projectidentiteitskaart van de wolkeninfrastructuur Pro. U kunt identiteitskaart van het Project en andere projectinformatie krijgen gebruikend het volgende [ CLI van de Wolk ](../dev-tools/cloud-cli-overview.md) bevel: `magento-cloud project:info`
+- **identiteitskaart van het Project** - verstrek Adobe Commerce op het projectidentiteitskaart van de wolkeninfrastructuur Pro. U kunt identiteitskaart van het Project en andere projectinformatie krijgen gebruikend het volgende [&#x200B; CLI van de Wolk &#x200B;](../dev-tools/cloud-cli-overview.md) bevel: `magento-cloud project:info`
 - **het type van Verbinding** - specificeer unidirectioneel of bidirectioneel voor verbindingstype
 - **de dienst van het Eindpunt** - voor bidirectionele verbindingen PrivateLink, verstrek DNS URL voor de het eindpuntdienst van VPC waarmee Adobe moet verbinden, bijvoorbeeld: `com.amazonaws.vpce.<cloud-region>.vpce-svc-<service-id>`
 - **verleende de diensttoegang van het Eindpunt** - om met de externe dienst te verbinden, de toegang van de eindpuntdienst tot het volgende de rekeningshoofd van AWS toestaan: `arn:aws:iam::402592597372:root`
@@ -107,7 +107,7 @@ Verzamel de volgende gegevens die voor PrivateLink worden vereist toelaat:
 
 In de volgende workflow wordt beschreven hoe u PrivateLink-integratie met Adobe Commerce kunt inschakelen voor cloudinfrastructuur.
 
-1. **Klant** legt een steunkaartje voor die om PrivateLink toelaat met de onderwerpregel `PrivateLink support for <company>` verzoekt. Omvat de [ gegevens die voor enablement ](#prerequisites) in het kaartje worden vereist. Adobe gebruikt het kaartje van de Steun om mededeling tijdens het enablement proces te coördineren.
+1. **Klant** legt een steunkaartje voor die om PrivateLink toelaat met de onderwerpregel `PrivateLink support for <company>` verzoekt. Omvat de [&#x200B; gegevens die voor enablement &#x200B;](#prerequisites) in het kaartje worden vereist. Adobe gebruikt het kaartje van de Steun om mededeling tijdens het enablement proces te coördineren.
 
 1. **Adobe** laat de toegang van de klantenrekening tot de eindpuntdienst in Adobe VPC toe.
 
@@ -121,7 +121,7 @@ In de volgende workflow wordt beschreven hoe u PrivateLink-integratie met Adobe 
 
 1. **Adobe** keurt het verbindingsverzoek goed.
 
-1. Na de goedkeuring van het verbindingsverzoek, **verifieert de klant** [ de verbinding ](#test-vpc-endpoint-service-connection) tussen hun VPC en Adobe VPC.
+1. Na de goedkeuring van het verbindingsverzoek, **verifieert de klant** [&#x200B; de verbinding &#x200B;](#test-vpc-endpoint-service-connection) tussen hun VPC en Adobe VPC.
 
 1. Aanvullende stappen om tweerichtingsverbindingen in te schakelen:
 
@@ -137,7 +137,7 @@ In de volgende workflow wordt beschreven hoe u PrivateLink-integratie met Adobe 
 
    - **Adobe** voegt de dienst van het klanteneindpunt aan de platformrekening van Adobe (AWS of Azure) toe, die een verbindingsverzoek aan klant VPC teweegbrengt.
    - **Klant** keurt het verbindingsverzoek van Adobe goed om de opstelling te voltooien.
-   - **Klant** [ verifieert de verbinding ](#test-vpc-endpoint-service-connection) van Adobe VPC.
+   - **Klant** [&#x200B; verifieert de verbinding &#x200B;](#test-vpc-endpoint-service-connection) van Adobe VPC.
 
 ## VPC-eindpuntserviceverbinding testen
 
@@ -205,7 +205,7 @@ U kunt de toepassing van Telnet gebruiken om de verbinding aan de de eindpuntdie
 
 ## De configuratie van PrivateLink wijzigen
 
-[ leg een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voor om een bestaande configuratie te veranderen PrivateLink. U kunt bijvoorbeeld de volgende wijzigingen aanvragen:
+[&#x200B; leg een kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voor om een bestaande configuratie te veranderen PrivateLink. U kunt bijvoorbeeld de volgende wijzigingen aanvragen:
 
 - Verwijder de PrivateLink-verbinding van de Adobe Commerce op de Pro-productie- of Staging-omgeving van de cloudinfrastructuur.
 - Wijzig het accountnummer van het Cloud-platform van de klant voor toegang tot de eindpuntservice van Adobe.
