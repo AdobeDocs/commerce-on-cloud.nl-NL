@@ -1,20 +1,20 @@
 ---
 title: Commerce-versie upgraden
-description: Leer hoe u de Adobe Commerce-versie kunt upgraden in het cloud-infrastructuurproject.
+description: Leer hoe u de Adobe Commerce-versie kunt upgraden in de cloud-infrastructuuromgeving.
 feature: Cloud, Upgrade
 exl-id: 0cc070cf-ab25-4269-b18c-b2680b895c17
-source-git-commit: bcb5b00f7f203b53eae5c1bc1037cdb1837ad473
+source-git-commit: 7f9aac358effdf200b59678098e6a1635612301b
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '898'
 ht-degree: 0%
 
 ---
 
 # Commerce-versie upgraden
 
-U kunt de Adobe Commerce-codebasis upgraden naar een nieuwere versie. Alvorens uw project te bevorderen, herzie de [ vereisten van het Systeem ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=nl-NL) in de _gids van de Installatie_ voor de recentste vereisten van de softwareversie.
+U kunt de Adobe Commerce-codebasis upgraden naar een nieuwere versie. Alvorens het milieu te bevorderen, herzie de [ vereisten van het Systeem ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in de _gids van de Installatie_ voor de recentste vereisten van de softwareversie.
 
-Afhankelijk van uw projectconfiguratie, kunnen uw verbeteringstaken het volgende omvatten:
+Afhankelijk van het milieutype (Ontwikkeling, het Opvoeren, of de Productie), kunnen uw verbeteringstaken het volgende omvatten:
 
 - Werk het `.magento/services.yaml` -bestand bij met nieuwe versies voor MariaDB (MySQL), OpenSearch, RabbitMQ en Redis voor compatibiliteit met nieuwe Adobe Commerce-versies.
 - Werk het `.magento.app.yaml` dossier met nieuwe montages voor haken en omgevingsvariabelen bij.
@@ -68,9 +68,9 @@ U kunt als volgt het `composer.json` -bestand voor Adobe Commerce versie 2.4.4 e
 
 1. Ga door met het upgradeproces.
 
-## Projectback-up
+## Omgevingsback-up
 
-We raden u aan een back-up van uw project te maken voordat u de upgrade uitvoert. Gebruik de volgende stappen om een back-up te maken van uw integratie-, staging- en productieomgevingen.
+We raden u aan een back-up van de instantie te maken voordat u de upgrade uitvoert. Gebruik de volgende stappen om een back-up te maken van uw integratie-, staging- en productieomgevingen.
 
 **aan file uw gegevensbestand van het integratiemilieu en code**:
 
@@ -128,7 +128,7 @@ Herzie de [ informatie van de de dienstversies ](../services/services-yaml.md#se
    composer require-commerce magento/product-enterprise-edition 2.4.8 --no-update
    ```
 
-1. Als u B2B gebruikt, werk uw `composer.json` dossier met de [ gesteunde versie ](https://experienceleague.adobe.com/nl/docs/commerce-operations/release/product-availability#adobe-authored-extensions) voor Commerce bij.
+1. Als u B2B gebruikt, werk uw `composer.json` dossier met de [ gesteunde versie ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#adobe-authored-extensions) voor Commerce bij.
 
    ```bash
    composer require-commerce magento/extension-b2b 1.5.2 --no-update
@@ -142,15 +142,15 @@ Herzie de [ informatie van de de dienstversies ](../services/services-yaml.md#se
 
 1. Bekijk de patches die momenteel worden toegepast:
 
-   - Als er om het even welke die flarden in de `m2-hotfixes` folder worden geïnstalleerd zijn, [ voorlegt een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) en het werk met de Steun van Adobe Commerce om te verifiëren welke flarden nog op de nieuwe versie kunnen worden toegepast. Verwijder de niet-toepasselijke patch(es) uit de map `m2-hotfixes` .
+   - Als er om het even welke die flarden in de `m2-hotfixes` folder worden geïnstalleerd zijn, [ voorlegt een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) en het werk met de Steun van Adobe Commerce om te verifiëren welke flarden nog op de nieuwe versie kunnen worden toegepast. Verwijder de niet-toepasselijke patch(es) uit de map `m2-hotfixes` .
 
    - Als er om het even welke [ Patches van de Kwaliteit ] in het `.magento.env.yaml` dossier worden toegepast, verifieer of zij nog op de nieuwe versie kunnen worden toegepast. Verwijder de niet-toepasselijke patch(es) uit de sectie `QUALITY_PATCHES` van het `.magento.env.yaml` -bestand.
 
-   **Methode 1**: [ verifieer de toepasselijke versies in de de versienota&#39;s van de Patches van de Kwaliteit ](https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/release-notes)
+   **Methode 1**: [ verifieer de toepasselijke versies in de de versienota&#39;s van de Patches van de Kwaliteit ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes)
 
-   **Methode 2**: [ de beschikbare flarden van de Mening en status ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
+   **Methode 2**: [ de beschikbare flarden van de Mening en status ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
 
-   **Methode 3**: [ Onderzoek naar flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL)
+   **Methode 3**: [ Onderzoek naar flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=en)
 
 
 1. Wijzigingen in code toevoegen, vastleggen en doorvoeren.
