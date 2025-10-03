@@ -2,9 +2,10 @@
 title: Cloud-infrastructuurproject
 description: Lees een overzicht over Adobe Commerce op wolkeninfrastructuur  [!DNL Cloud Console]  en leer hoe te om tot de rekeningsmontages toegang te hebben.
 last-substantial-update: 2024-02-06T00:00:00Z
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 8eed04c7-6469-45a4-aa89-dc594c977264
+source-git-commit: 00b1b6578c226a304697963d17ba349ea17da260
 workflow-type: tm+mt
-source-wordcount: '987'
+source-wordcount: '1003'
 ht-degree: 0%
 
 ---
@@ -13,11 +14,11 @@ ht-degree: 0%
 
 Het Adobe Commerce on cloud Infrastructure-project bevat alle code in Git-vertakkingen, bijbehorende omgevingen en scripts om de [!DNL Commerce] -toepassing te implementeren. Omgevingen bevatten services die de [!DNL Commerce] -toepassing ondersteunen, zoals een database, webserver en caching-server.
 
-Adobe biedt een [!DNL Cloud Console] - en ontwikkelaarsprogramma waarmee u alle aspecten van uw project volledig kunt beheren. U hebt als accounteigenaar volledige toegang tot alle omgevingen.
+Adobe beschikt over [!DNL Cloud Console] en ontwikkelaarsgereedschappen waarmee u alle aspecten van uw project volledig kunt beheren. U hebt als accounteigenaar volledige toegang tot alle omgevingen.
 
 ## [!DNL Cloud Console]
 
-[!DNL Cloud Console] biedt interactieve methoden voor het maken, beheren en implementeren van Commerce-code in een gebruiksvriendelijke indeling. [ Login aan  [!DNL Cloud Console] ](https://console.adobecommerce.com) om uw projectlijst te bekijken. U kunt projecten slechts zien die u toestemming hebt om als admin of voor specifieke milieutypes toegang te hebben. Als u een Partner van de Oplossingen van de Adobe bent, kunt u veelvoudige projecten voor cliënten zien die u steunt.
+[!DNL Cloud Console] biedt interactieve methoden voor het maken, beheren en implementeren van Commerce-code in een gebruiksvriendelijke indeling. [ Login aan  [!DNL Cloud Console] ](https://console.adobecommerce.com) om uw projectlijst te bekijken. U kunt projecten slechts zien die u toestemming hebt om als admin of voor specifieke milieutypes toegang te hebben. Als u een Partner van de Oplossingen van Adobe bent, kunt u veelvoudige projecten voor cliënten zien die u steunt.
 
 >[!TIP]
 >
@@ -42,7 +43,7 @@ Het projectoverzicht, zolang u geen milieu hebt geselecteerd, toont een samenvat
 
 En in het hoofdprojectoverzicht:
 
-- De mening van milieu&#39;s toont een lijst of boommening van ![ actieve tak ](../../assets/icon-active.png){width="32"} (active) and ![inactive branch](../../assets/icon-inactive.png){width="32"} (inactieve) milieu&#39;s.
+- De mening van milieu&#39;s toont een lijst of boommening van ![ actieve tak ](../../assets/icon-active.png){width="32"} (actief) en ![ inactieve tak ](../../assets/icon-inactive.png){width="32"} (inactieve) milieu&#39;s.
 - [ stroom van de Activiteit ](activity-stream.md) toont lopende, hangende, en recente activiteiten voor het project.
 <!-- - Apps & Services—Shows a topology of service containers -->
 
@@ -140,11 +141,11 @@ Klik op **[!UICONTROL Environments]** en selecteer een specifieke omgeving in de
 
 >[!WARNING]
 >
->**GEBRUIK NIET** de toegangsbeheermethode van HTTP voor het beveiligen van de milieu&#39;s van de ProStaging en van de Productie. Dit verbreekt snel caching. In plaats daarvan, gebruik de [ Blokkerende ](../cdn/fastly-vcl-blocking.md) eigenschap beschikbaar in Fastly CDN voor Adobe Commerce.
+>**GEBRUIK NIET** de toegangsbeheermethode van HTTP voor het beveiligen van de milieu&#39;s van de ProStaging en van de Productie. Dit verbreekt snel caching. In plaats daarvan, gebruik de [ Blokkerende ](../cdn/fastly-vcl-blocking.md) eigenschap beschikbaar in Fastly CDN voor Adobe Commerce om toegang te blokkeren, of toegangsbeheer uit te voeren gebruikend [ Snelle Basis Auth ](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BASIC-AUTH.md).
 
 ## Snelle en New Relic-gebruikersgegevens
 
-Uw project omvat [&#128279;](../cdn/fastly.md) en [ snel New Relic ](../monitor/new-relic-service.md). De projectdetails tonen informatie voor uw projectplan en belangrijke vergunningen en penningen voor deze integratie. Alleen de eigenaar van de licentie heeft initiële toegang tot de referenties en services. Geef deze gegevens desgewenst door aan de technische en ontwikkelaars.
+Uw project omvat [ ](../cdn/fastly.md) en [ snel New Relic ](../monitor/new-relic-service.md). De projectdetails tonen informatie voor uw projectplan en belangrijke vergunningen en penningen voor deze integratie. Alleen de eigenaar van de licentie heeft initiële toegang tot de referenties en services. Geef deze gegevens desgewenst door aan de technische en ontwikkelaars.
 
 - [ snel ](https://www.fastly.com/) verstrekt inhoudslevering (CDN), beeldoptimalisering, en de veiligheidsdiensten (DDoS en WAF) voor uw Adobe Commerce op de projecten van de wolkeninfrastructuur. Zie [ krijgen de Snelle geloofsbrieven ](../cdn/fastly-configuration.md#get-fastly-credentials).
 
