@@ -37,7 +37,7 @@ De PrivateLink-service-integratie voor Adobe Commerce op cloud-infrastructuurpro
 - Adobe Commerce-ondersteuning biedt geen ondersteuning voor het oplossen van problemen met AWS PrivateLink buiten initiële activering.
 - Klanten zijn verantwoordelijk voor de kosten die gepaard gaan met het beheer van hun eigen VPC.
 - **HTTPS protocol (haven 443) steun door platform:**
-   - **Azure Privé Verbinding**: U kunt niet het protocol HTTPS (haven 443) gebruiken om met Adobe Commerce op wolkeninfrastructuur te verbinden toe te schrijven aan [&#x200B; het snelst van oorsprong het camoufleren &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html).
+   - **Azure Privé Verbinding**: U kunt niet het protocol HTTPS (haven 443) gebruiken om met Adobe Commerce op wolkeninfrastructuur te verbinden toe te schrijven aan [&#x200B; het snelst van oorsprong het camoufleren &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html?lang=nl-NL).
    - **AWS PrivateLink**: HTTPS protocol (haven 443) de verbindingen worden gesteund.
 - PrivateDNS is niet beschikbaar.
 
@@ -205,7 +205,7 @@ U kunt de toepassing van Telnet gebruiken om de verbinding aan de de eindpuntdie
 
 ## De configuratie van PrivateLink wijzigen
 
-[&#x200B; leg een kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voor om een bestaande configuratie te veranderen PrivateLink. U kunt bijvoorbeeld de volgende wijzigingen aanvragen:
+[&#x200B; leg een kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voor om een bestaande configuratie te veranderen PrivateLink. U kunt bijvoorbeeld de volgende wijzigingen aanvragen:
 
 - Verwijder de PrivateLink-verbinding van de Adobe Commerce op de Pro-productie- of Staging-omgeving van de cloudinfrastructuur.
 - Wijzig het accountnummer van het Cloud-platform van de klant voor toegang tot de eindpuntservice van Adobe.
