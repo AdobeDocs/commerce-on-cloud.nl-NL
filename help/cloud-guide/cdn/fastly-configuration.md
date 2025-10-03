@@ -30,9 +30,9 @@ Voer de volgende stappen uit om uw site snel in te schakelen, te configureren en
 
 >[!NOTE]
 >
->Nadat u de eerste snelconfiguratie hebt ingeschakeld en geverifieerd, kunt u de configuratie aanpassen. U kunt bijvoorbeeld aanvullende opties inschakelen, zoals optimalisatie van afbeeldingen, randmodules en aangepaste VCL-code. Zie [ Cacheconfiguratie ](fastly-custom-cache-configuration.md) aanpassen.
+>Nadat u de eerste snelconfiguratie hebt ingeschakeld en geverifieerd, kunt u de configuratie aanpassen. U kunt bijvoorbeeld aanvullende opties inschakelen, zoals optimalisatie van afbeeldingen, randmodules en aangepaste VCL-code. Zie [&#x200B; Cacheconfiguratie &#x200B;](fastly-custom-cache-configuration.md) aanpassen.
 
-Tijdens projectlevering, voegt Adobe uw project aan de [ Fastly de dienstrekening ](fastly.md#fastly-service-account-and-credentials) voor Adobe Commerce op wolkeninfrastructuur toe en leidt tot de Fastly rekeningsgeloofsbrieven voor de Starter `master` en de milieu&#39;s van de Staging en van de Productie Pro. Elke omgeving heeft unieke referenties.
+Tijdens projectlevering, voegt Adobe uw project aan de [&#x200B; Fastly de dienstrekening &#x200B;](fastly.md#fastly-service-account-and-credentials) voor Adobe Commerce op wolkeninfrastructuur toe en leidt tot de Fastly rekeningsgeloofsbrieven voor de Starter `master` en de milieu&#39;s van de Staging en van de Productie Pro. Elke omgeving heeft unieke referenties.
 
 U hebt de Fastly geloofsbrieven nodig om de Snelle diensten CDN van Admin van Adobe Commerce te vormen en Fastly API verzoeken voor te leggen.
 
@@ -40,7 +40,7 @@ U hebt de Fastly geloofsbrieven nodig om de Snelle diensten CDN van Admin van Ad
 
 Met Adobe Commerce op cloudinfrastructuur hebt u niet rechtstreeks toegang tot het dashboard voor snelbeheer.
 
-Gebruik de Adobe Commerce-beheerder om de configuratie Snelst voor uw omgevingen te bekijken en bij te werken. Als u geen kwestie kunt oplossen gebruikend de Fastly mogelijkheden in Admin, leg een [ kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) voor.
+Gebruik de Adobe Commerce-beheerder om de configuratie Snelst voor uw omgevingen te bekijken en bij te werken. Als u geen kwestie kunt oplossen gebruikend de Fastly mogelijkheden in Admin, leg een [&#x200B; kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) voor.
 
 ## Snelle gebruikersgegevens ophalen
 
@@ -60,13 +60,13 @@ Voor de projecten van de Wolk Pro, controleer de geloofsbrieven van de op IaaS-B
 
 Voor Cloud Starter-projecten kunt u de aanmeldingsgegevens ophalen via de Cloud Console of via de Cloud CLI:
 
-- Van [!DNL Cloud Console], controleer de volgende milieuvariabelen in de [ configuratie van het Milieu ](../project/overview.md#configure-environment).
+- Van [!DNL Cloud Console], controleer de volgende milieuvariabelen in de [&#x200B; configuratie van het Milieu &#x200B;](../project/overview.md#configure-environment).
 
    - `CONFIG__DEFAULT__SYSTEM__FULL_PAGE_CACHE__FASTLY__FASTLY_API_KEY`
 
    - `CONFIG__DEFAULT__SYSTEM__FULL_PAGE_CACHE__FASTLY__FASTLY_SERVICE_ID`
 
-- Van de bevellijn in uw lokale werkruimte, gebruik `magento-cloud` CLI aan [ lijst en herzie ](../environment/variables-cloud.md#viewing-environment-variables) Fastly milieu variabelen.
+- Van de bevellijn in uw lokale werkruimte, gebruik `magento-cloud` CLI aan [&#x200B; lijst en herzie &#x200B;](../environment/variables-cloud.md#viewing-environment-variables) Fastly milieu variabelen.
 
   ```bash
   magento-cloud variable:get -e <environment-ID>
@@ -76,7 +76,7 @@ Voor Cloud Starter-projecten kunt u de aanmeldingsgegevens ophalen via de Cloud 
 
 - Neem contact op met de Adobe Customer Technical Advisor (CTA) als u de gegevens voor de testomgeving of productieomgeving niet snel kunt vinden.
 
-- [ Fout wanneer het bevestigen van de Fastly geloofsbrieven ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/error-when-validating-fastly-credentials#solution).
+- [&#x200B; Fout wanneer het bevestigen van de Fastly geloofsbrieven &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/error-when-validating-fastly-credentials#solution).
 
 ## Beveilig uw geloofsbrieven
 
@@ -90,9 +90,9 @@ Als uw API-token ooit openbaar wordt gedeeld of aan een ondersteuningsticket is 
 
 U hebt de volgende componenten nodig om de Snelle diensten toe te laten en te vormen:
 
-- De recentste versie van [ snelst CDN voor Magento 2 module ](fastly.md#fastly-cdn-module-for-magento-2) wordt geïnstalleerd in de milieu&#39;s van het Staging en van de Productie. Zie [ Snelle Verbetering ](#upgrade-the-fastly-module).
+- De recentste versie van [&#x200B; snelst CDN voor Magento 2 module &#x200B;](fastly.md#fastly-cdn-module-for-magento-2) wordt geïnstalleerd in de milieu&#39;s van het Staging en van de Productie. Zie [&#x200B; Snelle Verbetering &#x200B;](#upgrade-the-fastly-module).
 
-- [ snelste geloofsbrieven ](#get-fastly-credentials) voor Adobe Commerce op de milieu&#39;s van de het Staging en van de Productie van de wolkeninfrastructuur
+- [&#x200B; snelste geloofsbrieven &#x200B;](#get-fastly-credentials) voor Adobe Commerce op de milieu&#39;s van de het Staging en van de Productie van de wolkeninfrastructuur
 
 **om snel CDN toe te laten caching in het Staging en Productie**:
 
@@ -100,13 +100,13 @@ U hebt de volgende componenten nodig om de Snelle diensten toe te laten en te vo
 
 1. Klik **Slaat** op > Montages > **Configuratie** > **Geavanceerd** > **Systeem** en breid **het Volledige Geheime voorgeheugen van de Pagina** uit.
 
-   ![ breid uit om Vast te selecteren ](../../assets/cdn/fastly-menu.png)
+   ![&#x200B; breid uit om Vast te selecteren &#x200B;](../../assets/cdn/fastly-menu.png)
 
 1. In de _Caching sectie van de Toepassing_, verwijder de selectie uit **het systeemwaarde van het Gebruik**, en selecteer dan **Fastly CDN** van de drop-down lijst.
 
-   ![ kies snel ](../../assets/cdn/fastly-enable-admin.png)
+   ![&#x200B; kies snel &#x200B;](../../assets/cdn/fastly-enable-admin.png)
 
-1. Vouw **Snelle Configuratie** uit en [ verkies caching opties ](https://github.com/fastly/fastly-magento2/blob/master/Documentation/CONFIGURATION.md#configure-the-module).
+1. Vouw **Snelle Configuratie** uit en [&#x200B; verkies caching opties &#x200B;](https://github.com/fastly/fastly-magento2/blob/master/Documentation/CONFIGURATION.md#configure-the-module).
 
 1. Na het vormen van de caching opties, klik **sparen Config** bij de bovenkant van de pagina.
 
@@ -120,11 +120,11 @@ U hebt de volgende componenten nodig om de Snelle diensten toe te laten en te vo
 
 1. Indien nodig, voeg de **Snelle dienst ID** en **API symbolische** waarden voor uw projectmilieu toe.
 
-   ![ Snelle geloofsbrieven Admin ](../../assets/cdn/fastly-credentials-admin-ui.png)
+   ![&#x200B; Snelle geloofsbrieven Admin &#x200B;](../../assets/cdn/fastly-credentials-admin-ui.png)
 
    >[!NOTE]
    >
-   >Selecteer niet de koppeling waarmee u het snelheids-API-token wilt maken. In plaats daarvan, gebruik de [ Snelle geloofsbrieven (identiteitskaart van de Dienst en API teken) die door Adobe ](#get-fastly-credentials) worden verstrekt.
+   >Selecteer niet de koppeling waarmee u het snelheids-API-token wilt maken. In plaats daarvan, gebruik de [&#x200B; Snelle geloofsbrieven (identiteitskaart van de Dienst en API teken) die door Adobe &#x200B;](#get-fastly-credentials) worden verstrekt.
 
 1. Klik **geloofsbrieven van de Test**.
 
@@ -136,11 +136,11 @@ U hebt de volgende componenten nodig om de Snelle diensten toe te laten en te vo
 
 >[!NOTE]
 >
->Voor instructies om snel API symbolische geloofsbrieven voor een het Opvoeren of milieu van de Productie te veranderen, zie [ Verandering de Snelle geloofsbrieven ](fastly.md#change-fastly-api-token).
+>Voor instructies om snel API symbolische geloofsbrieven voor een het Opvoeren of milieu van de Productie te veranderen, zie [&#x200B; Verandering de Snelle geloofsbrieven &#x200B;](fastly.md#change-fastly-api-token).
 
 ### VCL snel uploaden naar
 
-Nadat u de Fastly module toelaat, upload de standaard [ code VCL ](https://github.com/fastly/fastly-magento2/tree/master/etc/vcl_snippets) aan de Snelste servers. Deze code verstrekt een reeks fragmenten VCL die de configuratiemontages specificeren om caching en andere snel CDN diensten voor uw Adobe Commerce op wolkeninfrastructuur toe te laten.
+Nadat u de Fastly module toelaat, upload de standaard [&#x200B; code VCL &#x200B;](https://github.com/fastly/fastly-magento2/tree/master/etc/vcl_snippets) aan de Snelste servers. Deze code verstrekt een reeks fragmenten VCL die de configuratiemontages specificeren om caching en andere snel CDN diensten voor uw Adobe Commerce op wolkeninfrastructuur toe te laten.
 
 >[!NOTE]
 >
@@ -150,13 +150,13 @@ Nadat u de Fastly module toelaat, upload de standaard [ code VCL ](https://githu
 
 1. In de _Snelle sectie van de Configuratie_, klik **uploadt VCL aan Fastly** aangezien het volgende cijfer toont.
 
-   ![ upload een VCL van Magento aan Fastly ](../../assets/cdn/fastly-upload-vcl-admin.png)
+   ![&#x200B; upload een VCL van Magento aan Fastly &#x200B;](../../assets/cdn/fastly-upload-vcl-admin.png)
 
 1. Nadat het uploaden is voltooid, vernieuwt u de cache volgens het bericht boven aan de pagina.
 
 ## SSL/TLS-certificaten leveren
 
-Adobe biedt een door domein gevalideerd SSL/TLS-certificaat waarmee snel veilig HTTPS-verkeer kan worden aangeboden. Adobe verstrekt één certificaat voor elke ProProductie, Staging, en het milieu van de Productie van de Aanzet om alle domeinen in dat milieu te beveiligen. Voor gedetailleerde informatie over het verstrekte certificaat, zie [ SSL van Adobe (TLS) certificaten voor Adobe Commerce op wolkeninfrastructuur ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/ssl-tls-certificates-for-magento-commerce-cloud-faq).
+Adobe biedt een door domein gevalideerd SSL/TLS-certificaat waarmee snel veilig HTTPS-verkeer kan worden aangeboden. Adobe verstrekt één certificaat voor elke ProProductie, Staging, en het milieu van de Productie van de Aanzet om alle domeinen in dat milieu te beveiligen. Voor gedetailleerde informatie over het verstrekte certificaat, zie [&#x200B; SSL van Adobe (TLS) certificaten voor Adobe Commerce op wolkeninfrastructuur &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/ssl-tls-certificates-for-magento-commerce-cloud-faq).
 
 >[!NOTE]
 >
@@ -202,7 +202,7 @@ Om verkeer van uw opslag URLs aan de Snelle dienst te leiden werkt uw DNS config
 
 >[!NOTE]
 >
->Wanneer u bereid bent om uw plaats van de Productie te lanceren, moet u de DNS configuratie opnieuw bijwerken om uw productiedomeinen aan de Snelle dienst te richten en extra configuratietaken te voltooien. Zie [ checklist van de Lancering ](../launch/checklist.md).
+>Wanneer u bereid bent om uw plaats van de Productie te lanceren, moet u de DNS configuratie opnieuw bijwerken om uw productiedomeinen aan de Snelle dienst te richten en extra configuratietaken te voltooien. Zie [&#x200B; checklist van de Lancering &#x200B;](../launch/checklist.md).
 
 **Eerste vereisten:**
 
@@ -210,8 +210,8 @@ Om verkeer van uw opslag URLs aan de Snelle dienst te leiden werkt uw DNS config
 - Upload de standaard VCL-code snel.
 - Geef een lijst met top-level en subdomeinen op voor elke omgeving naar Adobe of verzend een Adobe Commerce Support-ticket.
 - Wacht op bevestiging dat de opgegeven domeinen zijn toegevoegd aan uw Cloud-omgevingen.
-- Voor de projecten van de Aanzet, voeg de domeinen aan uw Snelle de dienstconfiguratie toe. Zie [ domeinen ](fastly-custom-cache-configuration.md#manage-domains) beheren.
-- Voor informatie over het bijwerken van de DNS configuratie, controleer met uw [ DNS registrar ](https://lookup.icann.org/) voor de correcte methode voor uw domeindienst.
+- Voor de projecten van de Aanzet, voeg de domeinen aan uw Snelle de dienstconfiguratie toe. Zie [&#x200B; domeinen &#x200B;](fastly-custom-cache-configuration.md#manage-domains) beheren.
+- Voor informatie over het bijwerken van de DNS configuratie, controleer met uw [&#x200B; DNS registrar &#x200B;](https://lookup.icann.org/) voor de correcte methode voor uw domeindienst.
 
 **om uw DNS configuratie voor ontwikkeling** bij te werken:
 
@@ -226,7 +226,7 @@ Om verkeer van uw opslag URLs aan de Snelle dienst te leiden werkt uw DNS config
 
    >[!NOTE]
    >
-   >Als u van plan bent om apex domeinen (`your-domain.com`) voor uw plaats van de Productie te gebruiken, moet u DNS adresverslagen (A verslagen) vormen om aan de Snelle serverIP adressen te richten. Zie [ DNS configuratie van de Update met productiemontages ](../launch/checklist.md#to-update-dns-configuration-for-site-launch).
+   >Als u van plan bent om apex domeinen (`your-domain.com`) voor uw plaats van de Productie te gebruiken, moet u DNS adresverslagen (A verslagen) vormen om aan de Snelle serverIP adressen te richten. Zie [&#x200B; DNS configuratie van de Update met productiemontages &#x200B;](../launch/checklist.md#to-update-dns-configuration-for-site-launch).
 
 
 1. Voeg de verslagen van de uitdagingCNAME van de ACME voor domeinbevestiging en pre-provisioning van de certificaten van de Productie SSL/TLS toe, bijvoorbeeld:
@@ -260,7 +260,7 @@ Om verkeer van uw opslag URLs aan de Snelle dienst te leiden werkt uw DNS config
 
    >[!NOTE]
    >
-   >Als alternatief aan het gebruiken van Cloud CLI, kunt u Basis URL van [ Admin ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls) bijwerken
+   >Als alternatief aan het gebruiken van Cloud CLI, kunt u Basis URL van [&#x200B; Admin &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls) bijwerken
 
 1. Start de webbrowser opnieuw.
 
@@ -268,7 +268,7 @@ Om verkeer van uw opslag URLs aan de Snelle dienst te leiden werkt uw DNS config
 
 ## Snelle caching testen
 
-Nadat u de DNS configuratieveranderingen voltooit, gebruik [ cURL ](https://curl.se/) bevel-lijn hulpmiddel om te verifiëren dat het Fastly geheime voorgeheugen werkt.
+Nadat u de DNS configuratieveranderingen voltooit, gebruik [&#x200B; cURL &#x200B;](https://curl.se/) bevel-lijn hulpmiddel om te verifiëren dat het Fastly geheime voorgeheugen werkt.
 
 **om de reactiekopballen** te controleren:
 
@@ -284,19 +284,19 @@ Nadat u de DNS configuratieveranderingen voltooit, gebruik [ cURL ](https://curl
    curl -vo /dev/null -H Fastly-Debug:1 --resolve <live-URL-hostname>:443:<live-IP-address>
    ```
 
-1. In de reactie, verifieer de [ kopballen ](fastly-troubleshooting.md#check-cache-hit-and-miss-response-headers) om ervoor te zorgen dat de Fastly werkt. In het antwoord ziet u bijvoorbeeld de volgende unieke koppen:
+1. In de reactie, verifieer de [&#x200B; kopballen &#x200B;](fastly-troubleshooting.md#check-cache-hit-and-miss-response-headers) om ervoor te zorgen dat de Fastly werkt. In het antwoord ziet u bijvoorbeeld de volgende unieke koppen:
 
    ```http
    < Fastly-Magento-VCL-Uploaded: 1.2.228
    < X-Cache: HIT, MISS
    ```
 
-Als de kopballen niet de correcte waarden hebben, zie [ fouten oplossen die in de antwoordkopballen ](fastly-troubleshooting.md#curl) voor het oplossen van problemenhulp worden gevonden.
+Als de kopballen niet de correcte waarden hebben, zie [&#x200B; fouten oplossen die in de antwoordkopballen &#x200B;](fastly-troubleshooting.md#curl) voor het oplossen van problemenhulp worden gevonden.
 
 ## De module Snelheid upgraden
 
 Hiermee werkt u de snelst CDN voor de Magento 2-module bij om problemen op te lossen, de prestaties te verbeteren en nieuwe functies te bieden.
-Adobe adviseert dat u de Fastly module in uw het Opvoeren en milieu&#39;s van de Productie aan de [ recentste versie ](https://github.com/fastly/fastly-magento2/blob/master/VERSION) bijwerkt.
+Adobe adviseert dat u de Fastly module in uw het Opvoeren en milieu&#39;s van de Productie aan de [&#x200B; recentste versie &#x200B;](https://github.com/fastly/fastly-magento2/blob/master/VERSION) bijwerkt.
 
 Nadat u de module bijwerkt, moet u de code uploaden VCL om de veranderingen op de Fastly de dienstconfiguratie toe te passen.
 
@@ -314,11 +314,11 @@ Nadat u de module bijwerkt, moet u de code uploaden VCL om de veranderingen op d
    composer show *fastly*
    ```
 
-1. Als de [ recentste versie ](https://github.com/fastly/fastly-magento2/releases) niet geïnstalleerd is, voltooi de stappen om de Fastly module te bevorderen.
+1. Als de [&#x200B; recentste versie &#x200B;](https://github.com/fastly/fastly-magento2/releases) niet geïnstalleerd is, voltooi de stappen om de Fastly module te bevorderen.
 
 **om de Fastly module** te bevorderen:
 
-1. In uw lokale integratiemilieu, gebruik de volgende moduleinformatie om [ de Snelle module ](../store/extensions.md#upgrade-an-extension) te bevorderen.
+1. In uw lokale integratiemilieu, gebruik de volgende moduleinformatie om [&#x200B; de Snelle module &#x200B;](../store/extensions.md#upgrade-an-extension) te bevorderen.
 
    ```text
    module name: fastly/magento2
@@ -327,12 +327,12 @@ Nadat u de module bijwerkt, moet u de code uploaden VCL om de veranderingen op d
 
 1. Verhoog uw updates naar de testomgeving.
 
-1. Login aan Admin voor uw het Opvoeren milieu aan [ uploadt de code VCL ](#upload-vcl-to-fastly).
+1. Login aan Admin voor uw het Opvoeren milieu aan [&#x200B; uploadt de code VCL &#x200B;](#upload-vcl-to-fastly).
 
-1. [ verifieer de Snelle diensten ](fastly-troubleshooting.md#verify-or-debug-fastly-services) op de het Staging plaats van Adobe Commerce.
+1. [&#x200B; verifieer de Snelle diensten &#x200B;](fastly-troubleshooting.md#verify-or-debug-fastly-services) op de het Staging plaats van Adobe Commerce.
 
 Nadat u de Snelle diensten op de Staging plaats verifieert, herhaal het verbeteringsproces in het milieu van de Productie.
 
 >[!TIP]
 >
-> Als u kwesties met de Snelle diensten in uw milieu&#39;s van Adobe Commerce hebt, zie [ snel de probleemoplosser van Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/magento-fastly-troubleshooter).
+> Als u kwesties met de Snelle diensten in uw milieu&#39;s van Adobe Commerce hebt, zie [&#x200B; snel de probleemoplosser van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/magento-fastly-troubleshooter).
