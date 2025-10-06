@@ -3,20 +3,20 @@ title: Commerce-versie upgraden
 description: Leer hoe u de Adobe Commerce-versie kunt upgraden in de cloud-infrastructuuromgeving.
 feature: Cloud, Upgrade
 exl-id: 0cc070cf-ab25-4269-b18c-b2680b895c17
-source-git-commit: 7f9aac358effdf200b59678098e6a1635612301b
+source-git-commit: fe1da39c1d00d74d3f116423e06d11cefd3c2659
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '919'
 ht-degree: 0%
 
 ---
 
 # Commerce-versie upgraden
 
-U kunt de Adobe Commerce-codebasis upgraden naar een nieuwere versie. Alvorens het milieu te bevorderen, herzie de [&#x200B; vereisten van het Systeem &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=nl-NL) in de _gids van de Installatie_ voor de recentste vereisten van de softwareversie.
+U kunt de Adobe Commerce-codebasis upgraden naar een nieuwere versie. Alvorens het milieu te bevorderen, herzie de [ vereisten van het Systeem ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in de _gids van de Installatie_ voor de recentste vereisten van de softwareversie.
 
 Afhankelijk van het milieutype (Ontwikkeling, het Opvoeren, of de Productie), kunnen uw verbeteringstaken het volgende omvatten:
 
-- Werk het `.magento/services.yaml` -bestand bij met nieuwe versies voor MariaDB (MySQL), OpenSearch, RabbitMQ en Redis voor compatibiliteit met nieuwe Adobe Commerce-versies.
+- Werk het `.magento/services.yaml` -bestand bij met nieuwe versies voor MariaDB (MySQL), OpenSearch, RabbitMQ en Redis voor compatibiliteit met nieuwe Adobe Commerce-versies. Voor Pro-projecten moet u een Adobe Commerce Support-ticket indienen om services te installeren of bij te werken in Fases and Production-omgevingen.
 - Werk het `.magento.app.yaml` dossier met nieuwe montages voor haken en omgevingsvariabelen bij.
 - Voer een upgrade uit van externe extensies naar de nieuwste ondersteunde versie.
 
@@ -26,7 +26,7 @@ Afhankelijk van het milieutype (Ontwikkeling, het Opvoeren, of de Productie), ku
 
 ## Configuratiebestanden
 
-Voordat u de toepassing kunt upgraden, moet u de projectconfiguratiebestanden bijwerken om rekening te houden met wijzigingen in de standaardconfiguratie-instellingen voor Adobe Commerce op de cloudinfrastructuur of de toepassing. De recentste gebreken kunnen in de [&#x200B; magento-cloud bewaarplaats GitHub &#x200B;](https://github.com/magento/magento-cloud) worden gevonden.
+Voordat u de toepassing kunt upgraden, moet u de projectconfiguratiebestanden bijwerken om rekening te houden met wijzigingen in de standaardconfiguratie-instellingen voor Adobe Commerce op de cloudinfrastructuur of de toepassing. De recentste gebreken kunnen in de [ magento-cloud bewaarplaats GitHub ](https://github.com/magento/magento-cloud) worden gevonden.
 
 ### composer.json
 
@@ -82,7 +82,7 @@ We raden u aan een back-up van de instantie te maken voordat u de upgrade uitvoe
 
    >[!NOTE]
    >
-   >Het `magento-cloud db:dump` bevel stelt het [&#x200B; mysqldump &#x200B;](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html) bevel met de `--single-transaction` vlag in werking, die u aan file uw gegevensbestand zonder de lijsten te sluiten toestaat.
+   >Het `magento-cloud db:dump` bevel stelt het [ mysqldump ](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html) bevel met de `--single-transaction` vlag in werking, die u aan file uw gegevensbestand zonder de lijsten te sluiten toestaat.
 
 1. Maak een back-up van code en media.
 
@@ -96,23 +96,23 @@ We raden u aan een back-up van de instantie te maken voordat u de upgrade uitvoe
 
 1. Gebruik SSH om u aan te melden bij de externe omgeving.
 
-1. Creeer a [&#x200B; gegevensbestandstortplaats &#x200B;](../storage/database-dump.md). Als u een doelmap voor de DB-dump wilt kiezen, gebruikt u de optie `--dump-directory` .
+1. Creeer a [ gegevensbestandstortplaats ](../storage/database-dump.md). Als u een doelmap voor de DB-dump wilt kiezen, gebruikt u de optie `--dump-directory` .
 
    ```bash
    vendor/bin/ece-tools db-dump
    ```
 
-   Met de dump-bewerking maakt u een `dump-<timestamp>.sql.gz` archiefbestand in uw externe projectmap. Zie [&#x200B; file gegevensbestand &#x200B;](../storage/database-dump.md).
+   Met de dump-bewerking maakt u een `dump-<timestamp>.sql.gz` archiefbestand in uw externe projectmap. Zie [ file gegevensbestand ](../storage/database-dump.md).
 
 ## Toepassingsupgrade
 
-Herzie de [&#x200B; informatie van de de dienstversies &#x200B;](../services/services-yaml.md#service-versions) voor de recentste vereisten van de softwareversie alvorens uw toepassing te bevorderen.
+Herzie de [ informatie van de de dienstversies ](../services/services-yaml.md#service-versions) voor de recentste vereisten van de softwareversie alvorens uw toepassing te bevorderen.
 
 **om de toepassingsversie** te bevorderen:
 
 1. Wijzig op uw lokale werkstation de projectmap.
 
-1. Plaats de [&#x200B; versiebeperking &#x200B;](overview.md#cloud-metapackage) voor de versie van de doelverbetering. Deze stap is alleen nodig als de doelversie zich buiten de bestaande beperking bevindt.
+1. Plaats de [ versiebeperking ](overview.md#cloud-metapackage) voor de versie van de doelverbetering. Deze stap is alleen nodig als de doelversie zich buiten de bestaande beperking bevindt.
 
    ```bash
    composer require-commerce "magento/magento-cloud-metapackage":">=CURRENT_VERSION <NEXT_VERSION" --no-update
@@ -120,7 +120,7 @@ Herzie de [&#x200B; informatie van de de dienstversies &#x200B;](../services/ser
 
    >[!NOTE]
    >
-   >U moet de syntaxis van de versiebeperking gebruiken om het `ece-tools` -pakket bij te werken. U kunt de versiebeperking in het `composer.json` dossier voor de versie van het [&#x200B; toepassingsmalplaatje &#x200B;](https://github.com/magento/magento-cloud/blob/master/composer.json) vinden u voor de verbetering gebruikt.
+   >U moet de syntaxis van de versiebeperking gebruiken om het `ece-tools` -pakket bij te werken. U kunt de versiebeperking in het `composer.json` dossier voor de versie van het [ toepassingsmalplaatje ](https://github.com/magento/magento-cloud/blob/master/composer.json) vinden u voor de verbetering gebruikt.
 
 1. Werk uw `composer.json` -bestand bij met de belangrijkste Commerce-upgradeversie.
 
@@ -128,7 +128,7 @@ Herzie de [&#x200B; informatie van de de dienstversies &#x200B;](../services/ser
    composer require-commerce magento/product-enterprise-edition 2.4.8 --no-update
    ```
 
-1. Als u B2B gebruikt, werk uw `composer.json` dossier met de [&#x200B; gesteunde versie &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/release/product-availability#adobe-authored-extensions) voor Commerce bij.
+1. Als u B2B gebruikt, werk uw `composer.json` dossier met de [ gesteunde versie ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#adobe-authored-extensions) voor Commerce bij.
 
    ```bash
    composer require-commerce magento/extension-b2b 1.5.2 --no-update
@@ -142,15 +142,15 @@ Herzie de [&#x200B; informatie van de de dienstversies &#x200B;](../services/ser
 
 1. Bekijk de patches die momenteel worden toegepast:
 
-   - Als er om het even welke die flarden in de `m2-hotfixes` folder worden geïnstalleerd zijn, [&#x200B; voorlegt een kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) en het werk met de Steun van Adobe Commerce om te verifiëren welke flarden nog op de nieuwe versie kunnen worden toegepast. Verwijder de niet-toepasselijke patch(es) uit de map `m2-hotfixes` .
+   - Als er om het even welke die flarden in de `m2-hotfixes` folder worden geïnstalleerd zijn, [ voorlegt een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) en het werk met de Steun van Adobe Commerce om te verifiëren welke flarden nog op de nieuwe versie kunnen worden toegepast. Verwijder de niet-toepasselijke patch(es) uit de map `m2-hotfixes` .
 
    - Als er om het even welke [ Patches van de Kwaliteit ] in het `.magento.env.yaml` dossier worden toegepast, verifieer of zij nog op de nieuwe versie kunnen worden toegepast. Verwijder de niet-toepasselijke patch(es) uit de sectie `QUALITY_PATCHES` van het `.magento.env.yaml` -bestand.
 
-   **Methode 1**: [&#x200B; verifieer de toepasselijke versies in de de versienota&#39;s van de Patches van de Kwaliteit &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/release-notes)
+   **Methode 1**: [ verifieer de toepasselijke versies in de de versienota&#39;s van de Patches van de Kwaliteit ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes)
 
-   **Methode 2**: [&#x200B; de beschikbare flarden van de Mening en status &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
+   **Methode 2**: [ de beschikbare flarden van de Mening en status ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
 
-   **Methode 3**: [&#x200B; Onderzoek naar flarden &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL)
+   **Methode 3**: [ Onderzoek naar flarden ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=en)
 
 
 1. Wijzigingen in code toevoegen, vastleggen en doorvoeren.
@@ -205,7 +205,7 @@ Adobe adviseert sterk bevordering uw milieu van de Productie _vóór_ met inbegr
 
 >[!NOTE]
 >
->Wanneer u uw toepassingsversie bevordert, werkt het verbeteringsproces aan de recentste versie van de [&#x200B; Snelle CDN module &#x200B;](../cdn/fastly.md#fastly-cdn-module-for-magento-2) automatisch bij.
+>Wanneer u uw toepassingsversie bevordert, werkt het verbeteringsproces aan de recentste versie van de [ Snelle CDN module ](../cdn/fastly.md#fastly-cdn-module-for-magento-2) automatisch bij.
 
 ## Upgrade problemen oplossen
 
@@ -229,7 +229,7 @@ Exception printing is disabled by default for security reasons.
 
 1. Open het `./app/var/report/<error number>` -bestand.
 
-1. [&#x200B; onderzoek de logboeken &#x200B;](../test/log-locations.md) en bepaal de bron van de kwestie.
+1. [ onderzoek de logboeken ](../test/log-locations.md) en bepaal de bron van de kwestie.
 
 1. Wijzigingen in code toevoegen, vastleggen en doorvoeren.
 
