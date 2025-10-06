@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Commerce-versie upgraden
 
-U kunt de Adobe Commerce-codebasis upgraden naar een nieuwere versie. Alvorens het milieu te bevorderen, herzie de [&#x200B; vereisten van het Systeem &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in de _gids van de Installatie_ voor de recentste vereisten van de softwareversie.
+U kunt de Adobe Commerce-codebasis upgraden naar een nieuwere versie. Alvorens het milieu te bevorderen, herzie de [&#x200B; vereisten van het Systeem &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=nl-NL) in de _gids van de Installatie_ voor de recentste vereisten van de softwareversie.
 
 Afhankelijk van het milieutype (Ontwikkeling, het Opvoeren, of de Productie), kunnen uw verbeteringstaken het volgende omvatten:
 
@@ -128,7 +128,7 @@ Herzie de [&#x200B; informatie van de de dienstversies &#x200B;](../services/ser
    composer require-commerce magento/product-enterprise-edition 2.4.8 --no-update
    ```
 
-1. Als u B2B gebruikt, werk uw `composer.json` dossier met de [&#x200B; gesteunde versie &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#adobe-authored-extensions) voor Commerce bij.
+1. Als u B2B gebruikt, werk uw `composer.json` dossier met de [&#x200B; gesteunde versie &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/release/product-availability#adobe-authored-extensions) voor Commerce bij.
 
    ```bash
    composer require-commerce magento/extension-b2b 1.5.2 --no-update
@@ -142,15 +142,15 @@ Herzie de [&#x200B; informatie van de de dienstversies &#x200B;](../services/ser
 
 1. Bekijk de patches die momenteel worden toegepast:
 
-   - Als er om het even welke die flarden in de `m2-hotfixes` folder worden geïnstalleerd zijn, [&#x200B; voorlegt een kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) en het werk met de Steun van Adobe Commerce om te verifiëren welke flarden nog op de nieuwe versie kunnen worden toegepast. Verwijder de niet-toepasselijke patch(es) uit de map `m2-hotfixes` .
+   - Als er om het even welke die flarden in de `m2-hotfixes` folder worden geïnstalleerd zijn, [&#x200B; voorlegt een kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) en het werk met de Steun van Adobe Commerce om te verifiëren welke flarden nog op de nieuwe versie kunnen worden toegepast. Verwijder de niet-toepasselijke patch(es) uit de map `m2-hotfixes` .
 
    - Als er om het even welke [ Patches van de Kwaliteit ] in het `.magento.env.yaml` dossier worden toegepast, verifieer of zij nog op de nieuwe versie kunnen worden toegepast. Verwijder de niet-toepasselijke patch(es) uit de sectie `QUALITY_PATCHES` van het `.magento.env.yaml` -bestand.
 
-   **Methode 1**: [&#x200B; verifieer de toepasselijke versies in de de versienota&#39;s van de Patches van de Kwaliteit &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes)
+   **Methode 1**: [&#x200B; verifieer de toepasselijke versies in de de versienota&#39;s van de Patches van de Kwaliteit &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/tools/quality-patches-tool/release-notes)
 
-   **Methode 2**: [&#x200B; de beschikbare flarden van de Mening en status &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
+   **Methode 2**: [&#x200B; de beschikbare flarden van de Mening en status &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
 
-   **Methode 3**: [&#x200B; Onderzoek naar flarden &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=en)
+   **Methode 3**: [&#x200B; Onderzoek naar flarden &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL)
 
 
 1. Wijzigingen in code toevoegen, vastleggen en doorvoeren.
