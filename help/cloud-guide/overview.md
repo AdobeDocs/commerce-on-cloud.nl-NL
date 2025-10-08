@@ -2,7 +2,7 @@
 title: Commerce on Cloud Infrastructure
 description: Leer meer over het ontwerp, de implementatie en het beheer van Commerce op cloudinfrastructuur.
 exl-id: a37d0403-df14-4bb9-8cc4-25436560ba0c
-source-git-commit: 988b07b827c32c94a8cb2d30abb7e73fec71c4a0
+source-git-commit: b29ca0d786bf8cd15e5a3ba1ee8218f3bed2ae2f
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 3%
@@ -23,7 +23,7 @@ Adobe Commerce op wolkeninfrastructuur verstrekt een geautomatiseerd ontvangend 
 
 >[!NOTE]
 >
->Voor meer informatie over veiligheid, verwijs naar de [ checklist van de veiligheidslancering ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/launch/checklist#security-configuration).
+>Voor meer informatie over veiligheid, verwijs naar de [ checklist van de veiligheidslancering ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/checklist#security-configuration).
 
 Bekijk de [ stapel van de Technologie ](architecture/tech-stack.md) in detail of leer meer over specifieke eigenschappen en gesteunde producten in [ architectuur van de Wolk voor Commerce ](architecture/cloud-architecture.md).
 
@@ -60,8 +60,8 @@ De Commerce on cloud Infrastructure-handleiding gaat ervan uit dat u enige prakt
 
 - [ de Documentatie van de Ontwikkelaar van Adobe Commerce ](https://developer.adobe.com/commerce/docs/) (plaats van Adobe Developer) - ontwikkelt, past, integreert, breidt, en gebruikt geavanceerde mogelijkheden uit
 
-- [ de Documentatie van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce.html?lang=nl-NL) (de Liga van de Ervaring van Adobe) - Plan, voer uit, werk, bevorder, en handhaaf uw [!DNL Commerce] projecten
+- [ de Documentatie van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce.html) (de Liga van de Ervaring van Adobe) - Plan, voer uit, werk, bevorder, en handhaaf uw [!DNL Commerce] projecten
 
 {{$include /help/_includes/templated/whats-new.md}}
 
-<!-- Last updated from includes: 2025-09-19 20:32:03 -->
+<!-- Last updated from includes: 2025-09-30 14:59:39 -->

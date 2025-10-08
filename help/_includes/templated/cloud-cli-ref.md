@@ -1,7 +1,7 @@
 ---
-source-git-commit: 9166b44ae53e8cfc6b8022730a6b91406ba696c0
+source-git-commit: b29ca0d786bf8cd15e5a3ba1ee8218f3bed2ae2f
 workflow-type: tm+mt
-source-wordcount: '13341'
+source-wordcount: '13671'
 ht-degree: 0%
 
 ---
@@ -9,9 +9,9 @@ ht-degree: 0%
 
 <!-- The template to render with above values -->
 
-**Versie**: 1.46.1
+**Versie**: 1.47.0
 
-Deze verwijzing bevat 119 opdrachten die beschikbaar zijn via het opdrachtregelprogramma van `magento-cloud` .
+Deze verwijzing bevat 123 opdrachten die beschikbaar zijn via het opdrachtregelprogramma van `magento-cloud` .
 De eerste lijst wordt automatisch gegenereerd met de opdracht `magento-cloud list` in Adobe Commerce op de cloud-infrastructuur.
 
 ## Algemeen
@@ -27,6 +27,13 @@ Dit Help-bericht weergeven
 - Standaard: `false`
 - Accepteert geen waarde
 
+#### `--version`, `-V`
+
+Deze toepassingsversie weergeven
+
+- Standaard: `false`
+- Accepteert geen waarde
+
 #### `--verbose`, `-v|-vv|-vvv`
 
 Verhoog de breedheid van berichten
@@ -34,9 +41,9 @@ Verhoog de breedheid van berichten
 - Standaard: `false`
 - Accepteert geen waarde
 
-#### `--version`, `-V`
+#### `--quiet`, `-q`
 
-Deze toepassingsversie weergeven
+Alleen de benodigde uitvoer afdrukken; andere berichten en fouten onderdrukken. Dit betekent: geen interactie. In de uitgebreide modus wordt het genegeerd.
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -67,6 +74,44 @@ De CLI-cache wissen
 ### Opties
 
 Voor globale opties, zie [ Globale opties ](#global-options).
+
+
+## `console`
+
+```bash
+magento-cloud web [--browser BROWSER] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
+```
+
+Het project openen in de console
+
+### Opties
+
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--browser`
+
+De browser waarmee de URL moet worden geopend. Stel 0 in voor geen.
+
+- Vereist een waarde
+
+#### `--pipe`
+
+Voer de URL uit die u wilt stopzetten.
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+#### `--project`, `-p`
+
+De project-id of URL
+
+- Vereist een waarde
+
+#### `--environment`, `-e`
+
+De milieu-id. &quot;.&quot; gebruiken om de standaardomgeving van het project te selecteren.
+
+- Vereist een waarde
 
 
 ## `decode`
@@ -292,44 +337,6 @@ De volgorde van projectopties omkeren
 
 - Standaard: `false`
 - Accepteert geen waarde
-
-
-## `web`
-
-```bash
-magento-cloud web [--browser BROWSER] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
-```
-
-Open het project in het Web UI
-
-### Opties
-
-Voor globale opties, zie [ Globale opties ](#global-options).
-
-#### `--browser`
-
-De browser waarmee de URL moet worden geopend. Stel 0 in voor geen.
-
-- Vereist een waarde
-
-#### `--pipe`
-
-Voer de URL uit die u wilt stopzetten.
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-#### `--project`, `-p`
-
-De project-id of URL
-
-- Vereist een waarde
-
-#### `--environment`, `-e`
-
-De milieu-id. &quot;.&quot; gebruiken om de standaardomgeving van het project te selecteren.
-
-- Vereist een waarde
 
 
 ## `activity:cancel`
@@ -565,7 +572,7 @@ De uitvoerindeling: table, csv, tsv of plain
 
 #### `--columns`, `-c`
 
-Weer te geven kolommen. Beschikbare kolommen: id*, created*, description*, progress*, state*, result*, completed, environment, type (* = default columns). Het teken &quot;+&quot; kan worden gebruikt als tijdelijke aanduiding voor de standaardkolommen. De tekens % of * kunnen als jokerteken worden gebruikt. Waarden kunnen worden gesplitst met komma&#39;s (bv. &quot;a,b,c&quot;) en/of witruimte.
+Weer te geven kolommen. Beschikbare kolommen: id*, created*, description*, progress*, state*, result*, completed, omgevingen, time_build, time_deploy, time_execute, time_wait, type (* = standaardkolommen). Het teken &quot;+&quot; kan worden gebruikt als tijdelijke aanduiding voor de standaardkolommen. De tekens % of * kunnen als jokerteken worden gebruikt. Waarden kunnen worden gesplitst met komma&#39;s (bv. &quot;a,b,c&quot;) en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -829,7 +836,7 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 ## `auth:browser-login`
 
 ```bash
-magento-cloud login [-f|--force] [--browser BROWSER] [--pipe]
+magento-cloud login [-f|--force] [--method METHOD] [--max-age MAX-AGE] [--browser BROWSER] [--pipe]
 ```
 
 Aanmelden bij Magento Cloud via een browser
@@ -860,6 +867,19 @@ Meld u opnieuw aan, zelfs als u zich al hebt aangemeld
 
 - Standaard: `false`
 - Accepteert geen waarde
+
+#### `--method`
+
+Specifieke verificatiemethode(n) vereisen
+
+- Standaard: `[]`
+- Vereist een waarde
+
+#### `--max-age`
+
+De maximumleeftijd (in seconden) van de webverificatiesessie
+
+- Vereist een waarde
 
 #### `--browser`
 
@@ -960,6 +980,156 @@ Afmelden bij andere lokale sessies
 
 - Standaard: `false`
 - Accepteert geen waarde
+
+
+## `autoscaling:get`
+
+```bash
+magento-cloud autoscaling [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
+```
+
+Bekijk de configuratie voor automatisch schalen van apps en workers in een omgeving
+
+### Opties
+
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--project`, `-p`
+
+De project-id of URL
+
+- Vereist een waarde
+
+#### `--environment`, `-e`
+
+De milieu-id. &quot;.&quot; gebruiken om de standaardomgeving van het project te selecteren.
+
+- Vereist een waarde
+
+#### `--format`
+
+De uitvoerindeling: table, csv, tsv of plain
+
+- Standaard: `table`
+- Vereist een waarde
+
+#### `--columns`, `-c`
+
+Weer te geven kolommen. Beschikbare kolommen: service*, metrische*, direction*, threshold*, duration*, enabled*, instance_count*, cooldown, max_instances, min_instances (* = standaardkolommen). Het teken &quot;+&quot; kan worden gebruikt als tijdelijke aanduiding voor de standaardkolommen. De tekens % of * kunnen als jokerteken worden gebruikt. Waarden kunnen worden gesplitst met komma&#39;s (bv. &quot;a,b,c&quot;) en/of witruimte.
+
+- Standaard: `[]`
+- Vereist een waarde
+
+#### `--no-header`
+
+De tabelkoptekst niet uitvoeren
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+
+## `autoscaling:set`
+
+```bash
+magento-cloud autoscaling:set [-s|--service SERVICE] [-m|--metric METRIC] [--enabled ENABLED] [--threshold-up THRESHOLD-UP] [--duration-up DURATION-UP] [--cooldown-up COOLDOWN-UP] [--threshold-down THRESHOLD-DOWN] [--duration-down DURATION-DOWN] [--cooldown-down COOLDOWN-DOWN] [--instances-min INSTANCES-MIN] [--instances-max INSTANCES-MAX] [--dry-run] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
+```
+
+De zelfschaalconfiguratie van apps of workers in een omgeving instellen
+
+```
+Configure automatic scaling for apps or workers in an environment.
+
+You can also configure resources statically by running: magento-cloud resources:set
+```
+
+### Opties
+
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--service`, `-s`
+
+Naam van de app of worker waarmee automatische schaling wordt geconfigureerd voor
+
+- Vereist een waarde
+
+#### `--metric`, `-m`
+
+Naam van metrisch voor het teweegbrengen autoscaling te gebruiken
+
+- Vereist een waarde
+
+#### `--enabled`
+
+Automatisch schalen inschakelen op basis van de opgegeven metrische waarde
+
+- Vereist een waarde
+
+#### `--threshold-up`
+
+Drempel waarboven de service wordt vergroot
+
+- Vereist een waarde
+
+#### `--duration-up`
+
+Duur waarover de metrische waarde wordt afgezet tegen de drempel voor het verhogen van de schaal
+
+- Vereist een waarde
+
+#### `--cooldown-up`
+
+Duur die moet worden gewacht voordat wordt geprobeerd om na een schalingsgebeurtenis verder te schalen
+
+- Vereist een waarde
+
+#### `--threshold-down`
+
+Drempel waaronder de service wordt verkleind
+
+- Vereist een waarde
+
+#### `--duration-down`
+
+Duur waarover metrisch tegen drempel voor het schrapen neer wordt geëvalueerd
+
+- Vereist een waarde
+
+#### `--cooldown-down`
+
+Duur die moet worden gewacht voordat wordt geprobeerd om na een schalingsgebeurtenis verder te schalen
+
+- Vereist een waarde
+
+#### `--instances-min`
+
+Minimumaantal instanties dat wordt verkleind tot
+
+- Vereist een waarde
+
+#### `--instances-max`
+
+Maximumaantal exemplaren dat wordt geschaald tot
+
+- Vereist een waarde
+
+#### `--dry-run`
+
+Wijzigingen weergeven die u wilt aanbrengen, zonder wijzigingen aan te brengen
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+#### `--project`, `-p`
+
+De project-id of URL
+
+- Vereist een waarde
+
+#### `--environment`, `-e`
+
+De milieu-id. &quot;.&quot; gebruiken om de standaardomgeving van het project te selecteren.
+
+- Vereist een waarde
 
 
 ## `blackfire:setup`
@@ -1362,7 +1532,7 @@ De datumnotatie (als een PHP-datumnotatietekenreeks)
 ## `db:dump`
 
 ```bash
-magento-cloud db:dump [--schema SCHEMA] [-f|--file FILE] [-d|--directory DIRECTORY] [-z|--gzip] [-t|--timestamp] [-o|--stdout] [--table TABLE] [--exclude-table EXCLUDE-TABLE] [--schema-only] [--charset CHARSET] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE]
+magento-cloud db:dump [--schema SCHEMA] [-f|--file FILE] [-d|--directory DIRECTORY] [-z|--gzip] [-t|--timestamp] [-o|--stdout] [--table TABLE] [--exclude-table EXCLUDE-TABLE] [--schema-only] [--charset CHARSET] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP]
 ```
 
 Creeer een lokale stortplaats van het verre gegevensbestand
@@ -1461,101 +1631,11 @@ De de dienstverhouding om te gebruiken
 
 - Vereist een waarde
 
-#### `--identity-file`, `-i`
-
-Een SSH-identiteit (persoonlijke sleutel) die moet worden gebruikt
-
-- Vereist een waarde
-
-
-## `db:size`
-
-```bash
-magento-cloud db:size [-B|--bytes] [-C|--cleanup] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-i|--identity-file IDENTITY-FILE]
-```
-
-Schatting van het schijfgebruik van een gegevensbestand
-
-```
-This is an estimate of the database disk usage. The real size on disk is usually higher because of overhead.
-
-To see more accurate disk usage, run: magento-cloud disk
-```
-
-### Opties
-
-Voor globale opties, zie [ Globale opties ](#global-options).
-
-#### `--bytes`, `-B`
-
-Grootte in bytes weergeven.
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-#### `--cleanup`, `-C`
-
-Controleer of tabellen kunnen worden opgeschoond en geef me aanbevelingen (alleen InnoDb).
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-#### `--project`, `-p`
-
-De project-id of URL
-
-- Vereist een waarde
-
-#### `--environment`, `-e`
-
-De milieu-id. &quot;.&quot; gebruiken om de standaardomgeving van het project te selecteren.
-
-- Vereist een waarde
-
-#### `--app`, `-A`
-
-De externe toepassingsnaam
-
-- Vereist een waarde
-
-#### `--relationship`, `-r`
-
-De de dienstverhouding om te gebruiken
-
-- Vereist een waarde
-
-#### `--format`
-
-De uitvoerindeling: table, csv, tsv of plain
-
-- Standaard: `table`
-- Vereist een waarde
-
-#### `--columns`, `-c`
-
-Weer te geven kolommen. Beschikbare kolommen: max, percent_used, used. De tekens % of * kunnen als jokerteken worden gebruikt. Waarden kunnen worden gesplitst met komma&#39;s (bv. &quot;a,b,c&quot;) en/of witruimte.
-
-- Standaard: `[]`
-- Vereist een waarde
-
-#### `--no-header`
-
-De tabelkoptekst niet uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-#### `--identity-file`, `-i`
-
-Een SSH-identiteit (persoonlijke sleutel) die moet worden gebruikt
-
-- Vereist een waarde
-
 
 ## `db:sql`
 
 ```bash
-magento-cloud sql [--raw] [--schema SCHEMA] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [--] [<query>]
+magento-cloud sql [--raw] [--schema SCHEMA] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [--] [<query>]
 ```
 
 SQL uitvoeren op de externe database
@@ -1607,12 +1687,6 @@ De de dienstverhouding om te gebruiken
 
 - Vereist een waarde
 
-#### `--identity-file`, `-i`
-
-Een SSH-identiteit (persoonlijke sleutel) die moet worden gebruikt
-
-- Vereist een waarde
-
 
 ## `domain:add`
 
@@ -1636,19 +1710,19 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--cert`
 
-Het pad naar het certificaatbestand voor dit domein
+Het pad naar een aangepast certificaatbestand
 
 - Vereist een waarde
 
 #### `--key`
 
-Het pad naar het bestand met de persoonlijke sleutel voor het opgegeven certificaat.
+Het pad naar de persoonlijke sleutel voor het aangepaste certificaat
 
 - Vereist een waarde
 
 #### `--chain`
 
-Het pad naar het certificaatkettingbestand of de certificaatbestanden voor het opgegeven certificaat
+Het pad naar het (de) kettingbestand(en) voor het aangepaste certificaat
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -1866,19 +1940,19 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--cert`
 
-Het pad naar het certificaatbestand voor dit domein
+Het pad naar een aangepast certificaatbestand
 
 - Vereist een waarde
 
 #### `--key`
 
-Het pad naar het bestand met de persoonlijke sleutel voor het opgegeven certificaat.
+Het pad naar de persoonlijke sleutel voor het aangepaste certificaat
 
 - Vereist een waarde
 
 #### `--chain`
 
-Het pad naar het certificaatkettingbestand of de certificaatbestanden voor het opgegeven certificaat
+Het pad naar het (de) kettingbestand(en) voor het aangepaste certificaat
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -1967,7 +2041,7 @@ Wacht tot de bewerking is voltooid (standaardwaarde)
 ## `environment:branch`
 
 ```bash
-magento-cloud branch [--title TITLE] [--type TYPE] [--no-clone-parent] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<id>] [<parent>]
+magento-cloud branch [--title TITLE] [--type TYPE] [--no-clone-parent] [--no-checkout] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<id>] [<parent>]
 ```
 
 Een omgeving vertakken
@@ -2006,6 +2080,13 @@ De gegevens van de bovenliggende omgeving niet klonen
 - Standaard: `false`
 - Accepteert geen waarde
 
+#### `--no-checkout`
+
+De vertakking niet lokaal uitchecken
+
+- Standaard: `false`
+- Accepteert geen waarde
+
 #### `--project`, `-p`
 
 De project-id of URL
@@ -2036,7 +2117,7 @@ Wacht tot de bewerking is voltooid (standaardwaarde)
 ## `environment:checkout`
 
 ```bash
-magento-cloud checkout [-i|--identity-file IDENTITY-FILE] [--] [<id>]
+magento-cloud checkout [<id>]
 ```
 
 Een omgeving controleren
@@ -2051,17 +2132,11 @@ De id van de omgeving die moet worden uitgecheckt. Bijvoorbeeld: &quot;sprint2&q
 
 Voor globale opties, zie [ Globale opties ](#global-options).
 
-#### `--identity-file`, `-i`
-
-Een SSH-identiteit (persoonlijke sleutel) die moet worden gebruikt
-
-- Vereist een waarde
-
 
 ## `environment:delete`
 
 ```bash
-magento-cloud environment:delete [--delete-branch] [--no-delete-branch] [--type TYPE] [-t|--only-type ONLY-TYPE] [--exclude EXCLUDE] [--exclude-type EXCLUDE-TYPE] [--inactive] [--merged] [--allow-delete-parent] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]...
+magento-cloud environment:delete [--delete-branch] [--no-delete-branch] [--type TYPE] [-t|--only-type ONLY-TYPE] [--exclude EXCLUDE] [--exclude-type EXCLUDE-TYPE] [--inactive] [--status STATUS] [--only-status ONLY-STATUS] [--exclude-status EXCLUDE-STATUS] [--merged] [--allow-delete-parent] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]...
 ```
 
 Een of meer omgevingen verwijderen
@@ -2136,6 +2211,27 @@ Alle niet-actieve omgevingen verwijderen (toevoegen aan andere geselecteerde omg
 - Standaard: `false`
 - Accepteert geen waarde
 
+#### `--status`
+
+Verwijder alle omgevingen van een status (en voeg deze toe aan andere geselecteerde omgevingen) Waarden kunnen worden gesplitst met komma&#39;s (bijv. &quot;a,b,c&quot;) en/of witruimte.
+
+- Standaard: `[]`
+- Vereist een waarde
+
+#### `--only-status`
+
+Alleen verwijderomgevingen van een specifieke statuswaarde kunnen worden gesplitst in komma&#39;s (bijvoorbeeld &quot;a,b,c&quot;) en/of witruimte.
+
+- Standaard: `[]`
+- Vereist een waarde
+
+#### `--exclude-status`
+
+Status(en) van omgeving waarvan geen waarden mogen worden verwijderd, kan worden opgesplitst in komma&#39;s (bijvoorbeeld &quot;a,b,c&quot;) en/of witruimte.
+
+- Standaard: `[]`
+- Vereist een waarde
+
 #### `--merged`
 
 Alle samengevoegde omgevingen verwijderen (aan geselecteerde omgevingen toevoegen)
@@ -2146,6 +2242,108 @@ Alle samengevoegde omgevingen verwijderen (aan geselecteerde omgevingen toevoege
 #### `--allow-delete-parent`
 
 Toestaan dat omgevingen met onderliggende items worden verwijderd
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+#### `--project`, `-p`
+
+De project-id of URL
+
+- Vereist een waarde
+
+#### `--environment`, `-e`
+
+De milieu-id. &quot;.&quot; gebruiken om de standaardomgeving van het project te selecteren.
+
+- Vereist een waarde
+
+#### `--no-wait`, `-W`
+
+Wacht niet tot de bewerking is voltooid
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+#### `--wait`
+
+Wacht tot de bewerking is voltooid (standaardwaarde)
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+
+## `environment:deploy`
+
+```bash
+magento-cloud deploy [-s|--strategy STRATEGY] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
+```
+
+Geleidelijke wijzigingen van een omgeving implementeren
+
+### Opties
+
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--strategy`, `-s`
+
+De implementatiestrategie, de stopstart (standaard, opnieuw opstarten met een stopzetting) of het rollen (geen downtime)
+
+- Vereist een waarde
+
+#### `--project`, `-p`
+
+De project-id of URL
+
+- Vereist een waarde
+
+#### `--environment`, `-e`
+
+De milieu-id. &quot;.&quot; gebruiken om de standaardomgeving van het project te selecteren.
+
+- Vereist een waarde
+
+#### `--no-wait`, `-W`
+
+Wacht niet tot de bewerking is voltooid
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+#### `--wait`
+
+Wacht tot de bewerking is voltooid (standaardwaarde)
+
+- Standaard: `false`
+- Accepteert geen waarde
+
+
+## `environment:deploy:type`
+
+```bash
+magento-cloud environment:deploy:type [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<type>]
+```
+
+Het implementatietype voor de omgeving weergeven of instellen
+
+```
+Choose automatic (the default) if you want your changes to be deployed immediately as they are made.
+Choose manual to have changes staged until you trigger a deployment (including changes to code, variables, domains and settings).
+```
+
+### Argumenten
+
+#### `type`
+
+Het implementatietype van de omgeving: automatisch of handmatig.
+
+### Opties
+
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--pipe`
+
+Implementatietype uitvoeren naar stdout
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -2191,14 +2389,14 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--access`
 
-Toegangsbeperking in de notatie &quot;permission:address&quot;. Gebruik 0 om alle adressen te wissen.
+De beperking van de toegang in het formaat &quot;toestemming :address&quot;. Gebruik 0 om alle adressen te wissen.
 
 - Standaard: `[]`
 - Vereist een waarde
 
 #### `--auth`
 
-HTTP Basic auth credentials in the format &quot;username:password&quot;. Gebruik 0 om alle gegevens te wissen.
+De Basisautegeloofsbrieven van HTTP in formaat &quot;gebruikersbenaming :password&quot;. Gebruik 0 om alle gegevens te wissen.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -2377,7 +2575,7 @@ Wacht tot de bewerking is voltooid (standaardwaarde)
 ## `environment:list`
 
 ```bash
-magento-cloud environments [-I|--no-inactive] [--pipe] [--refresh REFRESH] [--sort SORT] [--reverse] [--type TYPE] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
+magento-cloud environments [-I|--no-inactive] [--status STATUS] [--pipe] [--refresh REFRESH] [--sort SORT] [--reverse] [--type TYPE] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 Een lijst met omgevingen ophalen
@@ -2392,6 +2590,13 @@ Niet-actieve omgevingen tonen
 
 - Standaard: `false`
 - Accepteert geen waarde
+
+#### `--status`
+
+Filteromgevingen op status (actief, inactief, vuil, gepauzeerd, verwijderen). Waarden kunnen worden gesplitst met komma&#39;s (bv. &quot;a,b,c&quot;) en/of witruimte.
+
+- Standaard: `[]`
+- Vereist een waarde
 
 #### `--pipe`
 
@@ -2616,7 +2821,7 @@ Wacht tot de bewerking is voltooid (standaardwaarde)
 ## `environment:push`
 
 ```bash
-magento-cloud push [--target TARGET] [-f|--force] [--force-with-lease] [-u|--set-upstream] [--activate] [--parent PARENT] [--type TYPE] [--no-clone-parent] [-W|--no-wait] [--wait] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-i|--identity-file IDENTITY-FILE] [--] [<source>]
+magento-cloud push [--target TARGET] [-f|--force] [--force-with-lease] [-u|--set-upstream] [--activate] [--parent PARENT] [--type TYPE] [--no-clone-parent] [-W|--no-wait] [--wait] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<source>]
 ```
 
 Code naar een omgeving duwen
@@ -2625,7 +2830,7 @@ Code naar een omgeving duwen
 
 #### `source`
 
-De bron ref: een taknaam of begaat knoeiboel
+De Git source ref, bijvoorbeeld een vertakkingsnaam of een commit hash.
 
 - Standaard: `HEAD`
 
@@ -2662,14 +2867,14 @@ Stel de doelomgeving in als de upstream voor de bronvertakking. Dit zal ook het 
 
 #### `--activate`
 
-De omgeving activeren voordat wordt gedrukt
+Activeer de omgeving. Gepauzeerde omgevingen worden hervat. Dit zal ervoor zorgen dat de omgeving actief is, ook als er geen veranderingen worden doorgevoerd.
 
 - Standaard: `false`
 - Accepteert geen waarde
 
 #### `--parent`
 
-De bovenliggende nieuwe omgeving instellen (alleen gebruikt met —activate)
+De bovenliggende omgeving instellen (alleen gebruikt met —activate)
 
 - Vereist een waarde
 
@@ -2709,12 +2914,6 @@ De project-id of URL
 #### `--environment`, `-e`
 
 De milieu-id. &quot;.&quot; gebruiken om de standaardomgeving van het project te selecteren.
-
-- Vereist een waarde
-
-#### `--identity-file`, `-i`
-
-Een SSH-identiteit (persoonlijke sleutel) die moet worden gebruikt
 
 - Vereist een waarde
 
@@ -2761,7 +2960,7 @@ Wacht tot de bewerking is voltooid (standaardwaarde)
 ## `environment:relationships`
 
 ```bash
-magento-cloud relationships [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE] [--] [<environment>]
+magento-cloud relationships [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--] [<environment>]
 ```
 
 Relaties van een omgeving tonen
@@ -2804,12 +3003,6 @@ De milieu-id. &quot;.&quot; gebruiken om de standaardomgeving van het project te
 #### `--app`, `-A`
 
 De externe toepassingsnaam
-
-- Vereist een waarde
-
-#### `--identity-file`, `-i`
-
-Een SSH-identiteit (persoonlijke sleutel) die moet worden gebruikt
 
 - Vereist een waarde
 
@@ -2856,7 +3049,7 @@ Wacht tot de bewerking is voltooid (standaardwaarde)
 ## `environment:scp`
 
 ```bash
-magento-cloud scp [-r|--recursive] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE] [--] [<files>]...
+magento-cloud scp [-r|--recursive] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [--] [<files>]...
 ```
 
 Bestanden kopiëren van en naar een omgeving met behulp van scp
@@ -2911,17 +3104,11 @@ Instantie-id
 
 - Vereist een waarde
 
-#### `--identity-file`, `-i`
-
-Een SSH-identiteit (persoonlijke sleutel) die moet worden gebruikt
-
-- Vereist een waarde
-
 
 ## `environment:ssh`
 
 ```bash
-magento-cloud ssh [--pipe] [--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE] [--] [<cmd>]...
+magento-cloud ssh [--pipe] [--all] [-o|--option OPTION] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [--] [<cmd>]...
 ```
 
 SSH in de huidige omgeving
@@ -2953,6 +3140,13 @@ Voer alle SSH-URL&#39;s uit (voor elke app).
 - Standaard: `false`
 - Accepteert geen waarde
 
+#### `--option`, `-o`
+
+Een extra optie doorgeven aan SSH
+
+- Standaard: `[]`
+- Vereist een waarde
+
 #### `--project`, `-p`
 
 De project-id of URL
@@ -2983,12 +3177,6 @@ Instantie-id
 
 - Vereist een waarde
 
-#### `--identity-file`, `-i`
-
-Een SSH-identiteit (persoonlijke sleutel) die moet worden gebruikt
-
-- Vereist een waarde
-
 
 ## `environment:synchronize`
 
@@ -3002,7 +3190,9 @@ De code en/of gegevens van een omgeving synchroniseren vanuit het bovenliggende 
 This command synchronizes to a child environment from its parent environment.
 
 Synchronizing "code" means there will be a Git merge from the parent to the
-child. Synchronizing "data" means that all files in all services (including
+child.
+
+Synchronizing "data" means that all files in all services (including
 static files, databases, logs, search indices, etc.) will be copied from the
 parent to the child.
 ```
@@ -3102,7 +3292,7 @@ De milieu-id. &quot;.&quot; gebruiken om de standaardomgeving van het project te
 ## `environment:xdebug`
 
 ```bash
-magento-cloud xdebug [--port PORT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE]
+magento-cloud xdebug [--port PORT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE]
 ```
 
 Een tunnel openen voor Xdebug in de omgeving
@@ -3145,12 +3335,6 @@ De naam van een worker
 #### `--instance`, `-I`
 
 Instantie-id
-
-- Vereist een waarde
-
-#### `--identity-file`, `-i`
-
-Een SSH-identiteit (persoonlijke sleutel) die moet worden gebruikt
 
 - Vereist een waarde
 
@@ -3228,7 +3412,7 @@ De datumnotatie (als een PHP-datumnotatietekenreeks)
 ## `integration:activity:list`
 
 ```bash
-magento-cloud int:act [--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [-i|--incomplete] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<id>]
+magento-cloud integration:activities [--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [-i|--incomplete] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<id>]
 ```
 
 Een lijst met activiteiten voor integratie ophalen
@@ -3299,7 +3483,7 @@ De uitvoerindeling: table, csv, tsv of plain
 
 #### `--columns`, `-c`
 
-Weer te geven kolommen. Beschikbare kolommen: id*, created*, description*, type*, state*, result*, completed (* = default columns). Het teken &quot;+&quot; kan worden gebruikt als tijdelijke aanduiding voor de standaardkolommen. De tekens % of * kunnen als jokerteken worden gebruikt. Waarden kunnen worden gesplitst met komma&#39;s (bv. &quot;a,b,c&quot;) en/of witruimte.
+Weer te geven kolommen. Beschikbare kolommen: id*, created*, description*, type*, state*, result*, completed, progress, time_build, time_deploy, time_execute, time_wait (* = standaardkolommen). Het teken &quot;+&quot; kan worden gebruikt als tijdelijke aanduiding voor de standaardkolommen. De tekens % of * kunnen als jokerteken worden gebruikt. Waarden kunnen worden gesplitst met komma&#39;s (bv. &quot;a,b,c&quot;) en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -3395,7 +3579,7 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--type`
 
-Het integratietype (&#39;bitbucket&#39;, &#39;bitbucket_server&#39;, &#39;github&#39;, &#39;gitlab&#39;, &#39;webhaakje&#39;, &#39;health.email&#39;, &#39;health.pagerduty&#39;, &#39;health.slack&#39;, &#39;health.webhaakje&#39;, &#39;httplog&#39;, &#39;script&#39;, &#39;newrelic&#39;, &#39;splunk&#39;, &#39;sumologic&#39;, &#39;syslog&#39;)
+Het integratietype (&#39;bitbucket&#39;, &#39;bitbucket_server&#39;, &#39;github&#39;, &#39;gitlab&#39;, &#39;webhaakje&#39;, &#39;health.email&#39;, &#39;health.pagerduty&#39;, &#39;health.slack&#39;, &#39;health.webhaakje&#39;, &#39;httplog&#39;, &#39;script&#39;, &#39;newrelic&#39;, &#39;splunk&#39;, &#39;sumologic&#39;, &#39;syslog&#39;, &#39;otlplplog&#39;)
 
 - Vereist een waarde
 
@@ -3793,7 +3977,7 @@ De project-id of URL
 ## `integration:list`
 
 ```bash
-magento-cloud integrations [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
+magento-cloud integrations [-t|--type TYPE] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 Een lijst met projectintegratie(s) weergeven
@@ -3801,6 +3985,12 @@ Een lijst met projectintegratie(s) weergeven
 ### Opties
 
 Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--type`, `-t`
+
+Filteren op type
+
+- Vereist een waarde
 
 #### `--format`
 
@@ -3850,7 +4040,7 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--type`
 
-Het integratietype (&#39;bitbucket&#39;, &#39;bitbucket_server&#39;, &#39;github&#39;, &#39;gitlab&#39;, &#39;webhaakje&#39;, &#39;health.email&#39;, &#39;health.pagerduty&#39;, &#39;health.slack&#39;, &#39;health.webhaakje&#39;, &#39;httplog&#39;, &#39;script&#39;, &#39;newrelic&#39;, &#39;splunk&#39;, &#39;sumologic&#39;, &#39;syslog&#39;)
+Het integratietype (&#39;bitbucket&#39;, &#39;bitbucket_server&#39;, &#39;github&#39;, &#39;gitlab&#39;, &#39;webhaakje&#39;, &#39;health.email&#39;, &#39;health.pagerduty&#39;, &#39;health.slack&#39;, &#39;health.webhaakje&#39;, &#39;httplog&#39;, &#39;script&#39;, &#39;newrelic&#39;, &#39;splunk&#39;, &#39;sumologic&#39;, &#39;syslog&#39;, &#39;otlplplog&#39;)
 
 - Vereist een waarde
 
@@ -4341,7 +4531,7 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 magento-cloud metrics [-B|--bytes] [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-1|--latest] [-s|--service SERVICE] [--type TYPE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
 ```
 
-BETA toont CPU, schijf en geheugen metriek voor een omgeving
+Metrische gegevens over CPU, schijf en geheugen weergeven voor een omgeving
 
 ### Opties
 
@@ -4440,7 +4630,7 @@ De datumnotatie (als een PHP-datumnotatietekenreeks)
 magento-cloud cpu [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-1|--latest] [-s|--service SERVICE] [--type TYPE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
 ```
 
-BETA CPU-gebruik van een omgeving tonen
+CPU-gebruik van een omgeving tonen
 
 ### Opties
 
@@ -4638,7 +4828,7 @@ De datumnotatie (als een PHP-datumnotatietekenreeks)
 magento-cloud mem [-B|--bytes] [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-1|--latest] [-s|--service SERVICE] [--type TYPE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
 ```
 
-BETA Geheugengebruik van een omgeving weergeven
+Geheugengebruik van een omgeving weergeven
 
 ### Opties
 
@@ -4734,7 +4924,7 @@ De datumnotatie (als een PHP-datumnotatietekenreeks)
 ## `mount:download`
 
 ```bash
-magento-cloud mount:download [-a|--all] [-m|--mount MOUNT] [--target TARGET] [--source-path] [--delete] [--exclude EXCLUDE] [--include INCLUDE] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE]
+magento-cloud mount:download [-a|--all] [-m|--mount MOUNT] [--target TARGET] [--source-path] [--delete] [--exclude EXCLUDE] [--include INCLUDE] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE]
 ```
 
 Bestanden downloaden van een berg, via resynchroniseren
@@ -4827,12 +5017,6 @@ Instantie-id
 
 - Vereist een waarde
 
-#### `--identity-file`, `-i`
-
-Een SSH-identiteit (persoonlijke sleutel) die moet worden gebruikt
-
-- Vereist een waarde
-
 
 ## `mount:list`
 
@@ -4912,103 +5096,10 @@ Instantie-id
 - Vereist een waarde
 
 
-## `mount:size`
-
-```bash
-magento-cloud mount:size [-B|--bytes] [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE]
-```
-
-Controleer het schijfgebruik van bevestigingen
-
-```
-Use this command to check the disk size and usage for an application's mounts.
-
-Mounts are directories mounted into the application from a persistent, writable
-filesystem. They are configured in the mounts key in the application configuration.
-
-The filesystem's total size is determined by the disk key in the same file.
-```
-
-### Opties
-
-Voor globale opties, zie [ Globale opties ](#global-options).
-
-#### `--bytes`, `-B`
-
-Grootte in bytes weergeven
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-#### `--refresh`
-
-De cache vernieuwen
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-#### `--format`
-
-De uitvoerindeling: table, csv, tsv of plain
-
-- Standaard: `table`
-- Vereist een waarde
-
-#### `--columns`, `-c`
-
-Weer te geven kolommen. Beschikbare kolommen: beschikbaar, max, monts, percent_used, sizes, used. De tekens % of * kunnen als jokerteken worden gebruikt. Waarden kunnen worden gesplitst met komma&#39;s (bv. &quot;a,b,c&quot;) en/of witruimte.
-
-- Standaard: `[]`
-- Vereist een waarde
-
-#### `--no-header`
-
-De tabelkoptekst niet uitvoeren
-
-- Standaard: `false`
-- Accepteert geen waarde
-
-#### `--identity-file`, `-i`
-
-Een SSH-identiteit (persoonlijke sleutel) die moet worden gebruikt
-
-- Vereist een waarde
-
-#### `--project`, `-p`
-
-De project-id of URL
-
-- Vereist een waarde
-
-#### `--environment`, `-e`
-
-De milieu-id. &quot;.&quot; gebruiken om de standaardomgeving van het project te selecteren.
-
-- Vereist een waarde
-
-#### `--app`, `-A`
-
-De externe toepassingsnaam
-
-- Vereist een waarde
-
-#### `--worker`
-
-De naam van een worker
-
-- Vereist een waarde
-
-#### `--instance`, `-I`
-
-Instantie-id
-
-- Vereist een waarde
-
-
 ## `mount:upload`
 
 ```bash
-magento-cloud mount:upload [--source SOURCE] [-m|--mount MOUNT] [--delete] [--exclude EXCLUDE] [--include INCLUDE] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE]
+magento-cloud mount:upload [--source SOURCE] [-m|--mount MOUNT] [--delete] [--exclude EXCLUDE] [--include INCLUDE] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE]
 ```
 
 Bestanden uploaden naar een koppelingsgebied, via opnieuw synchroniseren
@@ -5087,12 +5178,6 @@ Instantie-id
 
 - Vereist een waarde
 
-#### `--identity-file`, `-i`
-
-Een SSH-identiteit (persoonlijke sleutel) die moet worden gebruikt
-
-- Vereist een waarde
-
 
 ## `operation:list`
 
@@ -5100,7 +5185,7 @@ Een SSH-identiteit (persoonlijke sleutel) die moet worden gebruikt
 magento-cloud ops [--full] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
-BETA List-runtimebewerkingen in een omgeving
+Runtimebewerkingen weergeven in een omgeving
 
 ### Opties
 
@@ -5165,7 +5250,7 @@ De tabelkoptekst niet uitvoeren
 magento-cloud operation:run [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-W|--no-wait] [--wait] [--] [<operation>]
 ```
 
-BETA Voer een bewerking uit op de omgeving
+Een bewerking uitvoeren op de omgeving
 
 ### Argumenten
 
@@ -5238,7 +5323,7 @@ De project-id of URL
 ## `project:get`
 
 ```bash
-magento-cloud get [-e|--environment ENVIRONMENT] [--depth DEPTH] [--build] [-p|--project PROJECT] [-i|--identity-file IDENTITY-FILE] [--] [<project>] [<directory>]
+magento-cloud get [-e|--environment ENVIRONMENT] [--depth DEPTH] [--build] [-p|--project PROJECT] [--] [<project>] [<directory>]
 ```
 
 Een project lokaal klonen
@@ -5280,12 +5365,6 @@ Het project na het klonen maken
 #### `--project`, `-p`
 
 De project-id of URL
-
-- Vereist een waarde
-
-#### `--identity-file`, `-i`
-
-Een SSH-identiteit (persoonlijke sleutel) die moet worden gebruikt
 
 - Vereist een waarde
 
@@ -5449,7 +5528,7 @@ De uitvoerindeling: table, csv, tsv of plain
 
 #### `--columns`
 
-Weer te geven kolommen. Beschikbare kolommen: id*, title*, region*, created_at, organisation_id, organisation_label, organisation_name, status (* = standaardkolommen). Het teken &quot;+&quot; kan worden gebruikt als tijdelijke aanduiding voor de standaardkolommen. De tekens % of * kunnen als jokerteken worden gebruikt. Waarden kunnen worden gesplitst met komma&#39;s (bv. &quot;a,b,c&quot;) en/of witruimte.
+Weer te geven kolommen. Beschikbare kolommen: id*, title*, region*, created_at, organisation_id, organisation_label, organisation_name, organisation_type, status (* = standaardkolommen). Het teken &quot;+&quot; kan worden gebruikt als tijdelijke aanduiding voor de standaardkolommen. De tekens % of * kunnen als jokerteken worden gebruikt. Waarden kunnen worden gesplitst met komma&#39;s (bv. &quot;a,b,c&quot;) en/of witruimte.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -5620,6 +5699,46 @@ De project-id of URL
 De milieu-id. &quot;.&quot; gebruiken om de standaardomgeving van het project te selecteren.
 
 - Vereist een waarde
+
+
+## `resources:build:get`
+
+```bash
+magento-cloud build-resources:get [-p|--project PROJECT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
+```
+
+Bekijk bouwstijlmiddelen van een project
+
+### Opties
+
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--project`, `-p`
+
+De project-id of URL
+
+- Vereist een waarde
+
+#### `--format`
+
+De uitvoerindeling: table, csv, tsv of plain
+
+- Standaard: `table`
+- Vereist een waarde
+
+#### `--columns`, `-c`
+
+Weer te geven kolommen. Beschikbare kolommen: cpu, geheugen. De tekens % of * kunnen als jokerteken worden gebruikt. Waarden kunnen worden gesplitst met komma&#39;s (bv. &quot;a,b,c&quot;) en/of witruimte.
+
+- Standaard: `[]`
+- Vereist een waarde
+
+#### `--no-header`
+
+De tabelkoptekst niet uitvoeren
+
+- Standaard: `false`
+- Accepteert geen waarde
 
 
 ## `route:get`
@@ -5890,7 +6009,7 @@ De tabelkoptekst niet uitvoeren
 ## `service:mongo:dump`
 
 ```bash
-magento-cloud mongodump [-c|--collection COLLECTION] [-z|--gzip] [-o|--stdout] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud mongodump [-c|--collection COLLECTION] [-z|--gzip] [-o|--stdout] [-r|--relationship RELATIONSHIP] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 Een binaire archiefstortplaats maken van gegevens van MongoDB
@@ -5925,12 +6044,6 @@ De de dienstverhouding om te gebruiken
 
 - Vereist een waarde
 
-#### `--identity-file`, `-i`
-
-Een SSH-identiteit (persoonlijke sleutel) die moet worden gebruikt
-
-- Vereist een waarde
-
 #### `--project`, `-p`
 
 De project-id of URL
@@ -5953,7 +6066,7 @@ De externe toepassingsnaam
 ## `service:mongo:export`
 
 ```bash
-magento-cloud mongoexport [-c|--collection COLLECTION] [--jsonArray] [--type TYPE] [-f|--fields FIELDS] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud mongoexport [-c|--collection COLLECTION] [--jsonArray] [--type TYPE] [-f|--fields FIELDS] [-r|--relationship RELATIONSHIP] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 Gegevens exporteren uit MongoDB
@@ -5994,12 +6107,6 @@ De de dienstverhouding om te gebruiken
 
 - Vereist een waarde
 
-#### `--identity-file`, `-i`
-
-Een SSH-identiteit (persoonlijke sleutel) die moet worden gebruikt
-
-- Vereist een waarde
-
 #### `--project`, `-p`
 
 De project-id of URL
@@ -6022,7 +6129,7 @@ De externe toepassingsnaam
 ## `service:mongo:restore`
 
 ```bash
-magento-cloud mongorestore [-c|--collection COLLECTION] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud mongorestore [-c|--collection COLLECTION] [-r|--relationship RELATIONSHIP] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 Herstel een binaire archiefstortplaats van gegevens in MongoDB
@@ -6040,12 +6147,6 @@ De te herstellen verzameling
 #### `--relationship`, `-r`
 
 De de dienstverhouding om te gebruiken
-
-- Vereist een waarde
-
-#### `--identity-file`, `-i`
-
-Een SSH-identiteit (persoonlijke sleutel) die moet worden gebruikt
 
 - Vereist een waarde
 
@@ -6071,7 +6172,7 @@ De externe toepassingsnaam
 ## `service:mongo:shell`
 
 ```bash
-magento-cloud mongo [--eval EVAL] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud mongo [--eval EVAL] [-r|--relationship RELATIONSHIP] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 De shell van MongoDB gebruiken
@@ -6089,12 +6190,6 @@ Een JavaScript-fragment aan de shell doorgeven
 #### `--relationship`, `-r`
 
 De de dienstverhouding om te gebruiken
-
-- Vereist een waarde
-
-#### `--identity-file`, `-i`
-
-Een SSH-identiteit (persoonlijke sleutel) die moet worden gebruikt
 
 - Vereist een waarde
 
@@ -6120,7 +6215,7 @@ De externe toepassingsnaam
 ## `service:redis-cli`
 
 ```bash
-magento-cloud redis [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--] [<args>]
+magento-cloud redis [-r|--relationship RELATIONSHIP] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--] [<args>]...
 ```
 
 Toegang tot de CLI van Redis
@@ -6129,7 +6224,10 @@ Toegang tot de CLI van Redis
 
 #### `args`
 
-Argumenten die moeten worden toegevoegd aan de opdracht Redis
+Argumenten om toe te voegen aan de opdracht redis-cli
+
+- Standaard: `[]`
+- Array
 
 ### Opties
 
@@ -6141,9 +6239,49 @@ De de dienstverhouding om te gebruiken
 
 - Vereist een waarde
 
-#### `--identity-file`, `-i`
+#### `--project`, `-p`
 
-Een SSH-identiteit (persoonlijke sleutel) die moet worden gebruikt
+De project-id of URL
+
+- Vereist een waarde
+
+#### `--environment`, `-e`
+
+De milieu-id. &quot;.&quot; gebruiken om de standaardomgeving van het project te selecteren.
+
+- Vereist een waarde
+
+#### `--app`, `-A`
+
+De externe toepassingsnaam
+
+- Vereist een waarde
+
+
+## `service:valkey-cli`
+
+```bash
+magento-cloud valkey [-r|--relationship RELATIONSHIP] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--] [<args>]...
+```
+
+Toegang tot de Valkey CLI
+
+### Argumenten
+
+#### `args`
+
+Argumenten die moeten worden toegevoegd aan de opdracht valkey-cli
+
+- Standaard: `[]`
+- Array
+
+### Opties
+
+Voor globale opties, zie [ Globale opties ](#global-options).
+
+#### `--relationship`, `-r`
+
+De de dienstverhouding om te gebruiken
 
 - Vereist een waarde
 
@@ -6186,7 +6324,7 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--live`
 
-Live back-up: stop de omgeving niet. Als deze optie is ingesteld, blijft de omgeving actief en kunnen er verbindingen worden gemaakt tijdens de back-up. Dit vermindert onderbreking, met het risico om gegevens in een inconsistente staat te steunen.
+Actieve momentopname: stop de omgeving niet. Als deze optie is ingesteld, blijft de omgeving actief en wordt deze opengesteld voor verbindingen tijdens de momentopname. Dit vermindert onderbreking, met het risico om gegevens in een inconsistente staat te steunen.
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6363,7 +6501,7 @@ De milieu-id. &quot;.&quot; gebruiken om de standaardomgeving van het project te
 ## `snapshot:restore`
 
 ```bash
-magento-cloud snapshot:restore [--target TARGET] [--branch-from BRANCH-FROM] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<snapshot>]
+magento-cloud snapshot:restore [--target TARGET] [--branch-from BRANCH-FROM] [--no-code] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<snapshot>]
 ```
 
 Een omgevingsmomentopname herstellen
@@ -6372,7 +6510,7 @@ Een omgevingsmomentopname herstellen
 
 #### `snapshot`
 
-De naam van de opname. Wordt standaard ingesteld op de meest recente
+De id van de momentopname. Wordt standaard ingesteld op de meest recente
 
 ### Opties
 
@@ -6389,6 +6527,13 @@ De omgeving die moet worden hersteld. Wordt standaard ingesteld op de huidige om
 Als —target nog niet bestaat, specificeert dit de ouder van het nieuwe milieu
 
 - Vereist een waarde
+
+#### `--no-code`
+
+Geen code, alleen gegevens herstellen.
+
+- Standaard: `false`
+- Accepteert geen waarde
 
 #### `--project`, `-p`
 
@@ -6490,7 +6635,7 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--variable`
 
-Een variabele die tijdens de bewerking moet worden ingesteld, in de notatietype:name=value
+Een variabele om tijdens de verrichting, in het formaattype :name=value te plaatsen
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -6568,7 +6713,7 @@ Vernieuwen van certificaat forceren
 
 #### `--new-key`
 
-[ Vervangen ] Gebruik - nieuw in plaats daarvan
+Een nieuw sleutelpaar forceren dat moet worden gegenereerd
 
 - Standaard: `false`
 - Accepteert geen waarde
@@ -6890,7 +7035,7 @@ De tabelkoptekst niet uitvoeren
 ## `tunnel:open`
 
 ```bash
-magento-cloud tunnel:open [-g|--gateway-ports] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE]
+magento-cloud tunnel:open [-g|--gateway-ports] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 SSH-tunnels openen naar de relaties van een app
@@ -6937,17 +7082,11 @@ De externe toepassingsnaam
 
 - Vereist een waarde
 
-#### `--identity-file`, `-i`
-
-Een SSH-identiteit (persoonlijke sleutel) die moet worden gebruikt
-
-- Vereist een waarde
-
 
 ## `tunnel:single`
 
 ```bash
-magento-cloud tunnel:single [--port PORT] [-g|--gateway-ports] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE]
+magento-cloud tunnel:single [--port PORT] [-g|--gateway-ports] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP]
 ```
 
 Eén SSH-tunnel openen voor een app-relatie
@@ -6993,12 +7132,6 @@ De de dienstverhouding om te gebruiken
 
 - Vereist een waarde
 
-#### `--identity-file`, `-i`
-
-Een SSH-identiteit (persoonlijke sleutel) die moet worden gebruikt
-
-- Vereist een waarde
-
 
 ## `user:add`
 
@@ -7020,7 +7153,7 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--role`, `-r`
 
-De projectrol van de gebruiker (&#39;admin&#39; of &#39;viewer&#39;) of de rol van het type omgeving (bijvoorbeeld &#39;staging:contributor&#39; of &#39;production:viewer&#39;). Als u een gebruiker uit een omgevingstype wilt verwijderen, stelt u de rol in op Geen. De tekens % of * kunnen worden gebruikt als een jokerteken voor het omgevingstype, bijvoorbeeld &#39;%:viewer&#39; om de gebruiker de rol &#39;viewer&#39; te geven voor alle typen. De rol kan worden afgekort, bijvoorbeeld &quot;production:v&quot;.
+De projectrol van de gebruiker (&#39;admin&#39; of &#39;viewer&#39;) of de rol van het omgevingstype (bijvoorbeeld &#39;staging :contributor&#39; of &#39;production :viewer&#39;). Als u een gebruiker uit een omgevingstype wilt verwijderen, stelt u de rol in op Geen. De %- of *-tekens kunnen worden gebruikt als een jokerteken voor het omgevingstype, bijvoorbeeld &#39;% :viewer&#39;, om de gebruiker de rol &#39;viewer&#39; te geven op alle typen. De rol kan worden afgekort, bijvoorbeeld &quot;productie :v&quot;.
 
 - Standaard: `[]`
 - Vereist een waarde
@@ -7153,7 +7286,7 @@ Wacht tot de bewerking is voltooid (standaardwaarde)
 
 #### `--role`, `-r`
 
-[ Afgekeurd: gebruik gebruiker:update om de rol(s) van een gebruiker te veranderen ]
+[ Afgekeurd: gebruik gebruiker :update om de rol(s) van een gebruiker te veranderen ]
 
 - Vereist een waarde
 
@@ -7218,7 +7351,7 @@ Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--role`, `-r`
 
-De projectrol van de gebruiker (&#39;admin&#39; of &#39;viewer&#39;) of de rol van het type omgeving (bijvoorbeeld &#39;staging:contributor&#39; of &#39;production:viewer&#39;). Als u een gebruiker uit een omgevingstype wilt verwijderen, stelt u de rol in op Geen. De tekens % of * kunnen worden gebruikt als een jokerteken voor het omgevingstype, bijvoorbeeld &#39;%:viewer&#39; om de gebruiker de rol &#39;viewer&#39; te geven voor alle typen. De rol kan worden afgekort, bijvoorbeeld &quot;production:v&quot;.
+De projectrol van de gebruiker (&#39;admin&#39; of &#39;viewer&#39;) of de rol van het omgevingstype (bijvoorbeeld &#39;staging :contributor&#39; of &#39;production :viewer&#39;). Als u een gebruiker uit een omgevingstype wilt verwijderen, stelt u de rol in op Geen. De %- of *-tekens kunnen worden gebruikt als een jokerteken voor het omgevingstype, bijvoorbeeld &#39;% :viewer&#39;, om de gebruiker de rol &#39;viewer&#39; te geven op alle typen. De rol kan worden afgekort, bijvoorbeeld &quot;productie :v&quot;.
 
 - Standaard: `[]`
 - Vereist een waarde
