@@ -4,9 +4,9 @@ description: Zie een lijst met de meest recente verbeteringen in het pakket ECE-
 recommendations: noDisplay, catalog
 last-substantial-update: 2025-08-07T00:00:00Z
 exl-id: 3cbfe698-d75d-4a16-877a-52c214595344
-source-git-commit: b90959335c91dd0631d270ebb522524cf1db6ff0
+source-git-commit: e39b348b02b4edfbe091420c54a20b320387a4b6
 workflow-type: tm+mt
-source-wordcount: '3269'
+source-wordcount: '3286'
 ht-degree: 0%
 
 ---
@@ -24,19 +24,27 @@ Het pakket `ece-tools` gebruikt de volgende versiesequentie voor releases: `200<
 De opmerkingen bij de release omvatten:
 
 - ![ nieuw pictogram ](../../assets/new.svg) Nieuwe eigenschappen
-- ![ Bevestigingspictogram van 0&rbrace; moeilijke situatie en verbeteringen](../../assets/fix.svg)
+- ![ Bevestigingspictogram van 0} moeilijke situatie en verbeteringen](../../assets/fix.svg)
 
 <!--Add release notes below-->
 
-## v2002.2.7 {#latest}
+## v2002.2.8 {#latest}
+
+Releasedatum: 8 oktober 2025
+
+- ![ nieuw pictogram ](../../assets/new.svg) **ActiveMQ** - Toegevoegde steun voor ActiveMQ.<!-- MCLOUD-13770 -->
+- ![ nieuw pictogram ](../../assets/new.svg) **ActiveMQ** - Toegevoegde functionele tests.<!-- MCLOUD-13813 -->
+
+
+## v2002.2.7
 
 Releasedatum: 7 augustus 2025
 
 - ![ fixpictogram ](../../assets/fix.svg) **PHP 8.4 moeilijke situaties** - Toegevoegde typecompatibiliteit.<!-- MCLOUD-13965 -->
 - ![ ](../../assets/fix.svg) EOL validator **- Bijgewerkt Eind van het Leven (EOL) de dienstendata van de fixepictogram**.<!-- MCLOUD-13929 -->
 - ![ nieuw pictogram ](../../assets/new.svg) **Valkey** - Toegevoegde PHP 8.2 en PHP 8.3 functionele tests.<!-- MCLOUD-13610 -->
-- ![ ](../../assets/fix.svg) Valkey validator **- Vaste het pictogram van de moeilijke situatie &lbrace;**.<!-- MCLOUD-13896 -->
-- ![ ](../../assets/fix.svg) de hulpmiddelen **- Toegevoegde de testverbeteringen van de Eenheid van 0&rbrace; fixpictogram &lbrace;**.<!-- MCLOUD-13838 -->
+- ![ ](../../assets/fix.svg) Valkey validator **- Vaste het pictogram van de moeilijke situatie {**.<!-- MCLOUD-13896 -->
+- ![ ](../../assets/fix.svg) de hulpmiddelen **- Toegevoegde de testverbeteringen van de Eenheid van 0} fixpictogram {**.<!-- MCLOUD-13838 -->
 - ![ nieuw pictogram ](../../assets/new.svg) **Validator voor de diensten** - Toegevoegde nieuwe versiessteun van Openssearch, MariaDB en PHP.<!-- MCLOUD-13923 -->
 - ![ nieuw pictogram ](../../assets/new.svg) **Openssearch3** - Toegevoegde steun voor Openssearch3.<!-- MCLOUD-13763 -->
 - ![ het pictogram van de moeilijke situatie ](../../assets/fix.svg) **de steun van het Opensonderzoek voor 2.4.4-p7/p12** - werkte het validatormanuscript bij.<!-- MCLOUD-13945 -->
@@ -61,13 +69,13 @@ Releasedatum: 27 mei 2025
 
 Releasedatum: 24 april 2025
 
-- ![ ](../../assets/fix.svg) Openssearch2 **- van de moeilijke situatie** pictogram van de moeilijke situatie &lbrace;met betrekking tot steun voor `opensearch2` in de versies van Adobe Commerce 2.4.4/2.4.5.<!-- MCLOUD-13607 -->
+- ![ ](../../assets/fix.svg) Openssearch2 **- van de moeilijke situatie** pictogram van de moeilijke situatie {met betrekking tot steun voor `opensearch2` in de versies van Adobe Commerce 2.4.4/2.4.5.<!-- MCLOUD-13607 -->
 
 ## v2002.2.3
 
 Releasedatum: 9 april 2025
 
-- ![ ](../../assets/fix.svg) Repareer Valkey **Vaste kwestie van het 0&rbrace; fixpictogram &lbrace;met geldige douaneconfiguratie.**<!-- MCLOUD-13569 -->
+- ![ ](../../assets/fix.svg) Repareer Valkey **Vaste kwestie van het 0} fixpictogram {met geldige douaneconfiguratie.**<!-- MCLOUD-13569 -->
 - ![ fixpictogram ](../../assets/fix.svg) **bevestigen validator** - Vaste validator voor RabbitMQ 4.0.<!-- MCLOUD-13560 -->
 
 ## v2002.2.2
@@ -116,7 +124,7 @@ Releasedatum: 8 april 2024
 Releasedatum: 16 januari 2024
 
 - ![ fixpictogram ](../../assets/fix.svg) **Validator voor Elasticsearch &amp; OpenSearch** - Vaste validator die een misleidend bericht produceerde om de onderzoeksdienst te installeren wanneer LiveSearch wordt toegelaten.<!-- MCLOUD-10167 -->
-- ![ ](../../assets/fix.svg) de waarschuwing van de Plaatsing 1&rbrace; **fixpictogram** - Vaste een kwestie die in plaatsingswaarschuwingen over niet-lege omslagen resulteerde.<!-- MCLOUD-8958 -->
+- ![ ](../../assets/fix.svg) de waarschuwing van de Plaatsing 1} **fixpictogram** - Vaste een kwestie die in plaatsingswaarschuwingen over niet-lege omslagen resulteerde.<!-- MCLOUD-8958 -->
 
 ## v2002.1.16
 

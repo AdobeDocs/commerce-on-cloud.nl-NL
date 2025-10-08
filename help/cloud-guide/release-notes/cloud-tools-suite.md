@@ -3,7 +3,7 @@ title: Opmerkingen bij de release Cloud Tools Suite
 description: Meer informatie over de nieuwste verbeteringen in de Cloud Tools Suite voor Adobe Commerce.
 feature: Cloud, Release Notes
 exl-id: ee2bc2e9-bdf4-4f7b-9724-8f4dd1e61378
-source-git-commit: d4eee1f85375164dc9d73dcc07596f473652ba08
+source-git-commit: c1f5e663716d3c9390e8ffb8bb2da6c7c67996b0
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 0%
@@ -16,9 +16,9 @@ Deze release bevat informatie over de meest recente verbeteringen in de Cloud To
 
 | Opmerkingen bij de release | Versie | Beschrijving | Source |
 | ----------------- |----------| ---------------------------------------- | --------------------------- |
-| [`ece-tools` package ](ece-tools-package.md) | 2002,2,7 | Een set scripts en tools die zijn ontworpen voor het beheren en implementeren van Cloud-projecten | [`magento/ece-tools`](https://github.com/magento/ece-tools/tree/2002.2.7) |
+| [`ece-tools` package ](ece-tools-package.md) | 2002,2,8 | Een set scripts en tools die zijn ontworpen voor het beheren en implementeren van Cloud-projecten | [`magento/ece-tools`](https://github.com/magento/ece-tools/tree/2002.2.8) |
 | [ Haalt de Patches van de Wolk voor Commerce ](cloud-patches.md) | 1.1.11 | Een reeks patches die de integratie van alle Adobe Commerce-versies in de Cloud-omgeving verbeteren. Dit pakket bevat Adobe Commerce-patches en beschikbare hotfixes die worden toegepast wanneer u `ece-tools` gebruikt om | [`magento/magento-cloud-patches`](https://github.com/magento/magento-cloud-patches/tree/1.1.11) |
-| [ Docker van de Wolk voor Commerce ](cloud-docker.md) | 1.4.4. | Functie- en configuratiebestanden voor Docker-images om Adobe Commerce in een lokale cloudomgeving te implementeren | [`magento/magento-cloud-docker`](https://github.com/magento/magento-cloud-docker/tree/1.4.4) |
+| [ Docker van de Wolk voor Commerce ](cloud-docker.md) | 1.4.5. | Functie- en configuratiebestanden voor Docker-images om Adobe Commerce in een lokale cloudomgeving te implementeren | [`magento/magento-cloud-docker`](https://github.com/magento/magento-cloud-docker/tree/1.4.5) |
 | [ de Componenten van de Wolk van Commerce ](cloud-components.md) | 1.1.3. | Uitgebreide Adobe Commerce-kernfunctionaliteit voor sites die worden geïmplementeerd op de Cloud-infrastructuur | [`magento/magento-cloud-components`](https://github.com/magento/magento-cloud-components/tree/1.1.3) |
 
 Wanneer u een update uitvoert naar ECE-Tools 2002.1.0 of hoger, wordt automatisch een update uitgevoerd naar de nieuwste versies van de andere pakketten. Dit zijn afhankelijkheden voor het `ece-tools` -pakket. Zie [ het metapakket van de Wolk ](../development/overview.md#cloud-metapackage) voor een lijst van gebiedsdelen.
