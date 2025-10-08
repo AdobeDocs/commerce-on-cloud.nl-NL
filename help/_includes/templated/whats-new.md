@@ -23,7 +23,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Verduidelijkt gesteunde werkende systemen voor <code class="language-plaintext highlighter-rouge">magento-cloud</code> CLI hulpmiddel <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview"> installatie </a>.</p>
+      <td><p>Verduidelijkt gesteunde werkende systemen voor <code class="language-plaintext highlighter-rouge">magento-cloud</code> CLI hulpmiddel <a href="https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview"> installatie </a>.</p>
 </td>
       <td>
         Feedback
@@ -45,7 +45,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Toegevoegde <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches"> versienota's </a> voor het pakket van het Patroon van de Wolk v1.1.11.</p>
+      <td><p>Toegevoegde <a href="https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches"> versienota's </a> voor het pakket van het Patroon van de Wolk v1.1.11.</p>
 </td>
       <td>
         Belangrijke update
