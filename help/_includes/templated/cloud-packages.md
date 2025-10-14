@@ -1,7 +1,7 @@
 ---
-source-git-commit: 5567f425f28cb4d19aaa0db80f0ede1fd525a686
+source-git-commit: 50e1a864dcde1148f5ed036b55815442c5986eaf
 workflow-type: tm+mt
-source-wordcount: '2275'
+source-wordcount: '2313'
 ht-degree: 0%
 
 ---
@@ -111,6 +111,13 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
     </td>
     <td>pakket</td>
     <td>Braintree Magento</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/stomp-php/stomp-php.git"> stomp-php/stomp-php </a>
+    </td>
+    <td>bibliotheek</td>
+    <td>Ondersteuning voor Stompen in PHP</td>
   </tr>
   <tr>
     <td>
@@ -835,7 +842,7 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/PhpGt/Dom.git"> phpgt/dom </a>
+      <a href="https://github.com/phpgt/Dom.git"> phpgt/dom </a>
     </td>
     <td>bibliotheek</td>
     <td>Moderne DOM API.</td>
@@ -1196,6 +1203,20 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
     </td>
     <td>bibliotheek</td>
     <td>Symfony polyfill geeft een aantal functies van PHP 8.3+ terug naar lagere PHP versies</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/symfony/polyfill-php84.git"> symfony/polyfill-php84 </a>
+    </td>
+    <td>bibliotheek</td>
+    <td>Symfony polyfill geeft een aantal functies van PHP 8.4+ terug naar lagere PHP versies</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/symfony/polyfill-php85.git"> symfony/polyfill-php85 </a>
+    </td>
+    <td>bibliotheek</td>
+    <td>Symfony polyfill geeft een aantal functies van PHP 8.5+ terug naar lagere PHP versies</td>
   </tr>
   <tr>
     <td>
