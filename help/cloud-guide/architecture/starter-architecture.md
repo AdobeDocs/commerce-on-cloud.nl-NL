@@ -21,13 +21,13 @@ U kunt elke gewenste ontwikkelings- en vertakkingsmethode gebruiken. Wanneer u i
 
 Het volgende diagram toont de hiërarchische verhoudingen van de milieu&#39;s van de Aanzet.
 
-![ High-level mening van het project van de Aanzet ](../../assets/starter/architecture.png)
+![&#x200B; High-level mening van het project van de Aanzet &#x200B;](../../assets/starter/architecture.png)
 
 ## Productieomgeving
 
 De productieomgeving biedt de broncode voor de implementatie van Adobe Commerce in de Cloud-infrastructuur waarop uw publiek gerichte Single- en Multisite Storefronts worden uitgevoerd. De productieomgeving gebruikt code van de `master` tak om de Webserver, het gegevensbestand, de gevormde diensten, en uw toepassingscode te vormen en toe te laten.
 
-Omdat de `production` -omgeving alleen-lezen is, gebruikt u de `integration` -omgeving om codewijzigingen aan te brengen, implementeert u deze over de architectuur van de `integration` naar `staging` -omgeving en ten slotte naar de `production` -omgeving. Zie [ uw opslag ](../deploy/staging-production.md) opstellen en [ lancering van de Plaats ](../launch/overview.md).
+Omdat de `production` -omgeving alleen-lezen is, gebruikt u de `integration` -omgeving om codewijzigingen aan te brengen, implementeert u deze over de architectuur van de `integration` naar `staging` -omgeving en ten slotte naar de `production` -omgeving. Zie [&#x200B; uw opslag &#x200B;](../deploy/staging-production.md) opstellen en [&#x200B; lancering van de Plaats &#x200B;](../launch/overview.md).
 
 Adobe raadt aan om de `staging` -vertakking volledig te testen voordat u naar de `master` -vertakking gaat. Deze wordt in de `production` -omgeving geïmplementeerd.
 
@@ -39,7 +39,7 @@ De extra secties in deze gids verstrekken instructies voor definitieve codeplaat
 
 >[!WARNING]
 >
->De Adobe beveelt het testen van elke handels en klanteninteractie in het Opvoeren milieu aan alvorens aan het productiemilieu op te stellen. Zie [ uw opslag ](../deploy/staging-production.md) opstellen en [ plaatsing van de Test ](../test/staging-and-production.md).
+>De Adobe beveelt het testen van elke handels en klanteninteractie in het Opvoeren milieu aan alvorens aan het productiemilieu op te stellen. Zie [&#x200B; uw opslag &#x200B;](../deploy/staging-production.md) opstellen en [&#x200B; plaatsing van de Test &#x200B;](../test/staging-and-production.md).
 
 ## Integratieomgeving
 
@@ -123,7 +123,7 @@ Adobe Commerce op cloudinfrastructuur gebruikt het Debian GNU/Linux-besturingssy
 
 - [OpenSearch](../services/opensearch.md)
 
-In de het opvoeren en productiemilieu&#39;s, gebruikt u snel voor CDN en caching. De recentste versie van de Snelle uitbreiding CDN installeert tijdens de aanvankelijke levering van uw project. U kunt de extensie upgraden voor de nieuwste opgeloste problemen en verbeteringen. Zie [ Snelle CDN module voor Magento 2 ](https://github.com/fastly/fastly-magento2). Ook, hebt u toegang tot [ New Relic ](../monitor/account-management.md) voor prestaties controle.
+In de het opvoeren en productiemilieu&#39;s, gebruikt u snel voor CDN en caching. De recentste versie van de Snelle uitbreiding CDN installeert tijdens de aanvankelijke levering van uw project. U kunt de extensie upgraden voor de nieuwste opgeloste problemen en verbeteringen. Zie [&#x200B; Snelle CDN module voor Magento 2 &#x200B;](https://github.com/fastly/fastly-magento2). Ook, hebt u toegang tot [&#x200B; New Relic &#x200B;](../monitor/account-management.md) voor prestaties controle.
 
 Gebruik de volgende dossiers om de softwareversies te vormen die u in uw implementatie wilt gebruiken.
 
@@ -135,7 +135,7 @@ Gebruik de volgende dossiers om de softwareversies te vormen die u in uw impleme
 
 ### Back-up en noodherstel
 
-U kunt een back-up van uw database en bestandssysteem maken met behulp van [!DNL Cloud Console] of de CLI. Zie [ Reservekopiebeheer ](../storage/snapshots.md).
+U kunt een back-up van uw database en bestandssysteem maken met behulp van [!DNL Cloud Console] of de CLI. Zie [&#x200B; Reservekopiebeheer &#x200B;](../storage/snapshots.md).
 
 ## Voorbereiden op ontwikkeling
 
@@ -155,7 +155,7 @@ Zie de volgende secties voor gedetailleerde instructies en looptraject om uw ops
 
 - [Starter-workflow voor ontwikkelen en implementeren](starter-develop-deploy-workflow.md)
 
-- [ de ontwikkeling van Docker ](../dev-tools/cloud-docker.md) (lokale ontwikkelomgeving die door Docker van de Wolk voor Commerce wordt toegelaten)
+- [&#x200B; de ontwikkeling van Docker &#x200B;](../dev-tools/cloud-docker.md) (lokale ontwikkelomgeving die door Docker van de Wolk voor Commerce wordt toegelaten)
 
 - [Vertakkingen beheren](../project/console-branches.md)
 

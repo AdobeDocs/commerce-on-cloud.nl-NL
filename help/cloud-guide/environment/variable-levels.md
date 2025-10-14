@@ -13,7 +13,7 @@ ht-degree: 0%
 
 De variabelen van het project zijn op alle milieu&#39;s binnen het project van toepassing. Omgevingsvariabelen zijn van toepassing op een specifieke omgeving of vertakking. Een milieu _erft_ veranderlijke definities van het oudermilieu.
 
-U kunt een overgeërfde waarde met voeten treden door de variabele specifiek voor het milieu te bepalen. Als u bijvoorbeeld variabelen wilt instellen voor ontwikkeling, definieert u de waarden van variabelen in het `.magento.env.yaml` -bestand in de integratieomgeving. Alle omgevingen die vertakkingen ondervinden van de integratieomgeving nemen deze waarden over. Zie [ configuratie van de Plaatsing ](configure-env-yaml.md) voor details over het vormen van uw milieu gebruikend het `.magento.env.yaml` dossier.
+U kunt een overgeërfde waarde met voeten treden door de variabele specifiek voor het milieu te bepalen. Als u bijvoorbeeld variabelen wilt instellen voor ontwikkeling, definieert u de waarden van variabelen in het `.magento.env.yaml` -bestand in de integratieomgeving. Alle omgevingen die vertakkingen ondervinden van de integratieomgeving nemen deze waarden over. Zie [&#x200B; configuratie van de Plaatsing &#x200B;](configure-env-yaml.md) voor details over het vormen van uw milieu gebruikend het `.magento.env.yaml` dossier.
 
 >[!BEGINTABS]
 
@@ -41,15 +41,15 @@ Nadat u projectspecifieke variabelen hebt ingesteld, moet u de externe omgeving 
 
 1. Klik in _[!DNL Cloud Console]_&#x200B;op het configuratiepictogram rechts van de projectnavigatie.
 
-   ![ vorm project ](../../assets/icon-configure.png){width="36"}
+   ![&#x200B; vorm project &#x200B;](../../assets/icon-configure.png){width="36"}
 
 1. Om een project-vlakke variabele te plaatsen, onder _de Montages van het Project_ klikt **Variabelen**.
 
-   ![ de variabelen van het Project ](../../assets/ui-project-variables.png)
+   ![&#x200B; de variabelen van het Project &#x200B;](../../assets/ui-project-variables.png)
 
 1. Om een milieu-vlakke variabele, in de _lijst van Milieu&#39;s_ te plaatsen, selecteer een milieu en klik het **[!UICONTROL Variables]** lusje.
 
-   ![ de variabelen van het Milieu tabel ](../../assets/ui-environment-variables.png)
+   ![&#x200B; de variabelen van het Milieu tabel &#x200B;](../../assets/ui-environment-variables.png)
 
 1. Klik op **[!UICONTROL Create variable]**.
 

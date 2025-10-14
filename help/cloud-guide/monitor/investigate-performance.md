@@ -16,7 +16,7 @@ New Relic maakt verbinding met en controleert uw infrastructuur en [!DNL Commerc
 
 Op de _APM &amp; de pagina van de Diensten_, selecteer **Samenvatting** om transactionele informatie over uw toepassing te bekijken. Met deze weergave kunt u mogelijke fouten opsporen en de algemene status van uw toepassing en services controleren.
 
-![ het overzichtspagina van New Relic van het project van de Wolk ](../../assets/new-relic/dashboard.png)
+![&#x200B; het overzichtspagina van New Relic van het project van de Wolk &#x200B;](../../assets/new-relic/dashboard.png)
 
 Vanuit deze weergave kunt u transacties volgen die trage reacties of knelpunten, de doorvoer van toepassingen, webfouten en nog veel meer veroorzaken.
 
@@ -30,7 +30,7 @@ Alle verzamelde gegevensdetails de tijd die aan acties wordt doorgebracht die ge
 
 >[!TIP]
 >
->Voor details bij het gebruiken van dit gegeven om de kwesties van toepassingsprestaties problemen op te lossen, zie [ prestaties problemen oplossen gebruikend New Relic ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html?lang=nl-NL) in het _Centrum van de Hulp van Adobe Commerce_.
+>Voor details bij het gebruiken van dit gegeven om de kwesties van toepassingsprestaties problemen op te lossen, zie [&#x200B; prestaties problemen oplossen gebruikend New Relic &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html?lang=nl-NL) in het _Centrum van de Hulp van Adobe Commerce_.
 
 ## Prestaties bewaken met beheerde waarschuwingen
 
@@ -46,21 +46,21 @@ De Adobe verstrekt _Beheerde Alarm voor Adobe Commerce_ waakzaam beleid om prest
 | MariaDB-query laden | NRI | Pro |
 | Herdis-geheugen | NRI | Pro |
 
-Wanneer de infrastructuur of de toepassingsvoorwaarden van de plaats een waakzame drempel teweegbrengen, verzendt New Relic waakzame berichten zodat u de kwestie kunt proactief behandelen. Zie [ Beheerde Alarm voor Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html?lang=nl-NL) in het _Centrum van de Hulp van Adobe Commerce_ voor details over waakzame drempels en het oplossen van problemenstappen om de kwesties op te lossen die de waakzaamheid teweegbrachten.
+Wanneer de infrastructuur of de toepassingsvoorwaarden van de plaats een waakzame drempel teweegbrengen, verzendt New Relic waakzame berichten zodat u de kwestie kunt proactief behandelen. Zie [&#x200B; Beheerde Alarm voor Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html?lang=nl-NL) in het _Centrum van de Hulp van Adobe Commerce_ voor details over waakzame drempels en het oplossen van problemenstappen om de kwesties op te lossen die de waakzaamheid teweegbrachten.
 
 >[!TIP]
 >
->Voor Pro het Staging en integratie milieu&#39;s en de milieu&#39;s van de Aanzet, gebruik [ de berichten van de Gezondheid ](../integrations/health-notifications.md) om schijfruimte te controleren.
+>Voor Pro het Staging en integratie milieu&#39;s en de milieu&#39;s van de Aanzet, gebruik [&#x200B; de berichten van de Gezondheid &#x200B;](../integrations/health-notifications.md) om schijfruimte te controleren.
 
 >[!PREREQUISITES]
 >
 >- **de geloofsbrieven van New Relic** - geloofsbrieven aan login aan de rekening van New Relic voor uw project van de Wolk
 >- **Actieve integratie van New Relic** - verifieer dat uw milieu van de Wolk met New Relic wordt verbonden
->- **het bericht van het Werkschema** - vorm minstens één [ werkschema ](#set-up-a-workflow-for-notifications) om de waakzame berichten te ontvangen
+>- **het bericht van het Werkschema** - vorm minstens één [&#x200B; werkschema &#x200B;](#set-up-a-workflow-for-notifications) om de waakzame berichten te ontvangen
 
 **om de Beheerde Alarm voor het beleid van Adobe Commerce te herzien**:
 
-1. Login aan uw [ rekening van New Relic ](https://login.newrelic.com/login).
+1. Login aan uw [&#x200B; rekening van New Relic &#x200B;](https://login.newrelic.com/login).
 
 1. Bepaal de plaats van _Beheerde Alarm voor het beleid van Adobe Commerce_:
 
@@ -72,11 +72,11 @@ Wanneer de infrastructuur of de toepassingsvoorwaarden van de plaats een waakzam
 
    - In de _lijst van het Beleid_, uitgezochte **Beheerde Alarm voor het beleid van Adobe Commerce**.
 
-     ![ Gegenereerd waakzaam beleid ](../../assets/new-relic/managed-alerts-policy.png)
+     ![&#x200B; Gegenereerd waakzaam beleid &#x200B;](../../assets/new-relic/managed-alerts-policy.png)
 
      >[!NOTE]
      >
-     >Als het _Beheerde Alarm voor het beleid van Adobe Commerce_ niet beschikbaar is, zie [ Beheerde Alarm voor Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html?lang=nl-NL) in het _Centrum van de Hulp van Adobe Commerce_.
+     >Als het _Beheerde Alarm voor het beleid van Adobe Commerce_ niet beschikbaar is, zie [&#x200B; Beheerde Alarm voor Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html?lang=nl-NL) in het _Centrum van de Hulp van Adobe Commerce_.
 
 1. Klik op het tabblad **[!UICONTROL Alert conditions]** om de waarschuwingsvoorwaarden te bekijken die in het beleid zijn gedefinieerd.
 
@@ -88,7 +88,7 @@ In plaats van een bestaande waarschuwing te wijzigen, kunt u een waarschuwingsbe
 
 >[!TIP]
 >
->Zie [ Inleiding aan alarm ](https://docs.newrelic.com/docs/alerts/overview/) in _New Relic_ documentatie voor meer gedetailleerde informatie over Alarm, waakzaam beleid, en werkschema&#39;s.
+>Zie [&#x200B; Inleiding aan alarm &#x200B;](https://docs.newrelic.com/docs/alerts/overview/) in _New Relic_ documentatie voor meer gedetailleerde informatie over Alarm, waakzaam beleid, en werkschema&#39;s.
 
 ## Een workflow voor meldingen instellen
 
@@ -98,7 +98,7 @@ New Relic biedt sjablonen voor het configureren van verschillende typen workflow
 
 **om een werkschema** te vormen:
 
-1. Login aan uw [ rekening van New Relic ](https://login.newrelic.com/login).
+1. Login aan uw [&#x200B; rekening van New Relic &#x200B;](https://login.newrelic.com/login).
 
 1. Maak een workflow.
 
@@ -108,7 +108,7 @@ New Relic biedt sjablonen voor het configureren van verschillende typen workflow
 
    - Klik op **[!UICONTROL Add a workflow]** aan de rechterkant.
 
-     ![ New Relic voegt een werkschema ](../../assets/new-relic/add-a-workflow.png) toe
+     ![&#x200B; New Relic voegt een werkschema &#x200B;](../../assets/new-relic/add-a-workflow.png) toe
 
    - Voor _vorm uw werkschema_ pagina, ga een naam voor het werkschema in.
 
@@ -120,7 +120,7 @@ New Relic biedt sjablonen voor het configureren van verschillende typen workflow
 
 1. Klik op **[!UICONTROL Activate workflow]**.
 
-Zie de documentatie van New Relic over [ Werkschema&#39;s ](https://docs.newrelic.com/docs/alerts-applied-intelligence/applied-intelligence/incident-workflows/incident-workflows/).
+Zie de documentatie van New Relic over [&#x200B; Werkschema&#39;s &#x200B;](https://docs.newrelic.com/docs/alerts-applied-intelligence/applied-intelligence/incident-workflows/incident-workflows/).
 
 >[!WARNING]
 >

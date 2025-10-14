@@ -11,18 +11,18 @@ ht-degree: 0%
 
 # Patches toepassen
 
-[ de Patches van de Wolk voor Commerce ](https://github.com/magento/magento-cloud-patches) en het [ Hulpmiddel van de Patches van de Kwaliteit ](https://github.com/magento/quality-patches) leveren flarden aan uw geïnstalleerde toepassing van Adobe Commerce.
+[&#x200B; de Patches van de Wolk voor Commerce &#x200B;](https://github.com/magento/magento-cloud-patches) en het [&#x200B; Hulpmiddel van de Patches van de Kwaliteit &#x200B;](https://github.com/magento/quality-patches) leveren flarden aan uw geïnstalleerde toepassing van Adobe Commerce.
 
 - Het Cloud Patches for Commerce-pakket biedt vereiste patches met kritieke oplossingen
-- De flarden van de kwaliteit leveren facultatieve, low-impact kwaliteitsmoeilijke situaties als [ individuele flarden ](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/versioning-policy.html?lang=nl-NL#individual-patch) die achterwaartse onverenigbare veranderingen niet bevatten
+- De flarden van de kwaliteit leveren facultatieve, low-impact kwaliteitsmoeilijke situaties als [&#x200B; individuele flarden &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/versioning-policy.html?lang=nl-NL#individual-patch) die achterwaartse onverenigbare veranderingen niet bevatten
 
-Zie [ Beschikbare Patches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) in de _Gids van de Hulpmiddelen van de Verrichtingen van Commerce_ om een volledige lijst van vrijgegeven flarden te herzien.
+Zie [&#x200B; Beschikbare Patches &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) in de _Gids van de Hulpmiddelen van de Verrichtingen van Commerce_ om een volledige lijst van vrijgegeven flarden te herzien.
 
 Beide pakketten verbeteren de integratie van alle Adobe Commerce-versies met Cloud-omgevingen en ondersteunen snelle levering van kritieke, optionele en aangepaste oplossingen. U kunt deze pakketten gebruiken om algemene informatie over alle afzonderlijke patches die beschikbaar zijn voor Commerce toe te passen, terug te draaien en weer te geven.
 
 >[!TIP]
 >
->U kunt het [ Hulpmiddel van de Patches van de Kwaliteit ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) en de Patches van de Wolk voor Commerce als stand-alone pakketten voor Magento Open Source en de projecten van Adobe Commerce gebruiken. We raden u aan het gereedschap Kwaliteitspatches te gebruiken voor niet-cloud-projecten.
+>U kunt het [&#x200B; Hulpmiddel van de Patches van de Kwaliteit &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=nl-NL) en de Patches van de Wolk voor Commerce als stand-alone pakketten voor Magento Open Source en de projecten van Adobe Commerce gebruiken. We raden u aan het gereedschap Kwaliteitspatches te gebruiken voor niet-cloud-projecten.
 
 Wanneer u wijzigingen in de externe omgeving implementeert, gebruikt het `ece-tools` -pakket `magento/magento-cloud-patches` en `magento/quality-patches` om te controleren op in behandeling zijnde patches en past het deze automatisch toe in de volgende volgorde:
 
@@ -32,13 +32,13 @@ Wanneer u wijzigingen in de externe omgeving implementeert, gebruikt het `ece-to
 
 >[!NOTE]
 >
->Wanneer u het `ece-tools` -pakket of het Cloud Patches for Commerce-pakket bijwerkt, worden de meest recente vereiste patches toegepast wanneer u uw project de volgende keer implementeert. U kunt de patches ook direct implementeren met de `ece-patches apply` CLI-opdracht en de Cloud-omgeving opnieuw implementeren. U kunt niet [ vereiste flarden ](https://github.com/magento/magento-cloud-patches/tree/develop/patches) tijdens het plaatsingsproces overslaan.
+>Wanneer u het `ece-tools` -pakket of het Cloud Patches for Commerce-pakket bijwerkt, worden de meest recente vereiste patches toegepast wanneer u uw project de volgende keer implementeert. U kunt de patches ook direct implementeren met de `ece-patches apply` CLI-opdracht en de Cloud-omgeving opnieuw implementeren. U kunt niet [&#x200B; vereiste flarden &#x200B;](https://github.com/magento/magento-cloud-patches/tree/develop/patches) tijdens het plaatsingsproces overslaan.
 
 ## Vereisten
 
 {{upgrade-tip}}
 
-Het gereedschap Kwaliteitspatches is afhankelijk van de cloudpatches voor Commerce en het `ece-tools` -pakket. Om de recentste flarden toe te passen, moet u [ de recentste geïnstalleerde versie van ECE-Hulpmiddelen ](../dev-tools/update-package.md) hebben. De minimaal vereiste versie van ECE-Tools is 2002.1.2.
+Het gereedschap Kwaliteitspatches is afhankelijk van de cloudpatches voor Commerce en het `ece-tools` -pakket. Om de recentste flarden toe te passen, moet u [&#x200B; de recentste geïnstalleerde versie van ECE-Hulpmiddelen &#x200B;](../dev-tools/update-package.md) hebben. De minimaal vereiste versie van ECE-Tools is 2002.1.2.
 
 ## Beschikbare patches en status weergeven
 
@@ -239,7 +239,7 @@ Een eerder toegepaste aangepaste patch herstellen of verwijderen:
 
 ## Patches toepassen op een niet-cloud-project
 
-Gebruik het [ Hulpmiddel van de Patches van de Kwaliteit ](https://github.com/magento/quality-patches) voor Magento Open Source en de projecten van Adobe Commerce.
+Gebruik het [&#x200B; Hulpmiddel van de Patches van de Kwaliteit &#x200B;](https://github.com/magento/quality-patches) voor Magento Open Source en de projecten van Adobe Commerce.
 
 ## Een patch herstellen in een lokale omgeving
 

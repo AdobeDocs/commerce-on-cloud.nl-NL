@@ -13,14 +13,14 @@ ht-degree: 0%
 
 Het bestand `.magento.app.yaml` bepaalt de manier waarop uw toepassing wordt gemaakt en geïmplementeerd. Hoewel Adobe Commerce op cloudinfrastructuur meerdere toepassingen per project ondersteunt, heeft een project doorgaans één toepassing met het `.magento.app.yaml` -bestand aan de basis van de opslagplaats.
 
-`.magento.app.yaml` heeft vele standaardwaarden, zie [ een steekproef `.magento.app.yaml` dossier ](https://github.com/magento/magento-cloud/blob/master/.magento.app.yaml). Controleer altijd `.magento.app.yaml` voor uw geïnstalleerde versie. Dit bestand kan in Adobe Commerce verschillen in versies van de cloudinfrastructuur.
+`.magento.app.yaml` heeft vele standaardwaarden, zie [&#x200B; een steekproef `.magento.app.yaml` dossier &#x200B;](https://github.com/magento/magento-cloud/blob/master/.magento.app.yaml). Controleer altijd `.magento.app.yaml` voor uw geïnstalleerde versie. Dit bestand kan in Adobe Commerce verschillen in versies van de cloudinfrastructuur.
 
 Gebruik het bestand `.magento.app.yaml` om de volgende configuratiewaarden te definiëren:
 
-- [ Eigenschappen ](properties.md) - bepaal bezitswaarden voor toepassingsinstantie.
-- [ het bezit van Variabelen ](variables-property.md) - de milieuvariabelen van het Overzicht die voor de [!DNL Commerce] toepassingsversie worden vereist.
-- [ PHP montages ](php-settings.md) - vorm runtime PHP opties.
-- [ plaats Geheime voorgeheugen voor Statische Dossiers ](set-cache.md) - plaats geheim voorgeheugen TTL voor uw media en statische dossiers.
+- [&#x200B; Eigenschappen &#x200B;](properties.md) - bepaal bezitswaarden voor toepassingsinstantie.
+- [&#x200B; het bezit van Variabelen &#x200B;](variables-property.md) - de milieuvariabelen van het Overzicht die voor de [!DNL Commerce] toepassingsversie worden vereist.
+- [&#x200B; PHP montages &#x200B;](php-settings.md) - vorm runtime PHP opties.
+- [&#x200B; plaats Geheime voorgeheugen voor Statische Dossiers &#x200B;](set-cache.md) - plaats geheim voorgeheugen TTL voor uw media en statische dossiers.
 
 >[!NOTE]
 >

@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Regionale IP-adressen
 
-De volgende lijsten maken een lijst van de inkomende en uitgaande IP adressen die door Adobe Commerce op de milieu&#39;s van de cloudinfrastructuur [ integratie ](../architecture/pro-architecture.md#integration-environment) worden gebruikt. Deze IP adressen zijn stabiel, maar zouden kunnen veranderen. Adobe brengt klanten op de hoogte alvorens om het even welke IP adresveranderingen aan te brengen.
+De volgende lijsten maken een lijst van de inkomende en uitgaande IP adressen die door Adobe Commerce op de milieu&#39;s van de cloudinfrastructuur [&#x200B; integratie &#x200B;](../architecture/pro-architecture.md#integration-environment) worden gebruikt. Deze IP adressen zijn stabiel, maar zouden kunnen veranderen. Adobe brengt klanten op de hoogte alvorens om het even welke IP adresveranderingen aan te brengen.
 
 De syntaxis voor het aanpakken van de integratieomgevingen is als volgt:
 

@@ -62,7 +62,7 @@ U kunt het fragment vormen om snel caching voor verzoeken van een specifiek IP a
 
 1. Klik **creëren**.
 
-   ![ creeer snel het fragment van de Bypass VCL ](/help/assets/cdn/fastly-create-bypass-snippet.png)
+   ![&#x200B; creeer snel het fragment van de Bypass VCL &#x200B;](/help/assets/cdn/fastly-create-bypass-snippet.png)
 
 1. Na de pagina herlaadt, uploadt de klik **VCL aan Fastly** in de *Snelle sectie van de Configuratie*.
 

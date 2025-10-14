@@ -11,17 +11,17 @@ ht-degree: 0%
 
 # Aanbevolen procedures voor winkelconfiguratie
 
-Voor gedetailleerde informatie voor het vormen van uw opslag, plaatsen, en websites, kunt u de [ Gids van de Gebruiker van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=nl-NL) willen herzien. Deze pagina biedt tips en trucs, handige informatie en richtlijnen voor het configureren van uw winkels, sites en meer met extra inhoud die in de loop der tijd en in verschillende versies moet worden gepost.
+Voor gedetailleerde informatie voor het vormen van uw opslag, plaatsen, en websites, kunt u de [&#x200B; Gids van de Gebruiker van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=nl-NL) willen herzien. Deze pagina biedt tips en trucs, handige informatie en richtlijnen voor het configureren van uw winkels, sites en meer met extra inhoud die in de loop der tijd en in verschillende versies moet worden gepost.
 
 ## Marketingcampagnes en promoties
 
 Deze informatie is handig voor Adobe Commerce op cloudinfrastructuur 2.1.X en 2.2.X.
 
-Om campagnes en bevorderingen tot stand te brengen, creeer de opties en de montages in [ het Opvoeren van Inhoud ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html?lang=nl-NL). Met deze functie kunt u uw campagnes maken en voorvertonen voordat u ze openbaar maakt voor verkoop aan klanten. De volgende informatie biedt nuttige informatie. Voor nauwkeurige instructies raadpleegt u de gekoppelde inhoud van de Adobe Commerce-gebruikershandleiding.
+Om campagnes en bevorderingen tot stand te brengen, creeer de opties en de montages in [&#x200B; het Opvoeren van Inhoud &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html?lang=nl-NL). Met deze functie kunt u uw campagnes maken en voorvertonen voordat u ze openbaar maakt voor verkoop aan klanten. De volgende informatie biedt nuttige informatie. Voor nauwkeurige instructies raadpleegt u de gekoppelde inhoud van de Adobe Commerce-gebruikershandleiding.
 
 _Campagnes_ zijn marketing gebeurtenissen voor seizoensverkoop, nieuwe productlijnen, en meer. Elke campagne kan aangepaste thema&#39;s, blokken voor inhoud, widgets voor het beheren en weergeven van inhoud en bijbehorende promoties met prijsregels bevatten. Vanwege de uitgebreide aard van een campagne kunt u deze maken met een begin- en einddatum via Inhoud opslaan.
 
-_Bevorderingen_ verstrekken kortingen, één keer aanbiedingen, coupons, eerste-tijd kopersstimulansen, en meer. U creeert deze bevorderingen als _Regels van de Prijs_ die de termijnen, kortingen, en opties plaatsen om klanten aan te moedigen om te kopen. U kunt prijsregels op het [ winkelwagentje ](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart.html?lang=nl-NL) of [ catalogus ](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog.html?lang=nl-NL), met extra opties voor banners, bonuspunten, en meer tot stand brengen. U kunt campagnes voor uw promoties plannen en prijsregels toepassen voor grote evenementen zoals een nieuwe productlijn of seizoensgebonden verkoop.
+_Bevorderingen_ verstrekken kortingen, één keer aanbiedingen, coupons, eerste-tijd kopersstimulansen, en meer. U creeert deze bevorderingen als _Regels van de Prijs_ die de termijnen, kortingen, en opties plaatsen om klanten aan te moedigen om te kopen. U kunt prijsregels op het [&#x200B; winkelwagentje &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart.html?lang=nl-NL) of [&#x200B; catalogus &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog.html?lang=nl-NL), met extra opties voor banners, bonuspunten, en meer tot stand brengen. U kunt campagnes voor uw promoties plannen en prijsregels toepassen voor grote evenementen zoals een nieuwe productlijn of seizoensgebonden verkoop.
 
 Hier volgen tips voor het maken, bijwerken en beheren van promoties en campagnes:
 
@@ -34,7 +34,7 @@ Hier volgen tips voor het maken, bijwerken en beheren van promoties en campagnes
 
 Deze informatie is handig voor Adobe Commerce op cloudinfrastructuur 2.1.X en 2.2.X.
 
-Typisch, kunt u [ Geavanceerde Prijsbepaling ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=nl-NL) voor producten door de **Producten** plaatsen > **het gebied van Catalogi** van Admin. Met Getrapte Inhoud, voltooi een paar extra stappen om de prijs aan een bevordering en een campagne toe te voegen.
+Typisch, kunt u [&#x200B; Geavanceerde Prijsbepaling &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=nl-NL) voor producten door de **Producten** plaatsen > **het gebied van Catalogi** van Admin. Met Getrapte Inhoud, voltooi een paar extra stappen om de prijs aan een bevordering en een campagne toe te voegen.
 
 U bewerkt als volgt de geavanceerde prijsstelling en de inhoudstaging wordt bijgewerkt:
 
@@ -47,7 +47,7 @@ U bewerkt als volgt de geavanceerde prijsstelling en de inhoudstaging wordt bijg
 1. Sla de aanbieding op. Er wordt een inactieve eerste campagne gemaakt.
 1. U kunt Voorvertonen om de speciale prijs, de naam van de speciale actie, de normale prijs en het geplande datumbereik voor de campagne te bekijken.
 
-Voor extra stappen, kunt u met instructies met [ Veranderingen van het Programma voor de Regels van de Prijs van de Catalogus ](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/catalog-rules/price-rule-catalog-scheduled-changes.html?lang=nl-NL) verdergaan. Klik **daarna** om door de stappen te lopen.
+Voor extra stappen, kunt u met instructies met [&#x200B; Veranderingen van het Programma voor de Regels van de Prijs van de Catalogus &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/catalog-rules/price-rule-catalog-scheduled-changes.html?lang=nl-NL) verdergaan. Klik **daarna** om door de stappen te lopen.
 
 ## Prijsregels
 
@@ -57,7 +57,7 @@ Om een Regel van de Prijs tot stand te brengen, zie {de Gids van de Gebruiker va
 
 In het volgende voorbeeld ziet u hoe u een prijsregel maakt voor een korting van Alleen eerste bestelling. Voor deze korting wilt u:
 
-* Creeer een prijsregel met a [ klantensegment ](https://experienceleague.adobe.com/nl/docs/commerce-admin/customers/segments/customer-segment-price-rule) met een voorwaarde: Totaal Aantal Orden minder dan 1
+* Creeer een prijsregel met a [&#x200B; klantensegment &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/customers/segments/customer-segment-price-rule) met een voorwaarde: Totaal Aantal Orden minder dan 1
 * Dit klantensegment toevoegen als een voorwaarde aan de kartelregel
 * Facultatief - voeg voorwaarden en regels toe om de kortingen op specifieke SKU&#39;s of categorieën producten voor gerichte aankopen toe te passen
 
@@ -65,7 +65,7 @@ Dit zorgt ervoor dat nieuwe klanten of bestaande klanten die geen aankoop hebben
 
 ## Winkelweergaven
 
-U kunt meerdere winkels instellen en uitvoeren met één Adobe Commerce-implementatie op een cloudinfrastructuur. Zie [ Opstelling veelvoudige websites of opslag ](multiple-sites.md).
+U kunt meerdere winkels instellen en uitvoeren met één Adobe Commerce-implementatie op een cloudinfrastructuur. Zie [&#x200B; Opstelling veelvoudige websites of opslag &#x200B;](multiple-sites.md).
 
 Voor opslag die niet met elkaar in wisselwerking staan, kunt u veelvoudige _websites_ tot stand brengen. Elke website bevat specifieke artikelen, klantgegevens, kassa en winkelwagentje die niet met andere websites in Adobe Commerce worden gedeeld.
 
@@ -77,15 +77,15 @@ Hieronder volgen enkele voorbeelden die u beter kunt uitleggen:
 
 * Eén website met één winkel en twee weergaven voor de landinstelling Engels en Spaans. Alle artikelgegevens, klanten, kassa en winkelwagentje worden gedeeld.
 
-  ![ Voorbeeld van de opslag 1 ](../../assets/example-store1.png)
+  ![&#x200B; Voorbeeld van de opslag 1 &#x200B;](../../assets/example-store1.png)
 
 * Eén website met een winkel voor vrouwenkleding bevat twee opvattingen: een voor Engels en een voor Spaans. De winkel voor kinderkleding bevat één winkelweergave in het Engels. Alle artikelgegevens, klanten, kassa en winkelwagentje worden gedeeld. De winkels kunnen verschillende domeinen en thema&#39;s hebben.
 
-  ![ Voorbeeld van de opslag 2 ](../../assets/example-store2.png)
+  ![&#x200B; Voorbeeld van de opslag 2 &#x200B;](../../assets/example-store2.png)
 
 * Twee websites voor kleding en een andere voor thuiskleuren met verschillende catalogi en afzonderlijke artikelen, klantgegevens en winkelwagentje. Elke website kan meerdere winkels en weergaven hebben die alleen op die website artikelen, klantgegevens, kassa en winkelwagentje delen.
 
-  ![ Voorbeeld van de opslag 3 ](../../assets/example-store3.png)
+  ![&#x200B; Voorbeeld van de opslag 3 &#x200B;](../../assets/example-store3.png)
 
 >[!WARNING]
 >

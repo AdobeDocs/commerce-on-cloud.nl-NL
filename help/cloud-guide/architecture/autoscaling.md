@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # Automatisch schalen
 
-Automatisch schalen voegt automatisch bronnen toe aan of verwijdert bronnen uit de cloudinfrastructuur om optimale prestaties en redelijke kosten te behouden. Momenteel, is deze eigenschap slechts beschikbaar voor projecten die met a [ worden gevormd Schaalde architectuur ](scaled-architecture.md).
+Automatisch schalen voegt automatisch bronnen toe aan of verwijdert bronnen uit de cloudinfrastructuur om optimale prestaties en redelijke kosten te behouden. Momenteel, is deze eigenschap slechts beschikbaar voor projecten die met a [&#x200B; worden gevormd Schaalde architectuur &#x200B;](scaled-architecture.md).
 
 ## Webserverknooppunten
 
-De [ schaal van de Webrij ](scaled-architecture.md#web-tier) om een verhoging in procesverzoeken en hogere verkeersvereisten aan te passen. Momenteel wordt de functie voor automatisch schalen alleen horizontaal geschaald door knooppunten van de webserver toe te voegen of te verwijderen.
+De [&#x200B; schaal van de Webrij &#x200B;](scaled-architecture.md#web-tier) om een verhoging in procesverzoeken en hogere verkeersvereisten aan te passen. Momenteel wordt de functie voor automatisch schalen alleen horizontaal geschaald door knooppunten van de webserver toe te voegen of te verwijderen.
 
 Er treedt een automatisch schaalbare gebeurtenis op wanneer het CPU-gebruik en het-verkeer een vooraf gedefinieerde drempel bereiken:
 
@@ -27,12 +27,12 @@ De minimum- en maximumdrempels worden bepaald en vastgesteld op basis van de con
 
 ## Drempelwaarden bewaken met New Relic
 
-U kunt de [ dienst van New Relic ](../monitor/new-relic-service.md) gebruiken om bepaalde drempels, zoals gastheertelling en het gebruik van CPU te controleren. De volgende New Relic-query&#39;s gebruiken een variabele notatie alleen voor `cluster-id` -doeleinden.
+U kunt de [&#x200B; dienst van New Relic &#x200B;](../monitor/new-relic-service.md) gebruiken om bepaalde drempels, zoals gastheertelling en het gebruik van CPU te controleren. De volgende New Relic-query&#39;s gebruiken een variabele notatie alleen voor `cluster-id` -doeleinden.
 
 >[!TIP]
 >
->Voor een verwijzing bij het bouwen van vragen, zie [ syntaxis NRQL, clausules, en functies ](https://docs.newrelic.com/docs/query-your-data/nrql-new-relic-query-language/get-started/nrql-syntax-clauses-functions/) in de _New Relic_ documentatie.
->Gebruik uw vragen om dashboard van a [ New Relic ](https://docs.newrelic.com/docs/query-your-data/explore-query-data/dashboards/introduction-dashboards/) te bouwen.
+>Voor een verwijzing bij het bouwen van vragen, zie [&#x200B; syntaxis NRQL, clausules, en functies &#x200B;](https://docs.newrelic.com/docs/query-your-data/nrql-new-relic-query-language/get-started/nrql-syntax-clauses-functions/) in de _New Relic_ documentatie.
+>Gebruik uw vragen om dashboard van a [&#x200B; New Relic &#x200B;](https://docs.newrelic.com/docs/query-your-data/explore-query-data/dashboards/introduction-dashboards/) te bouwen.
 
 ### Aantal gastheren
 
@@ -44,7 +44,7 @@ SELECT uniqueCount(SystemSample.entityId) AS 'Infrastructure hosts', uniqueCount
 
 In het volgende schermafbeelding, **zien de gastheren van APM** &lbrace;naar het aantal gastheren met transacties verwijzen die tijdens de geselecteerde periode worden geregistreerd.
 
-![ de gastheertelling van New Relic ](../../assets/new-relic/host-count.png)
+![&#x200B; de gastheertelling van New Relic &#x200B;](../../assets/new-relic/host-count.png)
 
 ### CPU-gebruik
 
@@ -54,22 +54,22 @@ Het volgende voorbeeld van een New Relic-query laat CPU-gebruik voor webknooppun
 SELECT average(cpuPercent) FROM SystemSample FACET hostname, apmApplicationNames WHERE instanceType LIKE 'c%' TIMESERIES SINCE 3 HOURS AGO
 ```
 
-![ het gebruik van CPU van de Webknopen van New Relic ](../../assets/new-relic/web-node-cpu-usage.png)
+![&#x200B; het gebruik van CPU van de Webknopen van New Relic &#x200B;](../../assets/new-relic/web-node-cpu-usage.png)
 
 ## Automatisch schalen inschakelen
 
-Om auto het schrapen voor uw Adobe Commerce op het project van de wolkeninfrastructuur toe te laten of onbruikbaar te maken, [ leg een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voor. Kies de volgende redenen in het ticket:
+Om auto het schrapen voor uw Adobe Commerce op het project van de wolkeninfrastructuur toe te laten of onbruikbaar te maken, [&#x200B; leg een kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voor. Kies de volgende redenen in het ticket:
 
 - **reden van het Contact**: Verzoek van de Verandering van de infrastructuur
 - **Reden van het Contact van de Infrastructuur van Adobe Commerce**: Andere Verzoek van de Verandering van de Infrastructuur
 
 >[!IMPORTANT]
 >
->Met de functie voor automatisch schalen worden onverwachte gebeurtenissen vastgelegd. Zelfs als u toegelaten auto het schrapen hebt, adviseert de Adobe dat u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) blijft voorleggen als u een aanstaande gebeurtenis verwacht.
+>Met de functie voor automatisch schalen worden onverwachte gebeurtenissen vastgelegd. Zelfs als u toegelaten auto het schrapen hebt, adviseert de Adobe dat u [&#x200B; een kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) blijft voorleggen als u een aanstaande gebeurtenis verwacht.
 
 ### Laden testen
 
-De Adobe laat auto het schrapen op uw project van de Wolk toe _het opvoeren_ cluster eerst. Nadat u het laden in uw omgeving hebt getest en voltooid, schakelt Adobe vervolgens automatische schaling in uw productiecluster in. Voor begeleiding bij lading het testen, zie [ het testen van Prestaties ](../launch/checklist.md#performance-testing).
+De Adobe laat auto het schrapen op uw project van de Wolk toe _het opvoeren_ cluster eerst. Nadat u het laden in uw omgeving hebt getest en voltooid, schakelt Adobe vervolgens automatische schaling in uw productiecluster in. Voor begeleiding bij lading het testen, zie [&#x200B; het testen van Prestaties &#x200B;](../launch/checklist.md#performance-testing).
 
 ### IP LIJST VAN GEWENSTE PERSONEN
 

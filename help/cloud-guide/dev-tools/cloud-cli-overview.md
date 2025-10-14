@@ -19,12 +19,12 @@ Dit hulpmiddel breidt de functionaliteit van [[!DNL Cloud Console]](../../get-st
 >
 >Dit is een lokaal hulpmiddel en wordt alleen ondersteund op Unix-gebaseerde besturingssystemen. Windows wordt niet ondersteund. Deze kan niet worden geïnstalleerd in de cloud-omgeving (alleen-lezen) met de methode die op deze pagina wordt beschreven. U kunt modules op het milieu van de Wolk door één van de volgende **plaatsingswerkschema&#39;s** slechts installeren.
 >
->- [ Pro plaatsingswerkschema ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow)
->- [ de plaatsingswerkschema van de Aanzet ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow)
+>- [&#x200B; Pro plaatsingswerkschema &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow)
+>- [&#x200B; de plaatsingswerkschema van de Aanzet &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow)
 
 **om `magento-cloud` CLI** te installeren:
 
-1. Op uw _lokale werkstation_, verandering in de folder waar u van plan bent het project van de Wolk te klonen en waar de [ eigenaar van het dossiersysteem ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html?lang=nl-NL) _heeft schrijven_ toegang.
+1. Op uw _lokale werkstation_, verandering in de folder waar u van plan bent het project van de Wolk te klonen en waar de [&#x200B; eigenaar van het dossiersysteem &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html?lang=nl-NL) _heeft schrijven_ toegang.
 
 1. Installeer de `magento-cloud` CLI.
 
@@ -137,7 +137,7 @@ De volgende stappen tonen het gebruiken van CLI en van het Git bevelen onderling
 
 1. Wijzig op uw lokale werkstation de projectmap.
 
-1. Schakelaar aan de [ eigenaar van het dossiersysteem ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html?lang=nl-NL).
+1. Schakelaar aan de [&#x200B; eigenaar van het dossiersysteem &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html?lang=nl-NL).
 
 1. Meld u aan bij uw project.
 
@@ -185,7 +185,7 @@ De volgende stappen tonen het gebruiken van CLI en van het Git bevelen onderling
    git pull origin <environment-ID>
    ```
 
-1. (_Facultatieve_) creeer a [ momentopname ](../storage/snapshots.md) van het milieu als steun.
+1. (_Facultatieve_) creeer a [&#x200B; momentopname &#x200B;](../storage/snapshots.md) van het milieu als steun.
 
    ```bash
    magento-cloud snapshot:create -e <environment-ID>

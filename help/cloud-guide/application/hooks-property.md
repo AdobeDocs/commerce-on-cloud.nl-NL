@@ -17,7 +17,7 @@ Gebruik de sectie `hooks` om shell-opdrachten uit te voeren tijdens de fasen bui
 
 - **`deploy`** - voer bevelen _na_ het verpakken uit en het opstellen van uw toepassing. U kunt tot andere diensten op dit punt toegang hebben. Aangezien het standaard `php ./vendor/bin/ece-tools` bevel de `app/etc` folder aan de correcte plaats kopieert, moet u douanebevelen _toevoegen na_ het opstellen bevel om douanebevelen van het ontbreken te verhinderen.
 
-- **`post_deploy`** - voer bevelen _uit na_ het opstellen van uw toepassing en _nadat_ de container begint goedkeurend verbindingen. Met de `post_deploy` -haak wordt de cache gewist en wordt de cache voorgeladen (verdraaiingen). U kunt de lijst van pagina&#39;s aanpassen gebruikend de `WARM_UP_PAGES` variabele in [ post-opstelt stadium ](../environment/variables-post-deploy.md). Hoewel niet vereist, werkt dit in combinatie met de omgevingsvariabele `SCD_ON_DEMAND` .
+- **`post_deploy`** - voer bevelen _uit na_ het opstellen van uw toepassing en _nadat_ de container begint goedkeurend verbindingen. Met de `post_deploy` -haak wordt de cache gewist en wordt de cache voorgeladen (verdraaiingen). U kunt de lijst van pagina&#39;s aanpassen gebruikend de `WARM_UP_PAGES` variabele in [&#x200B; post-opstelt stadium &#x200B;](../environment/variables-post-deploy.md). Hoewel niet vereist, werkt dit in combinatie met de omgevingsvariabele `SCD_ON_DEMAND` .
 
 In het volgende voorbeeld wordt de standaardconfiguratie in het `.magento.app.yaml` -bestand getoond. Voeg CLI bevelen onder `build` toe, `deploy`, of `post_deploy` secties _vóór_ het `ece-tools` bevel:
 

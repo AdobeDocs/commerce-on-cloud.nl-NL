@@ -18,7 +18,7 @@ Wanneer MFA op een project wordt toegelaten, vereisen alle gebruikersrekeningen 
 
 >[!NOTE]
 >
->MFA is niet standaard ingeschakeld voor Cloud-projecten. De eigenaar van de Rekening voor Adobe Commerce op het project van de wolkeninfrastructuur moet [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voorleggen om het toe te laten. Wanneer MFA wordt toegelaten, moeten alle gebruikers dubbel-factor authentificatie (TFA) hebben die op hun Adobe Commerce op de rekening van de wolkeninfrastructuur voor de toegang van SSH tot de projectmilieu&#39;s wordt toegelaten.
+>MFA is niet standaard ingeschakeld voor Cloud-projecten. De eigenaar van de Rekening voor Adobe Commerce op het project van de wolkeninfrastructuur moet [&#x200B; een kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voorleggen om het toe te laten. Wanneer MFA wordt toegelaten, moeten alle gebruikers dubbel-factor authentificatie (TFA) hebben die op hun Adobe Commerce op de rekening van de wolkeninfrastructuur voor de toegang van SSH tot de projectmilieu&#39;s wordt toegelaten.
 
 ## Certificaten voor SSH-toegang
 
@@ -88,7 +88,7 @@ U kunt uw lokale milieu vormen om het certificaat van SSH automatisch te produce
 
 ## Verbinding maken met een omgeving die SSH gebruikt met TFA
 
-Wanneer MFA op een project wordt toegelaten, moet u TFA op uw rekening worden toegelaten alvorens u met een verre milieu kunt verbinden gebruikend SSH. Zie [ TFA ](user-access.md#enable-tfa-for-cloud-accounts) toelaten.
+Wanneer MFA op een project wordt toegelaten, moet u TFA op uw rekening worden toegelaten alvorens u met een verre milieu kunt verbinden gebruikend SSH. Zie [&#x200B; TFA &#x200B;](user-access.md#enable-tfa-for-cloud-accounts) toelaten.
 
 >[!BEGINSHADEBOX]
 
@@ -104,7 +104,7 @@ Voor projecten die met MFA handhaving worden toegelaten, vereist de toegang van 
 
 **om het gebruiken van SSH met de geloofsbrieven van de gebruikersrekening van TFA te verbinden**:
 
-1. Login aan [ uw rekening ](https://console.adobecommerce.com).
+1. Login aan [&#x200B; uw rekening &#x200B;](https://console.adobecommerce.com).
 
 1. Op uw lokale werkstation, gebruik `magento-cloud` CLI om het certificaat van SSH te produceren.
 
@@ -152,11 +152,11 @@ Wanneer u broncode voor Adobe Commerce beheert voor cloud-infrastructuurprojecte
 
 **om het gebruiken van SSH met de geloofsbrieven van de gebruikersrekening van TFA te verbinden**:
 
-1. Login aan [ uw rekening ](https://console.adobecommerce.com) en voor authentiek verklaren gebruikend TFA.
+1. Login aan [&#x200B; uw rekening &#x200B;](https://console.adobecommerce.com) en voor authentiek verklaren gebruikend TFA.
 
    >[!NOTE]
    >
-   >Als u geen TFA hebt toegelaten op uw rekening, moet u het toelaten. Zie [ TFA op wolkenrekeningen ](user-access.md#enable-tfa-for-cloud-accounts) toelaten.
+   >Als u geen TFA hebt toegelaten op uw rekening, moet u het toelaten. Zie [&#x200B; TFA op wolkenrekeningen &#x200B;](user-access.md#enable-tfa-for-cloud-accounts) toelaten.
 
 1. Op uw lokale werkstation, gebruik `magento-cloud` CLI om het certificaat van SSH te produceren.
 
@@ -285,7 +285,7 @@ Probeer de volgende het oplossen van problemenprocedures om de verbindingskwesti
 
 **om de configuratie en de authentificatie van TFA te verifiëren**:
 
-1. Login aan [ uw rekening ](https://console.adobecommerce.com).
+1. Login aan [&#x200B; uw rekening &#x200B;](https://console.adobecommerce.com).
 
 1. Klik op **[!UICONTROL My Profile]** in het accountmenu rechtsboven.
 
@@ -293,7 +293,7 @@ Probeer de volgende het oplossen van problemenprocedures om de verbindingskwesti
 
    Als TFA wordt toegelaten, verstrekt de sectie van de Veiligheid opties om de configuratie van TFA te beheren.
 
-1. Als TFA niet is ingesteld, klikt u op **[!UICONTROL Set up application]** en volgt u de instructies om deze in te schakelen. Zie [ TFA ](user-access.md#enable-tfa-for-cloud-accounts) toelaten.
+1. Als TFA niet is ingesteld, klikt u op **[!UICONTROL Set up application]** en volgt u de instructies om deze in te schakelen. Zie [&#x200B; TFA &#x200B;](user-access.md#enable-tfa-for-cloud-accounts) toelaten.
 
 1. Als TFA wordt gevormd, probeer opnieuw voor authentiek te verklaren.
 
@@ -324,7 +324,7 @@ Hello user-test (UUID: abaacca12-5cd1-4b123-9096-411add578998), you successfully
 oh2wi6klp5ytk-mc-35985-integration-nnulm4a--mymagento@ssh.eu-3.magento.cloud: Permission denied (publickey).
 ```
 
-Om het probleem te bevestigen, voeg de sleutel van SSH aan uw huidige zitting toe, of werk het de configuratiedossier van SSH bij om uw sleutels van SSH automatisch te laden. Zie [ een openbare sleutel van SSH ](../development/secure-connections.md#add-an-ssh-public-key-to-your-account) toevoegen.
+Om het probleem te bevestigen, voeg de sleutel van SSH aan uw huidige zitting toe, of werk het de configuratiedossier van SSH bij om uw sleutels van SSH automatisch te laden. Zie [&#x200B; een openbare sleutel van SSH &#x200B;](../development/secure-connections.md#add-an-ssh-public-key-to-your-account) toevoegen.
 
 ### Kan geen toegang krijgen tot projecten zonder MFB
 

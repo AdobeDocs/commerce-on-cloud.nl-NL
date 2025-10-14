@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Vertakkingen beheren met de [!DNL Cloud Console]
 
-U kunt uw omgevingen beheren met de [!DNL Cloud Console] of de `magento-cloud` CLI. Uw projectbestanden worden opgeslagen in een Git-opslagplaats. U kunt Git-opdrachten gebruiken om uw code te beheren, maar de CLI van `magento-cloud` is ontworpen voor interactie met platformfuncties, terwijl de opdrachten van Git dat niet doen. Zie [ bevelen van de Git ](../dev-tools/cloud-cli-overview.md#git-commands) in het onderwerp van wolk CLI.
+U kunt uw omgevingen beheren met de [!DNL Cloud Console] of de `magento-cloud` CLI. Uw projectbestanden worden opgeslagen in een Git-opslagplaats. U kunt Git-opdrachten gebruiken om uw code te beheren, maar de CLI van `magento-cloud` is ontworpen voor interactie met platformfuncties, terwijl de opdrachten van Git dat niet doen. Zie [&#x200B; bevelen van de Git &#x200B;](../dev-tools/cloud-cli-overview.md#git-commands) in het onderwerp van wolk CLI.
 
 In dit onderwerp wordt besproken hoe u de [!DNL Cloud Console] kunt gebruiken om:
 
@@ -26,18 +26,18 @@ In dit onderwerp wordt besproken hoe u de [!DNL Cloud Console] kunt gebruiken om
 
 ## Een omgeving maken
 
-De vertakkingsstrategie gebruikt een algemene Git-workflow waar u code ontwikkelt en extensies toevoegt in een ontwikkelingsvertakking. Zie [ Aanzet ](../architecture/starter-architecture.md) en [ Pro ](../architecture/starter-develop-deploy-workflow.md) architectuuroverzichten.
+De vertakkingsstrategie gebruikt een algemene Git-workflow waar u code ontwikkelt en extensies toevoegt in een ontwikkelingsvertakking. Zie [&#x200B; Aanzet &#x200B;](../architecture/starter-architecture.md) en [&#x200B; Pro &#x200B;](../architecture/starter-develop-deploy-workflow.md) architectuuroverzichten.
 
 - Maak bij Starter een `staging` -vertakking vanuit de `master` -vertakking en vertakking vanuit `staging` voor ontwikkeling.
 - Voor Pro maakt u een ontwikkelingsvertakking vanuit de `Integration` -omgeving.
 
-Uw rekening steunt een beperkt aantal ![ actieve tak ](../../assets/icon-active.png){width="32"} (active) and an unlimited number of ![inactive branch](../../assets/icon-inactive.png){width="32"} (inactieve) ontwikkelingstakken. Actieve en inactieve vertakkingen beheren door een vertakking toe te voegen of te verwijderen met alleen de vertakking [!DNL Cloud Console] of de Cloud CLI. Alvorens u een tak kunt schrappen, deactiveert u de tak, die in de _1&rbrace; lijst van Milieu&#39;s &lbrace;als_ inactief _blijft._ U kunt de tak later opnieuw activeren of u kunt [ de tak ](../dev-tools/cloud-cli-overview.md#) in milieumontages schrappen of Cloud CLI gebruiken.
+Uw rekening steunt een beperkt aantal ![&#x200B; actieve tak &#x200B;](../../assets/icon-active.png){width="32"} (active) and an unlimited number of ![inactive branch](../../assets/icon-inactive.png){width="32"} (inactieve) ontwikkelingstakken. Actieve en inactieve vertakkingen beheren door een vertakking toe te voegen of te verwijderen met alleen de vertakking [!DNL Cloud Console] of de Cloud CLI. Alvorens u een tak kunt schrappen, deactiveert u de tak, die in de _1&rbrace; lijst van Milieu&#39;s &lbrace;als_ inactief _blijft._ U kunt de tak later opnieuw activeren of u kunt [&#x200B; de tak &#x200B;](../dev-tools/cloud-cli-overview.md#) in milieumontages schrappen of Cloud CLI gebruiken.
 
-Als u extra actieve milieu&#39;s voor ontwikkeling nodig hebt, leg a [ kaartje van de Steun ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voor.
+Als u extra actieve milieu&#39;s voor ontwikkeling nodig hebt, leg a [&#x200B; kaartje van de Steun &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voor.
 
 **om een tak** toe te voegen:
 
-1. Meld u aan bij de map [[!DNL Cloud Console] ](https://console.adobecommerce.com) .
+1. Meld u aan bij de map [[!DNL Cloud Console] &#x200B;](https://console.adobecommerce.com) .
 
 1. Selecteer een project van de _Alle projecten_ lijst.
 
@@ -49,7 +49,7 @@ Als u extra actieve milieu&#39;s voor ontwikkeling nodig hebt, leg a [ kaartje v
 
 1. Klik op **[!UICONTROL Branch]**.
 
-   ![ creeer een tak ](../../assets/button-branch.png){width="150"}
+   ![&#x200B; creeer een tak &#x200B;](../../assets/button-branch.png){width="150"}
 
 1. In het _Vertakking van.._ vorm, ga een taknaam in.
 
@@ -79,7 +79,7 @@ Voordat u een omgeving kunt verwijderen, moet u deze deactiveren. Als een omgevi
 
 **om een milieu** te deactiveren:
 
-1. Meld u aan bij de map [[!DNL Cloud Console] ](https://console.adobecommerce.com) .
+1. Meld u aan bij de map [[!DNL Cloud Console] &#x200B;](https://console.adobecommerce.com) .
 
 1. Selecteer een project van de _Alle projecten_ lijst.
 
@@ -93,11 +93,11 @@ Voordat u een omgeving kunt verwijderen, moet u deze deactiveren. Als een omgevi
 
 Een omgeving (of vertakking) synchroniseren is hetzelfde als `git pull origin <parent>` . U kunt bijgewerkte code synchroniseren vanuit een bovenliggende omgeving. U kunt deze functie gebruiken via [!DNL Cloud Console] voor alle Starter- en Pro-omgevingen.
 
-Voor een Pro-abonnement kunt u synchroniseren van Staging en Productie naar uw `master` -vertakking. Deze synchronisatie trekt en duwt slechts code, niet gegevens. Om gegevens te synchroniseren, stort de gegevensbestandgegevens en duw het aan het gegevensbestand van een andere milieu. Zie [ migreren en statische dossiers en gegevens ](/help/cloud-guide/deploy/staging-production.md#migrate-static-files) opstellen.
+Voor een Pro-abonnement kunt u synchroniseren van Staging en Productie naar uw `master` -vertakking. Deze synchronisatie trekt en duwt slechts code, niet gegevens. Om gegevens te synchroniseren, stort de gegevensbestandgegevens en duw het aan het gegevensbestand van een andere milieu. Zie [&#x200B; migreren en statische dossiers en gegevens &#x200B;](/help/cloud-guide/deploy/staging-production.md#migrate-static-files) opstellen.
 
 **om een milieu** te synchroniseren:
 
-1. Meld u aan bij de map [[!DNL Cloud Console] ](https://console.adobecommerce.com) .
+1. Meld u aan bij de map [[!DNL Cloud Console] &#x200B;](https://console.adobecommerce.com) .
 
 1. Selecteer een project van de _Alle projecten_ lijst.
 
@@ -105,7 +105,7 @@ Voor een Pro-abonnement kunt u synchroniseren van Staging en Productie naar uw `
 
 1. Klik (synchroniseren).
 
-   ![ Synchroniseer een milieu ](../../assets/button-sync.png){width="150"}
+   ![&#x200B; Synchroniseer een milieu &#x200B;](../../assets/button-sync.png){width="150"}
 
 1. Selecteer de te synchroniseren items.
 
@@ -122,7 +122,7 @@ Het samenvoegen van een omgeving (of vertakking) is hetzelfde als `git push orig
 
 **om met het oudermilieu** samen te voegen:
 
-1. Meld u aan bij de map [[!DNL Cloud Console] ](https://console.adobecommerce.com) .
+1. Meld u aan bij de map [[!DNL Cloud Console] &#x200B;](https://console.adobecommerce.com) .
 
 1. Selecteer een project van de _Alle projecten_ lijst.
 
@@ -130,7 +130,7 @@ Het samenvoegen van een omgeving (of vertakking) is hetzelfde als `git push orig
 
 1. Klik op Samenvoegen.
 
-   ![ voeg een milieu ](../../assets/button-merge.png){width="150"} samen
+   ![&#x200B; voeg een milieu &#x200B;](../../assets/button-merge.png){width="150"} samen
 
 1. Klik **Fusie** en bevestig de actie.
 
@@ -148,13 +148,13 @@ Voor **Pro**, kunt u de volgende logboeken in elk milieu herzien:
 
 **om logboeken in[!DNL Cloud Console]** te bekijken:
 
-1. Meld u aan bij de map [[!DNL Cloud Console] ](https://console.adobecommerce.com) .
+1. Meld u aan bij de map [[!DNL Cloud Console] &#x200B;](https://console.adobecommerce.com) .
 
 1. Selecteer een project van de _Alle projecten_ lijst.
 
 1. Selecteer een omgeving.
 
-   De omgevingsmening verstrekt een [ lijst van de Activiteit ](activity-stream.md) die _recente_ gebeurtenissen, één ingang per geprobeerd actie met inbegrip van syncs, fusies, takken, steunen, en meer toont. Klik **allen** voor de volledige plaatsingsgeschiedenis.
+   De omgevingsmening verstrekt een [&#x200B; lijst van de Activiteit &#x200B;](activity-stream.md) die _recente_ gebeurtenissen, één ingang per geprobeerd actie met inbegrip van syncs, fusies, takken, steunen, en meer toont. Klik **allen** voor de volledige plaatsingsgeschiedenis.
 
 1. Om het bouwstijllogboek te bekijken, selecteer het Succes of de Verbinding van de Mislukking per plaatsingsverslag op de rekening.
 
@@ -168,7 +168,7 @@ Uw Adobe Commerce on cloud-infrastructuurproject kan code van een privéopslagpl
 
 Om een plaatsingssleutel aan uw privé bewaarplaats toe te voegen GitHub, moet u de beheerder van die bewaarplaats zijn. GitHub staat u toe om sleutel voor één bewaarplaats slechts te gebruiken opstellen.
 
-Als u liever hebt dat uw project toegang krijgt tot meerdere opslagruimten, kunt u een SSH-sleutel aan een geautomatiseerde gebruikersaccount koppelen. Omdat deze rekening niet door een mens wordt gebruikt, wordt het bedoeld als a [ machinegebruiker ](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys). Voeg de computeraccount toe als medewerker of voeg de gebruiker van de computer toe aan een team dat toegang heeft tot de opslagruimten.
+Als u liever hebt dat uw project toegang krijgt tot meerdere opslagruimten, kunt u een SSH-sleutel aan een geautomatiseerde gebruikersaccount koppelen. Omdat deze rekening niet door een mens wordt gebruikt, wordt het bedoeld als a [&#x200B; machinegebruiker &#x200B;](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys). Voeg de computeraccount toe als medewerker of voeg de gebruiker van de computer toe aan een team dat toegang heeft tot de opslagruimten.
 
 >[!INFO]
 >
@@ -176,7 +176,7 @@ Als u liever hebt dat uw project toegang krijgt tot meerdere opslagruimten, kunt
 
 **om uw openbare sleutel van SSH te vinden**:
 
-1. Meld u aan bij de map [[!DNL Cloud Console] ](https://console.adobecommerce.com) .
+1. Meld u aan bij de map [[!DNL Cloud Console] &#x200B;](https://console.adobecommerce.com) .
 
 1. Selecteer een project van de _Alle projecten_ lijst.
 
@@ -248,11 +248,11 @@ U hebt vanuit elke locatie toegang tot uw project en omgevingen via een webbrows
 
 >[!WARNING]
 >
->**GEBRUIK NIET** de volgende methodes om de milieu&#39;s van het ProStaging en van de Productie te beveiligen. Dit verbreekt snel caching. Gebruik de [ Blokkerende ](../cdn/fastly-vcl-blocking.md) eigenschap beschikbaar in Fastly CDN voor Adobe Commerce.
+>**GEBRUIK NIET** de volgende methodes om de milieu&#39;s van het ProStaging en van de Productie te beveiligen. Dit verbreekt snel caching. Gebruik de [&#x200B; Blokkerende &#x200B;](../cdn/fastly-vcl-blocking.md) eigenschap beschikbaar in Fastly CDN voor Adobe Commerce.
 
 **aan veilige milieu&#39;s**:
 
-1. Meld u aan bij de map [[!DNL Cloud Console] ](https://console.adobecommerce.com) .
+1. Meld u aan bij de map [[!DNL Cloud Console] &#x200B;](https://console.adobecommerce.com) .
 
 1. Selecteer een project van de _Alle projecten_ lijst.
 

@@ -21,9 +21,9 @@ U moet een verificatietoets hebben om toegang te krijgen tot de Adobe Commerce-o
 
 **nota van de Veiligheid**
 
-De Adobe adviseert gebruikend de [ milieu veranderlijke ](#composer-auth-environment-variable) methode met uw wolkenproject om toevallige blootstelling van uw vergunningsgeloofsbrieven te verhinderen.
+De Adobe adviseert gebruikend de [&#x200B; milieu veranderlijke &#x200B;](#composer-auth-environment-variable) methode met uw wolkenproject om toevallige blootstelling van uw vergunningsgeloofsbrieven te verhinderen.
 
-De methode voor het verificatiebestand is ideaal als u Cloud Docker voor Commerce gebruikt als lokaal ontwikkelingsprogramma, maar zorg ervoor dat u het `auth.json` -bestand niet uploadt naar een openbare Git-opslagplaats. U kunt het `auth.json` dossier aan het [`.gitignore` dossier ](../project/file-structure.md#ignoring-files) toevoegen.
+De methode voor het verificatiebestand is ideaal als u Cloud Docker voor Commerce gebruikt als lokaal ontwikkelingsprogramma, maar zorg ervoor dat u het `auth.json` -bestand niet uploadt naar een openbare Git-opslagplaats. U kunt het `auth.json` dossier aan het [`.gitignore` dossier &#x200B;](../project/file-structure.md#ignoring-files) toevoegen.
 
 >[!ENDSHADEBOX]
 
@@ -34,7 +34,7 @@ De methode voor het verificatiebestand is ideaal als u Cloud Docker voor Commerc
 1. Als u geen `auth.json` dossier in uw folder van de projectwortel hebt, creeer één.
 
    - Maak met een teksteditor een `auth.json` -bestand in de hoofdmap van het project.
-   - Kopieer de inhoud van de [ steekproef `auth.json` ](https://github.com/magento/magento2/blob/2.3/auth.json.sample) in het nieuwe `auth.json` dossier.
+   - Kopieer de inhoud van de [&#x200B; steekproef `auth.json` &#x200B;](https://github.com/magento/magento2/blob/2.3/auth.json.sample) in het nieuwe `auth.json` dossier.
 
 1. Vervang `<public-key>` en `<private-key>` door uw Adobe Commerce-verificatiereferenties.
 
@@ -59,7 +59,7 @@ De volgende methode is de beste manier om onbedoelde blootstelling van gevoelige
 
 1. Klik in _[!DNL Cloud Console]_&#x200B;op het configuratiepictogram rechts van de projectnavigatie.
 
-   ![ vorm project ](../../assets/icon-configure.png){width="36"}
+   ![&#x200B; vorm project &#x200B;](../../assets/icon-configure.png){width="36"}
 
 1. In de _lijst van de Montages van het Project_, klik **[!UICONTROL Variables]**.
 

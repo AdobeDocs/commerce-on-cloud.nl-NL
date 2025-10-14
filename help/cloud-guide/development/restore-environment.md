@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Omgeving herstellen
 
-Als u kwesties in het integratiemilieu ontmoet en geen a [ geldige steun ](../storage/snapshots.md) hebt, of het milieu aan een lege plaats zou willen terugstellen, kunt u uw milieu herstellen/terugstellen gebruikend één van de volgende methodes:
+Als u kwesties in het integratiemilieu ontmoet en geen a [&#x200B; geldige steun &#x200B;](../storage/snapshots.md) hebt, of het milieu aan een lege plaats zou willen terugstellen, kunt u uw milieu herstellen/terugstellen gebruikend één van de volgende methodes:
 
 - De code in de Git-vertakking herstellen of herstellen
 - De toepassing [!DNL Commerce] verwijderen
@@ -70,7 +70,7 @@ Als u de [!DNL Commerce] -toepassing verwijdert, wordt de oorspronkelijke toesta
 - Adobe Commerce verwijderen
 - De grijsvertakking herstellen
 
-Als u de Adobe Commerce-software verwijdert, wordt de database neergezet en hersteld, wordt de implementatieconfiguratie verwijderd en worden de submappen van `var/` gewist. Het is belangrijk om [ beheer van de Configuratie ](../store/store-settings.md) onbruikbaar te maken zodat het niet automatisch de vorige configuratiemontages tijdens de volgende plaatsing toepast. Controleer of de map `app/etc/` het bestand `config.php` niet bevat.
+Als u de Adobe Commerce-software verwijdert, wordt de database neergezet en hersteld, wordt de implementatieconfiguratie verwijderd en worden de submappen van `var/` gewist. Het is belangrijk om [&#x200B; beheer van de Configuratie &#x200B;](../store/store-settings.md) onbruikbaar te maken zodat het niet automatisch de vorige configuratiemontages tijdens de volgende plaatsing toepast. Controleer of de map `app/etc/` het bestand `config.php` niet bevat.
 
 **om de software van Adobe Commerce** te desinstalleren:
 

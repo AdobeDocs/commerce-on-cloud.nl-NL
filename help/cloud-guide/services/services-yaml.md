@@ -37,7 +37,7 @@ De cloudinfrastructuur ondersteunt en implementeert de volgende services:
 - [Elasticsearch](elasticsearch.md)
 - [OpenSearch](opensearch.md)
 
-U kunt standaardversies en schijfwaarden in het huidige, [ standaard `services.yaml` dossier ](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml) bekijken. In het volgende voorbeeld worden de services `mysql` , `redis` , `opensearch` of `elasticsearch` en `rabbitmq` getoond die in het configuratiebestand `services.yaml` zijn gedefinieerd:
+U kunt standaardversies en schijfwaarden in het huidige, [&#x200B; standaard `services.yaml` dossier &#x200B;](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml) bekijken. In het volgende voorbeeld worden de services `mysql` , `redis` , `opensearch` of `elasticsearch` en `rabbitmq` getoond die in het configuratiebestand `services.yaml` zijn gedefinieerd:
 
 ```yaml
 mysql:
@@ -92,7 +92,7 @@ redis2:
 Het anders noemen van de dienst in het `services.yaml` dossier **verwijdert permanent** het volgende:
 
 - De bestaande service voordat u een service met de nieuwe naam maakt die u opgeeft.
-- Alle bestaande gegevens voor de service worden verwijderd. De Adobe adviseert sterk dat u [ steun uw milieu van de Aanzet ](../storage/snapshots.md) alvorens u de naam van een bestaande dienst verandert.
+- Alle bestaande gegevens voor de service worden verwijderd. De Adobe adviseert sterk dat u [&#x200B; steun uw milieu van de Aanzet &#x200B;](../storage/snapshots.md) alvorens u de naam van een bestaande dienst verandert.
 
 ### `type`
 
@@ -117,7 +117,7 @@ Het huidige standaard opslagbedrag per project is 5 GB of 512 0MB. U kunt dit be
 
 ## Servicerelaties
 
-In Adobe Commerce op de projecten van de wolkeninfrastructuur, de dienst [ verhoudingen ](../application/properties.md#relationships) die in het `.magento.app.yaml` dossier worden gevormd bepalen welke diensten aan uw toepassing beschikbaar zijn.
+In Adobe Commerce op de projecten van de wolkeninfrastructuur, de dienst [&#x200B; verhoudingen &#x200B;](../application/properties.md#relationships) die in het `.magento.app.yaml` dossier worden gevormd bepalen welke diensten aan uw toepassing beschikbaar zijn.
 
 U kunt de configuratiegegevens voor alle de dienstverhoudingen van de [`$MAGENTO_CLOUD_RELATIONSHIPS`](../environment/variables-cloud.md) omgevingsvariabele terugwinnen. De configuratiegegevens omvatten de de dienstnaam, type, en versie samen met om het even welke vereiste verbindingsdetails zoals havenaantal en login geloofsbrieven.
 
@@ -186,13 +186,13 @@ Om de veiligheid van de opslag te handhaven, werk geïnstalleerde softwareversie
 
 {{elasticsearch-support}}
 
-Voor versie 2.4.4 van Adobe Commerce en recenter, zie [ de dienst van OpenSearch van de Opstelling ](opensearch.md).
+Voor versie 2.4.4 van Adobe Commerce en recenter, zie [&#x200B; de dienst van OpenSearch van de Opstelling &#x200B;](opensearch.md).
 
 ## Serviceversie wijzigen
 
 U kunt de versie van de geïnstalleerde service upgraden voor compatibiliteit met de Adobe Commerce-versie die in uw cloud-omgeving is geïmplementeerd.
 
-U kunt de de dienstversie voor een geïnstalleerde dienst niet direct degraderen. U kunt echter wel een service met de vereiste versie maken. Zie [ de dienstversie van de Verlaag ](#downgrade-version).
+U kunt de de dienstversie voor een geïnstalleerde dienst niet direct degraderen. U kunt echter wel een service met de vereiste versie maken. Zie [&#x200B; de dienstversie van de Verlaag &#x200B;](#downgrade-version).
 
 ### Installatieversie van de service upgraden
 

@@ -31,9 +31,9 @@ Omgevingsvariabelen die specifiek zijn voor Adobe Commerce op cloudinfrastructuu
 
 >[!WARNING]
 >
->Om milieuvariabelen aan [ met voeten te treden configuratiemontages ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/paths/override-config-settings.html?lang=nl-NL) gebruikend [[!DNL Cloud Console]](../project/overview.md), moet u de veranderlijke naam met `env:` zoals in het volgende voorbeeld prepend:
+>Om milieuvariabelen aan [&#x200B; met voeten te treden configuratiemontages &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/paths/override-config-settings.html?lang=nl-NL) gebruikend [[!DNL Cloud Console]](../project/overview.md), moet u de veranderlijke naam met `env:` zoals in het volgende voorbeeld prepend:
 >
->![ veranderlijk voorbeeld van het Milieu ](../../assets/set-env-variable-ui.png)
+>![&#x200B; veranderlijk voorbeeld van het Milieu &#x200B;](../../assets/set-env-variable-ui.png)
 
 Aangezien de waarden in de loop der tijd kunnen veranderen, is het best om de variabele bij runtime te inspecteren en het te gebruiken om uw toepassing te vormen. Gebruik bijvoorbeeld de variabele `MAGENTO_CLOUD_RELATIONSHIPS` als volgt om relaties met betrekking tot de omgeving op te halen:
 
@@ -52,7 +52,7 @@ Aangezien de waarden in de loop der tijd kunnen veranderen, is het best om de va
 
 ## Omgevingsvariabelen weergeven
 
-U kunt het `env:config:show` bevel van [ gebruiken het `ece-tools` pakket ](../dev-tools/package-overview.md) om een lijst van variabelen voor het huidige milieu te tonen.
+U kunt het `env:config:show` bevel van [&#x200B; gebruiken het `ece-tools` pakket &#x200B;](../dev-tools/package-overview.md) om een lijst van variabelen voor het huidige milieu te tonen.
 
 ```bash
 php ./vendor/bin/ece-tools env:config:show variables

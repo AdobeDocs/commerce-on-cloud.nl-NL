@@ -20,7 +20,7 @@ Neem contact op met de ondersteuning van Adobe Commerce en werk elk plaatsstarth
 
 ## Van DNS de schakelaar aan de nieuwe plaats
 
-De gewijzigde waarde Tijd naar Live is belangrijk om te controleren of uw domein is gewijzigd. Wanneer u A en CNAME verslagen wijzigt, neemt de update TTL gevormde tijd om correct bij te werken. Voor details op DNS montages, zie [ DNS configuraties ](checklist.md#update-dns-configuration-with-production-settings).
+De gewijzigde waarde Tijd naar Live is belangrijk om te controleren of uw domein is gewijzigd. Wanneer u A en CNAME verslagen wijzigt, neemt de update TTL gevormde tijd om correct bij te werken. Voor details op DNS montages, zie [&#x200B; DNS configuraties &#x200B;](checklist.md#update-dns-configuration-with-production-settings).
 
 ### Ga als volgt te werk om naar de nieuwe site te gaan:
 
@@ -34,7 +34,7 @@ De gewijzigde waarde Tijd naar Live is belangrijk om te controleren of uw domein
 
 ## De live winkel testen
 
-Voltooi een paar tests van UAT in uw levende opslag om te bevestigen dat alles laadt en de acties correct volledig zijn. Voor een lijst van tests, zie [ plaatsing van de Test ](../test/staging-and-production.md#complete-uat-testing).
+Voltooi een paar tests van UAT in uw levende opslag om te bevestigen dat alles laadt en de acties correct volledig zijn. Voor een lijst van tests, zie [&#x200B; plaatsing van de Test &#x200B;](../test/staging-and-production.md#complete-uat-testing).
 
 ## Na starten
 

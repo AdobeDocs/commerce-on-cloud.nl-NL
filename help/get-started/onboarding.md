@@ -28,7 +28,7 @@ De Eigenaar van de Vergunning kan gebruikersrekeningen toevoegen om toegang tot 
 
 ### Gebruikersregistratie
 
-U kunt alleen geregistreerde gebruikers aan uw Adobe Commerce toevoegen op projecten en omgevingen met cloudinfrastructuur. Als u een nieuwe gebruiker hebt, vraag hen om [ register voor een rekening ](https://account.magento.com/customer/account/login/) en om het e-mailadres te verstrekken verbonden aan hun rekeningsprofiel.
+U kunt alleen geregistreerde gebruikers aan uw Adobe Commerce toevoegen op projecten en omgevingen met cloudinfrastructuur. Als u een nieuwe gebruiker hebt, vraag hen om [&#x200B; register voor een rekening &#x200B;](https://account.magento.com/customer/account/login/) en om het e-mailadres te verstrekken verbonden aan hun rekeningsprofiel.
 
 ### Toegang tot gedeelde account
 
@@ -48,7 +48,7 @@ De pagina biedt een status voor Adobe Commerce-componenten en -services, gevolgd
 >
 > Open de nieuwe [!DNL Cloud Console] en bekijk project- en omgevingsactiviteiten.
 >
->**Volgende stap**: [ Login aan Cl oud Console ](cloud-console.md)
+>**Volgende stap**: [&#x200B; Login aan Cl oud Console &#x200B;](cloud-console.md)
 
 <!-- link definitions -->
 

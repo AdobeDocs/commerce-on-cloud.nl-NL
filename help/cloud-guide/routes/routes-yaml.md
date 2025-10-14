@@ -100,7 +100,7 @@ https://refactorcss-oy3m2pq-mswy7hzcuhcjw.us.magentosite.cloud/
 
 >[!NOTE]
 >
->Als uw project van de Wolk veelvoudige opslag steunt, volg de instructies van de routeconfiguratie voor [ veelvoudige websites of opslag ](../store/multiple-sites.md).
+>Als uw project van de Wolk veelvoudige opslag steunt, volg de instructies van de routeconfiguratie voor [&#x200B; veelvoudige websites of opslag &#x200B;](../store/multiple-sites.md).
 
 ### Sluitslash
 
@@ -167,7 +167,7 @@ Geef alle pagina&#39;s weer via TLS. Voor deze configuratie, moet u redirects vo
       upstream: "mymagento:http"
   ```
 
-- Voor het Opvoeren en de milieu&#39;s van de Productie, laat [ TLS op Fastly ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/redirect-http-to-https-for-all-pages-on-cloud-force-tls.html?lang=nl-NL) optie van Admin UI toe. Wanneer u deze optie gebruikt, handelt u snel de omleiding naar HTTPS af, zodat u de configuratie `routes.yaml` niet hoeft bij te werken.
+- Voor het Opvoeren en de milieu&#39;s van de Productie, laat [&#x200B; TLS op Fastly &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/redirect-http-to-https-for-all-pages-on-cloud-force-tls.html?lang=nl-NL) optie van Admin UI toe. Wanneer u deze optie gebruikt, handelt u snel de omleiding naar HTTPS af, zodat u de configuratie `routes.yaml` niet hoeft bij te werken.
 
 ## Routopties
 
@@ -177,9 +177,9 @@ Vorm elke route afzonderlijk gebruikend de volgende eigenschappen:
 | ---------------- | ----------- |
 | `type: upstream` | Dient een toepassing uit. De eigenschap `upstream` heeft ook een eigenschap die de naam van de toepassing opgeeft (zoals gedefinieerd in `.magento.app.yaml` ) gevolgd door het eindpunt `:http` . |
 | `type: redirect` | Omleidt aan een andere route. Deze wordt gevolgd door de eigenschap `to` , die een HTTP-omleiding is naar een andere route die door de sjabloon ervan wordt aangegeven. |
-| `cache:` | Controles [ caching voor de route ](caching.md). |
-| `redirects:` | De controles [ richten regels ](redirects.md) opnieuw. |
-| `ssi:` | Controles toelatend van [ Zijde van de Server omvat ](server-side-includes.md). |
+| `cache:` | Controles [&#x200B; caching voor de route &#x200B;](caching.md). |
+| `redirects:` | De controles [&#x200B; richten regels &#x200B;](redirects.md) opnieuw. |
+| `ssi:` | Controles toelatend van [&#x200B; Zijde van de Server omvat &#x200B;](server-side-includes.md). |
 
 ## Eenvoudige routes
 
@@ -314,7 +314,7 @@ Magento Cloud Routes:
 
 ## Omleiding en caching
 
-Zoals besproken in meer detail in [ richt ](redirects.md) opnieuw, kunt u complexe redirection regels, zoals _gedeeltelijke herleidingen_ beheren, en regels voor route-gebaseerd [ caching ](caching.md) specificeren:
+Zoals besproken in meer detail in [&#x200B; richt &#x200B;](redirects.md) opnieuw, kunt u complexe redirection regels, zoals _gedeeltelijke herleidingen_ beheren, en regels voor route-gebaseerd [&#x200B; caching &#x200B;](caching.md) specificeren:
 
 ```yaml
 https://www.{default}/:

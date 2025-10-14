@@ -38,7 +38,7 @@ U kunt gebruikers toevoegen en rollen toewijzen met behulp van de `magento-cloud
 
 **Eerste vereisten:**
 
-- Een geregistreerde gebruiker bij een Adobe ID. Een gebruiker moet [ voor een rekening van de Adobe ](https://account.adobe.com) registreren en dan [ hun rekening van de Wolk ](https://console.adobecommerce.com) initialiseren alvorens u hen aan een project van de Wolk kunt toevoegen.
+- Een geregistreerde gebruiker bij een Adobe ID. Een gebruiker moet [&#x200B; voor een rekening van de Adobe &#x200B;](https://account.adobe.com) registreren en dan [&#x200B; hun rekening van de Wolk &#x200B;](https://console.adobecommerce.com) initialiseren alvorens u hen aan een project van de Wolk kunt toevoegen.
 - Een gebruiker toegewezen de **Admin** rol kan gebruikers met `magento-cloud` CLI niet leiden. Slechts kunnen de gebruikers die de **rol van de Eigenaar van de 0&rbrace; Rekening worden verleend gebruikers beheren.**
 
 >[!ENDSHADEBOX]
@@ -65,7 +65,7 @@ De volgende voorbeelden gebruiken `magento-cloud` CLI om een gebruiker toe te vo
 
    >[!IMPORTANT]
    >
-   >De gebruiker moet een Adobe ID hebben; zie de [ eerste vereisten ](#add-users-and-manage-access).
+   >De gebruiker moet een Adobe ID hebben; zie de [&#x200B; eerste vereisten &#x200B;](#add-users-and-manage-access).
 
 1. Volg de herinneringen: specificeer het gebruikers e-mailadres, plaats het project en milieu-type rollen, en voeg de gebruiker toe.
 
@@ -132,11 +132,11 @@ U kunt [[!DNL Cloud Console]](../../get-started/cloud-console.md) gebruiken om t
 
 >[!IMPORTANT]
 >
->De gebruiker moet een Adobe ID hebben; zie de [ eerste vereisten ](#add-users-and-manage-access).
+>De gebruiker moet een Adobe ID hebben; zie de [&#x200B; eerste vereisten &#x200B;](#add-users-and-manage-access).
 
 ### Een gebruiker toevoegen aan het project
 
-1. Meld u aan bij de map [[!DNL Cloud Console] ](https://console.adobecommerce.com/) .
+1. Meld u aan bij de map [[!DNL Cloud Console] &#x200B;](https://console.adobecommerce.com/) .
 
 1. Selecteer een project van de _Alle projecten_ lijst.
 
@@ -170,15 +170,15 @@ Nadat u de gebruiker hebt toegevoegd, stuurt Adobe een e-mail naar het opgegeven
 
 ## Vereisten voor gebruikersverificatie
 
-Voor extra veiligheid, verstrekt de Adobe project-vlakke multi-factor authentificatie (MFA) handhaving om twee-factor authentificatie (TFA) voor de toegang van SSH tot Adobe Commerce op de broncode en milieu&#39;s van het wolkeninfrastructuurproject te vereisen. Zie [ MFA voor SSH ](multi-factor-authentication.md) toelaten.
+Voor extra veiligheid, verstrekt de Adobe project-vlakke multi-factor authentificatie (MFA) handhaving om twee-factor authentificatie (TFA) voor de toegang van SSH tot Adobe Commerce op de broncode en milieu&#39;s van het wolkeninfrastructuurproject te vereisen. Zie [&#x200B; MFA voor SSH &#x200B;](multi-factor-authentication.md) toelaten.
 
 Wanneer MFA-handhaving is ingeschakeld op een Adobe Commerce op een cloudinfrastructuurproject, moeten alle gebruikers met SSH-toegang tot een omgeving in dat project TFA inschakelen op hun Adobe Commerce op een cloudinframeconferentieaccount. Voor geautomatiseerde processen kunt u een gebruiker van de computer en een API-token maken voor verificatie via de opdrachtregel.
 
 Nadat u een gebruiker aan een Cloud-project hebt toegevoegd, vraagt u de gebruiker om de beveiligingsinstellingen van zijn account te controleren en de volgende beveiligingsconfiguraties toe te voegen, indien nodig:
 
-- **laat TFA** toe - ontmoet veiligheid en nalevingsnormen door twee-factor authentificatie te vormen. De projecten die met [ worden gevormd MFA handhaving ](multi-factor-authentication.md) vereisen TFA op rekeningen die SSH gebruiken om tot de projecten toegang te hebben.
+- **laat TFA** toe - ontmoet veiligheid en nalevingsnormen door twee-factor authentificatie te vormen. De projecten die met [&#x200B; worden gevormd MFA handhaving &#x200B;](multi-factor-authentication.md) vereisen TFA op rekeningen die SSH gebruiken om tot de projecten toegang te hebben.
 
-- **laat de sleutels van SSH** toe - de Gebruikers die toegang tot Adobe Commerce op de gegevensopslagplaatsen van de bron van de wolkeninfrastructuur vereisen moeten de sleutels van SSH op hun rekening toelaten. Zie [ Veilige verbindingen ](../development/secure-connections.md).
+- **laat de sleutels van SSH** toe - de Gebruikers die toegang tot Adobe Commerce op de gegevensopslagplaatsen van de bron van de wolkeninfrastructuur vereisen moeten de sleutels van SSH op hun rekening toelaten. Zie [&#x200B; Veilige verbindingen &#x200B;](../development/secure-connections.md).
 
 - **creeer een API teken** - de gebruikers moeten een API teken produceren dat voor de toegang van SSH tot een milieu wordt gebruikt. U hebt het token nodig om verificatieworkflows voor geautomatiseerde processen in te schakelen.
 
@@ -188,16 +188,16 @@ Nadat u een gebruiker aan een Cloud-project hebt toegevoegd, vraagt u de gebruik
 
 Adobe Commerce op cloud-infrastructuur ondersteunt TFA met een van de volgende toepassingen:
 
-- [ de Authenticator van Google (Android/iPhone) ](https://support.google.com/accounts/answer/1066447?hl=en)
-- [ Authy (Android/iPhone) ](https://authy.com/features/)
-- [ FreeOTP (Android) ](https://play.google.com/store/apps/details?id=org.fedorahosted.freeotp)
-- [ de Authenticator van de GAuth (OS Firefox, Desktop, anderen) ](https://github.com/gbraad-apps/gauth)
+- [&#x200B; de Authenticator van Google (Android/iPhone) &#x200B;](https://support.google.com/accounts/answer/1066447?hl=en)
+- [&#x200B; Authy (Android/iPhone) &#x200B;](https://authy.com/features/)
+- [&#x200B; FreeOTP (Android) &#x200B;](https://play.google.com/store/apps/details?id=org.fedorahosted.freeotp)
+- [&#x200B; de Authenticator van de GAuth (OS Firefox, Desktop, anderen) &#x200B;](https://github.com/gbraad-apps/gauth)
 
 De instructies voor het installeren van de authentificatortoepassing en het toelaten van TFA zijn beschikbaar op de _montages van de Rekening_ pagina in [!DNL Cloud Console].
 
 **om TFA op uw gebruikersrekening** toe te laten:
 
-1. Login aan [ uw rekening ](https://console.adobecommerce.com).
+1. Login aan [&#x200B; uw rekening &#x200B;](https://console.adobecommerce.com).
 
 1. Klik op **[!UICONTROL My Profile]** in het accountmenu rechtsboven.
 
@@ -231,7 +231,7 @@ De instructies voor het installeren van de authentificatortoepassing en het toel
 
      >[!WARNING]
      >
-     >Als u toegang tot een rekening met TFA verliest en niet de lijst van terugwinningscodes hebt, moet u uw projectbeheerder contacteren, of [ een kaartje van de Steun van Adobe Commerce voorleggen ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) om de toepassing van TFA terug te stellen.
+     >Als u toegang tot een rekening met TFA verliest en niet de lijst van terugwinningscodes hebt, moet u uw projectbeheerder contacteren, of [&#x200B; een kaartje van de Steun van Adobe Commerce voorleggen &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) om de toepassing van TFA terug te stellen.
 
 1. Na de voltooiing van de opstelling van TFA, klik **sparen** om uw rekening bij te werken.
 
@@ -245,7 +245,7 @@ De instructies voor het installeren van de authentificatortoepassing en het toel
 
 U kunt de configuratie van TFA voor een Adobe Commerce op de rekening van de wolkeninfrastructuur van de _sectie van de Veiligheid_ op de _Mijn pagina van het Profiel_ beheren.
 
-1. Login aan [ uw rekening ](https://console.adobecommerce.com).
+1. Login aan [&#x200B; uw rekening &#x200B;](https://console.adobecommerce.com).
 
 1. Klik op **[!UICONTROL My Profile]** in het accountmenu rechtsboven.
 
@@ -270,7 +270,7 @@ Bij projecten waarvoor MFA-handhaving is ingeschakeld, moet u een API-token hebb
 
 **om een API teken** tot stand te brengen:
 
-1. Login aan [ uw rekening ](https://console.adobecommerce.com).
+1. Login aan [&#x200B; uw rekening &#x200B;](https://console.adobecommerce.com).
 
 1. Klik op **[!UICONTROL My Profile]** in het accountmenu rechtsboven.
 
@@ -278,6 +278,6 @@ Bij projecten waarvoor MFA-handhaving is ingeschakeld, moet u een API-token hebb
 
 1. Klik op **[!UICONTROL Create API token]** en voer een naam in, bijvoorbeeld een naam die overeenkomt met de gebruiker van de computer of een geautomatiseerd proces dat het API-token gebruikt.
 
-   ![ API tokens ](../../assets/api-token-name.png)
+   ![&#x200B; API tokens &#x200B;](../../assets/api-token-name.png)
 
 1. Klik op **[!UICONTROL Create API token]**.

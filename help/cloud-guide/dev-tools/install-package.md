@@ -42,7 +42,7 @@ Voor elke Adobe Commerce-versie is een andere beperking vereist op basis van het
 
 Als u Adobe Commerce `2.3.5-p2` wilt installeren, stelt u `current_version` in op `2.3.5` en `next_version` op `2.3.6` . Met de restrictie `">=2.3.5 <2.3.6"` wordt het meest recente beschikbare pakket voor 2.3.5 geïnstalleerd.
 
-U kunt de recentste metapakketbeperking in het [`magento-cloud` malplaatje ](https://github.com/magento/magento-cloud/blob/master/composer.json) altijd vinden.
+U kunt de recentste metapakketbeperking in het [`magento-cloud` malplaatje &#x200B;](https://github.com/magento/magento-cloud/blob/master/composer.json) altijd vinden.
 
 In het volgende voorbeeld wordt een beperking voor het Adobe Commerce-pakket voor de infrastructuur van de cloud geplaatst in elke versie die hoger is dan of gelijk is aan de huidige versie 2.4.8 en lager is dan de volgende versie 2.4.9:
 
@@ -87,7 +87,7 @@ Als u uw project wilt upgraden voor gebruik van het `ece-tools` -pakket, moet u 
            php ./vendor/bin/ece-tools run scenario/post-deploy.xml
    ```
 
-1. Controle voor en verwijder de [ afgekeurde pakketten ](#remove-deprecated-packages). De vervangen pakketten kunnen een geslaagde upgrade verhinderen.
+1. Controle voor en verwijder de [&#x200B; afgekeurde pakketten &#x200B;](#remove-deprecated-packages). De vervangen pakketten kunnen een geslaagde upgrade verhinderen.
 
    ```bash
    composer remove magento/magento-cloud-configuration

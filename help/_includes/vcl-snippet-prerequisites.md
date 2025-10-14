@@ -9,10 +9,10 @@ ht-degree: 0%
 
 <!-- Prerequisites section inserted in tutorials for customizing the Fastly service configuration with custom VCL snippets. -->
 
-- Uw milieu moet worden gevormd om Fastly CDN te gebruiken. Zie [ vormen de Snelle diensten ](/help/cloud-guide/cdn/fastly-configuration.md).
+- Uw milieu moet worden gevormd om Fastly CDN te gebruiken. Zie [&#x200B; vormen de Snelle diensten &#x200B;](/help/cloud-guide/cdn/fastly-configuration.md).
 
-- Zorg ervoor dat u de recentste versie van de Fastly CDN module voor Magento 2 in werking stelt. Zie [ Verbetering de Snelle Module ](/help/cloud-guide/cdn/fastly-configuration.md#upgrade-fastly-module).
+- Zorg ervoor dat u de recentste versie van de Fastly CDN module voor Magento 2 in werking stelt. Zie [&#x200B; Verbetering de Snelle Module &#x200B;](/help/cloud-guide/cdn/fastly-configuration.md#upgrade-fastly-module).
 
-- Verifieer de omgevingsconfiguratie voor de sneldienst. Zie [ Snelle controle caching ](/help/cloud-guide/launch/checklist.md#verify-fastly-caching).
+- Verifieer de omgevingsconfiguratie voor de sneldienst. Zie [&#x200B; Snelle controle caching &#x200B;](/help/cloud-guide/launch/checklist.md#verify-fastly-caching).
 
 - U moet over beheerdersreferenties beschikken om toegang te krijgen tot de omgeving voor staging en productie.

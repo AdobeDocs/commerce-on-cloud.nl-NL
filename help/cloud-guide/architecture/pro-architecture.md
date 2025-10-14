@@ -39,7 +39,7 @@ De volgende tabel geeft een overzicht van de verschillen tussen omgevingen:
 
 Uw project is één Git-opslagplaats met drie belangrijke omgevingsvertakkingen: `integration`, `staging` en `production` . Het volgende diagram toont de hiërarchische verhouding van Pro milieu&#39;s:
 
-![ mening op hoog niveau van Pro milieuarchitectuur ](../../assets/pro-branch-architecture.png)
+![&#x200B; mening op hoog niveau van Pro milieuarchitectuur &#x200B;](../../assets/pro-branch-architecture.png)
 
 ### Hoofdomgeving
 
@@ -53,7 +53,7 @@ Bij Pro-projecten biedt de `master` -vertakking een actieve PaaS-omgeving met uw
 
 ### Integratieomgeving
 
-De integratieomgeving wordt uitgevoerd in een Linux-container (LXC) op een raster met servers die PaaS wordt genoemd. Elke omgeving bevat een webserver en database waarmee u uw site kunt testen. Zie [ Regionale IP Adressen ](../project/regional-ip-addresses.md) voor een lijst van AWS en Azure IP adressen.
+De integratieomgeving wordt uitgevoerd in een Linux-container (LXC) op een raster met servers die PaaS wordt genoemd. Elke omgeving bevat een webserver en database waarmee u uw site kunt testen. Zie [&#x200B; Regionale IP Adressen &#x200B;](../project/regional-ip-addresses.md) voor een lijst van AWS en Azure IP adressen.
 
 **Aanbevolen gebruiksgevallen:**
 
@@ -112,7 +112,7 @@ De omgeving komt overeen met de productiearchitectuur en is ontworpen voor UAT, 
 
 - De configuratie van de uitsnede aanpassen en de taken voor uitsnijden testen
 
-Zie [ het werkschema van de Plaatsing ](pro-develop-deploy-workflow.md#deployment-workflow) en [ plaatsing van de Test ](../test/staging-and-production.md).
+Zie [&#x200B; het werkschema van de Plaatsing &#x200B;](pro-develop-deploy-workflow.md#deployment-workflow) en [&#x200B; plaatsing van de Test &#x200B;](../test/staging-and-production.md).
 
 **beveats:**
 
@@ -124,7 +124,7 @@ Zie [ het werkschema van de Plaatsing ](pro-develop-deploy-workflow.md#deploymen
 
 ### Productieomgeving
 
-De productieomgeving voert uw openbare, naar wens enkelvoudige en multisite winkels uit. Deze omgeving wordt uitgevoerd op toegewezen IaaS-hardware met redundante knooppunten met hoge beschikbaarheid voor continue toegang en failover-beveiliging voor uw klanten. Het productiemilieu omvat alle diensten in het opvoeren milieu, plus de [ dienst van de Infrastructuur van New Relic (NRI) ](../monitor/new-relic-service.md#new-relic-infrastructure), die automatisch met de toepassingsgegevens en prestatiesanalyses verbindt om dynamische servercontrole te verstrekken.
+De productieomgeving voert uw openbare, naar wens enkelvoudige en multisite winkels uit. Deze omgeving wordt uitgevoerd op toegewezen IaaS-hardware met redundante knooppunten met hoge beschikbaarheid voor continue toegang en failover-beveiliging voor uw klanten. Het productiemilieu omvat alle diensten in het opvoeren milieu, plus de [&#x200B; dienst van de Infrastructuur van New Relic (NRI) &#x200B;](../monitor/new-relic-service.md#new-relic-infrastructure), die automatisch met de toepassingsgegevens en prestatiesanalyses verbindt om dynamische servercontrole te verstrekken.
 
 **Beveat:**
 
@@ -155,7 +155,7 @@ De productieomgeving heeft drie virtuele machines (VM&#39;s) achter een Elastic 
 
 De volgende afbeelding toont de technologieën die in de productieomgeving worden gebruikt:
 
-![ de technologiestapel van de Productie ](../../assets/az-stack-diagram.png)
+![&#x200B; de technologiestapel van de Productie &#x200B;](../../assets/az-stack-diagram.png)
 
 ## Redundante hardware
 
@@ -176,11 +176,11 @@ Adobe Commerce op cloudinfrastructuur maakt gebruik van een architectuur met hog
 
 >[!NOTE]
 >
->De opgezette volumes omvatten slechts/verwijzen naar de [ beschrijfbare steunen ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/app/properties/properties#mounts) en zullen niet al uw `app/` folder omvatten. Zoals voor de andere dossiers, worden zij gecreeerd/geproduceerd door [ bouwt en plaatsingsproces ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow), en u zult ook uw bewaarplaats van het Git voor resterende dossiers moeten controleren.
+>De opgezette volumes omvatten slechts/verwijzen naar de [&#x200B; beschrijfbare steunen &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/app/properties/properties#mounts) en zullen niet al uw `app/` folder omvatten. Zoals voor de andere dossiers, worden zij gecreeerd/geproduceerd door [&#x200B; bouwt en plaatsingsproces &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow), en u zult ook uw bewaarplaats van het Git voor resterende dossiers moeten controleren.
 
 {{pro-backups}}
 
-U kunt a **handsteun** van het gegevensbestand voor uw het Opvoeren en milieu&#39;s van de Productie tot stand brengen gebruikend bevelen CLI. Zie [ file het gegevensbestand ](../storage/database-dump.md). Voor `integration` -omgevingen raadt de Adobe aan een back-up te maken als eerste stap nadat ze uw Adobe Commerce hebben benaderd voor een cloud-infrastructuurproject en voordat ze belangrijke wijzigingen aanbrengen. Zie [ Reservekopiebeheer ](../storage/snapshots.md).
+U kunt a **handsteun** van het gegevensbestand voor uw het Opvoeren en milieu&#39;s van de Productie tot stand brengen gebruikend bevelen CLI. Zie [&#x200B; file het gegevensbestand &#x200B;](../storage/database-dump.md). Voor `integration` -omgevingen raadt de Adobe aan een back-up te maken als eerste stap nadat ze uw Adobe Commerce hebben benaderd voor een cloud-infrastructuurproject en voordat ze belangrijke wijzigingen aanbrengen. Zie [&#x200B; Reservekopiebeheer &#x200B;](../storage/snapshots.md).
 
 ### Doelstelling herstelpunt
 
@@ -208,6 +208,6 @@ RTO is afhankelijk van de grootte van de opslag. Grote EBS-volumes hebben meer t
 
 Het Pro cluster rangschikken en _verwerkt_ configuraties afhankelijk van de gekozen wolkenleverancier (AWS, Azure), gebied, en de dienstgebiedsdelen. De de wolkeninfrastructuur van de Adobe kan Pro clusters schrapen om verkeersverwachtingen en de dienstvereisten aan te passen aangezien de vraag verandert.
 
-De overtollige architectuur laat de Adobe wolkeninfrastructuur toe om zonder onderbreking te verhogen. Bij upscaling roteert elk van de drie instanties om de capaciteit te upgraden zonder dat dit invloed heeft op de sitebewerking. U kunt bijvoorbeeld extra webservers toevoegen aan een bestaande cluster als de beperking zich op PHP-niveau bevindt in plaats van op databaseniveau. Dit verstrekt _horizontaal schrapen_ om het verticale schrapen aan te vullen die door extra CPUs op het gegevensbestandniveau wordt verstrekt. Zie [ Schaalde architectuur ](scaled-architecture.md).
+De overtollige architectuur laat de Adobe wolkeninfrastructuur toe om zonder onderbreking te verhogen. Bij upscaling roteert elk van de drie instanties om de capaciteit te upgraden zonder dat dit invloed heeft op de sitebewerking. U kunt bijvoorbeeld extra webservers toevoegen aan een bestaande cluster als de beperking zich op PHP-niveau bevindt in plaats van op databaseniveau. Dit verstrekt _horizontaal schrapen_ om het verticale schrapen aan te vullen die door extra CPUs op het gegevensbestandniveau wordt verstrekt. Zie [&#x200B; Schaalde architectuur &#x200B;](scaled-architecture.md).
 
-Als u een significante toename van verkeer voor een gebeurtenis of een andere reden verwacht, kunt u om een tijdelijke verhoging van capaciteit verzoeken. Zie [ hoe te om een tijdelijke upsize ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize.html?lang=nl-NL) in het _Centrum van de Hulp van Commerce_ te verzoeken.
+Als u een significante toename van verkeer voor een gebeurtenis of een andere reden verwacht, kunt u om een tijdelijke verhoging van capaciteit verzoeken. Zie [&#x200B; hoe te om een tijdelijke upsize &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize.html?lang=nl-NL) in het _Centrum van de Hulp van Commerce_ te verzoeken.

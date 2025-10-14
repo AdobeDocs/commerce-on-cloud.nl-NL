@@ -34,7 +34,7 @@ Bijvoorbeeld, tijdens aanvankelijke ontwikkeling kunt u e-mailberichten verkieze
 Meldingen configureren:
 
 1. Wijzig op uw lokale werkstation de projectmap.
-1. In het `.magento.env.yaml` dossier in uw projectwortel, voeg uw montages van het overseinensysteem, met inbegrip van aangewezen bericht [ niveaus van het Logboek ](log-handlers.md#log-levels) toe.
+1. In het `.magento.env.yaml` dossier in uw projectwortel, voeg uw montages van het overseinensysteem, met inbegrip van aangewezen bericht [&#x200B; niveaus van het Logboek &#x200B;](log-handlers.md#log-levels) toe.
 
    Bijvoorbeeld, om zowel Slack _als_ e-mailconfiguraties te vormen, gebruik het volgende:
 
@@ -79,7 +79,7 @@ log:
     min_level: "info"
 ```
 
-- `token` - Uw Slack [ gebruikerstoken ](https://api.slack.com/docs/token-types#user). Met uw gebruikerstoken wordt Adobe Commerce op de cloudinfrastructuur gemachtigd om berichten te verzenden.
+- `token` - Uw Slack [&#x200B; gebruikerstoken &#x200B;](https://api.slack.com/docs/token-types#user). Met uw gebruikerstoken wordt Adobe Commerce op de cloudinfrastructuur gemachtigd om berichten te verzenden.
 - `channel` - Naam van het kanaal Adobe Commerce van de Slack op wolkeninfrastructuur verzendt berichten.
 - `username`—Gebruikersnaam Adobe Commerce op cloudinfrastructuur gebruikt om berichtberichten in Slack te verzenden.
 - `min_level` - Min logniveau voor berichtberichten. We raden u aan `info` te gebruiken.

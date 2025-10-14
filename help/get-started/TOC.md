@@ -20,4 +20,4 @@ ht-degree: 0%
 + [Aanmelden bij  [!DNL Cloud Console]](cloud-console.md)
 + [Toegang opslagruimte](access-storefront.md)
 + [Voorbereiden op ontwikkeling](prepare-workspace.md)
-+ [ Terugkeer aan de Gids van de Infrastructuur van de Wolk ](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/overview.html?lang=nl-NL)
++ [&#x200B; Terugkeer aan de Gids van de Infrastructuur van de Wolk &#x200B;](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/overview.html?lang=nl-NL)

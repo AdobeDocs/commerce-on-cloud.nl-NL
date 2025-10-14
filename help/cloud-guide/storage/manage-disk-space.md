@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Schijfruimte beheren
 
-U kunt de totale opslagcapaciteit voor uw project van de Wolk in uw Adobe Commerce op het contract van de wolkeninfrastructuur en op uw [ rekeningspagina ](https://accounts.magento.cloud/user) vinden. Elke projectkaart in uw rekening toont het aantal _milieu&#39;s_, de _opslag_ capaciteit in GB, en het aantal _gebruikers_. U kunt ook de volgende Cloud-opdracht gebruiken:
+U kunt de totale opslagcapaciteit voor uw project van de Wolk in uw Adobe Commerce op het contract van de wolkeninfrastructuur en op uw [&#x200B; rekeningspagina &#x200B;](https://accounts.magento.cloud/user) vinden. Elke projectkaart in uw rekening toont het aantal _milieu&#39;s_, de _opslag_ capaciteit in GB, en het aantal _gebruikers_. U kunt ook de volgende Cloud-opdracht gebruiken:
 
 ```bash
 magento-cloud subscription:info | grep storage
@@ -128,16 +128,16 @@ Filesystem                                    Size  Used Avail Use% Mounted on
 
 ## Schijfruimte toewijzen
 
-Twee [ configuratiedossiers ](../environment/overview.md) controleren de toewijzing van schijfruimte in de milieu&#39;s van de Wolk: het `.magento.app.yaml` dossier en het `.magento/services.yaml` dossier. Elk bestand bevat de eigenschap `disk` , die de waarde van de schijfgrootte in MB voor de respectievelijke configuratie definieert. U kunt de toewijzing van schijfruimte alleen wijzigen in Pro-integratie- en Starter-omgevingen.
+Twee [&#x200B; configuratiedossiers &#x200B;](../environment/overview.md) controleren de toewijzing van schijfruimte in de milieu&#39;s van de Wolk: het `.magento.app.yaml` dossier en het `.magento/services.yaml` dossier. Elk bestand bevat de eigenschap `disk` , die de waarde van de schijfgrootte in MB voor de respectievelijke configuratie definieert. U kunt de toewijzing van schijfruimte alleen wijzigen in Pro-integratie- en Starter-omgevingen.
 
 >[!IMPORTANT]
 >
->- Voor ProProductie en het Opvoeren milieu&#39;s, moet u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voorleggen om de toewijzing van de schijfruimte te veranderen. Een grootteverhoging van de milieu&#39;s van de Proproductie en van het Staging kan slechts met bepaalde intervallen voorkomen, zodat, afhankelijk van uw huidig gebruik van de schijfruimte, de steun zou kunnen adviseren om schijftoewijzing met een minimum van 10 GB te verhogen. Als deze eenmaal zijn toegewezen, kan de opslagverhoging voor Pro-opslag en -productie niet worden teruggedraaid. Opslag kan niet opnieuw worden toegewezen of herverdeeld tussen bronnen. Als u meer opslagruimte voor bestanden wilt toevoegen, verkleint u de schijfruimte die aan MySQL is toegewezen.
->- De Pro die milieu&#39;s van de Productie en van het Staging op AWS worden ontvangen hebben a [ verplichte ineenstorting van 6 uur ](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVolume.html) die op de verhogingen van de schijfruimte van toepassing is. Nadat de schijfruimte op een zet wordt verhoogd, moet u 6 uren wachten alvorens de schijfruimte opnieuw op die onderstel kan worden verhoogd.
+>- Voor ProProductie en het Opvoeren milieu&#39;s, moet u [&#x200B; een kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voorleggen om de toewijzing van de schijfruimte te veranderen. Een grootteverhoging van de milieu&#39;s van de Proproductie en van het Staging kan slechts met bepaalde intervallen voorkomen, zodat, afhankelijk van uw huidig gebruik van de schijfruimte, de steun zou kunnen adviseren om schijftoewijzing met een minimum van 10 GB te verhogen. Als deze eenmaal zijn toegewezen, kan de opslagverhoging voor Pro-opslag en -productie niet worden teruggedraaid. Opslag kan niet opnieuw worden toegewezen of herverdeeld tussen bronnen. Als u meer opslagruimte voor bestanden wilt toevoegen, verkleint u de schijfruimte die aan MySQL is toegewezen.
+>- De Pro die milieu&#39;s van de Productie en van het Staging op AWS worden ontvangen hebben a [&#x200B; verplichte ineenstorting van 6 uur &#x200B;](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVolume.html) die op de verhogingen van de schijfruimte van toepassing is. Nadat de schijfruimte op een zet wordt verhoogd, moet u 6 uren wachten alvorens de schijfruimte opnieuw op die onderstel kan worden verhoogd.
 
 ### Schijfruimte van toepassing
 
-Het `.magento.app.yaml` dossier controleert de [ blijvende schijfruimte ](../application/properties.md#disk) beschikbaar aan de toepassing.
+Het `.magento.app.yaml` dossier controleert de [&#x200B; blijvende schijfruimte &#x200B;](../application/properties.md#disk) beschikbaar aan de toepassing.
 
 **om schijfruimte voor uw toepassing** te verhogen:
 
@@ -167,7 +167,7 @@ Het bestand `.magento/services.yaml` bestuurt de schijfruimte die beschikbaar is
 
 1. Open het configuratiebestand van `.magento/services.yaml` in uw lokale ontwikkelomgeving.
 
-1. Voeg een service toe of zoek een service in het bestand. Zie [ meer over het vormen van de diensten ](../services/services-yaml.md).
+1. Voeg een service toe of zoek een service in het bestand. Zie [&#x200B; meer over het vormen van de diensten &#x200B;](../services/services-yaml.md).
 
 1. Stel een nieuwe waarde in voor de eigenschap disk (in MB).
 
@@ -189,7 +189,7 @@ Het bestand `.magento/services.yaml` bestuurt de schijfruimte die beschikbaar is
 
 ## Schijfruimte van monitor
 
-In een Pro Production-omgeving kunt u de schijfruimte en andere prestatie-indicatoren controleren aan de hand van de Beheerde waarschuwingen voor het Adobe Commerce-waarschuwingsbeleid voor New Relic. Voor details, zie [ prestaties van de Monitor met Beheerde Alarm ](../monitor/investigate-performance.md#monitor-performance-with-managed-alerts). Voor verdere begeleiding, zie [ Beste praktijken om de kwesties van gegevensbestandprestaties ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=nl-NL) op te lossen.
+In een Pro Production-omgeving kunt u de schijfruimte en andere prestatie-indicatoren controleren aan de hand van de Beheerde waarschuwingen voor het Adobe Commerce-waarschuwingsbeleid voor New Relic. Voor details, zie [&#x200B; prestaties van de Monitor met Beheerde Alarm &#x200B;](../monitor/investigate-performance.md#monitor-performance-with-managed-alerts). Voor verdere begeleiding, zie [&#x200B; Beste praktijken om de kwesties van gegevensbestandprestaties &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=nl-NL) op te lossen.
 
 ## Geen ruimte meer over
 

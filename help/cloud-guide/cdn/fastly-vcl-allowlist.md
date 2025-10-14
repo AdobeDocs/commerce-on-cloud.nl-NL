@@ -16,7 +16,7 @@ U kunt een Snelle Edge ACL lijst met een codefragment van douaneVCL gebruiken om
 
 Creeer een lijst van gewenste personen om toegang tot uw het Opvoeren milieu te beperken zodat slechts de verzoeken van gespecificeerde IP adressen voor interne ontwikkelaars en de goedgekeurde externe diensten worden toegelaten. U kunt ook een lijst van gewenste personen maken om de toegang tot de beheeromgeving te beveiligen in de omgeving voor staging en productie.
 
-Het volgende voorbeeld toont hoe te om een fragment van douaneVCL met a [ Snelle Lijst van het Toegangsbeheer (ACL) te gebruiken ](https://docs.fastly.com/guides/access-control-lists/about-acls) om toegang tot Admin voor een Adobe Commerce op het milieu van het het infrastructuurproject van de wolk te beveiligen. Wanneer u het douaneVCL fragment aan het milieu van de Wolk toevoegt, staat snel slechts verzoeken van IP adressen inbegrepen in ACL toe.
+Het volgende voorbeeld toont hoe te om een fragment van douaneVCL met a [&#x200B; Snelle Lijst van het Toegangsbeheer (ACL) te gebruiken &#x200B;](https://docs.fastly.com/guides/access-control-lists/about-acls) om toegang tot Admin voor een Adobe Commerce op het milieu van het het infrastructuurproject van de wolk te beveiligen. Wanneer u het douaneVCL fragment aan het milieu van de Wolk toevoegt, staat snel slechts verzoeken van IP adressen inbegrepen in ACL toe.
 
 >[!TIP]
 >
@@ -75,7 +75,7 @@ De volgende aangepaste VCL-fragmentcode (JSON-indeling) toont de logica voor het
 }
 ```
 
-Alvorens [ creërend een douanefragment ](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html?lang=nl-NL#add-the-custom-vcl-snippet) van dit voorbeeld, herzie de waarden om te bepalen of u om het even welke veranderingen moet aanbrengen. Voer vervolgens elke waarde in de desbetreffende velden, zoals `type` in het veld Type `content` in het veld Inhoud.
+Alvorens [&#x200B; creërend een douanefragment &#x200B;](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html?lang=nl-NL#add-the-custom-vcl-snippet) van dit voorbeeld, herzie de waarden om te bepalen of u om het even welke veranderingen moet aanbrengen. Voer vervolgens elke waarde in de desbetreffende velden, zoals `type` in het veld Type `content` in het veld Inhoud.
 
 - `name` — Naam voor het VCL-fragment. Voor dit voorbeeld, `allowlist`.
 
@@ -87,13 +87,13 @@ Alvorens [ creërend een douanefragment ](https://experienceleague.adobe.com/doc
 
   Als de URL voor uw beheerder is gewijzigd, vervangt u de samplewaarde `/admin` door de URL voor uw omgeving. Bijvoorbeeld `/company-admin` .
 
-In de codesteekproef, is de voorwaarde `!req.http.Fastly-FF` belangrijk wanneer het gebruiken van [ Afscherming van de Oorsprong ](fastly-custom-cache-configuration.md#configure-back-ends-and-origin-shielding). Verwijder of bewerk deze code niet.
+In de codesteekproef, is de voorwaarde `!req.http.Fastly-FF` belangrijk wanneer het gebruiken van [&#x200B; Afscherming van de Oorsprong &#x200B;](fastly-custom-cache-configuration.md#configure-back-ends-and-origin-shielding). Verwijder of bewerk deze code niet.
 
 Na het herzien van en het bijwerken van de code voor uw milieu, gebruik één van beiden van de volgende methodes om het fragment van douaneVCL aan uw Fastly de dienstconfiguratie toe te voegen:
 
-- [ voeg het fragment van douaneVCL van Admin ](#add-the-custom-vcl-snippet) toe. Deze methode wordt aanbevolen als u toegang kunt krijgen tot de beheerder. (Vereist [ Snelle CDN module voor Magento 2 versie 1.2.58 ](fastly-configuration.md#upgrade) of later.)
+- [&#x200B; voeg het fragment van douaneVCL van Admin &#x200B;](#add-the-custom-vcl-snippet) toe. Deze methode wordt aanbevolen als u toegang kunt krijgen tot de beheerder. (Vereist [&#x200B; Snelle CDN module voor Magento 2 versie 1.2.58 &#x200B;](fastly-configuration.md#upgrade) of later.)
 
-- Sparen het JSON codevoorbeeld aan een dossier (bijvoorbeeld, `allowlist.json`) en [ uploadt het gebruikend Fastly API ](fastly-vcl-custom-snippets.md#manage-custom-vcl-snippets-using-the-api). Gebruik deze methode als u geen toegang hebt tot de beheerder.
+- Sparen het JSON codevoorbeeld aan een dossier (bijvoorbeeld, `allowlist.json`) en [&#x200B; uploadt het gebruikend Fastly API &#x200B;](fastly-vcl-custom-snippets.md#manage-custom-vcl-snippets-using-the-api). Gebruik deze methode als u geen toegang hebt tot de beheerder.
 
 ## Het aangepaste VCL-fragment toevoegen
 

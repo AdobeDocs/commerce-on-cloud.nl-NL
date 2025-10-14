@@ -38,7 +38,7 @@ De standaardconfiguratie staat het volgende toe:
 - Vanaf het hoofdpad (`/`) zijn alleen web en media toegankelijk
 - Vanuit de paden `~/pub/static` en `~/pub/media` kan elk bestand worden geopend
 
-Het volgende voorbeeld toont de standaardconfiguratie in het `.magento.app.yaml` dossier voor een reeks web-Toegankelijke plaatsen verbonden aan een ingang in het [`mounts` bezit ](properties.md#mounts):
+Het volgende voorbeeld toont de standaardconfiguratie in het `.magento.app.yaml` dossier voor een reeks web-Toegankelijke plaatsen verbonden aan een ingang in het [`mounts` bezit &#x200B;](properties.md#mounts):
 
 ```yaml
  # The configuration of app when it is exposed to the web.
@@ -78,4 +78,4 @@ web:
 
 >[!NOTE]
 >
->Dit voorbeeld toont de standaardWebconfiguratie voor een project van de Wolk dat wordt gevormd om één enkel domein te steunen. Voor een project dat ondersteuning voor meerdere websites of winkels vereist, moet de `web` -configuratie zo zijn ingesteld dat gedeelde domeinen worden ondersteund. Zie [ plaatsen voor gedeelde domeinen ](../store/multiple-sites.md#configure-locations-for-shared-domains) vormen.
+>Dit voorbeeld toont de standaardWebconfiguratie voor een project van de Wolk dat wordt gevormd om één enkel domein te steunen. Voor een project dat ondersteuning voor meerdere websites of winkels vereist, moet de `web` -configuratie zo zijn ingesteld dat gedeelde domeinen worden ondersteund. Zie [&#x200B; plaatsen voor gedeelde domeinen &#x200B;](../store/multiple-sites.md#configure-locations-for-shared-domains) vormen.

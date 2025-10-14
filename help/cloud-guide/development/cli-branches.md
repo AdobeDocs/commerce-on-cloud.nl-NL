@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # De takken met CLI beheren
 
-Om `magento-cloud` CLI te installeren, zie de [ CLI verwijzing van de Wolk ](../dev-tools/cloud-cli-overview.md). Nadat u de CLI van `magento-cloud` hebt geïnstalleerd en SSH-toetsen hebt ingesteld voor externe toegang tot uw cloudinfrastructuur, kunt u met `magento-cloud` CLI-opdrachten de omgevingen voor uw projecten beheren. Voor informatie over de omgevingsarchitectuur, zie [ architectuur van de Aanzet ](../architecture/starter-architecture.md) of [ Pro architectuur ](../architecture/pro-architecture.md).
+Om `magento-cloud` CLI te installeren, zie de [&#x200B; CLI verwijzing van de Wolk &#x200B;](../dev-tools/cloud-cli-overview.md). Nadat u de CLI van `magento-cloud` hebt geïnstalleerd en SSH-toetsen hebt ingesteld voor externe toegang tot uw cloudinfrastructuur, kunt u met `magento-cloud` CLI-opdrachten de omgevingen voor uw projecten beheren. Voor informatie over de omgevingsarchitectuur, zie [&#x200B; architectuur van de Aanzet &#x200B;](../architecture/starter-architecture.md) of [&#x200B; Pro architectuur &#x200B;](../architecture/pro-architecture.md).
 
-Om de takken en de milieu&#39;s met [!DNL Cloud Console] te beheren, zie [ takken met  [!DNL Cloud Console]](../project/console-branches.md) beheren.
+Om de takken en de milieu&#39;s met [!DNL Cloud Console] te beheren, zie [&#x200B; takken met  [!DNL Cloud Console]](../project/console-branches.md) beheren.
 
 ## CLI-opdrachten gebruiken
 
-De CLI-opdrachten van `magento-cloud` lijken op die van Git. U kunt ze gebruiken om verbinding te maken met uw project en uw omgevingen te beheren. Hoewel u de bevelen van om het even welke folder kunt in werking stellen, adviseert men dat u hen van een projectfolder in werking stelt. Wanneer u vanuit een projectmap uitvoert, kunt u de parameter `-p <project-ID>` weglaten. Zie de [ CLI verwijzing van de Wolk ](../dev-tools/cloud-cli-overview.md).
+De CLI-opdrachten van `magento-cloud` lijken op die van Git. U kunt ze gebruiken om verbinding te maken met uw project en uw omgevingen te beheren. Hoewel u de bevelen van om het even welke folder kunt in werking stellen, adviseert men dat u hen van een projectfolder in werking stelt. Wanneer u vanuit een projectmap uitvoert, kunt u de parameter `-p <project-ID>` weglaten. Zie de [&#x200B; CLI verwijzing van de Wolk &#x200B;](../dev-tools/cloud-cli-overview.md).
 
 ## Het project klonen
 
@@ -26,11 +26,11 @@ De volgende instructies gebruiken een combinatie van `magento-cloud` bevelen CLI
 
 >[!IMPORTANT]
 >
->Met sommige opdrachten van Git kunt u geen actie in uw Adobe Commerce uitvoeren voor een infrastructuurproject in de cloud. U kunt bijvoorbeeld een vertakking maken met de opdracht Git, maar u kunt geen nieuwe omgeving maken en activeren. U moet een milieu tot stand brengen gebruikend het `magento-cloud environment:branch <branch-name>` bevel voor het milieu om _actief_ te worden. U kunt [!DNL Cloud Console] ook gebruiken om actieve omgevingen te maken. Zie [ CLI van de Wolk verwijzing ](../dev-tools/cloud-cli-overview.md#git-commands).
+>Met sommige opdrachten van Git kunt u geen actie in uw Adobe Commerce uitvoeren voor een infrastructuurproject in de cloud. U kunt bijvoorbeeld een vertakking maken met de opdracht Git, maar u kunt geen nieuwe omgeving maken en activeren. U moet een milieu tot stand brengen gebruikend het `magento-cloud environment:branch <branch-name>` bevel voor het milieu om _actief_ te worden. U kunt [!DNL Cloud Console] ook gebruiken om actieve omgevingen te maken. Zie [&#x200B; CLI van de Wolk verwijzing &#x200B;](../dev-tools/cloud-cli-overview.md#git-commands).
 
 **om een project `master` milieu** te klonen:
 
-1. Login aan uw lokaal werkstation met de eigenaar van het a [ dossiersysteem ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html?lang=nl-NL) rekening.
+1. Login aan uw lokaal werkstation met de eigenaar van het a [&#x200B; dossiersysteem &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html?lang=nl-NL) rekening.
 
 1. Verandering in de Webserver of virtuele gastheer _docroot_ folder.
 
@@ -80,14 +80,14 @@ De volgende instructies gebruiken een combinatie van `magento-cloud` bevelen CLI
 
 >[!TIP]
 >
->Zie [ Integraties ](../integrations/overview.md) voor informatie over het gebruiken van op git-Gebaseerde het ontvangen van de diensten met Adobe Commerce op wolkeninfrastructuur.
+>Zie [&#x200B; Integraties &#x200B;](../integrations/overview.md) voor informatie over het gebruiken van op git-Gebaseerde het ontvangen van de diensten met Adobe Commerce op wolkeninfrastructuur.
 
 ## Een vertakking maken voor ontwikkeling
 
 Nadat u uw project hebt gekloond en de configuratie van de Adobe Commerce-beheerdersaccount hebt bijgewerkt, kunt u zich vertakken voor ontwikkeling. Zoals vroeger verklaard, moet u een milieu creëren gebruikend het `magento-cloud environment:branch <branch-name>` bevel of [!DNL Cloud Console] voor het milieu om _actief_ te worden.
 
-- Voor [ Aanzet ](../architecture/starter-develop-deploy-workflow.md#clone-and-branch), denk na creërend een tak voor `staging`, dan creeer een ontwikkelingstak die op de `staging` tak wordt gebaseerd.
-- Voor [ Pro ](../architecture/pro-develop-deploy-workflow.md#development-workflow), creeer ontwikkelingstakken die op de `Integration` tak worden gebaseerd.
+- Voor [&#x200B; Aanzet &#x200B;](../architecture/starter-develop-deploy-workflow.md#clone-and-branch), denk na creërend een tak voor `staging`, dan creeer een ontwikkelingstak die op de `staging` tak wordt gebaseerd.
+- Voor [&#x200B; Pro &#x200B;](../architecture/pro-develop-deploy-workflow.md#development-workflow), creeer ontwikkelingstakken die op de `Integration` tak worden gebaseerd.
 
 **om een ontwikkelingstak** tot stand te brengen:
 
@@ -105,7 +105,7 @@ Nadat u uw project hebt gekloond en de configuratie van de Adobe Commerce-beheer
    composer --no-ansi --no-interaction install --no-progress --prefer-dist --optimize-autoloader
    ```
 
-1. [_facultatieve_] creeer a [ steun ](../storage/snapshots.md) van het milieu.
+1. [_facultatieve_] creeer a [&#x200B; steun &#x200B;](../storage/snapshots.md) van het milieu.
 
 ### Een vertakking samenvoegen
 
@@ -135,7 +135,7 @@ Verwijder een omgeving alleen als u zeker weet dat u deze niet meer nodig hebt. 
 >
 >U kunt de `master` -vertakking van geen enkel project verwijderen.
 
-U moet een projectbeheerder, een milieubeheerder, of de Eigenaar van de Rekening zijn om deze taak uit te voeren. Zie [ gebruikerstoegang tot de projecten van de Wolk beheren ](../project/user-access.md).
+U moet een projectbeheerder, een milieubeheerder, of de Eigenaar van de Rekening zijn om deze taak uit te voeren. Zie [&#x200B; gebruikerstoegang tot de projecten van de Wolk beheren &#x200B;](../project/user-access.md).
 
 Wanneer u een milieu schrapt, wordt het milieu geplaatst aan _inactief_. De code is nog beschikbaar in de tak van het Git, maar bevat niet meer de diensten of het gegevensbestand. Als u de omgeving volledig wilt verwijderen, moet u ook de bijbehorende externe Git-vertakking verwijderen.
 
@@ -195,4 +195,4 @@ Wanneer u een milieu schrapt, wordt het milieu geplaatst aan _inactief_. De code
 
 ## Interactie met externe omgevingen
 
-Nadat u [ opstellingsSSH sleutels ](../development/secure-connections.md), kunt u [ van uw lokale werkruimte met een ver milieu ](../development/secure-connections.md#connect-to-a-remote-environment) verbinden en met uw projectdiensten in wisselwerking staan en montages wijzigen.
+Nadat u [&#x200B; opstellingsSSH sleutels &#x200B;](../development/secure-connections.md), kunt u [&#x200B; van uw lokale werkruimte met een ver milieu &#x200B;](../development/secure-connections.md#connect-to-a-remote-environment) verbinden en met uw projectdiensten in wisselwerking staan en montages wijzigen.

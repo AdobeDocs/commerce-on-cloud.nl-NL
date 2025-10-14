@@ -16,32 +16,32 @@ Het bestand van `.magento.env.yaml` gebruikt omgevingsvariabelen om het beheer v
 
 >[!TIP]
 >
->YAML-bestanden zijn hoofdlettergevoelig en staan geen tabs toe. Wees voorzichtig met het gebruik van consistente inspringing in het `.magento.env.yaml` -bestand, anders werkt de configuratie mogelijk niet naar behoren. De voorbeelden in de documentatie en in het steekproefdossier gebruiken _twee-ruimte_ inspringing. Gebruik de [ knoop-hulpmiddelen bevestigen bevel ](#validate-configuration-file) om uw configuratie te controleren.
+>YAML-bestanden zijn hoofdlettergevoelig en staan geen tabs toe. Wees voorzichtig met het gebruik van consistente inspringing in het `.magento.env.yaml` -bestand, anders werkt de configuratie mogelijk niet naar behoren. De voorbeelden in de documentatie en in het steekproefdossier gebruiken _twee-ruimte_ inspringing. Gebruik de [&#x200B; knoop-hulpmiddelen bevestigen bevel &#x200B;](#validate-configuration-file) om uw configuratie te controleren.
 
 ## Bestandsstructuur
 
-Het bestand `.magento.env.yaml` bevat twee secties: `stage` en `log` . De `stage` sectie controleert acties die tijdens de fasen van het [ de plaatsingsproces van de Wolk ](../deploy/process.md) voorkomen.
+Het bestand `.magento.env.yaml` bevat twee secties: `stage` en `log` . De `stage` sectie controleert acties die tijdens de fasen van het [&#x200B; de plaatsingsproces van de Wolk &#x200B;](../deploy/process.md) voorkomen.
 
 - `stage` - Gebruik de sectie Werkgebied om bepaalde acties voor de volgende stadia van plaatsing te bepalen:
    - `global` - Beheert acties in zowel de bouw, opstelling, als post-opstelt fasen. U kunt deze montages in bouwstijl met voeten treden, opstelt, en post-opstelt secties.
    - `build` - Beheert acties in de bouwstijlfase slechts. Als u geen montages in deze sectie specificeert, gebruikt de bouwstijlfase montages van de globale sectie.
    - `deploy` - Beheert acties in de opstellen slechts fase. Als u geen montages in deze sectie specificeert, de plaatsingsfase gebruikt montages van de globale sectie.
    - `post-deploy` - de acties van Controles _na_ het opstellen van uw toepassing en _nadat_ de container begint goedkeurend verbindingen.
-- `log` - gebruik de logboeksectie om [ berichten ](set-up-notifications.md), met inbegrip van berichttypes en niveau van detail te vormen.
+- `log` - gebruik de logboeksectie om [&#x200B; berichten &#x200B;](set-up-notifications.md), met inbegrip van berichttypes en niveau van detail te vormen.
    - `slack` - Vorm een bericht om naar een Slack te verzenden allebei.
    - `email` - Configureer een e-mail om deze naar een of meer e-mailontvangers te verzenden.
-   - [ logboekmanagers ](log-handlers.md) - vorm hardware en softwaretoepassingsberichten die naar een verre registrerenserver worden verzonden.
+   - [&#x200B; logboekmanagers &#x200B;](log-handlers.md) - vorm hardware en softwaretoepassingsberichten die naar een verre registrerenserver worden verzonden.
 
 ### Omgevingsvariabelen
 
-Het `ece-tools` pakket plaatst waarden in het `env.php` dossier dat op waarden van [ variabelen van de Wolk ](variables-cloud.md) wordt gebaseerd, variabelen die in [!DNL Cloud Console] worden geplaatst, en het `.magento.env.yaml` configuratiedossier. De omgevingsvariabelen in het `.magento.env.yaml` -bestand passen de Cloud-omgeving aan door de bestaande Commerce-configuratie te overschrijven. Als een standaardwaarde `Not Set` is, dan neemt het `ece-tools` pakket **NO** actie en gebruikt het [!DNL Commerce] gebrek of de waarde van de configuratie MAGENTO_CLOUD_RELATIONSHIPS. Als de standaardwaarde is ingesteld, wordt die standaardwaarde ingesteld door het `ece-tools` -pakket.
+Het `ece-tools` pakket plaatst waarden in het `env.php` dossier dat op waarden van [&#x200B; variabelen van de Wolk &#x200B;](variables-cloud.md) wordt gebaseerd, variabelen die in [!DNL Cloud Console] worden geplaatst, en het `.magento.env.yaml` configuratiedossier. De omgevingsvariabelen in het `.magento.env.yaml` -bestand passen de Cloud-omgeving aan door de bestaande Commerce-configuratie te overschrijven. Als een standaardwaarde `Not Set` is, dan neemt het `ece-tools` pakket **NO** actie en gebruikt het [!DNL Commerce] gebrek of de waarde van de configuratie MAGENTO_CLOUD_RELATIONSHIPS. Als de standaardwaarde is ingesteld, wordt die standaardwaarde ingesteld door het `ece-tools` -pakket.
 
 De volgende onderwerpen bevatten gedetailleerde definities, zoals of een standaardwaarde is ingesteld of niet, van alle variabelen die u in het `.magento.env.yaml` -bestand kunt gebruiken:
 
-- [ Globaal ](variables-global.md) - variabelen controleacties in elke fase: bouw, stel, en post-opstellen op
-- [ bouwt ](variables-build.md)-variabelen controle bouwt acties
-- [ stelt ](variables-deploy.md) op:stellen-variabelen de controle acties op
-- [ post-opstellen ](variables-post-deploy.md) - variabelen controleacties na opstellen
+- [&#x200B; Globaal &#x200B;](variables-global.md) - variabelen controleacties in elke fase: bouw, stel, en post-opstellen op
+- [&#x200B; bouwt &#x200B;](variables-build.md)-variabelen controle bouwt acties
+- [&#x200B; stelt &#x200B;](variables-deploy.md) op:stellen-variabelen de controle acties op
+- [&#x200B; post-opstellen &#x200B;](variables-post-deploy.md) - variabelen controleacties na opstellen
 
 ### Configuratiebestand maken van CLI
 
@@ -150,7 +150,7 @@ Breng de gewenste correcties aan, wijs deze toe en duw op de wijzigingen. Als u 
 
 ## Optimalisatie van configuratiebeheer
 
-Als u het Beheer van de Configuratie na het dumpen van de configuraties hebt toegelaten, zou u de variabelen SCD_* van opstellen aan het bouwstijlstadium moeten bewegen. Zie [ Statische strategieën van de inhoudsplaatsing ](../deploy/static-content.md).
+Als u het Beheer van de Configuratie na het dumpen van de configuraties hebt toegelaten, zou u de variabelen SCD_* van opstellen aan het bouwstijlstadium moeten bewegen. Zie [&#x200B; Statische strategieën van de inhoudsplaatsing &#x200B;](../deploy/static-content.md).
 
 >Voor configuratiebeheer:
 

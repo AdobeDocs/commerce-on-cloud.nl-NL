@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # Valkey-service instellen
 
-[ Valkey ](https://valkey.io) is een facultatieve, achterste geheim voorgeheugenoplossing die `Zend Framework Zend_Cache_Backend_File` vervangt, die Adobe Commerce door gebrek gebruikt.
+[&#x200B; Valkey &#x200B;](https://valkey.io) is een facultatieve, achterste geheim voorgeheugenoplossing die `Zend Framework Zend_Cache_Backend_File` vervangt, die Adobe Commerce door gebrek gebruikt.
 
-Zie [ Valkey ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/valkey/config-valkey.html?lang=nl-NL){target="_blank"} in de _gids van de Configuratie_ vormen.
+Zie [&#x200B; Valkey &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/valkey/config-valkey.html?lang=nl-NL){target="_blank"} in de _gids van de Configuratie_ vormen.
 
 {{service-instruction}}
 
@@ -56,7 +56,7 @@ Zie [ Valkey ](https://experienceleague.adobe.com/docs/commerce-operations/confi
    git add .magento/services.yaml .magento.app.yaml .magento.env.yaml && git commit -m "Enable valkey service" && git push origin <branch-name>
    ```
 
-1. [ verifieer de de dienstverhoudingen ](services-yaml.md#service-relationships).
+1. [&#x200B; verifieer de de dienstverhoudingen &#x200B;](services-yaml.md#service-relationships).
 
 {{service-change-tip}}
 

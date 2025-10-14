@@ -26,7 +26,7 @@ U moet een GitLab-token en een webhaak verkrijgen om het proces voort te zetten.
 ## Vereisten
 
 - Beheerderstoegang tot de Adobe Commerce in het infrastructuurproject voor de cloud
-- [`magento-cloud` CLI ](../dev-tools/cloud-cli-overview.md) in uw lokale omgeving
+- [`magento-cloud` CLI &#x200B;](../dev-tools/cloud-cli-overview.md) in uw lokale omgeving
 - Een GitLab-account
 - Een GitLab persoonlijke toegangstoken met schrijftoegang tot de GitLab-opslagplaats, moet het geselecteerde bereik ten minste zijn: `api` en `read_repository` .
 
@@ -58,7 +58,7 @@ Clone your Adobe Commerce on cloud Infrastructure project from an existing envir
    git remote add origin git@gitlab.com:<user-name>/<repo-name>.git
    ```
 
-   De standaardnaam voor de externe verbinding kan `origin` of `magento` zijn. Als `origin` bestaat, kunt u een verschillende naam kiezen of u kunt de bestaande verwijzing een andere naam geven of verwijderen. Zie [ git-verre documentatie ](https://git-scm.com/docs/git-remote).
+   De standaardnaam voor de externe verbinding kan `origin` of `magento` zijn. Als `origin` bestaat, kunt u een verschillende naam kiezen of u kunt de bestaande verwijzing een andere naam geven of verwijderen. Zie [&#x200B; git-verre documentatie &#x200B;](https://git-scm.com/docs/git-remote).
 
 1. Controleer of u de GitLab-afstandsbediening correct hebt toegevoegd.
 
@@ -186,8 +186,8 @@ Of u kunt het testen door een eenvoudige verandering in uw bewaarplaats GitLab t
 
 ## Een Cloud-vertakking maken
 
-Gebruik de opdracht `magento-cloud` CLI `environment:push` om een nieuwe omgeving te maken en te activeren. Zie [ een tak van de Wolk ](bitbucket.md#create-a-cloud-branch) creëren.
+Gebruik de opdracht `magento-cloud` CLI `environment:push` om een nieuwe omgeving te maken en te activeren. Zie [&#x200B; een tak van de Wolk &#x200B;](bitbucket.md#create-a-cloud-branch) creëren.
 
 ## Integratie verwijderen
 
-Gebruik de opdracht `magento-cloud` CLI `integration:delete` om de integratie te verwijderen. Zie [ de integratie ](bitbucket.md#remove-the-integration) verwijderen.
+Gebruik de opdracht `magento-cloud` CLI `integration:delete` om de integratie te verwijderen. Zie [&#x200B; de integratie &#x200B;](bitbucket.md#remove-the-integration) verwijderen.

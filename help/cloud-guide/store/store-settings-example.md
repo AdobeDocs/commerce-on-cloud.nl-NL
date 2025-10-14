@@ -14,7 +14,7 @@ ht-degree: 0%
 
 In dit voorbeeld wordt getoond hoe u configuratiebeheer kunt gebruiken om de opslaginstellingen in alle omgevingen consistent te houden.
 
-Het voorbeeld gebruikt de volgende procedure die in [ wordt bepaald montages van de Opslag ](store-settings.md):
+Het voorbeeld gebruikt de volgende procedure die in [&#x200B; wordt bepaald montages van de Opslag &#x200B;](store-settings.md):
 
 1. Voer uw configuraties in in de winkel Admin van uw integratieomgeving in.
 1. Maak een `config.php` -bestand en breng dit over naar uw lokale werkstation.
@@ -33,18 +33,18 @@ U kunt bijvoorbeeld de volgende instellingen instellen:
 * Optimalisatie van statische bestanden inschakelen in testomgevingen en productieomgevingen
 * Vorm snel in het Staging en Productie met specifieke geloofsbrieven voor elk
 
-_Statische dossieroptimalisering_ betekent het samenvoegen en het miniaturen van JavaScript en Cascading Style Sheets, en het miniaturen van HTML malplaatjes. Zie [ Statische strategieën van de inhoudsplaatsing ](../deploy/static-content.md).
+_Statische dossieroptimalisering_ betekent het samenvoegen en het miniaturen van JavaScript en Cascading Style Sheets, en het miniaturen van HTML malplaatjes. Zie [&#x200B; Statische strategieën van de inhoudsplaatsing &#x200B;](../deploy/static-content.md).
 
 ## Vereisten
 
 Om deze taken van het configuratiebeheer te voltooien, hebt u het volgende nodig:
 
-* De lezerrol van het project met [ milieu &quot;admin&quot;](../project/user-access.md) voorrechten
+* De lezerrol van het project met [&#x200B; milieu &quot;admin&quot;](../project/user-access.md) voorrechten
 * Admin URL en geloofsbrieven voor integratie, het Opvoeren, en de milieu&#39;s van de Productie
 
 ## Commerce Admin configureren
 
-In de integratieomgeving kunt u zich aanmelden bij de beheerder om de systeemconfiguratie-instellingen voor winkels, websites, modules of extensies, de optimalisatie van statische bestanden en systeemwaarden te wijzigen voor de implementatie van statische inhoud. Zie [ gegevens van de Configuratie ](store-settings.md#scd-performance).
+In de integratieomgeving kunt u zich aanmelden bij de beheerder om de systeemconfiguratie-instellingen voor winkels, websites, modules of extensies, de optimalisatie van statische bestanden en systeemwaarden te wijzigen voor de implementatie van statische inhoud. Zie [&#x200B; gegevens van de Configuratie &#x200B;](store-settings.md#scd-performance).
 
 **om scène en statische montages van de dossieroptimalisering** te veranderen:
 
@@ -53,17 +53,17 @@ In de integratieomgeving kunt u zich aanmelden bij de beheerder om de systeemcon
 1. In de paginanavigatie, breid **Opties van de Landinstelling** uit.
 1. Van de **Lijst van de Landinstelling**, verander de scène. U kunt deze later wijzigen.
 
-   ![ verander de scène ](../../assets/locale-options.png)
+   ![&#x200B; verander de scène &#x200B;](../../assets/locale-options.png)
 
 1. Klik **sparen Config**.
-1. Indien ertoe aangezet, [ spoel het geheime voorgeheugen ](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/tools/cache-management).
+1. Indien ertoe aangezet, [&#x200B; spoel het geheime voorgeheugen &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/tools/cache-management).
 1. Afmelden bij de beheerder.
 
 ## Waarden exporteren en config.php overbrengen naar uw lokale systeem
 
 Met deze stap wordt het `config.php` -configuratiebestand in de integratieomgeving gemaakt en overgebracht met behulp van een opdracht die u op uw lokale computer uitvoert.
 
-Deze procedure beantwoordt aan stap 2 in de [ geadviseerde procedure ](store-settings.md). Nadat u `config.php` hebt gemaakt, brengt u deze over naar uw lokale systeem, zodat u deze aan Git kunt toevoegen.
+Deze procedure beantwoordt aan stap 2 in de [&#x200B; geadviseerde procedure &#x200B;](store-settings.md). Nadat u `config.php` hebt gemaakt, brengt u deze over naar uw lokale systeem, zodat u deze aan Git kunt toevoegen.
 
 **om te creëren en over te brengen`config.php`**:
 
@@ -112,7 +112,7 @@ In het volgende fragment uit `config.php` ziet u een voorbeeld van het wijzigen 
 
 ## config.php naar omgevingen duwen en implementeren
 
-Nu u `config.php` hebt gemaakt en naar uw lokale systeem hebt overgebracht, koppelt u het aan Git en duwt u het naar uw omgevingen. Deze procedure beantwoordt aan stap 3 en 4 in de [ geadviseerde procedure ](store-settings.md).
+Nu u `config.php` hebt gemaakt en naar uw lokale systeem hebt overgebracht, koppelt u het aan Git en duwt u het naar uw omgevingen. Deze procedure beantwoordt aan stap 3 en 4 in de [&#x200B; geadviseerde procedure &#x200B;](store-settings.md).
 
 Met de volgende opdracht voegt u de `master` -vertakking toe, verbindt u zich en drukt u deze door:
 
@@ -120,7 +120,7 @@ Met de volgende opdracht voegt u de `master` -vertakking toe, verbindt u zich en
 git add app/etc/config.php && git commit -m "Add system-specific configuration" && git push origin master
 ```
 
-Volledige codeplaatsing aan het Staging en Productie. Bij Starter drukt u op `staging` en `master` vertakkingen. Voor details op plaatsingsbevelen, zie [ uw opslag ](../deploy/staging-production.md) opstellen.
+Volledige codeplaatsing aan het Staging en Productie. Bij Starter drukt u op `staging` en `master` vertakkingen. Voor details op plaatsingsbevelen, zie [&#x200B; uw opslag &#x200B;](../deploy/staging-production.md) opstellen.
 
 Wacht tot de implementatie in alle omgevingen is voltooid.
 
@@ -137,7 +137,7 @@ Om uw configuratieveranderingen te verifiëren:
 
    U ziet dat verschillende velden niet kunnen worden bewerkt, zoals in het volgende voorbeeld wordt getoond. Deze configuratie-instellingen blijven behouden door `config.php` .
 
-   ![ Bepaalde waarden niet meer editable in Admin ](../../assets/locale-options-disabled.png)
+   ![&#x200B; Bepaalde waarden niet meer editable in Admin &#x200B;](../../assets/locale-options-disabled.png)
 
 1. Afmelden bij de beheerder.
 
@@ -159,7 +159,7 @@ Configuratiewaarden toevoegen in de integratieomgeving Admin. In dit voorbeeld w
 1. In de juiste ruit, breid **Montages van JavaScript** uit.
 1. Van de **lijst van de Dossiers van JavaScript van de Fusie**, klik **ja**.
 1. Klik **sparen Config**.
-1. Indien ertoe aangezet, [ spoel het geheime voorgeheugen ](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/tools/cache-management).
+1. Indien ertoe aangezet, [&#x200B; spoel het geheime voorgeheugen &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/tools/cache-management).
 1. Afmelden bij de beheerder.
 
 Door het dumpbevel opnieuw in werking te stellen, wordt de nieuwe configuratie toegevoegd aan het dossier.

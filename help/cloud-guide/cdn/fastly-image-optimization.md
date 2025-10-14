@@ -33,7 +33,7 @@ Schakel Fastly Image Optimization (Fastly IO) in vanuit het deelvenster Beheer d
 
 **om snel IO** toe te laten:
 
-1. Login aan uw lokaal [ Admin ](../../get-started/onboarding.md#access-your-admin-panel) paneel als beheerder.
+1. Login aan uw lokaal [&#x200B; Admin &#x200B;](../../get-started/onboarding.md#access-your-admin-panel) paneel als beheerder.
 
 1. Selecteer **>** Montages **>** Configuratie **>** Geavanceerd **>** Systeem **.**
 
@@ -60,7 +60,7 @@ Controleer en werk zo nodig de standaard IO-configuratie-instellingen voor optim
 
 1. Op de _Snelle pagina van de Configuratie_ op het _StandaardIO configuratieopties_ gebied, uitgezocht **vorm**.
 
-   ![ Mening de Snelle IO configuratiemontages ](../../assets/cdn/fastly-io-default-config.png)
+   ![&#x200B; Mening de Snelle IO configuratiemontages &#x200B;](../../assets/cdn/fastly-io-default-config.png)
 
 1. Herzie en werk de Fastly IO configuratiemontages op de _standaard configuratieopties van het Beeld_ pagina bij:
 
@@ -88,13 +88,13 @@ Controleer en werk zo nodig de standaard IO-configuratie-instellingen voor optim
 
 1. In de configuratie van de Optimalisering van het Beeld _laat diep beeld optimalisering_ gebied toe, selecteer **ja** om diepe beeldoptimalisering aan te zetten.
 
-   ![ laat Snelle IO diepe beeldoptimalisering ](../../assets/cdn/fastly-io-deep-image-config.png) toe
+   ![&#x200B; laat Snelle IO diepe beeldoptimalisering &#x200B;](../../assets/cdn/fastly-io-deep-image-config.png) toe
 
-   Diepe optimalisatie van afbeeldingen is standaard uitgeschakeld. Als deze functie is ingeschakeld, wordt de ingebouwde functie voor het aanpassen van de grootte in Adobe Commerce uitgeschakeld en wordt het vergroten of verkleinen van de grootte overgelaten aan de Fastly IO-service. Optimalisatie van afbeeldingen geldt alleen voor productafbeeldingen. CMS-afbeeldingen worden niet vergroot of verkleind. Zie de [ Snelle documentatie ](#deep-image-optimization).
+   Diepe optimalisatie van afbeeldingen is standaard uitgeschakeld. Als deze functie is ingeschakeld, wordt de ingebouwde functie voor het aanpassen van de grootte in Adobe Commerce uitgeschakeld en wordt het vergroten of verkleinen van de grootte overgelaten aan de Fastly IO-service. Optimalisatie van afbeeldingen geldt alleen voor productafbeeldingen. CMS-afbeeldingen worden niet vergroot of verkleind. Zie de [&#x200B; Snelle documentatie &#x200B;](#deep-image-optimization).
 
-1. Nadat u diepe beeldoptimalisering toelaat, laat de [ adaptieve pixelverhouding ](#adaptive-pixel-ratios) eigenschap toe om beelden te produceren die voor gebruik in ontvankelijke websites worden geoptimaliseerd.
+1. Nadat u diepe beeldoptimalisering toelaat, laat de [&#x200B; adaptieve pixelverhouding &#x200B;](#adaptive-pixel-ratios) eigenschap toe om beelden te produceren die voor gebruik in ontvankelijke websites worden geoptimaliseerd.
 
-   ![ laat snel IO aanpassende pixelverhoudingen ](../../assets/cdn/fastly-io-config-adaptive-pixel.png) toe
+   ![&#x200B; laat snel IO aanpassende pixelverhoudingen &#x200B;](../../assets/cdn/fastly-io-config-adaptive-pixel.png) toe
 
    - Op _laat adaptieve de pixelverhoudingen van het apparatenapparaat_ gebied toe, uitgezochte **ja**.
    - Op het _pixelverhoudingen van het Apparaat_ gebied, keur het gebrek het plaatsen goed, of selecteer het **de controlevakje van de Invoer van het Systeem** om het plaatsen te verwijderen. Selecteer vervolgens de gewenste verhouding. Een hogere instelling voor pixelverhoudingen voor apparaten levert grotere afbeeldingen op.
@@ -156,7 +156,7 @@ De service wijzigt bijvoorbeeld de definitie van de productafbeelding, zoals in 
      alt="Fusion Backpack"/>
 ```
 
-Zie `srcset` [ browser steun ](https://caniuse.com/#feat=srcset) en [ specificatie ](https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-srcset).
+Zie `srcset` [&#x200B; browser steun &#x200B;](https://caniuse.com/#feat=srcset) en [&#x200B; specificatie &#x200B;](https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-srcset).
 
 ## SNEL IO valideren
 

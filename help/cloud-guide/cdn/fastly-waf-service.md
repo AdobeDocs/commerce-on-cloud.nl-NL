@@ -17,16 +17,16 @@ Dankzij de snelle verbinding met de WAF-service (webtoepassingsfirewall) voor Ad
 De WAF-service biedt de volgende voordelen:
 
 - **naleving PCI** - WAF enablement zorgt ervoor dat Adobe Commerce storefronts in de milieu&#39;s van de Productie aan PCI DSS 6.6 veiligheidsvereisten voldoen.
-- **StandaardWAF beleid** - het standaardWAF beleid, dat door Fastly wordt gevormd en wordt gehandhaafd, verstrekt een inzameling van veiligheidsregels die worden gemaakt om uw het Webtoepassingen van Adobe Commerce tegen een brede waaier van aanvallen, met inbegrip van injectieaanvallen, kwaadwillige input, dwars-plaats scripting, gegevenscontrole, het protocolschendingen van HTTP, en andere [ Top tien van OWASP ](https://owasp.org/www-project-top-ten/) veiligheidsbedreigingen te beschermen.
+- **StandaardWAF beleid** - het standaardWAF beleid, dat door Fastly wordt gevormd en wordt gehandhaafd, verstrekt een inzameling van veiligheidsregels die worden gemaakt om uw het Webtoepassingen van Adobe Commerce tegen een brede waaier van aanvallen, met inbegrip van injectieaanvallen, kwaadwillige input, dwars-plaats scripting, gegevenscontrole, het protocolschendingen van HTTP, en andere [&#x200B; Top tien van OWASP &#x200B;](https://owasp.org/www-project-top-ten/) veiligheidsbedreigingen te beschermen.
 - **WAF on boarding en enablement** - Adobe stelt en laat het standaard beleid van WAF in uw milieu van de Productie binnen 2 tot 3 weken toe nadat de levering definitief is.
 - **Verrichtingen en onderhoudssteun**—
    - Adobe en snel uw logboeken, regels en waarschuwingen voor de WAF-service instellen en beheren.
    - Adobe maakt gebruik van tickets voor klantenondersteuning die gerelateerd zijn aan WAF-servicekwesties die legitiem verkeer blokkeren als Prioriteit 1-problemen.
-   - Geautomatiseerde upgrades naar de WAF-serviceversie zorgen voor directe dekking voor nieuwe of zich ontwikkelende explosies. Zie [ onderhoud en verbeteringen van WAF ](#waf-maintenance-and-updates).
+   - Geautomatiseerde upgrades naar de WAF-serviceversie zorgen voor directe dekking voor nieuwe of zich ontwikkelende explosies. Zie [&#x200B; onderhoud en verbeteringen van WAF &#x200B;](#waf-maintenance-and-updates).
 
 >[!TIP]
 >
->Voor extra informatie over het handhaven van naleving PCI voor uw Adobe Commerce op de opslag van de wolkeninfrastructuur, zie [ naleving PCI ](https://business.adobe.com/products/magento/pci-compliance.html).
+>Voor extra informatie over het handhaven van naleving PCI voor uw Adobe Commerce op de opslag van de wolkeninfrastructuur, zie [&#x200B; naleving PCI &#x200B;](https://business.adobe.com/products/magento/pci-compliance.html).
 
 ## WAF inschakelen
 
@@ -34,11 +34,11 @@ Adobe biedt de WAF-service op nieuwe accounts binnen 2 tot 3 weken nadat de prov
 
 >[!NOTE]
 >
->Voordat u de WAF-service kunt gebruiken, moet u alle externe verkeer naar uw Adobe Commerce via het infrastructuurproject voor de cloud doorlopen via de Fastly-service. Zie [ Opstelling snel ](fastly-configuration.md).
+>Voordat u de WAF-service kunt gebruiken, moet u alle externe verkeer naar uw Adobe Commerce via het infrastructuurproject voor de cloud doorlopen via de Fastly-service. Zie [&#x200B; Opstelling snel &#x200B;](fastly-configuration.md).
 
 ## Hoe werkt het
 
-De dienst van WAF integreert met Fastly en gebruikt de geheim voorgeheugenlogica binnen de Fastly dienst CDN om verkeer bij de Fastly globale knopen te filtreren. Wij laten de dienst van WAF in uw milieu van de Productie met een standaardWAF beleid toe dat op [ wordt gebaseerd ModSecurity Regels van Trustwave SpiderLabs ](https://github.com/owasp-modsecurity/ModSecurity) en de Top Tien van OWASP veiligheidsbedreigingen.
+De dienst van WAF integreert met Fastly en gebruikt de geheim voorgeheugenlogica binnen de Fastly dienst CDN om verkeer bij de Fastly globale knopen te filtreren. Wij laten de dienst van WAF in uw milieu van de Productie met een standaardWAF beleid toe dat op [&#x200B; wordt gebaseerd ModSecurity Regels van Trustwave SpiderLabs &#x200B;](https://github.com/owasp-modsecurity/ModSecurity) en de Top Tien van OWASP veiligheidsbedreigingen.
 
 De dienst van WAF inspecteert HTTP en HTTPS verkeer (GET en POST- verzoeken) tegen de regels van WAF en blokkeert verkeer dat kwaadwillig is of niet aan specifieke regels voldoet. De dienst inspecteert slechts oorsprong-gebonden verkeer dat probeert om het geheime voorgeheugen te verfrissen. Dientengevolge, houden wij het meeste aanvalsverkeer bij het Fastly geheime voorgeheugen tegen, beschermend uw oorsprongsverkeer tegen kwaadwillige aanvallen. Door slechts oorsprongverkeer te verwerken, behoudt de dienst van WAF geheim voorgeheugenprestaties, introducerend slechts een geschatte 1.5 milliseconden aan 20 milliseconden van latentie aan elk niet caching verzoek.
 
@@ -46,11 +46,11 @@ De dienst van WAF inspecteert HTTP en HTTPS verkeer (GET en POST- verzoeken) teg
 
 Wanneer de dienst van WAF wordt toegelaten, inspecteert het al Web en admin verkeer tegen de regels van WAF en blokkeert om het even welke Webverzoek die een regel teweegbrengt. Wanneer een aanvraag wordt geblokkeerd, ziet de aanvrager een standaard `403 Forbidden` foutpagina die een referentie-id bevat voor de blokkeringsgebeurtenis.
 
-![ de foutenpagina van WAF ](../../assets/cdn/fastly-waf-403-error.png)
+![&#x200B; de foutenpagina van WAF &#x200B;](../../assets/cdn/fastly-waf-403-error.png)
 
-U kunt deze pagina met foutreacties aanpassen via de beheerfunctie. Zie [ de de reactiepagina van WAF ](fastly-custom-response.md#customize-the-waf-error-page) aanpassen.
+U kunt deze pagina met foutreacties aanpassen via de beheerfunctie. Zie [&#x200B; de de reactiepagina van WAF &#x200B;](fastly-custom-response.md#customize-the-waf-error-page) aanpassen.
 
-Als uw Adobe Commerce admin pagina of storefront een `403 Forbidden` foutenpagina in antwoord op een wettig verzoek URL terugkeert, leg een [ kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) voor. Kopieer de referentie-id van de pagina met foutreacties en plak deze in de beschrijving van het ticket.
+Als uw Adobe Commerce admin pagina of storefront een `403 Forbidden` foutenpagina in antwoord op een wettig verzoek URL terugkeert, leg een [&#x200B; kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) voor. Kopieer de referentie-id van de pagina met foutreacties en plak deze in de beschrijving van het ticket.
 
 Als u de WAF-reactie voor een bepaalde aanvraag wilt identificeren met New Relic, gaat u naar het volgende:
 
@@ -71,10 +71,10 @@ Als u merkt dat de WAF legitieme verzoeken blokkeert, zijn deze vaak valse posit
 
 De standaard WAF-service met de functie Fastly biedt geen ondersteuning voor de volgende functies:
 
-- De bescherming tegen malware of beide beperking-overweegt het gebruiken van [ toegangsbeheerlijsten ](./fastly-vcl-allowlist.md) of de derdienst.
-- Het tarief beperkt-zie [ Tarief dat ](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/RATE-LIMITING.md) in de Snelle documentatie beperkt, of zie [ het Tarief dat ](https://developer.adobe.com/commerce/webapi/get-started/rate-limiting/) beperkt in _het Web API van Commerce_ veiligheidssectie beperkt.
-- Het vormen van een registrereneindpunt voor klant-zie [ dienst PrivateLink ](../development/privatelink-service.md) als alternatief.
+- De bescherming tegen malware of beide beperking-overweegt het gebruiken van [&#x200B; toegangsbeheerlijsten &#x200B;](./fastly-vcl-allowlist.md) of de derdienst.
+- Het tarief beperkt-zie [&#x200B; Tarief dat &#x200B;](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/RATE-LIMITING.md) in de Snelle documentatie beperkt, of zie [&#x200B; het Tarief dat &#x200B;](https://developer.adobe.com/commerce/webapi/get-started/rate-limiting/) beperkt in _het Web API van Commerce_ veiligheidssectie beperkt.
+- Het vormen van een registrereneindpunt voor klant-zie [&#x200B; dienst PrivateLink &#x200B;](../development/privatelink-service.md) als alternatief.
 
 De dienst van WAF staat u toe om verkeer te blokkeren of toe te staan dat op IP adressen wordt gebaseerd. U kunt toegangsbeheerlijsten (ACL) en de fragmenten van douaneVCL aan uw Snelle dienst toevoegen om de IP adressen en logica VCL voor het blokkeren of het toestaan van verkeer te specificeren. Zie {de fragmenten van 0} Snelle VCL van de Douane &lbrace;[&#128279;](fastly-vcl-custom-snippets.md).
 
-Filteren voor TCP-, UDP- of ICMP-aanvragen wordt niet ondersteund door de WAF-service. Nochtans, wordt deze functionaliteit verstrekt door de ingebouwde bescherming DDoS inbegrepen met de Fastly dienst CDN. Zie [ bescherming DDoS ](fastly.md#ddos-protection).
+Filteren voor TCP-, UDP- of ICMP-aanvragen wordt niet ondersteund door de WAF-service. Nochtans, wordt deze functionaliteit verstrekt door de ingebouwde bescherming DDoS inbegrepen met de Fastly dienst CDN. Zie [&#x200B; bescherming DDoS &#x200B;](fastly.md#ddos-protection).

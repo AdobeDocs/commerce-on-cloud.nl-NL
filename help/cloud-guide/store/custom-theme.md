@@ -70,7 +70,7 @@ Als u een thema handmatig wilt installeren, moet u de themacode in een gecomprim
 
 ## Een thema installeren met Composer
 
-Het installeren van een thema met Composer is hetzelfde als het installeren van een andere extensie met Composer. Zie [ installeren, leiden, en verbeteringsmodules ](extensions.md) voor details.
+Het installeren van een thema met Composer is hetzelfde als het installeren van een andere extensie met Composer. Zie [&#x200B; installeren, leiden, en verbeteringsmodules &#x200B;](extensions.md) voor details.
 
 Een thema installeren met Composer:
 
@@ -106,4 +106,4 @@ Een thema installeren met Composer:
 
 ## Meerdere thema&#39;s
 
-Wanneer u meerdere thema&#39;s gebruikt, zoals verschillende thema&#39;s per landinstelling, bekijkt u de omgevingsvariabele van `SCD_MATRIX` om de implementatie van thema&#39;s aan te passen. Zie [ bouwen ](../environment/variables-build.md#scd_matrix) of [&#128279;](../environment/variables-deploy.md#scd_matrix) stadia in de [ milieuconfiguratie ](../environment/configure-env-yaml.md) opstellen.
+Wanneer u meerdere thema&#39;s gebruikt, zoals verschillende thema&#39;s per landinstelling, bekijkt u de omgevingsvariabele van `SCD_MATRIX` om de implementatie van thema&#39;s aan te passen. Zie [&#x200B; bouwen &#x200B;](../environment/variables-build.md#scd_matrix) of [&#128279;](../environment/variables-deploy.md#scd_matrix) stadia in de [&#x200B; milieuconfiguratie &#x200B;](../environment/configure-env-yaml.md) opstellen.

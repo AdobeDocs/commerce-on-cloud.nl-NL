@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # Redis-service instellen
 
-[ Redis ](https://redis.io) is een facultatieve, achterste geheim voorgeheugenoplossing die Zend Framework Zend_Cache_Backend_File vervangt, die Adobe Commerce door gebrek gebruikt.
+[&#x200B; Redis &#x200B;](https://redis.io) is een facultatieve, achterste geheim voorgeheugenoplossing die Zend Framework Zend_Cache_Backend_File vervangt, die Adobe Commerce door gebrek gebruikt.
 
-Zie [ vormen Redis ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/config-redis.html?lang=nl-NL) in de _gids van de Configuratie_.
+Zie [&#x200B; vormen Redis &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/config-redis.html?lang=nl-NL) in de _gids van de Configuratie_.
 
 {{service-instruction}}
 
@@ -50,7 +50,7 @@ Zie [ vormen Redis ](https://experienceleague.adobe.com/docs/commerce-operations
    git add .magento/services.yaml .magento.app.yaml && git commit -m "Enable redis service" && git push origin <branch-name>
    ```
 
-1. [ verifieer de de dienstverhoudingen ](services-yaml.md#service-relationships).
+1. [&#x200B; verifieer de de dienstverhoudingen &#x200B;](services-yaml.md#service-relationships).
 
 {{service-change-tip}}
 
@@ -128,7 +128,7 @@ Monsterrespons:
 
 Raadpleeg de volgende Adobe Commerce Support-artikelen voor hulp bij het oplossen van problemen met Redis:
 
-- [ herstelt de login van Admin van de Uitgiftevertraging of controle ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/redis-issue-delay-magento-admin-login-or-checkout.html?lang=nl-NL)
-- [ Uitgebreide Redis geheim voorgeheugenimplementatie Adobe Commerce 2.3.5+ ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html?lang=nl-NL)
-- [ Beheerde alarm op Adobe Commerce: Redis alarm van de geheugenwaarschuwing ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-on-magento-commerce-redis-memory-warning-alert.html?lang=nl-NL)
-- [ Beheerd alarm op Adobe Commerce: Redis geheugen kritieke alarm ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-on-magento-commerce-redis-memory-critical-alert.html?lang=nl-NL)
+- [&#x200B; herstelt de login van Admin van de Uitgiftevertraging of controle &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/redis-issue-delay-magento-admin-login-or-checkout.html?lang=nl-NL)
+- [&#x200B; Uitgebreide Redis geheim voorgeheugenimplementatie Adobe Commerce 2.3.5+ &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html?lang=nl-NL)
+- [&#x200B; Beheerde alarm op Adobe Commerce: Redis alarm van de geheugenwaarschuwing &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-on-magento-commerce-redis-memory-warning-alert.html?lang=nl-NL)
+- [&#x200B; Beheerd alarm op Adobe Commerce: Redis geheugen kritieke alarm &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-on-magento-commerce-redis-memory-critical-alert.html?lang=nl-NL)

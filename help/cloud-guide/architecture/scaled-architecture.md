@@ -25,7 +25,7 @@ De Pro-architectuur bestond uit drie knooppunten, die elk een volledige technolo
 
 Er zijn drie de dienstknopen voor gegevensopslag, geheime voorgeheugen, en de diensten: **OpenSearch** of **Elasticsearch**, **MariaDB**, **Redis**, en meer. Wanneer de serviceniveau de capaciteit nadert, kunt u alleen schalen door de servergrootte te vergroten, bijvoorbeeld door de CPU-voeding en -geheugen op te voeren. De capaciteit is beperkt tot de grootte van de knoop die beschikbaar is. Omdat de gegevensbestandcluster voor hoge beschikbaarheid wordt ontworpen, kunt u niet horizontaal met de gebruikte technologieën schrapen.
 
-![ het rij schrapen van de Dienst ](../../assets/scaling-service.png)
+![&#x200B; het rij schrapen van de Dienst &#x200B;](../../assets/scaling-service.png)
 
 Overweeg een voorbeeld dat het de instantietype van de de dienstknoop _m5.2xlarge_ met 32-Gb RAM is. Een service, zoals de database, gebruikt een aanzienlijke hoeveelheid geheugen (30 Gb). Het schrapen aan de volgende beschikbare instantiegrootte _m5.4xlarge_ verstrekt 64-Gb RAM, die het geheugen verdubbelt en de groeiende behoeften van het gegevensbestand aanpast.
 
@@ -33,9 +33,9 @@ U kunt de prestaties van de de dienstrij verder optimaliseren door verkeer te ve
 
 ### Weblaag
 
-Er zijn drie Webknopen voor verwerkingsverzoeken en Webverkeer: **php-fpm** en **NGINX**. Naast verticale schaling door meer stroom en geheugen te gebruiken, kan de weblaag ook horizontaal worden geschaald door webservers toe te voegen aan een bestaande cluster wanneer deze beperkt zijn op PHP-niveau. Zie [ Auto het schrapen ](autoscaling.md) leren hoe de Webknopen automatisch schrapen.
+Er zijn drie Webknopen voor verwerkingsverzoeken en Webverkeer: **php-fpm** en **NGINX**. Naast verticale schaling door meer stroom en geheugen te gebruiken, kan de weblaag ook horizontaal worden geschaald door webservers toe te voegen aan een bestaande cluster wanneer deze beperkt zijn op PHP-niveau. Zie [&#x200B; Auto het schrapen &#x200B;](autoscaling.md) leren hoe de Webknopen automatisch schrapen.
 
-![ het rij schrapen van het Web ](../../assets/scaling-web.png)
+![&#x200B; het rij schrapen van het Web &#x200B;](../../assets/scaling-web.png)
 
 Dit vult de verticale schaling aan die door de de dienstrij wordt verstrekt. Aangezien de de dienstrij in grootte en macht schrapt om een groeiend gegevensbestand en de dienstgebruik aan te passen, de Webrijschaal in grootte, macht, en instanties om een toename van procesverzoeken en hogere verkeersvereisten aan te passen.
 
@@ -49,7 +49,7 @@ Minimaal, hebben de Pro projecten met de Schaalde architectuur zes beschikbare k
 
 - 3 serviceknooppunten m5.2xlarge (8 CPU, 32 Gb RAM)
 
-Elk project is echter uniek en vereist prestatiebewaking om het beheer van bronnen correct te analyseren. Elke rekening omvat de [ dienst van New Relic ](../monitor/new-relic-service.md), die automatisch met de toepassingsgegevens en prestatiesanalyses verbindt om dynamische servercontrole te verstrekken. Specifiek, kunt u de dienst van New Relic gebruiken om CPU en het gebruik van RAM te controleren om te bepalen welke knopen extra middelen vereisen. Wanneer een bron capaciteit bereikt of wanneer de prestaties achteruitgaan op basis van de analyse, kunt u een verzoek maken om uw infrastructuur te schalen om aan de vraag te voldoen.
+Elk project is echter uniek en vereist prestatiebewaking om het beheer van bronnen correct te analyseren. Elke rekening omvat de [&#x200B; dienst van New Relic &#x200B;](../monitor/new-relic-service.md), die automatisch met de toepassingsgegevens en prestatiesanalyses verbindt om dynamische servercontrole te verstrekken. Specifiek, kunt u de dienst van New Relic gebruiken om CPU en het gebruik van RAM te controleren om te bepalen welke knopen extra middelen vereisen. Wanneer een bron capaciteit bereikt of wanneer de prestaties achteruitgaan op basis van de analyse, kunt u een verzoek maken om uw infrastructuur te schalen om aan de vraag te voldoen.
 
 ### SSH-toegang
 
@@ -103,4 +103,4 @@ project-id@server-id:~$
 
 De logboekplaatsen variëren lichtjes afhankelijk van de knoop. Bijvoorbeeld, is een gegevensbestandlogboek, zoals het **MySQL foutenlogboek**, beschikbaar op een de dienstknoop (`/var/log/mysql/mysql-error.log`), maar het is niet beschikbaar op een Webknoop.
 
-Elke Pro rekening omvat de [ dienst van Logboeken van New Relic ](../monitor/new-relic-service.md), die automatisch met logboekgegevens van de toepassing verbindt om dynamisch logboekbeheer te verstrekken. Samengevoegde loggegevens van alle knooppunten worden weergegeven in de toepassing New Relic Logs, zodat u problemen met de prestaties van specifieke knooppunten op één dashboard kunt oplossen.
+Elke Pro rekening omvat de [&#x200B; dienst van Logboeken van New Relic &#x200B;](../monitor/new-relic-service.md), die automatisch met logboekgegevens van de toepassing verbindt om dynamisch logboekbeheer te verstrekken. Samengevoegde loggegevens van alle knooppunten worden weergegeven in de toepassing New Relic Logs, zodat u problemen met de prestaties van specifieke knooppunten op één dashboard kunt oplossen.

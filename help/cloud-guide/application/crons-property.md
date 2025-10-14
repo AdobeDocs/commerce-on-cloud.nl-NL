@@ -11,11 +11,11 @@ ht-degree: 0%
 
 # Crons, eigenschap
 
-Adobe Commerce gebruikt de eigenschap `crons` om herhalende activiteiten te plannen. Het is ideaal voor het plannen van een specifieke taak om op bepaalde tijden van de dag te lopen. Vanwege de aard van alleen-lezen omgevingen kan slechts één snijtaak tegelijk op de webinstantie voor Adobe Commerce worden uitgevoerd voor cloudinfrastructuurprojecten. Het is aan te raden om taken die al lang worden uitgevoerd, op te splitsen in kleinere taken in een wachtrij. Alternatief, kunt u a [ arbeidersinstantie ](workers-property.md) bouwen.
+Adobe Commerce gebruikt de eigenschap `crons` om herhalende activiteiten te plannen. Het is ideaal voor het plannen van een specifieke taak om op bepaalde tijden van de dag te lopen. Vanwege de aard van alleen-lezen omgevingen kan slechts één snijtaak tegelijk op de webinstantie voor Adobe Commerce worden uitgevoerd voor cloudinfrastructuurprojecten. Het is aan te raden om taken die al lang worden uitgevoerd, op te splitsen in kleinere taken in een wachtrij. Alternatief, kunt u a [&#x200B; arbeidersinstantie &#x200B;](workers-property.md) bouwen.
 
-De Adobe adviseert dat u `crons` als [ eigenaar van het dossiersysteem ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html?lang=nl-NL) in werking stelt. Voer _niet_ in `crons` zoals `root` of als gebruiker van de Webserver.
+De Adobe adviseert dat u `crons` als [&#x200B; eigenaar van het dossiersysteem &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html?lang=nl-NL) in werking stelt. Voer _niet_ in `crons` zoals `root` of als gebruiker van de Webserver.
 
-Deze configuratie is anders dan plaatsingen in het gebouw van Adobe Commerce, die veelvoudige standaard kantelbanen hebben. Zie [ cron banen ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=nl-NL) in de _gids van de Configuratie_ vormen.
+Deze configuratie is anders dan plaatsingen in het gebouw van Adobe Commerce, die veelvoudige standaard kantelbanen hebben. Zie [&#x200B; cron banen &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=nl-NL) in de _gids van de Configuratie_ vormen.
 
 ## Uitsnijdtaken instellen
 
@@ -35,7 +35,7 @@ crons:
         cmd: "php bin/magento cron:run"
 ```
 
-Als uw project aangepaste uitsnijdtaken vereist, kunt u deze toevoegen aan de standaardconfiguratie `crons` . Zie [ bouwt een kroonbaan ](#build-a-cron-job).
+Als uw project aangepaste uitsnijdtaken vereist, kunt u deze toevoegen aan de standaardconfiguratie `crons` . Zie [&#x200B; bouwt een kroonbaan &#x200B;](#build-a-cron-job).
 
 ### `crontab`
 
@@ -45,7 +45,7 @@ Hoewel u `crontab` kunt gebruiken om de configuratie van Pro-projecten te contro
 
 **aan overzicht cron configuratie op Pro milieu&#39;s**:
 
-1. Het gebruik [ SSH ](../development/secure-connections.md#use-an-ssh-command) aan login aan het verre milieu.
+1. Het gebruik [&#x200B; SSH &#x200B;](../development/secure-connections.md#use-an-ssh-command) aan login aan het verre milieu.
 
 1. Vermeld de geplande uitsnijdprocessen.
 
@@ -55,7 +55,7 @@ Hoewel u `crontab` kunt gebruiken om de configuratie van Pro-projecten te contro
 
    >[!NOTE]
    >
-   >Als het `crontab -l` bevel een `Command not found` fout (in Pro het Opvoeren en milieu&#39;s van de Productie slechts) terugkeert, moet u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voorleggen om de auto-crons zelfbedieningsconfiguratieoptie op uw project toe te laten.
+   >Als het `crontab -l` bevel een `Command not found` fout (in Pro het Opvoeren en milieu&#39;s van de Productie slechts) terugkeert, moet u [&#x200B; een kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voorleggen om de auto-crons zelfbedieningsconfiguratieoptie op uw project toe te laten.
 
 In het volgende voorbeeld wordt de `crontab` -uitvoer getoond voor een omgeving die alleen de standaard `crons` -configuratie heeft:
 
@@ -123,7 +123,7 @@ Op het Adobe Commerce-platform voor cloudinfrastructuur kunt u aanpassingen toev
 >
 >Voor Starter-omgevingen en Pro `integration`-omgevingen bedraagt het minimale interval één keer per vijf minuten. Voor Pro het Staging en van de Productie milieu&#39;s, is het minimuminterval eens per minuut. U kunt geen frequentere intervallen dan de standaardminimumintervallen vormen.
 
-Voor de Pro projecten van Adobe Commerce, moet de [ auto-bakens eigenschap ](#set-up-cron-jobs) op uw project worden toegelaten alvorens u de banen van de douanecurn aan het Opvoeren en van de Productie milieu&#39;s kunt toevoegen gebruikend het `.magento.app.yaml` dossier. Als deze eigenschap niet wordt toegelaten, [ voorlegt een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) om auto-bakens toe te laten.
+Voor de Pro projecten van Adobe Commerce, moet de [&#x200B; auto-bakens eigenschap &#x200B;](#set-up-cron-jobs) op uw project worden toegelaten alvorens u de banen van de douanecurn aan het Opvoeren en van de Productie milieu&#39;s kunt toevoegen gebruikend het `.magento.app.yaml` dossier. Als deze eigenschap niet wordt toegelaten, [&#x200B; voorlegt een kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) om auto-bakens toe te laten.
 
 **om de banen van de douanecurn** toe te voegen:
 
@@ -191,12 +191,12 @@ U kunt snijtaken handmatig uitschakelen voordat u onderhoudstaken uitvoert, zoal
 
 ## Problemen met uitsnijdtaken oplossen
 
-Adobe heeft het Adobe Commerce-pakket voor cloudinfrastructuur bijgewerkt om de verwerking van cron op het Adobe Commerce-platform voor cloudinfrastructuur te optimaliseren en om problemen met betrekking tot cloudinfrastructuur op te lossen. Als u problemen ondervindt met de verwerking van bijsnijden, controleert u of uw project de meest actuele versie van het `ece-tools` -pakket gebruikt. Zie [ Update ECE-Hulpmiddelen ](../dev-tools/update-package.md).
+Adobe heeft het Adobe Commerce-pakket voor cloudinfrastructuur bijgewerkt om de verwerking van cron op het Adobe Commerce-platform voor cloudinfrastructuur te optimaliseren en om problemen met betrekking tot cloudinfrastructuur op te lossen. Als u problemen ondervindt met de verwerking van bijsnijden, controleert u of uw project de meest actuele versie van het `ece-tools` -pakket gebruikt. Zie [&#x200B; Update ECE-Hulpmiddelen &#x200B;](../dev-tools/update-package.md).
 
-U kunt de gegevens van de cron-verwerking bekijken in de logbestanden op toepassingsniveau voor elke omgeving. Zie [ Logboeken van de Toepassing ](../test/log-locations.md#application-logs).
+U kunt de gegevens van de cron-verwerking bekijken in de logbestanden op toepassingsniveau voor elke omgeving. Zie [&#x200B; Logboeken van de Toepassing &#x200B;](../test/log-locations.md#application-logs).
 
 Raadpleeg de volgende Adobe Commerce Support-artikelen voor hulp bij het oplossen van problemen met betrekking tot andere toepassingen:
 
-- [ de taken van het de taakslot van het Gewas taken van andere groepen ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.html?lang=nl-NL)
+- [&#x200B; de taken van het de taakslot van het Gewas taken van andere groepen &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.html?lang=nl-NL)
 
-- [ het Terugstellen van geplakt kroonbanen manueel op de wolk ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/reset-stuck-magento-cron-jobs-manually-on-cloud.html?lang=nl-NL)
+- [&#x200B; het Terugstellen van geplakt kroonbanen manueel op de wolk &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/reset-stuck-magento-cron-jobs-manually-on-cloud.html?lang=nl-NL)

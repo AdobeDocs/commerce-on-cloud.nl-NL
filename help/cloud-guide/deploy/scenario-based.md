@@ -18,7 +18,7 @@ Deze eigenschap gebruikt **scenario&#39;s** en **stappen** in de configuratie:
 
 - **- elk scenario van de 1&rbrace; Stap gebruikt een opeenvolging van *stappen* die programmatically de verrichtingen beschrijven die worden vereist om plaatsingstaken te voltooien.** U vormt de stappen in een op XML-Gebaseerd dossier van de scenarioconfiguratie.
 
-Adobe Commerce op wolkeninfrastructuur verstrekt een reeks [ standaardscenario&#39;s ](https://github.com/magento/ece-tools/tree/2002.1/scenario) en [ standaardstappen ](https://github.com/magento/ece-tools/tree/2002.1/src/Step) in het `ece-tools` pakket. U kunt plaatsingsgedrag aanpassen door de configuratiedossiers van douaneXML te creëren om de standaardconfiguratie met voeten te treden of aan te passen. U kunt ook scenario&#39;s en stappen gebruiken om code uit aangepaste modules uit te voeren.
+Adobe Commerce op wolkeninfrastructuur verstrekt een reeks [&#x200B; standaardscenario&#39;s &#x200B;](https://github.com/magento/ece-tools/tree/2002.1/scenario) en [&#x200B; standaardstappen &#x200B;](https://github.com/magento/ece-tools/tree/2002.1/src/Step) in het `ece-tools` pakket. U kunt plaatsingsgedrag aanpassen door de configuratiedossiers van douaneXML te creëren om de standaardconfiguratie met voeten te treden of aan te passen. U kunt ook scenario&#39;s en stappen gebruiken om code uit aangepaste modules uit te voeren.
 
 ## Voeg scenario&#39;s toe gebruikend bouw en opstellings haken
 
@@ -40,7 +40,7 @@ hooks:
 
 >[!NOTE]
 >
->Met de versie van `ece-tools` 2002.1.x, is er een nieuw [ hooks configuratie ](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/configure/app/properties/hooks-property.html?lang=nl-NL) formaat. De oudere indeling uit `ece-tools` 2002.0.x-releases wordt nog steeds ondersteund. Nochtans, moet u aan het nieuwe formaat bijwerken om de op scenario-gebaseerde plaatsingseigenschap te gebruiken.
+>Met de versie van `ece-tools` 2002.1.x, is er een nieuw [&#x200B; hooks configuratie &#x200B;](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/configure/app/properties/hooks-property.html?lang=nl-NL) formaat. De oudere indeling uit `ece-tools` 2002.0.x-releases wordt nog steeds ondersteund. Nochtans, moet u aan het nieuwe formaat bijwerken om de op scenario-gebaseerde plaatsingseigenschap te gebruiken.
 
 ## Evaluatiescenario-stappen
 
@@ -218,7 +218,7 @@ hooks:
 
 >[!TIP]
 >
->U kunt de [ standaardscenario&#39;s ](https://github.com/magento/ece-tools/tree/2002.1/scenario) herzien en [ standaardstep configuratie ](https://github.com/magento/ece-tools/tree/2002.1/src/Step) in de `ece-tools` bewaarplaats GitHub om te bepalen welke scenario&#39;s en stappen voor uw project bouwen, opstellen, en post-opstelt taken.
+>U kunt de [&#x200B; standaardscenario&#39;s &#x200B;](https://github.com/magento/ece-tools/tree/2002.1/scenario) herzien en [&#x200B; standaardstep configuratie &#x200B;](https://github.com/magento/ece-tools/tree/2002.1/src/Step) in de `ece-tools` bewaarplaats GitHub om te bepalen welke scenario&#39;s en stappen voor uw project bouwen, opstellen, en post-opstelt taken.
 
 ## Een aangepaste module toevoegen om uit te breiden `ece-tools`
 
@@ -270,7 +270,7 @@ Als u de aangepaste module met Adobe Commerce wilt gebruiken in de cloud-infrast
    </container>
    ```
 
-Meer over gebiedsdeelinjectie leren, zie [ Injectie van de Afhankelijkheid van het Symfony ](https://symfony.com/doc/current/components/dependency_injection.html).
+Meer over gebiedsdeelinjectie leren, zie [&#x200B; Injectie van de Afhankelijkheid van het Symfony &#x200B;](https://symfony.com/doc/current/components/dependency_injection.html).
 
 <!-- link definitions -->
 

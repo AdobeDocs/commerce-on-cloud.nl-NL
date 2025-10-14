@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Variables, eigenschap
 
-U kunt op toepassing-gebaseerde omgevingsvariabelen gebruiken om opslagconfiguraties aan te passen. Deze variabelen gebruiken een specifieke syntaxis. Zie [ configuratiemontages van de Overschrijving ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/paths/override-config-settings.html?lang=nl-NL) in de _gids van de Configuratie_.
+U kunt op toepassing-gebaseerde omgevingsvariabelen gebruiken om opslagconfiguraties aan te passen. Deze variabelen gebruiken een specifieke syntaxis. Zie [&#x200B; configuratiemontages van de Overschrijving &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/paths/override-config-settings.html?lang=nl-NL) in de _gids van de Configuratie_.
 
 De volgende omgevingsvariabelen in het `.magento.app.yaml` -bestand zijn vereist voor specifieke versies van de [!DNL Commerce] -toepassing.
 

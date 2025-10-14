@@ -17,25 +17,25 @@ Wanneer u klaar bent om uw opslag op te stellen, moet u plaatsing en het testen 
 
 >[!TIP]
 >
->De Adobe adviseert het creëren van a [ steun ](../storage/snapshots.md) van het milieu vóór plaatsingen.
+>De Adobe adviseert het creëren van a [&#x200B; steun &#x200B;](../storage/snapshots.md) van het milieu vóór plaatsingen.
 
-Ook, kunt u [ plaatsingen van het Spoor met New Relic ](../monitor/track-deployments.md) toelaten om plaatsingsgebeurtenissen te controleren en u te helpen prestaties tussen plaatsingen analyseren.
+Ook, kunt u [&#x200B; plaatsingen van het Spoor met New Relic &#x200B;](../monitor/track-deployments.md) toelaten om plaatsingsgebeurtenissen te controleren en u te helpen prestaties tussen plaatsingen analyseren.
 
 ## Startimplementatiestroom
 
 Adobe raadt u aan een `staging` -vertakking van de `master` -vertakking te maken om de ontwikkeling en implementatie van uw Starter-abonnement het beste te ondersteunen. Dan hebt u twee van uw vier actieve milieu&#39;s klaar: `master` voor Productie en `staging` voor Staging.
 
-Voor gedetailleerde informatie van het proces, zie [ Begin Ontwikkelen en Werkschema ](../architecture/starter-develop-deploy-workflow.md) opstellen.
+Voor gedetailleerde informatie van het proces, zie [&#x200B; Begin Ontwikkelen en Werkschema &#x200B;](../architecture/starter-develop-deploy-workflow.md) opstellen.
 
 ## Pro-implementatiestroom
 
 Pro wordt geleverd met een grote integratieomgeving met twee actieve vertakkingen, een globale `master` vertakking, Staging en Production vertakkingen. Wanneer u uw project creeert, is de code klaar om zich te vertakken, te ontwikkelen, en te duwen voor de bouw van en het opstellen van uw plaats. Hoewel de integratieomgeving vele vertakkingen kan hebben, hebben het Staging en de Productie slechts één tak voor elk milieu.
 
-Voor gedetailleerde informatie van het proces, zie [ Pro Ontwikkelen en Werkschema ](../architecture/pro-develop-deploy-workflow.md) opstellen.
+Voor gedetailleerde informatie van het proces, zie [&#x200B; Pro Ontwikkelen en Werkschema &#x200B;](../architecture/pro-develop-deploy-workflow.md) opstellen.
 
 ## Code implementeren naar fasering
 
-De het Staging milieu verstrekt een bijna-productiemilieu dat een gegevensbestand, Webserver, en alle diensten met inbegrip van Fastly en New Relic omvat. U kunt volledig duwen, samenvoegen, en door [[!DNL Cloud Console]](../project/overview.md) of [ Cloud CLI bevelen ](../dev-tools/cloud-cli-overview.md) door een eindtoepassing opstellen.
+De het Staging milieu verstrekt een bijna-productiemilieu dat een gegevensbestand, Webserver, en alle diensten met inbegrip van Fastly en New Relic omvat. U kunt volledig duwen, samenvoegen, en door [[!DNL Cloud Console]](../project/overview.md) of [&#x200B; Cloud CLI bevelen &#x200B;](../dev-tools/cloud-cli-overview.md) door een eindtoepassing opstellen.
 
 ### Code implementeren met de [!DNL Cloud Console]
 
@@ -43,24 +43,24 @@ De het Staging milieu verstrekt een bijna-productiemilieu dat een gegevensbestan
 
 **voor Pro projecten, stel de integratietak aan het opvoeren** op:
 
-1. [ Login ](https://accounts.magento.cloud) aan uw project.
+1. [&#x200B; Login &#x200B;](https://accounts.magento.cloud) aan uw project.
 1. Selecteer de `integration` -vertakking.
 1. Selecteer de **optie van de Fusie** om aan het Opvoeren op te stellen.
 
-   ![ Fusie ](../../assets/button-merge.png){width="150"}
+   ![&#x200B; Fusie &#x200B;](../../assets/button-merge.png){width="150"}
 
-1. Voltooi al [ het testen ](../test/staging-and-production.md) in het milieu van het Staging.
+1. Voltooi al [&#x200B; het testen &#x200B;](../test/staging-and-production.md) in het milieu van het Staging.
 1. Wanneer het Staging klaar is, selecteer de **1&rbrace; optie van de Fusie &lbrace;om aan Productie op te stellen.**
 
 **voor Begin, stel de ontwikkelingstak aan het opvoeren** op:
 
-1. [ Login ](https://accounts.magento.cloud) aan uw project.
+1. [&#x200B; Login &#x200B;](https://accounts.magento.cloud) aan uw project.
 1. Selecteer de voorbereide codevertakking.
 1. Selecteer de **optie van de Fusie** om aan het Opvoeren op te stellen.
 
-   ![ Fusie ](../../assets/button-merge.png){width="150"}
+   ![&#x200B; Fusie &#x200B;](../../assets/button-merge.png){width="150"}
 
-1. Voltooi al [ het testen ](../test/staging-and-production.md) in het milieu van het Staging.
+1. Voltooi al [&#x200B; het testen &#x200B;](../test/staging-and-production.md) in het milieu van het Staging.
 1. Wanneer het Staging klaar is, selecteer de **1&rbrace; optie van de Fusie &lbrace;om aan Productie (`master`) op te stellen.**
 
 ### Code implementeren met de opdrachtregel
@@ -139,7 +139,7 @@ De Cloud CLI bevat opdrachten voor het implementeren van code. U hebt SSH en Git
 
 ## Statische bestanden migreren
 
-[ de Statische dossiers ](https://experienceleague.adobe.com/nl/docs/commerce-operations/implementation-playbook/glossary) worden opgeslagen in `mounts`. Er zijn twee methoden voor het migreren van bestanden van een bronmontagelocatie, zoals uw lokale omgeving, naar een doellocatie. Beide methoden gebruiken het hulpprogramma `rsync` , maar Adobe raadt u aan de CLI van `magento-cloud` te gebruiken om bestanden tussen de lokale en externe omgeving te verplaatsen. En Adobe raadt u aan de methode `rsync` te gebruiken wanneer u bestanden van een externe bron naar een andere externe locatie verplaatst.
+[&#x200B; de Statische dossiers &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/implementation-playbook/glossary) worden opgeslagen in `mounts`. Er zijn twee methoden voor het migreren van bestanden van een bronmontagelocatie, zoals uw lokale omgeving, naar een doellocatie. Beide methoden gebruiken het hulpprogramma `rsync` , maar Adobe raadt u aan de CLI van `magento-cloud` te gebruiken om bestanden tussen de lokale en externe omgeving te verplaatsen. En Adobe raadt u aan de methode `rsync` te gebruiken wanneer u bestanden van een externe bron naar een andere externe locatie verplaatst.
 
 ### Bestanden migreren met CLI
 
@@ -239,13 +239,13 @@ Zie [&#128279;](https://linux.die.net/man/1/rsync) hulp 0&rbrace; opnieuw synchr
 
 >[!BEGINSHADEBOX]
 
-**Vereiste:** Een gegevensbestandstortplaats (zie Stap 3) zou gegevensbestandtrekkers moeten omvatten. Voor het dumpen van hen, bevestig u het [ voorrechten van de TRIGGER ](https://dev.mysql.com/doc/refman/5.7/en/privileges-provided.html#priv_trigger) hebt.
+**Vereiste:** Een gegevensbestandstortplaats (zie Stap 3) zou gegevensbestandtrekkers moeten omvatten. Voor het dumpen van hen, bevestig u het [&#x200B; voorrechten van de TRIGGER &#x200B;](https://dev.mysql.com/doc/refman/5.7/en/privileges-provided.html#priv_trigger) hebt.
 
 >[!IMPORTANT]
 >
 >De gegevensbank van het integratiemilieu is strikt voor ontwikkelingstests en kan gegevens omvatten die u niet in het Opvoeren en Productie wilt migreren.
 
-Voor ononderbroken integratieplaatsingen, adviseert de Adobe **niet** migrerende gegevens van Integratie aan het Opvoeren en de Productie. U kunt testgegevens doorgeven of belangrijke gegevens overschrijven. Om het even welke vitale configuraties worden overgegaan gebruikend het [ configuratiedossier ](../store/store-settings.md) en `setup:upgrade` bevel tijdens bouwstijl en opstellen.
+Voor ononderbroken integratieplaatsingen, adviseert de Adobe **niet** migrerende gegevens van Integratie aan het Opvoeren en de Productie. U kunt testgegevens doorgeven of belangrijke gegevens overschrijven. Om het even welke vitale configuraties worden overgegaan gebruikend het [&#x200B; configuratiedossier &#x200B;](../store/store-settings.md) en `setup:upgrade` bevel tijdens bouwstijl en opstellen.
 
 >[!ENDSHADEBOX]
 
@@ -257,11 +257,11 @@ Adobe **adviseert** migrerend gegevens van Productie in het Opvoeren om uw plaat
 
 ### Back-up maken van de database
 
-U kunt het beste een back-up van de database maken. De volgende procedure gebruikt de begeleiding van [ file het gegevensbestand ](../storage/database-dump.md).
+U kunt het beste een back-up van de database maken. De volgende procedure gebruikt de begeleiding van [&#x200B; file het gegevensbestand &#x200B;](../storage/database-dump.md).
 
 **om het gegevensbestand** te dumpen:
 
-1. [ SSH van het Gebruik aan login aan het verre milieu ](../development/secure-connections.md#use-an-ssh-command) dat het gegevensbestand aan exemplaar bevat.
+1. [&#x200B; SSH van het Gebruik aan login aan het verre milieu &#x200B;](../development/secure-connections.md#use-an-ssh-command) dat het gegevensbestand aan exemplaar bevat.
 
 1. Maak een lijst van de omgevingsverhoudingen en neem nota van de gegevens van de gegevensbestandlogin.
 
@@ -303,7 +303,7 @@ Bij het importeren van gegevens moet u een database neerzetten en maken.
 
 **om het gegevensbestand** te laten vallen en opnieuw te creëren:
 
-1. Vestig een [ tunnel van SSH ](../development/secure-connections.md#ssh-tunneling) aan het verre milieu.
+1. Vestig een [&#x200B; tunnel van SSH &#x200B;](../development/secure-connections.md#ssh-tunneling) aan het verre milieu.
 
 1. Maak verbinding met de databaseservice.
 

@@ -29,9 +29,9 @@ Voorbeelden voor de domeinen Productie en Staging:
 - `mcprod.your-store.com`
 - `mcstaging.your-store.com`
 
-Zie [ Opstelling veelvoudige websites of opslag ](../cloud-guide/store/multiple-sites.md) in _Commerce op de gids van de Infrastructuur van de Wolk_ voor verdere begeleiding op veelvoudige of unieke domeinen.
+Zie [&#x200B; Opstelling veelvoudige websites of opslag &#x200B;](../cloud-guide/store/multiple-sites.md) in _Commerce op de gids van de Infrastructuur van de Wolk_ voor verdere begeleiding op veelvoudige of unieke domeinen.
 
-Zie [ Veelvoudige Snelle Rekeningen en toegewezen domeinen ](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/cdn/fastly#multiple-fastly-accounts-and-assigned-domains){target="_blank"}  als u een bestaande Fastly rekening hebt die de zelfde apex en subdomeinen verbindt die op uw plaats van Adobe Commerce worden gebruikt.
+Zie [&#x200B; Veelvoudige Snelle Rekeningen en toegewezen domeinen &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/cdn/fastly#multiple-fastly-accounts-and-assigned-domains){target="_blank"}  als u een bestaande Fastly rekening hebt die de zelfde apex en subdomeinen verbindt die op uw plaats van Adobe Commerce worden gebruikt.
 
 ## Transactioneel e-maildomein
 
@@ -41,7 +41,7 @@ Adobe Commerce on Cloud gebruikt de SendGrid Simple Mail Transfer Protocol (SMTP
 
 Voorbeeld voor SendGrid-domein: `example@your-store.com`
 
-Zie [ de postdienst SendGrid ](../cloud-guide/project/sendgrid.md) in _Commerce op de 3&rbrace; gids van de Infrastructuur van de Wolk voor verdere begeleiding over transactie e-mail en domeinmontages._
+Zie [&#x200B; de postdienst SendGrid &#x200B;](../cloud-guide/project/sendgrid.md) in _Commerce op de 3&rbrace; gids van de Infrastructuur van de Wolk voor verdere begeleiding over transactie e-mail en domeinmontages._
 
 ## Opslagtoewijzing
 
@@ -53,7 +53,7 @@ De hoeveelheid opslagruimte die u hebt gecontracteerd voor uw cloudproject, vert
 
 U kunt uw gecontracteerde opslag op elk ogenblik verhogen. Voor Pro Production- en Staging-omgevingen moet u een Adobe Commerce Support-ticket indienen om de toewijzing van schijfruimte te wijzigen. Een grootteverhoging van de milieu&#39;s van de Proproductie en van het Staging kan slechts met bepaalde intervallen voorkomen. Afhankelijk van uw huidige gebruik van schijfruimte, zou het steunteam kunnen adviseren om de toewijzing van schijfruimte met een minimum van 10 GB te verhogen. Zodra toegewezen, kan de opslagverhoging voor Pro het Opvoeren en Productie **niet** worden teruggedraaid.
 
-Zie [ schijfruimte beheren ](../cloud-guide/storage/manage-disk-space.md) in _Commerce op de gids van de Infrastructuur van de Wolk_.
+Zie [&#x200B; schijfruimte beheren &#x200B;](../cloud-guide/storage/manage-disk-space.md) in _Commerce op de gids van de Infrastructuur van de Wolk_.
 
 ## Cloud-servicegebied
 
@@ -61,7 +61,7 @@ Zie [ schijfruimte beheren ](../cloud-guide/storage/manage-disk-space.md) in _Co
 
 Kies Amazon Web Services (AWS) of Microsoft Azure als uw IaaS-stichting (Infrastructure as a Service) voor uw Adobe Commerce op cloudinfrasinfrastructuurPro-projecten. Elke dienstverlener werkt in veelvoudige gebieden en verstrekt veelvoudige beschikbaarheidsstreken. Selecteer een gebied dat u op uw locatie handig vindt en verminder de mogelijkheden voor latentie en hogere kosten.
 
-Zie [ een kaart van de wolkengebieden van Adobe Commerce ](../cloud-guide/overview.md).
+Zie [&#x200B; een kaart van de wolkengebieden van Adobe Commerce &#x200B;](../cloud-guide/overview.md).
 
 ## Verbindingsservice
 
@@ -77,10 +77,10 @@ Het is belangrijk dat u rekening houdt met uw cloudservicestrategie (AWS of Azur
 
 Voor het starten van een site is iteratieve configuratie en tests vereist om te kunnen garanderen dat de site correct wordt gestart. Door een doeldatum in te stellen, kunnen u en uw accountteam van de Adobe voorbereidingen treffen voor de laatste, aan de lancering voorafgaande activiteiten, die een oproep omvatten om de laatste stappen te coördineren.
 
-Zie het [ overzicht van de plaats van de Lancering ](../cloud-guide/launch/overview.md) in _Commerce op de gids van de Infrastructuur van de Wolk_ om het volledige proces te herzien en een exemplaar van checklist van de Lancering te downloaden.
+Zie het [&#x200B; overzicht van de plaats van de Lancering &#x200B;](../cloud-guide/launch/overview.md) in _Commerce op de gids van de Infrastructuur van de Wolk_ om het volledige proces te herzien en een exemplaar van checklist van de Lancering te downloaden.
 
 >[!TIP]
 >
 > Bekijk de Cloud-portal en open uw nieuwe cloud-project.
 >
->**Volgende stap**: [ Onboarding aan Commerce ](onboarding.md)
+>**Volgende stap**: [&#x200B; Onboarding aan Commerce &#x200B;](onboarding.md)

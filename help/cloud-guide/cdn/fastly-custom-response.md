@@ -13,11 +13,11 @@ ht-degree: 0%
 
 Wanneer een verzoek aan de Fastly oorsprong ontbreekt, keert de Snelle standaardreactiepagina&#39;s met basis het formatteren en generische overseinen terug die voor gebruikers kunnen verwarren. Bijvoorbeeld, kort keert de volgende standaardfoutenpagina terug wanneer een verzoek aan de Fastly oorsprong wegens een fout 503 ontbreekt.
 
-![ snelst standaardfoutenpagina ](../../assets/cdn/fastly-503-example.png)
+![&#x200B; snelst standaardfoutenpagina &#x200B;](../../assets/cdn/fastly-503-example.png)
 
 U kunt uw Adobe Commerce-winkelconfiguratie bijwerken en zo sommige standaardresponspagina&#39;s vervangen door pagina&#39;s met vriendelijker berichten en verbeterde HTML-opmaak, zoals in het volgende voorbeeld wordt getoond.
 
-![ de pagina van de de douanefout van de snelheid &lbrace;](../../assets/cdn/fastly-new-error-page.png)
+![&#x200B; de pagina van de de douanefout van de snelheid &lbrace;](../../assets/cdn/fastly-new-error-page.png)
 
 Momenteel kunt u de volgende snelstresponspagina&#39;s aanpassen voor uw Adobe Commerce-project voor cloudinfrastructuur.
 
@@ -30,7 +30,7 @@ De HTML-code voor de aangepaste pagina moet aan de volgende vereisten voldoen:
 
 - Inhoud kan maximaal 65.535 tekens bevatten.
 - Geef alle CSS inline op in de HTML-bron.
-- Bundel afbeeldingen op de pagina HTML met base64, zodat ze ook worden weergegeven als Fastly offline is. Zie [ Gegevens URIs op de css-tricks plaats ](https://css-tricks.com/data-uris/).
+- Bundel afbeeldingen op de pagina HTML met base64, zodat ze ook worden weergegeven als Fastly offline is. Zie [&#x200B; Gegevens URIs op de css-tricks plaats &#x200B;](https://css-tricks.com/data-uris/).
 
 ## De pagina met 503 fouten aanpassen
 
@@ -63,13 +63,13 @@ De aangepaste reactiepagina toevoegen aan de snelconfiguratie:
 
 1. In de juiste ruit, breid **het Volledige Geheime voorgeheugen van de Pagina uit** Snelle Configuratie **>** de Synthetische Pagina&#39;s van de Douane **.**
 
-   ![ geef 503 foutenpagina ](../../assets/cdn/fastly-custom-synthetic-pages-edit-html.png) uit
+   ![&#x200B; geef 503 foutenpagina &#x200B;](../../assets/cdn/fastly-custom-synthetic-pages-edit-html.png) uit
 
 1. Selecteer **Vastgestelde HTML**.
 
 1. Kopieer en plak de broncode voor de aangepaste reactiepagina in het veld HTML.
 
-   ![ Update 503 foutenpagina ](../../assets/cdn/fastly-customize-503-response.png)
+   ![&#x200B; Update 503 foutenpagina &#x200B;](../../assets/cdn/fastly-customize-503-response.png)
 
 1. Selecteer **uploaden** bij de bovenkant van de pagina om de aangepaste bron van HTML aan de Snelste server te uploaden.
 
@@ -83,9 +83,9 @@ De aangepaste reactiepagina toevoegen aan de snelconfiguratie:
 
 ## De WAF-foutpagina aanpassen
 
-De klanten zien de volgende standaard de foutenpagina van WAF wanneer een verzoek aan de Fastly oorsprong met een `403 Forbidden` fout ontbreekt die door a [ wordt veroorzaakt WAF ](fastly-waf-service.md) blokkerende gebeurtenis.
+De klanten zien de volgende standaard de foutenpagina van WAF wanneer een verzoek aan de Fastly oorsprong met een `403 Forbidden` fout ontbreekt die door a [&#x200B; wordt veroorzaakt WAF &#x200B;](fastly-waf-service.md) blokkerende gebeurtenis.
 
-![ de foutenpagina van WAF ](../../assets/cdn/fastly-waf-403-error.png)
+![&#x200B; de foutenpagina van WAF &#x200B;](../../assets/cdn/fastly-waf-403-error.png)
 
 In het volgende codevoorbeeld wordt de HTML-bron voor de standaardpagina getoond:
 
@@ -115,19 +115,19 @@ U kunt de **Synthetische Pagina&#39;s van de Douane gebruiken** > **geeft de pag
 
 **om de de foutenpagina van WAF uit te geven**:
 
-1. [ Login aan Admin ](../../get-started/onboarding.md#access-your-admin-panel).
+1. [&#x200B; Login aan Admin &#x200B;](../../get-started/onboarding.md#access-your-admin-panel).
 
 1. Selecteer **>** Montages **>** Configuratie **>** Geavanceerd **>** Systeem **.**
 
 1. In de juiste ruit, breid **het Volledige Geheime voorgeheugen van de Pagina uit** Snelle Configuratie **>** de Synthetische Pagina&#39;s van de Douane **.**
 
-   ![ geef de de foutenpagina van WAF optie ](../../assets/cdn/fastly-custom-synthetic-pages-edit-waf.png) uit
+   ![&#x200B; geef de de foutenpagina van WAF optie &#x200B;](../../assets/cdn/fastly-custom-synthetic-pages-edit-waf.png) uit
 
 1. Selecteer **uitgeven de pagina van WAF**.
 
 1. Vul de velden in om de HTML bij te werken.
 
-   ![ de foutenpagina van WAF van de Update ](../../assets/cdn/fastly-edit-waf-html.png)
+   ![&#x200B; de foutenpagina van WAF van de Update &#x200B;](../../assets/cdn/fastly-edit-waf-html.png)
 
    - **Status** - selecteer de `403 Forbidden` status.
    - **MIME type** — Type `text/html`.

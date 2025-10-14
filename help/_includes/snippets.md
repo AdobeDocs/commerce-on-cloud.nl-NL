@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De projecten die vóór 5 juni 2020 werden verstrekt hadden veelvoudige, kleinere milieu&#39;s van de Integratie. Als u een grotere milieu van de Integratie voor het testen en de ontwikkeling nodig hebt, verzoek om een verbetering aan Verbeterde milieu&#39;s van de Integratie. Zie het [ verzoek van het Milieu van de Integratie ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html?lang=nl-NL) artikel in het _Centrum van de Hulp van Adobe Commerce_ voor details.
+>De projecten die vóór 5 juni 2020 werden verstrekt hadden veelvoudige, kleinere milieu&#39;s van de Integratie. Als u een grotere milieu van de Integratie voor het testen en de ontwikkeling nodig hebt, verzoek om een verbetering aan Verbeterde milieu&#39;s van de Integratie. Zie het [&#x200B; verzoek van het Milieu van de Integratie &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html?lang=nl-NL) artikel in het _Centrum van de Hulp van Adobe Commerce_ voor details.
 
 ## Samenvoegopties {#merge-options}
 
@@ -38,15 +38,15 @@ Stel de optie `_merge` in op een van de volgende opties:
 
 >[!WARNING]
 >
->Sommige **Pro projecten** vereisen een steunkaartje om de routeconfiguratie in het `routes.yaml` dossier en de kroonconfiguratie in het `.magento.app.yaml` dossier bij te werken. Adobe raadt aan YAML-configuratiebestanden bij te werken en te testen in een integratieomgeving en vervolgens wijzigingen in de staging-omgeving in te voeren. Als uw veranderingen niet op het Opvoeren plaatsen na u worden toegepast en er geen verwante foutenmeldingen in het logboek zijn, dan MOET u **&#x200B;**&#x200B;een kaartje van de Steun van Adobe Commerce [ voorleggen dat de geprobeerd configuratieveranderingen beschrijft. ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) Neem de bijgewerkte YAML-configuratiebestanden op in het ticket.
+>Sommige **Pro projecten** vereisen een steunkaartje om de routeconfiguratie in het `routes.yaml` dossier en de kroonconfiguratie in het `.magento.app.yaml` dossier bij te werken. Adobe raadt aan YAML-configuratiebestanden bij te werken en te testen in een integratieomgeving en vervolgens wijzigingen in de staging-omgeving in te voeren. Als uw veranderingen niet op het Opvoeren plaatsen na u worden toegepast en er geen verwante foutenmeldingen in het logboek zijn, dan MOET u **&#x200B;**&#x200B;een kaartje van de Steun van Adobe Commerce [&#x200B; voorleggen dat de geprobeerd configuratieveranderingen beschrijft. &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) Neem de bijgewerkte YAML-configuratiebestanden op in het ticket.
 
 ## Pro-services-ondersteuning {#pro-update-service}
 
 >[!BEGINSHADEBOX]
 
-- Voor Pro projecten, moet u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voorleggen om [ diensten ](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/configure/service/services-yaml.html?lang=nl-NL) in `Staging` en `Production` slechts milieu&#39;s te installeren of bij te werken.
+- Voor Pro projecten, moet u [&#x200B; een kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voorleggen om [&#x200B; diensten &#x200B;](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/configure/service/services-yaml.html?lang=nl-NL) in `Staging` en `Production` slechts milieu&#39;s te installeren of bij te werken.
 
-- Geef aan welke servicewijzigingen nodig zijn, neem de bijgewerkte `.magento.app.yaml` - en `services.yaml` -bestanden op en geef de PHP-versie op in het ticket. Voor zelfbedienings veranderingen in PHP versie, uitbreidingen, of milieu montages, zie [ PHP montages ](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/configure/app/php-settings.html?lang=nl-NL) in _configuratie van de Toepassing_.
+- Geef aan welke servicewijzigingen nodig zijn, neem de bijgewerkte `.magento.app.yaml` - en `services.yaml` -bestanden op en geef de PHP-versie op in het ticket. Voor zelfbedienings veranderingen in PHP versie, uitbreidingen, of milieu montages, zie [&#x200B; PHP montages &#x200B;](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/configure/app/php-settings.html?lang=nl-NL) in _configuratie van de Toepassing_.
 
 - Voor veranderingen in een levende milieu van de Productie (**slechts Pro**), wordt een minimum van 48 uurverklaring vereist. Hierdoor kan het infrastructuurteam van de cloud voldoende tijd krijgen om bronnen te bundelen en een veilige upgrade uit te voeren. De opzegtermijn begint wanneer het infrastructuurteam de aanvraag erkent en de upgrade plant, met uitzondering van weekends. Bijvoorbeeld, om de dienstverbeteringen te hebben op een maandag worden voltooid, moet een erkenning van de geplande verbetering tegen Woensdag worden ontvangen. Tijdens piekvraagperiodes, zou het meer tijd kunnen vergen om uw verzoek te verwerken.
 
@@ -56,9 +56,9 @@ Stel de optie `_merge` in op een van de volgende opties:
 
 >[!TIP]
 >
->Op Pro het Opvoeren en de milieu&#39;s van de Productie, moet u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voorleggen om een specifieke steun terug te winnen noterend de datum, de tijd, en de tijdzone in het kaartje.
+>Op Pro het Opvoeren en de milieu&#39;s van de Productie, moet u [&#x200B; een kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voorleggen om een specifieke steun terug te winnen noterend de datum, de tijd, en de tijdzone in het kaartje.
 >
->Adobe herstelt **&#x200B;**&#x200B;geen milieu&#39;s van een automatische steun. Zie [ herstellen een momentopname van DB van het Opvoeren of Productie ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production.html?lang=nl-NL) voor hulp die een methode kiezen om een het Opname van het Opvoeren of van de Productie te herstellen.
+>Adobe herstelt **&#x200B;**&#x200B;geen milieu&#39;s van een automatische steun. Zie [&#x200B; herstellen een momentopname van DB van het Opvoeren of Productie &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production.html?lang=nl-NL) voor hulp die een methode kiezen om een het Opname van het Opvoeren of van de Productie te herstellen.
 
 ## Waarschuwing bij opnieuw implementeren {#redeploy-warning}
 
@@ -70,7 +70,7 @@ Stel de optie `_merge` in op een van de volgende opties:
 
 >[!NOTE]
 >
->De volgende voorbeelden van de routeconfiguratie gebruiken routesjablonen met placeholders. De tijdelijke aanduiding `{default}` vertegenwoordigt het standaarddomein dat voor uw site is geconfigureerd. Als uw project veelvoudige domeinen heeft, gebruik placeholder `{all}` om het verpletteren voor het standaarddomein en alle aliassen te vormen. Zie [ routes ](/help/cloud-guide/routes/routes-yaml.md) vormen.
+>De volgende voorbeelden van de routeconfiguratie gebruiken routesjablonen met placeholders. De tijdelijke aanduiding `{default}` vertegenwoordigt het standaarddomein dat voor uw site is geconfigureerd. Als uw project veelvoudige domeinen heeft, gebruik placeholder `{all}` om het verpletteren voor het standaarddomein en alle aliassen te vormen. Zie [&#x200B; routes &#x200B;](/help/cloud-guide/routes/routes-yaml.md) vormen.
 
 ## SCD-timing {#scd-timing-warning}
 
@@ -82,13 +82,13 @@ Stel de optie `_merge` in op een van de volgende opties:
 
 >[!NOTE]
 >
->Met [!DNL ECE-Tools] 2002.1.0 en hoger kunt u de op scenario&#39;s gebaseerde implementatiefunctie gebruiken om de build-, implementatie- en postimplementatieprocessen voor uw Adobe Commerce aan te passen in het infrastructuurproject in de cloud. Zie [ op scenario-Gebaseerde plaatsing ](/help/cloud-guide/deploy/scenario-based.md).
+>Met [!DNL ECE-Tools] 2002.1.0 en hoger kunt u de op scenario&#39;s gebaseerde implementatiefunctie gebruiken om de build-, implementatie- en postimplementatieprocessen voor uw Adobe Commerce aan te passen in het infrastructuurproject in de cloud. Zie [&#x200B; op scenario-Gebaseerde plaatsing &#x200B;](/help/cloud-guide/deploy/scenario-based.md).
 
 ## Tweede fasering {#second-staging}
 
 >[!NOTE]
 >
->Sommige projecten vereisen een meer geavanceerd ontwikkelingswerkschema. Om deze behoefte te steunen, biedt Adobe een [ extra het opvoeren milieu ](/help/cloud-guide/test/second-staging.md) als toe:voegen-op optie aan uw wolkeninfrastructuur aan.
+>Sommige projecten vereisen een meer geavanceerd ontwikkelingswerkschema. Om deze behoefte te steunen, biedt Adobe een [&#x200B; extra het opvoeren milieu &#x200B;](/help/cloud-guide/test/second-staging.md) als toe:voegen-op optie aan uw wolkeninfrastructuur aan.
 
 ## Serviceinstructie {#service-instruction}
 
@@ -96,25 +96,25 @@ Gebruik de volgende instructies voor de dienstopstelling op de milieu&#39;s van 
 
 >[!NOTE]
 >
->[ leg een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voor om de de dienstconfiguratie op ProProductie en het Opvoeren milieu&#39;s te veranderen.
+>[&#x200B; leg een kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voor om de de dienstconfiguratie op ProProductie en het Opvoeren milieu&#39;s te veranderen.
 
 ## Servicewijziging {#service-change-tip}
 
 >[!TIP]
 >
->Nadat u de service hebt ingesteld, kunt u de softwareversie van een geïnstalleerde service wijzigen door de configuratiebestanden van `services.yaml` en `.magento.app.yaml` bij te werken. Zie [ de dienstversie van de Verandering ](/help/cloud-guide/services/services-yaml.md#change-service-version) voor begeleiding bij de bevordering of het degraderen van de dienst.
+>Nadat u de service hebt ingesteld, kunt u de softwareversie van een geïnstalleerde service wijzigen door de configuratiebestanden van `services.yaml` en `.magento.app.yaml` bij te werken. Zie [&#x200B; de dienstversie van de Verandering &#x200B;](/help/cloud-guide/services/services-yaml.md#change-service-version) voor begeleiding bij de bevordering of het degraderen van de dienst.
 
 ## Tip voor implementatie stoppen {#stuck-deployment-tip}
 
 >[!TIP]
 >
->Voor hulp met gestadige plaatsingen, gebruik [ de plaatsingslos van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html?lang=nl-NL) in het _Centrum van de Hulp van Commerce_.
+>Voor hulp met gestadige plaatsingen, gebruik [&#x200B; de plaatsingslos van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html?lang=nl-NL) in het _Centrum van de Hulp van Commerce_.
 
 ## Bijwerken naar ECE-gereedschappen {#ece-tools-package}
 
 >[!NOTE]
 >
->Als u een versie van Adobe Commerce op wolkeninfrastructuur gebruikt die niet het `ece-tools` pakket bevat, dan moet u a [ éénmalige verbetering ](/help/cloud-guide/dev-tools/install-package.md) aan uw wolkenproject uitvoeren om verouderde pakketten te verwijderen. Als u momenteel het `ece-tools` pakket gebruikt en u het moet bijwerken, zie [ Update het ECE-Hulppakket ](/help/cloud-guide/dev-tools/update-package.md).
+>Als u een versie van Adobe Commerce op wolkeninfrastructuur gebruikt die niet het `ece-tools` pakket bevat, dan moet u a [&#x200B; éénmalige verbetering &#x200B;](/help/cloud-guide/dev-tools/install-package.md) aan uw wolkenproject uitvoeren om verouderde pakketten te verwijderen. Als u momenteel het `ece-tools` pakket gebruikt en u het moet bijwerken, zie [&#x200B; Update het ECE-Hulppakket &#x200B;](/help/cloud-guide/dev-tools/update-package.md).
 
 ## Upgradetip {#upgrade-tip}
 
@@ -126,12 +126,12 @@ Gebruik de volgende instructies voor de dienstopstelling op de milieu&#39;s van 
 
 ## Aanmelden bij beheerder {#admin-login-step}
 
-1. [ Login ](/help/get-started/onboarding.md#access-your-admin-panel) aan Admin.
+1. [&#x200B; Login &#x200B;](/help/get-started/onboarding.md#access-your-admin-panel) aan Admin.
 
 ## Aangepaste implementatie van VCL-fragmenten automatiseren {#automate-vcl-snippet-deployment}
 
 >[!NOTE]
 >
->In plaats van handmatig aangepaste VCL-fragmenten te uploaden, kunt u fragmenten toevoegen aan de map `$MAGENTO_CLOUD_APP_DIR/var/vcl_snippets_custom` in uw omgeving. De fragmenten in deze folder uploaden automatisch wanneer u _klikt uploadt VCL aan Fastly_ in Commerce Admin. Zie [ Geautomatiseerde plaatsing van de fragmenten VCL van douaneVCL ](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/CUSTOM-VCL-SNIPPETS.md#automated-custom-vcl-snippets-deployment) in de Fastly CDN module voor Magento 2 documentatie.
+>In plaats van handmatig aangepaste VCL-fragmenten te uploaden, kunt u fragmenten toevoegen aan de map `$MAGENTO_CLOUD_APP_DIR/var/vcl_snippets_custom` in uw omgeving. De fragmenten in deze folder uploaden automatisch wanneer u _klikt uploadt VCL aan Fastly_ in Commerce Admin. Zie [&#x200B; Geautomatiseerde plaatsing van de fragmenten VCL van douaneVCL &#x200B;](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/CUSTOM-VCL-SNIPPETS.md#automated-custom-vcl-snippets-deployment) in de Fastly CDN module voor Magento 2 documentatie.
 
 <!-- Fastly-related snippets end -->

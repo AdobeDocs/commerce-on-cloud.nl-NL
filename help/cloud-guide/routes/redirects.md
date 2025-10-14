@@ -23,7 +23,7 @@ In het volgende voorbeeld ziet u hoe u omleidingsregels voor uw Adobe Commerce k
 
 >[!WARNING]
 >
->Voor Adobe Commerce op projecten met cloudinfrastructuur kan het configureren van een groot aantal niet-regex omleidingen en herschrijvingen in het `routes.yaml` -bestand prestatieproblemen veroorzaken. Als het `routes.yaml` -bestand 32 kB of groter is, kunt u de niet-regex omleiden en snel herschrijven. Zie [ de niet-regex van de Offload richt aan Fastly in plaats van Nginx (routes) ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/offload-non-regex-redirects-to-fastly-instead-of-nginx-routes.html?lang=nl-NL) in het _Centrum van de Hulp van Adobe Commerce_.
+>Voor Adobe Commerce op projecten met cloudinfrastructuur kan het configureren van een groot aantal niet-regex omleidingen en herschrijvingen in het `routes.yaml` -bestand prestatieproblemen veroorzaken. Als het `routes.yaml` -bestand 32 kB of groter is, kunt u de niet-regex omleiden en snel herschrijven. Zie [&#x200B; de niet-regex van de Offload richt aan Fastly in plaats van Nginx (routes) &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/offload-non-regex-redirects-to-fastly-instead-of-nginx-routes.html?lang=nl-NL) in het _Centrum van de Hulp van Adobe Commerce_.
 
 ## Hele-routeomleidingen
 
@@ -66,7 +66,7 @@ Er zijn twee toetsen beschikbaar onder `redirects` :
   | `regexp` | Optioneel is de standaardwaarde `false` . Geeft aan of de padsleutel moet worden geïnterpreteerd als een reguliere PCRE-expressie. |
   | `prefix` | Hiermee geeft u aan of de omleiding van toepassing is op zowel het pad als alle onderliggende paden, of alleen op het pad zelf. Wordt standaard ingesteld op `true` . Deze waarde wordt niet ondersteund als `regexp` `true` is. |
   | `append_suffix` | Hiermee bepaalt u of het achtervoegsel wordt overgedragen met de omleiding. Wordt standaard ingesteld op `true` . Deze waarde wordt niet ondersteund als de `regexp` -toets `true` of* is als de `prefix` -toets `false` is. |
-  | `code` | Geeft de HTTP-statuscode op. Geldige statuscodes zijn [`301` (Geldig blijvend) ](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.3.2), [`302` ](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.3.3), [`307` ](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.3.8), en [`308` ](https://www.rfc-editor.org/rfc/rfc7238). Wordt standaard ingesteld op `302` . |
+  | `code` | Geeft de HTTP-statuscode op. Geldige statuscodes zijn [`301` (Geldig blijvend) &#x200B;](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.3.2), [`302` &#x200B;](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.3.3), [`307` &#x200B;](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.3.8), en [`308` &#x200B;](https://www.rfc-editor.org/rfc/rfc7238). Wordt standaard ingesteld op `302` . |
   | `expires` | Optioneel: hiermee geeft u aan hoeveel tijd u de omleiding in de browser in de cache wilt plaatsen. De standaardwaarde is de `expires` -waarde die rechtstreeks onder de `redirects` -toets wordt gedefinieerd, maar op dit niveau kunt u de vervaldatum van de cache voor afzonderlijke gedeeltelijke omleidingen perfectioneren. |
 
 ## Voorbeelden van gedeeltelijke-routeomleidingen

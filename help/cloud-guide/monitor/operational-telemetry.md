@@ -25,4 +25,4 @@ Klanten die toegang willen krijgen tot de operationele telemetriegegevens of de 
 
 >[!NOTE]
 >
->Zie [ Operationele Telemetrie ](https://www.aem.live/docs/operational-telemetry) om meer over de dienst te leren.
+>Zie [&#x200B; Operationele Telemetrie &#x200B;](https://www.aem.live/docs/operational-telemetry) om meer over de dienst te leren.

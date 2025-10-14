@@ -53,7 +53,7 @@ stage:
 - **Gebrek** - _niet plaatste_
 - **Versie** - Adobe Commerce 2.4.4 en later
 
-Als deze optie is ingesteld op `true` , worden Commerce-webhaken ingeschakeld. De webhaak wordt uitgevoerd op een extern eindpunt, zoals een App Builder-runtimeactie of een voorraadbeheersysteem van derden. De [_Gids van Webhooks_ ](https://developer.adobe.com/commerce/extensibility/webhooks) beschrijft deze eigenschap in detail.
+Als deze optie is ingesteld op `true` , worden Commerce-webhaken ingeschakeld. De webhaak wordt uitgevoerd op een extern eindpunt, zoals een App Builder-runtimeactie of een voorraadbeheersysteem van derden. De [_Gids van Webhooks_ &#x200B;](https://developer.adobe.com/commerce/extensibility/webhooks) beschrijft deze eigenschap in detail.
 
 ```yaml
 stage:
@@ -66,7 +66,7 @@ stage:
 - **Gebrek** - _niet plaats_
 - **Versie** - Adobe Commerce 2.1.4 en later
 
-Overschrijft het minimale registrerenniveau voor alle outputstromen zonder de code te veranderen, die wanneer het oplossen van problemenproblemen met plaatsing helpt. Bijvoorbeeld, als uw plaatsing ontbreekt, kunt u deze variabele gebruiken om de registrerengranulariteit globaal te verhogen. Zie [ niveaus van het Logboek ](log-handlers.md#log-levels). De `min_level` -waarde in Logging-handlers overschrijft deze instelling.
+Overschrijft het minimale registrerenniveau voor alle outputstromen zonder de code te veranderen, die wanneer het oplossen van problemenproblemen met plaatsing helpt. Bijvoorbeeld, als uw plaatsing ontbreekt, kunt u deze variabele gebruiken om de registrerengranulariteit globaal te verhogen. Zie [&#x200B; niveaus van het Logboek &#x200B;](log-handlers.md#log-levels). De `min_level` -waarde in Logging-handlers overschrijft deze instelling.
 
 ```yaml
 stage:
@@ -85,7 +85,7 @@ stage:
 
 Het genereren van statische inhoud op verzoek van een gebruiker (SCD) inschakelen. Statische inhoud op aanvraag is ideaal voor de ontwikkelings- en testworkflow, omdat hierdoor de implementatietijd afneemt.
 
-Het vooraf laden van de cache met behulp van de [`post_deploy` haak ](../application/hooks-property.md) verlaagt de downtime van de site. De opwarming van het geheime voorgeheugen is beschikbaar slechts voor Pro projecten die het Opvoeren en van de Productie milieu&#39;s in [!DNL Cloud Console] bevatten en voor de projecten van de Aanzet. Voeg de omgevingsvariabele `SCD_ON_DEMAND` toe aan het `global` werkgebied in het `.magento.env.yaml` -bestand:
+Het vooraf laden van de cache met behulp van de [`post_deploy` haak &#x200B;](../application/hooks-property.md) verlaagt de downtime van de site. De opwarming van het geheime voorgeheugen is beschikbaar slechts voor Pro projecten die het Opvoeren en van de Productie milieu&#39;s in [!DNL Cloud Console] bevatten en voor de projecten van de Aanzet. Voeg de omgevingsvariabele `SCD_ON_DEMAND` toe aan het `global` werkgebied in het `.magento.env.yaml` -bestand:
 
 ```yaml
 stage:
@@ -138,7 +138,7 @@ stage:
 - **Gebrek** - _niet plaats_
 - **Versie** - Adobe Commerce 2.3.0 en later
 
-[ Baler ](https://github.com/magento/baler) is een module die uw geproduceerde code van JavaScript aftasten en tot een geoptimaliseerde bundel van JavaScript leidt. Als u de geoptimaliseerde bundel op uw site implementeert, kan het aantal netwerkaanvragen bij het laden van uw site afnemen en de laadtijden van de pagina verbeteren.
+[&#x200B; Baler &#x200B;](https://github.com/magento/baler) is een module die uw geproduceerde code van JavaScript aftasten en tot een geoptimaliseerde bundel van JavaScript leidt. Als u de geoptimaliseerde bundel op uw site implementeert, kan het aantal netwerkaanvragen bij het laden van uw site afnemen en de laadtijden van de pagina verbeteren.
 
 Stel dit in op `true` om Baler uit te voeren nadat u statische inhoud hebt geïmplementeerd.
 
@@ -177,14 +177,14 @@ stage:
 - **Gebrek** - _niet plaats_
 - **Versie** - Adobe Commerce 2.1.4 en later
 
-Gebruik de `X_FRAME_CONFIGURATION` variabele om de [`X-Frame-Options` ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/security/xframe-options.html?lang=nl-NL) kopbalconfiguratie voor uw plaats van Adobe Commerce te veranderen. Deze configuratie bepaalt hoe de browser een pagina in een `<frame>`, `<iframe>` of `<object>` rendert. Gebruik een van de volgende opties:
+Gebruik de `X_FRAME_CONFIGURATION` variabele om de [`X-Frame-Options` &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/security/xframe-options.html?lang=nl-NL) kopbalconfiguratie voor uw plaats van Adobe Commerce te veranderen. Deze configuratie bepaalt hoe de browser een pagina in een `<frame>`, `<iframe>` of `<object>` rendert. Gebruik een van de volgende opties:
 
 - `DENY` - De pagina kan niet in een kader worden getoond.
 - `SAMEORIGIN`—(De standaard Adobe Commerce-instelling.) De pagina kan alleen worden weergegeven in een kader dat zich op dezelfde oorsprong bevindt als de pagina zelf.
 
 >[!WARNING]
 >
->De optie `ALLOW-FROM <uri>` is vervangen omdat deze niet meer wordt ondersteund door browsers die door Adobe Commerce worden ondersteund. Zie [ Browser verenigbaarheid ](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options#Browser_compatibility).
+>De optie `ALLOW-FROM <uri>` is vervangen omdat deze niet meer wordt ondersteund door browsers die door Adobe Commerce worden ondersteund. Zie [&#x200B; Browser verenigbaarheid &#x200B;](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options#Browser_compatibility).
 
 Voeg de omgevingsvariabele `X_FRAME_CONFIGURATION` toe aan het `global` werkgebied in het `.magento.env.yaml` -bestand:
 

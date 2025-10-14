@@ -76,7 +76,7 @@ De cacheduur wordt bepaald door de headerwaarde van `Cache-Control` response. Al
 
 ## Cachesleutel
 
-Om te beslissen hoe u een reactie in de cache plaatst, bouwt Adobe Commerce een cachemoets die afhankelijk is van verschillende factoren en slaat het de reactie op die aan deze toets is gekoppeld. Wanneer een verzoek met de zelfde geheim voorgeheugensleutel komt, wordt de reactie opnieuw gebruikt. Zijn doel is gelijkaardig aan de HTTP [`Vary` kopbal ](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.44).
+Om te beslissen hoe u een reactie in de cache plaatst, bouwt Adobe Commerce een cachemoets die afhankelijk is van verschillende factoren en slaat het de reactie op die aan deze toets is gekoppeld. Wanneer een verzoek met de zelfde geheim voorgeheugensleutel komt, wordt de reactie opnieuw gebruikt. Zijn doel is gelijkaardig aan de HTTP [`Vary` kopbal &#x200B;](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.44).
 
 Met de parameters `headers` en `cookies` -toetsen kunt u deze cachemoets wijzigen.
 
@@ -131,7 +131,7 @@ Er is een speciaal geval als de `cookies` -toets de `["*"]` -waarde heeft. Deze 
 
 Cookies hebben de volgende beperkingen:
 
-- Er is een vastgestelde maximum van **50 koekjes** in het systeem. Anders genereert de toepassing een `Unable to send the cookie. Maximum number of cookies would be exceeded` -uitzondering. Om het aantal koekjes aan 200 te verhogen, pas het [ MDVA-12304 flard ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=nl-NL) toe gebruikend het [ Hulpmiddel van de Patches van de Kwaliteit ](https://experienceleague.adobe.com/nl/docs/commerce-learn/tutorials/tools/quality-patch-tool).
+- Er is een vastgestelde maximum van **50 koekjes** in het systeem. Anders genereert de toepassing een `Unable to send the cookie. Maximum number of cookies would be exceeded` -uitzondering. Om het aantal koekjes aan 200 te verhogen, pas het [&#x200B; MDVA-12304 flard &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=nl-NL) toe gebruikend het [&#x200B; Hulpmiddel van de Patches van de Kwaliteit &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-learn/tutorials/tools/quality-patch-tool).
 - Een maximumkoekjesgrootte is **4096 bytes**. Anders genereert de toepassing een `Unable to send the cookie. Size of '%name' is %size bytes` -uitzondering.
 
 ### `default_ttl`

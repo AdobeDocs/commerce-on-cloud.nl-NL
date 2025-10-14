@@ -18,7 +18,7 @@ De gebruikers die administratieve toegang tot Adobe Commerce op het project van 
 
 U kunt de aanmeldingsgegevens van Admin-gebruikers tijdens de Commerce-installatie overschrijven met de ADMIN-variabelen in de volgende tabel.
 
-Als u de waarden na installatie wilt veranderen, verbind met uw milieu gebruikend SSH en gebruik het [`admin:user` bevel ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/admin.html?lang=nl-NL) van Adobe Commerce CLI om de Admin gebruikersgeloofsbrieven tot stand te brengen of uit te geven.
+Als u de waarden na installatie wilt veranderen, verbind met uw milieu gebruikend SSH en gebruik het [`admin:user` bevel &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/admin.html?lang=nl-NL) van Adobe Commerce CLI om de Admin gebruikersgeloofsbrieven tot stand te brengen of uit te geven.
 
 | Variabele | Standaard | Beschrijving |
 | -------------- | --------------------------- | ----------- |
@@ -49,13 +49,13 @@ magento-cloud variable:update ADMIN_URL --value newAdmin_A8v10 -e master
 
 **om URL te veranderen gebruikend[!DNL Cloud Console]**:
 
-1. Meld u aan bij de map [[!DNL Cloud Console] ](https://console.adobecommerce.com) .
+1. Meld u aan bij de map [[!DNL Cloud Console] &#x200B;](https://console.adobecommerce.com) .
 
 1. Selecteer een project van de _Alle projecten_ lijst.
 
 1. In het projectoverzicht, selecteer het milieu en klik het configuratiepictogram.
 
-   ![ de configuratie van het Project ](../../assets/icon-configure.png){width="36"}
+   ![&#x200B; de configuratie van het Project &#x200B;](../../assets/icon-configure.png){width="36"}
 
 1. Selecteer de **Variabelen** tabel.
 

@@ -20,7 +20,7 @@ New Relic verstrekt a _het beheer van Gegevens_ mening die uw plangebruik door g
 1. Klik in het gebruikersmenu van New Relic op **[!UICONTROL Manage your data]** .
 1. Klik **[!UICONTROL Data management]** in de _2&rbrace; lijst van het Beleid &lbrace;._
 
-   ![ het beheer van Gegevens ](../../assets/new-relic/data-ingestion.png)
+   ![&#x200B; het beheer van Gegevens &#x200B;](../../assets/new-relic/data-ingestion.png)
 
    Op het tabblad **[!UICONTROL Data ingestion]** worden gegevens weergegeven die voor de dag worden ingevoerd en de gegevensbron.
 Het tabblad voor gegevensbehoud geeft aan en bepaalt hoe lang gegevens worden opgeslagen.
@@ -33,4 +33,4 @@ Gegevensbronnen voor Adobe Commerce zijn onder meer:
 - **infrastructuur** - proces en gastheermetriek, zoals CPU, opslag, voorzien van een netwerk
 - **Logging** - logboeken voor CDN, APM, en toepassingsserver
 
-Loggegevens dragen bij tot een groot deel van de inname. Zie hoe te [ Mening en analyseer logboekgegevens ](log-management.md#view-and-analyze-log-data) en het werk met uw vertegenwoordiger van de Adobe om een strategie voor gegevensopname en behoudsbehoeften te vormen. Lees meer over [ het beheren van gegevens neemt ](https://docs.newrelic.com/docs/data-apis/manage-data/manage-data-coming-new-relic/) in de _documentatie van New Relic_ op.
+Loggegevens dragen bij tot een groot deel van de inname. Zie hoe te [&#x200B; Mening en analyseer logboekgegevens &#x200B;](log-management.md#view-and-analyze-log-data) en het werk met uw vertegenwoordiger van de Adobe om een strategie voor gegevensopname en behoudsbehoeften te vormen. Lees meer over [&#x200B; het beheren van gegevens neemt &#x200B;](https://docs.newrelic.com/docs/data-apis/manage-data/manage-data-coming-new-relic/) in de _documentatie van New Relic_ op.

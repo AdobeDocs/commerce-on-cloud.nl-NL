@@ -39,7 +39,7 @@ U verwijst Edge ACL door naam in uw VCL fragmentcode.
 
 >[!NOTE]
 >
->In dit voorbeeld ziet u hoe u geavanceerde gebruikers een VCL-codefragment kunt maken om aangepaste blokkeringsregels te configureren voor het uploaden naar de Fastly-service. U kunt een lijst van gewezen personen of een lijst van gewenste personen vormen die op land van Adobe Commerce wordt gebaseerd Admin gebruikend de [ Blokkerende ](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BLOCKING.md) eigenschap beschikbaar in Fastly CDN voor Magento 2 module.
+>In dit voorbeeld ziet u hoe u geavanceerde gebruikers een VCL-codefragment kunt maken om aangepaste blokkeringsregels te configureren voor het uploaden naar de Fastly-service. U kunt een lijst van gewezen personen of een lijst van gewenste personen vormen die op land van Adobe Commerce wordt gebaseerd Admin gebruikend de [&#x200B; Blokkerende &#x200B;](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BLOCKING.md) eigenschap beschikbaar in Fastly CDN voor Magento 2 module.
 
 Nadat u Edge ACL bepaalt, kunt u het gebruiken om het fragment tot stand te brengen VCL om toegang tot de IP adressen te blokkeren die in ACL worden gespecificeerd. U kunt hetzelfde VCL-fragment gebruiken in zowel de testomgeving als de productieomgeving, maar u moet het fragment afzonderlijk uploaden naar elke omgeving.
 
@@ -61,15 +61,15 @@ Voordat u een op dit voorbeeld gebaseerd fragment maakt, controleert u de waarde
 
 - `priority`: hiermee wordt bepaald wanneer het VCL-fragment wordt uitgevoerd. De prioriteit is `5` om onmiddellijk in werking te stellen en te controleren of een Admin- verzoek uit een toegestaan IP adres komt. Het fragment loopt vóór om het even welke standaardMagento VCL fragmenten (`magentomodule_*`) toegewezen een prioriteit van 50. Stel de prioriteit voor elk aangepast fragment in op een waarde hoger of lager dan 50, afhankelijk van het tijdstip waarop het fragment moet worden uitgevoerd. Fragmenten met een lagere prioriteit worden eerst uitgevoerd.
 
-- `type` - Geeft het type VCL-fragment op dat de locatie van het fragment in de gegenereerde VCL-code bepaalt. In dit voorbeeld gebruiken we `recv` , dat de VCL-code in de `vcl_recv` -subroutine invoegt, onder de vaste plaat VCL en boven alle objecten. Zie de [ Snelle VCL fragmentverwijzing ](https://docs.fastly.com/api/config#api-section-snippet) voor de lijst van fragmenttypes.
+- `type` - Geeft het type VCL-fragment op dat de locatie van het fragment in de gegenereerde VCL-code bepaalt. In dit voorbeeld gebruiken we `recv` , dat de VCL-code in de `vcl_recv` -subroutine invoegt, onder de vaste plaat VCL en boven alle objecten. Zie de [&#x200B; Snelle VCL fragmentverwijzing &#x200B;](https://docs.fastly.com/api/config#api-section-snippet) voor de lijst van fragmenttypes.
 
 - `content`: Het fragment van VCL-code dat moet worden uitgevoerd, dat het client-IP-adres controleert. Als IP in ACL van Edge is, wordt het geblokkeerd van toegang met een `403 Forbidden` fout voor de volledige website. Alle andere client-IP-adressen hebben toegang.
 
 Na het herzien van en het bijwerken van de code voor uw milieu, gebruik één van beiden van de volgende methodes om het fragment van douaneVCL aan uw Fastly de dienstconfiguratie toe te voegen:
 
-- [ voeg het fragment van douaneVCL van Admin ](#add-the-custom-vcl-snippet) toe. Deze methode wordt aanbevolen als u toegang kunt krijgen tot de beheerder. (Vereist [ Snelle versie 1.2.58 ](fastly-configuration.md#upgrade-fastly-module) of later.)
+- [&#x200B; voeg het fragment van douaneVCL van Admin &#x200B;](#add-the-custom-vcl-snippet) toe. Deze methode wordt aanbevolen als u toegang kunt krijgen tot de beheerder. (Vereist [&#x200B; Snelle versie 1.2.58 &#x200B;](fastly-configuration.md#upgrade-fastly-module) of later.)
 
-- Sparen het JSON codevoorbeeld aan een dossier (bijvoorbeeld, `blocklist.json`) en [ uploadt het gebruikend Fastly API ](fastly-vcl-custom-snippets.md#manage-custom-vcl-snippets-using-the-api). Gebruik deze methode als u geen toegang hebt tot de beheerder.
+- Sparen het JSON codevoorbeeld aan een dossier (bijvoorbeeld, `blocklist.json`) en [&#x200B; uploadt het gebruikend Fastly API &#x200B;](fastly-vcl-custom-snippets.md#manage-custom-vcl-snippets-using-the-api). Gebruik deze methode als u geen toegang hebt tot de beheerder.
 
 ## Het aangepaste VCL-fragment toevoegen
 
@@ -109,7 +109,7 @@ De volgende voorbeelden tonen hoe te om verzoeken te blokkeren gebruikend gealig
 
 >[!WARNING]
 >
->In deze voorbeelden is de VCL-code opgemaakt als een JSON-payload die naar een bestand kan worden opgeslagen en in een Fastly API-aanvraag kan worden verzonden. U kunt het [ fragment VCL van Admin ](#add-the-custom-vcl-snippet) voorleggen, of als koord JSON gebruikend Snelle API. Als u validatiefouten wilt voorkomen wanneer u de snelheids-API gebruikt met een JSON-tekenreeks, moet u een backslash gebruiken om speciale tekens te verwijderen.
+>In deze voorbeelden is de VCL-code opgemaakt als een JSON-payload die naar een bestand kan worden opgeslagen en in een Fastly API-aanvraag kan worden verzonden. U kunt het [&#x200B; fragment VCL van Admin &#x200B;](#add-the-custom-vcl-snippet) voorleggen, of als koord JSON gebruikend Snelle API. Als u validatiefouten wilt voorkomen wanneer u de snelheids-API gebruikt met een JSON-tekenreeks, moet u een backslash gebruiken om speciale tekens te verwijderen.
 
 >[!NOTE]
 >Als u het VCL-fragment vanuit Beheer verzendt, haalt u de afzonderlijke waarden uit de VCL-voorbeeldcode en voert u deze in de desbetreffende velden in. Bijvoorbeeld:
@@ -119,7 +119,7 @@ De volgende voorbeelden tonen hoe te om verzoeken te blokkeren gebruikend gealig
 >- Prioriteit: `<priority>`
 >- Inhoud: `<content>`
 
-Zie [ Gebruikend dynamische fragmenten VCL ](https://docs.fastly.com/vcl/vcl-snippets/) in de Fastly documentatie VCL.
+Zie [&#x200B; Gebruikend dynamische fragmenten VCL &#x200B;](https://docs.fastly.com/vcl/vcl-snippets/) in de Fastly documentatie VCL.
 
 ### VCL-codevoorbeeld: blokcode per land
 
@@ -137,7 +137,7 @@ In dit voorbeeld wordt de ISO 3166-1-landcode van twee tekens gebruikt voor het 
 
 >[!NOTE]
 >
->In plaats van het gebruiken van een fragment van douaneVCL, kunt u de Snelle [ eigenschap van het Blokkeren ](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BLOCKING.md) in Adobe Commerce op beheerder van de wolkeninfrastructuur gebruiken om het blokkeren door landcode of een lijst van landcodes te vormen.
+>In plaats van het gebruiken van een fragment van douaneVCL, kunt u de Snelle [&#x200B; eigenschap van het Blokkeren &#x200B;](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BLOCKING.md) in Adobe Commerce op beheerder van de wolkeninfrastructuur gebruiken om het blokkeren door landcode of een lijst van landcodes te vormen.
 
 ### Voorbeeld van VCL-code: Blok door aanvraagheader van HTTP-gebruikersagent
 

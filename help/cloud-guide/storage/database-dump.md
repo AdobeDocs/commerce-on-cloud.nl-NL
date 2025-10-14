@@ -19,7 +19,7 @@ Overweeg de volgende richtlijnen voor stortplaats van DB:
 - Voor productieomgevingen raadt Adobe aan de databasedumportbewerkingen tijdens niet-piekuren uit te voeren om de onderbreking van de service die optreedt wanneer de site in de onderhoudsmodus staat, tot een minimum te beperken.
 - Als een fout tijdens de stortplaatsverrichting voorkomt, schrapt het bevel het stortplaatsdossier om schijfruimte te besparen. Bekijk de logboeken voor details (`var/log/cloud.log`).
 - Voor Pro de milieu&#39;s van de Productie, dumpt dit bevel slechts van _één_ van de drie high-availability knopen, zodat zouden de productiegegevens die aan een verschillende knoop tijdens de stortplaats worden geschreven niet kunnen worden gekopieerd. De opdracht genereert een `var/dbdump.lock` -bestand om te voorkomen dat de opdracht op meer dan één knooppunt wordt uitgevoerd.
-- Voor een steun van alle milieudiensten, adviseert Adobe creërend a [ steun ](snapshots.md).
+- Voor een steun van alle milieudiensten, adviseert Adobe creërend a [&#x200B; steun &#x200B;](snapshots.md).
 
 U kunt verkiezen aan file veelvoudige gegevensbestanden door de gegevensbestandnamen aan het bevel toe te voegen. In het volgende voorbeeld wordt een back-up gemaakt van twee databases: `main` en `sales` :
 
@@ -34,7 +34,7 @@ Gebruik de opdracht `php vendor/bin/ece-tools db-dump --help` voor meer opties:
 
 **om een gegevensbestandstortplaats in het het Opvoeren of milieu van de Productie te creëren**:
 
-1. [ SSH van het Gebruik aan login of creeer een tunnel om met het verre milieu ](../development/secure-connections.md) te verbinden die het gegevensbestand aan exemplaar bevat.
+1. [&#x200B; SSH van het Gebruik aan login of creeer een tunnel om met het verre milieu &#x200B;](../development/secure-connections.md) te verbinden die het gegevensbestand aan exemplaar bevat.
 
 1. Maak een lijst van de omgevingsverhoudingen en neem nota van de gegevens van de gegevensbestandlogin.
 
@@ -79,4 +79,4 @@ Gebruik de opdracht `php vendor/bin/ece-tools db-dump --help` voor meer opties:
 
 >[!TIP]
 >
->Als u deze gegevens aan een specifiek milieu wilt duwen, zie [ gegevens en statische dossiers migreren ](../deploy/staging-production.md#migrate-static-files).
+>Als u deze gegevens aan een specifiek milieu wilt duwen, zie [&#x200B; gegevens en statische dossiers migreren &#x200B;](../deploy/staging-production.md#migrate-static-files).

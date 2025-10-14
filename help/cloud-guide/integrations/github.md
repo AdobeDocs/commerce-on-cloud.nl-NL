@@ -38,7 +38,7 @@ Creeer een klassiek persoonlijk toegangstoken in de ontwikkelaarmontages van Git
 - `repo`—Integreren met uw gegevensopslagruimte
 - `read:org`—Integreer met de opslagplaats van uw organisatie
 
-Zie [ GitHub: creeer ](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
+Zie [&#x200B; GitHub: creeer &#x200B;](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
 
 ## De opslagplaats voorbereiden
 
@@ -68,7 +68,7 @@ Clone uw Adobe Commerce op het project van de wolkeninfrastructuur van een besta
    git remote add origin git@github.com:<user-name>/<repo-name>.git
    ```
 
-   De standaardnaam voor de externe verbinding kan `origin` of `magento` zijn. Als `origin` bestaat, kunt u een verschillende naam kiezen of u kunt de bestaande verwijzing een andere naam geven of verwijderen. Zie [ git-verre documentatie ](https://git-scm.com/docs/git-remote).
+   De standaardnaam voor de externe verbinding kan `origin` of `magento` zijn. Als `origin` bestaat, kunt u een verschillende naam kiezen of u kunt de bestaande verwijzing een andere naam geven of verwijderen. Zie [&#x200B; git-verre documentatie &#x200B;](https://git-scm.com/docs/git-remote).
 
 1. Verifieer dat u ver GitHub correct toevoegde.
 

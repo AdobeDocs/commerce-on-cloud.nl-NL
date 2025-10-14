@@ -27,7 +27,7 @@ Foutberichten worden gecategoriseerd door een van de implementatiefasen: maken, 
 
 - **code van de Fout**: Adobe Commerce-Toegewezen herkenningsteken voor het foutenbericht
 - **Stadium**: Wijst erop of de fout tijdens de bouwstijl voorkwam, opstelt, of post-opstelt stadium
-- **Stap**: Wijst op de stap in het plaatsingsscenario dat de fout kan terugkeren. Als de _kolom van de Stap_ leeg is, is de fout een algemene fout die door veelvoudige stappen, of tijdens preprocessing verrichtingen kan zijn teruggekeerd. Zie [ op scenario-Gebaseerde plaatsing ](../deploy/scenario-based.md) voor meer informatie over de bouw, opstellen, en post-opstelt stappen.
+- **Stap**: Wijst op de stap in het plaatsingsscenario dat de fout kan terugkeren. Als de _kolom van de Stap_ leeg is, is de fout een algemene fout die door veelvoudige stappen, of tijdens preprocessing verrichtingen kan zijn teruggekeerd. Zie [&#x200B; op scenario-Gebaseerde plaatsing &#x200B;](../deploy/scenario-based.md) voor meer informatie over de bouw, opstellen, en post-opstelt stappen.
 - **Suggestie**: Verstrekt begeleiding om de fout problemen op te lossen en op te lossen
 - **Titel (de beschrijving van de Fout)**: Een beschrijving die de oorzaak van de fout samenvat
 - **Type**: Wijst erop of de fout een kritieke fout of een waarschuwing is

@@ -27,7 +27,7 @@ Opslagopties zijn onder andere:
 
 ## Services en integratie configureren
 
-Er zijn specifieke [ configuratiedossiers ](../environment/overview.md) die bepaald plaatsingsgedrag aan verre milieu&#39;s beheren. U kunt deze onderwerpen afzonderlijk bekijken:
+Er zijn specifieke [&#x200B; configuratiedossiers &#x200B;](../environment/overview.md) die bepaald plaatsingsgedrag aan verre milieu&#39;s beheren. U kunt deze onderwerpen afzonderlijk bekijken:
 
 * [Toepassing implementeren](../application/configure-app-yaml.md)
 * [Handelingen maken en implementeren in de omgeving](../environment/configure-env-yaml.md)
@@ -36,4 +36,4 @@ Er zijn specifieke [ configuratiedossiers ](../environment/overview.md) die bepa
 
 ## Configuratiebeheer
 
-Na het vormen van de opslagopties, de diensten, en de integratie, gebruik configuratiebeheer om deze configuraties over alle milieu&#39;s constant en met minimale onderbreking op te stellen. Zie [ Beheer van de Configuratie ](store-settings.md).
+Na het vormen van de opslagopties, de diensten, en de integratie, gebruik configuratiebeheer om deze configuraties over alle milieu&#39;s constant en met minimale onderbreking op te stellen. Zie [&#x200B; Beheer van de Configuratie &#x200B;](store-settings.md).

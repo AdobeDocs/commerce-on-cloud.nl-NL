@@ -160,13 +160,13 @@ Als u één IP-adres wilt opgeven, voegt u het voorvoegsel `/32` CIDR toe aan he
 172.217.11.174/32  # google.com
 ```
 
-Om een waaier van IP adressen te specificeren, gebruik de [ IP Waaier aan CIDR ](https://ipaddressguide.com/cidr) calculator.
+Om een waaier van IP adressen te specificeren, gebruik de [&#x200B; IP Waaier aan CIDR &#x200B;](https://ipaddressguide.com/cidr) calculator.
 
 Als een regel `ips` maar niet `ports` definieert, staat de firewall IP-aanvragen toe op elke poort.
 
 ### `ports`
 
-Met de optie `ports` kunt u een lijst met poorten maken van 1 tot 65535. Voor de meeste regels in het voorbeeld staan poorten `80` en `443` zowel HTTP- als HTTPS-aanvragen toe. Maar voor New Relic, staan de regels slechts toegang tot domeinen en IP adressen op haven `443` toe, zoals geadviseerd in de documentatie van New Relic op [ het Verkeer van het Netwerk ](https://docs.newrelic.com/docs/new-relic-solutions/get-started/networks/#agents).
+Met de optie `ports` kunt u een lijst met poorten maken van 1 tot 65535. Voor de meeste regels in het voorbeeld staan poorten `80` en `443` zowel HTTP- als HTTPS-aanvragen toe. Maar voor New Relic, staan de regels slechts toegang tot domeinen en IP adressen op haven `443` toe, zoals geadviseerd in de documentatie van New Relic op [&#x200B; het Verkeer van het Netwerk &#x200B;](https://docs.newrelic.com/docs/new-relic-solutions/get-started/networks/#agents).
 
 Als een regel alleen `ports` definieert, biedt de firewall toegang tot alle domeinen en IP-adressen voor de gedefinieerde poorten.
 

@@ -11,15 +11,15 @@ ht-degree: 0%
 
 # Het pakket ECE-gereedschappen bijwerken
 
-Een update aan het `ece-tools` pakket werkt ook de andere [ Reeks van Hulpmiddelen van de Wolk voor de pakketten van Commerce ](../release-notes/cloud-tools-suite.md) bij, die gebiedsdelen voor `ece-tools` zijn. Daarom moet u een versie van Adobe Commerce gebruiken op cloudinfrastructuur die het `ece-tools` -pakket ondersteunt.
+Een update aan het `ece-tools` pakket werkt ook de andere [&#x200B; Reeks van Hulpmiddelen van de Wolk voor de pakketten van Commerce &#x200B;](../release-notes/cloud-tools-suite.md) bij, die gebiedsdelen voor `ece-tools` zijn. Daarom moet u een versie van Adobe Commerce gebruiken op cloudinfrastructuur die het `ece-tools` -pakket ondersteunt.
 
 {{ece-tools-package}}
 
 **Eerste vereisten**:
 
-- Alvorens u `ece-tools` bijwerkt, herzie de [ Reeks van Hulpmiddelen van de Wolk voor de versienota&#39;s van Commerce ](../release-notes/cloud-tools-suite.md).
-- Als u van `ece-tools` 2002.0.22 of vroeger aan 2002.1.0 bijwerkt, herzie [ Achteruit onverenigbare veranderingen ](../release-notes/backward-incompatible-changes.md) en breng om het even welke vereiste veranderingen in uw Adobe Commerce op het project van de wolkeninfrastructuur aan.
-- Het overzicht [ Verbeteringen en Patches ](../development/commerce-version.md#upgrade-from-older-versions) om de ECE-Hulpmiddelen versies compatibel met uw Adobe Commerce op het project van de wolkeninfrastructuur te bepalen.
+- Alvorens u `ece-tools` bijwerkt, herzie de [&#x200B; Reeks van Hulpmiddelen van de Wolk voor de versienota&#39;s van Commerce &#x200B;](../release-notes/cloud-tools-suite.md).
+- Als u van `ece-tools` 2002.0.22 of vroeger aan 2002.1.0 bijwerkt, herzie [&#x200B; Achteruit onverenigbare veranderingen &#x200B;](../release-notes/backward-incompatible-changes.md) en breng om het even welke vereiste veranderingen in uw Adobe Commerce op het project van de wolkeninfrastructuur aan.
+- Het overzicht [&#x200B; Verbeteringen en Patches &#x200B;](../development/commerce-version.md#upgrade-from-older-versions) om de ECE-Hulpmiddelen versies compatibel met uw Adobe Commerce op het project van de wolkeninfrastructuur te bepalen.
 
 {{upgrade-tip}}
 
@@ -33,7 +33,7 @@ Een update aan het `ece-tools` pakket werkt ook de andere [ Reeks van Hulpmiddel
 
    >[!NOTE]
    >
-   >Als u niet voorbij `ece-tools` versie 2002.0.8 kunt bijwerken, zie [ het project van de Verbetering om ECE-Hulpmiddelen pakket ](install-package.md) te gebruiken.
+   >Als u niet voorbij `ece-tools` versie 2002.0.8 kunt bijwerken, zie [&#x200B; het project van de Verbetering om ECE-Hulpmiddelen pakket &#x200B;](install-package.md) te gebruiken.
 
 1. Wijzigingen in code toevoegen, vastleggen en doorvoeren.
 

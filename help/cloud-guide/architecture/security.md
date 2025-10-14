@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Beveiliging
 
-De het planarchitectuur van Adobe Commerce [ Pro ](pro-architecture.md) wordt ontworpen om een hoogst veilig milieu te verstrekken. Elke klant wordt opgesteld in hun eigen geïsoleerde servermilieu, gescheiden van andere klanten. De beveiligingsdetails van de productieomgeving worden hieronder beschreven.
+De het planarchitectuur van Adobe Commerce [&#x200B; Pro &#x200B;](pro-architecture.md) wordt ontworpen om een hoogst veilig milieu te verstrekken. Elke klant wordt opgesteld in hun eigen geïsoleerde servermilieu, gescheiden van andere klanten. De beveiligingsdetails van de productieomgeving worden hieronder beschreven.
 
 ## Webbrowsers
 
@@ -21,7 +21,7 @@ Het grootste deel van het verkeer dat in en uit de wolkenomgeving gaat, komt van
 
 Verstrekt snel een Netwerk van de Levering van de Inhoud (CDN) en verdeelde ontkenning van de dienstbescherming (DDoS). De snelste CDN helpt directe toegang tot de oorspronkelijke servers te isoleren. Openbare DNS richt slechts aan het Fastly Netwerk. De snelste oplossing DDoS beschermt tegen hoogst ontwrichtende Laag 3 en Laag 4 aanvallen, en complexere Laag 7 aanvallen. Laag 7 de aanvallen kan worden geblokkeerd gebruikend douaneregels die op de volledige HTTP/HTTPS- verzoeken worden gebaseerd en op cliënt en verzoekcriteria, met inbegrip van kopballen, koekjes, verzoekweg, en cliëntIP, of indicatoren zoals geolocatie worden gebaseerd.
 
-Zie [ het Snelle overzicht van de diensten ](../cdn/fastly.md).
+Zie [&#x200B; het Snelle overzicht van de diensten &#x200B;](../cdn/fastly.md).
 
 ## Web Application Firewall
 
@@ -66,11 +66,11 @@ De Adobe test regelmatig de kerntoepassingscode op veiligheidskwetsbaarheid. Pat
 - OWASPZAP
 - andSqlMap
 
-De volledige codebasis wordt gescand met deze hulpmiddelen op een tweewekelijkse basis. De klanten worden op de hoogte gebracht van veiligheidspatches door directe e-mail, berichten in de toepassing, en in het [ Centrum van de Veiligheid ](https://helpx.adobe.com/nl/security.html).
+De volledige codebasis wordt gescand met deze hulpmiddelen op een tweewekelijkse basis. De klanten worden op de hoogte gebracht van veiligheidspatches door directe e-mail, berichten in de toepassing, en in het [&#x200B; Centrum van de Veiligheid &#x200B;](https://helpx.adobe.com/nl/security.html).
 
-Klanten moeten ervoor zorgen dat deze patches binnen 30 dagen na de release op hun aangepaste toepassing worden toegepast, volgens de PCI-richtlijnen. De Adobe verstrekt ook het Hulpmiddel van het Scannen van de a [ Veiligheid ](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/security/security-scan) dat verkopers toelaat om hun plaatsen regelmatig te controleren en updates over bekende veiligheidsrisico&#39;s, malware, en onbevoegde toegang te ontvangen. Het hulpprogramma Beveiligingsscan is gratis en kan worden uitgevoerd op elke versie van Adobe Commerce.
+Klanten moeten ervoor zorgen dat deze patches binnen 30 dagen na de release op hun aangepaste toepassing worden toegepast, volgens de PCI-richtlijnen. De Adobe verstrekt ook het Hulpmiddel van het Scannen van de a [&#x200B; Veiligheid &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/security/security-scan) dat verkopers toelaat om hun plaatsen regelmatig te controleren en updates over bekende veiligheidsrisico&#39;s, malware, en onbevoegde toegang te ontvangen. Het hulpprogramma Beveiligingsscan is gratis en kan worden uitgevoerd op elke versie van Adobe Commerce.
 
-Om veiligheidsonderzoekers aan te moedigen om kwetsbaarheid te identificeren en te melden, heeft Adobe Commerce a [ insect-hinderlijk programma ](https://hackerone.com/magento) naast interne het testen. Bovendien wordt de klant de volledige broncode van de toepassing verstrekt voor hun eigen overzicht indien gewenst.
+Om veiligheidsonderzoekers aan te moedigen om kwetsbaarheid te identificeren en te melden, heeft Adobe Commerce a [&#x200B; insect-hinderlijk programma &#x200B;](https://hackerone.com/magento) naast interne het testen. Bovendien wordt de klant de volledige broncode van de toepassing verstrekt voor hun eigen overzicht indien gewenst.
 
 ## Alleen-lezen bestandssysteem
 
@@ -84,7 +84,7 @@ De enige manier om uitvoerbare code in de de productieomgeving van Managed Servi
 
 Alle AWS-activiteiten zijn aangemeld bij AWS CloudTrail. Besturingssysteem-, toepassingsserver- en databaselogboeken worden opgeslagen op de productieservers en opgeslagen in back-ups. Alle wijzigingen in de broncode worden vastgelegd in een Git-opslagplaats. De geschiedenis van de plaatsing is beschikbaar in de Interface van het Web van het Project van Adobe Commerce [&#128279;](../project/overview.md). Alle ondersteuningstoegang wordt geregistreerd en de steunzittingen worden geregistreerd.
 
-Zie [ Mening en beheer logboeken ](../test/log-locations.md).
+Zie [&#x200B; Mening en beheer logboeken &#x200B;](../test/log-locations.md).
 
 ## Gevoelige gegevens
 
@@ -108,14 +108,14 @@ GDPR dringt erop aan dat alle persoonlijk identificeerbare informatie (zoals nam
 
 >[!NOTE]
 >
->Deze pagina biedt een algemeen overzicht van wat u in overweging kunt nemen voor GDPR. Zie de _[Gids van de Veiligheid en van de Naleving ](https://experienceleague.adobe.com/nl/docs/commerce-operations/security-and-compliance/overview)_ voor details over hoe Adobe Commerce persoonlijke informatie opslaat. Om te bepalen hoe uw zaken om het even welke wettelijke verplichtingen zouden moeten naleven, raadpleeg uw wettelijke raadsman of verwijs naar de [ officiële tekst ](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
+>Deze pagina biedt een algemeen overzicht van wat u in overweging kunt nemen voor GDPR. Zie de _[Gids van de Veiligheid en van de Naleving &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/security-and-compliance/overview)_ voor details over hoe Adobe Commerce persoonlijke informatie opslaat. Om te bepalen hoe uw zaken om het even welke wettelijke verplichtingen zouden moeten naleven, raadpleeg uw wettelijke raadsman of verwijs naar de [&#x200B; officiële tekst &#x200B;](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
 
 ## Back-ups
 
-De steun wordt uitgevoerd elk uur voor de laatste 24 uren van verrichting. Na de periode van 24 uur worden back-ups volgens een schema bewaard met behulp van de AWS EBS Snapshot-service. Zie [ Beleid van het Behoud ](pro-architecture.md#retention-policy).
+De steun wordt uitgevoerd elk uur voor de laatste 24 uren van verrichting. Na de periode van 24 uur worden back-ups volgens een schema bewaard met behulp van de AWS EBS Snapshot-service. Zie [&#x200B; Beleid van het Behoud &#x200B;](pro-architecture.md#retention-policy).
 
 De service maakt een onafhankelijke back-up van redundante opslag. Omdat de EBS-volumes gecodeerd zijn, worden de back-ups ook gecodeerd. Bovendien voert Managed Services op verzoek back-ups uit.
 
 Bij uw Managed Services-aanpak voor back-up en herstel wordt gebruikgemaakt van een architectuur met hoge beschikbaarheid in combinatie met back-ups op het volledige systeem. Elk project wordt herhaald—alle gegevens, code, en activa-over drie afzonderlijke de beschikbaarheidsstreken van AWS; elke streek met een afzonderlijk gegevenscentrum.
 
-Zie [ Momentopnamen en reservebeheer ](../storage/snapshots.md).
+Zie [&#x200B; Momentopnamen en reservebeheer &#x200B;](../storage/snapshots.md).

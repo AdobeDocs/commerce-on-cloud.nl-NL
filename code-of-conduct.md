@@ -74,5 +74,5 @@ leden van de leiding van het project.
 
 ## Attributie
 
-Deze Gedragscode wordt aangepast van het [ Medewerkersconvenant ](https://www.contributor-covenant.org/), versie 1.4,
-beschikbaar in [ https://www.contributor-covenant.org/version/1/4](https://www.contributor-covenant.org/version/1/4/)
+Deze Gedragscode wordt aangepast van het [&#x200B; Medewerkersconvenant &#x200B;](https://www.contributor-covenant.org/), versie 1.4,
+beschikbaar in [&#x200B; https://www.contributor-covenant.org/version/1/4](https://www.contributor-covenant.org/version/1/4/)

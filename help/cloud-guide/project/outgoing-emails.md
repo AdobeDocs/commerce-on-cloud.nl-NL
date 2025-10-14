@@ -12,9 +12,9 @@ ht-degree: 0%
 
 U kunt uitgaande e-mailberichten voor integratie (en het opvoeren voor Starter slechts) milieu&#39;s van [!DNL Cloud Console] of van de bevellijn toelaten en onbruikbaar maken. U kunt uitgaande e-mails verzenden om tweefelige verificatie te verzenden of wachtwoorde-mails opnieuw in te stellen voor gebruikers van een Cloud-project.
 
-Standaard zijn uitgaande e-mails ingeschakeld in Productie- en Staging-omgevingen (alleen Pro). Nochtans, kan het **[!UICONTROL Enable outgoing emails]** plaatsen gehandicapt in de milieu montages ongeacht status lijken tot u het `enable_smtp` bezit door de [ bevellijn ](#enable-emails-in-the-cli) of [ Console van de Wolk ](outgoing-emails.md#enable-emails-in-the-cloud-console) plaatst.
+Standaard zijn uitgaande e-mails ingeschakeld in Productie- en Staging-omgevingen (alleen Pro). Nochtans, kan het **[!UICONTROL Enable outgoing emails]** plaatsen gehandicapt in de milieu montages ongeacht status lijken tot u het `enable_smtp` bezit door de [&#x200B; bevellijn &#x200B;](#enable-emails-in-the-cli) of [&#x200B; Console van de Wolk &#x200B;](outgoing-emails.md#enable-emails-in-the-cloud-console) plaatst.
 
-Het bijwerken van de `enable_smtp` bezitswaarde door [ bevellijn ](#enable-emails-in-the-cli) verandert ook de [!UICONTROL Enable outgoing emails] plaatsende waarde voor dit milieu op de Console van de Wolk.
+Het bijwerken van de `enable_smtp` bezitswaarde door [&#x200B; bevellijn &#x200B;](#enable-emails-in-the-cli) verandert ook de [!UICONTROL Enable outgoing emails] plaatsende waarde voor dit milieu op de Console van de Wolk.
 
 >[!NOTE]
 >
@@ -26,7 +26,7 @@ Het bijwerken van de `enable_smtp` bezitswaarde door [ bevellijn ](#enable-email
 
 Gebruik **[!UICONTROL Outgoing emails]** knevel in _vormt milieu_ mening om e-mailsteun toe te laten of onbruikbaar te maken.
 
-Als de uitgaande e-mails moeten worden onbruikbaar gemaakt of op ProProductie of het Opvoeren milieu&#39;s opnieuw worden toegelaten, kunt u een [ kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) voorleggen.
+Als de uitgaande e-mails moeten worden onbruikbaar gemaakt of op ProProductie of het Opvoeren milieu&#39;s opnieuw worden toegelaten, kunt u een [&#x200B; kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) voorleggen.
 
 >[!TIP]
 >
@@ -34,13 +34,13 @@ Als de uitgaande e-mails moeten worden onbruikbaar gemaakt of op ProProductie of
 
 **Om e-mailsteun van[!DNL Cloud Console]** te beheren:
 
-1. Meld u aan bij de map [[!DNL Cloud Console] ](https://console.adobecommerce.com) .
+1. Meld u aan bij de map [[!DNL Cloud Console] &#x200B;](https://console.adobecommerce.com) .
 1. Selecteer een project van de _Alle projecten_ lijst.
 1. Voor het dashboard van het Project, klik het configuratiepictogram in het hogere recht.
 1. Klik op **[!UICONTROL Environments]** en selecteer een specifieke omgeving in de lijst (behalve Staging en Productie voor Pro).
 1. Om uitgaande e-mail toe te laten of onbruikbaar te maken, knevel _uitgaande e-mail_ **&#x200B;**&#x200B;of **weg** toe.
 
-   ![ laat uitgaande e-mailconfiguratie ](../../assets/outgoing-emails.png) toe
+   ![&#x200B; laat uitgaande e-mailconfiguratie &#x200B;](../../assets/outgoing-emails.png) toe
 
 Nadat u het plaatsen verandert, bouwt het milieu en stelt met de nieuwe configuratie op.
 

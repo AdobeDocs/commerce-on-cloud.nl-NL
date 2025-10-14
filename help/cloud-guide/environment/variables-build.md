@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Variabelen samenstellen
 
-Het volgende _bouwt_ variabelen controleacties in de bouwstijlfase en kan waarden van de [ Globale variabelen ](variables-global.md) erven en met voeten treden. Voeg deze variabelen in het `build` werkgebied van het `.magento.env.yaml` -bestand in:
+Het volgende _bouwt_ variabelen controleacties in de bouwstijlfase en kan waarden van de [&#x200B; Globale variabelen &#x200B;](variables-global.md) erven en met voeten treden. Voeg deze variabelen in het `build` werkgebied van het `.magento.env.yaml` -bestand in:
 
 ```yaml
 stage:
@@ -68,14 +68,14 @@ stage:
       - MC-456345
 ```
 
-Zie [ flarden ](../development/apply-patches.md) toepassen.
+Zie [&#x200B; flarden &#x200B;](../development/apply-patches.md) toepassen.
 
 ## `SCD_COMPRESSION_LEVEL`
 
 - **Gebrek** - `6`
 - **Versie** - Adobe Commerce 2.1.4 en later
 
-Specificeert welk [ gzip ](https://www.gnu.org/software/gzip) compressieniveau (`0` aan `9`) te gebruiken wanneer het comprimeren van statische inhoud; `0` maakt compressie onbruikbaar.
+Specificeert welk [&#x200B; gzip &#x200B;](https://www.gnu.org/software/gzip) compressieniveau (`0` aan `9`) te gebruiken wanneer het comprimeren van statische inhoud; `0` maakt compressie onbruikbaar.
 
 ```yaml
 stage:
@@ -103,7 +103,7 @@ stage:
 
 Stel in op `true` om te voorkomen dat tijdens de constructiefase statische inhoud voor bovenliggende thema&#39;s wordt gegenereerd.
 
-Stel `SCD_NO_PARENT: false` in tijdens de constructiefase, zodat het genereren van statische inhoud voor de bovenliggende thema&#39;s geen invloed heeft op de implementatie van de site of onnodige downtime veroorzaakt. Zie [ Statische inhoudsplaatsing ](../deploy/static-content.md).
+Stel `SCD_NO_PARENT: false` in tijdens de constructiefase, zodat het genereren van statische inhoud voor de bovenliggende thema&#39;s geen invloed heeft op de implementatie van de site of onnodige downtime veroorzaakt. Zie [&#x200B; Statische inhoudsplaatsing &#x200B;](../deploy/static-content.md).
 
 ```yaml
 stage:
@@ -185,7 +185,7 @@ stage:
 - **Gebrek** - `quick`
 - **Versie** - Adobe Commerce 2.2.0 en later
 
-Pas de [ plaatsingsstrategie ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy.html?lang=nl-NL) voor statische inhoud aan. Zie [ statische meningsdossiers ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html?lang=nl-NL) opstellen.
+Pas de [&#x200B; plaatsingsstrategie &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy.html?lang=nl-NL) voor statische inhoud aan. Zie [&#x200B; statische meningsdossiers &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html?lang=nl-NL) opstellen.
 
 Gebruik deze opties _slechts_ als u meer dan één scène hebt:
 
@@ -212,14 +212,14 @@ stage:
     SCD_THREADS: 2
 ```
 
-Om plaatsingstijd verder te verminderen, gebruik [ het Beheer van de Configuratie ](../store/store-settings.md) met het `scd-dump` bevel om statische plaatsing in de bouwstijlfase te bewegen.
+Om plaatsingstijd verder te verminderen, gebruik [&#x200B; het Beheer van de Configuratie &#x200B;](../store/store-settings.md) met het `scd-dump` bevel om statische plaatsing in de bouwstijlfase te bewegen.
 
 ## `SCD_USE_BALER`
 
 - **Gebrek** - _niet plaats_
 - **Versie** - Adobe Commerce 2.3.0 en later
 
-[ Baler ](https://github.com/magento/baler) scant uw geproduceerde code van JavaScript en leidt tot een geoptimaliseerde bundel van JavaScript. Als u de geoptimaliseerde bundel op uw site implementeert, kan het aantal netwerkaanvragen bij het laden van uw site afnemen en de laadtijden van de pagina verbeteren.
+[&#x200B; Baler &#x200B;](https://github.com/magento/baler) scant uw geproduceerde code van JavaScript en leidt tot een geoptimaliseerde bundel van JavaScript. Als u de geoptimaliseerde bundel op uw site implementeert, kan het aantal netwerkaanvragen bij het laden van uw site afnemen en de laadtijden van de pagina verbeteren.
 
 Stel dit in op `true` om Baler uit te voeren nadat u statische inhoud hebt geïmplementeerd.
 
@@ -255,9 +255,9 @@ stage:
 
 Stel in op `true` om de implementatie van statische inhoud tijdens de constructiefase over te slaan.
 
-Als u reeds statische inhoud tijdens de bouwstijlfase met [ Beheer van de Configuratie ](../store/store-settings.md) opstelt, kunt u statische inhoudsplaatsing voor een snelle bouwstijltest overslaan.
+Als u reeds statische inhoud tijdens de bouwstijlfase met [&#x200B; Beheer van de Configuratie &#x200B;](../store/store-settings.md) opstelt, kunt u statische inhoudsplaatsing voor een snelle bouwstijltest overslaan.
 
-Voor de bouwstijlfase, plaats `SKIP_SCD: false` zodat de statische inhoudsbouw tijdens de bouwstijlfase voorkomt waar het proces plaatsplaatsing niet beïnvloedt of onnodige plaatsonderbreking veroorzaakt. Zie [ Statische inhoudsplaatsing ](../deploy/static-content.md).
+Voor de bouwstijlfase, plaats `SKIP_SCD: false` zodat de statische inhoudsbouw tijdens de bouwstijlfase voorkomt waar het proces plaatsplaatsing niet beïnvloedt of onnodige plaatsonderbreking veroorzaakt. Zie [&#x200B; Statische inhoudsplaatsing &#x200B;](../deploy/static-content.md).
 
 ```yaml
 stage:
@@ -270,11 +270,11 @@ stage:
 - **Gebrek** - _niet plaats_
 - **Versie** - Adobe Commerce 2.1.4 en later
 
-Laat toe of maak [ Symfony ](https://symfony.com/doc/current/console/verbosity.html) onbruikbaar zuivert breedband niveau voor `bin/magento` bevelen CLI die tijdens de plaatsingsfase worden uitgevoerd.
+Laat toe of maak [&#x200B; Symfony &#x200B;](https://symfony.com/doc/current/console/verbosity.html) onbruikbaar zuivert breedband niveau voor `bin/magento` bevelen CLI die tijdens de plaatsingsfase worden uitgevoerd.
 
 >[!NOTE]
 >
->Om VERBOSE_COMMANDS te gebruiken om het detail in beveloutput voor zowel succesvolle als ontbroken `bin/magento` CLI bevelen te controleren, moet u [ MIN_LOGING_LEVEL ](variables-global.md#minlogginglevel) `debug` plaatsen.
+>Om VERBOSE_COMMANDS te gebruiken om het detail in beveloutput voor zowel succesvolle als ontbroken `bin/magento` CLI bevelen te controleren, moet u [&#x200B; MIN_LOGING_LEVEL &#x200B;](variables-global.md#minlogginglevel) `debug` plaatsen.
 
 Kies het detailniveau in de logboeken:
 

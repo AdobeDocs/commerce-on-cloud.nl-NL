@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # Aanbevolen procedures voor het upgraden van uw project
 
-Volg beste praktijken voor bouwstijlen en plaatsing, en gebruik het [ Upgrades en flarden ](../development/commerce-version.md) werkschema om uw toepassing te bevorderen. Gebruik de volgende richtlijnen om uw upgrade en werk na de upgrade te plannen:
+Volg beste praktijken voor bouwstijlen en plaatsing, en gebruik het [&#x200B; Upgrades en flarden &#x200B;](../development/commerce-version.md) werkschema om uw toepassing te bevorderen. Gebruik de volgende richtlijnen om uw upgrade en werk na de upgrade te plannen:
 
-- **Steun uw project** - alvorens de Adobe Commerce en om het even welke derde of douaneuitbreidingen te bevorderen, file het gegevensbestand in de milieu&#39;s van de Integratie, het Opvoeren, en van de Productie. Zie [ file het gegevensbestand ](../development/commerce-version.md#project-backup).
+- **Steun uw project** - alvorens de Adobe Commerce en om het even welke derde of douaneuitbreidingen te bevorderen, file het gegevensbestand in de milieu&#39;s van de Integratie, het Opvoeren, en van de Productie. Zie [&#x200B; file het gegevensbestand &#x200B;](../development/commerce-version.md#project-backup).
 
 - **Controle voor verenigbaarheidskwesties** -
 
@@ -23,19 +23,19 @@ Volg beste praktijken voor bouwstijlen en plaatsing, en gebruik het [ Upgrades e
 
    - Bekijk de Adobe Commerce-releaseopmerkingen en de uitbreidingsdocumentatie om te controleren of u eventuele oplossingen of configuratiewijzigingen hebt geïmplementeerd die nodig zijn om bekende functionele problemen en fouten met betrekking tot de upgrade van de Adobe Commerce-versie en -extensies te verhelpen.
 
-   - Zorg ervoor dat de geïnstalleerde serviceversies compatibel zijn met de nieuwe Adobe Commerce-versie en werk de services waar nodig bij. Zie [ Diensten ](../services/services-yaml.md).
+   - Zorg ervoor dat de geïnstalleerde serviceversies compatibel zijn met de nieuwe Adobe Commerce-versie en werk de services waar nodig bij. Zie [&#x200B; Diensten &#x200B;](../services/services-yaml.md).
 
    - Test uw database om problemen op te lossen die zijn ontstaan door de updates voor de Adobe Commerce-versie en -extensies.
 
    - Breng de vereiste updates van de specifieke omgevingen aan voordat u deze implementeert in de externe omgeving.
 
-   - Zorg ervoor dat de versie van de zoekservice compatibel is met de PHP-clientversie. Zie [ Elasticsearch van de Opstelling ](../services/elasticsearch.md) of [ Opstelling OpenSearch ](../services/opensearch.md).
+   - Zorg ervoor dat de versie van de zoekservice compatibel is met de PHP-clientversie. Zie [&#x200B; Elasticsearch van de Opstelling &#x200B;](../services/elasticsearch.md) of [&#x200B; Opstelling OpenSearch &#x200B;](../services/opensearch.md).
 
 - **de gegevensbestandconnectiviteit van de controle en beschikbare opslag in verre milieu&#39;s** -
 
-   - Gebruik SSH aan login aan de verre server en verifieer de verbinding aan het gegevensbestand MySQL. Zie [ verbinden met het gegevensbestand ](../services/mysql.md#connect-to-the-database).
+   - Gebruik SSH aan login aan de verre server en verifieer de verbinding aan het gegevensbestand MySQL. Zie [&#x200B; verbinden met het gegevensbestand &#x200B;](../services/mysql.md#connect-to-the-database).
 
-   - Beschikbare opslagruimte in de externe omgeving controleren. Gebruik de opdracht `disk free` om beschikbare schijfruimte in uw cloud-omgeving weer te geven en te beheren. Zie [ schijfruimte beheren ](../storage/manage-disk-space.md).
+   - Beschikbare opslagruimte in de externe omgeving controleren. Gebruik de opdracht `disk free` om beschikbare schijfruimte in uw cloud-omgeving weer te geven en te beheren. Zie [&#x200B; schijfruimte beheren &#x200B;](../storage/manage-disk-space.md).
 
       - Controleer de grootte van de bijgewerkte database en controleer of er voldoende schijfruimte is toegewezen aan het `services.yaml` -bestand.
 
@@ -49,9 +49,9 @@ Volg beste praktijken voor bouwstijlen en plaatsing, en gebruik het [ Upgrades e
 
    - Gebruik SSH om u aan te melden bij de externe server en controleer het volgende:
 
-      - Controleer de indexeerstatus en herdex naar wens. Zie [ de indexen ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=nl-NL) in de _gids van de Configuratie_ leiden.
+      - Controleer de indexeerstatus en herdex naar wens. Zie [&#x200B; de indexen &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=nl-NL) in de _gids van de Configuratie_ leiden.
 
       - Controleer de `cron` -logbestanden en de `cron_schedule` -tabel in de Adobe Commerce-database om de uitsnijstatus te controleren en voer de taken voor uitsnijden zo nodig opnieuw uit.
-Zie [ het Registreren ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=nl-NL#logging) in de _Gids van de Configuratie_.
+Zie [&#x200B; het Registreren &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=nl-NL#logging) in de _Gids van de Configuratie_.
 
    - Voltooi het testen van gebruikersacceptatietests na de upgrade op de testomgeving voor het opslaan en produceren van bestanden en los eventuele problemen op die te maken hebben met upgrades van derden en aangepaste extensies.

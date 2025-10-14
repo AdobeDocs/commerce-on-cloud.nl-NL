@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Blokverwijzingsspam
 
-Het volgende voorbeeld toont hoe te om [ Snelle Woordenboek van Edge ](https://docs.fastly.com/guides/edge-dictionaries/working-with-dictionaries-using-the-api) met een fragment van douaneVCL te vormen om verwijzingsspam van uw Adobe Commerce op de plaats van de wolkeninfrastructuur te blokkeren.
+Het volgende voorbeeld toont hoe te om [&#x200B; Snelle Woordenboek van Edge &#x200B;](https://docs.fastly.com/guides/edge-dictionaries/working-with-dictionaries-using-the-api) met een fragment van douaneVCL te vormen om verwijzingsspam van uw Adobe Commerce op de plaats van de wolkeninfrastructuur te blokkeren.
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ Edge-woordenboeken maken sleutelwaardeparen die toegankelijk zijn voor VCL-funct
 
    - U kunt sleutelwaardeparen toevoegen en opslaan in het nieuwe woordenboek. Voor dit voorbeeld, is elke **Sleutel** de domeinnaam van een verwijzer URL om te blokkeren en **Waarde** is `true`.
 
-     ![ voeg slechte punten van het verwijzingenwoordenboek ](../../assets/cdn/fastly-referrer-blocklist-dictionary.png) toe
+     ![&#x200B; voeg slechte punten van het verwijzingenwoordenboek &#x200B;](../../assets/cdn/fastly-referrer-blocklist-dictionary.png) toe
 
    - Klik **annuleren** om aan de pagina van de systeemconfiguratie terug te keren.
 
@@ -58,7 +58,7 @@ Edge-woordenboeken maken sleutelwaardeparen die toegankelijk zijn voor VCL-funct
 
 1. Vernieuw de cache volgens het bericht boven aan de pagina.
 
-Voor meer informatie over de Woordenboeken van Edge, zie [ Creërend en gebruikend de Woordenboeken van Edge ](https://docs.fastly.com/guides/edge-dictionaries/working-with-dictionaries-using-the-api) en [ de fragmenten van douaneVCL ](https://docs.fastly.com/guides/edge-dictionaries/working-with-dictionaries-using-the-api#custom-vcl-examples) in de Fastly documentatie.
+Voor meer informatie over de Woordenboeken van Edge, zie [&#x200B; Creërend en gebruikend de Woordenboeken van Edge &#x200B;](https://docs.fastly.com/guides/edge-dictionaries/working-with-dictionaries-using-the-api) en [&#x200B; de fragmenten van douaneVCL &#x200B;](https://docs.fastly.com/guides/edge-dictionaries/working-with-dictionaries-using-the-api#custom-vcl-examples) in de Fastly documentatie.
 
 ## Een aangepast VCL-fragment maken om verwijzingsspam te blokkeren
 
@@ -78,7 +78,7 @@ Voordat u een op dit voorbeeld gebaseerd fragment maakt, controleert u de waarde
 
 - `name` — Naam voor het VCL-fragment. In dit voorbeeld hebben we `block_bad_referrer` gebruikt.
 
-- `dynamic` — Waarde 0 wijst op a [ regelmatig fragment ](https://docs.fastly.com/en/guides/using-regular-vcl-snippets) om aan versioned VCL voor de Snelle configuratie te uploaden.
+- `dynamic` — Waarde 0 wijst op a [&#x200B; regelmatig fragment &#x200B;](https://docs.fastly.com/en/guides/using-regular-vcl-snippets) om aan versioned VCL voor de Snelle configuratie te uploaden.
 
 - `priority` — Hiermee bepaalt u wanneer het VCL-fragment wordt uitgevoerd. De prioriteit is `5` om deze fragmentcode in werking te stellen alvorens om het even welke standaardMagento VCL fragmenten (`magentomodule_*`) toegewezen een prioriteit van 50. Stel de prioriteit voor elk aangepast fragment in op een waarde hoger of lager dan 50, afhankelijk van het tijdstip waarop het fragment moet worden uitgevoerd. Fragmenten met een lagere prioriteit worden eerst uitgevoerd.
 
@@ -88,9 +88,9 @@ Voordat u een op dit voorbeeld gebaseerd fragment maakt, controleert u de waarde
 
 Na het herzien van en het bijwerken van de code voor uw milieu, gebruik één van beiden van de volgende methodes om het fragment van douaneVCL aan uw Fastly de dienstconfiguratie toe te voegen:
 
-- [ voeg het fragment van douaneVCL van Admin ](#add-the-custom-vcl-snippet) toe. Deze methode wordt aanbevolen als u toegang kunt krijgen tot de beheerder. (Vereist [ Snelle versie 1.2.58 ](fastly-configuration.md#upgrade) of later.)
+- [&#x200B; voeg het fragment van douaneVCL van Admin &#x200B;](#add-the-custom-vcl-snippet) toe. Deze methode wordt aanbevolen als u toegang kunt krijgen tot de beheerder. (Vereist [&#x200B; Snelle versie 1.2.58 &#x200B;](fastly-configuration.md#upgrade) of later.)
 
-- Sparen het JSON codevoorbeeld aan een dossier (bijvoorbeeld, `allowlist.json`) en [ uploadt het gebruikend Fastly API ](fastly-vcl-custom-snippets.md#manage-custom-vcl-snippets-using-the-api). Gebruik deze methode als u geen toegang hebt tot de beheerder.
+- Sparen het JSON codevoorbeeld aan een dossier (bijvoorbeeld, `allowlist.json`) en [&#x200B; uploadt het gebruikend Fastly API &#x200B;](fastly-vcl-custom-snippets.md#manage-custom-vcl-snippets-using-the-api). Gebruik deze methode als u geen toegang hebt tot de beheerder.
 
 ## Het aangepaste VCL-fragment toevoegen
 
@@ -123,7 +123,7 @@ Na het herzien van en het bijwerken van de code voor uw milieu, gebruik één va
 
 1. Klik **creëren**.
 
-   ![ creeer het fragment van het blok van de douaneverwijzing VCL ](/help/assets/cdn/fastly-create-referrer-block-snippet.png)
+   ![&#x200B; creeer het fragment van het blok van de douaneverwijzing VCL &#x200B;](/help/assets/cdn/fastly-create-referrer-block-snippet.png)
 
 1. Na de pagina herlaadt, uploadt de klik **VCL aan Fastly** in de *Snelle sectie van de Configuratie*.
 

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Variabelen na implementatie
 
-Het volgende _post-stelt_ variabelen controleacties in de post-opstelt fase op en kan waarden van de [ Globale variabelen ](variables-global.md) erven en met voeten treden. Voeg deze variabelen in het `post-deploy` werkgebied van het `.magento.env.yaml` -bestand in:
+Het volgende _post-stelt_ variabelen controleacties in de post-opstelt fase op en kan waarden van de [&#x200B; Globale variabelen &#x200B;](variables-global.md) erven en met voeten treden. Voeg deze variabelen in het `post-deploy` werkgebied van het `.magento.env.yaml` -bestand in:
 
 ```yaml
 stage:
@@ -69,7 +69,7 @@ stage:
 - **Gebrek**— `index.php`
 - **Versie** - Adobe Commerce 2.1.4 en later
 
-Pas de lijst aan met pagina&#39;s die worden gebruikt om de cache in het `post_deploy` -werkgebied vooraf te laden. U moet de post-opstellen haak vormen. Zie [ haken sectie ](../application/hooks-property.md) van het `.magento.app.yaml` dossier.
+Pas de lijst aan met pagina&#39;s die worden gebruikt om de cache in het `post_deploy` -werkgebied vooraf te laden. U moet de post-opstellen haak vormen. Zie [&#x200B; haken sectie &#x200B;](../application/hooks-property.md) van het `.magento.app.yaml` dossier.
 
 - **enige pagina&#39;s** - specificeer één enkele pagina om aan het geheime voorgeheugen toe te voegen. U hoeft de standaard basis-URL niet aan te geven. In het volgende voorbeeld wordt de pagina `BASE_URL/index.php` in cache geplaatst:
 

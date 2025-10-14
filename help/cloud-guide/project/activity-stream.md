@@ -13,13 +13,13 @@ ht-degree: 0%
 
 De belangrijkste mening voor elk milieu toont een **lijst van de Activiteit** van historische gebeurtenissen gelijkend op een logboek van het Git. De lijst Activiteit is een stroom van de recente gebeurtenissen voor actieve milieu&#39;s. Hieronder volgt een lijst met de activiteitstypen en de bijbehorende pictogrammen die in de activiteitsstroom worden weergegeven:
 
-![ types van Activiteit ](../../assets/activity-types.svg){width="500" align="center"}
+![&#x200B; types van Activiteit &#x200B;](../../assets/activity-types.svg){width="500" align="center"}
 
 ## Logboeken weergeven
 
-Klik in de lijst Activiteit op het statuspictogram van een activiteit om het logboek weer te geven. Alternatief, klik ![ Meer ](../../assets/icon-more.png){width="32"} (_meer_) menu om tot meer opties toegang te hebben om de activiteit te beheren. Hieronder ziet u een kort logboek waarin een back-up wordt gemaakt. U kunt [ CLI van de Wolk ](#activity-stream-with-cloud-cli) gebruiken om het zelfde logboek te bekijken.
+Klik in de lijst Activiteit op het statuspictogram van een activiteit om het logboek weer te geven. Alternatief, klik ![&#x200B; Meer &#x200B;](../../assets/icon-more.png){width="32"} (_meer_) menu om tot meer opties toegang te hebben om de activiteit te beheren. Hieronder ziet u een kort logboek waarin een back-up wordt gemaakt. U kunt [&#x200B; CLI van de Wolk &#x200B;](#activity-stream-with-cloud-cli) gebruiken om het zelfde logboek te bekijken.
 
-![ mening van het Logboek ](../../assets/log-view.png)
+![&#x200B; mening van het Logboek &#x200B;](../../assets/log-view.png)
 
 ## Een activiteit beheren
 
@@ -31,15 +31,15 @@ Sommige activiteiten zijn in a _lopende_ of _hangende_ status. U kunt op een lop
 
 **om een activiteit in[!DNL Cloud Console]** te annuleren:
 
-U kunt op een lopende activiteit handelen door tot ![ Meer ](../../assets/icon-more.png){width="32"} (_meer_) menu toegang te hebben en een actie, zoals `Cancel` of `View log` te selecteren. Voor dit voorbeeld, selecteer **annuleer** optie om de lopende activiteit tegen te houden.
+U kunt op een lopende activiteit handelen door tot ![&#x200B; Meer &#x200B;](../../assets/icon-more.png){width="32"} (_meer_) menu toegang te hebben en een actie, zoals `Cancel` of `View log` te selecteren. Voor dit voorbeeld, selecteer **annuleer** optie om de lopende activiteit tegen te houden.
 
-Niet alle activiteiten hebben de annuleringsoptie. Bijvoorbeeld, verschijnt de optie om de toepassingsplaatsing te annuleren slechts tijdens _bouwt_ fase. Zodra de toepassing in _is bewogen stel_ fase op, kunt u niet meer de activiteit annuleren. Zie [ proces van de Plaatsing ](../deploy/process.md) over de verschillende fasen.
+Niet alle activiteiten hebben de annuleringsoptie. Bijvoorbeeld, verschijnt de optie om de toepassingsplaatsing te annuleren slechts tijdens _bouwt_ fase. Zodra de toepassing in _is bewogen stel_ fase op, kunt u niet meer de activiteit annuleren. Zie [&#x200B; proces van de Plaatsing &#x200B;](../deploy/process.md) over de verschillende fasen.
 
-![ annuleert activiteit ](../../assets/activity-icons/cancel-activity.png){width="450" align="center"}
+![&#x200B; annuleert activiteit &#x200B;](../../assets/activity-icons/cancel-activity.png){width="450" align="center"}
 
 Als u een terminal hebt die de plaatsingsactiviteit in werking stelt, resulteert het annuleren in [!DNL Cloud Console] in de annulering in de terminal:
 
-![ Activiteit geannuleerd in terminal ](../../assets/activity-icons/activity-cancelled.png){width="300"}
+![&#x200B; Activiteit geannuleerd in terminal &#x200B;](../../assets/activity-icons/activity-cancelled.png){width="300"}
 
 >[!TAB  CLI ]
 
@@ -67,9 +67,9 @@ De mogelijkheid om de activiteitenlijst te filteren is nuttig wanneer u op zoek 
 
 1. Selecteer een omgeving en kies de weergave Activiteit **[!UICONTROL All]** om de volledige gebeurtenisgeschiedenis op te nemen.
 
-1. Klik ![ Filter door ](../../assets/icon-filterby.png){width="32"} en selecteer de **[!UICONTROL Filter by]** opties:
+1. Klik ![&#x200B; Filter door &#x200B;](../../assets/icon-filterby.png){width="32"} en selecteer de **[!UICONTROL Filter by]** opties:
 
-   ![ de activiteiten van de Filter ](../../assets/activity-filter.png)
+   ![&#x200B; de activiteiten van de Filter &#x200B;](../../assets/activity-filter.png)
 
 1. Kies de weergave Activiteit **[!UICONTROL Recent]** en stel de lijst opnieuw in.
 

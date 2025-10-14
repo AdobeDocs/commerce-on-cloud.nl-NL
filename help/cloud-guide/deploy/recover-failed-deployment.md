@@ -80,6 +80,6 @@ Om van de vorige plaatsing schoon te maken, identificeer de component die werd t
 
 {{redeploy-warning}}
 
-Zie meer over het herstellen van een milieu zonder een steun in [ herstellen een milieu ](../development/restore-environment.md).
+Zie meer over het herstellen van een milieu zonder een steun in [&#x200B; herstellen een milieu &#x200B;](../development/restore-environment.md).
 
 {{stuck-deployment-tip}}

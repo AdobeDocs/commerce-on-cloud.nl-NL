@@ -15,7 +15,7 @@ ht-degree: 0%
 
 De integraties zijn nuttig voor het gebruiken van externe dienst-zulke als het ontvangen van het Git of Slack bots-en het handhaven van uw huidige ontwikkelingsprocessen, zoals het gebruiken van de functie van het trekkingsverzoek van de codeherbeoordeling in GitHub. U kunt de volgende integraties toevoegen aan uw Adobe Commerce op het project van de wolkeninfrastructuur:
 
-![ Integraties ](/help/assets/integrations.png)
+![&#x200B; Integraties &#x200B;](/help/assets/integrations.png)
 
 >[!BEGINTABS]
 
@@ -65,7 +65,7 @@ Monsterrespons:
 
 ## Commerce-webhaken
 
-U kunt de websites van Commerce in uw project van de Wolk met [ vormen ENABLE_WEBHOOKS globale variabele ](../environment/variables-global.md#enable_webhooks). Commerce-websites verzenden aanvragen naar een externe server als reactie op door Commerce gegenereerde gebeurtenissen. De [_Gids van Webhooks_ ](https://developer.adobe.com/commerce/extensibility/webhooks) beschrijft deze eigenschap in detail.
+U kunt de websites van Commerce in uw project van de Wolk met [&#x200B; vormen ENABLE_WEBHOOKS globale variabele &#x200B;](../environment/variables-global.md#enable_webhooks). Commerce-websites verzenden aanvragen naar een externe server als reactie op door Commerce gegenereerde gebeurtenissen. De [_Gids van Webhooks_ &#x200B;](https://developer.adobe.com/commerce/extensibility/webhooks) beschrijft deze eigenschap in detail.
 
 ## Algemene webhaken
 
@@ -82,7 +82,7 @@ magento-cloud integration:add --type=webhook --url=https://hook-url.example.com
 
 De steekproefreactie toont een reeks herinneringen die een kans bieden om de integratie aan te passen. Het gebruiken van de standaard (lege) reactie verzendt berichten over alle gebeurtenissen op alle milieu&#39;s in een project.
 
-U kunt de integratie aanpassen om specifieke [ gebeurtenissen ](#events-to-report) te melden, zoals het duwen van code aan een tak. U kunt bijvoorbeeld de `environment.push` -gebeurtenis opgeven die een bericht verzendt wanneer een gebruiker code naar een vertakking duwt:
+U kunt de integratie aanpassen om specifieke [&#x200B; gebeurtenissen &#x200B;](#events-to-report) te melden, zoals het duwen van code aan een tak. U kunt bijvoorbeeld de `environment.push` -gebeurtenis opgeven die een bericht verzendt wanneer een gebruiker code naar een vertakking duwt:
 
 ```
 Events to report (--events)

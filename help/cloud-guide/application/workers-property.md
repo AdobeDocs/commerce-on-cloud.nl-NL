@@ -15,9 +15,9 @@ U kunt een worker definiëren die onafhankelijk van de webinstantie moet worden 
 
 ## Een worker configureren
 
-Workers zijn alleen beschikbaar voor gebruik met Pro Staging- en Productomgevingen. De pro integratie en de milieu&#39;s van de Aanzet kunnen verkiezen om [ CRON_CONSUMERS_RUNNER ](../environment/variables-deploy.md#cron_consumers_runner) variabele te gebruiken.
+Workers zijn alleen beschikbaar voor gebruik met Pro Staging- en Productomgevingen. De pro integratie en de milieu&#39;s van de Aanzet kunnen verkiezen om [&#x200B; CRON_CONSUMERS_RUNNER &#x200B;](../environment/variables-deploy.md#cron_consumers_runner) variabele te gebruiken.
 
-Om een arbeider in Pro het Opvoeren of Productie te vormen, [ leg een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voor en omvat de volgende informatie:
+Om een arbeider in Pro het Opvoeren of Productie te vormen, [&#x200B; leg een kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voor en omvat de volgende informatie:
 
 - Project-id
 - Milieu-id
@@ -48,7 +48,7 @@ De `commands.start` -toets is vereist om opdrachten met de arbeiderstoepassing t
 
 Definities voor de eigenschappen `size` , `relationships` , `access` , `disk` en `mount` en `variables` worden overgeërfd door een worker, tenzij ze expliciet worden genegeerd.
 
-De volgende eigenschappen zijn het meest meestal gebruikt om [ top-level montages ](properties.md) met voeten te treden:
+De volgende eigenschappen zijn het meest meestal gebruikt om [&#x200B; top-level montages &#x200B;](properties.md) met voeten te treden:
 
 - `size` - minder bronnen toewijzen aan één achtergrondproces
 - `variables` - de toepassing de opdracht geven anders te werken

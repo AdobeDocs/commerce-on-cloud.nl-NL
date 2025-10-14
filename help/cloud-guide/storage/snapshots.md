@@ -20,11 +20,11 @@ Een steun of _momentopname_ is een volledige steun van omgevingsgegevens die all
 >
 >Zorg dat back-ups doorgaans de inhoud van gekoppelde mappen bevatten, inclusief openbare webmappen zoals `pub/media` , en verplaats back-upuitvoerbestanden niet naar openbare webmappen zoals `pub/media` of `pub/static` .
 
-De reserve/momentopnamefunctie is **niet** op de Pro het Staging en milieu&#39;s van de Productie van toepassing, die regelmatige steunen voor de doeleinden van de rampenterugwinning door gebrek ontvangen. Verwijs naar [ Pro Steun &amp; de Terugwinning van de Ramp ](../architecture/pro-architecture.md#backup-and-disaster-recovery) voor meer informatie. In tegenstelling tot de automatische levende steunen op de Pro het Staging en milieu&#39;s van de Productie, zijn de steunen **niet** automatisch. Het is _uw_ verantwoordelijkheid om een steun manueel tot stand te brengen of opstelling een kroonbaan om een steun van uw Starter of Pro integratiemilieu&#39;s periodiek tot stand te brengen.
+De reserve/momentopnamefunctie is **niet** op de Pro het Staging en milieu&#39;s van de Productie van toepassing, die regelmatige steunen voor de doeleinden van de rampenterugwinning door gebrek ontvangen. Verwijs naar [&#x200B; Pro Steun &amp; de Terugwinning van de Ramp &#x200B;](../architecture/pro-architecture.md#backup-and-disaster-recovery) voor meer informatie. In tegenstelling tot de automatische levende steunen op de Pro het Staging en milieu&#39;s van de Productie, zijn de steunen **niet** automatisch. Het is _uw_ verantwoordelijkheid om een steun manueel tot stand te brengen of opstelling een kroonbaan om een steun van uw Starter of Pro integratiemilieu&#39;s periodiek tot stand te brengen.
 
 ## Een handmatige back-up maken
 
-U kunt een handmatige back-up maken van elke actieve Starter-omgeving en integratie Pro-omgeving vanuit de [!DNL Cloud Console] of een momentopname maken vanuit de Cloud CLI. U moet een [ rol Admin ](../project/user-access.md) voor het milieu hebben.
+U kunt een handmatige back-up maken van elke actieve Starter-omgeving en integratie Pro-omgeving vanuit de [!DNL Cloud Console] of een momentopname maken vanuit de Cloud CLI. U moet een [&#x200B; rol Admin &#x200B;](../project/user-access.md) voor het milieu hebben.
 
 >[!NOTE]
 >
@@ -37,19 +37,19 @@ U kunt een handmatige back-up maken van elke actieve Starter-omgeving en integra
 
 **om een gegevensbestandsteun van Pro milieu** tot stand te brengen:
 
-Om een gegevensbestandstortplaats van om het even welk Pro milieu, met inbegrip van het Opvoeren en Productie tot stand te brengen, zie [ een artikel van de Kennisbank van de gegevensbestandstortplaats ](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud) creëren.
+Om een gegevensbestandstortplaats van om het even welk Pro milieu, met inbegrip van het Opvoeren en Productie tot stand te brengen, zie [&#x200B; een artikel van de Kennisbank van de gegevensbestandstortplaats &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud) creëren.
 
 **om een steun van om het even welke milieu te creëren van de Aanzet gebruikend[!DNL Cloud Console]**:
 
-1. Meld u aan bij de map [[!DNL Cloud Console] ](https://console.adobecommerce.com) .
+1. Meld u aan bij de map [[!DNL Cloud Console] &#x200B;](https://console.adobecommerce.com) .
 1. Selecteer een omgeving in de projectnavigatiebalk. De omgeving moet actief zijn.
 1. In de _mening van Steunen_, klik **[!UICONTROL Backup]**. Deze optie is niet beschikbaar voor een Pro-omgeving.
 
-   ![ Steun ](../../assets/button-backup.png){width="150"}
+   ![&#x200B; Steun &#x200B;](../../assets/button-backup.png){width="150"}
 
 **om een steun van een integratiemilieu tot stand te brengen gebruikend[!DNL Cloud Console]**:
 
-1. Meld u aan bij de map [[!DNL Cloud Console] ](https://console.adobecommerce.com) .
+1. Meld u aan bij de map [[!DNL Cloud Console] &#x200B;](https://console.adobecommerce.com) .
 1. Selecteer een integratie-/ontwikkelomgeving in de projectnavigatiebalk. De omgeving moet actief zijn.
 1. Selecteer de optie **[!UICONTROL Backup]** in het menu rechtsboven. Deze optie is beschikbaar voor zowel Starter- als Pro-omgevingen.
 1. Klik op **[!UICONTROL Yes]** .
@@ -98,7 +98,7 @@ Om een gegevensbestandstortplaats van om het even welk Pro milieu, met inbegrip 
 
 ## Een handmatige back-up herstellen
 
-U moet [ toegang Admin ](../project/user-access.md) tot het milieu hebben. U hebt tot **zeven dagen** aan _herstel_ een handsteun. Bij het herstellen van een back-up wordt de code van de huidige git-vertakking niet gewijzigd. Het herstellen van een steun op deze manier is niet van toepassing op Pro het opvoeren en productiemilieu&#39;s; zie [ Pro Steun &amp; de Terugwinning van de Ramp ](../architecture/pro-architecture.md#backup-and-disaster-recovery).
+U moet [&#x200B; toegang Admin &#x200B;](../project/user-access.md) tot het milieu hebben. U hebt tot **zeven dagen** aan _herstel_ een handsteun. Bij het herstellen van een back-up wordt de code van de huidige git-vertakking niet gewijzigd. Het herstellen van een steun op deze manier is niet van toepassing op Pro het opvoeren en productiemilieu&#39;s; zie [&#x200B; Pro Steun &amp; de Terugwinning van de Ramp &#x200B;](../architecture/pro-architecture.md#backup-and-disaster-recovery).
 
 De hersteltijden variëren afhankelijk van de grootte van de database:
 
@@ -110,15 +110,15 @@ De hersteltijden variëren afhankelijk van de grootte van de database:
 >
 >Herstellen zonder back-up:
 >
->- Om terug naar vorige code terug te rollen of toegevoegde uitbreidingen in een milieu te verwijderen, zie [ Terugschroeven van prijzen code ](#roll-back-code).
->- Om een instabiel milieu te herstellen dat __ geen steun heeft, zie [ een milieu ](../development/restore-environment.md) herstellen.
+>- Om terug naar vorige code terug te rollen of toegevoegde uitbreidingen in een milieu te verwijderen, zie [&#x200B; Terugschroeven van prijzen code &#x200B;](#roll-back-code).
+>- Om een instabiel milieu te herstellen dat __ geen steun heeft, zie [&#x200B; een milieu &#x200B;](../development/restore-environment.md) herstellen.
 
 **om een steun te herstellen gebruikend[!DNL Cloud Console]**:
 
-1. Meld u aan bij de map [[!DNL Cloud Console] ](https://console.adobecommerce.com) .
+1. Meld u aan bij de map [[!DNL Cloud Console] &#x200B;](https://console.adobecommerce.com) .
 1. Selecteer een omgeving in de projectnavigatiebalk.
 1. In de _mening van Steunen_, kies een steun van de _Opgeslagen_ lijst. De reserveeigenschap is **niet** van toepassing op de Pro milieu&#39;s.
-1. In ![ Meer ](../../assets/icon-more.png){width="32"} (_meer_) menu, klik **herstellen**.
+1. In ![&#x200B; Meer &#x200B;](../../assets/icon-more.png){width="32"} (_meer_) menu, klik **herstellen**.
 1. Herzie Herstellen van reserveinformatie en klik **ja, herstel**.
 
 **om een momentopname te herstellen gebruikend Cloud CLI**:
@@ -150,15 +150,15 @@ De hersteltijden variëren afhankelijk van de grootte van de database:
 
 ## Een momentopname voor noodherstel herstellen
 
-Om de Momentopname van de Terugwinning van de Ramp in Pro het Opvoeren en milieu&#39;s van de Productie te herstellen, [ voer direct de gegevensbestandstortplaats van de server ](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3) in.
+Om de Momentopname van de Terugwinning van de Ramp in Pro het Opvoeren en milieu&#39;s van de Productie te herstellen, [&#x200B; voer direct de gegevensbestandstortplaats van de server &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3) in.
 
 ## Code terugdraaien
 
-De steunen en de momentopnamen omvatten __ geen exemplaar van uw code. Uw code is al opgeslagen in de op Git gebaseerde gegevensopslagruimte, zodat u Git-gebaseerde opdrachten kunt gebruiken om code terug te draaien (of terug te draaien). Bijvoorbeeld, gebruik `git log --oneline` om door vorige begaat te scrollen; dan gebruik [`git revert` ](https://git-scm.com/docs/git-revert) om code van te herstellen specifiek begaat.
+De steunen en de momentopnamen omvatten __ geen exemplaar van uw code. Uw code is al opgeslagen in de op Git gebaseerde gegevensopslagruimte, zodat u Git-gebaseerde opdrachten kunt gebruiken om code terug te draaien (of terug te draaien). Bijvoorbeeld, gebruik `git log --oneline` om door vorige begaat te scrollen; dan gebruik [`git revert` &#x200B;](https://git-scm.com/docs/git-revert) om code van te herstellen specifiek begaat.
 
-Ook, kunt u verkiezen om code in een _inactieve_ tak op te slaan. Gebruik git-opdrachten om een vertakking te maken in plaats van `magento-cloud` -opdrachten. Zie over [ bevelen van de Git ](../dev-tools/cloud-cli-overview.md#git-commands) in het Cloud CLI onderwerp.
+Ook, kunt u verkiezen om code in een _inactieve_ tak op te slaan. Gebruik git-opdrachten om een vertakking te maken in plaats van `magento-cloud` -opdrachten. Zie over [&#x200B; bevelen van de Git &#x200B;](../dev-tools/cloud-cli-overview.md#git-commands) in het Cloud CLI onderwerp.
 
 ## Verwante informatie
 
 - [Back-up maken van de database](database-dump.md)
-- [ Steun en rampenterugwinning ](../architecture/pro-architecture.md#backup-and-disaster-recovery) voor ProProductie en het Opvoeren clusters
+- [&#x200B; Steun en rampenterugwinning &#x200B;](../architecture/pro-architecture.md#backup-and-disaster-recovery) voor ProProductie en het Opvoeren clusters

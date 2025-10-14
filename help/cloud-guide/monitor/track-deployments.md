@@ -20,8 +20,8 @@ De de gegevensinzameling van Plaatsingen helpt de invloed van plaatsingsverander
 >[!PREREQUISITES]
 >
 >- `NR_API_URL`: New Relic API-eindpunt, in dit geval NerdGraph API-URL `https://api.newrelic.com/graphql`
->- `NR_API_KEY`: Creeer een gebruikerssleutel, zie [ New Relic API Sleutels ](https://docs.newrelic.com/docs/apis/intro-apis/new-relic-api-keys) in de _New Relic_ documentatie.
->- `NR_APP_GUID`: Een entiteit die gegevens aan New Relic rapporteert heeft een unieke identiteitskaart (GUID). Als voorbeeld, om op een het Opvoeren milieu toe te laten, pas de het Opvoeren milieu `NR_APP_GUID` wolkenvariabele met _het opvoeren entiteit GUID_ van New Relic aan. Zie [ leren over de entiteiten van New Relic ](https://docs.newrelic.com/docs/new-relic-solutions/new-relic-one/core-concepts/what-entity-new-relic/) en [ NerdGraph leerprogramma: De entiteitgegevens van de mening ](https://docs.newrelic.com/docs/apis/nerdgraph/examples/nerdgraph-entities-api-tutorial/) in de _New Relic_ documentatie.
+>- `NR_API_KEY`: Creeer een gebruikerssleutel, zie [&#x200B; New Relic API Sleutels &#x200B;](https://docs.newrelic.com/docs/apis/intro-apis/new-relic-api-keys) in de _New Relic_ documentatie.
+>- `NR_APP_GUID`: Een entiteit die gegevens aan New Relic rapporteert heeft een unieke identiteitskaart (GUID). Als voorbeeld, om op een het Opvoeren milieu toe te laten, pas de het Opvoeren milieu `NR_APP_GUID` wolkenvariabele met _het opvoeren entiteit GUID_ van New Relic aan. Zie [&#x200B; leren over de entiteiten van New Relic &#x200B;](https://docs.newrelic.com/docs/new-relic-solutions/new-relic-one/core-concepts/what-entity-new-relic/) en [&#x200B; NerdGraph leerprogramma: De entiteitgegevens van de mening &#x200B;](https://docs.newrelic.com/docs/apis/nerdgraph/examples/nerdgraph-entities-api-tutorial/) in de _New Relic_ documentatie.
 
 ## Trackimplementaties inschakelen
 
@@ -219,10 +219,10 @@ Spoor uw de gebeurtenissen van de projectplaatsing van Commerce in New Relic doo
    {"data":{"changeTrackingCreateDeployment":{"deploymentId":"some-deployment-id","entityGuid":"SomeGUIDhere"}}}
    ```
 
-1. Login aan uw [ rekening van New Relic ](https://login.newrelic.com/login).
+1. Login aan uw [&#x200B; rekening van New Relic &#x200B;](https://login.newrelic.com/login).
 
 1. Klik in het navigatiemenu Verkenner op **[!UICONTROL APM & Services]** . Selecteer de omgeving [!UICONTROL Name] en [!UICONTROL Account] .
 
 1. Onder _Gebeurtenissen_, klik **[!UICONTROL Change tracking]**.
 
-   ![ Plaatsingen ](../../assets/new-relic/deployments.png)
+   ![&#x200B; Plaatsingen &#x200B;](../../assets/new-relic/deployments.png)

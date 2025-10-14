@@ -11,13 +11,13 @@ ht-degree: 0%
 
 # MySQL-service instellen
 
-De `mysql` dienst verstrekt blijvende gegevensopslag die op [ wordt gebaseerd MariaDB ](https://mariadb.com/) versies 10.2 tot 10.4, ondersteunend de [ XtraDB ](https://docs.percona.com/percona-xtradb-cluster/8.0/index.html) opslagmotor en heropgezette eigenschappen van MySQL 5.6 en 5.7.
+De `mysql` dienst verstrekt blijvende gegevensopslag die op [&#x200B; wordt gebaseerd MariaDB &#x200B;](https://mariadb.com/) versies 10.2 tot 10.4, ondersteunend de [&#x200B; XtraDB &#x200B;](https://docs.percona.com/percona-xtradb-cluster/8.0/index.html) opslagmotor en heropgezette eigenschappen van MySQL 5.6 en 5.7.
 
-Het opnieuw indexeren op MariaDB 10.4 neemt meer tijd in vergelijking met andere versies MariaDB of MySQL. Zie [ Indexers ](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html?lang=nl-NL#indexers) in de _Beste praktijken van Prestaties_ gids.
+Het opnieuw indexeren op MariaDB 10.4 neemt meer tijd in vergelijking met andere versies MariaDB of MySQL. Zie [&#x200B; Indexers &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html?lang=nl-NL#indexers) in de _Beste praktijken van Prestaties_ gids.
 
 >[!WARNING]
 >
->Wees voorzichtig wanneer het bevorderen van MariaDB van versie 10.1 tot 10.2. MariaDB 10.1 is de laatste versie die _XtraDB_ als opslagmotor steunt. MariaDB 10.2 gebruikt _InnoDB_ voor de opslagmotor. Nadat u van 10.1 aan 10.2 bevordert, kunt u niet de verandering terugdraaien. Adobe Commerce ondersteunt beide opslagengines. U moet echter wel de extensies en andere systemen controleren die door uw project worden gebruikt om te controleren of deze compatibel zijn met MariaDB 10.2. Zie [ Incompatibele Veranderingen tussen 10.1 en 10.2 ](https://mariadb.com/kb/en/upgrading-from-mariadb-101-to-mariadb-102/#incompatible-changes-between-101-and-102).
+>Wees voorzichtig wanneer het bevorderen van MariaDB van versie 10.1 tot 10.2. MariaDB 10.1 is de laatste versie die _XtraDB_ als opslagmotor steunt. MariaDB 10.2 gebruikt _InnoDB_ voor de opslagmotor. Nadat u van 10.1 aan 10.2 bevordert, kunt u niet de verandering terugdraaien. Adobe Commerce ondersteunt beide opslagengines. U moet echter wel de extensies en andere systemen controleren die door uw project worden gebruikt om te controleren of deze compatibel zijn met MariaDB 10.2. Zie [&#x200B; Incompatibele Veranderingen tussen 10.1 en 10.2 &#x200B;](https://mariadb.com/kb/en/upgrading-from-mariadb-101-to-mariadb-102/#incompatible-changes-between-101-and-102).
 
 {{service-instruction}}
 
@@ -48,7 +48,7 @@ Het opnieuw indexeren op MariaDB 10.4 neemt meer tijd in vergelijking met andere
    git add .magento/services.yaml .magento.app.yaml && git commit -m "Enable mysql service" && git push origin <branch-name>
    ```
 
-1. [ verifieer de de dienstverhoudingen ](services-yaml.md#service-relationships).
+1. [&#x200B; verifieer de de dienstverhoudingen &#x200B;](services-yaml.md#service-relationships).
 
 {{service-change-tip}}
 
@@ -72,7 +72,7 @@ mysql:
             optimizer_use_condition_selectivity: 1
 ```
 
-`properties` in het bovenstaande voorbeeld wijzigt de standaard `optimizer` montages zoals [ geadviseerd in de gids van Beste praktijken van Prestaties ](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html?lang=nl-NL#indexers).
+`properties` in het bovenstaande voorbeeld wijzigt de standaard `optimizer` montages zoals [&#x200B; geadviseerd in de gids van Beste praktijken van Prestaties &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html?lang=nl-NL#indexers).
 
 **MariaDB configuratieopties**:
 
@@ -88,7 +88,7 @@ mysql:
 
 U kunt desgewenst meerdere gebruikers instellen met verschillende machtigingen voor toegang tot de `main` -database.
 
-Standaard is er één eindpunt met de naam `mysql` dat beheerderstoegang tot de database heeft. Als u meerdere databasegebruikers wilt instellen, moet u meerdere eindpunten in het `services.yaml` -bestand definiëren en de relaties in het `.magento.app.yaml` -bestand declareren. Voor Pro het Opvoeren en de milieu&#39;s van de Productie, [ voorleggen een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) om de extra gebruiker te verzoeken.
+Standaard is er één eindpunt met de naam `mysql` dat beheerderstoegang tot de database heeft. Als u meerdere databasegebruikers wilt instellen, moet u meerdere eindpunten in het `services.yaml` -bestand definiëren en de relaties in het `.magento.app.yaml` -bestand declareren. Voor Pro het Opvoeren en de milieu&#39;s van de Productie, [&#x200B; voorleggen een kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) om de extra gebruiker te verzoeken.
 
 Gebruik een geneste array om de eindpunten voor specifieke gebruikerstoegang te definiëren. Elk eindpunt kan toegang tot één of meerdere schema&#39;s (gegevensbestanden) en verschillende niveaus van toestemming op elk aanwijzen.
 
@@ -140,7 +140,7 @@ relationships:
 
 >[!NOTE]
 >
->Als u één gebruiker MySQL vormt, kunt u niet het [`DEFINER` ](https://dev.mysql.com/doc/refman/8.0/en/show-grants.html) toegangsbeheermechanisme voor opgeslagen procedures en meningen gebruiken.
+>Als u één gebruiker MySQL vormt, kunt u niet het [`DEFINER` &#x200B;](https://dev.mysql.com/doc/refman/8.0/en/show-grants.html) toegangsbeheermechanisme voor opgeslagen procedures en meningen gebruiken.
 
 ## Verbinding maken met de database
 
@@ -152,7 +152,7 @@ Als u rechtstreeks toegang wilt krijgen tot de MariaDB-database, moet u een SSH 
    magento-cloud ssh
    ```
 
-1. Haal de MySQL login geloofsbrieven van de `database` en `type` eigenschappen in de [$MAGENTO_CLOUD_RELATIONSHIPS ](../application/properties.md#relationships) variabele terug.
+1. Haal de MySQL login geloofsbrieven van de `database` en `type` eigenschappen in de [$MAGENTO_CLOUD_RELATIONSHIPS &#x200B;](../application/properties.md#relationships) variabele terug.
 
    ```bash
    echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
@@ -212,13 +212,13 @@ Als u rechtstreeks toegang wilt krijgen tot de MariaDB-database, moet u een SSH 
 >
 >Deze functie is alleen beschikbaar voor Pro Production- en Staging-clusters.
 
-Soms, moet u met het secundaire gegevensbestand verbinden om gegevensbestandprestaties te verbeteren of gegevensbestand het sluiten kwesties op te lossen. Als deze configuratie vereist is, gebruikt u `"port" : 3304` om de verbinding tot stand te brengen. Zie [ Beste praktijken om het MySQL slave verbindings ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/mysql-configuration.html?lang=nl-NL) onderwerp in de _gids van de Beste praktijken van de Implementatie_ te vormen.
+Soms, moet u met het secundaire gegevensbestand verbinden om gegevensbestandprestaties te verbeteren of gegevensbestand het sluiten kwesties op te lossen. Als deze configuratie vereist is, gebruikt u `"port" : 3304` om de verbinding tot stand te brengen. Zie [&#x200B; Beste praktijken om het MySQL slave verbindings &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/mysql-configuration.html?lang=nl-NL) onderwerp in de _gids van de Beste praktijken van de Implementatie_ te vormen.
 
 ## Problemen oplossen
 
 Raadpleeg de volgende Adobe Commerce Support-artikelen voor hulp bij het oplossen van MySQL-problemen:
 
-- [ die langzame vragen controleert en MySQL ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/database/checking-slow-queries-and-processes-mysql.html?lang=nl-NL) verwerkt
-- [ creeer gegevensbestandstortplaats op Wolk ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud.html?lang=nl-NL)
-- [ het oplossen van problemen van het Hulpmiddel van de Migratie van Gegevens ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=nl-NL)
-- [ verbetering van Adobe Commerce: compact aan dynamische lijsten 2.2.x, 2.3.x aan 2.4.x ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html?lang=nl-NL)
+- [&#x200B; die langzame vragen controleert en MySQL &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/database/checking-slow-queries-and-processes-mysql.html?lang=nl-NL) verwerkt
+- [&#x200B; creeer gegevensbestandstortplaats op Wolk &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud.html?lang=nl-NL)
+- [&#x200B; het oplossen van problemen van het Hulpmiddel van de Migratie van Gegevens &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=nl-NL)
+- [&#x200B; verbetering van Adobe Commerce: compact aan dynamische lijsten 2.2.x, 2.3.x aan 2.4.x &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html?lang=nl-NL)

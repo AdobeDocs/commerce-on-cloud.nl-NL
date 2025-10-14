@@ -10,23 +10,23 @@ ht-degree: 0%
 
 # Projectstructuur
 
-Een Adobe Commerce on cloud-infrastructuurproject bevat essentiële bestanden voor referenties en toepassingsconfiguratie. Deze bestanden zijn beschikbaar in de vorm van een sjabloon volgens de Adobe Commerce-versie. Zie de wolkenmalplaatjes die op versie van Adobe Commerce in de [`magento/magento-cloud` bewaarplaats GitHub ](https://github.com/magento/magento-cloud) worden gebaseerd.
+Een Adobe Commerce on cloud-infrastructuurproject bevat essentiële bestanden voor referenties en toepassingsconfiguratie. Deze bestanden zijn beschikbaar in de vorm van een sjabloon volgens de Adobe Commerce-versie. Zie de wolkenmalplaatjes die op versie van Adobe Commerce in de [`magento/magento-cloud` bewaarplaats GitHub &#x200B;](https://github.com/magento/magento-cloud) worden gebaseerd.
 
 In de volgende tabel worden de bestanden beschreven die zijn opgenomen in een wolkenproject:
 
 | Bestand | Beschrijving |
 | ------------------------- | ------------ |
-| `/.magento/routes.yaml` | Het dossier van de configuratie dat `www` aan het apex domein en `php` toepassing opnieuw richt om HTTP te dienen. Zie [ routes ](../routes/routes-yaml.md) vormen. |
-| `/.magento/services.yaml` | Een configuratiedossier dat een instantie MySQL (MariaDB), Redis, en OpenSearch of Elasticsearch bepaalt. Zie [ de diensten ](../services/services-yaml.md) vormen. |
-| `/app` | De map `code` wordt gebruikt voor aangepaste modules. De `design` omslag wordt gebruikt voor [ douanethema&#39;s ](../store/custom-theme.md). De map `etc` bevat configuratiebestanden voor de toepassing. |
+| `/.magento/routes.yaml` | Het dossier van de configuratie dat `www` aan het apex domein en `php` toepassing opnieuw richt om HTTP te dienen. Zie [&#x200B; routes &#x200B;](../routes/routes-yaml.md) vormen. |
+| `/.magento/services.yaml` | Een configuratiedossier dat een instantie MySQL (MariaDB), Redis, en OpenSearch of Elasticsearch bepaalt. Zie [&#x200B; de diensten &#x200B;](../services/services-yaml.md) vormen. |
+| `/app` | De map `code` wordt gebruikt voor aangepaste modules. De `design` omslag wordt gebruikt voor [&#x200B; douanethema&#39;s &#x200B;](../store/custom-theme.md). De map `etc` bevat configuratiebestanden voor de toepassing. |
 | `/m2-hotfixes` | Wordt gebruikt voor aangepaste patches. |
 | `/update` | Een de dienstomslag die door de steunmodule wordt gebruikt. |
-| `.gitignore` | Geef op welke bestanden en mappen u wilt negeren. Zie [`.gitignore` reference ](#ignoring-files) . |
-| `.magento.app.yaml` | Een configuratiebestand dat de eigenschappen definieert om de toepassing samen te stellen. Zie [ toepassing ](../application/configure-app-yaml.md) vormen. |
-| `.magento.env.yaml` | Het dossier van de configuratie voor de bouw, opstellen, en post-opstellen fasen. Het pakket `ece-tools` bevat een voorbeeld van dit bestand. Zie [ milieu&#39;s ](../environment/configure-env-yaml.md) vormen. |
-| `composer.json` | Zoekt Adobe Commerce en de configuratiescripts om uw toepassing voor te bereiden. Zie [ Vereiste pakketten ](../development/overview.md#required-packages). |
-| `composer.lock` | Slaat versiegebiedsdelen voor elk pakket op. Zie [ Vereiste pakketten ](../development/overview.md#required-packages). |
-| `magento-vars.php` | Gebruikt om [ veelvoudige opslag ](../store/multiple-sites.md) en plaatsen te bepalen die variabelen gebruiken. |
+| `.gitignore` | Geef op welke bestanden en mappen u wilt negeren. Zie [`.gitignore` reference &#x200B;](#ignoring-files) . |
+| `.magento.app.yaml` | Een configuratiebestand dat de eigenschappen definieert om de toepassing samen te stellen. Zie [&#x200B; toepassing &#x200B;](../application/configure-app-yaml.md) vormen. |
+| `.magento.env.yaml` | Het dossier van de configuratie voor de bouw, opstellen, en post-opstellen fasen. Het pakket `ece-tools` bevat een voorbeeld van dit bestand. Zie [&#x200B; milieu&#39;s &#x200B;](../environment/configure-env-yaml.md) vormen. |
+| `composer.json` | Zoekt Adobe Commerce en de configuratiescripts om uw toepassing voor te bereiden. Zie [&#x200B; Vereiste pakketten &#x200B;](../development/overview.md#required-packages). |
+| `composer.lock` | Slaat versiegebiedsdelen voor elk pakket op. Zie [&#x200B; Vereiste pakketten &#x200B;](../development/overview.md#required-packages). |
+| `magento-vars.php` | Gebruikt om [&#x200B; veelvoudige opslag &#x200B;](../store/multiple-sites.md) en plaatsen te bepalen die variabelen gebruiken. |
 
 {style="table-layout:auto"}
 
@@ -59,7 +59,7 @@ De externe integratie-, staging- en productieomgevingen zijn alleen-lezen. De vo
 
 ## Bestanden negeren
 
-Er is een base `.gitignore` -bestand met de Adobe Commerce op de projectopslagplaats van de cloud-infrastructuur. Zie het recentste dossier [.gitignore in magento-wolkenbewaarplaats ](https://github.com/magento/magento-cloud/blob/master/.gitignore). Als u een bestand wilt toevoegen dat in de lijst van `.gitignore` staat, kunt u de optie `-f` (geforceerd) gebruiken bij het stapelen van een commit:
+Er is een base `.gitignore` -bestand met de Adobe Commerce op de projectopslagplaats van de cloud-infrastructuur. Zie het recentste dossier [.gitignore in magento-wolkenbewaarplaats &#x200B;](https://github.com/magento/magento-cloud/blob/master/.gitignore). Als u een bestand wilt toevoegen dat in de lijst van `.gitignore` staat, kunt u de optie `-f` (geforceerd) gebruiken bij het stapelen van een commit:
 
 ```bash
 git add <path/filename> -f
@@ -80,7 +80,7 @@ U kunt de volgende stappen gebruiken om de structuur van een bestaand project te
    }
    ```
 
-1. Voeg het `.gitignore` -bestand toe dat is ontworpen voor de basissjabloon. Bijvoorbeeld, als u het `.gitignore` dossier voor versie 2.2.6 malplaatje nodig hebt, gebruik [ .gitignore voor 2.2.6 ](https://github.com/magento/magento-cloud/blob/2.2.6/.gitignore) dossier als verwijzing.
+1. Voeg het `.gitignore` -bestand toe dat is ontworpen voor de basissjabloon. Bijvoorbeeld, als u het `.gitignore` dossier voor versie 2.2.6 malplaatje nodig hebt, gebruik [&#x200B; .gitignore voor 2.2.6 &#x200B;](https://github.com/magento/magento-cloud/blob/2.2.6/.gitignore) dossier als verwijzing.
 
 1. Wis de git-cache.
 

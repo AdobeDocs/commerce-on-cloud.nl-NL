@@ -15,11 +15,11 @@ Hieronder volgt een reeks richtlijnen die moeten worden gevolgd wanneer u een bi
 
 Dit project voldoet aan de Adobe-[gedragscode](code-of-conduct.md). Door deelname,
 u wordt verwacht deze code te handhaven. Geef een onacceptabel gedrag aan
-[ Grp-opensourceoffice@adobe.com ](mailto:Grp-opensourceoffice@adobe.com).
+[&#x200B; Grp-opensourceoffice@adobe.com &#x200B;](mailto:Grp-opensourceoffice@adobe.com).
 
 ## Documentatie voor de bijdragegids
 
-Zie de [ Gids van de Medewerker ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=nl-NL).
+Zie de [&#x200B; Gids van de Medewerker &#x200B;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=nl-NL).
 
 ## Heb je een vraag?
 
@@ -31,7 +31,7 @@ consensus over de richting van projecten en het uitwerken van oplossingen binnen
 
 Alle bijdragen van derden aan dit project moeten vergezeld gaan van een ondertekende contribuant
 licentieovereenkomst. Dit geeft de Adobe toestemming om uw bijdragen opnieuw te verdelen
-als onderdeel van het project. [ Onderteken onze CLA ](https://opensource.adobe.com/cla.html). U
+als onderdeel van het project. [&#x200B; Onderteken onze CLA &#x200B;](https://opensource.adobe.com/cla.html). U
 slechts één keer een Adobe CLA moet voorleggen, zodat als u eerder hebt voorgelegd,
 je bent klaar om te gaan !
 
@@ -57,4 +57,4 @@ het is vrij om contact op te nemen met bestaande toezeggingen om hierover te pra
 
 ## Beveiligingsproblemen
 
-Beveiligingsproblemen moeten niet worden gerapporteerd in deze Issue Tracker. In plaats daarvan, [ dossier een kwestie aan onze veiligheidsdeskundigen ](https://helpx.adobe.com/nl/security/alertus.html)
+Beveiligingsproblemen moeten niet worden gerapporteerd in deze Issue Tracker. In plaats daarvan, [&#x200B; dossier een kwestie aan onze veiligheidsdeskundigen &#x200B;](https://helpx.adobe.com/nl/security/alertus.html)

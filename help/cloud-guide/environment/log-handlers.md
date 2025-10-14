@@ -14,7 +14,7 @@ ht-degree: 0%
 
 U kunt logboekmanagers vormen om berichten naar een verre registrerenserver te verzenden. Een logboekmanager duwt bouw en stelt logboeken aan andere systemen op, gelijkaardig aan de manier u logboeken aan Slack en e-mail duwt. U kunt a _syslog_ manager toelaten, die voor registrerenberichten met betrekking tot hardware, of een Graylog Uitgebreide manager van het Logboek van het Formaat (GELF) ideaal is, die voor registrerenberichten van softwaretoepassingen ideaal is.
 
-In het volgende voorbeeld worden beide handlers geconfigureerd door de configuratie aan het `.magento.env.yaml` -bestand toe te voegen. Voor het minimale registrerenniveau (`min_level`) waarden, zie [ niveaus van het Logboek ](#log-levels).
+In het volgende voorbeeld worden beide handlers geconfigureerd door de configuratie aan het `.magento.env.yaml` -bestand toe te voegen. Voor het minimale registrerenniveau (`min_level`) waarden, zie [&#x200B; niveaus van het Logboek &#x200B;](#log-levels).
 
 ```yaml
 log:

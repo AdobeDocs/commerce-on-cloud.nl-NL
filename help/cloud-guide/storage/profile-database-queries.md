@@ -15,7 +15,7 @@ Wanneer u naar een database schrijft, kan het helpen om profilering uit te voere
 
 **om gegevensbestandvraag toe te laten die** profileren:
 
-1. [ Login aan het gegevensbestand ](../services/mysql.md#connect-to-the-database).
+1. [&#x200B; Login aan het gegevensbestand &#x200B;](../services/mysql.md#connect-to-the-database).
 
 1. Profielen inschakelen.
 
