@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # [!DNL ActiveMQ] -service instellen
 
-Het [ Kader van de Rij van het Bericht (MQF) ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework.html) is een systeem binnen Adobe Commerce dat a [ module ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#module) toestaat om berichten aan rijen te publiceren. Het bepaalt ook de consumenten die de berichten asynchroon ontvangen.
+Het [&#x200B; Kader van de Rij van het Bericht (MQF) &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework.html) is een systeem binnen Adobe Commerce dat a [&#x200B; module &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#module) toestaat om berichten aan rijen te publiceren. Het bepaalt ook de consumenten die de berichten asynchroon ontvangen.
 
-MQF kan [ Artemis ActiveMQ ](https://activemq.apache.org/components/artemis/) als overseinenmakelaar gebruiken, die een scalable platform voor het verzenden van en het ontvangen van berichten verstrekt. Het omvat ook een mechanisme voor het opslaan van niet-geleverde berichten. [!DNL ActiveMQ Artemis] ondersteunt het STOMP-protocol (Streaming Text Oriented Messaging Protocol) voor berichten.
+MQF kan [&#x200B; Artemis ActiveMQ &#x200B;](https://activemq.apache.org/components/artemis/) als overseinenmakelaar gebruiken, die een scalable platform voor het verzenden van en het ontvangen van berichten verstrekt. Het omvat ook een mechanisme voor het opslaan van niet-geleverde berichten. [!DNL ActiveMQ Artemis] ondersteunt het STOMP-protocol (Streaming Text Oriented Messaging Protocol) voor berichten.
 
 [!DNL ActiveMQ Artemis] is beschikbaar als alternatief voor RabbitMQ voor het beheren van berichtrijen. Het is met name handig wanneer u functies nodig hebt die specifiek zijn voor ActiveMQ of wanneer u het STOMP-protocol wilt gebruiken.
 
@@ -54,7 +54,7 @@ MQF kan [ Artemis ActiveMQ ](https://activemq.apache.org/components/artemis/) al
    git push origin <branch-name>
    ```
 
-1. [ verifieer de de dienstverhoudingen ](services-yaml.md#service-relationships).
+1. [&#x200B; verifieer de de dienstverhoudingen &#x200B;](services-yaml.md#service-relationships).
 
 {{service-change-tip}}
 
@@ -86,7 +86,7 @@ Voor het zuiveren doeleinden, kunt u met een de dienstinstantie op één van de 
    magento-cloud ssh
    ```
 
-1. Haal de verbindingsdetails ActiveMQ en login geloofsbrieven van [$MAGENTO_CLOUD_RELATIONSHIPS ](../application/properties.md#relationships) variabele terug:
+1. Haal de verbindingsdetails ActiveMQ en login geloofsbrieven van [$MAGENTO_CLOUD_RELATIONSHIPS &#x200B;](../application/properties.md#relationships) variabele terug:
 
    ```bash
    echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
