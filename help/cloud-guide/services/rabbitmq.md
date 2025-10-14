@@ -1,21 +1,26 @@
 ---
 title: RabbitMQ-service instellen
-description: Leer hoe u de RabbitMQ-service in staat stelt om berichtwachtrijen voor Adobe Commerce te beheren op cloudinfrastructuur.
+description: Leer hoe u de RabbitMQ-service kunt inschakelen voor het beheren van berichtenrijen voor Adobe Commerce op cloudinfrastructuur.
 feature: Cloud, Services
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 64af1dfa-e3f0-4404-a352-659ca47c1121
+source-git-commit: 2df119f1c09b92e45ae30544e5c2ee0e0d21834c
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '417'
 ht-degree: 0%
 
 ---
 
 # [!DNL RabbitMQ] -service instellen
 
-Het [&#x200B; Kader van de Rij van het Bericht (MQF) &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework.html?lang=nl-NL) is een systeem binnen Adobe Commerce dat a [&#x200B; module &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/implementation-playbook/glossary#module) toestaat om berichten aan rijen te publiceren. Het bepaalt ook de consumenten die de berichten asynchroon ontvangen.
+Het [ Kader van de Rij van het Bericht (MQF) ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework.html) is een systeem binnen Adobe Commerce dat a [ module ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#module) toestaat om berichten aan rijen te publiceren. Het bepaalt ook de consumenten die de berichten asynchroon ontvangen.
 
-MQF gebruikt [&#x200B; RabbitMQ &#x200B;](https://www.rabbitmq.com/) als overseinenmakelaar, die een scalable platform voor het verzenden van en het ontvangen van berichten verstrekt. Het omvat ook een mechanisme voor het opslaan van niet-geleverde berichten. [!DNL RabbitMQ] is gebaseerd op de Geavanceerde specificatie 0.9.1 van het een rij vormen van het Bericht van het Protocol (AMQP).
+MQF gebruikt [ RabbitMQ ](https://www.rabbitmq.com/) als overseinenmakelaar, die een scalable platform voor het verzenden van en het ontvangen van berichten verstrekt. Het omvat ook een mechanisme voor het opslaan van niet-geleverde berichten. [!DNL RabbitMQ] is gebaseerd op de Geavanceerde specificatie 0.9.1 van het een rij vormen van het Bericht van het Protocol (AMQP).
 
->[!WARNING]
+>[!NOTE]
+>
+>Adobe Commerce op wolkeninfrastructuur steunt ook [ Artemis ActiveMQ ](activemq.md) als alternatieve dienst van de berichtrij gebruikend het protocol van STOMP.
+
+>[!IMPORTANT]
 >
 >Als u liever een bestaande AMQP-gebaseerde service gebruikt, zoals [!DNL RabbitMQ] , in plaats van Adobe Commerce op cloudinfrastructuur te vertrouwen om deze voor u te maken, gebruikt u de [`QUEUE_CONFIGURATION`](../environment/variables-deploy.md#queue_configuration) -omgevingsvariabele om deze aan uw site te koppelen.
 
@@ -23,7 +28,7 @@ MQF gebruikt [&#x200B; RabbitMQ &#x200B;](https://www.rabbitmq.com/) als oversei
 
 **om RabbitMQ** toe te laten:
 
-1. Voeg de vereiste naam, het type en de schijfwaarde (in MB) toe aan het `.magento/services.yaml` -bestand en aan de geïnstalleerde RabbitMQ-versie.
+1. Voeg de vereiste naam, het type en de schijfwaarde (in MB) toe aan het `.magento/services.yaml` -bestand, samen met de geïnstalleerde RabbitMQ-versie.
 
    ```yaml
    rabbitmq:
@@ -52,7 +57,7 @@ MQF gebruikt [&#x200B; RabbitMQ &#x200B;](https://www.rabbitmq.com/) als oversei
    git push origin <branch-name>
    ```
 
-1. [&#x200B; verifieer de de dienstverhoudingen &#x200B;](services-yaml.md#service-relationships).
+1. [ verifieer de de dienstverhoudingen ](services-yaml.md#service-relationships).
 
 {{service-change-tip}}
 
@@ -84,7 +89,7 @@ Voor het zuiveren doeleinden, is het nuttig om met een de dienstinstantie op é�
    magento-cloud ssh
    ```
 
-1. Haal de de verbindingsdetails van RabbitMQ en login geloofsbrieven van [$MAGENTO_CLOUD_RELATIONSHIPS &#x200B;](../application/properties.md#relationships) variabele terug:
+1. Haal de de verbindingsdetails van RabbitMQ en login geloofsbrieven van [$MAGENTO_CLOUD_RELATIONSHIPS ](../application/properties.md#relationships) variabele terug:
 
    ```bash
    echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
@@ -96,7 +101,7 @@ Voor het zuiveren doeleinden, is het nuttig om met een de dienstinstantie op é�
    php -r 'print_r(json_decode(base64_decode($_ENV["MAGENTO_CLOUD_RELATIONSHIPS"])));'
    ```
 
-   In het antwoord vindt u bijvoorbeeld de RabbitMQ-informatie:
+   In de reactie, vind de informatie RabbitMQ, bijvoorbeeld:
 
    ```json
    {
@@ -113,23 +118,23 @@ Voor het zuiveren doeleinden, is het nuttig om met een de dienstinstantie op é�
    }
    ```
 
-1. Enable local port forward to RabbitMQ (als uw project zich op een verschillend gebied zoals V.S.-3, EU-5, of AP-3 gebied bevindt, substitueer ``us-3``/``eu-5``/``ap-3`` for ``us``)
+1. Laat lokale haven toe door:sturen aan RabbitMQ (als uw project op een verschillend gebied zoals V.S.-3, EU-5, of AP-3 gebied wordt gevestigd, substitueer ``us-3``/``eu-5``/ ``ap-3`` voor ``us``)
 
    ```bash
    ssh -L <port-number>:rabbitmq.internal:<port-number> <project-ID>-<branch-ID>@ssh.us.magentosite.cloud
    ```
 
-   Een voorbeeld voor toegang tot de RabbitMQ Management Web Interface op `http://localhost:15672` is:
+   Een voorbeeld voor het verkrijgen van toegang tot de RabbitMQ-beheerwebinterface in `http://localhost:15672` is:
 
    ```bash
    ssh -L 15672:rabbitmq.internal:15672 <project-ID>-<branch-ID>@ssh.us.magentosite.cloud
    ```
 
-1. Terwijl de zitting open is, kunt u een cliënt van RabbitMQ van uw keus van uw lokaal werkstation beginnen, die wordt gevormd om met `localhost:<portnumber>` te verbinden gebruikend het havenaantal, gebruikersbenaming, en wachtwoordinformatie van de variabele MAGENTO_CLOUD_RELATIONSHIPS.
+1. Terwijl de sessie geopend is, kunt u een willekeurige RabbitMQ-client starten vanuit uw lokale werkstation, geconfigureerd om verbinding te maken met de `localhost:<portnumber>` . Hiervoor gebruikt u het poortnummer, de gebruikersnaam en de wachtwoordgegevens van de variabele MAGENTO_CLOUD_RELATIONSHIPS.
 
 ### Verbinding maken vanuit de toepassing
 
-Om met RabbitMQ te verbinden die in een toepassing loopt, installeer een cliënt, zoals [&#x200B; amqp-utils &#x200B;](https://github.com/dougbarth/amqp-utils), als projectgebiedsdeel in uw `.magento.app.yaml` dossier.
+Om met RabbitMQ te verbinden die in een toepassing loopt, installeer een cliënt, zoals [ amqp-utils ](https://github.com/dougbarth/amqp-utils), als projectgebiedsdeel in uw `.magento.app.yaml` dossier.
 
 Bijvoorbeeld:
 

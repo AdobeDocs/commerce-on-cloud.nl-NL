@@ -3,9 +3,9 @@ user-guide-title: Handleiding voor Commerce in de cloud
 user-guide-description: Leer hoe u de Adobe Commerce-toepassing beheert op cloudinfrastructuur.
 product: magento
 feature: Cloud
-source-git-commit: 3347ad0a5fe202cbd80d08b7289c20a1c98ed1e3
+source-git-commit: 5fc2082ca2aae8a1466821075c01ce756ba382cc
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '360'
 ht-degree: 4%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 4%
    + [Pro-workflow](architecture/pro-develop-deploy-workflow.md)
    + [Schaalbare architectuur](architecture/scaled-architecture.md)
    + [Automatisch schalen](architecture/autoscaling.md)
-+ [&#x200B; begonnen worden &#x200B;](https://experienceleague.adobe.com/docs/commerce-on-cloud/start/overview.html?lang=nl-NL)
++ [ begonnen worden ](https://experienceleague.adobe.com/docs/commerce-on-cloud/start/overview.html)
 + Opmerkingen bij de release {#release-notes}
    + [Cloud Tools-suite](release-notes/cloud-tools-suite.md)
    + [ECE-gereedschapspakket](release-notes/ece-tools-package.md)
@@ -131,6 +131,7 @@ ht-degree: 4%
       + [Include-bestanden op de server](routes/server-side-includes.md)
    + Services {#service}
       + [Services configureren](services/services-yaml.md)
+      + [ActiveMQ](services/activemq.md)
       + [Elasticsearch](services/elasticsearch.md)
       + [MySQL](services/mysql.md)
       + [OpenSearch](services/opensearch.md)
