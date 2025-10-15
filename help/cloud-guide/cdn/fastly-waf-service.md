@@ -26,7 +26,7 @@ De WAF-service biedt de volgende voordelen:
 
 >[!TIP]
 >
->Voor extra informatie over het handhaven van naleving PCI voor uw Adobe Commerce op de opslag van de wolkeninfrastructuur, zie [&#x200B; naleving PCI &#x200B;](https://business.adobe.com/products/magento/pci-compliance.html).
+>Voor extra informatie over het handhaven van naleving PCI voor uw Adobe Commerce op de opslag van de wolkeninfrastructuur, zie [&#x200B; naleving PCI &#x200B;](https://business.adobe.com/nl/products/magento/pci-compliance.html).
 
 ## WAF inschakelen
 
