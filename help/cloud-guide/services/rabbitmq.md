@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # [!DNL RabbitMQ] -service instellen
 
-Het [ Kader van de Rij van het Bericht (MQF) ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework.html) is een systeem binnen Adobe Commerce dat a [ module ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#module) toestaat om berichten aan rijen te publiceren. Het bepaalt ook de consumenten die de berichten asynchroon ontvangen.
+Het [&#x200B; Kader van de Rij van het Bericht (MQF) &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework.html) is een systeem binnen Adobe Commerce dat a [&#x200B; module &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#module) toestaat om berichten aan rijen te publiceren. Het bepaalt ook de consumenten die de berichten asynchroon ontvangen.
 
-MQF gebruikt [ RabbitMQ ](https://www.rabbitmq.com/) als overseinenmakelaar, die een scalable platform voor het verzenden van en het ontvangen van berichten verstrekt. Het omvat ook een mechanisme voor het opslaan van niet-geleverde berichten. [!DNL RabbitMQ] is gebaseerd op de Geavanceerde specificatie 0.9.1 van het een rij vormen van het Bericht van het Protocol (AMQP).
+MQF gebruikt [&#x200B; RabbitMQ &#x200B;](https://www.rabbitmq.com/) als overseinenmakelaar, die een scalable platform voor het verzenden van en het ontvangen van berichten verstrekt. Het omvat ook een mechanisme voor het opslaan van niet-geleverde berichten. [!DNL RabbitMQ] is gebaseerd op de Geavanceerde specificatie 0.9.1 van het een rij vormen van het Bericht van het Protocol (AMQP).
 
 >[!NOTE]
 >
->Adobe Commerce op wolkeninfrastructuur steunt ook [ Artemis ActiveMQ ](activemq.md) als alternatieve dienst van de berichtrij gebruikend het protocol van STOMP.
+>Adobe Commerce op wolkeninfrastructuur steunt ook [&#x200B; Artemis ActiveMQ &#x200B;](activemq.md) als alternatieve dienst van de berichtrij gebruikend het protocol van STOMP.
 
 >[!IMPORTANT]
 >
@@ -57,7 +57,7 @@ MQF gebruikt [ RabbitMQ ](https://www.rabbitmq.com/) als overseinenmakelaar, die
    git push origin <branch-name>
    ```
 
-1. [ verifieer de de dienstverhoudingen ](services-yaml.md#service-relationships).
+1. [&#x200B; verifieer de de dienstverhoudingen &#x200B;](services-yaml.md#service-relationships).
 
 {{service-change-tip}}
 
@@ -89,7 +89,7 @@ Voor het zuiveren doeleinden, is het nuttig om met een de dienstinstantie op é�
    magento-cloud ssh
    ```
 
-1. Haal de de verbindingsdetails van RabbitMQ en login geloofsbrieven van [$MAGENTO_CLOUD_RELATIONSHIPS ](../application/properties.md#relationships) variabele terug:
+1. Haal de de verbindingsdetails van RabbitMQ en login geloofsbrieven van [$MAGENTO_CLOUD_RELATIONSHIPS &#x200B;](../application/properties.md#relationships) variabele terug:
 
    ```bash
    echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
@@ -134,7 +134,7 @@ Voor het zuiveren doeleinden, is het nuttig om met een de dienstinstantie op é�
 
 ### Verbinding maken vanuit de toepassing
 
-Om met RabbitMQ te verbinden die in een toepassing loopt, installeer een cliënt, zoals [ amqp-utils ](https://github.com/dougbarth/amqp-utils), als projectgebiedsdeel in uw `.magento.app.yaml` dossier.
+Om met RabbitMQ te verbinden die in een toepassing loopt, installeer een cliënt, zoals [&#x200B; amqp-utils &#x200B;](https://github.com/dougbarth/amqp-utils), als projectgebiedsdeel in uw `.magento.app.yaml` dossier.
 
 Bijvoorbeeld:
 
@@ -152,8 +152,8 @@ Als u verbinding wilt maken met RabbitMQ met uw PHP-toepassing, voegt u een PHP-
 
 ## Problemen met de service [!DNL RabbitMQ] oplossen
 
-Zie [ Onbekwaam om met RabbitMQ in de Wolk van de Handel van Adobe te verbinden ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27688).
+Zie [&#x200B; Onbekwaam om met RabbitMQ in de Wolk van de Handel van Adobe te verbinden &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27688).
 
 ## De service [!DNL RabbitMQ] bijwerken
 
-Voor verbeteringsinstructies, zie [ de dienstversie van de Verandering ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml#change-service-version).
+Voor verbeteringsinstructies, zie [&#x200B; de dienstversie van de Verandering &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml#change-service-version).
