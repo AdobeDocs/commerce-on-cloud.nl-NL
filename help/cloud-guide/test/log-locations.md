@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Logbestanden weergeven en beheren
 
-De logboeken voor Adobe Commerce op de projecten van de wolkeninfrastructuur zijn nuttig voor het oplossen van problemenproblemen met betrekking tot [ bouwen en stellen haken ](../application/hooks-property.md), de wolkendiensten, en de toepassing van Adobe Commerce op.
+De logboeken voor Adobe Commerce op de projecten van de wolkeninfrastructuur zijn nuttig voor het oplossen van problemenproblemen met betrekking tot [&#x200B; bouwen en stellen haken &#x200B;](../application/hooks-property.md), de wolkendiensten, en de toepassing van Adobe Commerce op.
 
 U kunt de logboeken van het dossiersysteem, [!DNL Cloud Console], en `magento-cloud` CLI bekijken.
 
@@ -40,7 +40,7 @@ Wanneer er een fout optreedt met een specifiek logrecordnummer (zoals `475a3bca6
 
 >[!NOTE]
 >
->Voor instructies bij de toegang tot van verre milieu logboeken voor uw toepassing van Commerce die Veilige Shell (SSH) gebruiken, zie [ Veilige verbindingen aan verre milieu&#39;s ](../development/secure-connections.md).
+>Voor instructies bij de toegang tot van verre milieu logboeken voor uw toepassing van Commerce die Veilige Shell (SSH) gebruiken, zie [&#x200B; Veilige verbindingen aan verre milieu&#39;s &#x200B;](../development/secure-connections.md).
 
 #### Methode 1: Zoeken met grep
 
@@ -63,7 +63,7 @@ magento-cloud ssh -e <environment-ID> "find /var/log -name '*.gz' -exec zgrep '4
 
 #### Methode 3: New Relic gebruiken (Pro-omgevingen)
 
-Voor Pro Production- en Staging-omgevingen gebruikt u New Relic Logs om te zoeken naar specifieke foutrecords. Voor details, zie [ het logboekbeheer van New Relic ](../monitor/log-management.md).
+Voor Pro Production- en Staging-omgevingen gebruikt u New Relic Logs om te zoeken naar specifieke foutrecords. Voor details, zie [&#x200B; het logboekbeheer van New Relic &#x200B;](../monitor/log-management.md).
 
 ### Logboeken voor externe omgevingen weergeven
 
@@ -109,12 +109,12 @@ ssh 1.ent-project-environment-id@ssh.region.magento.cloud "cat var/log/cron.log"
 >
 >Voor Pro Staging- en Pro Production-omgevingen zijn automatische logrotatie, compressie en verwijdering ingeschakeld voor logbestanden met een vaste bestandsnaam. Elk logboekbestandstype heeft een roterend patroon en een levensduur.
 >Meer informatie over de logrotatie en de levensduur van gecomprimeerde logbestanden in de omgeving vindt u in: `/etc/logrotate.conf` en `/etc/logrotate.d/<various>` .
->Voor Pro het Opvoeren en de Pro milieu&#39;s van de Productie, moet u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voorleggen om voor veranderingen in de configuratie van de logboekomwenteling te vragen.
+>Voor Pro het Opvoeren en de Pro milieu&#39;s van de Productie, moet u [&#x200B; een kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voorleggen om voor veranderingen in de configuratie van de logboekomwenteling te vragen.
 
 >[!TIP]
 >
 >Logrotatie kan niet worden geconfigureerd in Pro-integratieomgevingen.
->Voor ProIntegratie, moet u een douaneoplossing/manuscript uitvoeren en [ vormt uw kruin ](../application/crons-property.md) om het manuscript in werking te stellen zoals nodig.
+>Voor ProIntegratie, moet u een douaneoplossing/manuscript uitvoeren en [&#x200B; vormt uw kruin &#x200B;](../application/crons-property.md) om het manuscript in werking te stellen zoals nodig.
 
 >[!NOTE]
 >
@@ -143,7 +143,7 @@ Re-deploying environment project-integration-ID
 
 >[!TIP]
 >
->Wanneer u uw milieu van de Wolk vormt, kunt u opstelling [ op logboek-gebaseerde Slack en e-mailberichten ](../environment/set-up-notifications.md) voor bouwt en stelt acties op.
+>Wanneer u uw milieu van de Wolk vormt, kunt u opstelling [&#x200B; op logboek-gebaseerde Slack en e-mailberichten &#x200B;](../environment/set-up-notifications.md) voor bouwt en stelt acties op.
 
 De volgende logboeken hebben een gemeenschappelijke plaats voor alle projecten van de Wolk:
 
@@ -187,7 +187,7 @@ Reading log file projectID-branchname-ID--mymagento@ssh.zone.magento.cloud:/var/
 
 Fout- en waarschuwingsberichten die tijdens het implementatieproces worden gegenereerd, worden zowel naar de `var/log/cloud.log` - als naar de `var/log/cloud.error.log` -bestanden geschreven. Het logbestand met fouten in de cloud bevat alleen fouten en waarschuwingen van de meest recente implementatie. Een leeg bestand geeft aan dat de implementatie zonder fouten is gelukt.
 
-U kunt het logboekdossier bekijken gebruikend [ Cloud CLI SSH ](#view-remote-environment-logs), of u kunt ECE-Hulpmiddelen gebruiken om de fouten met suggesties te tonen:
+U kunt het logboekdossier bekijken gebruikend [&#x200B; Cloud CLI SSH &#x200B;](#view-remote-environment-logs), of u kunt ECE-Hulpmiddelen gebruiken om de fouten met suggesties te tonen:
 
 ```bash
 magento-cloud ssh -e <environment-ID> "./vendor/bin/ece-tools error:show"
@@ -220,7 +220,7 @@ title: The configured state is not ideal
 type: warning
 ```
 
-De meeste foutberichten bevatten een beschrijving en voorgestelde actie. Gebruik de [ het berichtverwijzing van de Fout voor ECE-Hulpmiddelen ](../dev-tools/error-reference.md) om de foutencode voor verdere begeleiding op te zoeken. Voor verdere begeleiding, gebruik de [ de plaatsingsprobleemoplosser van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html).
+De meeste foutberichten bevatten een beschrijving en voorgestelde actie. Gebruik de [&#x200B; het berichtverwijzing van de Fout voor ECE-Hulpmiddelen &#x200B;](../dev-tools/error-reference.md) om de foutencode voor verdere begeleiding op te zoeken. Voor verdere begeleiding, gebruik de [&#x200B; de plaatsingsprobleemoplosser van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html).
 
 ## Toepassingslogboeken
 
@@ -228,8 +228,8 @@ Toepassingslogboeken zijn net als logboeken voor implementatie uniek voor elke o
 
 | Logbestand | Starter en Pro-integratie | Beschrijving |
 | ------------------- | --------------------------- | ------------------------------------------------- |
-| **Deploy logboek** | `/var/log/deploy.log` | De activiteit van [ stelt haak ](../application/hooks-property.md) op. |
-| **Logboek van de post-opstellen** | `/var/log/post_deploy.log` | De activiteit van [ post-stelt haak ](../application/hooks-property.md) op. |
+| **Deploy logboek** | `/var/log/deploy.log` | De activiteit van [&#x200B; stelt haak &#x200B;](../application/hooks-property.md) op. |
+| **Logboek van de post-opstellen** | `/var/log/post_deploy.log` | De activiteit van [&#x200B; post-stelt haak &#x200B;](../application/hooks-property.md) op. |
 | **het logboek van het Gewas** | `/var/log/cron.log` | Uitvoer van snijtaken. |
 | **Nginx toegangslogboek** | `/var/log/access.log` | Bij Nginx-start worden HTTP-fouten gegenereerd voor ontbrekende mappen en uitgesloten bestandstypen. |
 | **Nginx foutenlogboek** | `/var/log/error.log` | Opstartberichten die nuttig zijn voor foutopsporing in configuratiefouten die aan Nginx zijn gekoppeld. |
@@ -258,7 +258,7 @@ De toepassingslogboeken worden samengeperst en één keer per dag gearchiveerd e
 
 De gearchiveerde logboekdossiers worden altijd opgeslagen in de folder waar het originele dossier vóór compressie werd gevestigd.
 
-U kunt [ een steunkaartje ](https://experienceleague.adobe.com/home?support-tab=home#support) voorleggen om veranderingen in uw logboekbehoudperiode of locatieconfiguratie te verzoeken. U kunt de bewaarperiode tot maximaal 365 dagen verhogen, het verminderen om opslagquota te behouden, of extra logboekwegen toevoegen aan de lokale configuratie. Deze wijzigingen zijn beschikbaar voor Pro Staging- en Productieclusters.
+U kunt [&#x200B; een steunkaartje &#x200B;](https://experienceleague.adobe.com/home?support-tab=home#support) voorleggen om veranderingen in uw logboekbehoudperiode of locatieconfiguratie te verzoeken. U kunt de bewaarperiode tot maximaal 365 dagen verhogen, het verminderen om opslagquota te behouden, of extra logboekwegen toevoegen aan de lokale configuratie. Deze wijzigingen zijn beschikbaar voor Pro Staging- en Productieclusters.
 
 Als u bijvoorbeeld een aangepast pad maakt voor het opslaan van logbestanden in de map `var/log/mymodule` , kunt u een logrotatie aanvragen voor dit pad. De huidige infrastructuur vereist echter consistente bestandsnamen voor Adobe om de logrotatie op de juiste manier te configureren. Adobe raadt aan lognamen consistent te houden om configuratieproblemen te voorkomen.
 
@@ -282,10 +282,10 @@ De logboeken van de dienst worden gearchiveerd en voor verschillende periodes, a
 
 >[!TIP]
 >
->De bestandslocaties van logbestanden in de geschaalde architectuur zijn afhankelijk van het type knooppunt. Zie {de plaatsen van het 0} Logboek in het Schaalde architectuur [ onderwerp.](../architecture/scaled-architecture.md#log-locations)
+>De bestandslocaties van logbestanden in de geschaalde architectuur zijn afhankelijk van het type knooppunt. Zie {de plaatsen van het 0} Logboek in het Schaalde architectuur [&#x200B; onderwerp.](../architecture/scaled-architecture.md#log-locations)
 
 ## Loggegevens voor Pro Production en Staging
 
-Voor ProProductie en het Opvoeren milieu&#39;s, gebruik [ New Relic logboekbeheer ](../monitor/log-management.md) geïntegreerd met uw project om samengevoegde logboekgegevens van alle logboeken te beheren verbonden aan uw Adobe Commerce op het project van de wolkeninfrastructuur.
+Voor ProProductie en het Opvoeren milieu&#39;s, gebruik [&#x200B; New Relic logboekbeheer &#x200B;](../monitor/log-management.md) geïntegreerd met uw project om samengevoegde logboekgegevens van alle logboeken te beheren verbonden aan uw Adobe Commerce op het project van de wolkeninfrastructuur.
 
 De New Relic Logs-toepassing biedt een gecentraliseerd logbeheerdashboard om Adobe Commerce problemen op te lossen en te controleren in productieomgevingen en testomgevingen voor cloudinfrastructuur. Het dashboard verleent ook toegang tot logboekgegevens voor de Snelle diensten van CDN, van de Optimalisering van het Beeld, en van de de toepassingsfirewall van het Web (WAF). Zie {de diensten van 0} New Relic [.](../monitor/new-relic-service.md)
