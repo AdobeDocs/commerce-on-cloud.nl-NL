@@ -3,22 +3,22 @@ title: RabbitMQ-service instellen
 description: Leer hoe u de RabbitMQ-service kunt inschakelen voor het beheren van berichtenrijen voor Adobe Commerce op cloudinfrastructuur.
 feature: Cloud, Services
 exl-id: 64af1dfa-e3f0-4404-a352-659ca47c1121
-source-git-commit: 2df119f1c09b92e45ae30544e5c2ee0e0d21834c
+source-git-commit: 76a9721767cbd4328347311cc308810f0f7914c0
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
 
 # [!DNL RabbitMQ] -service instellen
 
-Het [&#x200B; Kader van de Rij van het Bericht (MQF) &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework.html?lang=nl-NL) is een systeem binnen Adobe Commerce dat a [&#x200B; module &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/implementation-playbook/glossary#module) toestaat om berichten aan rijen te publiceren. Het bepaalt ook de consumenten die de berichten asynchroon ontvangen.
+Het [ Kader van de Rij van het Bericht (MQF) ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework.html) is een systeem binnen Adobe Commerce dat a [ module ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#module) toestaat om berichten aan rijen te publiceren. Het bepaalt ook de consumenten die de berichten asynchroon ontvangen.
 
-MQF gebruikt [&#x200B; RabbitMQ &#x200B;](https://www.rabbitmq.com/) als overseinenmakelaar, die een scalable platform voor het verzenden van en het ontvangen van berichten verstrekt. Het omvat ook een mechanisme voor het opslaan van niet-geleverde berichten. [!DNL RabbitMQ] is gebaseerd op de Geavanceerde specificatie 0.9.1 van het een rij vormen van het Bericht van het Protocol (AMQP).
+MQF gebruikt [ RabbitMQ ](https://www.rabbitmq.com/) als overseinenmakelaar, die een scalable platform voor het verzenden van en het ontvangen van berichten verstrekt. Het omvat ook een mechanisme voor het opslaan van niet-geleverde berichten. [!DNL RabbitMQ] is gebaseerd op de Geavanceerde specificatie 0.9.1 van het een rij vormen van het Bericht van het Protocol (AMQP).
 
 >[!NOTE]
 >
->Adobe Commerce op wolkeninfrastructuur steunt ook [&#x200B; Artemis ActiveMQ &#x200B;](activemq.md) als alternatieve dienst van de berichtrij gebruikend het protocol van STOMP.
+>Adobe Commerce op wolkeninfrastructuur steunt ook [ Artemis ActiveMQ ](activemq.md) als alternatieve dienst van de berichtrij gebruikend het protocol van STOMP.
 
 >[!IMPORTANT]
 >
@@ -57,7 +57,7 @@ MQF gebruikt [&#x200B; RabbitMQ &#x200B;](https://www.rabbitmq.com/) als oversei
    git push origin <branch-name>
    ```
 
-1. [&#x200B; verifieer de de dienstverhoudingen &#x200B;](services-yaml.md#service-relationships).
+1. [ verifieer de de dienstverhoudingen ](services-yaml.md#service-relationships).
 
 {{service-change-tip}}
 
@@ -89,7 +89,7 @@ Voor het zuiveren doeleinden, is het nuttig om met een de dienstinstantie op é�
    magento-cloud ssh
    ```
 
-1. Haal de de verbindingsdetails van RabbitMQ en login geloofsbrieven van [$MAGENTO_CLOUD_RELATIONSHIPS &#x200B;](../application/properties.md#relationships) variabele terug:
+1. Haal de de verbindingsdetails van RabbitMQ en login geloofsbrieven van [$MAGENTO_CLOUD_RELATIONSHIPS ](../application/properties.md#relationships) variabele terug:
 
    ```bash
    echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
@@ -134,7 +134,7 @@ Voor het zuiveren doeleinden, is het nuttig om met een de dienstinstantie op é�
 
 ### Verbinding maken vanuit de toepassing
 
-Om met RabbitMQ te verbinden die in een toepassing loopt, installeer een cliënt, zoals [&#x200B; amqp-utils &#x200B;](https://github.com/dougbarth/amqp-utils), als projectgebiedsdeel in uw `.magento.app.yaml` dossier.
+Om met RabbitMQ te verbinden die in een toepassing loopt, installeer een cliënt, zoals [ amqp-utils ](https://github.com/dougbarth/amqp-utils), als projectgebiedsdeel in uw `.magento.app.yaml` dossier.
 
 Bijvoorbeeld:
 
@@ -149,3 +149,11 @@ Wanneer u zich aanmeldt bij uw PHP-container, voert u een `amqp-` -opdracht in d
 ### Verbinding maken met uw PHP-toepassing
 
 Als u verbinding wilt maken met RabbitMQ met uw PHP-toepassing, voegt u een PHP-bibliotheek toe aan de bronstructuur.
+
+## Problemen met de service [!DNL RabbitMQ] oplossen
+
+Zie [ Onbekwaam om met RabbitMQ in de Wolk van de Handel van Adobe te verbinden ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27688).
+
+## De service [!DNL RabbitMQ] bijwerken
+
+Voor verbeteringsinstructies, zie [ de dienstversie van de Verandering ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml#change-service-version).
