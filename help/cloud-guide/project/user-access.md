@@ -232,7 +232,7 @@ De instructies voor het installeren van de authentificatortoepassing en het toel
 
      >[!WARNING]
      >
-     >Als u toegang tot een rekening met TFA verliest en niet de lijst van terugwinningscodes hebt, moet u uw projectbeheerder contacteren, of [&#x200B; een kaartje van de Steun van Adobe Commerce voorleggen &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) om de toepassing van TFA terug te stellen.
+     >Als u toegang tot een rekening met TFA verliest en niet de lijst van terugwinningscodes hebt, moet u uw projectbeheerder contacteren, of [&#x200B; een kaartje van de Steun van Adobe Commerce voorleggen &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) om de toepassing van TFA terug te stellen.
 
 1. Na de voltooiing van de opstelling van TFA, klik **sparen** om uw rekening bij te werken.
 
