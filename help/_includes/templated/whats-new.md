@@ -23,7 +23,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>De bewaarperiode voor gearchiveerde logbestanden voor Commerce op cloudprojecten is nu 30 dagen. Zie <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations"> Logboeken van de Mening en van het Beheer </a> in Commerce op de Gids van de Wolk.</p>
+      <td><p>De bewaarperiode voor gearchiveerde logbestanden voor Commerce op cloudprojecten is nu 30 dagen. Zie <a href="https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/develop/test/log-locations"> Logboeken van de Mening en van het Beheer </a> in Commerce op de Gids van de Wolk.</p>
 </td>
       <td>
         Technisch, feedback
@@ -45,7 +45,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>De bijgewerkte <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference"> verwijzing CLI </a> na ECE-Hulpmiddelen versie, v2002.2.8.</p>
+      <td><p>De bijgewerkte <a href="https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference"> verwijzing CLI </a> na ECE-Hulpmiddelen versie, v2002.2.8.</p>
 </td>
       <td>
         Technisch
@@ -67,7 +67,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>De bijgewerkte <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-reference"> verwijzing CLI </a> na de versie van CLI van de Wolk, v1.47.0.</p>
+      <td><p>De bijgewerkte <a href="https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-reference"> verwijzing CLI </a> na de versie van CLI van de Wolk, v1.47.0.</p>
 </td>
       <td>
         Technisch
