@@ -18,13 +18,13 @@ Het Pro-project bevat één Git-opslagplaats met een globale `master` vertakking
 1. **het Opvoeren** milieu voor het testen met alle diensten
 1. **het milieu van de Integratie** voor ontwikkeling en het testen
 
-![ Pro milieulijst ](../../assets/pro-environments.png)
+![&#x200B; Pro milieulijst &#x200B;](../../assets/pro-environments.png)
 
 Dit zijn `read-only` omgevingen die geïmplementeerde codewijzigingen accepteren die alleen vanuit uw lokale werkruimte worden doorgegeven.
 
-In de volgende afbeelding ziet u hoe de workflow voor het ontwikkelen en implementeren van Pro is gebaseerd op een eenvoudige, vertakkende aanpak. U [ ontwikkelt ](#development-workflow) code gebruikend een actieve tak die op het `integration` milieu wordt gebaseerd, _duwend_ en _trekken_ codeveranderingen aan en van uw verre, Actieve tak. U stelt geverifieerde code door _samen te voegen_ de verre tak aan de basistak op, die een geautomatiseerd [ bouwt en ](#deployment-workflow) proces voor dat milieu opstelt.
+In de volgende afbeelding ziet u hoe de workflow voor het ontwikkelen en implementeren van Pro is gebaseerd op een eenvoudige, vertakkende aanpak. U [&#x200B; ontwikkelt &#x200B;](#development-workflow) code gebruikend een actieve tak die op het `integration` milieu wordt gebaseerd, _duwend_ en _trekken_ codeveranderingen aan en van uw verre, Actieve tak. U stelt geverifieerde code door _samen te voegen_ de verre tak aan de basistak op, die een geautomatiseerd [&#x200B; bouwt en &#x200B;](#deployment-workflow) proces voor dat milieu opstelt.
 
-![ mening op hoog niveau van het Pro werkschema van de architectuurontwikkeling ](../../assets/pro-dev-workflow.png)
+![&#x200B; mening op hoog niveau van het Pro werkschema van de architectuurontwikkeling &#x200B;](../../assets/pro-dev-workflow.png)
 
 Omdat de omgeving alleen-lezen is, kunt u geen wijzigingen in de code rechtstreeks in de Cloud-omgeving doorvoeren. Als u `composer install` probeert uit te voeren om modules te installeren, wordt een fout gegenereerd, bijvoorbeeld:
 
@@ -35,7 +35,7 @@ The disk hosting /app/<cluster_ID> is full
 
 >[!NOTE]
 >
->Het is in geen van de Pro-omgevingen mogelijk om de machtigingen voor alleen-lezen mappen te wijzigen. Deze beperking beschermt de integriteit en beveiliging van de toepassing. Mapmachtigingen voor deze alleen-lezen bestandssystemen kunnen niet worden gewijzigd. Zelfs ondersteuning kan deze machtigingen niet wijzigen. Alle wijzigingen moeten worden aangebracht vanuit een vertakking in uw lokale ontwikkelomgeving en worden doorgevoerd in de toepassingsomgeving. Voor meer informatie, zie [ Pro architectuur ](pro-architecture.md) voor een overzicht van Pro milieu&#39;s, en zie [[!DNL Cloud Console]](../project/overview.md#cloud-console) voor een overzicht van de Pro milieu&#39;s lijst in de projectweergave.
+>Het is in geen van de Pro-omgevingen mogelijk om de machtigingen voor alleen-lezen mappen te wijzigen. Deze beperking beschermt de integriteit en beveiliging van de toepassing. Mapmachtigingen voor deze alleen-lezen bestandssystemen kunnen niet worden gewijzigd. Zelfs ondersteuning kan deze machtigingen niet wijzigen. Alle wijzigingen moeten worden aangebracht vanuit een vertakking in uw lokale ontwikkelomgeving en worden doorgevoerd in de toepassingsomgeving. Voor meer informatie, zie [&#x200B; Pro architectuur &#x200B;](pro-architecture.md) voor een overzicht van Pro milieu&#39;s, en zie [[!DNL Cloud Console]](../project/overview.md#cloud-console) voor een overzicht van de Pro milieu&#39;s lijst in de projectweergave.
 
 ## Ontwikkelingsworkflow
 
@@ -61,7 +61,7 @@ Met een ontwikkelde codevertakking en de overeenkomstige configuratiedossiers, z
 
 - **Genererend configuratiebeheersdossiers** - sommige configuratiemontages zijn _slechts Lees_ in een opgesteld milieu.
 
-- **Vormend uw opslag** - u zou alle opslagmontages volledig moeten vormen gebruikend het integratiemilieu. U kunt **Admin URL van de Opslag** op de _integratie_ milieumening in _[!DNL Cloud Console]_vinden.
+- **Vormend uw opslag** - u zou alle opslagmontages volledig moeten vormen gebruikend het integratiemilieu. U kunt **Admin URL van de Opslag** op de _integratie_ milieumening in _[!DNL Cloud Console]_&#x200B;vinden.
 
 ## Implementatieworkflow
 
@@ -91,7 +91,7 @@ Scripthandelingen implementeren:
 
 - Vorm het verpletteren voor verkeer
 
-Na het proces voor het maken en implementeren van code komt uw winkel online terug met de nieuwste codewijzigingen en -configuraties. Zie [ proces van de Plaatsing ](../deploy/process.md).
+Na het proces voor het maken en implementeren van code komt uw winkel online terug met de nieuwste codewijzigingen en -configuraties. Zie [&#x200B; proces van de Plaatsing &#x200B;](../deploy/process.md).
 
 ### Samenvoegen tot integratie
 
@@ -99,9 +99,9 @@ Combineer alle geverifieerde codewijzigingen door uw actieve ontwikkelingsvertak
 
 ### Samenvoegen tot fasering
 
-Staging is een omgeving vóór de productie die alle services en instellingen zo dicht mogelijk bij de productieomgeving biedt. Duw altijd uw codeveranderingen van het `integration` milieu aan het `staging` milieu zodat u grondig het testen met alle diensten kunt uitvoeren. De eerste keer u het opvoeren milieu gebruikt, moet u de diensten, zoals [ snel CDN ](../cdn/fastly.md) en [ New Relic ](../monitor/new-relic-service.md) vormen. Configureer betaalgateways, verzendingen, meldingen en andere essentiële services met sandbox- of testgegevens.
+Staging is een omgeving vóór de productie die alle services en instellingen zo dicht mogelijk bij de productieomgeving biedt. Duw altijd uw codeveranderingen van het `integration` milieu aan het `staging` milieu zodat u grondig het testen met alle diensten kunt uitvoeren. De eerste keer u het opvoeren milieu gebruikt, moet u de diensten, zoals [&#x200B; snel CDN &#x200B;](../cdn/fastly.md) en [&#x200B; New Relic &#x200B;](../monitor/new-relic-service.md) vormen. Configureer betaalgateways, verzendingen, meldingen en andere essentiële services met sandbox- of testgegevens.
 
-Het is best om elke dienst grondig te testen, uw prestaties testende hulpmiddelen te verifiëren, en het testen van UAT als beheerder en als klant uit te voeren, tot u vindt dat uw opslag klaar voor het productiemilieu is. Zie [ uw opslag ](../deploy/staging-production.md) opstellen.
+Het is best om elke dienst grondig te testen, uw prestaties testende hulpmiddelen te verifiëren, en het testen van UAT als beheerder en als klant uit te voeren, tot u vindt dat uw opslag klaar voor het productiemilieu is. Zie [&#x200B; uw opslag &#x200B;](../deploy/staging-production.md) opstellen.
 
 {{second-staging}}
 
@@ -116,4 +116,4 @@ Na grondig het testen in het opvoeren milieu, fusie aan het productiemilieu en g
 
 Duw altijd een exemplaar van de productiecode aan Globaal `master` voor het geval er een opkomende behoefte is om het productiemilieu te zuiveren zonder de diensten te onderbreken.
 
-Maak **** geen tak van Globaal `master`. Gebruik de `integration` -vertakking om nieuwe, actieve vertakkingen te maken voor ontwikkeling en oplossingen.
+Maak **&#x200B;**&#x200B;geen tak van Globaal `master`. Gebruik de `integration` -vertakking om nieuwe, actieve vertakkingen te maken voor ontwikkeling en oplossingen.
