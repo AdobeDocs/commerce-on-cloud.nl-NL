@@ -1,5 +1,5 @@
 ---
-source-git-commit: 11d0e86ad4633d9c4232474b9921ed491f285969
+source-git-commit: 1521b83be787fd7d8e0db302bfaea48f912af572
 workflow-type: tm+mt
 source-wordcount: '934'
 ht-degree: 0%
@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # Gereedschappen
 
-**Versie**: 2002.2.8
+**Versie**: 2002.2.9
 
 Deze verwijzing bevat 34 opdrachten die beschikbaar zijn via het opdrachtregelprogramma van `ece-tools` .
 De eerste lijst wordt automatisch gegenereerd met de opdracht `ece-tools list` in Adobe Commerce op de cloud-infrastructuur.
@@ -83,7 +83,7 @@ Interne opdracht voor suggesties voor shell-voltooiing
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--shell`, `-s`
 
@@ -127,7 +127,7 @@ Builds-toepassing.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `completion`
@@ -175,7 +175,7 @@ Het shell type (bijvoorbeeld &quot;bash&quot;), de waarde van &quot;$SHELL&quot;
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--debug`
 
@@ -204,7 +204,7 @@ Databases voor back-up. Beschikbare Waarden: [ belangrijkste citaatverkoop ]. Al
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--remove-definers`, `-d`
 
@@ -230,7 +230,7 @@ Implementeert de toepassing.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `help`
@@ -263,7 +263,7 @@ De opdrachtnaam
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--format`
 
@@ -314,7 +314,7 @@ De naamruimtenaam
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--raw`
 
@@ -348,7 +348,7 @@ Hiermee past u aangepaste patches toe.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `post-deploy`
@@ -361,7 +361,7 @@ Voert uit na plaatsingsverrichtingen.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `run`
@@ -385,7 +385,7 @@ Scenario(s)
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `backup:list`
@@ -398,7 +398,7 @@ Hiermee geeft u de lijst met back-upbestanden weer.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `backup:restore`
@@ -411,7 +411,7 @@ Belangrijke configuratiebestanden herstellen. De steun van de looppas :list om d
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--force`, `-f`
 
@@ -437,7 +437,7 @@ Hiermee worden alle benodigde bestanden gegenereerd voor het samenstellen van he
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `build:transfer`
@@ -450,7 +450,7 @@ Gegenereerde bestanden worden overgebracht naar de init-map.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `cloud:config:create`
@@ -471,7 +471,7 @@ Configuratie in JSON-indeling
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `cloud:config:update`
@@ -492,7 +492,7 @@ Configuratie in JSON-indeling
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `cloud:config:validate`
@@ -505,7 +505,7 @@ Valideert het configuratiebestand `.magento.env.yaml`
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `config:dump`
@@ -518,7 +518,7 @@ Vorm van de pomp voor statische inhoudsplaatsing.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `cron:disable`
@@ -531,7 +531,7 @@ Alle Magento-snijprocessen uitschakelen en alle actieve processen beëindigen.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `cron:enable`
@@ -544,7 +544,7 @@ Hiermee schakelt u Magento-snijprocessen in.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `cron:kill`
@@ -557,7 +557,7 @@ Beëindigt alle Magento-snijprocessen.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `cron:unlock`
@@ -570,7 +570,7 @@ Ontgrendel de banen van de kroon die in &quot;lopende&quot;staat bleven.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--job-code`
 
@@ -590,7 +590,7 @@ Genereert het bestand dist/error-codes.md uit het bestand schema.error.yaml.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `dev:git:update-composer`
@@ -603,7 +603,7 @@ Werkt composer bij voor implementatie vanuit de it.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `env:config:show`
@@ -625,7 +625,7 @@ Te tonen omgevingsvariabelen, mogelijke opties: services, routes, variabelen
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `error:show`
@@ -644,7 +644,7 @@ Foutcode: als er geen informatie over de opdrachtweergave wordt doorgegeven over
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--json`, `-j`
 
@@ -664,7 +664,7 @@ Verfrist de configuratie om nieuw toegevoegde modules toe te laten.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `schema:generate`
@@ -677,7 +677,7 @@ Genereert het schema *.dist-bestand.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `wizard:ideal-state`
@@ -690,7 +690,7 @@ Verifieert ideale staat van configuratie.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `wizard:master-slave`
@@ -703,7 +703,7 @@ Verifieert master-slave configuratie.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `wizard:scd-on-build`
@@ -716,7 +716,7 @@ Verifieert SCD bij bouwstijlconfiguratie.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `wizard:scd-on-demand`
@@ -729,7 +729,7 @@ Verifieert SCD op bestelling configuratie.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `wizard:scd-on-deploy`
@@ -742,7 +742,7 @@ Verifieert SCD bij opstellen configuratie.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `wizard:split-db-state`
@@ -755,4 +755,4 @@ Controleert de mogelijkheid om DB te splitsen en of DB al gesplitst was of niet.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
