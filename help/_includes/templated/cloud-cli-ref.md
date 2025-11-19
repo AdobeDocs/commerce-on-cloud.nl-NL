@@ -1,7 +1,7 @@
 ---
-source-git-commit: b29ca0d786bf8cd15e5a3ba1ee8218f3bed2ae2f
+source-git-commit: fddcfdb97aede07b2cd6ef12bda6d7998f941951
 workflow-type: tm+mt
-source-wordcount: '13671'
+source-wordcount: '13721'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ De eerste lijst wordt automatisch gegenereerd met de opdracht `magento-cloud lis
 
 ## Algemeen
 
-Deze verwijzing wordt gegenereerd op basis van de toepassingscodebase. Om de inhoud te veranderen, kunt u de broncode voor de overeenkomstige bevelimplementatie in de [&#x200B; codebase &#x200B;](https://github.com/magento/magento-cloud-cli) bewaarplaats bijwerken en uw veranderingen voor overzicht voorleggen. Een andere manier is ons _geven terugkoppelt_ (vind de verbinding bij het hogere recht). Voor bijdragerichtsnoeren, zie {de Bijdragen van de Code 0} [.](https://developer.adobe.com/commerce/contributor/guides/code-contributions/)
+Deze verwijzing wordt gegenereerd op basis van de toepassingscodebase. Om de inhoud te veranderen, kunt u de broncode voor de overeenkomstige bevelimplementatie in de [ codebase ](https://github.com/magento/magento-cloud-cli) bewaarplaats bijwerken en uw veranderingen voor overzicht voorleggen. Een andere manier is ons _geven terugkoppelt_ (vind de verbinding bij het hogere recht). Voor bijdragerichtsnoeren, zie {de Bijdragen van de Code 0} [.](https://developer.adobe.com/commerce/contributor/guides/code-contributions/)
 
 ### Algemene opties
 
@@ -73,7 +73,7 @@ De CLI-cache wissen
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `console`
@@ -86,7 +86,7 @@ Het project openen in de console
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--browser`
 
@@ -132,7 +132,7 @@ De te decoderen variabele
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--property`, `-P`
 
@@ -160,7 +160,7 @@ Zoekterm(en)
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--browser`
 
@@ -206,7 +206,7 @@ De opdrachtnaam
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--format`
 
@@ -264,7 +264,7 @@ De naamruimtenaam
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--raw`
 
@@ -309,7 +309,7 @@ De uit te voeren opdracht
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--projects`, `-p`
 
@@ -355,7 +355,7 @@ De activiteit-id. Wordt standaard ingesteld op de meest recente annuleerbare act
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--type`, `-t`
 
@@ -407,7 +407,7 @@ De activiteit-id. Heeft als standaardwaarde de meest recente activiteit.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--property`, `-P`
 
@@ -507,7 +507,7 @@ Een lijst met activiteiten voor een omgeving of project ophalen
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--type`, `-t`
 
@@ -620,7 +620,7 @@ De activiteit-id. Heeft als standaardwaarde de meest recente activiteit.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--refresh`
 
@@ -707,7 +707,7 @@ De configuratie van een app weergeven
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--property`, `-P`
 
@@ -757,7 +757,7 @@ Apps weergeven in het project
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--refresh`
 
@@ -819,7 +819,7 @@ Aanmelden bij Magento Cloud met een API-token
 Use this command to log in to your Magento Cloud account using an API token.
 
 You can create an account at:
-    https://business.adobe.com/nl/products/magento/magento-commerce.html
+    https://business.adobe.com/products/magento/magento-commerce.html
 
 If you have an account, but you do not already have an API token, you can create one here:
     https://accounts.magento.cloud/user/api-tokens
@@ -830,7 +830,7 @@ Alternatively, to log in to the CLI with a browser, run:
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `auth:browser-login`
@@ -859,7 +859,7 @@ MAGENTO_CLOUD_CLI_TOKEN environment variable.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--force`, `-f`
 
@@ -911,7 +911,7 @@ De accounteigenschap die moet worden weergegeven
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--no-auto-login`
 
@@ -965,7 +965,7 @@ Afmelden bij Magento Cloud
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--all`, `-a`
 
@@ -992,7 +992,7 @@ Bekijk de configuratie voor automatisch schalen van apps en workers in een omgev
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--project`, `-p`
 
@@ -1044,7 +1044,7 @@ You can also configure resources statically by running: magento-cloud resources:
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--service`, `-s`
 
@@ -1142,7 +1142,7 @@ Blackfire.io-integratie instellen voor het project
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--server_id`
 
@@ -1187,7 +1187,7 @@ Een SSL-certificaat toevoegen aan het project
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--cert`
 
@@ -1247,7 +1247,7 @@ De certificaat-id (of het begin ervan)
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--project`, `-p`
 
@@ -1288,7 +1288,7 @@ De certificaat-id (of het begin ervan)
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--property`, `-P`
 
@@ -1320,7 +1320,7 @@ Projectcertificaten weergeven
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--domain`
 
@@ -1435,7 +1435,7 @@ De commit SHA. Dit kan ook achtervoegsels &quot;HEAD&quot;, en invoegpunten (^) 
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--property`, `-P`
 
@@ -1479,7 +1479,7 @@ De beginstand past SHA toe. Dit kan ook achtervoegsels &quot;HEAD&quot;, en invo
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--limit`
 
@@ -1539,7 +1539,7 @@ Creeer een lokale stortplaats van het verre gegevensbestand
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--schema`
 
@@ -1648,7 +1648,7 @@ Een SQL-instructie die moet worden uitgevoerd
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--raw`
 
@@ -1694,7 +1694,7 @@ De de dienstverhouding om te gebruiken
 magento-cloud domain:add [--cert CERT] [--key KEY] [--chain CHAIN] [--attach ATTACH] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
-Een nieuw domein toevoegen aan het project
+Voeg een nieuw domein aan het project toe. Deze optie is niet beschikbaar voor projecten met een abonnement in Cloud Pro.
 
 ### Argumenten
 
@@ -1706,7 +1706,7 @@ De domeinnaam
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--cert`
 
@@ -1766,7 +1766,7 @@ Wacht tot de bewerking is voltooid (standaardwaarde)
 magento-cloud domain:delete [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
-Een domein verwijderen uit het project
+Verwijder een domein uit het project. Deze optie is niet beschikbaar voor projecten met een abonnement in Cloud Pro.
 
 ### Argumenten
 
@@ -1778,7 +1778,7 @@ De domeinnaam
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--project`, `-p`
 
@@ -1813,7 +1813,7 @@ Wacht tot de bewerking is voltooid (standaardwaarde)
 magento-cloud domain:get [-P|--property PROPERTY] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<name>]
 ```
 
-Gedetailleerde informatie voor een domein weergeven
+Gedetailleerde informatie voor een domein weergeven. Deze optie is niet beschikbaar voor projecten met een abonnement in Cloud Pro.
 
 ### Argumenten
 
@@ -1823,7 +1823,7 @@ De domeinnaam
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--property`, `-P`
 
@@ -1878,11 +1878,11 @@ De milieu-id. &quot;.&quot; gebruiken om de standaardomgeving van het project te
 magento-cloud domains [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
-Een lijst met alle domeinen ophalen
+Hiermee wordt een lijst met alle domeinen opgehaald. Deze optie is niet beschikbaar voor projecten met een abonnement in Cloud Pro.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--format`
 
@@ -1924,7 +1924,7 @@ De milieu-id. &quot;.&quot; gebruiken om de standaardomgeving van het project te
 magento-cloud domain:update [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
-Een domein bijwerken
+Een domein bijwerken. Deze optie is niet beschikbaar voor projecten met een abonnement in Cloud Pro.
 
 ### Argumenten
 
@@ -1936,7 +1936,7 @@ De domeinnaam
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--cert`
 
@@ -2003,7 +2003,7 @@ Te activeren omgeving(en)
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--parent`
 
@@ -2059,7 +2059,7 @@ De bovenliggende omgeving van de nieuwe omgeving
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--title`
 
@@ -2130,7 +2130,7 @@ De id van de omgeving die moet worden uitgecheckt. Bijvoorbeeld: &quot;sprint2&q
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `environment:delete`
@@ -2160,7 +2160,7 @@ The environment(s) to delete. De tekens % of * kunnen als jokerteken worden gebr
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--delete-branch`
 
@@ -2283,7 +2283,7 @@ Geleidelijke wijzigingen van een omgeving implementeren
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--strategy`, `-s`
 
@@ -2339,7 +2339,7 @@ Het implementatietype van de omgeving: automatisch of handmatig.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--pipe`
 
@@ -2385,7 +2385,7 @@ De HTTP-toegangsinstellingen voor een omgeving bijwerken
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--access`
 
@@ -2455,7 +2455,7 @@ Een nieuwe waarde voor de eigenschap instellen
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--refresh`
 
@@ -2537,7 +2537,7 @@ Een URL naar een Git-opslagplaats
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--profile`
 
@@ -2582,7 +2582,7 @@ Een lijst met omgevingen ophalen
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--no-inactive`, `-I`
 
@@ -2677,7 +2677,7 @@ Het logtype, bijvoorbeeld &quot;access&quot; of &quot;error&quot;
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--lines`
 
@@ -2744,7 +2744,7 @@ De omgeving die moet worden samengevoegd
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--project`, `-p`
 
@@ -2789,7 +2789,7 @@ The environment will be unavailable until it is resumed. No data will be lost.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--project`, `-p`
 
@@ -2836,7 +2836,7 @@ De Git source ref, bijvoorbeeld een vertakkingsnaam of een commit hash.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--target`
 
@@ -2928,7 +2928,7 @@ Een omgeving opnieuw implementeren
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--project`, `-p`
 
@@ -2973,7 +2973,7 @@ Het milieu
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--property`, `-P`
 
@@ -3017,7 +3017,7 @@ Een gepauzeerde omgeving hervatten
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--project`, `-p`
 
@@ -3065,7 +3065,7 @@ Te kopiëren bestanden. Gebruik het voorvoegsel &#39;remote&#39;: om externe loc
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--recursive`, `-r`
 
@@ -3124,7 +3124,7 @@ Een opdracht die op de omgeving moet worden uitgevoerd.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--pipe`
 
@@ -3208,7 +3208,7 @@ Wat moet u synchroniseren: &quot;code&quot;, &quot;gegevens&quot; of beide
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--rebase`
 
@@ -3254,7 +3254,7 @@ De openbare URL&#39;s van een omgeving ophalen
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--primary`, `-1`
 
@@ -3299,7 +3299,7 @@ Een tunnel openen voor Xdebug in de omgeving
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--port`
 
@@ -3360,7 +3360,7 @@ De activiteit-id. Wordt standaard ingesteld op de meest recente integratieactivi
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--property`, `-P`
 
@@ -3425,7 +3425,7 @@ Een integratie-id. Laat leeg om uit een lijst te kiezen.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--type`
 
@@ -3536,7 +3536,7 @@ De activiteit-id. Wordt standaard ingesteld op de meest recente integratieactivi
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--timestamps`, `-t`
 
@@ -3575,7 +3575,7 @@ Integratie toevoegen aan het project
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--type`
 
@@ -3899,7 +3899,7 @@ De integratie-id. Laat leeg om uit een lijst te kiezen.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--project`, `-p`
 
@@ -3938,7 +3938,7 @@ Een integratie-id. Laat leeg om uit een lijst te kiezen.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--property`, `-P`
 
@@ -3984,7 +3984,7 @@ Een lijst met projectintegratie(s) weergeven
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--type`, `-t`
 
@@ -4036,7 +4036,7 @@ De id van de bij te werken integratie
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--type`
 
@@ -4372,7 +4372,7 @@ Een integratie-id. Laat leeg om uit een lijst te kiezen.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--project`, `-p`
 
@@ -4400,7 +4400,7 @@ Toepassingen opgeven die moeten worden gemaakt
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--abslinks`, `-a`
 
@@ -4522,7 +4522,7 @@ De submap die moet worden gevonden (&#39;local&#39;, &#39;web&#39; of &#39;share
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `metrics:all`
@@ -4535,7 +4535,7 @@ Metrische gegevens over CPU, schijf en geheugen weergeven voor een omgeving
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--bytes`, `-B`
 
@@ -4634,7 +4634,7 @@ CPU-gebruik van een omgeving tonen
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--range`, `-r`
 
@@ -4726,7 +4726,7 @@ Schijfgebruik van een omgeving tonen
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--bytes`, `-B`
 
@@ -4832,7 +4832,7 @@ Geheugengebruik van een omgeving weergeven
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--bytes`, `-B`
 
@@ -4931,7 +4931,7 @@ Bestanden downloaden van een berg, via resynchroniseren
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--all`, `-a`
 
@@ -5028,7 +5028,7 @@ Een lijst met bevestigingen ophalen
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--paths`
 
@@ -5106,7 +5106,7 @@ Bestanden uploaden naar een koppelingsgebied, via opnieuw synchroniseren
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--source`
 
@@ -5189,7 +5189,7 @@ Runtimebewerkingen weergeven in een omgeving
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--full`
 
@@ -5260,7 +5260,7 @@ De naam van de bewerking
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--project`, `-p`
 
@@ -5311,7 +5311,7 @@ De cache voor het samenstellen van projecten wissen
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--project`, `-p`
 
@@ -5341,7 +5341,7 @@ De map waarnaar moet worden gekloond. Wordt standaard ingesteld op de projecttit
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--environment`, `-e`
 
@@ -5390,7 +5390,7 @@ Een nieuwe waarde voor de eigenschap instellen
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--refresh`
 
@@ -5458,7 +5458,7 @@ Een lijst met alle actieve projecten ophalen
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--pipe`
 
@@ -5564,7 +5564,7 @@ Project-id
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `repo:cat`
@@ -5585,7 +5585,7 @@ Het pad naar het bestand
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--commit`, `-c`
 
@@ -5622,7 +5622,7 @@ Het pad naar een submap
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--directories`, `-d`
 
@@ -5680,7 +5680,7 @@ Het pad naar de map of het bestand
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--commit`, `-c`
 
@@ -5711,7 +5711,7 @@ Bekijk bouwstijlmiddelen van een project
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--project`, `-p`
 
@@ -5757,7 +5757,7 @@ Originele URL van de route
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--id`
 
@@ -5833,7 +5833,7 @@ De milieu-id
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--refresh`
 
@@ -5891,7 +5891,7 @@ adding autocompletion support and handy aliases. Bash and ZSH are supported.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--shell-type`
 
@@ -5910,7 +5910,7 @@ CLI bijwerken naar de nieuwste versie
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--no-major`
 
@@ -5956,7 +5956,7 @@ De diensten van de lijst in het project
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--refresh`
 
@@ -6016,7 +6016,7 @@ Een binaire archiefstortplaats maken van gegevens van MongoDB
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--collection`, `-c`
 
@@ -6073,7 +6073,7 @@ Gegevens exporteren uit MongoDB
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--collection`, `-c`
 
@@ -6136,7 +6136,7 @@ Herstel een binaire archiefstortplaats van gegevens in MongoDB
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--collection`, `-c`
 
@@ -6179,7 +6179,7 @@ De shell van MongoDB gebruiken
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--eval`
 
@@ -6231,7 +6231,7 @@ Argumenten om toe te voegen aan de opdracht redis-cli
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--relationship`, `-r`
 
@@ -6277,7 +6277,7 @@ Argumenten die moeten worden toegevoegd aan de opdracht valkey-cli
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--relationship`, `-r`
 
@@ -6320,7 +6320,7 @@ Het milieu
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--live`
 
@@ -6372,7 +6372,7 @@ De id van de momentopname. Vereist in niet-interactieve modus.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--project`, `-p`
 
@@ -6417,7 +6417,7 @@ De id van de momentopname. Wordt standaard ingesteld op de meest recente.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--property`, `-P`
 
@@ -6455,7 +6455,7 @@ Beschikbare momentopnamen van een omgeving weergeven
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--format`
 
@@ -6514,7 +6514,7 @@ De id van de momentopname. Wordt standaard ingesteld op de meest recente
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--target`
 
@@ -6572,7 +6572,7 @@ Bronbewerkingen in een omgeving weergeven
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--full`
 
@@ -6631,7 +6631,7 @@ De naam van de bewerking
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--variable`
 
@@ -6695,7 +6695,7 @@ explicitly. For unattended scripts, remember to turn off interaction via
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--refresh-only`
 
@@ -6745,7 +6745,7 @@ Het pad naar een bestaande SSH-openbare sleutel
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--name`
 
@@ -6780,7 +6780,7 @@ De id van de SSH-toets die moet worden verwijderd
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 
 ## `ssh-key:list`
@@ -6803,7 +6803,7 @@ To load or check your SSH certificate, run: magento-cloud ssh-cert:load
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--format`
 
@@ -6848,7 +6848,7 @@ Een nieuwe waarde voor de eigenschap instellen
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--id`, `-s`
 
@@ -6901,7 +6901,7 @@ SSH-tunnels sluiten
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--all`, `-a`
 
@@ -6939,7 +6939,7 @@ Relatie-informatie voor SSH-tunnels weergeven
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--property`, `-P`
 
@@ -6983,7 +6983,7 @@ Lijst SSH-tunnels
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--all`, `-a`
 
@@ -7055,7 +7055,7 @@ extensions.
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--gateway-ports`, `-g`
 
@@ -7093,7 +7093,7 @@ Eén SSH-tunnel openen voor een app-relatie
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--port`
 
@@ -7149,7 +7149,7 @@ Het e-mailadres van de gebruiker
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--role`, `-r`
 
@@ -7204,7 +7204,7 @@ Het e-mailadres van de gebruiker
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--project`, `-p`
 
@@ -7243,7 +7243,7 @@ Het e-mailadres van de gebruiker
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--level`, `-l`
 
@@ -7301,7 +7301,7 @@ Projectgebruikers weergeven
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--format`
 
@@ -7347,7 +7347,7 @@ Het e-mailadres van de gebruiker
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--role`, `-r`
 
@@ -7393,7 +7393,7 @@ De variabelenaam
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--update`, `-u`
 
@@ -7513,7 +7513,7 @@ De variabelenaam
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--level`, `-l`
 
@@ -7564,7 +7564,7 @@ De naam van de variabele
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--property`, `-P`
 
@@ -7629,7 +7629,7 @@ Lijstvariabelen
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--level`, `-l`
 
@@ -7689,7 +7689,7 @@ De variabelenaam
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--allow-no-change`
 
@@ -7788,7 +7788,7 @@ Een lijst met alle geïmplementeerde workers ophalen
 
 ### Opties
 
-Voor globale opties, zie [&#x200B; Globale opties &#x200B;](#global-options).
+Voor globale opties, zie [ Globale opties ](#global-options).
 
 #### `--refresh`
 
