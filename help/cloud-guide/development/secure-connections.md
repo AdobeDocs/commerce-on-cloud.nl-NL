@@ -18,7 +18,7 @@ Veilig Shell (SSH) is een gemeenschappelijk protocol dat wordt gebruikt om veili
 
 ## Een SSH-sleutelpaar genereren
 
-Creeer een SSH zeer belangrijk paar op elke machine en werkruimte die toegang tot uw code en milieu&#39;s van de projectbron vereist. De sleutel van SSH staat u toe om met GitHub te verbinden om broncode te beheren en met wolkenservers te verbinden zonder het moeten uw gebruikersbenaming en wachtwoord constant leveren. Zie [ Verbindend met GitHub met SSH ](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) voor verdere instructies bij het creëren van een SSH zeer belangrijk paar.
+Creeer een SSH zeer belangrijk paar op elke machine en werkruimte die toegang tot uw code en milieu&#39;s van de projectbron vereist. De sleutel van SSH staat u toe om met GitHub te verbinden om broncode te beheren en met wolkenservers te verbinden zonder het moeten uw gebruikersbenaming en wachtwoord constant leveren. Zie [&#x200B; Verbindend met GitHub met SSH &#x200B;](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) voor verdere instructies bij het creëren van een SSH zeer belangrijk paar.
 
 - De _openbare sleutel_ is veilig om voor de toegang tot van een plaats, SSH, en sFTP te verstrekken.
 - De _privé sleutel_ blijft privé op het werkstation.
@@ -29,7 +29,7 @@ Creeer een SSH zeer belangrijk paar op elke machine en werkruimte die toegang to
 
 ## Een SSH-openbare sleutel toevoegen aan uw account
 
-Nadat u toevoegt of uw openbare sleutel van SSH aan uw Adobe Commerce op de rekening van de wolkeninfrastructuur bijwerkt, [ herstelt alle actieve milieu&#39;s ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-reference#environmentredeploy) op uw rekening om de sleutel te installeren.
+Nadat u toevoegt of uw openbare sleutel van SSH aan uw Adobe Commerce op de rekening van de wolkeninfrastructuur bijwerkt, [&#x200B; herstelt alle actieve milieu&#39;s &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-reference#environmentredeploy) op uw rekening om de sleutel te installeren.
 
 U kunt SSH-sleutels aan uw account toevoegen met een van de volgende methoden: Cloud CLI of [!DNL Cloud Console] .
 
@@ -63,7 +63,7 @@ U kunt SSH-sleutels aan uw account toevoegen met een van de volgende methoden: C
 
 **om een sleutel van SSH aan een nieuw project** toe te voegen:
 
-1. Meld u aan bij de map [[!DNL Cloud Console] ](https://console.adobecommerce.com) .
+1. Meld u aan bij de map [[!DNL Cloud Console] &#x200B;](https://console.adobecommerce.com) .
 
 1. Klik op **[!UICONTROL No SSH key]**. Dit pictogram is rechts van het bevelgebied en is zichtbaar wanneer het project geen sleutel van SSH bevat.
 
@@ -73,7 +73,7 @@ U kunt SSH-sleutels aan uw account toevoegen met een van de volgende methoden: C
 
 **om een sleutel van SSH aan uw profiel van de Wolk toe te voegen**:
 
-1. Meld u aan bij de map [[!DNL Cloud Console] ](https://console.adobecommerce.com) .
+1. Meld u aan bij de map [[!DNL Cloud Console] &#x200B;](https://console.adobecommerce.com) .
 
 1. In het hoger-juiste rekeningsmenu, klik **Mijn Profiel**.
 
@@ -113,7 +113,7 @@ U kunt verbinding maken met een externe omgeving met de opdracht `magento-cloud`
 
 **om het bevel van SSH te kopiëren**:
 
-1. Meld u aan bij de map [[!DNL Cloud Console] ](https://console.adobecommerce.com) .
+1. Meld u aan bij de map [[!DNL Cloud Console] &#x200B;](https://console.adobecommerce.com) .
 
 1. Selecteer een project van de _Alle projecten_ lijst.
 
@@ -139,7 +139,7 @@ U kunt verbinding maken met een externe omgeving met de opdracht `magento-cloud`
 
 ## sFTP
 
-Adobe Commerce on cloud Infrastructure ondersteunt toegang tot uw omgevingen met sFTP (Secure FTP) met SSH-verificatie. Gebruik een cliënt die de zeer belangrijke authentificatie van SSH voor sFTP steunt en uw openbare sleutel van SSH gebruiken. Uw openbare sleutel van SSH moet aan het doelmilieu worden toegevoegd. Voor de milieu&#39;s van de Aanzet en Pro integratiemilieu&#39;s, kunt u het [ toevoegen door  [!DNL Cloud Console]](#add-your-ssh-key-using-the-project-web-interface).
+Adobe Commerce on cloud Infrastructure ondersteunt toegang tot uw omgevingen met sFTP (Secure FTP) met SSH-verificatie. Gebruik een cliënt die de zeer belangrijke authentificatie van SSH voor sFTP steunt en uw openbare sleutel van SSH gebruiken. Uw openbare sleutel van SSH moet aan het doelmilieu worden toegevoegd. Voor de milieu&#39;s van de Aanzet en Pro integratiemilieu&#39;s, kunt u het [&#x200B; toevoegen door  [!DNL Cloud Console]](#add-your-ssh-key-using-the-project-web-interface).
 
 De read-only verbindingen sFTP worden _niet_ gesteund; sFTP de toegang wordt voorzien van _schrijft_ toestemming door gebrek.
 
@@ -153,16 +153,16 @@ Wanneer het vormen sFTP, gebruik de informatie van uw bevel van het de toegangsm
 
 Afhankelijk van de client zijn mogelijk aanvullende opties vereist om SSH-verificatie voor sFTP te voltooien. Controleer de documentatie voor de geselecteerde client.
 
-Voor **de milieu&#39;s van de Aanzet en Pro integratiemilieu&#39;s**, kunt u [ ook overwegen toevoegend a `mount`](../application/properties.md#mounts) voor toegang tot een specifieke folder. U voegt de hoeveelheid toe aan uw `.magento.app.yaml` -bestand. Voor een lijst van beschrijfbare folders, zie [ de structuur van het Project ](../project/file-structure.md). Dit koppelingspunt werkt alleen in die omgevingen.
+Voor **de milieu&#39;s van de Aanzet en Pro integratiemilieu&#39;s**, kunt u [&#x200B; ook overwegen toevoegend a `mount`](../application/properties.md#mounts) voor toegang tot een specifieke folder. U voegt de hoeveelheid toe aan uw `.magento.app.yaml` -bestand. Voor een lijst van beschrijfbare folders, zie [&#x200B; de structuur van het Project &#x200B;](../project/file-structure.md). Dit koppelingspunt werkt alleen in die omgevingen.
 
-Voor **Pro het Opvoeren en de milieu&#39;s van de Productie**, als u geen toegang SSH tot het milieu hebt, moet u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voorleggen om sFTP- toegang en een onderstelpunt voor toegang tot de specifieke omslag, b.v., `pub/media` te verzoeken.
+Voor **Pro het Opvoeren en de milieu&#39;s van de Productie**, als u geen toegang SSH tot het milieu hebt, moet u [&#x200B; een kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voorleggen om sFTP- toegang en een onderstelpunt voor toegang tot de specifieke omslag, b.v., `pub/media` te verzoeken.
 
 >[!NOTE]
->Voor Pro het Opvoeren en Productie, als de sFTP verbinding voor a _generische_ gebruiker is die **** niet [ moet worden toegevoegd aan het project van de Wolk ](../project/user-access.md), moet u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) met hun **openbare** sleutel in bijlage voorleggen. **verstrekt nooit uw privé sleutel van SSH.**
+>Voor Pro het Opvoeren en Productie, als de sFTP verbinding voor a _generische_ gebruiker is die **&#x200B;**&#x200B;niet [&#x200B; moet worden toegevoegd aan het project van de Wolk &#x200B;](../project/user-access.md), moet u [&#x200B; een kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) met hun **openbare** sleutel in bijlage voorleggen. **verstrekt nooit uw privé sleutel van SSH.**
 
 ## SSH-tunneling
 
-U kunt SSH het een tunnel graven gebruiken om met de dienst van uw lokale ontwikkelomgeving te verbinden alsof de dienst lokaal was. Alvorens het een tunnel graven, vorm uw [ SSH ](#add-an-ssh-public-key-to-your-account).
+U kunt SSH het een tunnel graven gebruiken om met de dienst van uw lokale ontwikkelomgeving te verbinden alsof de dienst lokaal was. Alvorens het een tunnel graven, vorm uw [&#x200B; SSH &#x200B;](#add-an-ssh-public-key-to-your-account).
 
 Gebruik een eindtoepassing aan login en geef bevelen uit.
 
@@ -176,7 +176,7 @@ Controleer of er tunnels geopend zijn.
 magento-cloud tunnel:list
 ```
 
-Om een tunnel te bouwen, moet u de [ toepassingsnaam ](../application/properties.md#name) kennen. U kunt de toepassingsnaam controleren gebruikend CLI:
+Om een tunnel te bouwen, moet u de [&#x200B; toepassingsnaam &#x200B;](../application/properties.md#name) kennen. U kunt de toepassingsnaam controleren gebruikend CLI:
 
 ```bash
 magento-cloud apps
@@ -222,4 +222,4 @@ mysql --host=127.0.0.1 --user='<database-username>' --pass='<user-password>' --d
 
 #### MySQL-referenties verkrijgen
 
-Haal de MySQL aanmeldingsgegevens op van de eigenschappen `database` in de omgevingsvariabele `$MAGENTO_CLOUD_RELATIONSHIPS` . Voor instructies bij het terugwinnen van de informatie in een lokaal of ver milieu, zie [ verhoudingen van de Dienst ](../services/services-yaml.md#service-relationships).
+Haal de MySQL aanmeldingsgegevens op van de eigenschappen `database` in de omgevingsvariabele `$MAGENTO_CLOUD_RELATIONSHIPS` . Voor instructies bij het terugwinnen van de informatie in een lokaal of ver milieu, zie [&#x200B; verhoudingen van de Dienst &#x200B;](../services/services-yaml.md#service-relationships).
