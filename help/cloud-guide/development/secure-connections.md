@@ -29,7 +29,7 @@ Creeer een SSH zeer belangrijk paar op elke machine en werkruimte die toegang to
 
 ## Een SSH-openbare sleutel toevoegen aan uw account
 
-Nadat u toevoegt of uw openbare sleutel van SSH aan uw Adobe Commerce op de rekening van de wolkeninfrastructuur bijwerkt, [&#x200B; herstelt alle actieve milieu&#39;s &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-reference#environmentredeploy) op uw rekening om de sleutel te installeren.
+Nadat u toevoegt of uw openbare sleutel van SSH aan uw Adobe Commerce op de rekening van de wolkeninfrastructuur bijwerkt, [&#x200B; herstelt alle actieve milieu&#39;s &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-reference#environmentredeploy) op uw rekening om de sleutel te installeren.
 
 U kunt SSH-sleutels aan uw account toevoegen met een van de volgende methoden: Cloud CLI of [!DNL Cloud Console] .
 
@@ -155,10 +155,10 @@ Afhankelijk van de client zijn mogelijk aanvullende opties vereist om SSH-verifi
 
 Voor **de milieu&#39;s van de Aanzet en Pro integratiemilieu&#39;s**, kunt u [&#x200B; ook overwegen toevoegend a `mount`](../application/properties.md#mounts) voor toegang tot een specifieke folder. U voegt de hoeveelheid toe aan uw `.magento.app.yaml` -bestand. Voor een lijst van beschrijfbare folders, zie [&#x200B; de structuur van het Project &#x200B;](../project/file-structure.md). Dit koppelingspunt werkt alleen in die omgevingen.
 
-Voor **Pro het Opvoeren en de milieu&#39;s van de Productie**, als u geen toegang SSH tot het milieu hebt, moet u [&#x200B; een kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voorleggen om sFTP- toegang en een onderstelpunt voor toegang tot de specifieke omslag, b.v., `pub/media` te verzoeken.
+Voor **Pro het Opvoeren en de milieu&#39;s van de Productie**, als u geen toegang SSH tot het milieu hebt, moet u [&#x200B; een kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voorleggen om sFTP- toegang en een onderstelpunt voor toegang tot de specifieke omslag, b.v., `pub/media` te verzoeken.
 
 >[!NOTE]
->Voor Pro het Opvoeren en Productie, als de sFTP verbinding voor a _generische_ gebruiker is die **&#x200B;**&#x200B;niet [&#x200B; moet worden toegevoegd aan het project van de Wolk &#x200B;](../project/user-access.md), moet u [&#x200B; een kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) met hun **openbare** sleutel in bijlage voorleggen. **verstrekt nooit uw privé sleutel van SSH.**
+>Voor Pro het Opvoeren en Productie, als de sFTP verbinding voor a _generische_ gebruiker is die **&#x200B;**&#x200B;niet [&#x200B; moet worden toegevoegd aan het project van de Wolk &#x200B;](../project/user-access.md), moet u [&#x200B; een kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) met hun **openbare** sleutel in bijlage voorleggen. **verstrekt nooit uw privé sleutel van SSH.**
 
 ## SSH-tunneling
 
