@@ -3,9 +3,9 @@ title: Robots voor site-toewijzing en zoekprogramma's toevoegen
 description: Leer hoe u robots voor sites met hyperlinks en zoekprogramma's aan Adobe Commerce kunt toevoegen op cloudinfrastructuur.
 feature: Cloud, Configuration, Search, Site Navigation
 exl-id: 060dc1f5-0e44-494e-9ade-00cd274e84bc
-source-git-commit: 8626364ec7bcaaa0e17a3380ec0b9b73110c4574
+source-git-commit: 1ecb820d55faa78e369d63996f11cd4d1d554e26
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '570'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Met Adobe Commerce op cloudinfrastructuur kunt u alleen naar specifieke mappen s
 
 U hoeft geen `robots.txt` -bestand te genereren omdat `robots.txt` -inhoud op aanvraag wordt gegenereerd en in de database wordt opgeslagen. U kunt de inhoud in uw browser weergeven met de koppeling `<domain.your.project>/robots.txt` of `<domain.your.project>/robots` .
 
-Hiervoor is ECE-Tools versie 2002.0.12 en hoger vereist met een bijgewerkt `.magento.app.yaml` -bestand. Zie een voorbeeld van deze regels in de [&#x200B; magento-wolkenbewaarplaats &#x200B;](https://github.com/magento/magento-cloud/blob/master/.magento.app.yaml#L43-L49).
+Hiervoor is ECE-Tools versie 2002.0.12 en hoger vereist met een bijgewerkt `.magento.app.yaml` -bestand. Zie een voorbeeld van deze regels in de [ magento-wolkenbewaarplaats ](https://github.com/magento/magento-cloud/blob/master/.magento.app.yaml#L43-L49).
 
 **om een `sitemap.xml` dossier in versie 2.2 en later** te produceren:
 
@@ -41,7 +41,7 @@ Hiervoor is ECE-Tools versie 2002.0.12 en hoger vereist met een bijgewerkt `.mag
 
 1. Open de beheerder.
 1. Voor het _menu van de Inhoud_, klik **Configuratie** in de _sectie van het Ontwerp_.
-1. In de _mening van de Configuratie van het Ontwerp_, geeft de klik **&#x200B;**&#x200B;voor de website in de _kolom van de Actie_ uit.
+1. In de _mening van de Configuratie van het Ontwerp_, geeft de klik **** voor de website in de _kolom van de Actie_ uit.
 1. In de _Belangrijkste mening van de Website_, klik **Robots van de Motor van het Onderzoek**.
 1. Werk **uit geeft douaneinstructie van robots.txt** gebied uit.
 1. Klik **sparen Configuratie**.
@@ -49,15 +49,15 @@ Hiervoor is ECE-Tools versie 2002.0.12 en hoger vereist met een bijgewerkt `.mag
 
 >[!NOTE]
 >
->Als het `<domain.your.project>/robots.txt` dossier a `404 error` produceert, [&#x200B; legt een kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voor om het omleiden van `/robots.txt` aan `/media/robots.txt` te verwijderen.
+>Als het `<domain.your.project>/robots.txt` dossier a `404 error` produceert, [ legt een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voor om het omleiden van `/robots.txt` aan `/media/robots.txt` te verwijderen.
 
 ## Herschrijven met VCL-fragment snel
 
-Als u verschillende domeinen hebt en u afzonderlijke site-overzichten nodig hebt, kunt u een VCL maken om naar de juiste sitemap te leiden. Genereer het bestand `sitemap.xml` in het deelvenster Beheer zoals hierboven beschreven en maak vervolgens een aangepast, snel VCL-fragment om het omleiden te beheren. Zie {de fragmenten van 0} Snelle VCL van de Douane &lbrace;[&#128279;](../cdn/fastly-vcl-custom-snippets.md).
+Als u verschillende domeinen hebt en u afzonderlijke site-overzichten nodig hebt, kunt u een VCL maken om naar de juiste sitemap te leiden. Genereer het bestand `sitemap.xml` in het deelvenster Beheer zoals hierboven beschreven en maak vervolgens een aangepast, snel VCL-fragment om het omleiden te beheren. Zie {de fragmenten van 0} Snelle VCL van de Douane {[.](../cdn/fastly-vcl-custom-snippets.md)
 
 >[!NOTE]
 >
-> U kunt aangepaste VCL-fragmenten uploaden vanuit de beheerinterface of via de snelheids-API. Zie [&#x200B; de fragmentvoorbeelden en leerprogramma&#39;s van de Douane VCL &#x200B;](../cdn/fastly-vcl-custom-snippets.md#example-vcl-snippet-code).
+> U kunt aangepaste VCL-fragmenten uploaden vanuit de beheerinterface of via de snelheids-API. Zie [ de fragmentvoorbeelden en leerprogramma&#39;s van de Douane VCL ](../cdn/fastly-vcl-custom-snippets.md#example-vcl-snippet-code).
 
 ### Een VCL-fragment snel gebruiken voor omleiding
 
@@ -117,9 +117,16 @@ In de `sitemap` admin config, moet u de plaats van het dossier specificeren gebr
 
 ### Indexeren via zoekprogramma configureren
 
-Als u `robots.txt` aanpassingen in Productie wilt activeren, moet u de optie **Indexeren door zoekmachines is ingeschakeld voor`<environment-name>`** in uw projectinstellingen in de Cloud Console:
+Als u `robots.txt` -aanpassingen in productie wilt activeren, schakelt u indexering door zoekprogramma&#39;s in voor de optie `<environment-name>`** in de projectinstellingen in de Cloud Console:
 
-![&#x200B; Gebruik [!DNL Cloud Console] om milieu&#39;s &#x200B;](../../assets/robots-indexing-by-search-engine.png) te beheren
+- Verouderde cloudconsole - de URL volgt het patroon `https://<region-id>.magento.cloud/projects/<project_id>`
+- Adobe Cloud Console - de URL volgt het patroon ``https://console.adobecommerce.com/<username>/<project_id>``
+
+1. Wissel het plaatsen [!UICONTROL Indexing by search engines] aan **aan**.
+
+   ![ Gebruik [!DNL Cloud Console] om milieu&#39;s ](../../assets/robots-indexing-by-search-engine.png) te beheren
+
+1. Schakel de instelling [!UICONTROL Hide from search engines] uit.
 
 U kunt de CLI van magento-cloud ook gebruiken om deze instelling bij te werken:
 
@@ -131,5 +138,5 @@ magento-cloud environment:info -p <project_id> -e production restrict_robots fal
 >
 >- Indexering door zoekmachines kan alleen worden ingeschakeld in Productie, maar niet in een van de lagere omgevingen.
 >
->- Als u PWA Studio gebruikt en tot uw gevormd `robots.txt` dossier niet kunt toegang hebben, voeg `robots.txt` aan de [&#x200B; Voorste Lijst van gewenste personen van de Naam &#x200B;](https://github.com/magento/magento2-upward-connector#front-name-allowlist) bij **Opslag** > Configuratie > **Algemeen** > **Web** toe > de Configuratie van PWA UPWARD.
+>- Als u PWA Studio gebruikt en tot uw gevormd `robots.txt` dossier niet kunt toegang hebben, voeg `robots.txt` aan de [ Voorste Lijst van gewenste personen van de Naam ](https://github.com/magento/magento2-upward-connector#front-name-allowlist) bij **Opslag** > Configuratie > **Algemeen** > **Web** toe > de Configuratie van PWA UPWARD.
 
