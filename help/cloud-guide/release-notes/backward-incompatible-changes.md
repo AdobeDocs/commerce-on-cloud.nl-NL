@@ -19,15 +19,15 @@ Door wijzigingen die niet compatibel zijn met oudere versies, moet u mogelijk de
 
 Enkele functionaliteit die eerder in het `ece-tools` -pakket is opgenomen, wordt nu in afzonderlijke pakketten aangeboden. Deze pakketten zijn componentenafhankelijkheden voor `ece-tools`, die automatisch worden geïnstalleerd en bijgewerkt wanneer u bureaubladgereedschappen installeert of bijwerkt.
 
-De nieuwe architectuur zou uw installatie of updateprocessen niet moeten beïnvloeden. Het kan echter zijn dat u bepaalde syntaxis en processen voor opdrachten moet wijzigen wanneer u met uw Adobe Commerce werkt aan een infrastructuurproject voor de cloud. Voor details, herzie de volgende achterwaartse incompatibele veranderingsinformatie en de [ de versienota&#39;s van de Reeks van Hulpmiddelen van de Wolk ](cloud-tools-suite.md).
+De nieuwe architectuur zou uw installatie of updateprocessen niet moeten beïnvloeden. Het kan echter zijn dat u bepaalde syntaxis en processen voor opdrachten moet wijzigen wanneer u met uw Adobe Commerce werkt aan een infrastructuurproject voor de cloud. Voor details, herzie de volgende achterwaartse incompatibele veranderingsinformatie en de [&#x200B; de versienota&#39;s van de Reeks van Hulpmiddelen van de Wolk &#x200B;](cloud-tools-suite.md).
 
 ### Wijzigingen in de vereisten voor serviceversie
 
-We hebben de minimale PHP-versievereiste gewijzigd van 7.0.x in 7.1.x voor Cloud-projecten die `ece-tools` v2002.1.0 en hoger gebruiken. Als uw milieuconfiguratie PHP 7.0 specificeert, werk de [ php configuratie ](../application/php-settings.md) in het `.magento.app.yaml` dossier bij.
+We hebben de minimale PHP-versievereiste gewijzigd van 7.0.x in 7.1.x voor Cloud-projecten die `ece-tools` v2002.1.0 en hoger gebruiken. Als uw milieuconfiguratie PHP 7.0 specificeert, werk de [&#x200B; php configuratie &#x200B;](../application/php-settings.md) in het `.magento.app.yaml` dossier bij.
 
 >[!WARNING]
 >
->Vanwege de wijziging in de PHP-versie, ondersteunt `ece-tools` 2002.1.0 alleen Adobe Commerce op cloud-infrastructuurprojecten met Adobe Commerce 2.1.15 of hoger. Als uw project een vroegere versie gebruikt, moet u [ bevorderen ](../development/commerce-version.md) alvorens u aan `ece-tools` 2002.1.0 bijwerkt.
+>Vanwege de wijziging in de PHP-versie, ondersteunt `ece-tools` 2002.1.0 alleen Adobe Commerce op cloud-infrastructuurprojecten met Adobe Commerce 2.1.15 of hoger. Als uw project een vroegere versie gebruikt, moet u [&#x200B; bevorderen &#x200B;](../development/commerce-version.md) alvorens u aan `ece-tools` 2002.1.0 bijwerkt.
 
 ### Wijzigingen in de configuratie van omgeving
 
@@ -58,7 +58,7 @@ In eerdere versies van ECE-Tools kon u de opdrachten `m2-ece-build` en `m2-ece-d
 
 ## Wijzigingen in cloudpatches
 
-- **verwijdert gedownloade flarden** - het `magento/magento-cloud-patches` pakket bundelt alle flarden beschikbaar van de [ software downloadt ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/commerce.html) pagina en past hen automatisch toe wanneer u aan de Wolk opstelt. Om patchconflicten te voorkomen na de upgrade naar ECE-Tools 2002.1.0 of hoger, verwijdert u alle door Adobe geleverde patches die u handmatig hebt gedownload en aan uw project hebt toegevoegd.
+- **verwijdert gedownloade flarden** - het `magento/magento-cloud-patches` pakket bundelt alle flarden beschikbaar van de [&#x200B; software downloadt &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/commerce.html) pagina en past hen automatisch toe wanneer u aan de Wolk opstelt. Om patchconflicten te voorkomen na de upgrade naar ECE-Tools 2002.1.0 of hoger, verwijdert u alle door Adobe geleverde patches die u handmatig hebt gedownload en aan uw project hebt toegevoegd.
 
 - **Bijwerkend het toepassen bevel van flarden** - wij bewogen het bevel voor het toepassen van flarden van de `vendor/bin/ece-tools` folder aan de `vendor/bin/ece-patches` folder. Gebruik het nieuwe pad als u deze opdracht gebruikt om handmatig patches toe te passen.
 
@@ -84,7 +84,7 @@ In eerdere versies van ECE-Tools kon u de opdrachten `m2-ece-build` en `m2-ece-d
 
    - **Bijwerkend de de docker-samenstelling van de Wolk bevelen** - wij noemden de weg aan het beveldossier van `./bin/docker` aan `./bin/magento-docker` anders. Werk uw scripts en opdrachten bij om het nieuwe pad te gebruiken.
 
-   - **container van de Kroon niet meer inbegrepen in standaardDocker configuratie** - nu, moet u de `--with-cron` optie aan het `ece-docker build:compose` bevel toevoegen om de container van de Kroon in de de omgevingsconfiguratie van het Docker te omvatten. Zie [ cron banen ](https://developer.adobe.com/commerce/cloud-tools/docker/configure/manage-cron-jobs) beheren in het _Dok van de Wolk voor Commerce_ gids.
+   - **container van de Kroon niet meer inbegrepen in standaardDocker configuratie** - nu, moet u de `--with-cron` optie aan het `ece-docker build:compose` bevel toevoegen om de container van de Kroon in de de omgevingsconfiguratie van het Docker te omvatten. Zie [&#x200B; cron banen &#x200B;](https://developer.adobe.com/commerce/cloud-tools/docker/configure/manage-cron-jobs) beheren in het _Dok van de Wolk voor Commerce_ gids.
 
      Scripts die eerder containers met uitsnijdtaken hebben gegenereerd, zijn nu zonder de uitsnijdcontainer.
 
