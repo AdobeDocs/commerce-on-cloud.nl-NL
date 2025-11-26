@@ -2,7 +2,8 @@
 title: Meerdere websites of winkels instellen
 description: Leer hoe u meerdere websites of winkels voor Adobe Commerce configureert op cloudinfrastructuur.
 feature: Cloud, Configuration, Routes, Site Navigation
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 773d8d64-d235-4c2b-87e9-aadbf8471b2c
+source-git-commit: 0d84d29c470a098c7238b6ca7cc9538463dda695
 workflow-type: tm+mt
 source-wordcount: '1013'
 ht-degree: 0%
@@ -11,7 +12,7 @@ ht-degree: 0%
 
 # Meerdere websites of winkels instellen
 
-U kunt Adobe Commerce zo configureren dat er meerdere websites of winkels zijn, zoals een Engelse winkel, een Franse winkel en een Duitse winkel. Zie [&#x200B; Begrijpend websites, opslag, en opslagmeningen &#x200B;](best-practices.md#store-views).
+U kunt Adobe Commerce zo configureren dat er meerdere websites of winkels zijn, zoals een Engelse winkel, een Franse winkel en een Duitse winkel. Zie [ Begrijpend websites, opslag, en opslagmeningen ](best-practices.md#store-views).
 
 >[!WARNING]
 >
@@ -35,7 +36,7 @@ https://store.com/second/
 
 >[!TIP]
 >
->Als u een opslagweergave wilt toevoegen aan de basis-URL van de site, hoeft u geen meerdere mappen te maken. Zie [&#x200B; de opslagcode aan basisURL &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-admin.html?lang=nl-NL) in de _Gids van de Configuratie_ toevoegen.
+>Als u een opslagweergave wilt toevoegen aan de basis-URL van de site, hoeft u geen meerdere mappen te maken. Zie [ de opslagcode aan basisURL ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-admin.html) in de _Gids van de Configuratie_ toevoegen.
 
 ## Domeinen toevoegen
 
@@ -45,11 +46,11 @@ Het proces om een domein toe te voegen hangt af van het type Cloud-account:
 
 - Voor Pro Staging en Productie
 
-  Voeg het nieuwe domein aan Fastly toe, zie [&#x200B; domeinen &#x200B;](../cdn/fastly-custom-cache-configuration.md#manage-domains) beheren, of open een steunkaartje om hulp te verzoeken. Bovendien moet u [&#x200B; een kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voorleggen om nieuwe domeinen te verzoeken om aan een cluster worden toegevoegd.
+  Voeg het nieuwe domein aan Fastly toe, zie [ domeinen ](../cdn/fastly-custom-cache-configuration.md#manage-domains) beheren, of open een steunkaartje om hulp te verzoeken. Bovendien moet u [ een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voorleggen om nieuwe domeinen te verzoeken om aan een cluster worden toegevoegd.
 
 - Alleen voor startproductie
 
-  Voeg het nieuwe domein aan Fastly toe, zie [&#x200B; domeinen &#x200B;](../cdn/fastly-custom-cache-configuration.md#manage-domains) beheren, of [&#x200B; leg een kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voor om hulp te verzoeken. Bovendien moet u het nieuwe domein aan het **lusje van Domeinen** in [!DNL Cloud Console] toevoegen: `https://<zone>.magento.cloud/projects/<project-ID>/edit`
+  Voeg het nieuwe domein aan Fastly toe, zie [ domeinen ](../cdn/fastly-custom-cache-configuration.md#manage-domains) beheren, of [ leg een kaartje van de Steun van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voor om hulp te verzoeken. Bovendien moet u het nieuwe domein aan het **lusje van Domeinen** in [!DNL Cloud Console] toevoegen: `https://<zone>.magento.cloud/projects/<project-ID>/edit`
 
 ## Lokale installatie configureren
 
@@ -68,7 +69,7 @@ Nadat u de lokale installatie hebt gemaakt en getest om meerdere winkels te kunn
 
 >[!TIP]
 >
->U kunt een lokale omgeving gebruiken om meerdere websites of winkels in te stellen. Zie de instructies van het Dok van de Wolk aan [&#x200B; Opstelling veelvoudige websites of opslag &#x200B;](https://developer.adobe.com/commerce/cloud-tools/docker/configure/multiple-sites/).
+>U kunt een lokale omgeving gebruiken om meerdere websites of winkels in te stellen. Zie de instructies van het Dok van de Wolk aan [ Opstelling veelvoudige websites of opslag ](https://developer.adobe.com/commerce/cloud-tools/docker/configure/multiple-sites).
 
 ### Configuratie-updates voor Pro-omgevingen
 
@@ -96,7 +97,7 @@ Routes bepalen hoe binnenkomende URLs wordt verwerkt. Voor meerdere opslagruimte
 
 1. Sla de wijzigingen op in het `routes.yaml` -bestand.
 
-1. Ga aan [&#x200B; Vastgestelde websites, opslag, en opslagmeningen &#x200B;](#set-up-websites-stores-and-store-views) voort.
+1. Ga aan [ Vastgestelde websites, opslag, en opslagmeningen ](#set-up-websites-stores-and-store-views) voort.
 
 ### Locaties voor gedeelde domeinen configureren
 
@@ -212,7 +213,7 @@ Waar de routeneconfiguratie bepaalt hoe URLs wordt verwerkt, bepaalt het `web` b
 
 ### Websites, winkels en winkels instellen
 
-In _Admin UI_, opstelling uw Websites van Adobe Commerce **&#x200B;**, **Sporen**, en **Mening van de Opslag**. Zie [&#x200B; Opstelling veelvoudige websites, opslag, en opslagmeningen in Admin &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-admin.html?lang=nl-NL) in de _Gids van de Configuratie_.
+In _Admin UI_, opstelling uw Websites van Adobe Commerce ****, **Sporen**, en **Mening van de Opslag**. Zie [ Opstelling veelvoudige websites, opslag, en opslagmeningen in Admin ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-admin.html) in de _Gids van de Configuratie_.
 
 Het is belangrijk om dezelfde naam en code van uw websites te gebruiken, en meningen van uw Admin op te slaan wanneer u opstelling uw lokale installatie. U hebt deze waarden nodig wanneer u het `magento-vars.php` -bestand bijwerkt.
 
@@ -224,7 +225,7 @@ In plaats van een virtuele NGINX-host te configureren, geeft u de variabelen `MA
 
 1. Open het `magento-vars.php` -bestand in een teksteditor.
 
-   Het [&#x200B; standaard `magento-vars.php` dossier &#x200B;](https://github.com/magento/magento-cloud/blob/master/magento-vars.php) zou als het volgende moeten kijken:
+   Het [ standaard `magento-vars.php` dossier ](https://github.com/magento/magento-cloud/blob/master/magento-vars.php) zou als het volgende moeten kijken:
 
    ```php
    <?php
@@ -346,10 +347,10 @@ Breng uw wijzigingen aan in uw Adobe Commerce op de integratieomgeving van de cl
 
 ## Distribueren naar Staging en Productie
 
-Volg het plaatsingsproces voor [&#x200B; het opstellen aan het Opvoeren en de Productie &#x200B;](../deploy/staging-production.md). Voor Starter- en Pro-omgevingen gebruikt u [!DNL Cloud Console] om code in verschillende omgevingen te plaatsen.
+Volg het plaatsingsproces voor [ het opstellen aan het Opvoeren en de Productie ](../deploy/staging-production.md). Voor Starter- en Pro-omgevingen gebruikt u [!DNL Cloud Console] om code in verschillende omgevingen te plaatsen.
 
-Adobe beveelt aan om volledig te testen in de testomgeving voordat naar de productieomgeving wordt geduwd. Breng codeveranderingen in het integratiemilieu aan en begin het proces om over milieu&#39;s opnieuw op te stellen.
+Adobe raadt aan volledig te testen in de testomgeving voordat naar de productieomgeving wordt overgeschakeld. Breng codeveranderingen in het integratiemilieu aan en begin het proces om over milieu&#39;s opnieuw op te stellen.
 
 <!-- link definitions -->
 
-[config-multiweb]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-overview.html?lang=nl-NL
+[config-multiweb]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-overview.html
