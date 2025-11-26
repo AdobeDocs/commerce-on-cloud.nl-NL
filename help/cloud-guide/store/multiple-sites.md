@@ -36,7 +36,7 @@ https://store.com/second/
 
 >[!TIP]
 >
->Als u een opslagweergave wilt toevoegen aan de basis-URL van de site, hoeft u geen meerdere mappen te maken. Zie [&#x200B; de opslagcode aan basisURL &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-admin.html) in de _Gids van de Configuratie_ toevoegen.
+>Als u een opslagweergave wilt toevoegen aan de basis-URL van de site, hoeft u geen meerdere mappen te maken. Zie [&#x200B; de opslagcode aan basisURL &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-admin.html?lang=nl-NL) in de _Gids van de Configuratie_ toevoegen.
 
 ## Domeinen toevoegen
 
@@ -46,11 +46,11 @@ Het proces om een domein toe te voegen hangt af van het type Cloud-account:
 
 - Voor Pro Staging en Productie
 
-  Voeg het nieuwe domein aan Fastly toe, zie [&#x200B; domeinen &#x200B;](../cdn/fastly-custom-cache-configuration.md#manage-domains) beheren, of open een steunkaartje om hulp te verzoeken. Bovendien moet u [&#x200B; een kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voorleggen om nieuwe domeinen te verzoeken om aan een cluster worden toegevoegd.
+  Voeg het nieuwe domein aan Fastly toe, zie [&#x200B; domeinen &#x200B;](../cdn/fastly-custom-cache-configuration.md#manage-domains) beheren, of open een steunkaartje om hulp te verzoeken. Bovendien moet u [&#x200B; een kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voorleggen om nieuwe domeinen te verzoeken om aan een cluster worden toegevoegd.
 
 - Alleen voor startproductie
 
-  Voeg het nieuwe domein aan Fastly toe, zie [&#x200B; domeinen &#x200B;](../cdn/fastly-custom-cache-configuration.md#manage-domains) beheren, of [&#x200B; leg een kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voor om hulp te verzoeken. Bovendien moet u het nieuwe domein aan het **lusje van Domeinen** in [!DNL Cloud Console] toevoegen: `https://<zone>.magento.cloud/projects/<project-ID>/edit`
+  Voeg het nieuwe domein aan Fastly toe, zie [&#x200B; domeinen &#x200B;](../cdn/fastly-custom-cache-configuration.md#manage-domains) beheren, of [&#x200B; leg een kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voor om hulp te verzoeken. Bovendien moet u het nieuwe domein aan het **lusje van Domeinen** in [!DNL Cloud Console] toevoegen: `https://<zone>.magento.cloud/projects/<project-ID>/edit`
 
 ## Lokale installatie configureren
 
@@ -213,7 +213,7 @@ Waar de routeneconfiguratie bepaalt hoe URLs wordt verwerkt, bepaalt het `web` b
 
 ### Websites, winkels en winkels instellen
 
-In _Admin UI_, opstelling uw Websites van Adobe Commerce **&#x200B;**, **Sporen**, en **Mening van de Opslag**. Zie [&#x200B; Opstelling veelvoudige websites, opslag, en opslagmeningen in Admin &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-admin.html) in de _Gids van de Configuratie_.
+In _Admin UI_, opstelling uw Websites van Adobe Commerce **&#x200B;**, **Sporen**, en **Mening van de Opslag**. Zie [&#x200B; Opstelling veelvoudige websites, opslag, en opslagmeningen in Admin &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-admin.html?lang=nl-NL) in de _Gids van de Configuratie_.
 
 Het is belangrijk om dezelfde naam en code van uw websites te gebruiken, en meningen van uw Admin op te slaan wanneer u opstelling uw lokale installatie. U hebt deze waarden nodig wanneer u het `magento-vars.php` -bestand bijwerkt.
 
@@ -353,4 +353,4 @@ Adobe raadt aan volledig te testen in de testomgeving voordat naar de productieo
 
 <!-- link definitions -->
 
-[config-multiweb]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-overview.html
+[config-multiweb]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-overview.html?lang=nl-NL
