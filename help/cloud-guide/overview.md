@@ -2,7 +2,7 @@
 title: Commerce on Cloud Infrastructure
 description: Leer meer over het ontwerp, de implementatie en het beheer van Commerce op cloudinfrastructuur.
 exl-id: a37d0403-df14-4bb9-8cc4-25436560ba0c
-source-git-commit: 1521b83be787fd7d8e0db302bfaea48f912af572
+source-git-commit: dc44fe34675c22bd4833bb8a55c333c4bb47b68b
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 3%
@@ -19,13 +19,13 @@ Adobe Commerce op wolkeninfrastructuur verstrekt een geautomatiseerd ontvangend 
 - De hoogst Aanpasbare dossiers van de omgevingsconfiguratie en bevel-lijn interface (CLI) leiden en stellen hulpmiddelen op.
 - Amazon Web Services (AWS) hosting die een schaalbare en veilige omgeving biedt voor online verkoop en detailhandel.
 
-![&#x200B; de voordelen van de Wolk &#x200B;](../assets/CloudBenefits.svg)
+![ de voordelen van de Wolk ](../assets/CloudBenefits.svg)
 
 >[!NOTE]
 >
->Voor meer informatie over veiligheid, verwijs naar de [&#x200B; checklist van de veiligheidslancering &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/launch/checklist#security-configuration).
+>Voor meer informatie over veiligheid, verwijs naar de [ checklist van de veiligheidslancering ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/checklist#security-configuration).
 
-Bekijk de [&#x200B; stapel van de Technologie &#x200B;](architecture/tech-stack.md) in detail of leer meer over specifieke eigenschappen en gesteunde producten in [&#x200B; architectuur van de Wolk voor Commerce &#x200B;](architecture/cloud-architecture.md).
+Bekijk de [ stapel van de Technologie ](architecture/tech-stack.md) in detail of leer meer over specifieke eigenschappen en gesteunde producten in [ architectuur van de Wolk voor Commerce ](architecture/cloud-architecture.md).
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
@@ -40,7 +40,7 @@ De volgende secties bevatten informatie over de verschillende AWS- en Azure-regi
 
 ## AWS-regio&#39;s
 
-![&#x200B; Diagram die de gebieden van AWS tonen &#x200B;](../assets/aws-regions.svg){zoomable="yes"}
+![ Diagram die de gebieden van AWS tonen ](../assets/aws-regions.svg){zoomable="yes"}
 
 >[!NOTE]
 >
@@ -48,7 +48,7 @@ De volgende secties bevatten informatie over de verschillende AWS- en Azure-regi
 
 ## Azure-gebieden
 
-![&#x200B; Diagram die Azure gebieden &#x200B;](../assets/azure-regions.svg){zoomable="yes"} tonen
+![ Diagram die Azure gebieden ](../assets/azure-regions.svg){zoomable="yes"} tonen
 
 >[!NOTE]
 >
@@ -58,11 +58,11 @@ De volgende secties bevatten informatie over de verschillende AWS- en Azure-regi
 
 De Commerce on cloud Infrastructure-handleiding gaat ervan uit dat u enige praktische kennis en inzicht hebt in de Adobe Commerce-toepassing. Raadpleeg de onderstaande [!DNL Commerce] handleidingen voor ontwikkelaars en gebruikers:
 
-- [&#x200B; de Documentatie van de Ontwikkelaar van Adobe Commerce &#x200B;](https://developer.adobe.com/commerce/docs/) (plaats van Adobe Developer) - ontwikkelt, past, integreert, breidt, en gebruikt geavanceerde mogelijkheden uit
+- [ de Documentatie van de Ontwikkelaar van Adobe Commerce ](https://developer.adobe.com/commerce/docs/) (plaats van Adobe Developer) - ontwikkelt, past, integreert, breidt, en gebruikt geavanceerde mogelijkheden uit
 
-- [&#x200B; de Documentatie van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce.html?lang=nl-NL) (de Liga van de Ervaring van Adobe) - Plan, voer uit, werk, bevorder, en handhaaf uw [!DNL Commerce] projecten
+- [ de Documentatie van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce.html) (de Liga van de Ervaring van Adobe) - Plan, voer uit, werk, bevorder, en handhaaf uw [!DNL Commerce] projecten
 
 {{$include /help/_includes/templated/whats-new.md}}
 
 
-<!-- Last updated from includes: 2025-11-14 21:34:39 -->
+<!-- Last updated from includes: 2025-11-21 21:32:53 -->
