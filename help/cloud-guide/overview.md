@@ -23,7 +23,7 @@ Adobe Commerce op wolkeninfrastructuur verstrekt een geautomatiseerd ontvangend 
 
 >[!NOTE]
 >
->Voor meer informatie over veiligheid, verwijs naar de [&#x200B; checklist van de veiligheidslancering &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/checklist#security-configuration).
+>Voor meer informatie over veiligheid, verwijs naar de [&#x200B; checklist van de veiligheidslancering &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/launch/checklist#security-configuration).
 
 Bekijk de [&#x200B; stapel van de Technologie &#x200B;](architecture/tech-stack.md) in detail of leer meer over specifieke eigenschappen en gesteunde producten in [&#x200B; architectuur van de Wolk voor Commerce &#x200B;](architecture/cloud-architecture.md).
 
@@ -60,7 +60,7 @@ De Commerce on cloud Infrastructure-handleiding gaat ervan uit dat u enige prakt
 
 - [&#x200B; de Documentatie van de Ontwikkelaar van Adobe Commerce &#x200B;](https://developer.adobe.com/commerce/docs/) (plaats van Adobe Developer) - ontwikkelt, past, integreert, breidt, en gebruikt geavanceerde mogelijkheden uit
 
-- [&#x200B; de Documentatie van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce.html) (de Liga van de Ervaring van Adobe) - Plan, voer uit, werk, bevorder, en handhaaf uw [!DNL Commerce] projecten
+- [&#x200B; de Documentatie van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce.html?lang=nl-NL) (de Liga van de Ervaring van Adobe) - Plan, voer uit, werk, bevorder, en handhaaf uw [!DNL Commerce] projecten
 
 {{$include /help/_includes/templated/whats-new.md}}
 
