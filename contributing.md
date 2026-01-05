@@ -15,11 +15,11 @@ Hieronder volgt een reeks richtlijnen die moeten worden gevolgd wanneer u een bi
 
 Dit project voldoet aan de Adobe-[gedragscode](code-of-conduct.md). Door deelname,
 u wordt verwacht deze code te handhaven. Geef een onacceptabel gedrag aan
-[ Grp-opensourceoffice@adobe.com ](mailto:Grp-opensourceoffice@adobe.com).
+[&#x200B; Grp-opensourceoffice@adobe.com &#x200B;](mailto:Grp-opensourceoffice@adobe.com).
 
 ## Documentatie van de handleiding voor contribuanten
 
-Zie de [ Gids van de Medewerker ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+Zie de [&#x200B; Gids van de Medewerker &#x200B;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 ## Heb je een vraag?
 
@@ -31,17 +31,17 @@ consensus over de richting van projecten en het uitwerken van oplossingen binnen
 
 Alle bijdragen van derden aan dit project moeten vergezeld gaan van een ondertekende contribuant
 licentieovereenkomst. Dit geeft Adobe toestemming om uw bijdragen opnieuw te verdelen
-als onderdeel van het project. [ Onderteken onze CLA ](https://opensource.adobe.com/cla.html). U
+als onderdeel van het project. [&#x200B; Onderteken onze CLA &#x200B;](https://opensource.adobe.com/cla.html). U
 slechts één keer een Adobe CLA hoeven in te dienen, dus als u eerder een CLA hebt ingediend,
 je bent klaar om te gaan !
 
 ## Codebeoordelingen
 
 Alle opmerkingen moeten in de vorm van een &quot;pull&quot;-verzoek worden ingediend en moeten worden herzien
-door projectbevrachters. Lees {de documentatie van het trekvraag van 0} GitHub [
-voor meer informatie over het verzenden van trekkingsverzoeken.](https://docs.github.com/articles/about-pull-requests/)
+door projectbevrachters. Lees {de documentatie van het trekvraag van 0} GitHub [&#128279;](https://docs.github.com/articles/about-pull-requests/)
+voor meer informatie over het verzenden van trekkingsverzoeken.
 
-Tot slot gelieve te volgen het [ malplaatje van het trekkingsverzoek ](PULL_REQUEST_TEMPLATE.md) wanneer
+Tot slot gelieve te volgen het [&#x200B; malplaatje van het trekkingsverzoek &#x200B;](PULL_REQUEST_TEMPLATE.md) wanneer
 het indienen van een trekkingsverzoek!
 
 ## Van contribuant naar vastlegger
@@ -55,11 +55,11 @@ het is vrij om contact op te nemen met bestaande toezeggingen om hierover te pra
 
 ## Beveiligingsproblemen
 
-Beveiligingsproblemen moeten niet worden gerapporteerd in deze Issue Tracker. In plaats daarvan, [ dossier een kwestie aan onze veiligheidsdeskundigen ](https://helpx.adobe.com/security/alertus.html)
+Beveiligingsproblemen moeten niet worden gerapporteerd in deze Issue Tracker. In plaats daarvan, [&#x200B; dossier een kwestie aan onze veiligheidsdeskundigen &#x200B;](https://helpx.adobe.com/security/alertus.html)
 
 ## Nieuwe hooglichten
 
-Als uw veranderingen nieuwe onderwerpen, significante updates, of correcties introduceren die moeten worden benadrukt, kunt u een korte beschrijving aan [ toevoegen wat Nieuwe sectie ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview#whats-new) recht van het lichaam van uw trekkrachtverzoek is.
+Als uw veranderingen nieuwe onderwerpen, significante updates, of correcties introduceren die moeten worden benadrukt, kunt u een korte beschrijving aan [&#x200B; toevoegen wat Nieuwe sectie &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview#whats-new) recht van het lichaam van uw trekkrachtverzoek is.
 
 Een nieuwe markering toevoegen:
 
@@ -103,4 +103,4 @@ Een nieuwe markering toevoegen:
 1. Het `whatsnew` -onderdeel moet beginnen met de tag `whatsnew` en zich helemaal aan het einde van de hoofdtekst van de trekkingsaanvraag bevinden.
 1. In de beschrijvingen van de wijzigingen moeten ook werkkoppelingen staan. Controleer of de koppelingen correct zijn en leiden naar de gewenste onderwerpen. Als het onderwerp nieuw is, verifieer dat de verbindingen na het samenvoegen van het trekkingsverzoek werken en het publiceren van het nieuwe onderwerp. U kunt de koppelingen herstellen nadat de pull-aanvraag is samengevoegd.
 
-Voor voorbeelden, onderzoek in gesloten trekkingsverzoeken in de bewaarplaats om te zien hoe de bestaande hoogtepunten worden geformatteerd, en hen te vergelijken met [ wat Nieuwe sectie ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview#whats-new) is om te zien hoe zij in de documentatie verschijnen.
+Voor voorbeelden, onderzoek in gesloten trekkingsverzoeken in de bewaarplaats om te zien hoe de bestaande hoogtepunten worden geformatteerd, en hen te vergelijken met [&#x200B; wat Nieuwe sectie &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview#whats-new) is om te zien hoe zij in de documentatie verschijnen.
