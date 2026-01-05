@@ -19,7 +19,7 @@ u wordt verwacht deze code te handhaven. Geef een onacceptabel gedrag aan
 
 ## Documentatie van de handleiding voor contribuanten
 
-Zie de [&#x200B; Gids van de Medewerker &#x200B;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+Zie de [&#x200B; Gids van de Medewerker &#x200B;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=nl-NL).
 
 ## Heb je een vraag?
 
@@ -55,11 +55,11 @@ het is vrij om contact op te nemen met bestaande toezeggingen om hierover te pra
 
 ## Beveiligingsproblemen
 
-Beveiligingsproblemen moeten niet worden gerapporteerd in deze Issue Tracker. In plaats daarvan, [&#x200B; dossier een kwestie aan onze veiligheidsdeskundigen &#x200B;](https://helpx.adobe.com/security/alertus.html)
+Beveiligingsproblemen moeten niet worden gerapporteerd in deze Issue Tracker. In plaats daarvan, [&#x200B; dossier een kwestie aan onze veiligheidsdeskundigen &#x200B;](https://helpx.adobe.com/nl/security/alertus.html)
 
 ## Nieuwe hooglichten
 
-Als uw veranderingen nieuwe onderwerpen, significante updates, of correcties introduceren die moeten worden benadrukt, kunt u een korte beschrijving aan [&#x200B; toevoegen wat Nieuwe sectie &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview#whats-new) recht van het lichaam van uw trekkrachtverzoek is.
+Als uw veranderingen nieuwe onderwerpen, significante updates, of correcties introduceren die moeten worden benadrukt, kunt u een korte beschrijving aan [&#x200B; toevoegen wat Nieuwe sectie &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/overview#whats-new) recht van het lichaam van uw trekkrachtverzoek is.
 
 Een nieuwe markering toevoegen:
 
@@ -103,4 +103,4 @@ Een nieuwe markering toevoegen:
 1. Het `whatsnew` -onderdeel moet beginnen met de tag `whatsnew` en zich helemaal aan het einde van de hoofdtekst van de trekkingsaanvraag bevinden.
 1. In de beschrijvingen van de wijzigingen moeten ook werkkoppelingen staan. Controleer of de koppelingen correct zijn en leiden naar de gewenste onderwerpen. Als het onderwerp nieuw is, verifieer dat de verbindingen na het samenvoegen van het trekkingsverzoek werken en het publiceren van het nieuwe onderwerp. U kunt de koppelingen herstellen nadat de pull-aanvraag is samengevoegd.
 
-Voor voorbeelden, onderzoek in gesloten trekkingsverzoeken in de bewaarplaats om te zien hoe de bestaande hoogtepunten worden geformatteerd, en hen te vergelijken met [&#x200B; wat Nieuwe sectie &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview#whats-new) is om te zien hoe zij in de documentatie verschijnen.
+Voor voorbeelden, onderzoek in gesloten trekkingsverzoeken in de bewaarplaats om te zien hoe de bestaande hoogtepunten worden geformatteerd, en hen te vergelijken met [&#x200B; wat Nieuwe sectie &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-cloud-service/user-guide/overview#whats-new) is om te zien hoe zij in de documentatie verschijnen.
