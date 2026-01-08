@@ -9,8 +9,8 @@ ht-degree: 1%
 
 Deze site bevat de meest recente ontwikkelaarsdocumentatie voor Commerce on Cloud Infrastructure.
 
-- [&#x200B; Commerce op de Gids van de Infrastructuur van de Wolk &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
-- [&#x200B; krijgen Begonnen met Commerce &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/overview) op de infrastructuur van de Wolk
+- [&#x200B; Commerce op de Gids van de Infrastructuur van de Wolk &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/overview)
+- [&#x200B; krijgen Begonnen met Commerce &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/start/overview) op de infrastructuur van de Wolk
 
 ## Adobe Open Source-gedragscode
 
@@ -18,7 +18,7 @@ Dit project heeft de [&#x200B; Adobe Open Code van Source van Gedrag &#x200B;](c
 
 ## Over je bijdragen aan Adobe-inhoud
 
-Zie de [&#x200B; Gids van de Medewerker van de Docent van Adobe &#x200B;](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction).
+Zie de [&#x200B; Gids van de Medewerker van de Docent van Adobe &#x200B;](https://experienceleague.adobe.com/nl/docs/contributor/contributor-guide/introduction).
 
 Hoe u een bijdrage levert, hangt af van wie u bent en van het soort wijzigingen dat u wilt bijdragen:
 
@@ -40,7 +40,7 @@ Als u een technisch schrijver, programmamanager, of ontwikkelaar van het product
 
 Communautaire contribuanten kunnen GitHub UI voor basishet uitgeven of vork gebruiken het repo om belangrijke bijdragen te leveren.
 
-Zie de [&#x200B; Gids van de Medewerker van de Docent van Adobe &#x200B;](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction) voor details.
+Zie de [&#x200B; Gids van de Medewerker van de Docent van Adobe &#x200B;](https://experienceleague.adobe.com/nl/docs/contributor/contributor-guide/introduction) voor details.
 
 ## Hoe te om prijsdaling te gebruiken om uw onderwerp te formatteren
 
