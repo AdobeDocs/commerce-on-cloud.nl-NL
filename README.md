@@ -9,16 +9,16 @@ ht-degree: 1%
 
 Deze site bevat de meest recente ontwikkelaarsdocumentatie voor Commerce on Cloud Infrastructure.
 
-- [ Commerce op de Gids van de Infrastructuur van de Wolk ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
-- [ krijgen Begonnen met Commerce ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/overview) op de infrastructuur van de Wolk
+- [&#x200B; Commerce op de Gids van de Infrastructuur van de Wolk &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
+- [&#x200B; krijgen Begonnen met Commerce &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/overview) op de infrastructuur van de Wolk
 
 ## Adobe Open Source-gedragscode
 
-Dit project heeft de [ Adobe Open Code van Source van Gedrag ](code-of-conduct.md) goedgekeurd. Zie het artikel [Bijdragen](contributing.md) voor meer informatie.
+Dit project heeft de [&#x200B; Adobe Open Code van Source van Gedrag &#x200B;](code-of-conduct.md) goedgekeurd. Zie het artikel [Bijdragen](contributing.md) voor meer informatie.
 
 ## Over je bijdragen aan Adobe-inhoud
 
-Zie de [ Gids van de Medewerker van de Docent van Adobe ](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction).
+Zie de [&#x200B; Gids van de Medewerker van de Docent van Adobe &#x200B;](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction).
 
 Hoe u een bijdrage levert, hangt af van wie u bent en van het soort wijzigingen dat u wilt bijdragen:
 
@@ -40,14 +40,14 @@ Als u een technisch schrijver, programmamanager, of ontwikkelaar van het product
 
 Communautaire contribuanten kunnen GitHub UI voor basishet uitgeven of vork gebruiken het repo om belangrijke bijdragen te leveren.
 
-Zie de [ Gids van de Medewerker van de Docent van Adobe ](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction) voor details.
+Zie de [&#x200B; Gids van de Medewerker van de Docent van Adobe &#x200B;](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction) voor details.
 
 ## Hoe te om prijsdaling te gebruiken om uw onderwerp te formatteren
 
 Alle artikelen in deze repository gebruiken GitHub gearomatiseerde prijsopgave. Als u niet vertrouwd bent met markering, zie:
 
-- [ Grondbeginselen van de Prijsverlaging ](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
-- [ Afdrukbare prijsdaling ](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+- [&#x200B; Grondbeginselen van de Prijsverlaging &#x200B;](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+- [&#x200B; Afdrukbare prijsdaling &#x200B;](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
 ## Sjablonen
 
@@ -70,7 +70,7 @@ In het algemeen, moeten de meeste schrijvers slechts een versieversie aan de de 
 >**NOTA:**
 >
 >- Voor het genereren van gesjabloonde inhoud moet u op de opdrachtregel in een terminal werken.
->- Ruby moet zijn geïnstalleerd om het renderscript uit te voeren. Zie [_jekyll/.ruby-version ](_jekyll/.ruby-version) voor de vereiste versie.
+>- Ruby moet zijn geïnstalleerd om het renderscript uit te voeren. Zie [_jekyll/.ruby-version ] (_jekyll/.ruby-version) voor de vereiste versie.
 
 Zie het volgende voor een beschrijving van de bestandsstructuur voor sjablooninhoud:
 
@@ -83,9 +83,9 @@ Sjablooninhoud bijwerken:
 
 1. Open een gegevensbestand in de map `_jekyll/_data` in de teksteditor. Bijvoorbeeld:
 
-   - [ Cloud CLI verwijzing ](help/templated/cloud-cli-ref.md): `_jekyll/_data/cloud-cli-ref.yaml`
-   - [ de pakketten van de Wolk ](help/templated/cloud-packages.md): `_jekyll/_data/cloud-packages.yaml`
-   - [ ECE hulpmiddelverwijzing ](help/templated/ece-tools.md): `_jekyll/_data/ece-tools.yaml`
+   - [&#x200B; Cloud CLI verwijzing &#x200B;](help/templated/cloud-cli-ref.md): `_jekyll/_data/cloud-cli-ref.yaml`
+   - [&#x200B; de pakketten van de Wolk &#x200B;](help/templated/cloud-packages.md): `_jekyll/_data/cloud-packages.yaml`
+   - [&#x200B; ECE hulpmiddelverwijzing &#x200B;](help/templated/ece-tools.md): `_jekyll/_data/ece-tools.yaml`
 
 2. Gebruik de bestaande YAML-structuur om items te maken.
 
@@ -130,7 +130,7 @@ Sjablooninhoud bijwerken:
    git push
    ```
 
-Zie de documentatie van Jekyll voor meer details over [ Dossiers van Gegevens ](https://jekyllrb.com/docs/datafiles), [ Vloeiende filters ](https://jekyllrb.com/docs/liquid/filters/), en andere eigenschappen.
+Zie de documentatie van Jekyll voor meer details over [&#x200B; Dossiers van Gegevens &#x200B;](https://jekyllrb.com/docs/datafiles), [&#x200B; Vloeiende filters &#x200B;](https://jekyllrb.com/docs/liquid/filters/), en andere eigenschappen.
 
 ## Beschikbare taken
 
