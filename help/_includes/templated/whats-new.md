@@ -1,5 +1,5 @@
 ---
-source-git-commit: 305df8acb8c41369b34e2c20d9c7df6824222931
+source-git-commit: 8cbda8ca194c5e5865073c9eb08e061cfecb5ace
 workflow-type: tm+mt
 source-wordcount: '71'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Werkt de <a href="https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches"> de versienota's van de Patches van de Wolk 1.1.12 </a> bij om de moeilijke situatie voor de "Controle te omvatten ontbreekt wanneer JS minificatie en bundeling worden toegelaten: kwestie.</p>
+      <td><p>Werkt de <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches"> de versienota's van de Patches van de Wolk 1.1.12 </a> bij om de moeilijke situatie voor de "Controle te omvatten ontbreekt wanneer JS minificatie en bundeling worden toegelaten: kwestie.</p>
 </td>
       <td>
         Technisch
@@ -31,7 +31,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
       <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/d07be1a20fa95e2a79534e364e7620a2f856fc0d">begaan</a></td>
     </tr>
     <tr>
-      <td><p>De bijgewerkte <a href="https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference"> verwijzing CLI </a> na ECE-Hulpmiddelen versie, v2002.2.9.</p>
+      <td><p>De bijgewerkte <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference"> verwijzing CLI </a> na ECE-Hulpmiddelen versie, v2002.2.9.</p>
 </td>
       <td>
         Technisch
