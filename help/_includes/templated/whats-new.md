@@ -1,7 +1,7 @@
 ---
-source-git-commit: 8cbda8ca194c5e5865073c9eb08e061cfecb5ace
+source-git-commit: c5e52c70c121aa3650acfba8a98b743834a95428
 workflow-type: tm+mt
-source-wordcount: '71'
+source-wordcount: '47'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. Alle kleine updates, zoals het bewerken van kopieën, worden van deze lijst uitgesloten.
 
-### 17 november 2025
+### 13 januari 2026
 
 <table style="table-layout:auto;">
   <thead>
@@ -23,20 +23,12 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Werkt de <a href="https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches"> de versienota's van de Patches van de Wolk 1.1.12 </a> bij om de moeilijke situatie voor de "Controle te omvatten ontbreekt wanneer JS minificatie en bundeling worden toegelaten: kwestie.</p>
+      <td><p>Bijgewerkt de versie van de voorbeelden in <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/opensearch"> de dienst van OpenSearch van de Opstelling </a>.</p>
 </td>
       <td>
-        Technisch
+        Feedback
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/d07be1a20fa95e2a79534e364e7620a2f856fc0d">begaan</a></td>
-    </tr>
-    <tr>
-      <td><p>De bijgewerkte <a href="https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference"> verwijzing CLI </a> na ECE-Hulpmiddelen versie, v2002.2.9.</p>
-</td>
-      <td>
-        Technisch
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/5f088df3e7bc35cc1d7fa93d06b5fa9968802572">begaan</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/f5d325dbb14e5e524c89b41c4d5b82383b5b1ac7">begaan</a></td>
     </tr>
   </tbody>
 </table>
