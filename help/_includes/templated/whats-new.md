@@ -23,7 +23,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Bijgewerkt de versie van de voorbeelden in <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/opensearch"> de dienst van OpenSearch van de Opstelling </a>.</p>
+      <td><p>Bijgewerkt de versie van de voorbeelden in <a href="https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/service/opensearch"> de dienst van OpenSearch van de Opstelling </a>.</p>
 </td>
       <td>
         Feedback
