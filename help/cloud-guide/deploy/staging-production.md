@@ -140,7 +140,7 @@ De Cloud CLI bevat opdrachten voor het implementeren van code. U hebt SSH en Git
 
 ## Statische bestanden migreren
 
-[&#x200B; de Statische dossiers &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary) worden opgeslagen in `mounts`. Er zijn twee methoden voor het migreren van bestanden van een bronmontagelocatie, zoals uw lokale omgeving, naar een doellocatie. Beide methoden gebruiken het hulpprogramma `rsync` , maar Adobe raadt u aan de CLI van `magento-cloud` te gebruiken om bestanden tussen de lokale en externe omgeving te verplaatsen. En Adobe raadt u aan de methode `rsync` te gebruiken wanneer u bestanden van een externe bron naar een andere externe locatie verplaatst.
+[&#x200B; de Statische dossiers &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-operations/implementation-playbook/glossary) worden opgeslagen in `mounts`. Er zijn twee methoden voor het migreren van bestanden van een bronmontagelocatie, zoals uw lokale omgeving, naar een doellocatie. Beide methoden gebruiken het hulpprogramma `rsync` , maar Adobe raadt u aan de CLI van `magento-cloud` te gebruiken om bestanden tussen de lokale en externe omgeving te verplaatsen. En Adobe raadt u aan de methode `rsync` te gebruiken wanneer u bestanden van een externe bron naar een andere externe locatie verplaatst.
 
 ### Bestanden migreren met CLI
 
