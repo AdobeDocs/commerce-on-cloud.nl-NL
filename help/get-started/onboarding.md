@@ -21,7 +21,7 @@ Als u snel aan boord van uw project wilt gaan, zodat u uw site kunt gaan ontwikk
 
 ## Aanmelden voor een Cloud-account
 
-Als u geen Adobe Commerce op de rekening van de wolkeninfrastructuur hebt, contacteer [&#x200B; Verkoop &#x200B;](https://business.adobe.com/products/magento/get-demo.html). Wanneer u zich aanmeldt, maakt Adobe uw account en stuurt u een welkomstbericht met instructies over hoe u toegang kunt krijgen tot de projectinterface. Het e-mailbericht bevat een koppeling waarmee u zich kunt aanmelden bij uw account en de initiële projectinstelling kunt voltooien.
+Als u geen Adobe Commerce op de rekening van de wolkeninfrastructuur hebt, contacteer [&#x200B; Verkoop &#x200B;](https://business.adobe.com/nl/products/magento/get-demo.html). Wanneer u zich aanmeldt, maakt Adobe uw account en stuurt u een welkomstbericht met instructies over hoe u toegang kunt krijgen tot de projectinterface. Het e-mailbericht bevat een koppeling waarmee u zich kunt aanmelden bij uw account en de initiële projectinstelling kunt voltooien.
 
 ## Project openen en gebruikers toevoegen
 
@@ -33,7 +33,7 @@ U kunt alleen geregistreerde gebruikers aan uw Adobe Commerce toevoegen op proje
 
 ### Toegang tot gedeelde account
 
-De eigenaar van de licentie kan gedeelde toegang instellen voor de account. Via gedeelde toegang kunnen vertrouwde medewerkers en serviceproviders het Help-centrum gebruiken om ondersteuningstickets voor uw Adobe Commerce in te dienen en bij te houden voor infrastructuurprojecten in de cloud. Voor opstellingsinstructies, zie het [&#x200B; Gedeelde artikel van de Toegang &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#shared-access) in het Centrum van de Hulp.
+De eigenaar van de licentie kan gedeelde toegang instellen voor de account. Via gedeelde toegang kunnen vertrouwde medewerkers en serviceproviders het Help-centrum gebruiken om ondersteuningstickets voor uw Adobe Commerce in te dienen en bij te houden voor infrastructuurprojecten in de cloud. Voor opstellingsinstructies, zie het [&#x200B; Gedeelde artikel van de Toegang &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#shared-access) in het Centrum van de Hulp.
 
 ### [!DNL Cloud Console]
 
