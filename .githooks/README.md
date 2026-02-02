@@ -1,7 +1,7 @@
 ---
-source-git-commit: 8cbda8ca194c5e5865073c9eb08e061cfecb5ace
+source-git-commit: ee2ed3a78939af36572f0baa6672b2e9f9a2557f
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '417'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ Deze map bevat vooraf vastgelegde haken die afbeeldingen automatisch optimaliser
 
 ## Wat de haken doen
 
-- **ontdekt automatisch** gestagte beelddossiers (PNG, JPG, JPEG, GIF, SVG)
+- **ontdekt automatisch** gestagte beelddossiers (PNG, JPG, JPEG, GIF)
 - **Uitvoeren`image_optim`** om afbeeldingen te comprimeren en te optimaliseren
 - **re-stage geoptimaliseerde beelden** automatisch
 - **verzeker alle toegewijde beelden** behoorlijk worden geoptimaliseerd
@@ -85,11 +85,11 @@ Image optimization complete!
 ## Richtlijnen voor afbeeldingen
 
 - **PNG**: Gebruik voor screenshots en elementen UI (zal automatisch worden geoptimaliseerd)
-- **SVG**: Gebruik voor pictogrammen en eenvoudige grafiek (optimalisering die door gebrek wordt onbruikbaar gemaakt)
 - **JPEG**: Gebruik voor foto&#39;s (zal automatisch worden geoptimaliseerd)
 - **GIF**: Gebruik voor animaties (zal automatisch worden geoptimaliseerd)
+- **SVG**: Gebruik voor pictogrammen en eenvoudige grafiek (niet verwerkt door haken, begaat zoals-is)
 
-De haken die vooraf worden vastgelegd, optimaliseren automatisch alle afbeeldingen bij het toewijzen.
+De haken die vooraf worden vastgelegd, optimaliseren bij toewijzen automatisch PNG-, JPEG- en GIF-afbeeldingen.
 
 ## Handmatige optimalisatie
 
@@ -107,7 +107,7 @@ De haken gebruiken het configuratiedossier `_jekyll/.image_optim.yml` om optimal
 - **PNG**: Gebruik `advpng`, `optipng`, en `pngquant`
 - **JPEG**: Gebruik `jhead`, `jpegoptim`, en `jpegtran`
 - **GIF**: Gebruik `gifsicle`
-- **SVG**: De optimalisering van SVG wordt onbruikbaar gemaakt door gebrek (kan complexe vectorgrafiek en animaties breken)
+- **SVG**: Niet verwerkt (uitgesloten van opsporing om vectorgrafiek en animaties te bewaren)
 
 ## Problemen oplossen
 
@@ -141,7 +141,7 @@ De haken gebruiken het configuratiedossier `_jekyll/.image_optim.yml` om optimal
 - **PNG** (`.png`) - Lossless en verliesvrije compressie
 - **JPEG** (`.jpg`, `.jpeg`) - Lossy compressie met meta-gegevensschoonmaak
 - **GIF** (`.gif`) - Animatie en statische optimalisering
-- **SVG** (`.svg`) - Vectoroptimalisering (gehandicapt door gebrek)
+- **SVG** (`.svg`) - niet verwerkt door haken (begaat as-is om kwaliteit te bewaren)
 
 ## Aanbevolen procedures
 
