@@ -104,13 +104,13 @@ Tijdens projectlevering, voegt Adobe uw project aan de Fastly de dienstrekening 
 
 ### Fastly API-token wijzigen
 
-Verzend een kaartje van de Steun van Adobe Commerce om een nieuwe Fastly API symbolische referentie [&#x200B; uit te geven als het bevestiging/is verlopen &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/error-when-validating-fastly-credentials) ontbreekt, of als u gelooft dat het is gecompromitteerd.
+Verzend een kaartje van de Steun van Adobe Commerce om een nieuwe Fastly API symbolische referentie [&#x200B; uit te geven als het bevestiging/is verlopen &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/error-when-validating-fastly-credentials) ontbreekt, of als u gelooft dat het is gecompromitteerd.
 
 Wanneer u het nieuwe token ontvangt, werkt u de omgeving voor Staging of Productie bij om het nieuwe token te gebruiken.
 
 **om de Fastly API symbolische referentie** te veranderen:
 
-1. [&#x200B; legt een kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voor het vragen van nieuwe Fastly API geloofsbrieven.
+1. [&#x200B; legt een kaartje van de Steun van Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=nl-NL#submit-ticket) voor het vragen van nieuwe Fastly API geloofsbrieven.
 
    Neem uw Adobe Commerce op in de projectid van de cloud-infrastructuur en de omgevingen die een nieuwe referentie vereisen.
 
@@ -158,18 +158,18 @@ DDOS-beveiliging is ingebouwd in de Fastly CDN-service. Zodra u de Snelle dienst
 
 >[!NOTE]
 >
->De bescherming tegen Laag 7 aanvallen wordt niet behandeld door de Fastly dienst CDN die met Adobe Commerce wordt geïntegreerd. Voor uiteinden bij het beschermen tegen Laag 7 aanvallen, zie [&#x200B; het Controleren op DoS Aanvallen &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-for-ddos-attack-from-cli) en [&#x200B; hoe te kwaadwillige aanvallen &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level) in de *Kennisbank van Adobe Commerce* blokkeren.
+>De bescherming tegen Laag 7 aanvallen wordt niet behandeld door de Fastly dienst CDN die met Adobe Commerce wordt geïntegreerd. Voor uiteinden bij het beschermen tegen Laag 7 aanvallen, zie [&#x200B; het Controleren op DoS Aanvallen &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-for-ddos-attack-from-cli) en [&#x200B; hoe te kwaadwillige aanvallen &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level) in de *Kennisbank van Adobe Commerce* blokkeren.
 
 <!--Link definitions-->
 
 [Caching with Fastly]: https://developer.adobe.com/commerce/webapi/graphql/usage/caching/#caching-with-fastly
 
-[Checking for DDoS attacks]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-for-ddos-attack-from-cli.html
+[Checking for DDoS attacks]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-for-ddos-attack-from-cli.html?lang=nl-NL
 
 [Fastly CDN module for Magento 2]: https://github.com/fastly/fastly-magento2
 
 [Kaart voor snelle ondersteuning]: https://docs.fastly.com/products/support-description-and-sla#support-requests
 
-[How to block malicious traffic]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level.html
+[How to block malicious traffic]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level.html?lang=nl-NL
 
 [Werken met domeinen]: https://docs.fastly.com/en/guides/working-with-domains
