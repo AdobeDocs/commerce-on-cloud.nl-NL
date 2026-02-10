@@ -23,7 +23,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Toegevoegd de volgende informatie over oorsprong die aan het <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly"> Snelle overzicht van de diensten </a> camoufleren.<br /> - Definitie en verkeersstroom <br /> - de status van Enablement (toegelaten op alle wolkenprojecten sinds 2021) Blocked oorsprong URL voorbeelden <br /> - REST API gebruiksvoorbeelden</p>
+      <td><p>Toegevoegd de volgende informatie over oorsprong die aan het <a href="https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/cdn/fastly"> Snelle overzicht van de diensten </a> camoufleren.<br /> - Definitie en verkeersstroom <br /> - de status van Enablement (toegelaten op alle wolkenprojecten sinds 2021) Blocked oorsprong URL voorbeelden <br /> - REST API gebruiksvoorbeelden</p>
 </td>
       <td>
         Technisch
@@ -45,7 +45,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Bijgewerkt de versie van de voorbeelden in <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/opensearch"> de dienst van OpenSearch van de Opstelling </a>.</p>
+      <td><p>Bijgewerkt de versie van de voorbeelden in <a href="https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/service/opensearch"> de dienst van OpenSearch van de Opstelling </a>.</p>
 </td>
       <td>
         Feedback
