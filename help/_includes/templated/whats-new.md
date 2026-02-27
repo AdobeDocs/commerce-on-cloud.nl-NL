@@ -23,7 +23,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Bijgewerkt de <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/checklist"> controlelijst van de Lancering </a> voor Commerce op wolkenprojecten om de verslagen van de Amerikaanse club van automobilisten aan de DNS configuratieinstructies snel toe te voegen.</p>
+      <td><p>Bijgewerkt de <a href="https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/launch/checklist"> controlelijst van de Lancering </a> voor Commerce op wolkenprojecten om de verslagen van de Amerikaanse club van automobilisten aan de DNS configuratieinstructies snel toe te voegen.</p>
 </td>
       <td>
         Feedback
@@ -45,7 +45,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Toegevoegde instructies voor <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/account-management"> veranderend de de rekeningseigenaar van New Relic </a> aan <em> Commerce op de Gids van de Infrastructuur van de Wolk </em>.</p>
+      <td><p>Toegevoegde instructies voor <a href="https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/monitor/new-relic/account-management"> veranderend de de rekeningseigenaar van New Relic </a> aan <em> Commerce op de Gids van de Infrastructuur van de Wolk </em>.</p>
 </td>
       <td>
         Technisch
@@ -67,7 +67,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Toegevoegd de volgende informatie over oorsprong het camoufleren aan het <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly"> Snelle de dienstenoverzicht </a>.<br /> - de definitie en de verkeersstroom <br /> - de status van Enablement (toegelaten op alle wolkenprojecten sinds 2021) Blocked oorsprong URL voorbeelden <br /> - de gebruiksvoorbeelden van REST API</p>
+      <td><p>Toegevoegd de volgende informatie over oorsprong het camoufleren aan het <a href="https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/cdn/fastly"> Snelle de dienstenoverzicht </a>.<br /> - de definitie en de verkeersstroom <br /> - de status van Enablement (toegelaten op alle wolkenprojecten sinds 2021) Blocked oorsprong URL voorbeelden <br /> - de gebruiksvoorbeelden van REST API</p>
 </td>
       <td>
         Technisch
@@ -89,7 +89,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Bijgewerkt de versie van de voorbeelden in <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/opensearch"> de dienst van OpenSearch van de Opstelling </a>.</p>
+      <td><p>Bijgewerkt de versie van de voorbeelden in <a href="https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/service/opensearch"> de dienst van OpenSearch van de Opstelling </a>.</p>
 </td>
       <td>
         Feedback
