@@ -1,12 +1,12 @@
 ---
-user-guide-title: Handleiding voor Commerce in de cloud
+user-guide-title: Handleiding Commerce on Cloud
 user-guide-description: Leer hoe u de Adobe Commerce-toepassing beheert op cloudinfrastructuur.
 product: magento
 feature: Cloud
-source-git-commit: 5fc2082ca2aae8a1466821075c01ce756ba382cc
+source-git-commit: 2311b8e5c0216c01d0189c8f8e669dcddfcd1dcc
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 4%
+source-wordcount: '387'
+ht-degree: 2%
 
 ---
 
@@ -24,8 +24,8 @@ ht-degree: 4%
    + [Pro-workflow](architecture/pro-develop-deploy-workflow.md)
    + [Schaalbare architectuur](architecture/scaled-architecture.md)
    + [Automatisch schalen](architecture/autoscaling.md)
-+ [&#x200B; begonnen worden &#x200B;](https://experienceleague.adobe.com/docs/commerce-on-cloud/start/overview.html?lang=nl-NL)
-+ Opmerkingen bij de release {#release-notes}
++ [Aan de slag](https://experienceleague.adobe.com/docs/commerce-on-cloud/start/overview.html)
++ Aanvullende informatie {#release-notes}
    + [Cloud Tools-suite](release-notes/cloud-tools-suite.md)
    + [ECE-gereedschapspakket](release-notes/ece-tools-package.md)
    + [Cloudpatches](release-notes/cloud-patches.md)
@@ -89,6 +89,7 @@ ht-degree: 4%
    + [Omgeving herstellen](development/restore-environment.md)
    + Opslag {#storage}
       + [Schijfruimte beheren](storage/manage-disk-space.md)
+      + [Limiet schijfruimte controleren voor Adobe Commerce op cloudinfrastructuur](storage/check-disk-space-limit-on-cloud.md)
       + [Databasequery&#39;s profiel](storage/profile-database-queries.md)
       + [Back-up maken van de database](storage/database-dump.md)
       + [Back-upbeheer](storage/snapshots.md)
@@ -101,7 +102,7 @@ ht-degree: 4%
    + Toepassing {#app}
       + [Implementatie van toepassingen configureren](application/configure-app-yaml.md)
       + [PHP-instellingen](application/php-settings.md)
-      + Eigenschappen {#properties}
+      + Properties {#properties}
          + [Toepassingseigenschappen](application/properties.md)
          + [Crons](application/crons-property.md)
          + [Firewall (alleen Starter)](application/firewall-property.md)
