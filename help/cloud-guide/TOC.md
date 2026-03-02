@@ -24,7 +24,7 @@ ht-degree: 2%
    + [Pro-workflow](architecture/pro-develop-deploy-workflow.md)
    + [Schaalbare architectuur](architecture/scaled-architecture.md)
    + [Automatisch schalen](architecture/autoscaling.md)
-+ [Aan de slag](https://experienceleague.adobe.com/docs/commerce-on-cloud/start/overview.html)
++ [Aan de slag](https://experienceleague.adobe.com/docs/commerce-on-cloud/start/overview.html?lang=nl-NL)
 + Aanvullende informatie {#release-notes}
    + [Cloud Tools-suite](release-notes/cloud-tools-suite.md)
    + [ECE-gereedschapspakket](release-notes/ece-tools-package.md)
