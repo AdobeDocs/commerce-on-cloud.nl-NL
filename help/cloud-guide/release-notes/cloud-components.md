@@ -73,7 +73,7 @@ Releasedatum: 10 maart 2023
 
 Releasedatum: 13 september 2022
 
-- ![&#x200B; herstellingspictogram &#x200B;](../../assets/fix.svg) **Fouten op warmte** - Vaste een kwestie die aan [&#x200B; warmte &#x200B;](../environment/variables-post-deploy.md#warm_up_pages) probeerde toen de paginazichtbaarheid aan [**niet Zichtbaar individueel** &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-attributes-product#simple-product-csv-file-structure) in Admin wordt geplaatst, resulterend in `ERROR: Warming up failed: <link to page>` fouten in het plaatsingslogboek.<!-- MCLOUD-9134 -->
+- ![&#x200B; herstellingspictogram &#x200B;](../../assets/fix.svg) **Fouten op warmte** - Vaste een kwestie die aan [&#x200B; warmte &#x200B;](../environment/variables-post-deploy.md#warm_up_pages) probeerde toen de paginazichtbaarheid aan [**niet Zichtbaar individueel** &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-admin/systems/data-transfer/data-attributes-product#simple-product-csv-file-structure) in Admin wordt geplaatst, resulterend in `ERROR: Warming up failed: <link to page>` fouten in het plaatsingslogboek.<!-- MCLOUD-9134 -->
 
 ## v1.0.11
 
