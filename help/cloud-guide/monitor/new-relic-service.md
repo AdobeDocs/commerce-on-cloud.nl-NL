@@ -3,9 +3,10 @@ title: New Relic-service
 description: Meer informatie over de New Relic-service die beschikbaar is bij uw Adobe Commerce-project voor cloudinfrastructuur.
 feature: Cloud, Observability
 last-substantial-update: 2023-09-06T00:00:00Z
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 10966241-311d-4b68-804d-4c9569bf933d
+source-git-commit: 3784e7b2ddc8f6ae20fd2c6fd557f2408d870cf2
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -16,31 +17,33 @@ Alle Adobe Commerce-projecten op cloudinfrastructuur bieden toegang tot de New R
 
 De volgende New Relic-functies zijn beschikbaar voor gebruik in Productie- en Staging-omgevingen:
 
-- [&#x200B; New Relic APM &#x200B;](#new-relic-apm) (Pro en Starter)
-- [&#x200B; de Infrastructuur van New Relic &#x200B;](#new-relic-infrastructure) (Pro slechts)
-- [&#x200B; het Beheer van het Logboek van New Relic &#x200B;](#new-relic-log-management) (Pro slechts)
+- [ New Relic APM ](#new-relic-apm) (Pro en Starter)
+- [ de Infrastructuur van New Relic ](#new-relic-infrastructure) (Pro slechts)
+- [ het Beheer van het Logboek van New Relic ](#new-relic-log-management) (Pro slechts)
 
 >[!INFO]
 >
 >Andere New Relic-functies zijn niet beschikbaar voor Adobe Commerce-projecten.
+>
+>Adobe Commerce on Cloud-klanten kunnen gegevens van externe servers niet rechtstreeks integreren in of verzenden naar hun New Relic-account met provisioning. De New Relic-service is beperkt tot het bewaken van de Commerce Cloud-toepassingsomgeving. Alleen services van derden die door de toepassing zelf worden aangeroepen (bijvoorbeeld externe API&#39;s of services die tijdens runtime worden aangeroepen), kunnen in New Relic worden getraceerd en gecontroleerd.
 
 ## NEW RELIC APM
 
-[&#x200B; New Relic voor het beheer van toepassingsprestaties (APM) &#x200B;](https://docs.newrelic.com/introduction-apm/) is een product van de softwareanalyse dat u helpt toepassingsinteractie analyseren en verbeteren. New Relic APM is beschikbaar voor alle Adobe Commerce voor cloud-infrastructuurprojecten en biedt de volgende functies:
+[ New Relic voor het beheer van toepassingsprestaties (APM) ](https://docs.newrelic.com/introduction-apm/) is een product van de softwareanalyse dat u helpt toepassingsinteractie analyseren en verbeteren. New Relic APM is beschikbaar voor alle Adobe Commerce voor cloud-infrastructuurprojecten en biedt de volgende functies:
 
 - **concentreert zich op specifieke transacties** - merk en controleer actief zeer belangrijke klantenacties in uw plaats, zoals het toevoegen aan de kar, het controleren, of het verwerken van een betaling.
 - **de vraag van het Gegevensbestand controle** - plaats en controleer gegevensbestandvragen die prestaties beïnvloeden.
 - **App Kaart** - bekijk alle toepassingsgebiedsdelen binnen uw plaats, uitbreidingen, en de externe diensten.
-- **[!DNL Apdex]scores** - evalueer prestaties en creeer alarm dat kwesties identificeert en u op de hoogte brengt wanneer zij voorkomen, zoals plaatsprestaties die door een flitsverkoop of Webgebeurtenis worden beïnvloed. Zie [&#x200B; score van de Index &#x200B;](https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction/).
-- **Beheerde alarm voor Adobe Commerce** - gebruik dit de waakzame beleid van New Relic om toepassing en infrastructuurprestaties te controleren die op industrie beste praktijken worden gebaseerd. Zie [&#x200B; prestaties van de Monitor met het Beheerde alarm voor het waakzame beleid van Adobe Commerce &#x200B;](investigate-performance.md/#monitor-performance-with-managed-alerts).
-- **plaatsingen van het Spoor** - de plaatsingsgebeurtenissen van de Monitor en analyseer plaatsingseffect aan algemene prestaties. Zie [&#x200B; plaatsingen van het Spoor &#x200B;](track-deployments.md).
+- **[!DNL Apdex]scores** - evalueer prestaties en creeer alarm dat kwesties identificeert en u op de hoogte brengt wanneer zij voorkomen, zoals plaatsprestaties die door een flitsverkoop of Webgebeurtenis worden beïnvloed. Zie [ score van de Index ](https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction/).
+- **Beheerde alarm voor Adobe Commerce** - gebruik dit de waakzame beleid van New Relic om toepassing en infrastructuurprestaties te controleren die op industrie beste praktijken worden gebaseerd. Zie [ prestaties van de Monitor met het Beheerde alarm voor het waakzame beleid van Adobe Commerce ](investigate-performance.md/#monitor-performance-with-managed-alerts).
+- **plaatsingen van het Spoor** - de plaatsingsgebeurtenissen van de Monitor en analyseer plaatsingseffect aan algemene prestaties. Zie [ plaatsingen van het Spoor ](track-deployments.md).
 
 Uw Adobe Commerce on cloud-infrastructuurproject bevat de software voor de New Relic APM-service, samen met een licentiecode. U hoeft geen extra software aan te schaffen of te installeren.
 
 ## New Relic-infrastructuur
 
-De pro projecten omvatten de [&#x200B; dienst van de Infrastructuur van New Relic (NRI) &#x200B;](https://docs.newrelic.com/docs/infrastructure/infrastructure-monitoring/get-started/get-started-infrastructure-monitoring/), die automatisch met de toepassingsgegevens en prestatiesanalyses verbindt om dynamische servercontrole te verstrekken. Deze service is beschikbaar in Pro Production- en Staging-omgevingen.
+De pro projecten omvatten de [ dienst van de Infrastructuur van New Relic (NRI) ](https://docs.newrelic.com/docs/infrastructure/infrastructure-monitoring/get-started/get-started-infrastructure-monitoring/), die automatisch met de toepassingsgegevens en prestatiesanalyses verbindt om dynamische servercontrole te verstrekken. Deze service is beschikbaar in Pro Production- en Staging-omgevingen.
 
 ## New Relic-logbeheer
 
-Alle projecten van de wolkeninfrastructuur omvatten [&#x200B; het logboekbeheer van New Relic &#x200B;](log-management.md). De dienst wordt pre-gevormd om alle logboekgegevens van uw het Opvoeren en milieu&#39;s van de Productie samen te voegen en het in een gecentraliseerd logboekbeheersdashboard te tonen.
+Alle projecten van de wolkeninfrastructuur omvatten [ het logboekbeheer van New Relic ](log-management.md). De dienst wordt pre-gevormd om alle logboekgegevens van uw het Opvoeren en milieu&#39;s van de Productie samen te voegen en het in een gecentraliseerd logboekbeheersdashboard te tonen.
