@@ -39,7 +39,7 @@ De cloudinfrastructuur ondersteunt en implementeert de volgende services:
 - [OpenSearch](opensearch.md)
 
 >[!NOTE]
->U moet [&#x200B; RabbitMQ opeenvolgend bevorderen tussen beschikbare versies &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq#upgrading-the-rabbitmq-service), bijvoorbeeld, kunt u niet van 3.9 rechtstreeks aan 4.1 bevorderen
+>U moet [&#x200B; RabbitMQ opeenvolgend bevorderen tussen beschikbare versies &#x200B;](https://experienceleague.adobe.com/nl/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq#upgrading-the-rabbitmq-service), bijvoorbeeld, kunt u niet van 3.9 rechtstreeks aan 4.1 bevorderen
 >
 >Na bevordering aan een nieuwe versie van RabbitMQ, teweeg een volledige plaatsing om ervoor te zorgen dat uw rijen van het douanebericht in RabbitMQ worden ontspannen.
 
@@ -181,7 +181,7 @@ U kunt de configuratiegegevens voor alle de dienstverhoudingen van de [`$MAGENTO
 
 ## Serviceversies
 
-Serviceversie en compatibiliteitsondersteuning voor Adobe Commerce op cloudinfrastructuur worden bepaald door versies die worden geïmplementeerd en getest op de cloudinfrastructuur en verschillen soms van versies die worden ondersteund door Adobe Commerce-implementaties op locatie. Zie {de vereisten van het 0} Systeem [&#128279;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in de _gids van de Installatie_ voor een lijst van derdesoftwaregebiedsdelen die Adobe met specifieke versies van Adobe Commerce en van Magento Open Source heeft getest.
+Serviceversie en compatibiliteitsondersteuning voor Adobe Commerce op cloudinfrastructuur worden bepaald door versies die worden geïmplementeerd en getest op de cloudinfrastructuur en verschillen soms van versies die worden ondersteund door Adobe Commerce-implementaties op locatie. Zie {de vereisten van het 0} Systeem [&#128279;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=nl-NL) in de _gids van de Installatie_ voor een lijst van derdesoftwaregebiedsdelen die Adobe met specifieke versies van Adobe Commerce en van Magento Open Source heeft getest.
 
 ### Software EOL-controles
 
