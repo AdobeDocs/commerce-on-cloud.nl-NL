@@ -3,9 +3,9 @@ title: Services configureren
 description: Leer hoe u services die door Adobe Commerce worden gebruikt op cloudinfrastructuur configureert.
 feature: Cloud, Configuration, Services
 exl-id: ddf44b7c-e4ae-48f0-97a9-a219e6012492
-source-git-commit: 322f7af2c79dd4eeeabafa2ba7e5a32cbd8b1925
+source-git-commit: 4ea85b008e2ea9d1c9ab623c413ff9c3c3aaffd2
 workflow-type: tm+mt
-source-wordcount: '1070'
+source-wordcount: '1136'
 ht-degree: 0%
 
 ---
@@ -39,10 +39,11 @@ De cloudinfrastructuur ondersteunt en implementeert de volgende services:
 - [OpenSearch](opensearch.md)
 
 >[!NOTE]
+>U moet [ RabbitMQ opeenvolgend bevorderen tussen beschikbare versies ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq#upgrading-the-rabbitmq-service), bijvoorbeeld, kunt u niet van 3.9 rechtstreeks aan 4.1 bevorderen
 >
 >Na bevordering aan een nieuwe versie van RabbitMQ, teweeg een volledige plaatsing om ervoor te zorgen dat uw rijen van het douanebericht in RabbitMQ worden ontspannen.
 
-U kunt standaardversies en schijfwaarden in het huidige, [&#x200B; standaard `services.yaml` dossier &#x200B;](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml) bekijken. In het volgende voorbeeld worden de services `mysql` , `redis` , `opensearch` of `elasticsearch` , `rabbitmq` en `activemq-artemis` getoond die in het configuratiebestand `services.yaml` zijn gedefinieerd:
+U kunt standaardversies en schijfwaarden in het huidige, [ standaard `services.yaml` dossier ](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml) bekijken. In het volgende voorbeeld worden de services `mysql` , `redis` , `opensearch` of `elasticsearch` , `rabbitmq` en `activemq-artemis` getoond die in het configuratiebestand `services.yaml` zijn gedefinieerd:
 
 ```yaml
 mysql:
@@ -101,7 +102,7 @@ redis2:
 Het anders noemen van de dienst in het `services.yaml` dossier **verwijdert permanent** het volgende:
 
 - De bestaande service voordat u een service met de nieuwe naam maakt die u opgeeft.
-- Alle bestaande gegevens voor de service worden verwijderd. Adobe adviseert sterk dat u [&#x200B; steun uw milieu van de Aanzet &#x200B;](../storage/snapshots.md) alvorens u de naam van een bestaande dienst verandert.
+- Alle bestaande gegevens voor de service worden verwijderd. Adobe adviseert sterk dat u [ steun uw milieu van de Aanzet ](../storage/snapshots.md) alvorens u de naam van een bestaande dienst verandert.
 
 ### `type`
 
@@ -126,7 +127,7 @@ Het huidige standaard opslagbedrag per project is 5 GB of 512 0MB. U kunt dit be
 
 ## Servicerelaties
 
-In Adobe Commerce op de projecten van de wolkeninfrastructuur, de dienst [&#x200B; verhoudingen &#x200B;](../application/properties.md#relationships) die in het `.magento.app.yaml` dossier worden gevormd bepalen welke diensten aan uw toepassing beschikbaar zijn.
+In Adobe Commerce op de projecten van de wolkeninfrastructuur, de dienst [ verhoudingen ](../application/properties.md#relationships) die in het `.magento.app.yaml` dossier worden gevormd bepalen welke diensten aan uw toepassing beschikbaar zijn.
 
 U kunt de configuratiegegevens voor alle de dienstverhoudingen van de [`$MAGENTO_CLOUD_RELATIONSHIPS`](../environment/variables-cloud.md) omgevingsvariabele terugwinnen. De configuratiegegevens omvatten de de dienstnaam, type, en versie samen met om het even welke vereiste verbindingsdetails zoals havenaantal en login geloofsbrieven.
 
@@ -180,7 +181,7 @@ U kunt de configuratiegegevens voor alle de dienstverhoudingen van de [`$MAGENTO
 
 ## Serviceversies
 
-Serviceversie en compatibiliteitsondersteuning voor Adobe Commerce op cloudinfrastructuur worden bepaald door versies die worden geïmplementeerd en getest op de cloudinfrastructuur en verschillen soms van versies die worden ondersteund door Adobe Commerce-implementaties op locatie. Zie {de vereisten van het 0} Systeem [&#x200B; in de &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=nl-NL) gids van de Installatie _voor een lijst van derdesoftwaregebiedsdelen die Adobe met specifieke versies van Adobe Commerce en van Magento Open Source heeft getest._
+Serviceversie en compatibiliteitsondersteuning voor Adobe Commerce op cloudinfrastructuur worden bepaald door versies die worden geïmplementeerd en getest op de cloudinfrastructuur en verschillen soms van versies die worden ondersteund door Adobe Commerce-implementaties op locatie. Zie {de vereisten van het 0} Systeem ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in de _gids van de Installatie_ voor een lijst van derdesoftwaregebiedsdelen die Adobe met specifieke versies van Adobe Commerce en van Magento Open Source heeft getest.[
 
 ### Software EOL-controles
 
@@ -189,19 +190,19 @@ Tijdens het implementatieproces controleert het `ece-tools` -pakket de geïnstal
 - Als een de dienstversie binnen drie maanden na de datum EOL is, toont een bericht in het opstellen logboek.
 - Als de datum EOL in het verleden is, toont een waarschuwingsbericht.
 
-Om de veiligheid van de opslag te handhaven, werk geïnstalleerde softwareversies bij alvorens zij EOL bereiken. U kunt de data EOL in het [&#x200B; dossier van 0&rbrace; controleren-hulpmiddelen `eol.yaml`.](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml)
+Om de veiligheid van de opslag te handhaven, werk geïnstalleerde softwareversies bij alvorens zij EOL bereiken. U kunt de data EOL in het `eol.yaml` dossier van 0} controleren-hulpmiddelen ](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml).[
 
 ### Migreren naar OpenSearch
 
 {{elasticsearch-support}}
 
-Voor versie 2.4.4 van Adobe Commerce en recenter, zie [&#x200B; de dienst van OpenSearch van de Opstelling &#x200B;](opensearch.md).
+Voor versie 2.4.4 van Adobe Commerce en recenter, zie [ de dienst van OpenSearch van de Opstelling ](opensearch.md).
 
 ## Serviceversie wijzigen
 
 U kunt de versie van de geïnstalleerde service upgraden voor compatibiliteit met de Adobe Commerce-versie die in uw cloud-omgeving is geïmplementeerd.
 
-U kunt de de dienstversie voor een geïnstalleerde dienst niet direct degraderen. U kunt echter wel een service met de vereiste versie maken. Zie [&#x200B; de dienstversie van de Verlaag &#x200B;](#downgrade-version).
+U kunt de de dienstversie voor een geïnstalleerde dienst niet direct degraderen. U kunt echter wel een service met de vereiste versie maken. Zie [ de dienstversie van de Verlaag ](#downgrade-version).
 
 ### Installatieversie van de service upgraden
 
