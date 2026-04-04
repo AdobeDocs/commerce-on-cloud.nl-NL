@@ -41,7 +41,7 @@ U kunt [[!DNL Cloud Console]](cloud-console.md) gebruiken om uw project te beher
 
 ## Aanmelden voor Adobe-status
 
-Krijg updates over Adobe Commerce op het platformmilieu&#39;s van de wolkeninfrastructuur en de verwante diensten van de [&#x200B; pagina van de Status &#x200B;](https://status.adobe.com/products/503473).
+Krijg updates over Adobe Commerce op het platformmilieu&#39;s van de wolkeninfrastructuur en de verwante diensten van de [&#x200B; pagina van de Status &#x200B;](https://status.adobe.com/nl/products/503473).
 
 De pagina biedt een status voor Adobe Commerce-componenten en -services, gevolgd door meldingen over incidentrapporten, serviceupgrades, geplande uitvallen en gepland onderhoud. Iedereen die aan uw project werkt, kan zich abonneren op de Adobe Commerce-statussite om gebeurtenismeldingen en updates via e-mail of Slack te ontvangen. U kunt uw Adobe-statusabonnement aanpassen om specifieke producten op regio&#39;s en gebeurtenissen bij te houden.
 
