@@ -2,9 +2,10 @@
 title: Web, eigenschap
 description: Zie voorbeelden op hoe te om het Webbezit in het  [!DNL Commerce]  dossier van de toepassingsconfiguratie te vormen.
 feature: Cloud, Configuration
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 6ecf6fb5-57a8-435c-8de3-f66dc56837fe
+source-git-commit: 94a7748348ba590bb4fed740df658c5bac4c31e9
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -31,14 +32,18 @@ U kunt de configuratie van `locations` verfijnen met de volgende sleutelwaarden 
 | `rules` | Geef overschrijvingen voor een locatie op. Gebruik een reguliere expressie die overeenkomt met een aanvraag. Als een inkomend verzoek de regel aanpast, dan wordt de regelmatige behandeling van het verzoek met voeten getreden door de sleutels die in de regel worden gebruikt. |
 | `passthru` | Stel de URL in die wordt gebruikt voor het geval dat een statisch bestand of PHP-bestand niet wordt gevonden. Doorgaans is deze URL de voorste controller voor uw toepassingen, zoals `/index.php` of `/app.php` . |
 | `root` | Stel het pad in ten opzichte van de hoofdmap van de toepassing die op het web wordt weergegeven. De openbare map (locatie &quot;/&quot;) voor een Cloud-project is standaard ingesteld op &quot;pub&quot;. |
-| `scripts` | Het laden van scripts op deze locatie toestaan. Stel de waarde in op `true` als u scripts wilt toestaan. |
+| `scripts` | Het laden van scripts op deze locatie toestaan. Stel de waarde in op `true` als u scripts wilt toestaan. Voor mappen `pub/media` en `pub/static` wordt de standaardconfiguratie ingesteld op `scripts: false` om te voorkomen dat geüploade bestanden worden uitgevoerd. |
+
+>[!IMPORTANT]
+>
+>**Nota van de Veiligheid:** de standaard `web` bezitsconfiguratie voor Adobe Commerce op de Reeksen van de Wolk `scripts: false` voor media plaatsen om uitvoering van geupload dossiers te verhinderen. Overschrijf deze instelling alleen als u de gevolgen voor de beveiliging van uw implementatie volledig begrijpt.
 
 De standaardconfiguratie staat het volgende toe:
 
 - Vanaf het hoofdpad (`/`) zijn alleen web en media toegankelijk
-- Vanuit de paden `~/pub/static` en `~/pub/media` kan elk bestand worden geopend
+- Vanuit de paden `~/pub/media` en `~/pub/static` kan elk bestand worden geopend
 
-Het volgende voorbeeld toont de standaardconfiguratie in het `.magento.app.yaml` dossier voor een reeks web-Toegankelijke plaatsen verbonden aan een ingang in het [`mounts` bezit &#x200B;](properties.md#mounts):
+Het volgende voorbeeld toont de standaardconfiguratie in het `.magento.app.yaml` dossier voor een reeks web-Toegankelijke plaatsen verbonden aan een ingang in het [`mounts` bezit ](properties.md#mounts):
 
 ```yaml
  # The configuration of app when it is exposed to the web.
@@ -78,4 +83,4 @@ web:
 
 >[!NOTE]
 >
->Dit voorbeeld toont de standaardWebconfiguratie voor een project van de Wolk dat wordt gevormd om één enkel domein te steunen. Voor een project dat ondersteuning voor meerdere websites of winkels vereist, moet de `web` -configuratie zo zijn ingesteld dat gedeelde domeinen worden ondersteund. Zie [&#x200B; plaatsen voor gedeelde domeinen &#x200B;](../store/multiple-sites.md#configure-locations-for-shared-domains) vormen.
+>Dit voorbeeld toont de standaardWebconfiguratie voor een project van de Wolk dat wordt gevormd om één enkel domein te steunen. Voor een project dat ondersteuning voor meerdere websites of winkels vereist, moet de `web` -configuratie zo zijn ingesteld dat gedeelde domeinen worden ondersteund. Zie [ plaatsen voor gedeelde domeinen ](../store/multiple-sites.md#configure-locations-for-shared-domains) vormen.
