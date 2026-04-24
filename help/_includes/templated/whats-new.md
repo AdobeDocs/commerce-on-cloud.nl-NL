@@ -23,7 +23,7 @@ Deze pagina bevat de wijzigingen die in de afgelopen 60 dagen zijn aangebracht. 
   </thead>
   <tbody>
     <tr>
-      <td><p>Toegevoegd een veiligheidsnota aan de </a> verwijzing van de het bezitsconfiguratie van het Web <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property"> {voor Adobe Commerce op wolkeninfrastructuur om te verduidelijken dat de standaardconfiguratie voor het bezitsgebruik van het Web <code class="language-plaintext highlighter-rouge">scripts:false</code> voor media plaatsen om uitvoering van geupload dossiers te verhinderen.</p>
+      <td><p>Toegevoegd een veiligheidsnota aan de </a> verwijzing van de het bezitsconfiguratie van het Web <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property"> &lbrace;voor Adobe Commerce op wolkeninfrastructuur om te verduidelijken dat de standaardconfiguratie voor het bezitsgebruik van het Web <code class="language-plaintext highlighter-rouge">scripts:false</code> voor media plaatsen om uitvoering van geupload dossiers te verhinderen.</p>
 </td>
       <td>
         Technisch, feedback
